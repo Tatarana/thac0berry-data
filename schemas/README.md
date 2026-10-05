@@ -44,3 +44,24 @@ Mudou um modelo Swift que decodifica um desses arquivos (repo `thac0berry-ipad`)
 atualize o schema aqui **na mesma entrega**. Campo novo em modelo existente entra como
 opcional (`decodeIfPresent ?? default` no Swift, fora de `required` no schema), senão
 os arquivos antigos deixam de decodificar. O backend e a web leem os mesmos schemas.
+
+## Ficha de personagem: `library.schema.json`
+
+Formato do `library.json` do iPad e do backup exportado em Settings: campanhas,
+sessões, caderno, personagens, folhas de magia e efeitos ativos. Não é dado de
+referência (não há arquivo em `data/`); é o contrato da ficha entre iPad, web e backend.
+
+- **Gerado, não escrito à mão:** `python Scripts/gen_library_schema.py` no repo
+  `thac0berry-ipad` lê os modelos Swift e grava aqui. O CI do iPad (`data.yml`) acusa
+  quando o schema daqui não bate com o código de lá.
+- Tipos com `init(from:)` próprio (`ProficiencyEntry`, `CharacterClass`) são escritos à
+  mão dentro do gerador; um decode próprio novo sem essa entrada faz o gerador falhar.
+- **Datas:** ISO-8601 **sem fração de segundo** (`2026-10-05T12:00:00Z`). O
+  `toISOString()` do JavaScript grava `.000Z`, que o iPad recusa.
+- **UUID:** o iPad grava em maiúsculas; aceita os dois.
+- Um personagem ou campanha que não bate com o schema é descartado pelo iPad sozinho
+  (`LossyArray`), sem levar os outros junto, e sem aviso na tela.
+- Testes: `fixtures/library/valid-minimal.json` precisa passar; cada mutação de
+  `fixtures/library/invalid-cases.json` precisa falhar (são fichas que o iPad
+  rejeitaria). Rodam junto com `scripts/validate_schemas.py`.
+- Nunca commitar backup real de jogador como fixture.

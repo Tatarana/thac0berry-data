@@ -1,0 +1,184 @@
+{
+  "schemaVersion": 1,
+  "campaigns": [
+    {
+      "id": "6F1C2A10-0000-4000-8000-000000000001",
+      "name": "Example Campaign",
+      "startedDate": "2026-10-01T22:00:00Z",
+      "notes": "",
+      "isArchived": false,
+      "sessions": [
+        {
+          "id": "6F1C2A10-0000-4000-8000-000000000002",
+          "date": "2026-10-01T22:00:00Z",
+          "title": "Session 1",
+          "summary": "",
+          "isArchived": false
+        }
+      ],
+      "notebookEntries": [
+        {
+          "id": "6F1C2A10-0000-4000-8000-000000000003",
+          "date": "2026-10-01T22:30:00Z",
+          "title": "Rumors",
+          "text": "The old mill is haunted.",
+          "kind": "transcribed",
+          "paperStyle": "lined"
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "6F1C2A10-0000-4000-8000-000000000010",
+      "name": "Aldric",
+      "playerName": "Player",
+      "race": "Human",
+      "characterClass": "Cleric",
+      "level": 1,
+      "alignment": "Lawful Good",
+      "deity": "",
+      "sex": "",
+      "age": "",
+      "height": "",
+      "weight": "",
+      "hair": "",
+      "eyes": "",
+      "proficiencies": [
+        { "id": "6F1C2A10-0000-4000-8000-000000000011", "name": "Healing", "slots": 2, "checked": false }
+      ],
+      "thac0TargetOverrides": { "0": "20" },
+      "movement": 12,
+      "equipment": [],
+      "weapons": [
+        {
+          "id": "6F1C2A10-0000-4000-8000-000000000012",
+          "name": "Mace, Footman's",
+          "attacks": "1",
+          "thac0": "20",
+          "damageSmall": "1d6+1",
+          "damageLarge": "1d6",
+          "range": "—"
+        }
+      ],
+      "languages": ["Common"],
+      "magicItems": [],
+      "allies": [],
+      "treasure": { "platinum": 0, "gold": 10, "electrum": 0, "silver": 0, "copper": 0 },
+      "details": {
+        "strengthHit": "",
+        "strengthDamage": "",
+        "strengthWeight": "",
+        "strengthMaxPress": "",
+        "strengthDoors": "",
+        "strengthBars": "",
+        "dexterityReaction": "",
+        "dexterityMissile": "",
+        "dexterityDefense": "",
+        "constitutionHP": "",
+        "constitutionShock": "",
+        "constitutionResurrection": "",
+        "constitutionPoison": "",
+        "intelligenceLanguages": "",
+        "intelligenceMaxLevel": "",
+        "intelligenceLearn": "",
+        "intelligenceMaxPerLevel": "",
+        "wisdomDefense": "",
+        "wisdomFailure": "",
+        "wisdomBonusSpells": "",
+        "charismaHenchmen": "",
+        "charismaLoyalty": "",
+        "charismaReaction": ""
+      },
+      "abilities": {
+        "strength": 12,
+        "dexterity": 10,
+        "constitution": 14,
+        "intelligence": 10,
+        "wisdom": 16,
+        "charisma": 11
+      },
+      "saves": {
+        "paralyzationPoisonDeath": 10,
+        "rodStaffWand": 14,
+        "petrificationPolymorph": 13,
+        "breathWeapon": 16,
+        "spell": 15
+      },
+      "hitPointsMax": 8,
+      "hitPointsCurrent": 8,
+      "armorClass": 5,
+      "thac0": 20,
+      "experience": 0,
+      "armorRating": "",
+      "shieldRating": "",
+      "spellSheets": [
+        {
+          "id": "6F1C2A10-0000-4000-8000-000000000020",
+          "date": "2026-10-01T22:00:00Z",
+          "sessionID": "6F1C2A10-0000-4000-8000-000000000002",
+          "title": "Session 1",
+          "slotBoard": {
+            "slots": [
+              {
+                "id": "6F1C2A10-0000-4000-8000-000000000021",
+                "level": 1,
+                "caster": "divine",
+                "preparedSpellName": "Cure Light Wounds",
+                "isSpent": false,
+                "orderKey": 0
+              }
+            ]
+          },
+          "entries": [
+            {
+              "id": "6F1C2A10-0000-4000-8000-000000000022",
+              "rawText": "Bless",
+              "displayName": "Bless",
+              "spellLevel": 1,
+              "castCount": 1
+            }
+          ],
+          "magicItems": [],
+          "wisdomAtCreation": 16,
+          "turnUndeadUsed": 0
+        }
+      ],
+      "spellSlotAllotments": [
+        { "id": "6F1C2A10-0000-4000-8000-000000000030", "caster": "divine", "level": 1, "count": 2 }
+      ],
+      "campaignID": "6F1C2A10-0000-4000-8000-000000000001",
+      "status": "alive",
+      "activeEffects": [
+        {
+          "id": "6F1C2A10-0000-4000-8000-000000000040",
+          "name": "Bless",
+          "durationLabel": "6 rounds",
+          "notes": "",
+          "components": [
+            {
+              "id": "6F1C2A10-0000-4000-8000-000000000041",
+              "kind": "flatBonus",
+              "bonusTarget": "toHit",
+              "bonusAmount": 1,
+              "overrideStat": "strength",
+              "overrideValue": 0,
+              "previousValue": 0,
+              "usedCount": 0,
+              "maxUses": 1,
+              "healIsBanked": true,
+              "healWindowLabel": "6 hours",
+              "tempHPGranted": 0,
+              "tempHPRemaining": 0
+            }
+          ]
+        }
+      ],
+      "favoriteSpellIDs": [],
+      "sphereAccess": { "Healing": "major" },
+      "wizardSpellbook": []
+    }
+  ],
+  "favoriteSpellIDs": [],
+  "defaultNotebookPaperStyle": "plain"
+}

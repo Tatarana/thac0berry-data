@@ -1,0 +1,47 @@
+[
+  {
+    "why": "Data com fração de segundo (toISOString do JavaScript): o .iso8601 do iPad recusa",
+    "path": ["campaigns", 0, "startedDate"],
+    "set": "2026-10-01T22:00:00.000Z"
+  },
+  {
+    "why": "Campo com valor padrão no Swift, mas Codable sintetizado exige a chave",
+    "path": ["characters", 0, "treasure"],
+    "delete": true
+  },
+  {
+    "why": "null em campo não opcional",
+    "path": ["characters", 0, "deity"],
+    "set": null
+  },
+  {
+    "why": "Valor de enum que o app não conhece",
+    "path": ["characters", 0, "status"],
+    "set": "retired"
+  },
+  {
+    "why": "Número no lugar de texto",
+    "path": ["characters", 0, "weapons", 0, "thac0"],
+    "set": 20
+  },
+  {
+    "why": "UUID inválido",
+    "path": ["characters", 0, "id"],
+    "set": "aldric"
+  },
+  {
+    "why": "Inteiro com fração (Int no Swift)",
+    "path": ["characters", 0, "level"],
+    "set": 1.5
+  },
+  {
+    "why": "Chave não numérica num dicionário [Int: String]",
+    "path": ["characters", 0, "thac0TargetOverrides"],
+    "set": { "AC0": "20" }
+  },
+  {
+    "why": "Campo obrigatório ausente num tipo aninhado (EffectComponent.healWindowLabel)",
+    "path": ["characters", 0, "activeEffects", 0, "components", 0, "healWindowLabel"],
+    "delete": true
+  }
+]

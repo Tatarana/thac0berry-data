@@ -71,6 +71,43 @@ def path_of(err):
     return "/".join(str(p) for p in err.absolute_path) or "(raiz)"
 
 
+def check_library_fixtures():
+    """library.schema.json (ficha de personagem) não valida nada em data/:
+    é testado com fixtures. `valid-minimal.json` precisa passar (também com
+    campos desconhecidos proibidos); cada mutação de `invalid-cases.json`
+    aplicada a ele precisa falhar, senão o schema deixa passar uma ficha
+    que o iPad rejeitaria."""
+    folder = os.path.join(ROOT, "fixtures", "library")
+    schema = json.load(open(os.path.join(SCHEMAS, "library.schema.json"), encoding="utf-8"))
+    validator, closed_validator = Draft202012Validator(schema), Draft202012Validator(closed(schema))
+    valid = json.load(open(os.path.join(folder, "valid-minimal.json"), encoding="utf-8"))
+    failed = False
+
+    errors = list(closed_validator.iter_errors(valid))
+    print(f"{'FAIL' if errors else 'OK  '} {'fixtures/library/valid-minimal.json':36} {'library.schema.json':32} deve passar")
+    for e in errors[:10]:
+        print(f"     erro  {path_of(e)}: {e.message[:160]}")
+    failed |= bool(errors)
+
+    cases = json.load(open(os.path.join(folder, "invalid-cases.json"), encoding="utf-8"))
+    for case in cases:
+        doc = copy.deepcopy(valid)
+        node = doc
+        for key in case["path"][:-1]:
+            node = node[key]
+        if case.get("delete"):
+            del node[case["path"][-1]]
+        else:
+            node[case["path"][-1]] = case["set"]
+        passed = validator.is_valid(doc)
+        failed |= passed
+        where = "/".join(str(p) for p in case["path"])
+        print(f"{'FAIL' if passed else 'OK  '} {'fixtures/library/invalid-cases.json':36} deve falhar: {where}")
+        if passed:
+            print(f"     erro  o schema aceitou: {case['why']}")
+    return failed
+
+
 def main():
     strict = "--strict" in sys.argv
     failed = False
@@ -115,6 +152,7 @@ def main():
                         keys[k] += 1
             label = "erro " if strict else "aviso"
             print(f"     {label} campos ignorados pelo app: " + ", ".join(f"{k} ({n}x)" for k, n in keys.most_common()))
+    failed |= check_library_fixtures()
     print("\nResultado:", "FALHOU" if failed else "OK")
     return 1 if failed else 0
 

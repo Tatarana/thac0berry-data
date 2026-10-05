@@ -1,0 +1,2310 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://thac0berry/schemas/library.schema.json",
+  "title": "Biblioteca de personagens (library.json e backup)",
+  "description": "GERADO por thac0berry-ipad/Scripts/gen_library_schema.py a partir de Models/Character.swift, ActiveEffect.swift, SpellSheet.swift e Store/CharacterLibrary.swift (LibraryData). Não edite à mão. Itens de campaigns/characters que não batem com o schema são descartados pelo iPad (LossyArray), um por um.",
+  "type": "object",
+  "properties": {
+    "schemaVersion": {
+      "type": "integer",
+      "description": "CharacterLibrary.currentSchemaVersion; ausente = 0. Maior que o do app: abre só para leitura."
+    },
+    "campaigns": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/Campaign"
+      }
+    },
+    "characters": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/PlayerCharacter"
+      }
+    },
+    "favoriteSpellIDs": {
+      "anyOf": [
+        {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "defaultNotebookPaperStyle": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/NotebookPaperStyle"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    }
+  },
+  "$defs": {
+    "AbilityDetails": {
+      "type": "object",
+      "required": [
+        "strengthHit",
+        "strengthDamage",
+        "strengthWeight",
+        "strengthMaxPress",
+        "strengthDoors",
+        "strengthBars",
+        "dexterityReaction",
+        "dexterityMissile",
+        "dexterityDefense",
+        "constitutionHP",
+        "constitutionShock",
+        "constitutionResurrection",
+        "constitutionPoison",
+        "intelligenceLanguages",
+        "intelligenceMaxLevel",
+        "intelligenceLearn",
+        "intelligenceMaxPerLevel",
+        "wisdomDefense",
+        "wisdomFailure",
+        "wisdomBonusSpells",
+        "charismaHenchmen",
+        "charismaLoyalty",
+        "charismaReaction"
+      ],
+      "properties": {
+        "strengthHit": {
+          "type": "string"
+        },
+        "strengthDamage": {
+          "type": "string"
+        },
+        "strengthWeight": {
+          "type": "string"
+        },
+        "strengthMaxPress": {
+          "type": "string"
+        },
+        "strengthDoors": {
+          "type": "string"
+        },
+        "strengthBars": {
+          "type": "string"
+        },
+        "dexterityReaction": {
+          "type": "string"
+        },
+        "dexterityMissile": {
+          "type": "string"
+        },
+        "dexterityDefense": {
+          "type": "string"
+        },
+        "constitutionHP": {
+          "type": "string"
+        },
+        "constitutionShock": {
+          "type": "string"
+        },
+        "constitutionResurrection": {
+          "type": "string"
+        },
+        "constitutionPoison": {
+          "type": "string"
+        },
+        "intelligenceLanguages": {
+          "type": "string"
+        },
+        "intelligenceMaxLevel": {
+          "type": "string"
+        },
+        "intelligenceLearn": {
+          "type": "string"
+        },
+        "intelligenceMaxPerLevel": {
+          "type": "string"
+        },
+        "wisdomDefense": {
+          "type": "string"
+        },
+        "wisdomFailure": {
+          "type": "string"
+        },
+        "wisdomBonusSpells": {
+          "type": "string",
+          "description": "Bônus de magia por círculo, como está escrito na tabela do livro: \"+2 / +2 / +1\" — círculo 1 ganha +2 slot(s), círculo 2 +2, círculo 3 +1."
+        },
+        "charismaHenchmen": {
+          "type": "string"
+        },
+        "charismaLoyalty": {
+          "type": "string"
+        },
+        "charismaReaction": {
+          "type": "string"
+        },
+        "intelligenceSpellImmunity": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "wisdomSpellImmunity": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "constitutionRegen": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      }
+    },
+    "AbilityScores": {
+      "type": "object",
+      "required": [
+        "strength",
+        "dexterity",
+        "constitution",
+        "intelligence",
+        "wisdom",
+        "charisma"
+      ],
+      "properties": {
+        "strength": {
+          "type": "integer"
+        },
+        "exceptionalStrength": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "Força excepcional (01–00) — só guerreiros com Força 18."
+        },
+        "dexterity": {
+          "type": "integer"
+        },
+        "constitution": {
+          "type": "integer"
+        },
+        "intelligence": {
+          "type": "integer"
+        },
+        "wisdom": {
+          "type": "integer"
+        },
+        "charisma": {
+          "type": "integer"
+        }
+      }
+    },
+    "ActiveEffect": {
+      "type": "object",
+      "required": [
+        "id",
+        "name",
+        "durationLabel",
+        "notes",
+        "components"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[0-9A-Fa-f]{8}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{12}$"
+        },
+        "name": {
+          "type": "string",
+          "description": "Nome livre do item — \"Stone Skin\", \"Regenerate\", \"Potion of Fire Giant Strength\"... o que o jogador quiser digitar."
+        },
+        "durationLabel": {
+          "type": "string",
+          "description": "Duração em texto livre (\"3 rounds\", \"6 hours\", \"until it lands a hit\") — o app não tem relógio de rounds/turnos em lugar nenhum (nem a Priest Spell Sheet tem), então em vez de fingir que controla isso sozinho, só guarda a anotação que o jogador escreveu."
+        },
+        "notes": {
+          "type": "string"
+        },
+        "components": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/EffectComponent"
+          },
+          "description": "Um item pode ter mais de um efeito mecânico ao mesmo tempo — ex. Recitation é UM item com DOIS `EffectComponent`s (+3 To Hit, +3 Saves)."
+        }
+      }
+    },
+    "Campaign": {
+      "type": "object",
+      "required": [
+        "id",
+        "name",
+        "startedDate",
+        "notes",
+        "isArchived",
+        "sessions",
+        "notebookEntries"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[0-9A-Fa-f]{8}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{12}$"
+        },
+        "name": {
+          "type": "string"
+        },
+        "startedDate": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(Z|[+-]\\d{2}:?\\d{2})$",
+          "description": "Quando a campanha começou de verdade — não precisa bater com a data da sessão mais antiga (a campanha pode ter sido criada bem antes da primeira mesa marcada, ex.: personagens preparados com um mês de antecedência)."
+        },
+        "notes": {
+          "type": "string"
+        },
+        "isArchived": {
+          "type": "boolean",
+          "description": "Encerrada (nunca apagada) — sai da lista principal, mas continua consultável, igual a uma sessão arquivada."
+        },
+        "sessions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Session"
+          },
+          "description": "As sessões de mesa — cada uma agrupa um punhado de folhas de dia de um ou mais personagens."
+        },
+        "notebookEntries": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/NotebookEntry"
+          },
+          "description": "Caderno de anotações livres da campanha — encontros com NPCs, pistas, decisões do grupo. Compartilhado por todo mundo que joga essa campanha, não mais um caderno por personagem."
+        },
+        "enabledSettings": {
+          "anyOf": [
+            {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "uniqueItems": true
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "Cenários de campanha ligados (ver `CampaignSettingCatalog`) — `nil` é o padrão (campanha nova, ou nunca mexeu nisso) e significa \"sem filtro, mostra tudo\", igual toda outra feature de sinalização deste app (esferas de acesso, etc.): nunca quebra campanha existente, só SOMA um filtro quando o jogador liga pelo menos um cenário. Um conjunto vazio (todos os cenários desligados na mão) tem o mesmo efeito de `nil` — só o conteúdo genérico/core apareceria, o que não faz sentido pra nenhuma mesa de verdade, então é tratado como \"sem filtro\" também (ver `allowsSetting`)."
+        }
+      }
+    },
+    "CasterType": {
+      "type": "string",
+      "enum": [
+        "arcane",
+        "divine"
+      ]
+    },
+    "CharacterClass": {
+      "type": "string",
+      "enum": [
+        "Fighter",
+        "Paladin",
+        "Ranger",
+        "Mage",
+        "Cleric",
+        "Druid",
+        "Thief",
+        "Bard",
+        "Ninja",
+        "Guerreiro",
+        "Paladino",
+        "Patrulheiro",
+        "Mago",
+        "Clérigo",
+        "Druida",
+        "Ladino",
+        "Bardo"
+      ],
+      "description": "Gravar só os valores em inglês; os em português são de bibliotecas antigas."
+    },
+    "CharacterStatus": {
+      "type": "string",
+      "enum": [
+        "alive",
+        "dead",
+        "archived"
+      ]
+    },
+    "CombatDetails": {
+      "type": "object",
+      "required": [],
+      "properties": {
+        "surprisedAC": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "shieldlessAC": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "rearAC": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "typeWorn": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "dexChecks": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "visionChecks": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "hearingChecks": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "hitDiceType": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "numbedNumber": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "uselessNumber": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "maxDeaths": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "deathsToDate": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "wounds": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      }
+    },
+    "EffectComponent": {
+      "type": "object",
+      "required": [
+        "id",
+        "kind",
+        "bonusTarget",
+        "bonusAmount",
+        "overrideStat",
+        "overrideValue",
+        "previousValue",
+        "usedCount",
+        "maxUses",
+        "healIsBanked",
+        "healWindowLabel",
+        "tempHPGranted",
+        "tempHPRemaining"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[0-9A-Fa-f]{8}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{12}$"
+        },
+        "kind": {
+          "$ref": "#/$defs/EffectComponent.Kind"
+        },
+        "bonusTarget": {
+          "$ref": "#/$defs/EffectComponent.BonusTarget"
+        },
+        "bonusAmount": {
+          "type": "integer"
+        },
+        "appliedDamageRowID": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[0-9A-Fa-f]{8}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{12}$"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "`EquipmentItem.id` da linha inserida em `damageModifiers` (só quando o alvo é `.damage` — os outros três alvos escrevem direto no campo numérico, sem precisar de linha nenhuma) — guardado só pra `revertActiveEffectApplication` saber qual linha remover, sem mexer nas outras que o jogador tenha lançado à mão."
+        },
+        "savingThrowIDs": {
+          "anyOf": [
+            {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "uniqueItems": true
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "Só quando `bonusTarget == .allSaves`: QUAIS jogadas de resistência recebem o bônus — pedido do usuário (2026-09-29): \"além da opção de bônus pra TODOS os saves, dar opção de escolher um ou mais dentre eles\". `nil` = todos os cinco (era o único comportamento antes desta versão, então fichas salvas com a v1.79 ou antes continuam se comportando exatamente igual). Guarda os `id`s de `SavingThrows.SaveEntry` (\"ppd\", \"rsw\", \"pp\", \"bw\", \"sp\")."
+        },
+        "overrideStat": {
+          "$ref": "#/$defs/EffectComponent.OverrideStat"
+        },
+        "overrideValue": {
+          "type": "integer"
+        },
+        "previousValue": {
+          "type": "integer",
+          "description": "Valor do campo ANTES da substituição — devolvido ao encerrar o efeito. Só tem sentido depois que o efeito foi mesmo aplicado."
+        },
+        "usedCount": {
+          "type": "integer"
+        },
+        "maxUses": {
+          "type": "integer"
+        },
+        "healIsBanked": {
+          "type": "boolean",
+          "description": "Só pra `.bankedHeal`: `true` enquanto a cura ainda não foi disparada (esperando o personagem tomar dano). `applyDamage`, em `PlayerCharacter`, vira isso pra `false` sozinho no primeiro dano recebido enquanto o efeito existir."
+        },
+        "healWindowLabel": {
+          "type": "string",
+          "description": "Prazo (em HORAS) pra cura ser disparada antes de expirar — texto livre em vez de número (efeitos de longa duração de campanha, tipo \"até a próxima lua cheia\", podem passar de milhares de horas) — só anotação, o app não conta o tempo sozinho (mesmo motivo de `ActiveEffect.durationLabel`)."
+        },
+        "tempHPGranted": {
+          "type": "integer"
+        },
+        "tempHPRemaining": {
+          "type": "integer"
+        }
+      }
+    },
+    "EffectComponent.BonusTarget": {
+      "type": "string",
+      "enum": [
+        "toHit",
+        "allSaves",
+        "armorClass",
+        "damage"
+      ]
+    },
+    "EffectComponent.Kind": {
+      "type": "string",
+      "enum": [
+        "flatBonus",
+        "statOverride",
+        "attackNegation",
+        "bankedHeal",
+        "tempHP",
+        "note"
+      ]
+    },
+    "EffectComponent.OverrideStat": {
+      "type": "string",
+      "enum": [
+        "strength",
+        "dexterity",
+        "constitution",
+        "intelligence",
+        "wisdom",
+        "charisma",
+        "armorClass",
+        "thac0"
+      ]
+    },
+    "EncumbranceRow": {
+      "type": "object",
+      "required": [
+        "weightCarried",
+        "moveRate",
+        "attackPenalty",
+        "acPenalty"
+      ],
+      "properties": {
+        "weightCarried": {
+          "type": "string"
+        },
+        "moveRate": {
+          "type": "string"
+        },
+        "attackPenalty": {
+          "type": "string"
+        },
+        "acPenalty": {
+          "type": "string"
+        }
+      }
+    },
+    "EncumbranceTable": {
+      "type": "object",
+      "required": [
+        "light",
+        "moderate",
+        "heavy",
+        "severe"
+      ],
+      "properties": {
+        "light": {
+          "$ref": "#/$defs/EncumbranceRow"
+        },
+        "moderate": {
+          "$ref": "#/$defs/EncumbranceRow"
+        },
+        "heavy": {
+          "$ref": "#/$defs/EncumbranceRow"
+        },
+        "severe": {
+          "$ref": "#/$defs/EncumbranceRow"
+        }
+      }
+    },
+    "EquipmentItem": {
+      "type": "object",
+      "required": [
+        "id",
+        "name",
+        "note"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[0-9A-Fa-f]{8}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{12}$"
+        },
+        "name": {
+          "type": "string"
+        },
+        "note": {
+          "type": "string"
+        }
+      }
+    },
+    "ItemSpellUse": {
+      "type": "object",
+      "required": [
+        "id",
+        "spellName",
+        "damageNote",
+        "maxUses",
+        "usedCount"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[0-9A-Fa-f]{8}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{12}$"
+        },
+        "spellName": {
+          "type": "string"
+        },
+        "matchedSpellID": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "Magia da base embutida, quando reconhecida — usada para abrir a descrição completa."
+        },
+        "damageNote": {
+          "type": "string",
+          "description": "Dano ou cura do item, como texto livre (\"1d6+1\", \"2d4 fire\") — o item pode ter um valor diferente do da magia \"de livro\"."
+        },
+        "maxUses": {
+          "type": "integer",
+          "description": "Teto de cargas — impede riscar além do que o item tem. Editável, não é desenhado como marcas prontas: só limita até onde o traço vai."
+        },
+        "usedCount": {
+          "type": "integer",
+          "description": "Quantos traços já foram feitos — cada arrasto na área em branco soma um, como um risco na parede feito à mão, não uma bolinha preenchida."
+        }
+      }
+    },
+    "LevelChangeRow": {
+      "type": "object",
+      "required": [
+        "by",
+        "atLevels"
+      ],
+      "properties": {
+        "by": {
+          "type": "string"
+        },
+        "atLevels": {
+          "type": "string"
+        }
+      }
+    },
+    "LevelChangesTable": {
+      "type": "object",
+      "required": [
+        "thac0",
+        "savingThrows",
+        "weaponProficiencies",
+        "nonWeaponProficiencies"
+      ],
+      "properties": {
+        "thac0": {
+          "$ref": "#/$defs/LevelChangeRow"
+        },
+        "savingThrows": {
+          "$ref": "#/$defs/LevelChangeRow"
+        },
+        "weaponProficiencies": {
+          "$ref": "#/$defs/LevelChangeRow"
+        },
+        "nonWeaponProficiencies": {
+          "$ref": "#/$defs/LevelChangeRow"
+        }
+      }
+    },
+    "MagicItem": {
+      "type": "object",
+      "required": [
+        "id",
+        "name",
+        "itemDescription",
+        "spells"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[0-9A-Fa-f]{8}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{12}$"
+        },
+        "name": {
+          "type": "string"
+        },
+        "matchedItemID": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "Item 1 do pedido do usuário (2026-09-27): \"Item\" passou a também listar os itens do catálogo (`MagicItemDatabase`, mesma base da aba Equipment/página 2), sem obrigar a escolha de um existente — igual ao padrão já usado em `MagicItemQuantifiedRow`. `nil` quando o nome foi digitado à mão (item caseiro) ou numa ficha salva antes desta versão."
+        },
+        "itemDescription": {
+          "type": "string",
+          "description": "Texto livre — o que o item faz, propriedades, aparência. Só relevante quando `matchedItemID` é `nil`: um item ligado ao catálogo mostra a descrição de lá (`MagicItemDetailSheet`), não esta."
+        },
+        "spells": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/ItemSpellUse"
+          }
+        }
+      }
+    },
+    "MovementRates": {
+      "type": "object",
+      "required": [
+        "base",
+        "jog",
+        "runX3",
+        "runX4",
+        "runX5",
+        "day"
+      ],
+      "properties": {
+        "base": {
+          "type": "string"
+        },
+        "jog": {
+          "type": "string"
+        },
+        "runX3": {
+          "type": "string"
+        },
+        "runX4": {
+          "type": "string"
+        },
+        "runX5": {
+          "type": "string"
+        },
+        "day": {
+          "type": "string"
+        }
+      }
+    },
+    "NotebookEntry": {
+      "type": "object",
+      "required": [
+        "id",
+        "date",
+        "title",
+        "text"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[0-9A-Fa-f]{8}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{12}$"
+        },
+        "date": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(Z|[+-]\\d{2}:?\\d{2})$",
+          "description": "ISO-8601 sem fração de segundo (JSONDecoder .iso8601)."
+        },
+        "title": {
+          "type": "string"
+        },
+        "text": {
+          "type": "string"
+        },
+        "kind": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/NotebookPageKind"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "Optional pelo mesmo motivo de sempre: folhas criadas antes desta versão não têm essa chave — ausência é tratada como `.transcribed`, que era o único tipo que existia até então."
+        },
+        "drawingData": {
+          "anyOf": [
+            {
+              "type": "string",
+              "contentEncoding": "base64",
+              "pattern": "^[A-Za-z0-9+/]*={0,2}$"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "Traço de tinta serializado (PKDrawing.dataRepresentation()) — só usado quando kind == .freeform."
+        },
+        "paperStyle": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/NotebookPaperStyle"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "Optional pelo mesmo motivo de sempre — folha criada antes desta versão não tem essa chave; ausência é tratada como `.plain` na hora de exibir (ver `NotebookPageView.style`), igual a como toda folha já era antes deste pedido existir. Cada folha guarda a PRÓPRIA escolha (pode trocar depois de criada, ver `NotebookBeadRow`'s picker no cabeçalho); só a folha NOVA nasce com o padrão configurado em Settings (`CharacterLibrary.defaultNotebookPaperStyle`, item 3)."
+        }
+      }
+    },
+    "NotebookPageKind": {
+      "type": "string",
+      "enum": [
+        "transcribed",
+        "freeform"
+      ]
+    },
+    "NotebookPaperStyle": {
+      "type": "string",
+      "enum": [
+        "plain",
+        "lined",
+        "grid"
+      ]
+    },
+    "Page2EquipmentEntry": {
+      "type": "object",
+      "required": [
+        "id",
+        "item",
+        "location",
+        "weight"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[0-9A-Fa-f]{8}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{12}$"
+        },
+        "item": {
+          "type": "string"
+        },
+        "location": {
+          "type": "string"
+        },
+        "weight": {
+          "type": "string"
+        },
+        "column": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "Coluna fixa em que a linha nasceu (0 ou 1). Antes as duas colunas eram um rodízio calculado pelo índice na lista — apagar uma linha deslocava o índice de tudo que vinha depois, e metade das linhas \"pulava\" de coluna. Guardando a coluna na própria linha, apagar uma só mexe nas linhas abaixo dela NA MESMA coluna, como uma lista normal. Optional pelo mesmo motivo de sempre; ausência vira coluna 0."
+        },
+        "matchedItemID": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "`MundaneItem.id` quando esta linha veio do `MundaneItemPickerSheet` (Equipment Compendium) — mesmo padrão de `ProficiencyEntry.matchedProficiencyID`/`WeaponEntry.matchedWeaponID`: liga a linha à base pra abrir a descrição completa (custo/peso) num toque. `nil` numa linha digitada à mão (fichas antigas, ou item caseiro fora do catálogo de 183 itens)."
+        }
+      }
+    },
+    "PlayerCharacter": {
+      "type": "object",
+      "required": [
+        "id",
+        "name",
+        "playerName",
+        "race",
+        "characterClass",
+        "level",
+        "alignment",
+        "deity",
+        "sex",
+        "age",
+        "height",
+        "weight",
+        "hair",
+        "eyes",
+        "movement",
+        "equipment",
+        "weapons",
+        "languages",
+        "magicItems",
+        "allies",
+        "treasure",
+        "details",
+        "abilities",
+        "saves",
+        "hitPointsMax",
+        "hitPointsCurrent",
+        "armorClass",
+        "thac0",
+        "experience",
+        "armorRating",
+        "shieldRating",
+        "spellSheets",
+        "spellSlotAllotments",
+        "status",
+        "favoriteSpellIDs",
+        "wizardSpellbook"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[0-9A-Fa-f]{8}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{12}$"
+        },
+        "name": {
+          "type": "string"
+        },
+        "playerName": {
+          "type": "string"
+        },
+        "race": {
+          "type": "string"
+        },
+        "characterClass": {
+          "$ref": "#/$defs/CharacterClass"
+        },
+        "level": {
+          "type": "integer"
+        },
+        "alignment": {
+          "type": "string"
+        },
+        "deity": {
+          "type": "string"
+        },
+        "sex": {
+          "type": "string"
+        },
+        "age": {
+          "type": "string"
+        },
+        "height": {
+          "type": "string"
+        },
+        "weight": {
+          "type": "string"
+        },
+        "hair": {
+          "type": "string"
+        },
+        "eyes": {
+          "type": "string"
+        },
+        "kit": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "placeOfOrigin": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "combat": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/CombatDetails"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "proficiencies": {
+          "anyOf": [
+            {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/ProficiencyEntry"
+              }
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "thievingSkills": {
+          "anyOf": [
+            {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/ThievingSkillEntry"
+              }
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "Thieving Skills (2026-09-30, grupo Rogue) — ver `ThievingSkillEntry` e `CharacterClass.hasThievingSkills`. `nil`/vazio pra qualquer ficha de classe fora do grupo Rogue, ou salva antes desta versão."
+        },
+        "toHitModifiers": {
+          "anyOf": [
+            {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/EquipmentItem"
+              }
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "damageModifiers": {
+          "anyOf": [
+            {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/EquipmentItem"
+              }
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "acModifiers": {
+          "anyOf": [
+            {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/EquipmentItem"
+              }
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "nonProficiencyPenalty": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "thac0TargetOverrides": {
+          "anyOf": [
+            {
+              "type": "object",
+              "additionalProperties": {
+                "type": "string"
+              },
+              "propertyNames": {
+                "pattern": "^-?\\d+$"
+              }
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "Ajustes manuais da tabela \"Target's AC / To Hit #\", indexados pela CA alvo (10 a −10). Uma CA sem entrada aqui usa o valor calculado automaticamente a partir do THAC0 — ver `thac0TargetDisplay`."
+        },
+        "birthDate": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "birthRank": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "nationality": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "racialAbilities": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "skin": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "vision": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "handedness": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "personality": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "hitPointsByLevel": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "backgroundHistory": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "portraitImageData": {
+          "anyOf": [
+            {
+              "type": "string",
+              "contentEncoding": "base64",
+              "pattern": "^[A-Za-z0-9+/]*={0,2}$"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "Retrato pro quadrado \"Character Sketch\" do PDF — enviado pelo jogador (upload de foto/desenho), não gerado pelo app. Guardado já redimensionado e comprimido em JPEG (ver `UIImage.resizedForSketch` em `CharacterDescriptionView.swift`) antes de chegar aqui, pro JSON da biblioteca não inchar com fotos em resolução de câmera."
+        },
+        "page2Equipment": {
+          "anyOf": [
+            {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/Page2EquipmentEntry"
+              }
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "page2TotalWeight": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "page2EquipmentEncumbrance": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "page2MovementRate": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "page2Movement": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/MovementRates"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "page2EncumbranceTable": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/EncumbranceTable"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "xpNeededNextLevel": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "xpKitModifier": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "xpAbilityBonus": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "xpSubraceModifier": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "xpLevelLimit": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "levelChanges": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/LevelChangesTable"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "page2TreasureNotes": {
+          "anyOf": [
+            {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "Substituída por `page2MagicItems`/`page2TreasureItems` (com quantidade) — o campo antigo fica aqui só pra não quebrar a leitura de fichas salvas com ele, mas não é mais editado em lugar nenhum."
+        },
+        "page2MagicItems": {
+          "anyOf": [
+            {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/QuantifiedItem"
+              }
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "page2TreasureItems": {
+          "anyOf": [
+            {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/QuantifiedItem"
+              }
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "movement": {
+          "type": "integer"
+        },
+        "equipment": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/EquipmentItem"
+          }
+        },
+        "weapons": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/WeaponEntry"
+          }
+        },
+        "languages": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "magicItems": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "allies": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "treasure": {
+          "$ref": "#/$defs/Treasure"
+        },
+        "details": {
+          "$ref": "#/$defs/AbilityDetails"
+        },
+        "abilities": {
+          "$ref": "#/$defs/AbilityScores"
+        },
+        "saves": {
+          "$ref": "#/$defs/SavingThrows"
+        },
+        "hitPointsMax": {
+          "type": "integer"
+        },
+        "hitPointsCurrent": {
+          "type": "integer"
+        },
+        "armorClass": {
+          "type": "integer"
+        },
+        "thac0": {
+          "type": "integer"
+        },
+        "experience": {
+          "type": "integer"
+        },
+        "armorRating": {
+          "type": "string",
+          "description": "Armadura e escudo separados, porque a ficha oficial mostra a conta."
+        },
+        "shieldRating": {
+          "type": "string"
+        },
+        "spellSheets": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/SpellSheet"
+          },
+          "description": "Uma folha de magias por dia de jogo. Os slots vivem aqui, não no personagem: eles zeram no repouso, e cada dia é uma folha nova."
+        },
+        "spellSlotAllotments": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/SpellSlotAllotment"
+          },
+          "description": "Quantos slots de cada círculo o personagem tem por descanso — a tabela de memorização da classe, preenchida uma vez aqui na ficha. Toda folha de magia nova nasce a partir dela; não é editável dia a dia na própria folha, porque senão duas folhas do mesmo personagem discordariam sobre quantos slots ele tem."
+        },
+        "campaignID": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[0-9A-Fa-f]{8}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{12}$"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "A campanha a que este personagem pertence — `nil` quer dizer que ele está no Sandbox: já existe (atributos, equipamento, o que for), mas ainda não foi associado a nenhuma campanha de verdade. É a campanha, não mais o personagem, que possui as sessões de mesa e o caderno — ver `Campaign`."
+        },
+        "status": {
+          "$ref": "#/$defs/CharacterStatus",
+          "description": "Vivo, morto (mas consultável) ou aposentado sem ter morrido."
+        },
+        "diedOn": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(Z|[+-]\\d{2}:?\\d{2})$",
+              "description": "ISO-8601 sem fração de segundo (JSONDecoder .iso8601)."
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "Quando morreu, se for o caso — a data real da mesa, não uma data da história."
+        },
+        "deathNote": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "Nota livre sobre a morte (ex.: \"caiu pra um dragão vermelho perto de Elturel\")."
+        },
+        "clonedFromCharacterID": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[0-9A-Fa-f]{8}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{12}$"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "Se este personagem nasceu de \"Clonar personagem\", o id de quem foi clonado — só pra rastrear a linhagem; nada no app depende disso pra funcionar."
+        },
+        "lastAppliedLevel": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "lastAppliedAbilities": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/AbilityScores"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "lastAppliedClass": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/CharacterClass"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "Classe no último snapshot de consequências — sem ela, trocar de classe nunca aparecia como mudança (o \"antes\" usava a classe atual)."
+        },
+        "lastChangedField": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "Qual campo foi editado por último, entre os que o motor de consequências acompanha (\"level\", \"strength\", \"dexterity\", \"constitution\", \"intelligence\", \"wisdom\", \"charisma\") — decide ONDE mostrar o sinal (ver `effectiveChangedField`). Setado pelas views (`RecordHeaderForm`/`AbilityScoresForm`, via `.onChange`) a cada edição de verdade, e zerado em `markConsequencesReviewed()`."
+        },
+        "recentAutoChanges": {
+          "anyOf": [
+            {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "uniqueItems": true
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "Não existe pra tudo que muda (edição manual do jogador não entra aqui) — só pra mudanças que o APP fez sozinho, feitas fora da visão do jogador naquele instante (ex.: escolher raça mexe em Força/Constituição na aba Sheet enquanto ele está na aba Description). Optional pelo mesmo motivo de sempre."
+        },
+        "activeEffects": {
+          "anyOf": [
+            {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/ActiveEffect"
+              }
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "favoriteSpellIDs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true,
+          "description": "LEGADO (2026-09-19): favoritar deixou de ser por personagem e virou preferência global do jogador — ver `CharacterLibrary.favoriteSpellIDs`. Este campo continua aqui só pra migrar fichas salvas ANTES da troca (`CharacterLibrary.load()` junta os favoritos de todo personagem num conjunto só, uma vez); nada escreve nele de novo, e nenhuma tela lê dele — todo mundo passou a consultar a biblioteca."
+        },
+        "sphereAccess": {
+          "anyOf": [
+            {
+              "type": "object",
+              "additionalProperties": {
+                "$ref": "#/$defs/SphereAccessLevel"
+              }
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "Esferas de acesso (TODO.md item 16) — `nil`/vazio até o jogador preencher pela primeira vez (nenhuma ficha antiga tem essa chave). Guardado como dicionário esfera→nível em vez de dois `Set`s separados porque uma esfera só pode ter UM nível por personagem — o dicionário já impede o estado inválido \"maior E menor ao mesmo tempo\" que dois conjuntos permitiriam sem checagem extra."
+        },
+        "wildTalent": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/WildTalent"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "Wild Talent (CPsiH, \"fundação primeiro\" dos Psiônicos, 2026-10-01) — `nil` até o jogador registrar um (toda ficha de antes desta versão não tem essa chave). Disponível pra QUALQUER classe, ao contrário de `sphereAccess`/`kit` — ver `WildTalent`."
+        },
+        "wizardSpellbook": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/WizardSpellbookEntry"
+          },
+          "description": "`wizardSpellbook` fica no `PlayerCharacter` (não na Folha de Magias) pelo mesmo motivo de `sphereAccess`: é um traço PERMANENTE do personagem, não algo que só existe enquanto o dia de jogo dura."
+        },
+        "wizardSchool": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/WizardSchool"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "Especialização de escola (2026-09-30, Table 22) — `nil` é generalista (comportamento de sempre: nenhum bônus, nenhuma restrição). Fica opcional/`nil` de propósito pra fichas antigas (Mago criado antes desta versão) continuarem decodificando sem ficar preso a uma escola que nunca escolheu."
+        }
+      }
+    },
+    "ProficiencyEntry": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[0-9A-Fa-f]{8}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{12}$"
+        },
+        "name": {
+          "type": "string"
+        },
+        "slots": {
+          "type": [
+            "integer",
+            "string"
+          ]
+        },
+        "checked": {
+          "type": "boolean"
+        },
+        "target": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "matchedProficiencyID": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "QuantifiedItem": {
+      "type": "object",
+      "required": [
+        "id",
+        "name",
+        "quantity"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[0-9A-Fa-f]{8}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{12}$"
+        },
+        "name": {
+          "type": "string"
+        },
+        "quantity": {
+          "type": "integer"
+        },
+        "usedCount": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "Quantos já foram usados/gastos — marcado a mão com o mesmo contador de traço (\"pauzinhos\") da Priest Spell Sheet. Optional pelo mesmo motivo de sempre: linhas criadas antes desta versão não têm essa chave."
+        },
+        "matchedItemID": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "Liga esta linha a um item de `MagicItemDatabase` (mesmo padrão de `Page2EquipmentEntry.matchedItemID`/`MundaneItemDatabase`) — só usado pela lista \"Magic Items\" (não por \"Treasure / Other Possessions\", que continua puramente texto livre). `nil` = linha digitada à mão pelo jogador (item caseiro/criado por ele) ou ficha salva antes desta versão existir; nesse caso cai pro fallback de nome exato, igual ao equipamento mundano."
+        }
+      }
+    },
+    "SavingThrows": {
+      "type": "object",
+      "required": [
+        "paralyzationPoisonDeath",
+        "rodStaffWand",
+        "petrificationPolymorph",
+        "breathWeapon",
+        "spell"
+      ],
+      "properties": {
+        "paralyzationPoisonDeath": {
+          "type": "integer"
+        },
+        "rodStaffWand": {
+          "type": "integer"
+        },
+        "petrificationPolymorph": {
+          "type": "integer"
+        },
+        "breathWeapon": {
+          "type": "integer"
+        },
+        "spell": {
+          "type": "integer"
+        },
+        "spellResistance": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "Resistência mágica — linha extra do PDF oficial, texto livre (ex.: \"10%\"). Optional pelo mesmo motivo de sempre: fichas antigas não têm essa chave no JSON salvo."
+        },
+        "modifiers": {
+          "anyOf": [
+            {
+              "type": "object",
+              "additionalProperties": {
+                "type": "integer"
+              }
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "Coluna \"Mod\" do PDF — ajuste numérico por jogada (positivo = bônus, facilita; negativo = penalidade), guardado por `SaveEntry.id` porque cada jogada não tinha campo próprio antes. Optional pelo mesmo motivo de sempre: fichas antigas não têm essa chave no JSON salvo."
+        }
+      }
+    },
+    "Session": {
+      "type": "object",
+      "required": [
+        "id",
+        "date",
+        "title",
+        "summary",
+        "isArchived"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[0-9A-Fa-f]{8}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{12}$"
+        },
+        "date": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(Z|[+-]\\d{2}:?\\d{2})$",
+          "description": "A data real da mesa — o dia em que vocês jogaram, não um dia dentro da história."
+        },
+        "title": {
+          "type": "string"
+        },
+        "summary": {
+          "type": "string"
+        },
+        "isArchived": {
+          "type": "boolean",
+          "description": "Sessões encerradas somem da faixa de abas e da lista principal do índice, mas os dados continuam intactos — arquivar nunca apaga."
+        }
+      }
+    },
+    "SpellLogEntry": {
+      "type": "object",
+      "required": [
+        "id",
+        "rawText",
+        "displayName",
+        "castCount"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[0-9A-Fa-f]{8}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{12}$"
+        },
+        "rawText": {
+          "type": "string",
+          "description": "Texto vindo da escrita com a Apple Pencil, antes de qualquer correção."
+        },
+        "matchedSpellID": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "Magia da base embutida, quando o casamento foi confirmado."
+        },
+        "displayName": {
+          "type": "string",
+          "description": "Nome final exibido — vem da magia casada ou do texto corrigido."
+        },
+        "spellLevel": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "castCount": {
+          "type": "integer",
+          "description": "Quantas vezes essa mesma magia foi conjurada nessa linha — um traço por conjuração, igual à contagem de Turn Undead, em vez de uma linha nova pra cada lançamento repetido do mesmo feitiço."
+        }
+      }
+    },
+    "SpellSheet": {
+      "type": "object",
+      "required": [
+        "id",
+        "date",
+        "title",
+        "slotBoard",
+        "entries",
+        "magicItems",
+        "wisdomAtCreation",
+        "turnUndeadUsed"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[0-9A-Fa-f]{8}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{12}$"
+        },
+        "date": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(Z|[+-]\\d{2}:?\\d{2})$",
+          "description": "ISO-8601 sem fração de segundo (JSONDecoder .iso8601)."
+        },
+        "sessionID": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[0-9A-Fa-f]{8}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{12}$"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "A sessão de mesa (data real) a que esse dia pertence. `nil` só em folhas de uma versão anterior a Sessão — `migrateLegacySheetsIfNeeded` resolve isso na primeira leitura."
+        },
+        "title": {
+          "type": "string",
+          "description": "Como você chama esse dia na mesa (\"3º dia em Elturel\")."
+        },
+        "slotBoard": {
+          "$ref": "#/$defs/SpellSlotBoard",
+          "description": "Os slots e o que foi memorizado neles neste dia."
+        },
+        "entries": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/SpellLogEntry"
+          },
+          "description": "O que foi efetivamente conjurado ao longo do dia."
+        },
+        "magicItems": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/MagicItem"
+          },
+          "description": "Itens mágicos (anéis, cajados, bastões, armaduras...) — cada um pode ter mais de uma magia atrelada, com cargas do próprio item, não os slots de memorização do personagem, então vivem à parte da grade de círculos."
+        },
+        "inkNotes": {
+          "anyOf": [
+            {
+              "type": "string",
+              "contentEncoding": "base64",
+              "pattern": "^[A-Za-z0-9+/]*={0,2}$"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "Anotações livres do dia, escritas à mão."
+        },
+        "wisdomAtCreation": {
+          "type": "integer",
+          "description": "A Sabedoria do personagem no momento em que esta folha foi criada. Fica congelada aqui de propósito: se o personagem ganhar Sabedoria depois (item, ajuste), uma folha de uma data passada não deve mudar retroativamente — ela mostra a Sabedoria que valia naquele dia."
+        },
+        "turnUndeadUsed": {
+          "type": "integer",
+          "description": "Quantas vezes o clérigo já tentou expulsar mortos-vivos hoje. Sem teto — em 2e a tentativa de Turn Undead não é limitada por dia, só o resultado da rolagem é que decide se funciona."
+        }
+      }
+    },
+    "SpellSlot": {
+      "type": "object",
+      "required": [
+        "id",
+        "level",
+        "caster",
+        "isSpent",
+        "orderKey"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[0-9A-Fa-f]{8}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{12}$"
+        },
+        "level": {
+          "type": "integer"
+        },
+        "caster": {
+          "$ref": "#/$defs/CasterType"
+        },
+        "preparedSpellID": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "Magia preparada neste slot (id da base de magias), se houver."
+        },
+        "preparedSpellName": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "Nome livre, para magias que não estão na base embutida."
+        },
+        "isSpent": {
+          "type": "boolean"
+        },
+        "orderKey": {
+          "type": "integer",
+          "description": "Posição do slot dentro do próprio círculo — só existe pra dar ao `sortSlots()` um critério de desempate que NÃO seja o `id`. Optional pelo motivo de sempre: folha salva antes desta versão não tem essa chave; ausência vira `0` pra todo mundo, o que é inofensivo (ver comentário em `sortSlots`). Corrige o bug relatado pelo usuário (2026-09-28): \"ao criar uma nova priest spell sheet, as magias aparecem em ordem totalmente aleatória\" — `SpellSheet.nextDay()` dá um `id` NOVO e aleatório pra cada slot de propósito (dois dias não podem ter slots com a mesma identidade), mas o desempate do sort usava justamente esse `id`, então a ordem visual do círculo virava loteria a cada dia novo. `orderKey` nunca é regenerado por `nextDay()` — só o `id` muda — então a ordem sobrevive à criação da folha nova."
+        }
+      }
+    },
+    "SpellSlotAllotment": {
+      "type": "object",
+      "required": [
+        "id",
+        "caster",
+        "level",
+        "count"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[0-9A-Fa-f]{8}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{12}$"
+        },
+        "caster": {
+          "$ref": "#/$defs/CasterType"
+        },
+        "level": {
+          "type": "integer"
+        },
+        "count": {
+          "type": "integer"
+        }
+      }
+    },
+    "SpellSlotBoard": {
+      "type": "object",
+      "required": [
+        "slots"
+      ],
+      "properties": {
+        "slots": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/SpellSlot"
+          }
+        }
+      }
+    },
+    "SphereAccessLevel": {
+      "type": "string",
+      "enum": [
+        "major",
+        "minor"
+      ]
+    },
+    "ThievingSkillEntry": {
+      "type": "object",
+      "required": [
+        "id",
+        "skill",
+        "value"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[0-9A-Fa-f]{8}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{12}$"
+        },
+        "skill": {
+          "type": "string"
+        },
+        "value": {
+          "type": "string"
+        }
+      }
+    },
+    "Treasure": {
+      "type": "object",
+      "required": [
+        "platinum",
+        "gold",
+        "electrum",
+        "silver",
+        "copper"
+      ],
+      "properties": {
+        "platinum": {
+          "type": "integer"
+        },
+        "gold": {
+          "type": "integer"
+        },
+        "electrum": {
+          "type": "integer"
+        },
+        "silver": {
+          "type": "integer"
+        },
+        "copper": {
+          "type": "integer"
+        }
+      }
+    },
+    "WeaponEntry": {
+      "type": "object",
+      "required": [
+        "id",
+        "name",
+        "attacks",
+        "thac0",
+        "damageSmall",
+        "damageLarge",
+        "range"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[0-9A-Fa-f]{8}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{12}$"
+        },
+        "name": {
+          "type": "string"
+        },
+        "attacks": {
+          "type": "string"
+        },
+        "thac0": {
+          "type": "string"
+        },
+        "damageSmall": {
+          "type": "string"
+        },
+        "damageLarge": {
+          "type": "string"
+        },
+        "range": {
+          "type": "string"
+        },
+        "size": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "weaponType": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "speed": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "hitAdj": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "dmgAdj": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "rangeSpecial": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "matchedWeaponID": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "`Weapon.id` quando esta linha veio do `WeaponPickerSheet` (Weapon Compendium) — mesmo padrão de `ProficiencyEntry.matchedProficiencyID`: liga a linha à base pra abrir a descrição completa num toque, sem depender do nome bater exatamente. `nil` numa linha digitada à mão (fichas antigas, ou arma caseira fora da base de 69 armas do PHB)."
+        },
+        "isSpecialized": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "Weapon Specialization (2026-09-30, regra do PHB conferida contra o resumo do Complete Fighter's Handbook cap. 4 — \"Single-Weapon Proficiency, Weapon Specialization\"): só Fighter (nunca Paladin ou Ranger) pode especializar. `Bool?` pela mesma razão de `hitAdj` acima — ficha antiga não tem essa chave. A UI (`WeaponFormRow`) semeia `thac0`(\"+1\")/`dmgAdj`(\"+2\") na primeira vez que liga isto, sem nunca sobrescrever o que o jogador já tiver escrito — o jogador continua livre pra editar os campos à mão depois."
+        }
+      }
+    },
+    "WildTalent": {
+      "type": "object",
+      "required": [
+        "powers",
+        "psionicStrengthPoints"
+      ],
+      "properties": {
+        "powers": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Nome(s) do(s) poder(es) conhecido(s) — texto livre (pode bater com `PsionicPower.title` da base, ou vir escrito à mão); mais de um poder é raro mas possível (\"a lucky few\" no texto da regra), por isso lista em vez de campo único."
+        },
+        "psionicStrengthPoints": {
+          "type": "integer",
+          "description": "PSP do wild talent — bem menor que um Psionicist de verdade (CPsiH: \"the minimum number of PSPs necessary to use the power once\" + 4x o custo de manutenção se o poder puder ser mantido; +4 PSP a cada nível novo depois)."
+        }
+      }
+    },
+    "WizardSchool": {
+      "type": "string",
+      "enum": [
+        "Abjuration",
+        "Alteration",
+        "Conjuration/Summoning",
+        "Divination",
+        "Enchantment/Charm",
+        "Illusion/Phantasm",
+        "Invocation/Evocation",
+        "Necromancy"
+      ]
+    },
+    "WizardSpellbookEntry": {
+      "type": "object",
+      "required": [
+        "id",
+        "name"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[0-9A-Fa-f]{8}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{12}$"
+        },
+        "name": {
+          "type": "string"
+        },
+        "matchedSpellID": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "Id da base embutida, quando reconhecida — usado pra achar círculo/ escola/descrição de verdade."
+        },
+        "level": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "Círculo — só precisa vir preenchido quando `matchedSpellID == nil` (sem entrada na base pra ler o círculo de lá); `nil` quando bate com a base, o círculo real é sempre `Spell.level`, nunca este campo."
+        }
+      }
+    }
+  }
+}
