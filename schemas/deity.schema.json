@@ -1,0 +1,127 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://thac0berry/schemas/deity.schema.json",
+  "title": "Divindades",
+  "description": "Espelha o decode em Swift: Models/Deity.swift.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": [
+      "id",
+      "name",
+      "book",
+      "bookCode",
+      "portfolio",
+      "briefSummary",
+      "fullText",
+      "categories"
+    ],
+    "properties": {
+      "id": {
+        "type": "string"
+      },
+      "name": {
+        "type": "string"
+      },
+      "book": {
+        "type": "string"
+      },
+      "bookCode": {
+        "type": "string"
+      },
+      "portfolio": {
+        "type": "string"
+      },
+      "briefSummary": {
+        "type": "string"
+      },
+      "fullText": {
+        "type": "string"
+      },
+      "categories": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "rank": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "plane": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "alignment": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "status": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "aliases": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "domainName": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "superior": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "allies": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "foes": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "symbol": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "worshiperAlignments": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "avatarClassLevels": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "avatarDescription": {
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    }
+  }
+}

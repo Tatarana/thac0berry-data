@@ -1,0 +1,99 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://thac0berry/schemas/weapon.schema.json",
+  "title": "Armas",
+  "description": "Espelha o decode em Swift: Models/Weapon.swift.",
+  "type": "array",
+  "items": {
+    "$ref": "#/$defs/Weapon"
+  },
+  "$defs": {
+    "Weapon": {
+      "type": "object",
+      "required": [
+        "id",
+        "name",
+        "speedFactor",
+        "attacksPerRound"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "speedFactor": {
+          "type": "integer"
+        },
+        "attacksPerRound": {
+          "type": "string"
+        },
+        "size": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "type": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "damageSmall": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "damageLarge": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "range": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/WeaponRange"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "source": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "WeaponRange": {
+      "type": "object",
+      "required": [],
+      "properties": {
+        "short": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "medium": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "long": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    }
+  }
+}

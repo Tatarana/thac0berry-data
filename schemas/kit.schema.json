@@ -1,0 +1,414 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://thac0berry/schemas/kit.schema.json",
+  "title": "Kits",
+  "description": "Espelha o decode em Swift: Models/Kit.swift.",
+  "type": "array",
+  "items": {
+    "$ref": "#/$defs/Kit"
+  },
+  "$defs": {
+    "Kit": {
+      "type": "object",
+      "required": [
+        "id",
+        "name",
+        "wikiPageTitle",
+        "redirectAliases",
+        "classEligibility",
+        "sourceBook",
+        "features",
+        "description",
+        "categories",
+        "mechanics"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "wikiPageTitle": {
+          "type": "string"
+        },
+        "redirectAliases": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "classEligibility": {
+          "$ref": "#/$defs/ClassEligibility"
+        },
+        "sourceBook": {
+          "type": "string"
+        },
+        "features": {
+          "$ref": "#/$defs/Features"
+        },
+        "description": {
+          "$ref": "#/$defs/Description"
+        },
+        "categories": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "mechanics": {
+          "$ref": "#/$defs/Mechanics"
+        },
+        "deity": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "pantheon": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "setting": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "titleInChurch": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "ClassEligibility": {
+      "type": "object",
+      "required": [
+        "classGroup",
+        "subclass",
+        "allowedClasses"
+      ],
+      "properties": {
+        "classGroup": {
+          "type": "string"
+        },
+        "subclass": {
+          "type": "string"
+        },
+        "allowedClasses": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "Description": {
+      "type": "object",
+      "required": [
+        "briefSummary",
+        "fullText",
+        "rawWikitext"
+      ],
+      "properties": {
+        "briefSummary": {
+          "type": "string"
+        },
+        "fullText": {
+          "type": "string"
+        },
+        "rawWikitext": {
+          "type": "string"
+        }
+      }
+    },
+    "Features": {
+      "type": "object",
+      "required": [],
+      "properties": {
+        "role": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "requirements": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "specialBenefits": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "specialHindrances": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "wealthOptions": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "weaponProficiencies": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "nonweaponProficiencies": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "equipment": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "Mechanics": {
+      "type": "object",
+      "required": [
+        "requirements",
+        "weapons",
+        "proficiencies",
+        "armor",
+        "turnUndead"
+      ],
+      "properties": {
+        "requirements": {
+          "$ref": "#/$defs/Requirements"
+        },
+        "weapons": {
+          "$ref": "#/$defs/WeaponRules"
+        },
+        "proficiencies": {
+          "$ref": "#/$defs/ProficiencyRules"
+        },
+        "armor": {
+          "$ref": "#/$defs/ArmorRules"
+        },
+        "turnUndead": {
+          "$ref": "#/$defs/TurnUndead"
+        },
+        "startingCash": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "weaponSlots": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/WeaponSlots"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      }
+    },
+    "Requirements": {
+      "type": "object",
+      "required": [
+        "abilities",
+        "alignments"
+      ],
+      "properties": {
+        "abilities": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "integer"
+          }
+        },
+        "alignments": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "races": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "WeaponRules": {
+      "type": "object",
+      "required": [
+        "required",
+        "recommended",
+        "forbidden"
+      ],
+      "properties": {
+        "required": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "recommended": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "forbidden": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "notes": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "ProficiencyRules": {
+      "type": "object",
+      "required": [
+        "bonus",
+        "recommended"
+      ],
+      "properties": {
+        "bonus": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "recommended": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "notes": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "ArmorRules": {
+      "type": "object",
+      "required": [
+        "metalAllowed",
+        "notes"
+      ],
+      "properties": {
+        "metalAllowed": {
+          "type": "boolean"
+        },
+        "notes": {
+          "type": "string"
+        },
+        "maxArmorClass": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "allowedTypes": {
+          "description": "Lista de tipos permitidos, ou qualquer string (ex.: \"as_class\") = como a classe. Ausente/null = como a classe.",
+          "anyOf": [
+            {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "shieldsAllowed": {
+          "description": "Lista de tipos permitidos, ou qualquer string (ex.: \"as_class\") = como a classe. Ausente/null = como a classe.",
+          "anyOf": [
+            {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "description": "allowedTypes/shieldsAllowed: decodeIfPresent com default .asClass (KitArmorRules.init(from:))."
+    },
+    "TurnUndead": {
+      "type": "object",
+      "required": [
+        "capable",
+        "mode",
+        "notes"
+      ],
+      "properties": {
+        "capable": {
+          "type": "boolean"
+        },
+        "mode": {
+          "type": "string"
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    },
+    "WeaponSlots": {
+      "type": "object",
+      "required": [],
+      "properties": {
+        "initial": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "additional": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "nonproficiencyPenalty": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    }
+  }
+}

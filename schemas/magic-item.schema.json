@@ -1,0 +1,335 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://thac0berry/schemas/magic-item.schema.json",
+  "title": "Itens mágicos",
+  "description": "Arquivos: magic_*.json. Espelha o decode em Swift: Models/MagicItem.swift (CompendiumMagicItem.init(from:)).",
+  "type": "array",
+  "items": {
+    "$ref": "#/$defs/MagicItem"
+  },
+  "$defs": {
+    "MagicItem": {
+      "type": "object",
+      "required": [
+        "id",
+        "name",
+        "classification",
+        "economyAndXP",
+        "description"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "classification": {
+          "$ref": "#/$defs/Classification"
+        },
+        "economyAndXP": {
+          "$ref": "#/$defs/Economy"
+        },
+        "description": {
+          "$ref": "#/$defs/Description"
+        },
+        "wikiPageTitle": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "redirectAliases": {
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "type": "string"
+          }
+        },
+        "otherNames": {
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "type": "string"
+          }
+        },
+        "sources": {
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "$ref": "#/$defs/Source"
+          }
+        },
+        "categories": {
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "type": "string"
+          }
+        },
+        "campaignSettings": {
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "type": "string"
+          }
+        },
+        "defenseBonus": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/DefenseBonus"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "enchantment": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Enchantment"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "power": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Power"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "containsSpells": {
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "$ref": "#/$defs/SpellRef"
+          }
+        }
+      }
+    },
+    "Classification": {
+      "type": "object",
+      "required": [
+        "broadCategory",
+        "specificType"
+      ],
+      "properties": {
+        "broadCategory": {
+          "type": "string"
+        },
+        "specificType": {
+          "type": "string"
+        }
+      }
+    },
+    "Economy": {
+      "type": "object",
+      "required": [],
+      "properties": {
+        "xpValue": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "goldValue": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "rawXP": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "rawValue": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "Description": {
+      "type": "object",
+      "required": [
+        "briefSummary",
+        "fullText"
+      ],
+      "properties": {
+        "briefSummary": {
+          "type": "string"
+        },
+        "fullText": {
+          "type": "string"
+        }
+      }
+    },
+    "Source": {
+      "type": "object",
+      "required": [],
+      "properties": {
+        "book": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "page": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "DefenseBonus": {
+      "type": "object",
+      "required": [
+        "resistances",
+        "regenerates"
+      ],
+      "properties": {
+        "resistances": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "regenerates": {
+          "type": "boolean"
+        },
+        "acBonus": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "savingThrowBonus": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "magicResistance": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "abilityScoreBonus": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "additionalProperties": {
+            "type": "integer"
+          }
+        },
+        "hitPointBonus": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "attackBonus": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        }
+      }
+    },
+    "Enchantment": {
+      "type": "object",
+      "required": [],
+      "properties": {
+        "attackBonus": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "damageBonus": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        }
+      }
+    },
+    "Power": {
+      "type": "object",
+      "required": [],
+      "properties": {
+        "name": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "chargeBased": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "maxCharges": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "spell": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/SpellRef"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      }
+    },
+    "SpellRef": {
+      "type": "object",
+      "required": [
+        "id",
+        "name",
+        "class"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "class": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

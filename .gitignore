@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.DS_Store
+
+# Nunca versionar chaves e segredos
+*.p8
+*.pem
+*.key
+.env
+.env.*

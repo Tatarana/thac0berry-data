@@ -1,0 +1,117 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://thac0berry/schemas/rules-saving-throws.schema.json",
+  "title": "Jogadas de proteção",
+  "description": "Espelha o decode em Swift: Store/RuleEngine/CoreRuleset/SavingThrowsByLevelProvider.swift.",
+  "type": "object",
+  "required": [
+    "sourceRuleID",
+    "groups"
+  ],
+  "properties": {
+    "sourceRuleID": {
+      "type": "string"
+    },
+    "groups": {
+      "type": "object",
+      "required": [
+        "Priest",
+        "Rogue",
+        "Warrior",
+        "Wizard"
+      ],
+      "properties": {
+        "Priest": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Row"
+          }
+        },
+        "Rogue": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Row"
+          }
+        },
+        "Warrior": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Row"
+          }
+        },
+        "Wizard": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Row"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "schemaVersion": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "note": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "$defs": {
+    "Row": {
+      "type": "object",
+      "required": [
+        "values"
+      ],
+      "properties": {
+        "values": {
+          "$ref": "#/$defs/Values"
+        },
+        "maxLevel": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        }
+      },
+      "description": "maxLevel null = \"N+\" (última faixa)."
+    },
+    "Values": {
+      "type": "object",
+      "required": [
+        "paralyzationPoisonDeath",
+        "rodStaffWand",
+        "petrificationPolymorph",
+        "breathWeapon",
+        "spell"
+      ],
+      "properties": {
+        "paralyzationPoisonDeath": {
+          "type": "integer"
+        },
+        "rodStaffWand": {
+          "type": "integer"
+        },
+        "petrificationPolymorph": {
+          "type": "integer"
+        },
+        "breathWeapon": {
+          "type": "integer"
+        },
+        "spell": {
+          "type": "integer"
+        }
+      }
+    }
+  }
+}

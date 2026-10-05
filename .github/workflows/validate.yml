@@ -1,0 +1,28 @@
+# Valida data/*.json contra schemas/. Anotações (erros/avisos) são públicas.
+name: Validar dados
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+      - run: pip install jsonschema==4.*
+      - name: Validar
+        run: |
+          set -o pipefail
+          python scripts/validate_schemas.py | tee validate.log
+      - name: Anotações
+        if: always()
+        run: |
+          grep -E '^FAIL' validate.log | while IFS= read -r l; do echo "::error title=Schema::$l"; done
+          grep -E '^\s+(erro|aviso)' validate.log | head -20 | while IFS= read -r l; do echo "::warning::$l"; done
+          echo "::notice title=Resumo::$(grep -c '^OK' validate.log) arquivos OK, $(grep -c '^FAIL' validate.log) com falha"

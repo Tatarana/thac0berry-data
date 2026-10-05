@@ -1,0 +1,145 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://thac0berry/schemas/rules-experience.schema.json",
+  "title": "Tabela de experiência",
+  "description": "thresholds.<CharacterClass.rawValue>: 20 inteiros (XP mínimo), índice 0 = nível 1. Espelha o decode em Swift: Models/ExperienceProgressionTable.swift.",
+  "type": "object",
+  "required": [
+    "thresholds"
+  ],
+  "properties": {
+    "thresholds": {
+      "type": "object",
+      "required": [
+        "Fighter",
+        "Paladin",
+        "Ranger",
+        "Mage",
+        "Cleric",
+        "Druid",
+        "Thief",
+        "Bard",
+        "Ninja"
+      ],
+      "properties": {
+        "Fighter": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          },
+          "minItems": 20,
+          "maxItems": 20
+        },
+        "Paladin": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          },
+          "minItems": 20,
+          "maxItems": 20
+        },
+        "Ranger": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          },
+          "minItems": 20,
+          "maxItems": 20
+        },
+        "Mage": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          },
+          "minItems": 20,
+          "maxItems": 20
+        },
+        "Cleric": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          },
+          "minItems": 20,
+          "maxItems": 20
+        },
+        "Druid": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          },
+          "minItems": 20,
+          "maxItems": 20
+        },
+        "Thief": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          },
+          "minItems": 20,
+          "maxItems": 20
+        },
+        "Bard": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          },
+          "minItems": 20,
+          "maxItems": 20
+        },
+        "Ninja": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          },
+          "minItems": 20,
+          "maxItems": 20
+        }
+      },
+      "additionalProperties": false
+    },
+    "classNotes": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "additionalProperties": {
+        "$ref": "#/$defs/ClassNote"
+      }
+    },
+    "schemaVersion": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "note": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "$defs": {
+    "ClassNote": {
+      "type": "object",
+      "required": [
+        "fromLevel",
+        "text"
+      ],
+      "properties": {
+        "fromLevel": {
+          "type": "integer"
+        },
+        "text": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

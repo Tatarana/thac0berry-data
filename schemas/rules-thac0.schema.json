@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://thac0berry/schemas/rules-thac0.schema.json",
+  "title": "Tabela de THAC0",
+  "description": "groups.<CoreClassGroup>: 20 inteiros, índice 0 = nível 1. Espelha o decode em Swift: Store/RuleEngine/CoreRuleset/Thac0ByLevelProvider.swift.",
+  "type": "object",
+  "required": [
+    "sourceRuleID",
+    "groups"
+  ],
+  "properties": {
+    "sourceRuleID": {
+      "type": "string"
+    },
+    "groups": {
+      "type": "object",
+      "required": [
+        "Priest",
+        "Rogue",
+        "Warrior",
+        "Wizard"
+      ],
+      "properties": {
+        "Priest": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          },
+          "minItems": 20,
+          "maxItems": 20
+        },
+        "Rogue": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          },
+          "minItems": 20,
+          "maxItems": 20
+        },
+        "Warrior": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          },
+          "minItems": 20,
+          "maxItems": 20
+        },
+        "Wizard": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          },
+          "minItems": 20,
+          "maxItems": 20
+        }
+      },
+      "additionalProperties": false
+    },
+    "schemaVersion": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "note": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}

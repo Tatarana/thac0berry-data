@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://thac0berry/schemas/mundane-item.schema.json",
+  "title": "Itens comuns",
+  "description": "Espelha o decode em Swift: Models/MundaneItem.swift.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": [
+      "id",
+      "name",
+      "category"
+    ],
+    "properties": {
+      "id": {
+        "type": "string"
+      },
+      "name": {
+        "type": "string"
+      },
+      "category": {
+        "type": "string"
+      },
+      "cost": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "weight": {
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    }
+  }
+}

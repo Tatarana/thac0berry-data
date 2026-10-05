@@ -1,0 +1,161 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://thac0berry/schemas/spell.schema.json",
+  "title": "Magias",
+  "description": "Arquivos: sample_spells.json, priest_*.json, wizard_*.json. Espelha o decode em Swift: Models/Spell.swift (Spell.init(from:), SpellDamage).",
+  "type": "array",
+  "items": {
+    "$ref": "#/$defs/Spell"
+  },
+  "$defs": {
+    "Spell": {
+      "type": "object",
+      "required": [
+        "id",
+        "name",
+        "level",
+        "caster",
+        "school",
+        "castingTime",
+        "range",
+        "components",
+        "duration",
+        "areaOfEffect",
+        "savingThrow",
+        "summary"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "level": {
+          "type": "integer"
+        },
+        "caster": {
+          "type": "string",
+          "enum": [
+            "arcane",
+            "divine"
+          ]
+        },
+        "school": {
+          "type": "string"
+        },
+        "castingTime": {
+          "type": "string"
+        },
+        "range": {
+          "type": "string"
+        },
+        "components": {
+          "type": "string"
+        },
+        "duration": {
+          "type": "string"
+        },
+        "areaOfEffect": {
+          "type": "string"
+        },
+        "savingThrow": {
+          "type": "string"
+        },
+        "summary": {
+          "type": "string"
+        },
+        "damage": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "damageDice": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/SpellDamage"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "spheres": {
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "type": "string"
+          }
+        },
+        "schools": {
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "type": "string"
+          }
+        },
+        "fullDescription": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "setting": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "SpellDamage": {
+      "type": "object",
+      "required": [
+        "dice",
+        "sides",
+        "bonus",
+        "scalesWithLevel",
+        "isHealing",
+        "bonusPerLevel"
+      ],
+      "properties": {
+        "dice": {
+          "type": "integer"
+        },
+        "sides": {
+          "type": "integer"
+        },
+        "bonus": {
+          "type": "integer"
+        },
+        "scalesWithLevel": {
+          "type": "boolean"
+        },
+        "isHealing": {
+          "type": "boolean"
+        },
+        "bonusPerLevel": {
+          "type": "integer"
+        },
+        "maxDice": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "maxBonus": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        }
+      },
+      "description": "Codable sintetizado: chaves com valor default no struct Swift continuam OBRIGATÓRIAS no JSON."
+    }
+  }
+}

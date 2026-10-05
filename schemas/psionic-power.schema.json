@@ -1,0 +1,239 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://thac0berry/schemas/psionic-power.schema.json",
+  "title": "Poderes psiônicos",
+  "description": "Espelha o decode em Swift: Models/PsionicPower.swift.",
+  "type": "array",
+  "items": {
+    "$ref": "#/$defs/PsionicPower"
+  },
+  "$defs": {
+    "PsionicPower": {
+      "type": "object",
+      "required": [
+        "id",
+        "title",
+        "wikiPageTitle",
+        "redirectAliases",
+        "discipline",
+        "powerTier",
+        "powerScore",
+        "pspCost",
+        "parameters",
+        "description",
+        "sources",
+        "categories"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "wikiPageTitle": {
+          "type": "string"
+        },
+        "redirectAliases": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "discipline": {
+          "type": "string"
+        },
+        "powerTier": {
+          "type": "string"
+        },
+        "powerScore": {
+          "$ref": "#/$defs/PowerScore"
+        },
+        "pspCost": {
+          "$ref": "#/$defs/Cost"
+        },
+        "parameters": {
+          "$ref": "#/$defs/Parameters"
+        },
+        "description": {
+          "$ref": "#/$defs/Description"
+        },
+        "sources": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Source"
+          }
+        },
+        "categories": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "tacticalCombat": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/TacticalCombat"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      }
+    },
+    "PowerScore": {
+      "type": "object",
+      "required": [
+        "raw",
+        "baseAbility",
+        "modifier"
+      ],
+      "properties": {
+        "raw": {
+          "type": "string"
+        },
+        "baseAbility": {
+          "type": "string"
+        },
+        "modifier": {
+          "type": "integer"
+        }
+      }
+    },
+    "Cost": {
+      "type": "object",
+      "required": [
+        "initial",
+        "summary"
+      ],
+      "properties": {
+        "initial": {
+          "type": "string"
+        },
+        "summary": {
+          "type": "string"
+        },
+        "maintenance": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "TacticalCombat": {
+      "type": "object",
+      "required": [
+        "mac"
+      ],
+      "properties": {
+        "mac": {
+          "type": "string"
+        }
+      }
+    },
+    "Parameters": {
+      "type": "object",
+      "required": [
+        "range",
+        "preparationTime",
+        "areaOfEffect",
+        "prerequisites"
+      ],
+      "properties": {
+        "range": {
+          "type": "string"
+        },
+        "preparationTime": {
+          "type": "string"
+        },
+        "areaOfEffect": {
+          "type": "string"
+        },
+        "prerequisites": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "Description": {
+      "type": "object",
+      "required": [
+        "briefSummary",
+        "sections",
+        "fullText",
+        "rawWikitext"
+      ],
+      "properties": {
+        "briefSummary": {
+          "type": "string"
+        },
+        "sections": {
+          "$ref": "#/$defs/Sections"
+        },
+        "fullText": {
+          "type": "string"
+        },
+        "rawWikitext": {
+          "type": "string"
+        }
+      }
+    },
+    "Sections": {
+      "type": "object",
+      "required": [
+        "effect"
+      ],
+      "properties": {
+        "effect": {
+          "type": "string"
+        },
+        "powerScoreRollResults": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/RollResults"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      }
+    },
+    "RollResults": {
+      "type": "object",
+      "required": [
+        "powerScoreSuccess",
+        "criticalFailure20"
+      ],
+      "properties": {
+        "powerScoreSuccess": {
+          "type": "string"
+        },
+        "criticalFailure20": {
+          "type": "string"
+        }
+      }
+    },
+    "Source": {
+      "type": "object",
+      "required": [
+        "book"
+      ],
+      "properties": {
+        "book": {
+          "type": "string"
+        },
+        "page": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        }
+      }
+    }
+  }
+}

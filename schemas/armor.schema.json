@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://thac0berry/schemas/armor.schema.json",
+  "title": "Armaduras",
+  "description": "Espelha o decode em Swift: Models/ArmorPiece.swift.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": [
+      "id",
+      "name",
+      "kind"
+    ],
+    "properties": {
+      "id": {
+        "type": "string"
+      },
+      "name": {
+        "type": "string"
+      },
+      "kind": {
+        "type": "string",
+        "enum": [
+          "armor",
+          "helmet",
+          "shield"
+        ]
+      },
+      "baseAC": {
+        "type": [
+          "integer",
+          "null"
+        ]
+      },
+      "cost": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "weight": {
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    }
+  }
+}

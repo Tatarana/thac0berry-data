@@ -1,0 +1,286 @@
+{
+ "schemaVersion": 1,
+ "id": "savingThrows",
+ "sourceRuleID": "phb_ch09_the_saving_throw",
+ "note": "maxLevel null = 'N+' (last band)",
+ "groups": {
+  "Priest": [
+   {
+    "maxLevel": 3,
+    "values": {
+     "paralyzationPoisonDeath": 10,
+     "rodStaffWand": 14,
+     "petrificationPolymorph": 13,
+     "breathWeapon": 16,
+     "spell": 15
+    }
+   },
+   {
+    "maxLevel": 6,
+    "values": {
+     "paralyzationPoisonDeath": 9,
+     "rodStaffWand": 13,
+     "petrificationPolymorph": 12,
+     "breathWeapon": 15,
+     "spell": 14
+    }
+   },
+   {
+    "maxLevel": 9,
+    "values": {
+     "paralyzationPoisonDeath": 7,
+     "rodStaffWand": 11,
+     "petrificationPolymorph": 10,
+     "breathWeapon": 13,
+     "spell": 12
+    }
+   },
+   {
+    "maxLevel": 12,
+    "values": {
+     "paralyzationPoisonDeath": 6,
+     "rodStaffWand": 10,
+     "petrificationPolymorph": 9,
+     "breathWeapon": 12,
+     "spell": 11
+    }
+   },
+   {
+    "maxLevel": 15,
+    "values": {
+     "paralyzationPoisonDeath": 5,
+     "rodStaffWand": 9,
+     "petrificationPolymorph": 8,
+     "breathWeapon": 11,
+     "spell": 10
+    }
+   },
+   {
+    "maxLevel": 18,
+    "values": {
+     "paralyzationPoisonDeath": 4,
+     "rodStaffWand": 8,
+     "petrificationPolymorph": 7,
+     "breathWeapon": 10,
+     "spell": 9
+    }
+   },
+   {
+    "maxLevel": null,
+    "values": {
+     "paralyzationPoisonDeath": 2,
+     "rodStaffWand": 6,
+     "petrificationPolymorph": 5,
+     "breathWeapon": 8,
+     "spell": 7
+    }
+   }
+  ],
+  "Rogue": [
+   {
+    "maxLevel": 4,
+    "values": {
+     "paralyzationPoisonDeath": 13,
+     "rodStaffWand": 14,
+     "petrificationPolymorph": 12,
+     "breathWeapon": 16,
+     "spell": 15
+    }
+   },
+   {
+    "maxLevel": 8,
+    "values": {
+     "paralyzationPoisonDeath": 12,
+     "rodStaffWand": 12,
+     "petrificationPolymorph": 11,
+     "breathWeapon": 15,
+     "spell": 13
+    }
+   },
+   {
+    "maxLevel": 12,
+    "values": {
+     "paralyzationPoisonDeath": 11,
+     "rodStaffWand": 10,
+     "petrificationPolymorph": 10,
+     "breathWeapon": 14,
+     "spell": 11
+    }
+   },
+   {
+    "maxLevel": 16,
+    "values": {
+     "paralyzationPoisonDeath": 10,
+     "rodStaffWand": 8,
+     "petrificationPolymorph": 9,
+     "breathWeapon": 13,
+     "spell": 9
+    }
+   },
+   {
+    "maxLevel": 20,
+    "values": {
+     "paralyzationPoisonDeath": 9,
+     "rodStaffWand": 6,
+     "petrificationPolymorph": 8,
+     "breathWeapon": 12,
+     "spell": 7
+    }
+   },
+   {
+    "maxLevel": null,
+    "values": {
+     "paralyzationPoisonDeath": 8,
+     "rodStaffWand": 4,
+     "petrificationPolymorph": 7,
+     "breathWeapon": 11,
+     "spell": 5
+    }
+   }
+  ],
+  "Warrior": [
+   {
+    "maxLevel": 2,
+    "values": {
+     "paralyzationPoisonDeath": 14,
+     "rodStaffWand": 16,
+     "petrificationPolymorph": 15,
+     "breathWeapon": 17,
+     "spell": 17
+    }
+   },
+   {
+    "maxLevel": 4,
+    "values": {
+     "paralyzationPoisonDeath": 13,
+     "rodStaffWand": 15,
+     "petrificationPolymorph": 14,
+     "breathWeapon": 16,
+     "spell": 16
+    }
+   },
+   {
+    "maxLevel": 6,
+    "values": {
+     "paralyzationPoisonDeath": 11,
+     "rodStaffWand": 13,
+     "petrificationPolymorph": 12,
+     "breathWeapon": 13,
+     "spell": 14
+    }
+   },
+   {
+    "maxLevel": 8,
+    "values": {
+     "paralyzationPoisonDeath": 10,
+     "rodStaffWand": 12,
+     "petrificationPolymorph": 11,
+     "breathWeapon": 12,
+     "spell": 13
+    }
+   },
+   {
+    "maxLevel": 10,
+    "values": {
+     "paralyzationPoisonDeath": 8,
+     "rodStaffWand": 10,
+     "petrificationPolymorph": 9,
+     "breathWeapon": 9,
+     "spell": 11
+    }
+   },
+   {
+    "maxLevel": 12,
+    "values": {
+     "paralyzationPoisonDeath": 7,
+     "rodStaffWand": 9,
+     "petrificationPolymorph": 8,
+     "breathWeapon": 8,
+     "spell": 10
+    }
+   },
+   {
+    "maxLevel": 14,
+    "values": {
+     "paralyzationPoisonDeath": 5,
+     "rodStaffWand": 7,
+     "petrificationPolymorph": 6,
+     "breathWeapon": 5,
+     "spell": 8
+    }
+   },
+   {
+    "maxLevel": 16,
+    "values": {
+     "paralyzationPoisonDeath": 4,
+     "rodStaffWand": 6,
+     "petrificationPolymorph": 5,
+     "breathWeapon": 4,
+     "spell": 7
+    }
+   },
+   {
+    "maxLevel": null,
+    "values": {
+     "paralyzationPoisonDeath": 3,
+     "rodStaffWand": 5,
+     "petrificationPolymorph": 4,
+     "breathWeapon": 4,
+     "spell": 6
+    }
+   }
+  ],
+  "Wizard": [
+   {
+    "maxLevel": 5,
+    "values": {
+     "paralyzationPoisonDeath": 14,
+     "rodStaffWand": 11,
+     "petrificationPolymorph": 13,
+     "breathWeapon": 15,
+     "spell": 12
+    }
+   },
+   {
+    "maxLevel": 10,
+    "values": {
+     "paralyzationPoisonDeath": 13,
+     "rodStaffWand": 9,
+     "petrificationPolymorph": 11,
+     "breathWeapon": 13,
+     "spell": 10
+    }
+   },
+   {
+    "maxLevel": 15,
+    "values": {
+     "paralyzationPoisonDeath": 11,
+     "rodStaffWand": 7,
+     "petrificationPolymorph": 9,
+     "breathWeapon": 11,
+     "spell": 8
+    }
+   },
+   {
+    "maxLevel": 20,
+    "values": {
+     "paralyzationPoisonDeath": 10,
+     "rodStaffWand": 5,
+     "petrificationPolymorph": 7,
+     "breathWeapon": 9,
+     "spell": 6
+    }
+   },
+   {
+    "maxLevel": null,
+    "values": {
+     "paralyzationPoisonDeath": 8,
+     "rodStaffWand": 3,
+     "petrificationPolymorph": 5,
+     "breathWeapon": 7,
+     "spell": 4
+    }
+   }
+  ]
+ }
+}

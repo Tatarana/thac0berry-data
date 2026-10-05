@@ -1,0 +1,146 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://thac0berry/schemas/proficiency.schema.json",
+  "title": "Proficiências",
+  "description": "Espelha o decode em Swift: Models/Proficiency.swift.",
+  "type": "array",
+  "items": {
+    "$ref": "#/$defs/Proficiency"
+  },
+  "$defs": {
+    "Proficiency": {
+      "type": "object",
+      "required": [
+        "id",
+        "name",
+        "wikiPageTitle",
+        "redirectAliases",
+        "primaryGroup",
+        "campaignSettings",
+        "mechanics",
+        "description"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "wikiPageTitle": {
+          "type": "string"
+        },
+        "redirectAliases": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "primaryGroup": {
+          "type": "string"
+        },
+        "campaignSettings": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "mechanics": {
+          "$ref": "#/$defs/Mechanics"
+        },
+        "description": {
+          "$ref": "#/$defs/Description"
+        },
+        "skillsAndPowers": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/SkillsAndPowers"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      }
+    },
+    "Mechanics": {
+      "type": "object",
+      "required": [
+        "groups",
+        "slotsRequired",
+        "rawSlots",
+        "relevantAbility",
+        "checkModifier",
+        "rawModifier",
+        "prerequisites"
+      ],
+      "properties": {
+        "groups": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "slotsRequired": {
+          "type": "integer"
+        },
+        "rawSlots": {
+          "type": "string"
+        },
+        "relevantAbility": {
+          "type": "string"
+        },
+        "checkModifier": {
+          "type": "integer"
+        },
+        "rawModifier": {
+          "type": "string"
+        },
+        "prerequisites": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "SkillsAndPowers": {
+      "type": "object",
+      "required": [
+        "baseRating"
+      ],
+      "properties": {
+        "baseRating": {
+          "type": "string"
+        },
+        "subAbility": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "characterPointCost": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        }
+      }
+    },
+    "Description": {
+      "type": "object",
+      "required": [
+        "briefSummary",
+        "fullText"
+      ],
+      "properties": {
+        "briefSummary": {
+          "type": "string"
+        },
+        "fullText": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}
