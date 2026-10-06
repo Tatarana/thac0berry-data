@@ -4882,7 +4882,10 @@
     ],
     "mechanics": {
       "proficiencies": {
-        "bonus": [],
+        "bonus": [
+          "rejuvenation",
+          "tumbling"
+        ],
         "recommended": [],
         "notes": null
       },
@@ -24537,7 +24540,9 @@
     ],
     "mechanics": {
       "proficiencies": {
-        "bonus": [],
+        "bonus": [
+          "reading/writing"
+        ],
         "recommended": [],
         "notes": null
       },
@@ -24616,7 +24621,10 @@
     ],
     "mechanics": {
       "proficiencies": {
-        "bonus": [],
+        "bonus": [
+          "disguise",
+          "information gathering"
+        ],
         "recommended": [],
         "notes": null
       },
@@ -24690,7 +24698,11 @@
     ],
     "mechanics": {
       "proficiencies": {
-        "bonus": [],
+        "bonus": [
+          "animal handling",
+          "animal lore",
+          "animal training"
+        ],
         "recommended": [],
         "notes": null
       },
@@ -24762,7 +24774,7 @@
       "proficiencies": {
         "bonus": [],
         "recommended": [],
-        "notes": null
+        "notes": "Bonus: Animal Handling or Riding, Land-Based (choose one)."
       },
       "weapons": {
         "recommended": [
@@ -24839,7 +24851,9 @@
     ],
     "mechanics": {
       "proficiencies": {
-        "bonus": [],
+        "bonus": [
+          "fire-building"
+        ],
         "recommended": [],
         "notes": null
       },
@@ -24979,7 +24993,9 @@
     ],
     "mechanics": {
       "proficiencies": {
-        "bonus": [],
+        "bonus": [
+          "water divining"
+        ],
         "recommended": [],
         "notes": null
       },
@@ -25050,9 +25066,11 @@
     ],
     "mechanics": {
       "proficiencies": {
-        "bonus": [],
+        "bonus": [
+          "psioncraft"
+        ],
         "recommended": [],
-        "notes": null
+        "notes": "Bonus: also a racial language and the racial bonus (see Council of Wyrms, Chapter 2)."
       },
       "weapons": {
         "recommended": [],
@@ -25124,7 +25142,9 @@
     ],
     "mechanics": {
       "proficiencies": {
-        "bonus": [],
+        "bonus": [
+          "body language"
+        ],
         "recommended": [],
         "notes": null
       },
@@ -25195,7 +25215,9 @@
     ],
     "mechanics": {
       "proficiencies": {
-        "bonus": [],
+        "bonus": [
+          "alertness"
+        ],
         "recommended": [],
         "notes": null
       },
@@ -25266,7 +25288,9 @@
     ],
     "mechanics": {
       "proficiencies": {
-        "bonus": [],
+        "bonus": [
+          "healing"
+        ],
         "recommended": [],
         "notes": null
       },
@@ -25479,9 +25503,11 @@
     ],
     "mechanics": {
       "proficiencies": {
-        "bonus": [],
+        "bonus": [
+          "riding, land-based"
+        ],
         "recommended": [],
-        "notes": null
+        "notes": "Bonus: also Direction Sense or Heraldry (choose one)."
       },
       "weapons": {
         "recommended": [],
@@ -25620,7 +25646,9 @@
     ],
     "mechanics": {
       "proficiencies": {
-        "bonus": [],
+        "bonus": [
+          "feign magic"
+        ],
         "recommended": [],
         "notes": null
       },
@@ -25689,7 +25717,9 @@
     ],
     "mechanics": {
       "proficiencies": {
-        "bonus": [],
+        "bonus": [
+          "religion"
+        ],
         "recommended": [],
         "notes": null
       },
@@ -25831,7 +25861,10 @@
     ],
     "mechanics": {
       "proficiencies": {
-        "bonus": [],
+        "bonus": [
+          "etiquette",
+          "heraldry"
+        ],
         "recommended": [],
         "notes": null
       },
@@ -25900,7 +25933,10 @@
     ],
     "mechanics": {
       "proficiencies": {
-        "bonus": [],
+        "bonus": [
+          "etiquette",
+          "heraldry"
+        ],
         "recommended": [],
         "notes": null
       },
@@ -25970,7 +26006,10 @@
     ],
     "mechanics": {
       "proficiencies": {
-        "bonus": [],
+        "bonus": [
+          "ancient history",
+          "reading/writing"
+        ],
         "recommended": [],
         "notes": null
       },
@@ -26111,7 +26150,9 @@
     ],
     "mechanics": {
       "proficiencies": {
-        "bonus": [],
+        "bonus": [
+          "hypnosis"
+        ],
         "recommended": [],
         "notes": null
       },
@@ -26320,7 +26361,9 @@
     ],
     "mechanics": {
       "proficiencies": {
-        "bonus": [],
+        "bonus": [
+          "seance"
+        ],
         "recommended": [],
         "notes": null
       },
@@ -26391,9 +26434,11 @@
     ],
     "mechanics": {
       "proficiencies": {
-        "bonus": [],
+        "bonus": [
+          "languages, modern"
+        ],
         "recommended": [],
-        "notes": null
+        "notes": "Bonus: Languages, Modern covers any two modern languages."
       },
       "weapons": {
         "recommended": [],
@@ -26460,7 +26505,10 @@
     ],
     "mechanics": {
       "proficiencies": {
-        "bonus": [],
+        "bonus": [
+          "observation",
+          "information gathering"
+        ],
         "recommended": [],
         "notes": null
       },
@@ -26534,7 +26582,11 @@
     ],
     "mechanics": {
       "proficiencies": {
-        "bonus": [],
+        "bonus": [
+          "weather sense",
+          "fire-building",
+          "survival"
+        ],
         "recommended": [],
         "notes": null
       },
@@ -26615,7 +26667,10 @@
     ],
     "mechanics": {
       "proficiencies": {
-        "bonus": [],
+        "bonus": [
+          "rejuvenation",
+          "endurance"
+        ],
         "recommended": [],
         "notes": null
       },
@@ -26681,7 +26736,10 @@
     "categories": [],
     "mechanics": {
       "proficiencies": {
-        "bonus": [],
+        "bonus": [
+          "meditative focus",
+          "psionic detection"
+        ],
         "recommended": [],
         "notes": null
       },
@@ -26751,7 +26809,10 @@
     ],
     "mechanics": {
       "proficiencies": {
-        "bonus": [],
+        "bonus": [
+          "harness subconscious",
+          "rejuvenation"
+        ],
         "recommended": [],
         "notes": null
       },

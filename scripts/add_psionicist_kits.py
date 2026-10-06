@@ -33,6 +33,45 @@ ARMOR_AS_CLASS = {'allowedTypes': 'as_class', 'shieldsAllowed': 'as_class', 'met
 NO_TURNING = {'capable': False, 'mode': 'not_applicable', 'notes': "Psionicist kits don't turn undead — that's a priest class feature."}
 
 
+# Proficiências bônus (2026-10-06, pedido do usuário): os kits minerados só as
+# têm no texto de `features.nonweaponProficiencies`, com notas de rodapé e
+# escolhas ("X or Y"). Lista revisada à mão, com os nomes do compêndio
+# (proficiencies.json, em minúsculas como nos outros kits). Escolhas e itens que
+# não são proficiências do compêndio vão para `proficiencies.notes`.
+BONUS = {
+    'sensei': ['rejuvenation', 'tumbling'],
+    'ascetic_warrior': ['reading/writing'],
+    'auditor': ['disguise', 'information gathering'],
+    'beastmaster_psionic': ['animal handling', 'animal lore', 'animal training'],
+    'charcoal_burner': ['fire-building'],
+    'dowser': ['water divining'],
+    'dragon_psionicist': ['psioncraft'],
+    'empath': ['body language'],
+    'gatekeeper': ['alertness'],
+    'healer_dragon': ['healing'],
+    'mercenary_psionicist': ['riding, land-based'],
+    'mind_mage': ['feign magic'],
+    'mind_monk': ['religion'],
+    'noble_dragon': ['etiquette', 'heraldry'],
+    'noble_psionicist': ['etiquette', 'heraldry'],
+    'paranaturalist': ['ancient history', 'reading/writing'],
+    'psychic_surgeon': ['hypnosis'],
+    'spiritualist_psionic': ['seance'],
+    'the_voice': ['languages, modern'],
+    'thought_agent': ['observation', 'information gathering'],
+    'tribal_psionicist': ['weather sense', 'fire-building', 'survival'],
+    'untutored_one': ['rejuvenation', 'endurance'],
+    'brown_elf': ['meditative focus', 'psionic detection'],
+    'psiologist': ['harness subconscious', 'rejuvenation'],
+}
+BONUS_NOTES = {
+    'berranie_seer_seeress': 'Bonus: Animal Handling or Riding, Land-Based (choose one).',
+    'mercenary_psionicist': 'Bonus: also Direction Sense or Heraldry (choose one).',
+    'dragon_psionicist': 'Bonus: also a racial language and the racial bonus (see Council of Wyrms, Chapter 2).',
+    'the_voice': 'Bonus: Languages, Modern covers any two modern languages.',
+}
+
+
 def normalize(kit):
     """Os kits minerados usam um formato de `mechanics` mais antigo; completa os
     campos que o app exige (Models/Kit.swift) com os mesmos padrões dos kits que
@@ -48,6 +87,11 @@ def normalize(kit):
     for key in ('required', 'recommended', 'forbidden'):
         weapons.setdefault(key, [])
     weapons.setdefault('notes', None)
+    profs = mech.setdefault('proficiencies', {'bonus': [], 'recommended': [], 'notes': None})
+    if kit['id'] in BONUS:
+        profs['bonus'] = list(BONUS[kit['id']])
+    if kit['id'] in BONUS_NOTES:
+        profs['notes'] = ' '.join(filter(None, [profs.get('notes'), BONUS_NOTES[kit['id']]]))
     return kit
 
 
