@@ -54,13 +54,10 @@
           "healing",
           "local history",
           "spellcraft",
-          "(rogue",
-          "double slot) reading lips",
-          "(rogue",
-          "one slot",
-          "per \"Special Benefits\") disguise"
+          "reading lips",
+          "disguise"
         ],
-        "notes": null
+        "notes": "Reading lips is a rogue proficiency (double slot); disguise is a rogue proficiency that costs one slot (see Special Benefits)."
       },
       "armor": {
         "allowedTypes": "as_class",
@@ -529,17 +526,37 @@
       "weapons": {
         "required": [],
         "recommended": [
-          "weapons"
+          "Battle axe",
+          "sword/bastard",
+          "bow (any)",
+          "sling",
+          "warhammer"
         ],
         "forbidden": [],
-        "notes": "Battle axe, sword/bastard, bow (any), sling, warhammer. Naturally, the priesthood may limit the priest's choice of weapons and not allow him to learn all these."
+        "notes": "Naturally, the priesthood may limit the priest's choice of weapons and not allow him to learn all these."
       },
       "proficiencies": {
         "bonus": [
-          "Proficiency: Endurance"
+          "Endurance"
         ],
-        "recommended": [],
-        "notes": "; (General) Animal Handling, Animal Training, Direction Sense, Fire-Building, Riding (Land-Based), Weather Sense, Blind-Fighting, Hunting, Mountaineering, Running, Set Snares, Survival, Tracking, Herbalism, Jumping. (Some of these are outside the priest's Nonweapon Proficiency Group Crossovers and will cost twice the listed slots if taken; see the description of the priest class, and the chart at the bottom of the ''Player's Handbook'', page 55, for more details.) The DM may require this priest to take a proficiency in the tribal specialty (Fishing, Agriculture, etc.)."
+        "recommended": [
+          "Animal Handling",
+          "Animal Training",
+          "Direction Sense",
+          "Fire-Building",
+          "Riding, Land-Based",
+          "Weather Sense",
+          "Blind-Fighting",
+          "Hunting",
+          "Mountaineering",
+          "Running",
+          "Set Snares",
+          "Survival",
+          "Tracking",
+          "Herbalism",
+          "Jumping"
+        ],
+        "notes": "Some of these are outside the priest's Nonweapon Proficiency Group Crossovers and will cost twice the listed slots if taken (PHB, page 55). The DM may require this priest to take a proficiency in the tribal specialty (Fishing, Agriculture, etc.)."
       },
       "armor": {
         "allowedTypes": [
@@ -1347,7 +1364,7 @@
       },
       "proficiencies": {
         "bonus": [
-          "Proficiency: Tumbling"
+          "Tumbling"
         ],
         "recommended": [
           "Riding",
@@ -1500,7 +1517,7 @@
       },
       "proficiencies": {
         "bonus": [
-          "local history "
+          "local history"
         ],
         "recommended": [
           "herbalism",
@@ -3468,18 +3485,18 @@
         "bonus": [
           "Etiquette",
           "Heraldry",
-          "Riding "
+          "Riding, Land-Based"
         ],
         "recommended": [
           "Animal Training",
           "Dancing",
-          "(Warrior",
+          "Gaming",
           "Hunting",
           "Local History",
           "Musical Instrument",
           "Reading/Writing"
         ],
-        "notes": "; double slots unless the priest class has a nonweapon proficiency group crossover including the Warrior group) Gaming"
+        "notes": "Warrior proficiencies cost double slots unless the priest class has a nonweapon proficiency group crossover including the Warrior group."
       },
       "armor": {
         "allowedTypes": "as_class",
@@ -3713,12 +3730,11 @@
           "herbalism",
           "local history",
           "religion",
-          "(rogue",
-          "double slot) disguise",
+          "disguise",
           "animal lore",
           "tracking"
         ],
-        "notes": null
+        "notes": "Disguise is a rogue proficiency (double slot)."
       },
       "armor": {
         "allowedTypes": "as_class",
@@ -3791,7 +3807,7 @@
       },
       "proficiencies": {
         "bonus": [
-          "Proficiency: Religion"
+          "Religion"
         ],
         "recommended": [],
         "notes": null
@@ -3944,7 +3960,7 @@
       },
       "proficiencies": {
         "bonus": [
-          "Proficiency: Etiquette"
+          "Etiquette"
         ],
         "recommended": [
           "Languages",
@@ -4335,7 +4351,7 @@
       },
       "proficiencies": {
         "bonus": [
-          "Proficiency: Weather Sense"
+          "Weather Sense"
         ],
         "recommended": [],
         "notes": null
@@ -4591,7 +4607,7 @@
       },
       "proficiencies": {
         "bonus": [
-          "Endurance or Survival "
+          "Endurance or Survival"
         ],
         "recommended": [],
         "notes": "Direction Sense or Weather Sense; (General) Animal Handling, Animal Training, Fire-Building, Fishing, Riding (Land-based), Rope Use, Swimming, (Warrior, double slots unless the priest-class dictates otherwise) Animal Lore, Bowyer/Fletcher, Hunting, Mountaineering, Running, Set Snares, Tracking, (Priest) Healing, Herbalism, Local History, Religion, (Rogue, double slots unless the priest-class dictates otherwise) Jumping, Tightrope Walking, Tumbling, (Wizard, double slots unless the priest-class dictates otherwise) Herbalism. The Savage may not take Etiquette or Heraldry when first created."
@@ -4665,7 +4681,7 @@
       },
       "proficiencies": {
         "bonus": [
-          "Proficiency: Reading/Writing"
+          "Reading/Writing"
         ],
         "recommended": [
           "Artistic Ability",
@@ -5047,7 +5063,7 @@
       },
       "proficiencies": {
         "bonus": [
-          "animal lore. "
+          "animal lore"
         ],
         "recommended": [
           "spellcraft",
@@ -6012,7 +6028,7 @@
         "recommended": [
           "Direction sense",
           "endurance",
-          "weapon-smithing "
+          "weapon-smithing"
         ],
         "notes": "Hunting, tracking. Tik track as non-rangers unless they are members of the ranger class. They use their Wisdom as their base score for hunting (essentially a +1 bonus)."
       },
@@ -6159,8 +6175,15 @@
         "bonus": [
           "tracking"
         ],
-        "recommended": [],
-        "notes": "; (general) animal handling, animal training; (priest) healing, herbalism; (warrior) animal lore, survival. Note that Totemic Druids have a reduced number of proficiency slots. (See \"Special Hindrances.\")"
+        "recommended": [
+          "animal handling",
+          "animal training",
+          "healing",
+          "herbalism",
+          "animal lore",
+          "survival"
+        ],
+        "notes": "Totemic Druids have a reduced number of proficiency slots (see Special Hindrances)."
       },
       "armor": {
         "allowedTypes": "as_class",
@@ -6837,7 +6860,7 @@
       },
       "proficiencies": {
         "bonus": [
-          "direction sense. "
+          "direction sense"
         ],
         "recommended": [
           "animal training",
@@ -7359,13 +7382,14 @@
       "weapons": {
         "required": [],
         "recommended": [
+          "dagger",
           "dart",
           "knife",
           "sling",
-          "and staff)"
+          "staff"
         ],
         "forbidden": [],
-        "notes": "The Deathslayer may learn any of the standard wizard's weapons (the dagger"
+        "notes": "The Deathslayer may learn any of the standard wizard's weapons."
       },
       "proficiencies": {
         "bonus": [],
@@ -7849,17 +7873,17 @@
         "races": null
       },
       "weapons": {
-        "required": [],
-        "recommended": [
-          "''Required :'' Bow",
+        "required": [
+          "Bow (any)",
           "dagger",
           "knife",
           "spear",
           "dart",
           "sling"
         ],
+        "recommended": [],
         "forbidden": [],
-        "notes": null
+        "notes": "Required (player's choice) — one of these."
       },
       "proficiencies": {
         "bonus": [],
@@ -9651,7 +9675,7 @@
           "Spellcraft"
         ],
         "recommended": [],
-        "notes": "; None"
+        "notes": null
       },
       "armor": {
         "allowedTypes": "as_class",
@@ -9799,7 +9823,7 @@
           "Spellcraft"
         ],
         "recommended": [],
-        "notes": "; None"
+        "notes": null
       },
       "armor": {
         "allowedTypes": "as_class",
@@ -10088,14 +10112,9 @@
       },
       "weapons": {
         "required": [],
-        "recommended": [
-          "Weapon Slots: 4",
-          "Initial Weapons: See below",
-          "Additional Weapons: Any",
-          "Nonproficiency Penalty: -2"
-        ],
+        "recommended": [],
         "forbidden": [],
-        "notes": "Additional Weapon Proficiency Slots: 3"
+        "notes": "Initial Weapons: See below; Additional Weapons: Any"
       },
       "proficiencies": {
         "bonus": [
@@ -10257,16 +10276,9 @@
       },
       "weapons": {
         "required": [],
-        "recommended": [
-          "Weapon Slots: 3",
-          "Initial Weapons: Any",
-          "plus one firearm (spec",
-          "see below)",
-          "Additional Weapons: Any",
-          "Nonproficiency Penalty: -2"
-        ],
+        "recommended": [],
         "forbidden": [],
-        "notes": "Additional Weapon Proficiency Slots: 3"
+        "notes": "Initial Weapons: Any, plus one firearm (spec., see below); Additional Weapons: Any (see below)"
       },
       "proficiencies": {
         "bonus": [
@@ -10351,14 +10363,9 @@
       },
       "weapons": {
         "required": [],
-        "recommended": [
-          "Weapon Slots: 4",
-          "Initial Weapons: Primitive",
-          "Additional Weapons: Any",
-          "Nonproficiency Penalty: -1"
-        ],
+        "recommended": [],
         "forbidden": [],
-        "notes": "Additional Weapon Proficiency Slots: 3"
+        "notes": "Initial Weapons: Primitive (see below); Additional Weapons: Any (see below)"
       },
       "proficiencies": {
         "bonus": [
@@ -10520,15 +10527,9 @@
       },
       "weapons": {
         "required": [],
-        "recommended": [
-          "Weapon Slots: 4",
-          "Initial Weapons: Blowgun",
-          "plus two others",
-          "Additional Weapons: Any",
-          "Nonproficiency Penalty: -2"
-        ],
+        "recommended": [],
         "forbidden": [],
-        "notes": "Additional Weapon Proficiency Slots: 3"
+        "notes": "Initial Weapons: Blowgun (spec.), plus two others (see below); Additional Weapons: Any (see below)"
       },
       "proficiencies": {
         "bonus": [
@@ -10555,8 +10556,7 @@
           "signaling",
           "tracking",
           "weather sense",
-          "weaponsmithing (crude",
-          "CRH)"
+          "Weaponsmithing, Crude"
         ],
         "notes": null
       },
@@ -10627,14 +10627,9 @@
       },
       "weapons": {
         "required": [],
-        "recommended": [
-          "Weapon Slots: 4",
-          "Initial Weapons: See below",
-          "Additional Weapons: Any",
-          "Nonproficiency Penalty: -2"
-        ],
+        "recommended": [],
         "forbidden": [],
-        "notes": "Additional Weapon Proficiency Slots: 3"
+        "notes": "Initial Weapons: See below; Additional Weapons: Any"
       },
       "proficiencies": {
         "bonus": [
@@ -10662,8 +10657,7 @@
           "swimming",
           "tightrope walking",
           "weaponsmithing",
-          "weaponsmithing (crude",
-          "CRH)",
+          "Weaponsmithing, Crude",
           "weather sense",
           "weaving"
         ],
@@ -10736,14 +10730,9 @@
       },
       "weapons": {
         "required": [],
-        "recommended": [
-          "Weapon Slots: 4",
-          "plus two others",
-          "Additional Weapons: See below",
-          "Nonproficiency Penalty: -2"
-        ],
+        "recommended": [],
         "forbidden": [],
-        "notes": "Initial Weapons: Long bow or short bow; Additional Weapon Proficiency Slots: 3"
+        "notes": "Initial Weapons: Long bow or short bow (spec.), plus two others (see below); Additional Weapons: See below"
       },
       "proficiencies": {
         "bonus": [
@@ -10776,8 +10765,7 @@
           "swimming",
           "tightrope walking",
           "tracking",
-          "weaponsmithing (crude",
-          "CRH)",
+          "Weaponsmithing, Crude",
           "weather sense",
           "weaving"
         ],
@@ -12137,14 +12125,9 @@
       },
       "weapons": {
         "required": [],
-        "recommended": [
-          "Weapon Slots: 4",
-          "Initial Weapons: Any",
-          "Additional Weapons: Any",
-          "Nonproficiency Penalty: -2"
-        ],
+        "recommended": [],
         "forbidden": [],
-        "notes": "Additional Weapon Proficiency Slots: 3"
+        "notes": "Initial Weapons: Any (see below); Additional Weapons: Any (see below)"
       },
       "proficiencies": {
         "bonus": [
@@ -12597,14 +12580,9 @@
       },
       "weapons": {
         "required": [],
-        "recommended": [
-          "Weapon Slots: 4",
-          "plus any two others",
-          "Additional Weapons: Any",
-          "Nonproficiency Penalty: -2"
-        ],
+        "recommended": [],
         "forbidden": [],
-        "notes": "Initial Weapons: Any bow or sling; Additional Weapon Proficiency Slots: 3"
+        "notes": "Initial Weapons: Any bow or sling (spec.), plus any two others; Additional Weapons: Any"
       },
       "proficiencies": {
         "bonus": [
@@ -12636,8 +12614,7 @@
           "set snares",
           "tumbling",
           "weaponsmithing",
-          "weaponsmithing (crude",
-          "CRH)",
+          "Weaponsmithing, Crude",
           "weather sense"
         ],
         "notes": null
@@ -12992,14 +12969,9 @@
       },
       "weapons": {
         "required": [],
-        "recommended": [
-          "Weapon Slots: 4",
-          "no missile weapons",
-          "Additional Weapons: Any",
-          "Nonproficiency Penalty: -2"
-        ],
+        "recommended": [],
         "forbidden": [],
-        "notes": "Initial Weapons: Two-handed sword or battle axe; throwing hammer or hand axe  plus others; Additional Weapon Proficiency Slots: 3"
+        "notes": "Initial Weapons: Two-handed sword or battle axe, throwing hammer or hand axe (spec. in one of these four) plus others; Additional Weapons: Any (no missile weapons)"
       },
       "proficiencies": {
         "bonus": [
@@ -13173,13 +13145,9 @@
       },
       "weapons": {
         "required": [],
-        "recommended": [
-          "Weapon Slots: 5",
-          "Additional Weapons: Any",
-          "Nonproficiency Penalty: -1"
-        ],
+        "recommended": [],
         "forbidden": [],
-        "notes": "Initial Weapons: Any except missile weapons; Additional Weapon Proficiency Slots: 3"
+        "notes": "Initial Weapons: Any except missile weapons (two must be exotic); Additional Weapons: Any"
       },
       "proficiencies": {
         "bonus": [],
@@ -13190,18 +13158,9 @@
           "healing",
           "jumping",
           "local history",
-          "tumbling",
-          "brewing",
-          "cobbling",
-          "cooking",
-          "fire-building",
-          "fishing",
-          "pottery",
-          "swimming",
-          "weaving",
-          "etc.)"
+          "tumbling"
         ],
-        "notes": "None; possibly one minor General skill gained prior to capture (agriculture"
+        "notes": "Possibly one minor General skill gained prior to capture (agriculture, brewing, cobbling, cooking, fire-building, fishing, pottery, swimming, weaving, etc.)."
       },
       "armor": {
         "allowedTypes": "as_class",
@@ -13346,7 +13305,7 @@
       "weapons": {
         "required": [],
         "recommended": [
-          "Bow  or crossbow",
+          "Bow or crossbow",
           "dagger",
           "javelin",
           "knife",
@@ -13426,15 +13385,9 @@
       },
       "weapons": {
         "required": [],
-        "recommended": [
-          "Weapon Slots: 4",
-          "whip",
-          "missile and melee weapons",
-          "Additional Weapons: Any",
-          "Nonproficiency Penalty: -2"
-        ],
+        "recommended": [],
         "forbidden": [],
-        "notes": "Initial Weapons: Dagger or knife; Additional Weapon Proficiency Slots: 3"
+        "notes": "Initial Weapons: Dagger or knife, whip, missile and melee weapons; Additional Weapons: Any"
       },
       "proficiencies": {
         "bonus": [
@@ -13605,15 +13558,9 @@
       },
       "weapons": {
         "required": [],
-        "recommended": [
-          "Weapon Slots: 4",
-          "Initial Weapons: Warhammer",
-          "plus any two others",
-          "Additional Weapons: Any",
-          "Nonproficiency Penalty: -2"
-        ],
+        "recommended": [],
         "forbidden": [],
-        "notes": "Additional Weapon Proficiency Slots: 3"
+        "notes": "Initial Weapons: Warhammer (spec.), plus any two others; Additional Weapons: Any"
       },
       "proficiencies": {
         "bonus": [
@@ -13644,7 +13591,7 @@
           "weaponsmith",
           "weather sense"
         ],
-        "notes": "disguise (female shield dwarves only"
+        "notes": "Disguise is a bonus proficiency for female shield dwarves only; languages (racial tongue) for male shield dwarves only."
       },
       "armor": {
         "allowedTypes": "as_class",
@@ -13993,14 +13940,9 @@
       },
       "weapons": {
         "required": [],
-        "recommended": [
-          "Weapon Slots: 4",
-          "Initial Weapons: Any",
-          "Additional Weapons: Any",
-          "Nonproficiency Penalty: -2"
-        ],
+        "recommended": [],
         "forbidden": [],
-        "notes": "Additional Weapon Proficiency Slots: 3"
+        "notes": "Initial Weapons: Any (see below); Additional Weapons: Any (see below)"
       },
       "proficiencies": {
         "bonus": [
@@ -14023,8 +13965,7 @@
           "fishing",
           "gaming",
           "heraldry",
-          "riding (seabased",
-          "CRH)",
+          "Riding, Sea-based",
           "rope use",
           "seamstress/tailor",
           "signaling",
@@ -14102,14 +14043,9 @@
       },
       "weapons": {
         "required": [],
-        "recommended": [
-          "Weapon Slots: 4",
-          "Initial Weapons: Any",
-          "Additional Weapons: Any",
-          "Nonproficiency Penalty: -2"
-        ],
+        "recommended": [],
         "forbidden": [],
-        "notes": "Additional Weapon Proficiency Slots: 3"
+        "notes": "Initial Weapons: Any (see below); Additional Weapons: Any (see below)"
       },
       "proficiencies": {
         "bonus": [
@@ -14279,9 +14215,7 @@
       "weapons": {
         "required": [],
         "recommended": [
-          "Axe (hand",
-          "battle",
-          "or throwing)",
+          "Axe (hand, battle, or throwing)",
           "club"
         ],
         "forbidden": [],
@@ -14355,14 +14289,9 @@
       },
       "weapons": {
         "required": [],
-        "recommended": [
-          "Weapon Slots: 3",
-          "Initial Weapons: See below",
-          "Additional Weapons: See below",
-          "Nonproficiency Penalty: -2"
-        ],
+        "recommended": [],
         "forbidden": [],
-        "notes": "Additional Weapon Proficiency Slots: 3"
+        "notes": "Initial Weapons: See below; Additional Weapons: See below"
       },
       "proficiencies": {
         "bonus": [
@@ -14384,8 +14313,7 @@
           "local history",
           "navigation",
           "reading/writing",
-          "riding (sea-based",
-          "CRH)",
+          "Riding, Sea-based",
           "weaponsmithing"
         ],
         "notes": null
@@ -14456,12 +14384,9 @@
       },
       "weapons": {
         "required": [],
-        "recommended": [
-          "Weapon Slots: 2",
-          "Nonproficiency Penalty: -3"
-        ],
+        "recommended": [],
         "forbidden": [],
-        "notes": "Additional Weapon Proficiency Slots: 4"
+        "notes": null
       },
       "proficiencies": {
         "bonus": [
@@ -14990,13 +14915,9 @@
       },
       "weapons": {
         "required": [],
-        "recommended": [
-          "Weapon Slots: 4",
-          "Initial Weapons: Battle axe",
-          "Nonproficiency Penalty: -2"
-        ],
+        "recommended": [],
         "forbidden": [],
-        "notes": "either hand axe or warhammer; and any one other except a missile weapon; Additional Weapon Proficiency Slots: 3; Additional Weapons: Any except missile weapons"
+        "notes": "Initial Weapons: Battle axe (spec.), either hand axe or warhammer, and any one other except a missile weapon; Additional Weapons: Any except missile weapons"
       },
       "proficiencies": {
         "bonus": [
@@ -15143,14 +15064,9 @@
       },
       "weapons": {
         "required": [],
-        "recommended": [
-          "Weapon Slots: 3",
-          "Initial Weapons: See below",
-          "Additional Weapons: Any",
-          "Nonproficiency Penalty: -2"
-        ],
+        "recommended": [],
         "forbidden": [],
-        "notes": "Additional Weapon Proficiency Slots: 3"
+        "notes": "Initial Weapons: See below; Additional Weapons: Any"
       },
       "proficiencies": {
         "bonus": [
@@ -15525,16 +15441,9 @@
       },
       "weapons": {
         "required": [],
-        "recommended": [
-          "Weapon Slots: 4",
-          "Initial Weapons: Footman's pick",
-          "warhammer",
-          "and any two others",
-          "Additional Weapons: Any",
-          "Nonproficiency Penalty: -2"
-        ],
+        "recommended": [],
         "forbidden": [],
-        "notes": "Additional Weapon Proficiency Slots: 3"
+        "notes": "Initial Weapons: Footman's pick, warhammer, and any two others; Additional Weapons: Any"
       },
       "proficiencies": {
         "bonus": [
@@ -15990,13 +15899,10 @@
           "harpoon",
           "sword",
           "pole arm",
-          "trident",
-          "Optional: Belaying pin",
-          "cutlass",
-          "gaff/hook"
+          "trident"
         ],
         "forbidden": [],
-        "notes": null
+        "notes": "Optional: Belaying pin, cutlass, gaff/hook."
       },
       "proficiencies": {
         "bonus": [],
@@ -16276,14 +16182,9 @@
       },
       "weapons": {
         "required": [],
-        "recommended": [
-          "Weapon Slots: 1",
-          "Initial Weapons: See below",
-          "Additional Weapons: Any",
-          "Nonproficiency Penalty: See below"
-        ],
+        "recommended": [],
         "forbidden": [],
-        "notes": "Additional Weapon Proficiency Slots: 3"
+        "notes": "Initial Weapons: See below; Additional Weapons: Any"
       },
       "proficiencies": {
         "bonus": [],
@@ -17076,7 +16977,7 @@
           "quarterstaff",
           "pole arm",
           "spear",
-          "sword "
+          "sword"
         ],
         "forbidden": [],
         "notes": null
@@ -17145,12 +17046,9 @@
       },
       "weapons": {
         "required": [],
-        "recommended": [
-          "Weapon Slots: 4",
-          "Nonproficiency Penalty: -2"
-        ],
+        "recommended": [],
         "forbidden": [],
-        "notes": "Additional Weapon Proficiency Slots: 3"
+        "notes": null
       },
       "proficiencies": {
         "bonus": [
@@ -17228,12 +17126,9 @@
       },
       "weapons": {
         "required": [],
-        "recommended": [
-          "Weapon Slots: 4",
-          "Nonproficiency Penalty: -2"
-        ],
+        "recommended": [],
         "forbidden": [],
-        "notes": "Additional Weapon Proficiency Slots: 3"
+        "notes": null
       },
       "proficiencies": {
         "bonus": [
@@ -17309,12 +17204,9 @@
       },
       "weapons": {
         "required": [],
-        "recommended": [
-          "Weapon Slots: 4",
-          "Nonproficiency Penalty: -2"
-        ],
+        "recommended": [],
         "forbidden": [],
-        "notes": "Additional Weapon Proficiency Slots: 3"
+        "notes": null
       },
       "proficiencies": {
         "bonus": [],
@@ -17388,12 +17280,9 @@
       },
       "weapons": {
         "required": [],
-        "recommended": [
-          "Weapon Slots: 4",
-          "Nonproficiency Penalty: -2"
-        ],
+        "recommended": [],
         "forbidden": [],
-        "notes": "Additional Weapon Proficiency Slots: 3"
+        "notes": null
       },
       "proficiencies": {
         "bonus": [
@@ -17467,12 +17356,9 @@
       },
       "weapons": {
         "required": [],
-        "recommended": [
-          "Weapon Slots: 4",
-          "Nonproficiency Penalty: -2"
-        ],
+        "recommended": [],
         "forbidden": [],
-        "notes": "Additional Weapon Proficiency Slots: 3"
+        "notes": null
       },
       "proficiencies": {
         "bonus": [
@@ -17546,12 +17432,9 @@
       },
       "weapons": {
         "required": [],
-        "recommended": [
-          "Weapon Slots: 3",
-          "Nonproficiency Penalty: -2"
-        ],
+        "recommended": [],
         "forbidden": [],
-        "notes": "Additional Weapon Proficiency Slots: 4"
+        "notes": null
       },
       "proficiencies": {
         "bonus": [],
@@ -17623,12 +17506,9 @@
       },
       "weapons": {
         "required": [],
-        "recommended": [
-          "Weapon Slots: 4",
-          "Nonproficiency Penalty: -2"
-        ],
+        "recommended": [],
         "forbidden": [],
-        "notes": "Additional Weapon Proficiency Slots: 3"
+        "notes": null
       },
       "proficiencies": {
         "bonus": [
@@ -17703,12 +17583,9 @@
       },
       "weapons": {
         "required": [],
-        "recommended": [
-          "Weapon Slots: 4",
-          "Nonproficiency Penalty: -2"
-        ],
+        "recommended": [],
         "forbidden": [],
-        "notes": "Additional Weapon Proficiency Slots: 3"
+        "notes": null
       },
       "proficiencies": {
         "bonus": [],
@@ -17780,12 +17657,9 @@
       },
       "weapons": {
         "required": [],
-        "recommended": [
-          "Weapon Slots: 4",
-          "Nonproficiency Penalty: -2"
-        ],
+        "recommended": [],
         "forbidden": [],
-        "notes": "Additional Weapon Proficiency Slots: 3"
+        "notes": null
       },
       "proficiencies": {
         "bonus": [],
@@ -17855,19 +17729,16 @@
       },
       "weapons": {
         "required": [],
-        "recommended": [
-          "Weapon Slots: 4",
-          "Nonproficiency Penalty: -2"
-        ],
+        "recommended": [],
         "forbidden": [],
-        "notes": "Additional Weapon Proficiency Slots: 3"
+        "notes": null
       },
       "proficiencies": {
         "bonus": [
           "Varies"
         ],
         "recommended": [],
-        "notes": "; None"
+        "notes": null
       },
       "armor": {
         "allowedTypes": "as_class",
@@ -17932,12 +17803,9 @@
       },
       "weapons": {
         "required": [],
-        "recommended": [
-          "Weapon Slots: ﻿4",
-          "Nonproficiency Penalty: -2"
-        ],
+        "recommended": [],
         "forbidden": [],
-        "notes": "Additional Weapon Proficiency Slots: 3"
+        "notes": null
       },
       "proficiencies": {
         "bonus": [],
@@ -17961,7 +17829,7 @@
       },
       "startingCash": "5d4x10 gp",
       "weaponSlots": {
-        "initial": null,
+        "initial": 4,
         "additional": 3,
         "nonproficiencyPenalty": "-2"
       }
@@ -18010,12 +17878,9 @@
       },
       "weapons": {
         "required": [],
-        "recommended": [
-          "Weapon Slots: 3",
-          "Nonproficiency Penalty: -2"
-        ],
+        "recommended": [],
         "forbidden": [],
-        "notes": "Additional Weapon Proficiency Slots: 3"
+        "notes": null
       },
       "proficiencies": {
         "bonus": [
@@ -18091,19 +17956,16 @@
       },
       "weapons": {
         "required": [],
-        "recommended": [
-          "Weapon Slots: 4",
-          "Nonproficiency Penalty: -2"
-        ],
+        "recommended": [],
         "forbidden": [],
-        "notes": "Additional Weapon Proficiency Slots: 3"
+        "notes": null
       },
       "proficiencies": {
         "bonus": [
           "Survival"
         ],
         "recommended": [],
-        "notes": "; None"
+        "notes": null
       },
       "armor": {
         "allowedTypes": "as_class",
@@ -18169,19 +18031,16 @@
       },
       "weapons": {
         "required": [],
-        "recommended": [
-          "Weapon Slots: 3",
-          "Nonproficiency Penalty: -3"
-        ],
+        "recommended": [],
         "forbidden": [],
-        "notes": "Additional Weapon Proficiency Slots: 3"
+        "notes": null
       },
       "proficiencies": {
         "bonus": [
           "Spellcraft"
         ],
         "recommended": [],
-        "notes": "; None"
+        "notes": null
       },
       "armor": {
         "allowedTypes": "as_class",
@@ -18246,12 +18105,9 @@
       },
       "weapons": {
         "required": [],
-        "recommended": [
-          "Weapon Slots: 4",
-          "Nonproficiency Penalty: -2"
-        ],
+        "recommended": [],
         "forbidden": [],
-        "notes": "Additional Weapon Proficiency Slots: 3"
+        "notes": null
       },
       "proficiencies": {
         "bonus": [],
@@ -18321,12 +18177,9 @@
       },
       "weapons": {
         "required": [],
-        "recommended": [
-          "Weapon Slots: 4",
-          "Nonproficiency Penalty: -2"
-        ],
+        "recommended": [],
         "forbidden": [],
-        "notes": "Additional Weapon Proficiency Slots: 3"
+        "notes": null
       },
       "proficiencies": {
         "bonus": [],
@@ -18396,12 +18249,9 @@
       },
       "weapons": {
         "required": [],
-        "recommended": [
-          "Weapon Slots: 4",
-          "Nonproficiency Penalty: -2"
-        ],
+        "recommended": [],
         "forbidden": [],
-        "notes": "Additional Weapon Proficiency Slots: 3"
+        "notes": null
       },
       "proficiencies": {
         "bonus": [],
@@ -18471,12 +18321,9 @@
       },
       "weapons": {
         "required": [],
-        "recommended": [
-          "Weapon Slots: 4",
-          "Nonproficiency Penalty: -2"
-        ],
+        "recommended": [],
         "forbidden": [],
-        "notes": "Additional Weapon Proficiency Slots: 3"
+        "notes": null
       },
       "proficiencies": {
         "bonus": [],
@@ -18546,12 +18393,9 @@
       },
       "weapons": {
         "required": [],
-        "recommended": [
-          "Weapon Slots: 4",
-          "Nonproficiency Penalty: -2"
-        ],
+        "recommended": [],
         "forbidden": [],
-        "notes": "Additional Weapon Proficiency Slots: 3"
+        "notes": null
       },
       "proficiencies": {
         "bonus": [
@@ -18916,20 +18760,9 @@
       },
       "weapons": {
         "required": [],
-        "recommended": [
-          "Weapon Slots: 2",
-          "Initial Weapons: Standard thief",
-          "plus spear",
-          "javelin",
-          "harpoon",
-          "hand axe",
-          "warhammer",
-          "and ambidexterity",
-          "Additional Weapons: As above",
-          "Nonproficiency Penalty: -3"
-        ],
+        "recommended": [],
         "forbidden": [],
-        "notes": "Additional Weapon Proficiency Slots: 4"
+        "notes": "Initial Weapons: Standard thief, plus spear, javelin, harpoon, hand axe, warhammer, and ambidexterity (CFH); Additional Weapons: As above"
       },
       "proficiencies": {
         "bonus": [
@@ -19309,19 +19142,9 @@
       },
       "weapons": {
         "required": [],
-        "recommended": [
-          "Weapon Slots: 2",
-          "Initial Weapons: Club",
-          "dagger",
-          "dart",
-          "knife",
-          "quarterstaff",
-          "sling",
-          "Additional Weapons: Standard thief",
-          "Nonproficiency Penalty: -3"
-        ],
+        "recommended": [],
         "forbidden": [],
-        "notes": "Additional Weapon Proficiency Slots: 4"
+        "notes": "Initial Weapons: Club, dagger, dart, knife, quarterstaff, sling; Additional Weapons: Standard thief (see below)"
       },
       "proficiencies": {
         "bonus": [
@@ -19845,14 +19668,9 @@
       },
       "weapons": {
         "required": [],
-        "recommended": [
-          "Weapon Slots: 1",
-          "Initial Weapons: Dagger",
-          "Additional Weapons: Standard thief",
-          "Nonproficiency Penalty: -3"
-        ],
+        "recommended": [],
         "forbidden": [],
-        "notes": "Additional Weapon Proficiency Slots: 4"
+        "notes": "Initial Weapons: Dagger; Additional Weapons: Standard thief"
       },
       "proficiencies": {
         "bonus": [
@@ -20516,16 +20334,9 @@
       },
       "weapons": {
         "required": [],
-        "recommended": [
-          "Weapon Slots: 2",
-          "Initial Weapons: Footman's pick",
-          "warhammer",
-          "and standard thief weapons",
-          "Additional Weapons: As above",
-          "Nonproficiency Penalty: -3"
-        ],
+        "recommended": [],
         "forbidden": [],
-        "notes": "Additional Weapon Proficiency Slots: 4"
+        "notes": "Initial Weapons: Footman's pick, warhammer, and standard thief weapons; Additional Weapons: As above"
       },
       "proficiencies": {
         "bonus": [
@@ -20550,8 +20361,7 @@
           "religion",
           "set snares",
           "stonemasonry",
-          "weaponsmithing (crude",
-          "CRH)"
+          "Weaponsmithing, Crude"
         ],
         "notes": null
       },
@@ -21439,10 +21249,10 @@
         "races": null
       },
       "weapons": {
-        "required": [],
-        "recommended": [
-          "Required: Ninja-to"
+        "required": [
+          "Ninja-to"
         ],
+        "recommended": [],
         "forbidden": [],
         "notes": null
       },
@@ -21512,15 +21322,9 @@
       },
       "weapons": {
         "required": [],
-        "recommended": [
-          "Weapon Slots: ﻿2",
-          "warhammer",
-          "and standard thief weapons",
-          "Additional Weapons: As above",
-          "Nonproficiency Penalty: 3"
-        ],
+        "recommended": [],
         "forbidden": [],
-        "notes": "Initial Weapons: Footman's or horseman's pick; Additional Weapon Proficiency Slots: 4"
+        "notes": "Initial Weapons: Footman's or horseman's pick, warhammer, and standard thief weapons; Additional Weapons: As above"
       },
       "proficiencies": {
         "bonus": [
@@ -21554,9 +21358,9 @@
       },
       "startingCash": "2d6x10 gp",
       "weaponSlots": {
-        "initial": null,
+        "initial": 2,
         "additional": 4,
-        "nonproficiencyPenalty": "3"
+        "nonproficiencyPenalty": "-3"
       }
     },
     "deity": null,
@@ -21675,18 +21479,9 @@
       },
       "weapons": {
         "required": [],
-        "recommended": [
-          "Weapon Slots: 3",
-          "plus net",
-          "any bow",
-          "any crossbow",
-          "blowgun",
-          "or standard thief weapon",
-          "Additional Weapons: Standard thief",
-          "Nonproficiency Penalty: -3"
-        ],
+        "recommended": [],
         "forbidden": [],
-        "notes": "Initial Weapons: Any one-handed weapons; Additional Weapon Proficiency Slots: 4"
+        "notes": "Initial Weapons: Any one-handed weapons, plus net, any bow, any crossbow, blowgun, or standard thief weapon; Additional Weapons: Standard thief"
       },
       "proficiencies": {
         "bonus": [
@@ -21865,14 +21660,9 @@
       },
       "weapons": {
         "required": [],
-        "recommended": [
-          "Weapon Slots: 1",
-          "Initial Weapons: Standard thief",
-          "Additional Weapons: Standard thief",
-          "Nonproficiency Penalty: -3"
-        ],
+        "recommended": [],
         "forbidden": [],
-        "notes": "Additional Weapon Proficiency Slots: 4"
+        "notes": "Initial Weapons: Standard thief; Additional Weapons: Standard thief"
       },
       "proficiencies": {
         "bonus": [
@@ -21971,14 +21761,9 @@
       },
       "weapons": {
         "required": [],
-        "recommended": [
-          "Weapon Slots: 2",
-          "Initial Weapons: Standard thief",
-          "Additional Weapons: Standard thief",
-          "Nonproficiency Penalty: -3"
-        ],
+        "recommended": [],
         "forbidden": [],
-        "notes": "Additional Weapon Proficiency Slots: 4"
+        "notes": "Initial Weapons: Standard thief; Additional Weapons: Standard thief"
       },
       "proficiencies": {
         "bonus": [
@@ -22146,18 +21931,9 @@
       },
       "weapons": {
         "required": [],
-        "recommended": [
-          "Weapon Slots: 2",
-          "Initial Weapons: Standard thief",
-          "plus hand axe",
-          "blowgun",
-          "short bow",
-          "warhammer",
-          "Additional Weapons: As above",
-          "Nonproficiency Penalty: -3"
-        ],
+        "recommended": [],
         "forbidden": [],
-        "notes": "Additional Weapon Proficiency Slots: 4"
+        "notes": "Initial Weapons: Standard thief, plus hand axe, blowgun, short bow, warhammer; Additional Weapons: As above"
       },
       "proficiencies": {
         "bonus": [
@@ -22529,14 +22305,9 @@
       },
       "weapons": {
         "required": [],
-        "recommended": [
-          "Weapon Slots: 2",
-          "Initial Weapons: Standard thief",
-          "Additional Weapons: As above",
-          "Nonproficiency Penalty: -3"
-        ],
+        "recommended": [],
         "forbidden": [],
-        "notes": "plus long bow or short bow; Additional Weapon Proficiency Slots: 4"
+        "notes": "Initial Weapons: Standard thief, plus long bow or short bow; Additional Weapons: As above"
       },
       "proficiencies": {
         "bonus": [
@@ -22562,14 +22333,13 @@
           "herbalism",
           "hunting",
           "leatherworking",
-          "moun﻿taineering",
+          "mountaineering",
           "observation",
           "riding",
           "rope use",
           "signaling",
           "swimming",
-          "weaponsmithing (crude",
-          "CRH)",
+          "Weaponsmithing, Crude",
           "weather sense"
         ],
         "notes": null
@@ -22858,7 +22628,7 @@
         "required": [],
         "recommended": [
           "Ninja-to",
-          "daikyu  or hankyu "
+          "daikyu or hankyu"
         ],
         "forbidden": [],
         "notes": null
@@ -23138,7 +22908,7 @@
       "weapons": {
         "required": [],
         "recommended": [
-          "Hankyu "
+          "Hankyu"
         ],
         "forbidden": [],
         "notes": null
@@ -23208,10 +22978,10 @@
         "races": null
       },
       "weapons": {
-        "required": [],
-        "recommended": [
-          "Required: Ninja-to"
+        "required": [
+          "Ninja-to"
         ],
+        "recommended": [],
         "forbidden": [],
         "notes": null
       },
@@ -23346,14 +23116,9 @@
       },
       "weapons": {
         "required": [],
-        "recommended": [
-          "Weapon Slots: 2",
-          "Initial Weapons: Standard thief",
-          "Additional Weapons: Standard thief",
-          "Nonproficiency Penalty: -3"
-        ],
+        "recommended": [],
         "forbidden": [],
-        "notes": "Additional Weapon Proficiency Slots: 4"
+        "notes": "Initial Weapons: Standard thief; Additional Weapons: Standard thief"
       },
       "proficiencies": {
         "bonus": [
@@ -24027,14 +23792,9 @@
       },
       "weapons": {
         "required": [],
-        "recommended": [
-          "Weapon Slots: 3",
-          "Initial Weapons: Standard thief",
-          "Additional Weapons: Standard thief",
-          "Nonproficiency Penalty: 3"
-        ],
+        "recommended": [],
         "forbidden": [],
-        "notes": "plus a one-handed non-thief melee weapon; Additional Weapon Proficiency Slots: 4"
+        "notes": "Initial Weapons: Standard thief, plus a one-handed non-thief melee weapon (see below); Additional Weapons: Standard thief"
       },
       "proficiencies": {
         "bonus": [
@@ -24071,7 +23831,7 @@
       "weaponSlots": {
         "initial": 3,
         "additional": 4,
-        "nonproficiencyPenalty": "3"
+        "nonproficiencyPenalty": "-3"
       }
     },
     "deity": null,
@@ -24237,7 +23997,7 @@
     "features": {
       "requirements": "Constitution 9, Dexterity 9, Strength 9",
       "role": "Tunnelrats are small folk who are able to negotiate narrow tunnels and cramped chambers in the Underdark, making themselves extremely important to the defense of their home cities, strongholds, and mines. They are guides to the Underdark, scouts and spies for military groups, and explorers seeking new passages and riches through the endless labyrinth beneath the lands of Faerûn. Short demihumans with infravision make the best tunnelrats. Tunnelrats first appeared among dwarf strongholds millennia ago but now are seen in many human-dominated cities with sewer systems or infestations of tunnel-building osquips, giant weasels, and giant rats. (Waterdeep comes to mind, as it has Undermountain beneath it.) The besieged rock gnome mining town of Quarrelshigh in Amn has many fine tunnelrats, and rock gnomes working for the gold dwarves in the Great Rift also have fine reputations. Deep gnomes, stout halflings, and outcast gray dwarves are seen as tunnelrats, too.",
-      "weaponProficiencies": "Weapon Slots: Dagger, dart, hand crossbow, knife, short sword, punching, wrestling; Initial Weapons: 4; Additional Weapon Proficiency Slots: Standard thief, excluding quarterstaff, including punching and wrestling; Additional Weapons: |-; Nonproficiency Penalty: -3",
+      "weaponProficiencies": "Initial Weapons: Dagger, dart, hand crossbow, knife, short sword, punching, wrestling; Additional Weapon Proficiency Slots: 4; Additional Weapons: Standard thief, excluding quarterstaff, including punching and wrestling; Nonproficiency Penalty: -3",
       "nonweaponProficiencies": "Nonweapon Slots: 3; Additional Nonweapon Proficiency Slots: 4; Available Categories: General, Rogue; Bonus Proficiencies: Blind-fighting, tracking, mountaineering, slow respiration (CBDw); Recommended Proficiencies: Animal lore, blacksmithing, fire-building, hunting (CTH), languages (modern), leatherworking, mining, rope use, swimming",
       "equipment": null,
       "specialBenefits": "A tunnelrat takes no penalties in combat conducted in areas as small as 2 feet across so long as he uses stabbing, piercing hand-held weapons (dagger, knife, and short sword). He even gains a +2 bonus to attack rolls with these weapons, if chosen. He can fling darts for full effect with only 1 foot of throwing space in front of him or to one side. He also gains a +2 bonus to punching or wrestling attack rolls in these confined spaces, if either of those are chosen as weapon proficiencies. He can crawl on hands and knees at the same movement rate as he can normally walk, but he does so only through tunnels he is familiar with; movement is reduced to MV 3 when checking for traps, dangerous fungi, ambushes, or monsters. Belly crawling at a rate of MV 1, with full abilities to check for traps, can be done through tunnels only 18 inches wide. (A tunnelrat does not let himself get fat.) Those who aren't tunnelrats move at half the above rates at best, and take a -2 penalty on attack and damage rolls in the spaces described. Silent movement is possible even when belly crawling at normal speed. A visible light source must be present in order to check for traps, or monsters. A tunnelrat knows the chittering language of local burrowing mammals normally known only to surface gnomes. He can use this language and his own Charisma scores to encourage burrowers to flee, aid him, or leave him alone. From long practice, a tunnelrat is so skilled at hiding against underground terrain that, when not moving, he imposes a -4 penalty on their opponents' surprise rolls. This bonus is effective only against opponents who do not have infravision. However, the tunnelrat has learned to lie so still that he can cool his body temperature and thus even fool creatures with infravision a bit; against infravision users, the surprise penalty is -2. It takes a full hour for this body cooling to take effect, making it useful only for planned ambushes. A tunnelrat can lie perfectly still for as many hours as he has Constitution points, and he can hold his breath for up to half his Constitution points in rounds if able to prepare himself for one turn beforehand. A tunnelrat gains bonuses to detect certain underground phenomena usually noticed by dwarves and gnomes. A light source is required. These bonuses are gained only in tunnels at most 5 feet wide, if the tunnelrat is deliberately searching for these bits of information for one round. Regardless of the tunnelrat's race, he can detect sloping passages; new tunnel construction; sliding/shifting passages; stonework traps, deadfalls, and pits; unsafe walls, ceilings, and floors; approximate depth underground; and approximate direction underground on a roll of 1-7 on 1d8. He also gains a +4 to his surprise roll against any underground plant or animal having an Intelligence from 0 to 4 (non- to semi-), detecting it ahead of time by sight, sound, or smell. A light is not required for this talent to work. (Unintelligent creatures do not know how to conceal their presence.) A tunnelrat is immune to normal attacks of claustrophobia, as he is so accustomed to small, tight spaces. The tunnelrat gains a +6 bonus to saving throws against any magical attack or disease attempting to induce claustrophobia. He also gains a normal +2 bonus vs. magical fear-based attacks.",
@@ -24264,22 +24024,9 @@
       },
       "weapons": {
         "required": [],
-        "recommended": [
-          "Weapon Slots: Dagger",
-          "dart",
-          "hand crossbow",
-          "knife",
-          "short sword",
-          "punching",
-          "wrestling",
-          "Initial Weapons: 4",
-          "excluding quarterstaff",
-          "including punching and wrestling",
-          "Additional Weapons: |",
-          "Nonproficiency Penalty: -3"
-        ],
+        "recommended": [],
         "forbidden": [],
-        "notes": "Additional Weapon Proficiency Slots: Standard thief"
+        "notes": "Initial Weapons: Dagger, dart, hand crossbow, knife, short sword, punching, wrestling; Additional Weapons: Standard thief, excluding quarterstaff, including punching and wrestling"
       },
       "proficiencies": {
         "bonus": [
@@ -24316,7 +24063,7 @@
       "startingCash": "2d6x10 gp",
       "weaponSlots": {
         "initial": null,
-        "additional": null,
+        "additional": 4,
         "nonproficiencyPenalty": "-3"
       }
     },
@@ -24440,18 +24187,9 @@
       },
       "weapons": {
         "required": [],
-        "recommended": [
-          "Weapon Slots: 2",
-          "Initial Weapons: Club",
-          "dagger",
-          "dart",
-          "knife",
-          "sling",
-          "Additional Weapons: As above",
-          "Nonproficiency Penalty: -3"
-        ],
+        "recommended": [],
         "forbidden": [],
-        "notes": "Additional Weapon Proficiency Slots: 4"
+        "notes": "Initial Weapons: Club, dagger, dart, knife, sling (see below); Additional Weapons: As above"
       },
       "proficiencies": {
         "bonus": [
@@ -24773,7 +24511,7 @@
       },
       "weapons": {
         "recommended": [
-          "Recommended: dagger",
+          "dagger",
           "knife",
           "scimitar",
           "short sword"
@@ -25291,7 +25029,7 @@
       },
       "weapons": {
         "recommended": [
-          "Recommended: dagger",
+          "dagger",
           "knife"
         ],
         "required": [],
@@ -26509,7 +26247,7 @@
       },
       "weapons": {
         "recommended": [
-          "Recommended: Any"
+          "Any"
         ],
         "required": [],
         "notes": null,
