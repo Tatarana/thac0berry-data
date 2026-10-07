@@ -1616,6 +1616,10 @@
       "value": 3
      },
      "movement": "12",
+     "hitDice": {
+      "text": "½",
+      "value": 0
+     },
      "thac0": {
       "text": "20",
       "value": 20
@@ -1653,6 +1657,10 @@
       "value": 6
      },
      "movement": "15",
+     "hitDice": {
+      "text": "½",
+      "value": 0
+     },
      "thac0": {
       "text": "20",
       "value": 20
@@ -1812,7 +1820,7 @@
      "specialAttacks": "8' jump",
      "specialDefenses": "Nil",
      "magicResistance": "Nil",
-     "size": "L 9' tall, 12' long",
+     "size": "L 9½' tall, 12' long",
      "morale": "Steady (11)",
      "xp": {
       "text": "4,000",
@@ -2768,7 +2776,7 @@
      "specialAttacks": "Nil",
      "specialDefenses": "Nil",
      "magicResistance": "Nil",
-     "size": "L (7' tall)",
+     "size": "L (7½' tall)",
      "morale": "Elite (13)",
      "xp": {
       "text": "270",
@@ -3944,7 +3952,7 @@
      "specialAttacks": "See below",
      "specialDefenses": "See below",
      "magicResistance": "See below",
-     "size": "M (4' and taller)",
+     "size": "M (4½' and taller)",
      "morale": "Elite (13-14)",
      "xp": {
       "text": "270",
@@ -4796,7 +4804,7 @@
     "name": "Examiner (Abomination)",
     "source": "Monstrous Manual (2140)",
     "ecology": {
-     "climateTerrain": "Amy remote",
+     "climateTerrain": "Any remote",
      "frequency": "Very rare",
      "organization": "Squad",
      "activityCycle": "Night",
@@ -4958,7 +4966,7 @@
      "specialAttacks": "Spells",
      "specialDefenses": "Swat away missiles",
      "magicResistance": "15%",
-     "size": "L (10' tall)",
+     "size": "L (10½' tall)",
      "morale": "Champion (16)",
      "xp": {
       "text": "8,000\nShaman: 9,000",
@@ -5353,7 +5361,7 @@
      "specialAttacks": "Surprise",
      "specialDefenses": "Only surprised on a 1",
      "magicResistance": "Nil",
-     "size": "H (13' tall)",
+     "size": "H (13½' tall)",
      "morale": "Elite (14)",
      "xp": {
       "text": "6,000",
@@ -6230,7 +6238,7 @@
      "specialAttacks": "Nil",
      "specialDefenses": "Nil",
      "magicResistance": "Nil",
-     "size": "S (2' long)",
+     "size": "S (2½' long)",
      "morale": "Steady (12)",
      "xp": {
       "text": "35",
@@ -6843,7 +6851,7 @@
      "specialAttacks": "Nil",
      "specialDefenses": "Nil",
      "magicResistance": "Nil",
-     "size": "L (7' tall)",
+     "size": "L (7½' tall)",
      "morale": "Steady (11)",
      "xp": {
       "text": "35\nLeaders & guards: 65\nChieftain: 120",
@@ -6884,7 +6892,7 @@
      "specialAttacks": "Disarm",
      "specialDefenses": "Nil",
      "magicResistance": "Nil",
-     "size": "M (6' tall)",
+     "size": "M (6½' tall)",
      "morale": "Steady (11-12)",
      "xp": {
       "text": "120",
@@ -7392,7 +7400,7 @@
      "specialAttacks": "See below",
      "specialDefenses": "See below",
      "magicResistance": "Nil",
-     "size": "L (9' tall)",
+     "size": "L (9½' tall)",
      "morale": "Fearless (19-20)",
      "xp": {
       "text": "8,000",
@@ -8555,18 +8563,19 @@
      },
      "movement": "6/as victim's hp",
      "hitDice": {
+      "text": "5/victim's hp",
+      "value": null
+     },
+     "thac0": {
       "text": "15",
       "value": 15
      },
-     "thac0": {
-      "text": "1/1, as 5-HD monster",
-      "value": null
-     },
-     "attacks": "See below/by weapon",
-     "damage": "See below",
+     "attacks": "1/1, as 5-HD monster",
+     "damage": "See below/by weapon",
      "specialAttacks": "See below",
-     "specialDefenses": "Nil",
-     "magicResistance": "Variable",
+     "specialDefenses": "See below",
+     "magicResistance": "Nil",
+     "size": "Variable",
      "morale": "Champion (16)",
      "xp": {
       "text": "2,000",
@@ -8709,7 +8718,7 @@
      "specialDefenses": "Hit only by silver or +1 weapons",
      "magicResistance": "See below",
      "size": "M (5-7' tall)",
-     "morale": "Steady",
+     "morale": "Steady (11)",
      "xp": {
       "text": "270",
       "value": 270
@@ -9071,7 +9080,7 @@
      "specialAttacks": "Nil",
      "specialDefenses": "Nil",
      "magicResistance": "Nil",
-     "size": "M (6 1⁄2' tall)",
+     "size": "M (6 ½' tall)",
      "morale": "Steady (11-12)",
      "xp": {
       "text": "35\nSub-chief: 65\nChief: 120",
@@ -9819,7 +9828,7 @@
      },
      "movement": "6",
      "hitDice": {
-      "text": "(1-4 hit points)",
+      "text": "½ (1-4 hit points)",
       "value": null
      },
      "thac0": {
@@ -10824,7 +10833,7 @@
      "specialAttacks": "Nil",
      "specialDefenses": "See below",
      "magicResistance": "Nil",
-     "size": "L (7' tall)",
+     "size": "L (7½' tall)",
      "morale": "Fearless (19-20)",
      "xp": {
       "text": "2,000",
@@ -11736,7 +11745,7 @@
     "name": "Merman (Merfolk)",
     "source": "Monstrous Manual (2140)",
     "ecology": {
-     "climateTerrain": "Termperate/Oceans",
+     "climateTerrain": "Temperate/Oceans",
      "frequency": "Uncommon",
      "organization": "Community",
      "activityCycle": "Any",
@@ -11844,7 +11853,7 @@
      "size": "L",
      "morale": "Champion (15)",
      "xp": {
-      "text": "7 HD: 9758\nHD: 1,400",
+      "text": "7 HD: 975\n8 HD: 1,400",
       "value": null
      }
     }
@@ -11952,11 +11961,11 @@
       "value": 13
      },
      "attacks": "2",
-     "damage": "2-8/2-8 or 1-4/by wepaon type",
+     "damage": "2-8/2-8 or 1-4/by weapon type",
      "specialAttacks": "Grapple, charge",
      "specialDefenses": "+2 bonus on surprise roll",
      "magicResistance": "Nil",
-     "size": "L ( tall)",
+     "size": "L (7 1/2 tall)",
      "morale": "Elite (13) + Special",
      "xp": {
       "text": "1,400\nElder: 3,000",
@@ -12181,7 +12190,7 @@
      "specialAttacks": "See below",
      "specialDefenses": "See below",
      "magicResistance": "Nil",
-     "size": "S-M (2-4 1⁄2') Nil",
+     "size": "S-M (2-4½')",
      "morale": "Average (8-10)",
      "xp": {
       "text": "1 HD: 120\n2 HD: 175\n3 HD: 270\n4 HD: 420\n5 HD: 650\n6 HD: 2,000",
@@ -12383,8 +12392,8 @@
      },
      "movement": "3, Sw 12",
      "hitDice": {
-      "text": "1⁄2",
-      "value": null
+      "text": "½",
+      "value": 0
      },
      "thac0": {
       "text": "20",
@@ -12843,8 +12852,8 @@
       "value": 5
      },
      "thac0": {
-      "text": "1",
-      "value": null
+      "text": "15",
+      "value": 15
      },
      "attacks": "3",
      "damage": "1-3/1-3/1-6",
@@ -13237,7 +13246,7 @@
      "specialAttacks": "Magic spells",
      "specialDefenses": "Nil",
      "magicResistance": "Nil",
-     "size": "Large (10')",
+     "size": "Large (10½')",
      "morale": "Elite (13-14)",
      "xp": {
       "text": "650\nChieftain: 975",
@@ -13459,7 +13468,7 @@
       "text": "7",
       "value": 7
      },
-     "movement": "12, Br",
+     "movement": "12, Br ½",
      "hitDice": {
       "text": "3+1",
       "value": 3
@@ -13807,7 +13816,7 @@
      "specialAttacks": "Dive, rear kick",
      "specialDefenses": "Nil",
      "magicResistance": "Nil",
-     "size": "L (5 1⁄2' at the shoulder)",
+     "size": "L (5 ½' at the shoulder)",
      "morale": "Steady (11)",
      "xp": {
       "text": "175\nGreater: 650",
@@ -14018,8 +14027,8 @@
      },
      "movement": "6",
      "hitDice": {
-      "text": "1⁄2",
-      "value": null
+      "text": "½",
+      "value": 0
      },
      "thac0": {
       "text": "15",
@@ -14028,7 +14037,7 @@
      "attacks": "1",
      "damage": "Nil",
      "specialAttacks": "Fear",
-     "specialDefenses": "Invisibilty, silver or magical weapon to hit",
+     "specialDefenses": "Invisibility, silver or magical weapon to hit",
      "magicResistance": "Nil",
      "size": "M (6' tall)",
      "morale": "Average (10)",
@@ -14103,7 +14112,7 @@
      "specialAttacks": "Poison sting",
      "specialDefenses": "Chameleon power",
      "magicResistance": "35%",
-     "size": "T (1' long)",
+     "size": "T (1½' long)",
      "morale": "Champion (15)",
      "xp": {
       "text": "420",
@@ -14285,7 +14294,7 @@
      "specialAttacks": "Illusion",
      "specialDefenses": "+2 or better magical weapon to hit",
      "magicResistance": "Special",
-     "size": "M (6' tall)",
+     "size": "M (6½' tall)",
      "morale": "Fanatic (17-18)",
      "xp": {
       "text": "Ruhk 7,000\nRajah 7,000\nMaharajah 11,000",
@@ -14349,6 +14358,10 @@
       "value": 7
      },
      "movement": "15",
+     "hitDice": {
+      "text": "¼",
+      "value": null
+     },
      "thac0": {
       "text": "20",
       "value": 20
@@ -14386,6 +14399,10 @@
       "value": 7
      },
      "movement": "12, Sw 6",
+     "hitDice": {
+      "text": "½",
+      "value": 0
+     },
      "thac0": {
       "text": "20",
       "value": 20
@@ -15593,7 +15610,7 @@
      },
      "attacks": "1",
      "damage": "2-5",
-     "specialAttacks": "Strangth drain",
+     "specialAttacks": "Strength drain",
      "specialDefenses": "+1 or better weapon to hit",
      "magicResistance": "See below",
      "size": "M (6' tall)",
@@ -16044,7 +16061,7 @@
      "size": "M (5-6' tall)",
      "morale": "Steady (11-12)",
      "xp": {
-      "text": "4 HD: 2,000 (+1,000 for each additonal Hit Die)",
+      "text": "4 HD: 2,000 (+1,000 for each additional Hit Die)",
       "value": null
      }
     }
@@ -16479,6 +16496,10 @@
       "value": 6
      },
      "movement": "9",
+     "hitDice": {
+      "text": "½",
+      "value": 0
+     },
      "thac0": {
       "text": "20",
       "value": 20
@@ -17250,7 +17271,7 @@
     "name": "Swanmay",
     "source": "Monstrous Manual (2140)\nMC2 Monstrous Compendium Volume Two (2103)",
     "ecology": {
-     "climateTerrain": "Termperate wetlands",
+     "climateTerrain": "Temperate wetlands",
      "frequency": "Very rare",
      "organization": "Flock",
      "activityCycle": "Any",
@@ -17603,7 +17624,7 @@
       "text": "5 (6)",
       "value": 5
      },
-     "movement": "9, CI 15",
+     "movement": "9, Cl 15",
      "hitDice": {
       "text": "1",
       "value": 1
@@ -18755,9 +18776,9 @@
      "attacks": "1",
      "damage": "5-10",
      "specialAttacks": "Energy drain",
-     "specialDefenses": "+1 or better magical weapon to hitt",
+     "specialDefenses": "+1 or better magical weapon to hit",
      "magicResistance": "See below",
-     "size": "M (5-6')",
+     "size": "M (5½-6½')",
      "morale": "Champion (16)",
      "xp": {
       "text": "Western: 8,000\nEastern: 9,000",
@@ -18828,7 +18849,7 @@
      "specialAttacks": "Nil",
      "specialDefenses": "Nil",
      "magicResistance": "Nil",
-     "size": "L (8' to 10' tall)",
+     "size": "L (8½' to 10' tall)",
      "morale": "Elite (13)",
      "xp": {
       "text": "270",
@@ -18967,7 +18988,7 @@
      "specialDefenses": "Magic",
      "magicResistance": "Nil",
      "size": "L (6' in diameter)",
-     "morale": "Average (19)",
+     "morale": "Average (10)",
      "xp": {
       "text": "420",
       "value": 420
@@ -20521,7 +20542,7 @@
      "specialDefenses": "Nil",
      "magicResistance": "20%",
      "size": "M or L (10' long)",
-     "morale": "Elite (14)",
+     "morale": "Elite (14)\nAbominations: Champion (15)",
      "xp": {
       "text": "Varies",
       "value": null

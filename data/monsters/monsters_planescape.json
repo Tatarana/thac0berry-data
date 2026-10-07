@@ -42,9 +42,9 @@
      "attacks": "1 or by weapon",
      "damage": "1d3 or by weapon",
      "specialAttacks": "Spell use",
-     "specialDefenses": "damage from fire and cold; +2 to saves vs. charm, emotion, fear, or domination",
+     "specialDefenses": "½ damage from fire and cold; +2 to saves vs. charm, emotion, fear, or domination",
      "magicResistance": "10%",
-     "size": "M (5-6' tall)",
+     "size": "M (5½-6½' tall)",
      "morale": "Elite (13-14)",
      "xp": {
       "text": "420",
@@ -669,7 +669,7 @@
      "attacks": "4",
      "damage": "2d4/2d4/2d4/2d4",
      "specialAttacks": "Acid, poison",
-     "specialDefenses": "damage from Type S or B weapons; struck only hy +2 or better weapons",
+     "specialDefenses": "½ damage from Type S or B weapons; struck only hy +2 or better weapons",
      "magicResistance": "40%",
      "size": "L (6' diameter)",
      "morale": "Champion (15-16)",
@@ -1172,7 +1172,7 @@
      "specialDefenses": "+3 or better weapons to hit, spell immunity",
      "magicResistance": "60%",
      "size": "M (6' tall)",
-     "morale": "Championj (15-16)",
+     "morale": "Champion (15-16)",
      "xp": {
       "text": "20,000",
       "value": 20000
@@ -1739,7 +1739,7 @@
      "specialAttacks": "Dive, spell-like powers",
      "specialDefenses": "Hit only by silver or +1 or better weapons",
      "magicResistance": "40%",
-     "size": "M (6' tall, 20' wingspan)",
+     "size": "M (6½' tall, 20' wingspan)",
      "morale": "Champion (15-16)",
      "xp": {
       "text": "8,000",
@@ -2021,6 +2021,7 @@
       "text": "11",
       "value": 11
      },
+     "attacks": "½",
      "damage": "2d10",
      "specialAttacks": "Tail slap, song",
      "specialDefenses": "See below",
@@ -3433,7 +3434,7 @@
      "attacks": "2",
      "damage": "1d4+2/1d4+2",
      "specialAttacks": "See below",
-     "specialDefenses": "+1 or better weapon to hit, immune to eath-based magic",
+     "specialDefenses": "+1 or better weapon to hit, immune to earth-based magic",
      "magicResistance": "Nil",
      "size": "S",
      "morale": "Average (8-10)",
@@ -4560,7 +4561,7 @@
      "attacks": "1",
      "damage": "4d4",
      "specialAttacks": "Engulf, psionics",
-     "specialDefenses": "Immune to Type B weapons, damage from Type S",
+     "specialDefenses": "Immune to Type B weapons, ½ damage from Type S",
      "magicResistance": "Nil",
      "size": "L (8' body)",
      "morale": "Champion (15-16)",
@@ -5305,7 +5306,7 @@
      "specialAttacks": "Whinny",
      "specialDefenses": "None",
      "magicResistance": "25%",
-     "size": "L (7' tall)",
+     "size": "L (7½' tall)",
      "morale": "Champion (15-16)",
      "xp": {
       "text": "5,000",
@@ -5819,6 +5820,7 @@
      "activityCycle": "Any",
      "diet": "Special",
      "intelligence": "Exceptional (15-16)",
+     "treasure": "Nil",
      "alignment": "Chaotic good"
     },
     "combat": {
@@ -6077,7 +6079,7 @@
      "specialAttacks": "Nil",
      "specialDefenses": "See below",
      "magicResistance": "Nil",
-     "size": "S (2' wingspan)",
+     "size": "S (2½' wingspan)",
      "morale": "Steady (12)",
      "xp": {
       "text": "120",
@@ -6792,7 +6794,7 @@
      "specialAttacks": "Stench, acidic slime",
      "specialDefenses": "+2 or better weapons to hit",
      "magicResistance": "50%",
-     "size": "M (6'tall)",
+     "size": "M (6½'tall)",
      "morale": "Champion (15-16)",
      "xp": {
       "text": "17,000",
@@ -6904,7 +6906,7 @@
       "value": 9
      },
      "attacks": "4",
-     "damage": "1d4+4/1d4+4/2d4+4/3d4+4 (Strenght bonus)",
+     "damage": "1d4+4/1d4+4/2d4+4/3d4+4 (Strength bonus)",
      "specialAttacks": "Tail freeze, fear",
      "specialDefenses": "Regeneration, +2 weapons to hit",
      "magicResistance": "50%",
@@ -7738,7 +7740,7 @@
      "activityCycle": "Day",
      "diet": "Omnivore",
      "intelligence": "Average to high (8-14)",
-     "treasure": "Nil (I×)",
+     "treasure": "Nil (I×½)",
      "alignment": "Neutral evil"
     },
     "combat": {
@@ -9046,7 +9048,7 @@
      "specialAttacks": "Surprise",
      "specialDefenses": "Immune to heat and cold",
      "magicResistance": "Nil",
-     "size": "S (3' long)",
+     "size": "S (3½' long)",
      "morale": "Elite (13-14)",
      "xp": {
       "text": "1,400",
@@ -9682,7 +9684,7 @@
      "attacks": "3",
      "damage": "1d6/1d6/2d6",
      "specialAttacks": "Crush, charge, memory loss",
-     "specialDefenses": "Regneration, +1 or better weapon to hit",
+     "specialDefenses": "Regeneration, +1 or better weapon to hit",
      "magicResistance": "30%",
      "size": "L (9' tall)",
      "morale": "Fearless (19-20)",
@@ -10027,7 +10029,7 @@
      "diet": "Carnivore",
      "intelligence": "Genius (17-18)",
      "treasure": "C,F",
-     "alignment": "Chotic evil"
+     "alignment": "Chaotic evil"
     },
     "combat": {
      "numberAppearing": "1-2",
@@ -10381,7 +10383,7 @@
      },
      "attacks": "1",
      "damage": "Stun",
-     "specialAttacks": "Spell crasing",
+     "specialAttacks": "Spell erasing",
      "specialDefenses": "Deific intervention",
      "magicResistance": "Nil",
      "size": "S (3' diam.)",
@@ -11310,7 +11312,7 @@
      "attacks": "2",
      "damage": "By weapon",
      "specialAttacks": "See below",
-     "specialDefenses": "Parry, protection, never surprised, regeneration, +1 or better wepaons to hit",
+     "specialDefenses": "Parry, protection, never surprised, regeneration, +1 or better weapons to hit",
      "magicResistance": "40%",
      "size": "M (6' tall)",
      "morale": "Fearless (19-20)",
@@ -11459,7 +11461,7 @@
      "attacks": "3",
      "damage": "1d4/1d4/2d4",
      "specialAttacks": "Magical spray",
-     "specialDefenses": "Never surprised, cold iron or +2 ot better weapons to hit",
+     "specialDefenses": "Never surprised, cold iron or +2 or better weapons to hit",
      "magicResistance": "70%",
      "size": "H (20' tall)",
      "morale": "Fanatic (17-18)",
@@ -11743,7 +11745,7 @@
      "attacks": "1",
      "damage": "2d6",
      "specialAttacks": "Cause disease",
-     "specialDefenses": "Spell immunity, +3 wepaons to hit",
+     "specialDefenses": "Spell immunity, +3 weapons to hit",
      "magicResistance": "65%",
      "size": "M (5' tall)",
      "morale": "Average (8-10)",
@@ -12740,7 +12742,7 @@
      "attacks": "2",
      "damage": "1d10/1d10",
      "specialAttacks": "Energy drain, scalding, poisonous vapors",
-     "specialDefenses": "+2 or better weapon to hit, immune to fire, heat and acid, damage from lightning",
+     "specialDefenses": "+2 or better weapon to hit, immune to fire, heat and acid, ½ damage from lightning",
      "magicResistance": "25% or 50%",
      "size": "L (10' tall)",
      "morale": "Champion (15-16)",
@@ -12956,11 +12958,11 @@
       "value": 14
      },
      "thac0": {
-      "text": "7 (+6 Strenght and by weapon bonus)",
+      "text": "7 (+6 Strength and by weapon bonus)",
       "value": 7
      },
      "attacks": "3",
-     "damage": "1d10+10 (strenght and magical bonus)",
+     "damage": "1d10+10 (strength and magical bonus)",
      "specialAttacks": "Vorpal weapon + special",
      "specialDefenses": "Never surprised, regeneration",
      "magicResistance": "75%",
@@ -13103,7 +13105,7 @@
      "specialAttacks": "Energy drain",
      "specialDefenses": "Magical Items",
      "magicResistance": "None",
-     "size": "M (5'-6' tall)",
+     "size": "M (5'-6½' tall)",
      "morale": "Unsteady (5-7)",
      "xp": {
       "text": "4,000 at 9th level, plus 1,000 per additional level (10th: 5,000; 11th: 6,000, etc.)",
@@ -13951,7 +13953,7 @@
      "specialAttacks": "Backstab, acid, quickness",
      "specialDefenses": "Struck only by +2 or better weapons",
      "magicResistance": "45%",
-     "size": "M (5' tall)",
+     "size": "M (5½' tall)",
      "morale": "Fanatic (17-18)",
      "xp": {
       "text": "9,000",
@@ -14020,7 +14022,7 @@
      "specialAttacks": "Specialization",
      "specialDefenses": "Struck only by +1 or better weapons",
      "magicResistance": "35%",
-     "size": "M (6' tall)",
+     "size": "M (6½' tall)",
      "morale": "Fanatic (17-18)",
      "xp": {
       "text": "4,000",
@@ -14307,7 +14309,7 @@
      "specialDefenses": "See below",
      "magicResistance": "Nil",
      "size": "L (10' tall)",
-     "morale": "Elite (15-16)",
+     "morale": "Champion (15-16)",
      "xp": {
       "text": "8,000",
       "value": 8000
@@ -14348,7 +14350,7 @@
      "specialDefenses": "See below",
      "magicResistance": "Nil",
      "size": "L (12' tall)",
-     "morale": "Elite (15-16)",
+     "morale": "Champion (15-16)",
      "xp": {
       "text": "3,000",
       "value": 3000
@@ -14746,7 +14748,7 @@
      "specialAttacks": "Nil",
      "specialDefenses": "Contortion, save bonus, immunities",
      "magicResistance": "Nil",
-     "size": "S-M (4-5' tall)",
+     "size": "S-M (4-5½' tall)",
      "morale": "Steady (11-12)",
      "xp": {
       "text": "175",
@@ -15559,7 +15561,7 @@
       "text": "4",
       "value": 4
      },
-     "movement": "6, Fl (C)",
+     "movement": "6, Fl 18 (C)",
      "hitDice": {
       "text": "3+3",
       "value": 3
@@ -16425,7 +16427,7 @@
       "value": 5
      },
      "attacks": "2",
-     "damage": "7-42 (7d6) wepaon +14 (strength bonus)",
+     "damage": "7-42 (7d6) weapon +14 (strength bonus)",
      "specialAttacks": "See below",
      "specialDefenses": "See below",
      "magicResistance": "50%",
@@ -16704,7 +16706,7 @@
      "specialAttacks": "Poison, magic use",
      "specialDefenses": "Nil",
      "magicResistance": "Nil",
-     "size": "M (5' tall)",
+     "size": "M (5½' tall)",
      "morale": "Unsteady (5-7)",
      "xp": {
       "text": "3,000",
@@ -17097,7 +17099,7 @@
      "activityCycle": "Night",
      "diet": "Omnivore",
      "intelligence": "Semi- to Average (2 to 10)",
-     "treasure": "Nil (F×)",
+     "treasure": "Nil (F×½)",
      "alignment": "Neutral evil"
     },
     "combat": {
@@ -17117,7 +17119,7 @@
      },
      "attacks": "2",
      "damage": "1-4/1-4 or 4d4/4d4",
-     "specialAttacks": "Blinding, drowing",
+     "specialAttacks": "Blinding, drowning",
      "specialDefenses": "+1 or better weapon to hit, immune to water attack",
      "magicResistance": "Nil",
      "size": "M (L)",
@@ -18305,11 +18307,11 @@
       "value": 7
      },
      "attacks": "2",
-     "damage": "1d12/1d12 or by weapon +9 (Strenght bonus)",
+     "damage": "1d12/1d12 or by weapon +9 (Strength bonus)",
      "specialAttacks": "Magical weapon, gaze of fascination",
      "specialDefenses": "+3 or better weapons to hit, never surprised",
      "magicResistance": "60%",
-     "size": "M (6' tall)",
+     "size": "M (6½' tall)",
      "morale": "Champion (15-16)",
      "xp": {
       "text": "26,000",

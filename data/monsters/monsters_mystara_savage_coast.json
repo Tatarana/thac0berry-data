@@ -794,7 +794,7 @@
      "specialAttacks": "Strangulation (1d8)",
      "specialDefenses": "Nil",
      "magicResistance": "Nil",
-     "size": "S (3' tall)",
+     "size": "S (3½' tall)",
      "morale": "Unsteady (7)",
      "xp": {
       "text": "120",
@@ -4763,7 +4763,7 @@
      "specialAttacks": "Poison, surprise, snares",
      "specialDefenses": "Nil",
      "magicResistance": "Nil",
-     "size": "T (1-2' tall)",
+     "size": "T (1½-2' tall)",
      "morale": "Steady (11)",
      "xp": {
       "text": "65\nLeader: 120\nChief: 175\nShaman: 270",
@@ -4845,7 +4845,7 @@
      "specialAttacks": "Summon insects",
      "specialDefenses": "Nil",
      "magicResistance": "Nil",
-     "size": "S (2' tall)",
+     "size": "S (2½' tall)",
      "morale": "Elite (13)",
      "xp": {
       "text": "120",
@@ -6192,6 +6192,10 @@
       "value": 3
      },
      "movement": "6",
+     "hitDice": {
+      "text": "½",
+      "value": 0
+     },
      "thac0": {
       "text": "20",
       "value": 20
@@ -9047,7 +9051,7 @@
      "specialAttacks": "Paralyzation",
      "specialDefenses": "Regeneration",
      "magicResistance": "Nil",
-     "size": "M (6' tall)",
+     "size": "M (6½' tall)",
      "morale": "Champion (15)",
      "xp": {
       "text": "270Spellcaster, 1st level: 420\nSpellcaster, 2nd level: 650\nSpellcaster, 3rd level: 975\nSpellcaster, 4th level: 1,400",

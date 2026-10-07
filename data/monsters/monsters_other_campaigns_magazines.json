@@ -433,7 +433,7 @@
      "activityCycle": "Any",
      "diet": "Omnivore",
      "intelligence": "Semi- (2-4)",
-     "treasure": "D(x )",
+     "treasure": "D(x ½)",
      "alignment": "Chaotic neutral"
     },
     "combat": {
@@ -3058,7 +3058,7 @@
      "specialAttacks": "Coldfire",
      "specialDefenses": "Fog cloud",
      "magicResistance": "Nil",
-     "size": "M (' tall)",
+     "size": "M (5 1/2' tall)",
      "morale": "Elite (13-14)",
      "xp": {
       "text": "975",
@@ -3163,11 +3163,11 @@
      },
      "movement": "9, Sw 18",
      "hitDice": {
-      "text": "to 3",
+      "text": "½ to 3",
       "value": null
      },
      "thac0": {
-      "text": "HD: 201-2 HD: 19\n3 HD: 17",
+      "text": "½ HD: 201-2 HD: 19\n3 HD: 17",
       "value": null
      },
      "attacks": "1",
@@ -3178,7 +3178,7 @@
      "size": "T-S (1-4' tall)",
      "morale": "Unsteady to steady (5-9)",
      "xp": {
-      "text": "HD: 120\n1 HD: 176\n2 HD: 270\n3 HD: 420",
+      "text": "½ HD: 120\n1 HD: 176\n2 HD: 270\n3 HD: 420",
       "value": null
      }
     }
@@ -3381,7 +3381,7 @@
      "specialAttacks": "Spells",
      "specialDefenses": "Immune to missile weapons",
      "magicResistance": "35%",
-     "size": "M (5-6' tall)",
+     "size": "M (5-6½' tall)",
      "morale": "Elite (14)",
      "xp": {
       "text": "9,000",
@@ -3518,7 +3518,7 @@
      "specialAttacks": "Spells, +4 to surprise foes",
      "specialDefenses": "Spells, thieving abilities",
      "magicResistance": "25%",
-     "size": "T (1' tall)",
+     "size": "T (1½' tall)",
      "morale": "Steady (11)",
      "xp": {
       "text": "650Leaders: 975",
@@ -5100,7 +5100,7 @@
      },
      "movement": "1, Fl 18",
      "hitDice": {
-      "text": "1-4 hp\n( - L&L)",
+      "text": "1-4 hp\n(½ - L&L)",
       "value": null
      },
      "thac0": {
@@ -5696,6 +5696,7 @@
       "text": "6",
       "value": 6
      },
+     "movement": "½",
      "hitDice": {
       "text": "3-5",
       "value": 3
@@ -5937,7 +5938,7 @@
      "specialAttacks": "Nil",
      "specialDefenses": "Nil",
      "magicResistance": "Nil",
-     "size": "S (2' at shoulder)",
+     "size": "S (2½' at shoulder)",
      "morale": "Average (8-10)",
      "xp": {
       "text": "120",
@@ -6490,6 +6491,10 @@
       "value": 10
      },
      "movement": "9",
+     "hitDice": {
+      "text": "½",
+      "value": 0
+     },
      "thac0": {
       "text": "20",
       "value": 20
@@ -6499,7 +6504,7 @@
      "specialAttacks": "none",
      "specialDefenses": "Nil",
      "magicResistance": "Nil",
-     "size": "S ()",
+     "size": "S (4 1/2)",
      "morale": "Unreliable (4)",
      "xp": {
       "text": "7",
@@ -7465,6 +7470,10 @@
       "value": 9
      },
      "movement": "3, Fl 15 (D)",
+     "hitDice": {
+      "text": "½",
+      "value": 0
+     },
      "thac0": {
       "text": "20",
       "value": 20
@@ -8170,6 +8179,10 @@
       "value": 10
      },
      "movement": "12",
+     "hitDice": {
+      "text": "½",
+      "value": 0
+     },
      "thac0": {
       "text": "Nil (7 or younger) or 20 (8 or older)",
       "value": null
@@ -11614,6 +11627,7 @@
       "text": "13/11",
       "value": null
      },
+     "attacks": "½",
      "damage": "1-6/1-8 or weapon",
      "specialAttacks": "Nil",
      "specialDefenses": "See below",
@@ -11897,7 +11911,7 @@
      "specialAttacks": "Polymorph self",
      "specialDefenses": "See below",
      "magicResistance": "10%",
-     "size": "Variable, M (6' tall)",
+     "size": "Variable, M (6½' tall)",
      "morale": "Champion (16)",
      "xp": {
       "text": "1,400",
@@ -11965,7 +11979,7 @@
      "specialAttacks": "Whirlwind; see below",
      "specialDefenses": "Air-based combat; see below",
      "magicResistance": "Nil",
-     "size": "L (10 ft. tall)",
+     "size": "L (10 ½ ft. tall)",
      "morale": "Elite (13-14)",
      "xp": {
       "text": "6,000",
@@ -12715,7 +12729,7 @@
      "specialAttacks": "Bite lock, see below",
      "specialDefenses": "See below",
      "magicResistance": "20%",
-     "size": "M (body 5', tail 2')",
+     "size": "M (body 5', tail 2½')",
      "morale": "Elite (13-14)",
      "xp": {
       "text": "3 HD: 975\n4 HD: 1,400\n5 HD: 2,000",
@@ -14573,7 +14587,7 @@
      "specialAttacks": "See below",
      "specialDefenses": "See below",
      "magicResistance": "50%",
-     "size": "M (5' tall)",
+     "size": "M (5½' tall)",
      "morale": "Elite (14)",
      "xp": {
       "text": "270",
@@ -15774,7 +15788,7 @@
      "specialAttacks": "Nil",
      "specialDefenses": "Nil",
      "magicResistance": "Nil",
-     "size": "S (3-4' tall)",
+     "size": "S (3½-4' tall)",
      "morale": "Irregular (6)",
      "xp": {
       "text": "1 HD: 35\n2 HD: 120\n3 HD: 175",
@@ -15960,7 +15974,7 @@
      },
      "movement": "9, Flying 14",
      "hitDice": {
-      "text": "(4hp each)",
+      "text": "½ (4hp each)",
       "value": null
      },
      "thac0": {
@@ -17392,7 +17406,7 @@
      "specialAttacks": "Stunning ram",
      "specialDefenses": "Nil",
      "magicResistance": "Nil",
-     "size": "L (7')",
+     "size": "L (7½')",
      "morale": "Steady (11)",
      "xp": {
       "text": "120",
@@ -19609,7 +19623,7 @@
      "specialAttacks": "Nil",
      "specialDefenses": "See below",
      "magicResistance": "Special",
-     "size": "M (5'-6'",
+     "size": "M (5½'-6'",
      "morale": "Steady (11) (and see below)",
      "xp": {
       "text": "Normal: 35\nLeader: 120\nChampion: 175",
@@ -21778,7 +21792,7 @@
      "specialAttacks": "Spells",
      "specialDefenses": "Spells",
      "magicResistance": "Nil",
-     "size": "M (6' tall)",
+     "size": "M (6½' tall)",
      "morale": "Steady (12)",
      "xp": {
       "text": "270",
@@ -23368,7 +23382,7 @@
      },
      "movement": "12",
      "hitDice": {
-      "text": "(1-4 hp)",
+      "text": "½ (1-4 hp)",
       "value": null
      },
      "thac0": {
@@ -24237,6 +24251,10 @@
       "value": 6
      },
      "movement": "15",
+     "hitDice": {
+      "text": "½",
+      "value": 0
+     },
      "thac0": {
       "text": "20",
       "value": 20
@@ -24511,7 +24529,7 @@
      },
      "movement": "6",
      "hitDice": {
-      "text": "(1-4 hp)",
+      "text": "½ (1-4 hp)",
       "value": null
      },
      "thac0": {
@@ -24638,7 +24656,7 @@
      "activityCycle": "Any",
      "diet": "Omnivore",
      "intelligence": "Very (11-12)",
-     "treasure": "W×",
+     "treasure": "W×½",
      "alignment": "Chaotic evil (neutral)"
     },
     "combat": {
@@ -26435,7 +26453,7 @@
      "specialAttacks": "Energy drain",
      "specialDefenses": "+1 weapon or better to hit",
      "magicResistance": "10%",
-     "size": "M (5' tall)",
+     "size": "M (5½' tall)",
      "morale": "Steady (12)",
      "xp": {
       "text": "6,000",
@@ -26778,7 +26796,7 @@
      "specialAttacks": "Rear claws 2d4",
      "specialDefenses": "+2 surprised, camouflage",
      "magicResistance": "Nil",
-     "size": "M (4'- ' long)",
+     "size": "M (4'- 4 1/2' long)",
      "morale": "Average (8-10)",
      "xp": {
       "text": "175",
@@ -27367,7 +27385,7 @@
      "specialAttacks": "Entanglment in serpent form",
      "specialDefenses": "Save as 10th-level warrior",
      "magicResistance": "10%",
-     "size": "M (6' in human form, or H (13' long) in serpent form",
+     "size": "M (6½' in human form, or H (13' long) in serpent form",
      "morale": "Fearless (20)",
      "xp": {
       "text": "650",
@@ -28666,7 +28684,7 @@
      "attacks": "1",
      "damage": "2d12",
      "specialAttacks": "Hold for 2d6",
-     "specialDefenses": "Immune to charms and gases, damage from fire",
+     "specialDefenses": "Immune to charms and gases, ½ damage from fire",
      "magicResistance": "Nil",
      "size": "L (8' long)",
      "morale": "Fearless (19)",
@@ -29673,6 +29691,10 @@
       "value": 7
      },
      "movement": "6, Sw (12)",
+     "hitDice": {
+      "text": "½",
+      "value": 0
+     },
      "thac0": {
       "text": "20",
       "value": 20
@@ -29753,7 +29775,7 @@
      "specialAttacks": "See below",
      "specialDefenses": "See below",
      "magicResistance": "Nil",
-     "size": "Tiny (' square)",
+     "size": "Tiny (½' square)",
      "morale": "Average (9)",
      "xp": {
       "text": "35",
@@ -31588,6 +31610,10 @@
       "value": 8
      },
      "movement": "Sw 9",
+     "hitDice": {
+      "text": "½",
+      "value": 0
+     },
      "thac0": {
       "text": "20",
       "value": 20
@@ -31696,8 +31722,8 @@
      },
      "movement": "6, Fl 12 (B)",
      "hitDice": {
-      "text": "1⁄2",
-      "value": null
+      "text": "½",
+      "value": 0
      },
      "thac0": {
       "text": "20 (16)",
@@ -31708,7 +31734,7 @@
      "specialAttacks": "See below",
      "specialDefenses": "Invisibility, spells",
      "magicResistance": "25%",
-     "size": "S (2 1⁄2' tall)",
+     "size": "S (2 ½' tall)",
      "morale": "Steady (11)",
      "xp": {
       "text": "270",
@@ -32079,6 +32105,10 @@
       "value": 6
      },
      "movement": "9",
+     "hitDice": {
+      "text": "½",
+      "value": 0
+     },
      "thac0": {
       "text": "20",
       "value": 20
@@ -32144,6 +32174,10 @@
       "value": 6
      },
      "movement": "9, Cl 2",
+     "hitDice": {
+      "text": "½",
+      "value": 0
+     },
      "thac0": {
       "text": "20",
       "value": 20
@@ -32153,7 +32187,7 @@
      "specialAttacks": "Nil",
      "specialDefenses": "Quills",
      "magicResistance": "Nil",
-     "size": "S (2-3' long)",
+     "size": "S (2½-3' long)",
      "morale": "Unreliable (2)",
      "xp": {
       "text": "15",
@@ -32181,6 +32215,10 @@
       "value": 6
      },
      "movement": "9, Cl 2",
+     "hitDice": {
+      "text": "½",
+      "value": 0
+     },
      "thac0": {
       "text": "20",
       "value": 20
@@ -32927,6 +32965,10 @@
       "value": 9
      },
      "movement": "36",
+     "hitDice": {
+      "text": "½",
+      "value": 0
+     },
      "thac0": {
       "text": "20",
       "value": 20
@@ -37053,7 +37095,7 @@
      "specialAttacks": "Magic use, stinger (see below)",
      "specialDefenses": "+2 or better weapon to hit; half damage from cold, electricity, fire, and gas",
      "magicResistance": "50%",
-     "size": "L (8' tall)",
+     "size": "L (8½' tall)",
      "morale": "Fearless (19)",
      "xp": {
       "text": "21,000",
@@ -38884,6 +38926,10 @@
       "value": 10
      },
      "movement": "12",
+     "hitDice": {
+      "text": "½",
+      "value": 0
+     },
      "thac0": {
       "text": "18",
       "value": 18
@@ -39100,7 +39146,7 @@
      "specialAttacks": "Animated metal",
      "specialDefenses": "Immunity to lightning; metal merge",
      "magicResistance": "Nil",
-     "size": "S (2-4')",
+     "size": "S (2½-4')",
      "morale": "Elite (13)",
      "xp": {
       "text": "975",
@@ -39514,7 +39560,7 @@
      "attacks": "3",
      "damage": "1/1 claws + Id4bite",
      "specialAttacks": "Poisonous bite, save vs. poison or take 1dlO points of damage. Paralyzing touch. If the Strigloi hits with both claws, it has grabbed and paralyzed its victim and may take to the sky with him or her.",
-     "specialDefenses": "damage from nonmagical weapons.\nAlso, see below.",
+     "specialDefenses": "½ damage from nonmagical weapons.\nAlso, see below.",
      "magicResistance": "5%",
      "size": "M",
      "morale": "Elite (13-14)",
@@ -39572,7 +39618,7 @@
      },
      "movement": "6",
      "hitDice": {
-      "text": "(3 hp)",
+      "text": "½ (3 hp)",
       "value": null
      },
      "thac0": {
@@ -39584,7 +39630,7 @@
      "specialAttacks": "Nil",
      "specialDefenses": "See below",
      "magicResistance": "Nil",
-     "size": "T (1-2' tall)",
+     "size": "T (1½-2' tall)",
      "morale": "Steady (11-12)",
      "xp": {
       "text": "15",
@@ -40374,7 +40420,7 @@
      "specialAttacks": "8' jump, breath weapon",
      "specialDefenses": "Nil",
      "magicResistance": "Nil",
-     "size": "L (9' tall, 12' long)",
+     "size": "L (9½' tall, 12' long)",
      "morale": "Steady (11)",
      "xp": {
       "text": "5,000",
@@ -40645,7 +40691,7 @@
      "specialAttacks": "Dance, chilling touch",
      "specialDefenses": "+3 weapon or better to hit",
      "magicResistance": "40%",
-     "size": "M (5' tall)",
+     "size": "M (5½' tall)",
      "morale": "Champion (15)",
      "xp": {
       "text": "10,000",
@@ -41785,7 +41831,7 @@
      "specialAttacks": "Cause lycanthropy, breath weapon, priest spells",
      "specialDefenses": "Regeneration, +1 to better weapon to hit",
      "magicResistance": "Nil",
-     "size": "L (8' tall) or M (' tall)",
+     "size": "L (8' tall) or M (5 1/2' tall)",
      "morale": "Champion (16)",
      "xp": {
       "text": "9000",
@@ -42093,7 +42139,7 @@
      "activityCycle": "Night",
      "diet": "Carnivore",
      "intelligence": "Semi- (2-4)",
-     "treasure": "Q (I)",
+     "treasure": "Q (½I)",
      "alignment": "Chaotic neutral"
     },
     "combat": {
@@ -42509,6 +42555,10 @@
       "value": 6
      },
      "movement": "12",
+     "hitDice": {
+      "text": "½",
+      "value": 0
+     },
      "thac0": {
       "text": "20",
       "value": 20
@@ -43195,7 +43245,7 @@
      "attacks": "6",
      "damage": "3-6",
      "specialAttacks": "Tendrils, psionics",
-     "specialDefenses": "Ignore lightning, damage from cold, -4 penalty to saves vs. fire",
+     "specialDefenses": "Ignore lightning, ½ damage from cold, -4 penalty to saves vs. fire",
      "magicResistance": "45%",
      "size": "L (9' tall)",
      "morale": "Fearless (20)",
@@ -43806,7 +43856,7 @@
      "specialAttacks": "Bone control",
      "specialDefenses": "+1 or better weapon to hit",
      "magicResistance": "See below",
-     "size": "M (4-6')",
+     "size": "M (4½-6½')",
      "morale": "Champion (15-16)",
      "xp": {
       "text": "3,000",
@@ -45390,7 +45440,7 @@
      "specialAttacks": "Diseased bite (lycanthropy)",
      "specialDefenses": "Struck only by silver or magical weapons",
      "magicResistance": "Standard",
-     "size": "S (2 ' long in hare form) to M (4 ' tall in were-hare form)",
+     "size": "S (2 ' long in hare form) to M (4½ ' tall in were-hare form)",
      "morale": "Unsteady (5)",
      "xp": {
       "text": "175",

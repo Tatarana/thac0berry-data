@@ -444,6 +444,10 @@
       "value": 8
      },
      "movement": "1/10",
+     "hitDice": {
+      "text": "½",
+      "value": 0
+     },
      "thac0": {
       "text": "20",
       "value": 20
@@ -453,7 +457,7 @@
      "specialAttacks": "Nil",
      "specialDefenses": "Nil",
      "magicResistance": "Nil",
-     "size": "T (”)",
+     "size": "T (½”)",
      "morale": "None",
      "xp": {
       "text": "7",
@@ -2854,7 +2858,7 @@
      "specialDefenses": "Nil",
      "magicResistance": "Nil",
      "size": "G (36' long)",
-     "morale": "Very Steady (13-14)",
+     "morale": "Elite (13-14)",
      "xp": {
       "text": "9,000",
       "value": 9000
@@ -2895,7 +2899,7 @@
      "specialDefenses": "Nil",
      "magicResistance": "30%",
      "size": "H (18' tall)",
-     "morale": "Elite (15-16)",
+     "morale": "Champion (15-16)",
      "xp": {
       "text": "9,000",
       "value": 9000
@@ -6833,7 +6837,11 @@
      "specialDefenses": "Nil",
      "magicResistance": "Nil",
      "size": "M (7' tall)",
-     "morale": "Steady (11)"
+     "morale": "Steady (11)",
+     "xp": {
+      "text": "65\nPatrol leader: 65\nSubleader: 120\nWar leader: 270",
+      "value": 65
+     }
     }
    },
    {
@@ -6870,7 +6878,11 @@
      "specialDefenses": "Nil",
      "magicResistance": "Nil",
      "size": "L (8' tall)",
-     "morale": "Elite (13)"
+     "morale": "Elite (13)",
+     "xp": {
+      "text": "975",
+      "value": 975
+     }
     }
    }
   ],
@@ -10077,7 +10089,7 @@
      "attacks": "2 or 1",
      "damage": "2-12/2-12 + special or 3-18",
      "specialAttacks": "Fear, acidic poison, armor bite",
-     "specialDefenses": "damage from nonmetal weapons, immune to psionics",
+     "specialDefenses": "½ damage from nonmetal weapons, immune to psionics",
      "magicResistance": "25%",
      "size": "L to H (10-15' long)",
      "morale": "Fearless (19-20)",
@@ -10965,7 +10977,7 @@
      "specialDefenses": "Nil",
      "magicResistance": "Nil",
      "size": "M (5' tall)",
-     "morale": "Elite (15-16)",
+     "morale": "Champion (15-16)",
      "xp": {
       "text": "175",
       "value": 175
@@ -11093,7 +11105,7 @@
      "activityCycle": "Any",
      "diet": "Carnivore",
      "intelligence": "Average (8-10)",
-     "treasure": "Individual: M;\nLair: B",
+     "treasure": "Individual: M;\n½Lair: B",
      "alignment": "Lawful evil"
     },
     "combat": {

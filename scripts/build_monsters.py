@@ -92,6 +92,14 @@ TYPOS = {
     "M (6' ta1l)": "M (6' tall)",
 }
 
+# Erros de digitação dentro de frases (palavra -> correta), achados comparando com o histórico.
+WORD_TYPOS = {
+    "Strenght": "Strength", "strenght": "strength", "wepaon": "weapon", "wepaons": "weapons", "Chotic": "Chaotic",
+    "Termperate": "Temperate", "Amy remote": "Any remote", "Strangth": "Strength", "drowing": "drowning",
+    "Regneration": "Regeneration", "Invisibilty": "Invisibility", "electricty": "electricity", "eath-based": "earth-based",
+    "hitt": "hit", "Championj": "Champion", "crasing": "erasing", "additonal": "additional", "ot better": "or better",
+}
+
 # Casos pontuais (id -> índice da variante -> {campo: valor}), conferidos com o texto da página.
 MANUAL = {
     "tarrasque": {0: {"xp": "107,000"}},
@@ -114,6 +122,38 @@ MANUAL = {
         "size": "M (6' long)", "morale": None, "xp": None,
     }},
     "behemoth": {3: {"name": "Behemoth (Legends & Lore)"}},
+    # --- Recuperados do histórico da wiki (dumps/adnd2e_pages_full.xml.7z): a última
+    # versão da página com a tabela de estatísticas ROTULADA ("! XP Value:"), antes da
+    # conversão para o infobox, que deslocou os campos e perdeu o XP. Conferido campo a
+    # campo (2026-10-07); só entra o que a tabela rotulada tem de coerente.
+    "cat_winged": {0: {"xp": "975"}, 1: {"xp": "175"}},
+    "child_of_the_sea": {0: {"xp": "120"}, 1: {"xp": "650"}},
+    "coral": {0: {"xp": "175"}, 1: {"xp": "270 to 2,000"}},
+    "giant_clam": {0: {"xp": "175"}, 1: {"xp": "650"}},
+    "giant_turtle": {0: {"xp": "5,000"}, 1: {"xp": "3,000"}},
+    "gemstone_golem": {0: {"xp": "5,000"}, 1: {"xp": "8,000"}, 2: {"xp": "10,000"}},
+    "octo_jelly": {0: {"xp": "2,000"}, 1: {"xp": "4,000"}},
+    "sea_demon": {0: {"xp": "9,000"}, 1: {"xp": "15,000"}},
+    "shadowrath": {0: {"xp": "1,400"}, 1: {"xp": "2,000"}},
+    "lizard_man_athas": {0: {"xp": "65\nPatrol leader: 65\nSubleader: 120\nWar leader: 270"}, 1: {"xp": "975"}},
+    "time_dimensional": {0: {"xp": "4,000 or 8,000"}, 1: {"xp": "12,000"}, 2: {"xp": "16,000 or 20,000"}},
+    "dragon_kin": {0: {"magicResistance": "Nil"}, 1: {"magicResistance": "Nil"}},
+    "dragon_lesser_undead": {0: {"magicResistance": "Same as living"}, 1: {"magicResistance": "Same as living"}},
+    "neogi": {0: {"thac0": "15"}},
+    "gorse": {0: {"thac0": "20"}},
+    "watcher": {0: {"morale": "Average (10)"}},
+    "drik": {0: {"morale": "Elite (13-14)"}, 1: {"morale": "Champion (15-16)"}},
+    "ruvoka": {0: {"morale": "Champion (15-16)"}, 1: {"morale": "Champion (15-16)"}},
+    "tari": {1: {"morale": "Champion (15-16)"}},
+    "mimic": {0: {"xp": "7 HD: 975\n8 HD: 1,400"}},
+    "spinagon": {0: {"movement": "6, Fl 18 (C)"}},
+    "mold_man": {0: {"size": "S-M (2-4½')"}},
+    "yuan_ti": {0: {"morale": "Elite (14)\nAbominations: Champion (15)"}},
+    "heucuva": {0: {"morale": "Steady (11)"}},
+    "foo_creature": {1: {"treasure": "Nil"}},
+    # O infobox atual do Haunt está deslocado a partir do HD; a tabela rotulada não.
+    "haunt": {0: {"hitDice": "5/victim's hp", "thac0": "15", "attacks": "1/1, as 5-HD monster", "damage": "See below/by weapon",
+                  "specialDefenses": "See below", "magicResistance": "Nil", "size": "Variable", "morale": "Champion (16)", "xp": "2,000"}},
     # O tamanho foi parar no XP, e número/CA estão trocados (planta: CA 0, aparece 1-2).
     "giant_bladderwort": {0: {"numberAppearing": "1-2", "armorClass": "0", "size": "L to G", "xp": None}},
     # Dragon Magazine: falta um campo no meio (o THAC0, nos três primeiros) e o resto
@@ -123,7 +163,6 @@ MANUAL = {
     "gulper": {0: {"armorClass": "9", "movement": "Sw 15", "thac0": None, "attacks": "1", "damage": "2d8", "specialAttacks": "Constriction, swallow whole", "specialDefenses": "Nil", "magicResistance": "Nil", "size": "L (12' long)"}},
     "angler_fish": {0: {"armorClass": "8", "movement": "Sw 12", "thac0": None, "attacks": "1", "damage": "2d8 or (some species only) 1d4", "specialAttacks": "Swallow whole", "specialDefenses": "Nil", "magicResistance": "Nil", "size": None, "xp": None}},
     "plague_moth": {0: {"magicResistance": None, "size": "T (1' wingspan)"}},
-    "haunt": {0: {"size": None, "morale": "Champion (16)", "xp": "2,000"}},
     "zurchin": {0: {"specialDefenses": None, "size": "T (6\u201d to 1' diameter)", "xp": "120"}},
     # Deslocado para trás a partir da CA (a CA tem o movimento, o movimento tem o HD...).
     # As aranhas conferem com a tabela do DMG: HD 8+8 -> THAC0 11; HD 4+4 -> THAC0 15.
@@ -142,8 +181,8 @@ MANUAL = {
     }},
 }
 
-# Valor numérico que a fonte erra (o texto fica): Neogi HD 5 com "THAC0 1" (o MM dá 15).
-NO_VALUE = {("neogi", 0, "thac0")}
+# Valor numérico que a fonte erra (o texto fica). Vazio: o Neogi foi resolvido pelo histórico.
+NO_VALUE = set()
 
 # Lixo de OCR no texto da descrição (sequência exata -> correta).
 TEXT_TYPOS = {
@@ -262,6 +301,13 @@ def clean(text):
     t = re.sub(r"<ref[^>]*/>|<ref[^>]*>.*?</ref>", "", t, flags=re.S)
     t = re.sub(r"\{\{\s*br\s*\}\}|<br\s*/?>", "\n", t, flags=re.I)
     t = re.sub(r"\[\[(?:[^|\]]*\|)?([^\]]*)\]\]", r"\1", t)
+    # Frações da wiki ({{frac|1|2}} = ½; {{frac|2|1|2}} = 2 1/2): antes eram apagadas
+    # junto com os outros modelos, e o "HD ½" do Brownie sumia.
+    t = re.sub(r"\{\{\s*frac\s*\|\s*(\d+)\s*\|\s*(\d+)\s*\|\s*(\d+)\s*\|?\s*\}\}", r"\1 \2/\3", t, flags=re.I)
+    t = re.sub(r"\{\{\s*frac\s*\|\s*1\s*\|\s*2\s*\|?\s*\}\}", "½", t, flags=re.I)
+    t = re.sub(r"\{\{\s*frac\s*\|\s*1\s*\|\s*4\s*\|?\s*\}\}", "¼", t, flags=re.I)
+    t = re.sub(r"\{\{\s*frac\s*\|\s*(\d+)\s*\|\s*(\d+)\s*\|?\s*\}\}", r"\1/\2", t, flags=re.I)
+    t = t.replace("1⁄2", "½")
     t = re.sub(r"\{\{[^{}]*\}\}", "", t)
     t = re.sub(r"'{2,}", "", t)
     t = re.sub(r"<[^>]+>", "", t)
@@ -372,6 +418,8 @@ def shift_back(flat):
 
 def variant(col, page_name, single, mid=None, index=0):
     col = {k: TYPOS.get(v, v) for k, v in col.items()}
+    for bad, good in WORD_TYPOS.items():
+        col = {k: re.sub(rf"\b{re.escape(bad)}\b", good, v) for k, v in col.items()}
     name = col.get("name") or page_name if not single else page_name
     # Campo do infobox -> campo de saída, num dicionário só (texto).
     flat, extra = {}, {}
@@ -399,7 +447,7 @@ def variant(col, page_name, single, mid=None, index=0):
         FIXES.append((mid, name, f"tamanho estava na moral (tamanho na fonte: {flat.get('size')!r})", None))
         flat["size"], flat["morale"] = flat["morale"], None
     if flat.get("movement"):
-        flat["movement"] = re.sub(r"\bFI\b", "Fl", flat["movement"])
+        flat["movement"] = re.sub(r"\bCI\b", "Cl", re.sub(r"\bFI\b", "Fl", flat["movement"]))
     manual = dict(MANUAL.get(mid, {}).get(index, {}))
     name = manual.pop("name", name)
     flat.update(manual)

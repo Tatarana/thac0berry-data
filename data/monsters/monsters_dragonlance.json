@@ -187,7 +187,7 @@
      "specialAttacks": "Nil",
      "specialDefenses": "Nil",
      "magicResistance": "20%",
-     "size": "M (5' tall)",
+     "size": "M (5½' tall)",
      "morale": "Elite (13)",
      "xp": {
       "text": "175",
@@ -2442,7 +2442,7 @@
      "activityCycle": "Any",
      "diet": "Omnivore",
      "intelligence": "Varies (4-18)",
-     "treasure": "K,V×",
+     "treasure": "K,V×½",
      "alignment": "Varies, but usually lawful or neutral good"
     },
     "combat": {
@@ -3490,7 +3490,7 @@
      "specialAttacks": "See below",
      "specialDefenses": "See below",
      "magicResistance": "See below",
-     "size": "M (4' tall)",
+     "size": "M (4½' tall)",
      "morale": "Elite (13)",
      "xp": {
       "text": "Varies",
@@ -3903,7 +3903,7 @@
      "activityCycle": "Any",
      "diet": "Omnivore",
      "intelligence": "Varies (8-18)",
-     "treasure": "M; (E,S×,T)",
+     "treasure": "M; (E,S×½,T)",
      "alignment": "Varies, but usually lawful or neutral good"
     },
     "combat": {
@@ -4560,7 +4560,7 @@
      "activityCycle": "Any",
      "diet": "Special",
      "intelligence": "Highly (13-14)",
-     "treasure": "Q,V, (Z)",
+     "treasure": "Q,½V, (Z)",
      "alignment": "Neutral evil"
     },
     "combat": {

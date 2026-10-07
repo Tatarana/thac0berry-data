@@ -5146,7 +5146,7 @@
      },
      "movement": "12",
      "hitDice": {
-      "text": "(1-4 hit points)",
+      "text": "½ (1-4 hit points)",
       "value": null
      },
      "thac0": {
@@ -5868,7 +5868,7 @@
      "specialAttacks": "Nil",
      "specialDefenses": "Resist illusions",
      "magicResistance": "Nil",
-     "size": "M (6' tall)",
+     "size": "M (6½' tall)",
      "morale": "Average (8-10)",
      "xp": {
       "text": "65",
@@ -9272,7 +9272,7 @@
      },
      "movement": "0",
      "hitDice": {
-      "text": "(1-4 hit points)",
+      "text": "½ (1-4 hit points)",
       "value": null
      },
      "thac0": {

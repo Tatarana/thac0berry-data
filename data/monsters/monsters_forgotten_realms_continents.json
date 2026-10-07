@@ -3381,6 +3381,7 @@
      "damage": "Same as living",
      "specialAttacks": "Physical dragon attack forms not using flight; spell-like abilities of living form",
      "specialDefenses": "All dragon type and age immunities from life; immune to charm, hold, sleep, paralysis, and poison; save as priests of a level equal to their HD while living",
+     "magicResistance": "Same as living",
      "size": "Same as living",
      "morale": "Fearless (20)",
      "xp": {
@@ -3421,6 +3422,7 @@
      "damage": "Same as living",
      "specialAttacks": "Physical dragon attack forms not using flight; spell-like abilities of living form",
      "specialDefenses": "All dragon type and age immunities from life; immune to charm, hold, sleep, paralysis, and poison; save as priests of a level equal to their HD while living",
+     "magicResistance": "Same as living",
      "size": "Same as living",
      "morale": "Fearless (20)",
      "xp": {
@@ -3815,7 +3817,7 @@
      "specialAttacks": "Breath weapon, spells",
      "specialDefenses": "Invisibility",
      "magicResistance": "See below",
-     "size": "T (1'-1 ' long)",
+     "size": "T (1'-1 ½' long)",
      "morale": "Steady (11)",
      "xp": {
       "text": "3,000",
@@ -4217,7 +4219,7 @@
      },
      "movement": "6, Fl 24",
      "hitDice": {
-      "text": "(1d4 hp)",
+      "text": "½ (1d4 hp)",
       "value": null
      },
      "thac0": {
@@ -5138,7 +5140,7 @@
      "specialAttacks": "+3 with bows and slings",
      "specialDefenses": "See below",
      "magicResistance": "Nil",
-     "size": "S (3')",
+     "size": "S (3½')",
      "morale": "Steady (11-12)",
      "xp": {
       "text": "35",
@@ -5567,7 +5569,7 @@
      },
      "movement": "6",
      "hitDice": {
-      "text": "(1-4 hp)",
+      "text": "½ (1-4 hp)",
       "value": null
      },
      "thac0": {
@@ -7509,7 +7511,7 @@
      },
      "movement": "6",
      "hitDice": {
-      "text": "to 6",
+      "text": "½ to 6",
       "value": null
      },
      "thac0": {
@@ -10402,7 +10404,7 @@
      "specialAttacks": "Gaze",
      "specialDefenses": "Nil",
      "magicResistance": "Nil",
-     "size": "S (2-2')",
+     "size": "S (2-2½')",
      "morale": "Steady (11-12)",
      "xp": {
       "text": "120",
