@@ -354,6 +354,21 @@
         "archived"
       ]
     },
+    "ClassLevel": {
+      "type": "object",
+      "required": [
+        "characterClass",
+        "level"
+      ],
+      "properties": {
+        "characterClass": {
+          "$ref": "#/$defs/CharacterClass"
+        },
+        "level": {
+          "type": "integer"
+        }
+      }
+    },
     "CombatDetails": {
       "type": "object",
       "required": [],
@@ -1714,6 +1729,34 @@
             }
           ],
           "description": "Especialização de escola (2026-09-30, Table 22) — `nil` é generalista (comportamento de sempre: nenhum bônus, nenhuma restrição). Fica opcional/`nil` de propósito pra fichas antigas (Mago criado antes desta versão) continuarem decodificando sem ficar preso a uma escola que nunca escolheu."
+        },
+        "multiClasses": {
+          "anyOf": [
+            {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/ClassLevel"
+              }
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "Outras classes de um multiclasse (semi-humanos), com o nível de cada uma; ausente = classe única."
+        },
+        "lastAppliedMultiClasses": {
+          "anyOf": [
+            {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/ClassLevel"
+              }
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "Retrato do motor de consequências: as outras classes no último estado revisado."
         },
         "psionics": {
           "anyOf": [
