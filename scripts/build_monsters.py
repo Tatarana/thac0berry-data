@@ -509,13 +509,14 @@ def convert(m):
 
 
 def clean_text(text):
-    """Texto da descrição: entidades HTML, tags, sobras do <tabber> ("Drik=", "|-|")."""
+    """Texto da descrição: entidades HTML, tags, sobras do <tabber> ("Drik=", "|-|") e a
+    linha "=" que sobra de subtítulos "=== Combat===" no começo das seções."""
     t = text or ""
     for bad, good in TEXT_TYPOS.items():
         t = t.replace(bad, good)
     t = html.unescape(t)
     t = re.sub(r"<[^>]+>", "", t)
-    t = "\n".join(line for line in t.split("\n") if not re.fullmatch(r"\s*\|-\|\s*|[^\n=]{1,80}=\s*", line))
+    t = "\n".join(line for line in t.split("\n") if not re.fullmatch(r"\s*\|-\|\s*|[^\n=]{1,80}=\s*|\s*=+\s*", line))
     t = re.sub(r"\n{3,}", "\n\n", t)
     return t.strip()
 
