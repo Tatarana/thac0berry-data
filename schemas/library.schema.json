@@ -1758,6 +1758,34 @@
           ],
           "description": "Retrato do motor de consequências: as outras classes no último estado revisado."
         },
+        "formerClasses": {
+          "anyOf": [
+            {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/ClassLevel"
+              }
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "Classes anteriores de um personagem de classe dupla (humanos), na ordem em que foram deixadas, com o nível em que congelaram; ausente = sem classe dupla."
+        },
+        "lastAppliedFormerClasses": {
+          "anyOf": [
+            {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/ClassLevel"
+              }
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "Retrato do motor de consequências: as classes anteriores no último estado revisado."
+        },
         "psionics": {
           "anyOf": [
             {
