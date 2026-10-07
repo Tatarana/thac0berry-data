@@ -1070,7 +1070,7 @@
       "text": "4",
       "value": 4
      },
-     "movement": "FI 12 (D)",
+     "movement": "Fl 12 (D)",
      "hitDice": {
       "text": "5",
       "value": 5
@@ -1784,8 +1784,8 @@
      "specialAttacks": "See below",
      "specialDefenses": "Never surprised",
      "magicResistance": "Nil",
-     "size": "Champion (15-16)",
-     "morale": "H (13-18')",
+     "size": "H (13-18')",
+     "morale": "Champion (15-16)",
      "xp": {
       "text": "2,000 + 1,000 per HD above 7 HD",
       "value": null
@@ -3730,7 +3730,7 @@
       "text": "4",
       "value": 4
      },
-     "movement": "12, FI 24 (B)",
+     "movement": "12, Fl 24 (B)",
      "hitDice": {
       "text": "5+3",
       "value": 5

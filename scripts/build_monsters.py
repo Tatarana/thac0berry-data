@@ -86,6 +86,10 @@ TYPOS = {
     "Semi- (2.4)": "Semi- (2-4)",
     "Semi- (24)": "Semi- (2-4)",
     "Netural Good": "Neutral good",
+    "Varics": "Varies",
+    "Neutal": "Neutral",
+    "Vanes": "Varies",
+    "M (6' ta1l)": "M (6' tall)",
 }
 
 # Casos pontuais (id -> índice da variante -> {campo: valor}), conferidos com o texto da página.
@@ -98,6 +102,54 @@ MANUAL = {
     "thomil": {0: {"activityCycle": "Any", "diet": "Mineral", "intelligence": "Average (10)", "treasure": "Nil (Q×4,X)", "alignment": "Chaotic neutral"}},
     # "Very rare" partido em dois campos; o ciclo de atividade se perdeu na fonte.
     "hydden": {0: {"frequency": "Very rare", "organization": "Tribal", "activityCycle": None, "intelligence": "Average (8-10)"}},
+    # Deslocado a partir da frequência (que se perdeu na fonte).
+    "the_abomination_of_diirinka": {0: {"frequency": None, "organization": "Solitary", "activityCycle": "Any", "diet": "Life energy, minerals", "intelligence": "Not ratable", "treasure": "Nil"}},
+    "phaerimm": {0: {"treasure": "All possible (G is most common in lair)", "alignment": "Neutral evil"}},
+    # Deslocado duas posições a partir da inteligência; o texto confirma 1 ataque
+    # de língua de 1d8 e o ácido. Inteligência, alinhamento, moral e XP se perderam.
+    "archer_frog": {0: {
+        "intelligence": None, "treasure": "Incidental", "alignment": None, "numberAppearing": "1-6",
+        "armorClass": "7", "movement": "6, Sw 12", "hitDice": "3", "thac0": "16", "attacks": "1",
+        "damage": "1d8", "specialAttacks": "Acid", "specialDefenses": "Nil", "magicResistance": "Nil",
+        "size": "M (6' long)", "morale": None, "xp": None,
+    }},
+    "behemoth": {3: {"name": "Behemoth (Legends & Lore)"}},
+    # O tamanho foi parar no XP, e número/CA estão trocados (planta: CA 0, aparece 1-2).
+    "giant_bladderwort": {0: {"numberAppearing": "1-2", "armorClass": "0", "size": "L to G", "xp": None}},
+    # Dragon Magazine: falta um campo no meio (o THAC0, nos três primeiros) e o resto
+    # escorrega para a frente; sobra um número solto no fim ("-11", "-13", "-19%").
+    # Valor ambíguo fica vazio. CA e movimento trocados no Gulper e no Angler Fish.
+    "craighe": {0: {"thac0": None, "attacks": "3", "damage": "1-2/1-2/1", "specialAttacks": "Dive", "specialDefenses": "Nil", "magicResistance": "Nil", "size": "S (up to 4' wingspan)"}},
+    "gulper": {0: {"armorClass": "9", "movement": "Sw 15", "thac0": None, "attacks": "1", "damage": "2d8", "specialAttacks": "Constriction, swallow whole", "specialDefenses": "Nil", "magicResistance": "Nil", "size": "L (12' long)"}},
+    "angler_fish": {0: {"armorClass": "8", "movement": "Sw 12", "thac0": None, "attacks": "1", "damage": "2d8 or (some species only) 1d4", "specialAttacks": "Swallow whole", "specialDefenses": "Nil", "magicResistance": "Nil", "size": None, "xp": None}},
+    "plague_moth": {0: {"magicResistance": None, "size": "T (1' wingspan)"}},
+    "haunt": {0: {"size": None, "morale": "Champion (16)", "xp": "2,000"}},
+    "zurchin": {0: {"specialDefenses": None, "size": "T (6\u201d to 1' diameter)", "xp": "120"}},
+    # Deslocado para trás a partir da CA (a CA tem o movimento, o movimento tem o HD...).
+    # As aranhas conferem com a tabela do DMG: HD 8+8 -> THAC0 11; HD 4+4 -> THAC0 15.
+    "spider": {
+        0: {"numberAppearing": None, "armorClass": "4", "movement": "9, Wb 12", "hitDice": "8+8", "thac0": "11", "attacks": "1",
+            "damage": "2-12", "specialAttacks": "Webs, poison", "specialDefenses": "Jumps", "magicResistance": "Nil"},
+        1: {"numberAppearing": None, "armorClass": "4", "movement": "3, Wb 12", "hitDice": "4+4", "thac0": "15", "attacks": "1",
+            "damage": "2-8", "specialAttacks": "Webs, poison", "specialDefenses": "Nil", "magicResistance": "Nil"},
+    },
+    "insect_swarm_athas": {0: {"armorClass": None, "movement": "Fl 18 (A)", "hitDice": "1 per 10 insects", "thac0": "Special",
+                               "attacks": "See below", "damage": "See below", "specialAttacks": "See below", "specialDefenses": "Nil", "magicResistance": "Nil"}},
+    # Cauda deslocada a partir da resistência a magia; o XP se perdeu na fonte.
+    "phthisic": {0: {
+        "specialDefenses": "+2 or better weapons to hit, reflects spells, regenerates; Confusion and feeblemind",
+        "magicResistance": "Nil", "size": "L (9' tall)", "morale": "Elite (14)", "xp": None,
+    }},
+}
+
+# Valor numérico que a fonte erra (o texto fica): Neogi HD 5 com "THAC0 1" (o MM dá 15).
+NO_VALUE = {("neogi", 0, "thac0")}
+
+# Lixo de OCR no texto da descrição (sequência exata -> correta).
+TEXT_TYPOS = {
+    "area &an; do": "area as do",
+    "saving &row; vs.": "saving throw vs.",
+    "like a <cloak of bravery": "like a cloak of bravery",
 }
 
 
@@ -287,6 +339,9 @@ def hit_dice_value(text):
     return 0 if re.fullmatch(r"1/2|½|1-\d hp|\d hp", text) else None
 
 
+MORALE = r"(unreliable|unsteady|average|steady|very steady|elite|champion|fanatic|fearless)\b"
+SIZE = r"[TSMLHG]\s*\("
+
 STAT_ORDER = ECOLOGY_ORDER + [
     "numberAppearing", "armorClass", "movement", "hitDice", "thac0", "attacks", "damage",
     "specialAttacks", "specialDefenses", "magicResistance", "size", "morale", "xp",
@@ -299,10 +354,19 @@ def shift_back(flat):
     if flat.get("climateTerrain") or ecology_kind(flat.get("organization")) != "frequency":
         return flat, False
     out = {k: v for k, v in flat.items() if k not in STAT_ORDER}
-    for i, field in enumerate(STAT_ORDER[:-1]):
+    # Se a moral e o XP originais já são moral e XP, o deslocamento acabou antes
+    # (Dragon-kin, Lesser Undead Dragon): tamanho, moral e XP ficam; a resistência
+    # a magia, que receberia o tamanho, se perdeu na fonte.
+    tail_ok = bool(re.match(MORALE, flat.get("morale") or "", re.I)) and bool(re.match(r"[\d,]+|varies|variable", flat.get("xp") or "", re.I))
+    last = STAT_ORDER.index("magicResistance") if tail_ok else len(STAT_ORDER) - 1
+    for i, field in enumerate(STAT_ORDER[:last]):
         value = flat.get(STAT_ORDER[i + 1])
         if value:
             out[field] = value
+    if tail_ok:
+        for field in ("size", "morale", "xp"):
+            if flat.get(field):
+                out[field] = flat[field]
     return out, True
 
 
@@ -327,7 +391,18 @@ def variant(col, page_name, single, mid=None, index=0):
     if changed:
         FIXES.append((mid, name, eco, fixed))
     flat = {**{k: v for k, v in flat.items() if k not in ECOLOGY_ORDER}, **fixed}
-    flat.update(MANUAL.get(mid, {}).get(index, {}))
+    if re.match(MORALE, flat.get("size") or "", re.I) and re.match(SIZE, flat.get("morale") or ""):
+        FIXES.append((mid, name, "tamanho e moral trocados", None))
+        flat["size"], flat["morale"] = flat["morale"], flat["size"]
+    elif re.match(SIZE, flat.get("morale") or "") and not re.match(SIZE, flat.get("size") or ""):
+        # Tamanho na moral e um valor perdido no tamanho (Laerti "-15"): a moral se perdeu.
+        FIXES.append((mid, name, f"tamanho estava na moral (tamanho na fonte: {flat.get('size')!r})", None))
+        flat["size"], flat["morale"] = flat["morale"], None
+    if flat.get("movement"):
+        flat["movement"] = re.sub(r"\bFI\b", "Fl", flat["movement"])
+    manual = dict(MANUAL.get(mid, {}).get(index, {}))
+    name = manual.pop("name", name)
+    flat.update(manual)
     flat = {k: v for k, v in flat.items() if v}
 
     out = {"name": name, "source": col.get("source") or None, "ecology": {}, "combat": {}}
@@ -341,11 +416,15 @@ def variant(col, page_name, single, mid=None, index=0):
             continue
         group = "ecology" if field in ECOLOGY_ORDER else "combat"
         if field in NUMERIC:
-            out[group][field] = {"text": value, "value": number(field, value)}
+            out[group][field] = {"text": value, "value": None if (mid, index, field) in NO_VALUE else number(field, value)}
         elif field == "hitDice":
             out[group][field] = {"text": value, "value": hit_dice_value(value)}
         else:
             out[group][field] = value
+    # THAC0 "0" de quem não ataca (0 ataques): "não ataca", não o melhor THAC0 do jogo.
+    t0 = out["combat"].get("thac0")
+    if t0 and t0["text"] == "0" and (flat.get("attacks") or "").strip().lower() in ("0", "nil", "none"):
+        t0["value"] = None
     return out
 
 
@@ -363,7 +442,12 @@ def convert(m):
     single = len(cols) == 1
     variants = [variant(c, m["name"], single, m["id"], i) for i, c in enumerate(cols)]
     d = m.get("description") or {}
-    sections = {k: v for k, v in (d.get("sections") or {}).items() if v}
+    sections = {k: clean_text(v) for k, v in (d.get("sections") or {}).items() if v and clean_text(v)}
+    full = clean_text(d.get("fullText") or "") or None
+    summary = clean_text(d.get("briefSummary") or "") or None
+    # Resumo que é só referência ("From Dragon Magazine #261", "See Grell..."): o 1º parágrafo.
+    if not summary or re.match(r"Player's Option|From |See ", summary) or len(summary) < 40:
+        summary = first_paragraph(full) or summary
     return {
         "id": m["id"],
         "name": m["name"],
@@ -371,9 +455,33 @@ def convert(m):
         "collection": m.get("sourceCategory"),
         "sources": m.get("sources") or [],
         "variants": variants,
-        "description": {"summary": d.get("briefSummary") or None, "sections": sections, "fullText": d.get("fullText") or None},
+        "description": {"summary": summary, "sections": sections, "fullText": full},
         "categories": m.get("categories") or [],
     }, unknown
+
+
+def clean_text(text):
+    """Texto da descrição: entidades HTML, tags, sobras do <tabber> ("Drik=", "|-|")."""
+    t = text or ""
+    for bad, good in TEXT_TYPOS.items():
+        t = t.replace(bad, good)
+    t = html.unescape(t)
+    t = re.sub(r"<[^>]+>", "", t)
+    t = "\n".join(line for line in t.split("\n") if not re.fullmatch(r"\s*\|-\|\s*|[^\n=]{1,80}=\s*", line))
+    t = re.sub(r"\n{3,}", "\n\n", t)
+    return t.strip()
+
+
+def first_paragraph(full):
+    """Resumo quando a fonte não tem: o 1º parágrafo de texto (sem título nem a linha psiônica), até 2 frases."""
+    for para in (full or "").split("\n\n"):
+        p = para.strip()
+        # Pula título, a linha psiônica, referência ("From Dragon...", "See Grell...") e rótulo curto.
+        if not p or p.startswith(("#", "Player's Option", "|", "From ", "See ")) or p.endswith(":") or len(p) < 60:
+            continue
+        sentences = re.split(r"(?<=[.!?])\s+", p)
+        return " ".join(sentences[:2])[:400]
+    return None
 
 
 def index_entry(mon):

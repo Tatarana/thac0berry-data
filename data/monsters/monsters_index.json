@@ -1151,7 +1151,7 @@
   "hitDiceMax": 3,
   "xpMin": 15,
   "xpMax": 175,
-  "summary": "Player's Option: MAC 6",
+  "summary": "These small pig-like creatures have hard shells that provide them with protection from the elements and predators. Aprigs vary in color from gray to reddish brown.",
   "file": "monsters_dark_sun.json"
  },
  {
@@ -1521,9 +1521,9 @@
   "variants": 1,
   "climateTerrain": "Any fresh water, often tropical",
   "frequency": "Very rare",
-  "hitDice": "16",
-  "hitDiceMin": 16,
-  "hitDiceMax": 16,
+  "hitDice": "3",
+  "hitDiceMin": 3,
+  "hitDiceMax": 3,
   "xpMin": null,
   "xpMax": null,
   "summary": "Archer frogs look like large specimens of the standard giant frog. They are usually mottled shades of green and brown.",
@@ -2171,7 +2171,7 @@
   "hitDiceMax": 1,
   "xpMin": 65,
   "xpMax": 65,
-  "summary": "Player's Option: MAC 6",
+  "summary": "In the broken crags and tiny caves of the barrens lives the timid baazrag. Two feet long or less, it is one of the smallest omnivores in the stony barren regions.",
   "file": "monsters_dark_sun.json"
  },
  {
@@ -2621,7 +2621,7 @@
   "hitDiceMax": 1,
   "xpMin": null,
   "xpMax": null,
-  "summary": "Barracuda inhabit warm salt waters.",
+  "summary": "In appearance, the barracuda is long (up to 12 feet) and slender, with a cruel mouth and jaw that make it look particularly ferocious. The lower jaw projects out and the entire mouth is rimmed with fang-like teeth.",
   "file": "monsters_other_campaigns_magazines.json"
  },
  {
@@ -3461,7 +3461,7 @@
   "hitDiceMax": null,
   "xpMin": null,
   "xpMax": null,
-  "summary": "Player's Option: MAC 5",
+  "summary": "Bloodgrass appears as a patch of normal, green grass. It has longer tendrils than normal grass, but only careful inspection will reveal its presence.",
   "file": "monsters_dark_sun.json"
  },
  {
@@ -4571,7 +4571,7 @@
   "hitDiceMax": 5,
   "xpMin": 650,
   "xpMax": 650,
-  "summary": "From the notebooks of Ctan Ftau:\n- What strange life is spawned on the endless planes, where all things are surely possible, given enough time?",
+  "summary": "Take, for example, the case of the bzastra. Most folks don't know of this creature of the Elemental Plane of Water, for it is both rare and reclusive.",
   "file": "monsters_planescape.json"
  },
  {
@@ -6341,7 +6341,7 @@
   "hitDiceMax": 6,
   "xpMin": 420,
   "xpMax": 2000,
-  "summary": "Player's Option: MAC 6",
+  "summary": "Crodlu are large reptiles that roam the deserts and scrub land in herds. Crodlu resemble large ostriches, but their forearms end in wicked claws and their tough, scaly hides are yellow to red, with other colors along their sides and belly.",
   "file": "monsters_dark_sun.json"
  },
  {
@@ -6401,7 +6401,7 @@
   "hitDiceMax": 6,
   "xpMin": 650,
   "xpMax": 650,
-  "summary": "From the Ruined Kingdoms of Nog and Kadar came rumors, and finally proof, of this special form of undead created to serve their masters for an eternity.",
+  "summary": "Crypt servants appear as corpses, usually desiccated, and usually human, though elves, dwarves, and other races are not unknown. They are usually dressed in the livery of their master, the person buried in the tomb they serve.",
   "file": "monsters_mc_annuals.json"
  },
  {
@@ -7061,7 +7061,7 @@
   "hitDiceMax": 1,
   "xpMin": 175,
   "xpMax": 175,
-  "summary": "From some unknown source, these deadly sheep roam the verdant hillsides where they live, ravaging anything in their paths. From a distance, they seem to be nothing more than wild, somewhat dirty sheep.",
+  "summary": "These sheep attack any living thing that they can find, fearing nothing and fighting to the death. Because of their ferociousness, the sheep make all attacks at +2 to hit and damage.",
   "file": "monsters_other_campaigns_magazines.json"
  },
  {
@@ -7181,7 +7181,7 @@
   "hitDiceMax": 8,
   "xpMin": 10000,
   "xpMax": 10000,
-  "summary": "See “Plasmoid, General Information” for base information on this race.",
+  "summary": "DeGleash are large, wet blobs that favor a form resembling a bowling pin (a fat base with a narrowing upper body). They are white to cream colored and constantly sway and bob about.",
   "file": "monsters_spelljammer.json"
  },
  {
@@ -7196,7 +7196,7 @@
   "hitDiceMax": 5,
   "xpMin": 4000,
   "xpMax": 4000,
-  "summary": "See “Plasmoid – General Information” for base information on this race.",
+  "summary": "DelNorics prefer a short, stocky bi- or multipedal form. Their arms and legs are usually identical.",
   "file": "monsters_spelljammer.json"
  },
  {
@@ -7451,7 +7451,7 @@
   "hitDiceMax": null,
   "xpMin": null,
   "xpMax": null,
-  "summary": "Player's Option: MAC 10",
+  "summary": "Dhaots are incorporeal undead that are sometimes created when people die far away from their homes. The spirits of the deceased feel an overwhelming compulsion to return to their homes they had in life.",
   "file": "monsters_dark_sun.json"
  },
  {
@@ -8394,8 +8394,8 @@
   "hitDice": "7",
   "hitDiceMin": 7,
   "hitDiceMax": 7,
-  "xpMin": null,
-  "xpMax": null,
+  "xpMin": 1400,
+  "xpMax": 2000,
   "summary": "These creatures are rumored to be very distant cousins of dragons. Most dragon-kin live wild, and this type (which appears also in the MONSTROUS COMPENDIUM Annual Volume One) is known as tribal dragon-kin.",
   "file": "monsters_mc_annuals.json"
  },
@@ -8546,7 +8546,7 @@
   "hitDiceMax": null,
   "xpMin": null,
   "xpMax": null,
-  "summary": "Player's Option: MAC 7",
+  "summary": "The dray are a new race of intelligent beings created by Dregoth, the undead dragon king. He wanted servants and followers made in his own image, so Dregoth developed a process for transforming humans into draconic humanoids.",
   "file": "monsters_dark_sun.json"
  },
  {
@@ -8756,7 +8756,7 @@
   "hitDiceMax": 16,
   "xpMin": 9000,
   "xpMax": 9000,
-  "summary": "Player's Option: MAC 6",
+  "summary": "A drik is a powerful and massive herd lizard. Its sheer bulk gives it an awesome might, making young driks targets for beast masters from both Urik and Raam to serve in their armies.",
   "file": "monsters_dark_sun.json"
  },
  {
@@ -9011,7 +9011,7 @@
   "hitDiceMax": 1,
   "xpMin": null,
   "xpMax": null,
-  "summary": "Player's Option: MAC 8",
+  "summary": "Dwarves are short, stocky demihumans capable of amazing feats of strength. They are known for obsessive attitudes about the tasks they perform and as such, are considered extremely reliable workers.",
   "file": "monsters_dark_sun.json"
  },
  {
@@ -10181,7 +10181,7 @@
   "hitDiceMax": null,
   "xpMin": null,
   "xpMax": null,
-  "summary": "Player's Option: MAC 6",
+  "summary": "Faels are ravenous undead beings who never quenched their need for material consumption during life. They are animated in undeath to continue their feeding.",
   "file": "monsters_dark_sun.json"
  },
  {
@@ -10556,7 +10556,7 @@
   "hitDiceMax": 7,
   "xpMin": 2000,
   "xpMax": 2000,
-  "summary": "Player's Option: #AT 3/2; MTHAC0 14; MAC 2\n- Psychometabolism – Sciences: death field, shadow-form; Devotions: adrenaline control, cell adjustment, chameleon power, displacement. - Psychoportive – Sciences: nil; Devotions: blink, phase.",
+  "summary": "**Psionics Summary**\n| Level | Dis/Sci/Dev | Attack/Defense | Score | PSPs |\n| --- | --- | --- | --- | --- |\n| 7 | 3/4/12 | EW,II,MT,PB/ IF,MB,MBk,TW | 13 | 50 |",
   "file": "monsters_dark_sun.json"
  },
  {
@@ -11336,7 +11336,7 @@
   "hitDiceMax": 5,
   "xpMin": 1400,
   "xpMax": 1400,
-  "summary": "Player's Option: #AT1; MTHAC0 16; MAC 9\n- Psychokinesis – Science: detonate; Devotions: soften, levitation, ballistic attack.",
+  "summary": "**Psionics Summary**\n| Level | Dis/Sci/Dev | Attack/Defense | Score | PSPs |\n| --- | --- | --- | --- | --- |\n| 5 | 2/3/10 | EW,MT,PsC/MB,MBk,TS | 11 | 40 |",
   "file": "monsters_dark_sun.json"
  },
  {
@@ -12386,7 +12386,7 @@
   "hitDiceMax": 3,
   "xpMin": null,
   "xpMax": null,
-  "summary": "Nehwon ghouls are considerably different from their AD&D&reg; game namesakes and from the animalistic species of the Kleshite jungles. They are almost totally transparent, save for their pinkish skeletons.",
+  "summary": "Nehwon ghouls are considerably different from their AD&D® game namesakes and from the animalistic species of the Kleshite jungles. They are almost totally transparent, save for their pinkish skeletons.",
   "file": "monsters_other_campaigns_magazines.json"
  },
  {
@@ -12836,7 +12836,7 @@
   "hitDiceMax": 3,
   "xpMin": 175,
   "xpMax": 175,
-  "summary": "Player's Option: MAC 8",
+  "summary": "The half-giant is an enormous creature who has learned to adapt to the harsh life under the Athasian sun. No one knows when, or even why, the unlikely union between human and giant first occurred, giving birth to this unique species.",
   "file": "monsters_mc_annuals.json"
  },
  {
@@ -12851,7 +12851,7 @@
   "hitDiceMax": 7,
   "xpMin": 9000,
   "xpMax": 9000,
-  "summary": "Player's Option: MAC 9",
+  "summary": "Shadow giants, or shadow people as they prefer to call themselves, are the descendants of the halflings who served Rajaat the Warbringer, during the Cleansing Wars. They appear either as shadowy, two-dimensional, vaguely humanoid-shaped silhouettes with ropy limbs, serpentine torsos, and blue embers in place of eyes, or as solid, three-dimensional shadows as tall as half-giants.",
   "file": "monsters_dark_sun.json"
  },
  {
@@ -13061,7 +13061,7 @@
   "hitDiceMax": 1,
   "xpMin": 175,
   "xpMax": 175,
-  "summary": "From Dragon Magazine #261 Page 33",
+  "summary": "Gloom ravens (1d4+1): AC 6; MV 1, fly 27 (A); HD 1 (2 at dusk or dawn); hp 5 hp/die; THAC0 19; #AT 1; Dmg 1-2; SA eye peck (10% likely to attack an opponent's eye, 1-in-10 chance of plucking out an eye with a successful attack); SD never surprised, shadow images; SZ M (4' -6' wingspan); ML 12; INT low (5-7); AL N; XP 175.",
   "file": "monsters_other_campaigns_magazines.json"
  },
  {
@@ -13361,7 +13361,7 @@
   "hitDiceMax": 12,
   "xpMin": 7000,
   "xpMax": 7000,
-  "summary": "Player's Option: MAC 8",
+  "summary": "Magma golems are forged by powerful wizards from the raw materials found in the Ring of Fire. They are comprised entirely of molten rock, weigh around 1600 pounds, and stand about 8' tall.",
   "file": "monsters_dark_sun.json"
  },
  {
@@ -13601,7 +13601,7 @@
   "hitDiceMax": 1,
   "xpMin": 120,
   "xpMax": 120,
-  "summary": "Player's Option: MAC 8",
+  "summary": "Goraks are herd beasts that are valued by most of the intelligent, meat-eating races of Athas for their flesh, their colorful hide, and their keen sense of smell. They are fairly common and can be found in any desert area.",
   "file": "monsters_dark_sun.json"
  },
  {
@@ -14186,7 +14186,7 @@
   "hitDiceMax": 9,
   "xpMin": 2000,
   "xpMax": 9000,
-  "summary": "See Grell for other types of Grell",
+  "summary": "The grell is a fearsome carnivore that looks like a giant brain with a vicious beak and 10 dangling tentacles, each 6 feet long. Some grell are rogues, while others live in family units.",
   "file": "monsters_monstrous_manual_core.json"
  },
  {
@@ -14921,7 +14921,7 @@
   "hitDiceMax": 1,
   "xpMin": null,
   "xpMax": null,
-  "summary": "Player's Option: MAC 7",
+  "summary": "Throughout the Forest Ridge reside the multitude of halfling tribes. Though small, halflings are numerous enough to support their claim to this territory.",
   "file": "monsters_dark_sun.json"
  },
  {
@@ -15174,8 +15174,8 @@
   "hitDice": "15",
   "hitDiceMin": 15,
   "hitDiceMax": 15,
-  "xpMin": null,
-  "xpMax": null,
+  "xpMin": 2000,
+  "xpMax": 2000,
   "summary": "A haunt is the restless spirit of a person who died leaving some vital task unfinished. Its sole purpose is to take over a living body and use it to complete the task, thus gaining a final release from this world.",
   "file": "monsters_monstrous_manual_core.json"
  },
@@ -15740,7 +15740,7 @@
   "collection": "Planescape",
   "variants": 2,
   "climateTerrain": "Varies",
-  "frequency": "Varics",
+  "frequency": "Varies",
   "hitDice": "1d3 hp",
   "hitDiceMin": 2,
   "hitDiceMax": 2,
@@ -16791,7 +16791,7 @@
   "variants": 2,
   "climateTerrain": "Any plains",
   "frequency": "Very rare",
-  "hitDice": "Special",
+  "hitDice": "1 per 10 insects",
   "hitDiceMin": null,
   "hitDiceMax": null,
   "xpMin": null,
@@ -17261,7 +17261,7 @@
   "hitDiceMax": 2,
   "xpMin": 120,
   "xpMax": 120,
-  "summary": "Player's Option: MAC 7",
+  "summary": "The jhakar (singular and plural) is a powerful reptilian predator resembling a scaled bulldog. Its hide is thick and wrinkled, and it has four short, muscular legs and a short, stumpy tail.",
   "file": "monsters_dark_sun.json"
  },
  {
@@ -17711,7 +17711,7 @@
   "hitDiceMax": 1,
   "xpMin": 35,
   "xpMax": 35,
-  "summary": "Player's Option: MAC 7",
+  "summary": "The scourge of the Tablelands, kes'trekel are vile avian creatures that feast upon desert carrion. Although they are weak and cowardly in small groups, kes'trekel can become a devastating force in larger numbers.",
   "file": "monsters_dark_sun.json"
  },
  {
@@ -18086,7 +18086,7 @@
   "hitDiceMax": 5,
   "xpMin": 175,
   "xpMax": 420,
-  "summary": "Player's Option: #AT1; MTHAC0 18; MAC 8\n- Clairsentience – Sciences: precognition; Devotions: feel light, feel sound.",
+  "summary": "**Psionics Summary**\n| Level | Dis | Sci | Dev | Attack/Defense | Score | PSPs |\n| --- | --- | --- | --- | --- | --- | --- |\n| 2 | 2 | 2 | 7 | II,EW/M-,TS | 12 | 60 |",
   "file": "monsters_dark_sun.json"
  },
  {
@@ -18896,7 +18896,7 @@
   "hitDiceMax": 5,
   "xpMin": 420,
   "xpMax": 420,
-  "summary": "Player's Option: MAC 7",
+  "summary": "The lirr is a large, warm-blooded reptile that resembles a large lion. It possesses bright, multi-colored plumage that it uses for silent communication.",
   "file": "monsters_dark_sun.json"
  },
  {
@@ -19601,7 +19601,7 @@
   "hitDiceMax": 4,
   "xpMin": 420,
   "xpMax": 420,
-  "summary": "From Baator (Maladomini (PoL), it resembles a cheetah made of black granite. - (Page 94 - In the Cage: A Guide to Sigil)",
+  "summary": "SA claw rake - if attack hits with both forepaws, rakes with rear claws for 1d6+1 points of damage each.",
   "file": "monsters_other_campaigns_magazines.json"
  },
  {
@@ -20111,7 +20111,7 @@
   "hitDiceMax": 12,
   "xpMin": 3000,
   "xpMax": 10000,
-  "summary": "Player's Option: MAC 7",
+  "summary": "The mastyrial lives in the desert regions of Athas, spending most of its time hibernating beneath the sands. It resembles an oversized scorpion.",
   "file": "monsters_dark_sun.json"
  },
  {
@@ -21431,7 +21431,7 @@
   "hitDiceMax": 1,
   "xpMin": 65,
   "xpMax": 65,
-  "summary": "Player's Option: MAC 7",
+  "summary": "Muls became common shortly after the Cleansing Wars about 2,000 years ago. They were intentionally bred by the sorcerer-kings for use in the armies and gladiatorial arenas of their respective city-states.",
   "file": "monsters_dark_sun.json"
  },
  {
@@ -22091,7 +22091,7 @@
   "hitDiceMax": 8,
   "xpMin": 16000,
   "xpMax": 16000,
-  "summary": "From time to time, the misty tendrils of Ravenloft reach out into other lands and draw in unsuspecting beings. Often, these creatures are innocents, pulled in seemingly at random by the mysterious fluctuations of the Demiplane of Dread.",
+  "summary": "Styrix is a night hag, a member of the foul and horrible race that rules Hades. In her normal form, she appears as a withered old crone with skin the color of a fresh bruise, tangled black hair, and eyes that burn a bright red in the darkness.",
   "file": "monsters_ravenloft.json"
  },
  {
@@ -22556,7 +22556,7 @@
   "hitDiceMax": 11,
   "xpMin": 9000,
   "xpMax": 9000,
-  "summary": "Player's Option: MAC 9",
+  "summary": "While at first this creature appears to be some form of spider, the obsidian retriever is the product of some ancient Athasian sorcery long lost to the known realm.",
   "file": "monsters_dark_sun.json"
  },
  {
@@ -23231,7 +23231,7 @@
   "hitDiceMax": 6,
   "xpMin": 975,
   "xpMax": 975,
-  "summary": "Player's Option: MAC 6",
+  "summary": "Pakubrazi are insect creatures that feed on the blood of living creatures. They look like crosses between giant ticks and giant flies.",
   "file": "monsters_dark_sun.json"
  },
  {
@@ -23681,7 +23681,7 @@
   "hitDiceMax": 5,
   "xpMin": 1400,
   "xpMax": 1400,
-  "summary": "“The chant says that there wasn't always a City of Doors or a Lady of Pain. Sometime in the past, she built the city as a&hellip; well, no one knows the dark of why.",
+  "summary": "“The chant says that there wasn't always a City of Doors or a Lady of Pain. Sometime in the past, she built the city as a… well, no one knows the dark of why.",
   "file": "monsters_planescape.json"
  },
  {
@@ -24341,7 +24341,7 @@
   "hitDiceMax": 3,
   "xpMin": 270,
   "xpMax": 270,
-  "summary": "Player's Option: MAC 3",
+  "summary": "A psionocus is a creature created by powerful psionicists for use as a familiar and a scout.",
   "file": "monsters_dark_sun.json"
  },
  {
@@ -24371,7 +24371,7 @@
   "hitDiceMax": 4,
   "xpMin": 270,
   "xpMax": 270,
-  "summary": "From a distance, pteramen are often mistaken for lizard men, but they are larger and leaner. The scales that cover their torso and most of their arms and legs are small and smooth like the skin of a snake.",
+  "summary": "In effect, pteramen have three forms: that of a lizard man with no tail, a lizard man with webbed wings, and a miniature pteranodon with a 15-foot wing span. This third form is achieved by a natural polymorph ability.",
   "file": "monsters_mc_annuals.json"
  },
  {
@@ -24656,7 +24656,7 @@
   "hitDiceMax": null,
   "xpMin": null,
   "xpMax": null,
-  "summary": "Player's Option: MAC 5",
+  "summary": "Raaigs are incorporeal undead who serve as guardians of temples dedicated to ancient, long-forgotten gods. All raaigs are thousands of years old and the shrines they guard include stone buildings, underground complexes, wooded groves, and deserted grottos.",
   "file": "monsters_dark_sun.json"
  },
  {
@@ -25541,7 +25541,7 @@
   "hitDiceMax": 2,
   "xpMin": 65,
   "xpMax": 65,
-  "summary": "Player's Option: MAC 6",
+  "summary": "Rock cacti are small, spherical plants that can be found anywhere water is not plentiful. They are generally brown in color, but deepen to black as they increase their fluid storage.",
   "file": "monsters_dark_sun.json"
  },
  {
@@ -25736,7 +25736,7 @@
   "hitDiceMax": 12,
   "xpMin": 3000,
   "xpMax": 3000,
-  "summary": "Player's Option: MAC 10",
+  "summary": "The ruktoi is a solitary sentinel of the silt sea, able to paddle along its surface or lurk just beneath patiently awaiting prey. Some ruktoi have been captured and either domesticated or controlled to ferry passengers or small cargos across the endless silt basin.",
   "file": "monsters_dark_sun.json"
  },
  {
@@ -25826,7 +25826,7 @@
   "hitDiceMax": 14,
   "xpMin": 3000,
   "xpMax": 14000,
-  "summary": "Player's Option: MAC 9",
+  "summary": "Ruvoka are creatures from the elemental planes. They travel the planes easily, even the Astral Plane, but on Athas they are bound to certain locations.",
   "file": "monsters_planescape.json"
  },
  {
@@ -25961,7 +25961,7 @@
   "hitDiceMax": 9,
   "xpMin": 4000,
   "xpMax": 4000,
-  "summary": "Player's Option: MAC 8",
+  "summary": "The salt golem is created by powerful defilers and sorcerer kings and is favored by those near the salt flats. The golem is 8 feet tall and weighs roughly 600 pounds.",
   "file": "monsters_dark_sun.json"
  },
  {
@@ -26066,7 +26066,7 @@
   "hitDiceMax": 4,
   "xpMin": 420,
   "xpMax": 420,
-  "summary": "Player's Option: MAC 6",
+  "summary": "Sand howlers are desert-dwelling creatures that hunt in packs. They are known for their terrible howls that they use to signal each other when tracking down then prey.",
   "file": "monsters_dark_sun.json"
  },
  {
@@ -26411,7 +26411,7 @@
   "hitDiceMax": 0,
   "xpMin": 35,
   "xpMax": 35,
-  "summary": "From the journals of Ucec Ordel:",
+  "summary": "“Now what do I sodding do? Reide sends me on this berk's errand to the Quasielemental Planes, and I run afoul at the first one I hit.",
   "file": "monsters_planescape.json"
  },
  {
@@ -26441,7 +26441,7 @@
   "hitDiceMax": 9,
   "xpMin": 175,
   "xpMax": 3000,
-  "summary": "Player's Option: MAC 6",
+  "summary": "Barbed scorpions are incredibly large creatures that prey on any living thing they find. They make their homes in caves among the rocky badlands, but are found all over Athas, living wherever they can find enough food to exist.",
   "file": "monsters_dark_sun.json"
  },
  {
@@ -27881,7 +27881,7 @@
   "hitDiceMax": 6,
   "xpMin": 4000,
   "xpMax": 4000,
-  "summary": "From the journal of Rel Emandhun, titled A Long Way Down:",
+  "summary": "“Everpresent but invisible, the air around us sustains, but when angered, it can destroy. The air is unpredictable and everchanging, never wholly friend nor foe.",
   "file": "monsters_planescape.json"
  },
  {
@@ -28256,7 +28256,7 @@
   "hitDiceMax": 5,
   "xpMin": null,
   "xpMax": null,
-  "summary": "– Jehanu the Flayed, ex-yugoloth slave",
+  "summary": "**“The gaze of an ultroloth is not one you want to meet twice. As the creature turned his head toward me, I lowered my eyes.",
   "file": "monsters_planescape.json"
  },
  {
@@ -28286,7 +28286,7 @@
   "hitDiceMax": 4,
   "xpMin": 420,
   "xpMax": 420,
-  "summary": "Player's Option: MAC 5",
+  "summary": "Sligs are wide-jawed humanoids of the desert wilderness. Male sligs are tall and muscular, standing seven feet tall and weighing more than 300 pounds.",
   "file": "monsters_dark_sun.json"
  },
  {
@@ -28961,7 +28961,7 @@
   "hitDiceMax": 6,
   "xpMin": 65,
   "xpMax": 975,
-  "summary": "Player's Option: MAC 7",
+  "summary": "**Psionics Summary (Psionicist)**\n| Level | Dis | Sci | Dev | Attack/Defense | Score | PSPs |\n| --- | --- | --- | --- | --- | --- | --- |\n| 9 | 2 | 3 | 10 | EW,MT,PsC/IF,MB,TS | 11 | 40 | \nPlayer's Option: #AT1; MTHAC0 16; MAC 5",
   "file": "monsters_dark_sun.json"
  },
  {
@@ -28971,9 +28971,9 @@
   "variants": 2,
   "climateTerrain": "Tropical, subtropical, and temperate/Plain, forest, hill, mountain, and jungle",
   "frequency": "Very rare",
-  "hitDice": "11",
-  "hitDiceMin": 11,
-  "hitDiceMax": 15,
+  "hitDice": "8+8",
+  "hitDiceMin": 4,
+  "hitDiceMax": 8,
   "xpMin": 420,
   "xpMax": 1400,
   "summary": "The whisper spider has a plump abdomen, multiple eyes, and four pairs of segmented legs. Its body is covered with short, black bristles.",
@@ -29441,7 +29441,7 @@
   "hitDiceMax": 3,
   "xpMin": null,
   "xpMax": null,
-  "summary": "Player's Option: MAC 8",
+  "summary": "Ssurrans are nomadic, humanoid reptiles. Some are raiders while others are simple hunters.",
   "file": "monsters_dark_sun.json"
  },
  {
@@ -30056,7 +30056,7 @@
   "hitDiceMax": 14,
   "xpMin": 21000,
   "xpMax": 21000,
-  "summary": "From a distance, Suzara the Scold resembles a beggar in a ragged cape and huge tattered hood. Suzara is the Scourge of Blight, and her true appearance reflects her status as the most dangerous of all ghazneths.",
+  "summary": "Suzara the Scold was once Suzara Obarskyr, wife to Ondeth Obarskyr (founder of Cormyr). Never fond of life in the wilderness, Suzara became a ghazneth more than 1,300 years ago after abandoning her husband and eldest son in the city named for her (Suzail) to return to a less toilsome life in Impiltur.",
   "file": "monsters_mc_annuals.json"
  },
  {
@@ -30266,7 +30266,7 @@
   "hitDiceMax": null,
   "xpMin": null,
   "xpMax": null,
-  "summary": "Player's Option: MAC 4",
+  "summary": "T'lizes are undead defilers whose spirits have outlived their bodies. They are extremely powerful undead who seek magical knowledge and power above all else and exist as such to continue their study of magic.",
   "file": "monsters_dark_sun.json"
  },
  {
@@ -30416,7 +30416,7 @@
   "hitDiceMax": 4,
   "xpMin": 120,
   "xpMax": 175,
-  "summary": "Player's Option: MAC 9 (Tari)\nPlayer's Option: MAC 8 (Warrior)\nPlayer's Option: MAC 7 (Chieftain)",
+  "summary": "The tari are commonly referred to as ratmen by the other denizens of the Tyr region. They are small, furry humanoid scavengers, capable of thriving on food and water too polluted for humans to ingest.",
   "file": "monsters_dark_sun.json"
  },
  {
@@ -30800,7 +30800,7 @@
   "collection": "Other Campaigns / Magazines",
   "variants": 1,
   "climateTerrain": "Subterranean",
-  "frequency": "Solitary",
+  "frequency": null,
   "hitDice": "20 (140 hit points)",
   "hitDiceMin": 20,
   "hitDiceMax": 20,
@@ -31301,7 +31301,7 @@
   "hitDiceMax": 6,
   "xpMin": 1400,
   "xpMax": 1400,
-  "summary": "Player's Option: MAC 7",
+  "summary": "The figures given above are for mature adult thri-kreen. Others have the following abilities, based on their age (they age one age category per year until they reach mature adult):\n| Age | HD | THAC0 | XP | Claw/bite Damage | Special Ability |\n| --- | --- | --- | --- | --- | --- |\n| Larva | 1+3 | 19 | 65 | 1/1 | – |\n| Child | 2+3 | 17 | 120 | 1/1 | – |\n| Young | 3+3 | 17 | 175 | 1d3/1d3 | leap |\n|",
   "file": "monsters_dark_sun.json"
  },
  {
@@ -31766,7 +31766,7 @@
   "hitDiceMax": 8,
   "xpMin": 9000,
   "xpMax": 9000,
-  "summary": "Player's Option: MAC 5",
+  "summary": "Trin, also called thri-trin, are large, intelligent insects similar to thri-kreen, but slightly smaller. They have two arms and four legs instead of four arms and two legs, and their larger mandibles suggest the brutish and primitive.",
   "file": "monsters_dark_sun.json"
  },
  {
@@ -32156,7 +32156,7 @@
   "hitDiceMax": null,
   "xpMin": null,
   "xpMax": null,
-  "summary": "Tyranthraxus - \"The Possessing Spirit\"",
+  "summary": "Tyranthraxus is proficient with any number of weapons; DMs should detail appropriate weapons from their game worlds. It can be safely assumed that Tyranthraxus is proficient with at least one bladed weapon, one blunt weapon, one bow, and one hurled weapon.",
   "file": "monsters_other_campaigns_magazines.json"
  },
  {
@@ -32516,7 +32516,7 @@
   "hitDiceMax": 12,
   "xpMin": 9000,
   "xpMax": 9000,
-  "summary": "From a distance, a urophion resembles a rocky outcropping 9' tall and 3' in diameter at its base, narrowing to 1' in diameter at its apex.",
+  "summary": "**Psionics Summary**\n| Level | Dis/Sci/Dev | Attack/Defense | Score | PSPs |\n| --- | --- | --- | --- | --- |\n| 9 | 3/2/8 | EW,II,MB/All | = Int | 1d100+100 |\n- Psychokinesis – Sciences: nil; Devotions: control body, levitation. - Psychometabolism – Sciences: nil; Devotion: body equilibrium.",
   "file": "monsters_other_campaigns_magazines.json"
  },
  {
@@ -32771,7 +32771,7 @@
   "hitDiceMax": 4,
   "xpMin": 4000,
   "xpMax": 4000,
-  "summary": "From the dark land of Sithicus comes word of a breed of vampire only recently released on the demiplane of Ravenloft: the kender vampire. While not truly the equal of the other species of vampire, these monsters are no less evil.",
+  "summary": "Kender vampires retain the same general physical properties that they did in life. Thus, they stand somewhat under four feet in height and are very slightly built.",
   "file": "monsters_ravenloft.json"
  },
  {
@@ -32936,7 +32936,7 @@
   "hitDiceMax": 30,
   "xpMin": null,
   "xpMax": null,
-  "summary": "Vecna's Portfolio: Secrets",
+  "summary": "The statistics provided reflect the fact that Vecna's powers are being restrained by the mysterious powers that exist within the Demiplane of Dread. He is trapped in a single physical manifestation and cannot take on incorporeal or avatar forms.",
   "file": "monsters_other_campaigns_magazines.json"
  },
  {
@@ -34211,7 +34211,7 @@
   "hitDiceMax": 14,
   "xpMin": 65,
   "xpMax": 9000,
-  "summary": "Silt Horror=\nSilt Horror is the name given a group of predators that dwell in the sea of sand. While they vary in size and color, all of them are characterized by a large number of tentacles and an unending hunger.",
+  "summary": "Silt Horror is the name given a group of predators that dwell in the sea of sand. While they vary in size and color, all of them are characterized by a large number of tentacles and an unending hunger.",
   "file": "monsters_dark_sun.json"
  },
  {
@@ -34751,7 +34751,7 @@
   "hitDiceMax": 7,
   "xpMin": 2000,
   "xpMax": 2000,
-  "summary": "Player's Option: MAC 7",
+  "summary": "An Athasian wraith is a noncorporeal undead capable of moving freely between the Gray and the land of the living. It can possess unliving objects of all sorts, ranging from weapons to furniture to corpses, as well as unintelligent creatures such as scorpions, insects, or slimes.",
   "file": "monsters_dark_sun.json"
  },
  {
@@ -35754,8 +35754,8 @@
   "hitDice": "1+1",
   "hitDiceMin": 1,
   "hitDiceMax": 1,
-  "xpMin": null,
-  "xpMax": null,
+  "xpMin": 120,
+  "xpMax": 120,
   "summary": "The zurchin, commonly called “star urchin” or “space porcupine”, is a spherical mollusk with myriad radial spines. It moves slowly, using a muscular belly-foot for propulsion.",
   "file": "monsters_spelljammer.json"
  },

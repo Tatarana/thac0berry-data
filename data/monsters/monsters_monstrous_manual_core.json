@@ -336,7 +336,7 @@
       "text": "3",
       "value": 3
      },
-     "movement": "FI 24 (A)",
+     "movement": "Fl 24 (A)",
      "hitDice": {
       "text": "16",
       "value": 16
@@ -408,7 +408,7 @@
       "text": "2",
       "value": 2
      },
-     "movement": "FI 36 (A)",
+     "movement": "Fl 36 (A)",
      "hitDice": {
       "text": "8, 12, or 16",
       "value": null
@@ -1054,7 +1054,7 @@
       "text": "0/2/7",
       "value": null
      },
-     "movement": "FI 3 (B)",
+     "movement": "Fl 3 (B)",
      "hitDice": {
       "text": "45-75 hp",
       "value": null
@@ -2938,7 +2938,7 @@
       "text": "4/6/8",
       "value": null
      },
-     "movement": "FI 9 (B)",
+     "movement": "Fl 9 (B)",
      "hitDice": {
       "text": "1d8+76 hp",
       "value": null
@@ -3222,7 +3222,7 @@
       "text": "2 (4)",
       "value": 2
      },
-     "movement": "15, FI 3 (A)",
+     "movement": "15, Fl 3 (A)",
      "hitDice": {
       "text": "12 (8)",
       "value": 12
@@ -4811,7 +4811,7 @@
       "text": "5",
       "value": 5
      },
-     "movement": "FI 6 (C)",
+     "movement": "Fl 6 (C)",
      "hitDice": {
       "text": "8",
       "value": 8
@@ -5827,7 +5827,7 @@
       "text": "0/2/7",
       "value": null
      },
-     "movement": "FI 9 (B)",
+     "movement": "Fl 9 (B)",
      "hitDice": {
       "text": "6+6 or 9+9",
       "value": null
@@ -7669,7 +7669,7 @@
    }
   ],
   "description": {
-   "summary": "See Grell for other types of Grell",
+   "summary": "The grell is a fearsome carnivore that looks like a giant brain with a vicious beak and 10 dangling tentacles, each 6 feet long. Some grell are rogues, while others live in family units.",
    "sections": {
     "combat": "The grell's most common strategy is to use its natural levitation ability to hide in the upper reaches of large chambers. It can then drop silently on a victim, who suffers a -3 penalty to surprise rolls when attacked in this way.\n\nA worker grell attacks with all 10 tentacles; each one that hits grips the opponent (the grip can be broken with a successful bend bars/lift gates roll). For each hit, the victim must roll a saving throw vs. paralysis, with a +4 bonus, or be paralyzed for 5d4 rounds. With two tentacles gripping the prey, the grell can lift it up toward the ceiling and devour the prey when desired. A grell automatically hits paralyzed prey each round.\n\nSoldier grell often use weapons, including the tip-spear and the lightning lance. The tip-spear is an edged metal head which fits on the tip of a tentacle and is held there by suction; the weapon causes 1d6 damage if used to slash, 2d6 if used to impale. Victims hit by a tip-spear must make a saving throw vs. paralysis, as if hit by a tentacle. The lightning lance delivers 3d6 points of electrical damage to those hit with it, though a successful saving throw vs. spells halves the damage. A lightning lance starts with 36 charges; it can use one per round.\n\nAny hit against a tentacle (AC 4) renders it unusable, but subtracts no hit points from the grell's total. Grell regenerate lost or damaged tentacles in 1–2 days, and are immune to electrical attacks.\n\nGrell use strategy and tactics in their battles, and can attack more than one opponent each round. They are intelligent enough to allocate their tentacle attacks in an advantageous way. They use their beaks only against paralyzed prey.",
     "habitatSociety": "Grell have a distinct hierarchy. Each hive is led by a patriarch, who gives orders to the philosophers, who direct the soldiers and workers in their every day tasks. A hive occupies an underground complex, or travels by ship.\n\nSupposedly, all grell answer to a mysterious Imperator, a grell of great power who can unite all the grell for a common cause; to conquer a realm, a territory, or even a world.\n\nA grell mates but once in its 30-40 year life span. The female later lays a clutch of 2d4 eggs. Young are born active and self-sufficient, but with only 1 Hit Die. They gain 1 Hit Die every two months until they reach adulthood.",
@@ -8372,7 +8372,7 @@
       "text": "7",
       "value": 7
      },
-     "movement": "6, FI 15 (C)",
+     "movement": "6, Fl 15 (C)",
      "hitDice": {
       "text": "7",
       "value": 7
@@ -8567,8 +8567,11 @@
      "specialAttacks": "See below",
      "specialDefenses": "Nil",
      "magicResistance": "Variable",
-     "size": "Champion (16)",
-     "morale": "2,000"
+     "morale": "Champion (16)",
+     "xp": {
+      "text": "2,000",
+      "value": 2000
+     }
     },
     "note": "Statistics separated by a slash: those to the left refer to the natural state, those to the right are for a possessed victim"
    }
@@ -8907,7 +8910,7 @@
       "text": "5",
       "value": 5
      },
-     "movement": "18, FI 36 (C,D)",
+     "movement": "18, Fl 36 (C,D)",
      "hitDice": {
       "text": "3+3",
       "value": 3
@@ -8985,7 +8988,7 @@
       "text": "0",
       "value": 0
      },
-     "movement": "FI 6 (A)",
+     "movement": "Fl 6 (A)",
      "hitDice": {
       "text": "20",
       "value": 20
@@ -9131,7 +9134,7 @@
       "text": "6",
       "value": 6
      },
-     "movement": "6, FI 18 (B)",
+     "movement": "6, Fl 18 (B)",
      "hitDice": {
       "text": "2",
       "value": 2
@@ -9388,7 +9391,7 @@
       "text": "3",
       "value": 3
      },
-     "movement": "12, FI 12 (A)",
+     "movement": "12, Fl 12 (A)",
      "hitDice": {
       "text": "8",
       "value": 8
@@ -9674,7 +9677,7 @@
       "text": "5",
       "value": 5
      },
-     "movement": "6, FI 18 (D)",
+     "movement": "6, Fl 18 (D)",
      "hitDice": {
       "text": "2-5",
       "value": 2
@@ -9743,7 +9746,7 @@
       "text": "-5",
       "value": -5
      },
-     "movement": "24, FI 48 (B)",
+     "movement": "24, Fl 48 (B)",
      "hitDice": {
       "text": "12",
       "value": 12
@@ -11531,7 +11534,7 @@
       "text": "4",
       "value": 4
      },
-     "movement": "12, FI 18 (E)",
+     "movement": "12, Fl 18 (E)",
      "hitDice": {
       "text": "6+3",
       "value": 6
@@ -12841,7 +12844,7 @@
      },
      "thac0": {
       "text": "1",
-      "value": 1
+      "value": null
      },
      "attacks": "3",
      "damage": "1-3/1-3/1-6",
@@ -13790,7 +13793,7 @@
       "text": "6",
       "value": 6
      },
-     "movement": "24, FI 48 (C,D mounted)",
+     "movement": "24, Fl 48 (C,D mounted)",
      "hitDice": {
       "text": "4",
       "value": 4
@@ -14596,7 +14599,7 @@
       "text": "4",
       "value": 4
      },
-     "movement": "3, FI 30",
+     "movement": "3, Fl 30",
      "hitDice": {
       "text": "18",
       "value": 18
@@ -16132,7 +16135,7 @@
      "diet": "Nil",
      "intelligence": "Non- (0)",
      "treasure": "See below",
-     "alignment": "Neutal"
+     "alignment": "Neutral"
     },
     "combat": {
      "numberAppearing": "2-20 (2d10)",
@@ -16625,7 +16628,7 @@
       "text": "10",
       "value": 10
      },
-     "movement": "FI 3 (B)",
+     "movement": "Fl 3 (B)",
      "hitDice": {
       "text": "5-10 HD",
       "value": null
@@ -16693,7 +16696,7 @@
       "text": "2",
       "value": 2
      },
-     "movement": "15, FI 30 (B)",
+     "movement": "15, Fl 30 (B)",
      "hitDice": {
       "text": "7+3",
       "value": 7
@@ -16909,7 +16912,7 @@
       "text": "8",
       "value": 8
      },
-     "movement": "3, FI 18 (C)",
+     "movement": "3, Fl 18 (C)",
      "hitDice": {
       "text": "1+1",
       "value": 1
@@ -17193,7 +17196,7 @@
       "text": "7",
       "value": 7
      },
-     "movement": "3, FI 18 (D)",
+     "movement": "3, Fl 18 (D)",
      "hitDice": {
       "text": "1+2",
       "value": 1
@@ -17337,7 +17340,7 @@
       "text": "9",
       "value": 9
      },
-     "movement": "12, FI 36 (A)",
+     "movement": "12, Fl 36 (A)",
      "hitDice": {
       "text": "3",
       "value": 3
@@ -17679,7 +17682,7 @@
      },
      "thac0": {
       "text": "0",
-      "value": 0
+      "value": null
      },
      "attacks": "0",
      "damage": "Nil",
@@ -18597,7 +18600,7 @@
       "text": "0/2/7",
       "value": null
      },
-     "movement": "FI 2 (C)",
+     "movement": "Fl 2 (C)",
      "hitDice": {
       "text": "45-75 hp",
       "value": null
@@ -18740,7 +18743,7 @@
       "text": "1",
       "value": 1
      },
-     "movement": "12, FI 18 (C)",
+     "movement": "12, Fl 18 (C)",
      "hitDice": {
       "text": "8+3",
       "value": 8
@@ -18949,7 +18952,7 @@
       "text": "7",
       "value": 7
      },
-     "movement": "FI 6 (A)",
+     "movement": "Fl 6 (A)",
      "hitDice": {
       "text": "3+3",
       "value": 3
@@ -19750,7 +19753,7 @@
       "text": "-8",
       "value": -8
      },
-     "movement": "FI 18 (A)",
+     "movement": "Fl 18 (A)",
      "hitDice": {
       "text": "9",
       "value": 9
@@ -19821,7 +19824,7 @@
       "text": "5",
       "value": 5
      },
-     "movement": "12, FI 18 (B)",
+     "movement": "12, Fl 18 (B)",
      "hitDice": {
       "text": "4+4",
       "value": 4
@@ -20170,7 +20173,7 @@
       "text": "3",
       "value": 3
      },
-     "movement": "6, FI 24 (E)",
+     "movement": "6, Fl 24 (E)",
      "hitDice": {
       "text": "7+7",
       "value": 7

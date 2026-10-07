@@ -1803,7 +1803,7 @@
       "text": "4",
       "value": 4
      },
-     "movement": "FI 24 (B)",
+     "movement": "Fl 24 (B)",
      "hitDice": {
       "text": "3",
       "value": 3
@@ -3801,7 +3801,7 @@
       "text": "3 (8)",
       "value": 3
      },
-     "movement": "12, FI 18 (C)",
+     "movement": "12, Fl 18 (C)",
      "hitDice": {
       "text": "4",
       "value": 4
@@ -3842,7 +3842,7 @@
       "text": "2 (8)",
       "value": 2
      },
-     "movement": "12, FI 18 (B)",
+     "movement": "12, Fl 18 (B)",
      "hitDice": {
       "text": "6",
       "value": 6
@@ -4779,24 +4779,23 @@
      "alignment": "Chaotic evil"
     },
     "combat": {
-     "numberAppearing": "4",
      "armorClass": {
-      "text": "9, Wb 12",
-      "value": null
+      "text": "4",
+      "value": 4
      },
-     "movement": "8+8",
+     "movement": "9, Wb 12",
      "hitDice": {
+      "text": "8+8",
+      "value": 8
+     },
+     "thac0": {
       "text": "11",
       "value": 11
      },
-     "thac0": {
-      "text": "1",
-      "value": 1
-     },
-     "attacks": "2-12",
-     "damage": "Webs, poison",
-     "specialAttacks": "Jumps",
-     "specialDefenses": "Nil",
+     "attacks": "1",
+     "damage": "2-12",
+     "specialAttacks": "Webs, poison",
+     "specialDefenses": "Jumps",
      "magicResistance": "Nil",
      "size": "H (15' long)",
      "morale": "Elite (14)",
@@ -4820,23 +4819,22 @@
      "alignment": "Nil"
     },
     "combat": {
-     "numberAppearing": "4",
      "armorClass": {
-      "text": "3, Wb 12",
-      "value": null
+      "text": "4",
+      "value": 4
      },
-     "movement": "4+4",
+     "movement": "3, Wb 12",
      "hitDice": {
+      "text": "4+4",
+      "value": 4
+     },
+     "thac0": {
       "text": "15",
       "value": 15
      },
-     "thac0": {
-      "text": "1",
-      "value": 1
-     },
-     "attacks": "2-8",
-     "damage": "Webs, poison",
-     "specialAttacks": "Nil",
+     "attacks": "1",
+     "damage": "2-8",
+     "specialAttacks": "Webs, poison",
      "specialDefenses": "Nil",
      "magicResistance": "Nil",
      "size": "L (8' long)",

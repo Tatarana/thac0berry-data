@@ -217,7 +217,7 @@
      },
      "thac0": {
       "text": "0",
-      "value": 0
+      "value": null
      },
      "attacks": "0",
      "damage": "Nil",
@@ -1338,7 +1338,7 @@
    }
   ],
   "description": {
-   "summary": "See “Plasmoid, General Information” for base information on this race.",
+   "summary": "DeGleash are large, wet blobs that favor a form resembling a bowling pin (a fat base with a narrowing upper body). They are white to cream colored and constantly sway and bob about.",
    "sections": {
     "combat": "DeGleash can use 1d4 arms in combat with no penalties. Additional arms inflict a -2 attack roll penalty for all arms. They prefer to attack with two pseudopod fists and wield two shields (AC 0). They can strike an opponent up to 8' away with full strength (greater distances reduce the damage by 2 points per foot).\n\nDeGleash get very excited before and during combat. It is a habit of this species to begin booming at this time. Opponents who hear this terrible sound must roll successful saving throws vs. petrification or be struck with dread (penalties of +2 and -2 on combat rolls). If a deGleash concentrates for one round, it can release a tremendous boom that requires all within 20 feet to make saving throws vs. paralyzation or become deaf for 1d20 rounds (+2 penalty to AC). Finally, deGleash can envelop enemies who are at least one size smaller than they. This requires a THAC0 roll, adjusted only by the victim's Dexterity. Once enveloped, a victim suffers 1d8 points of digestive damage per round. Furthermore, if the deGleash concentrates, it can bring its muscle fibers to bear upon the hapless foe, holding him with an effective Strength of 20, causing 8 additional points of damage a round. If the victim is not held, a successful bend bars roll enables him to move; if held, three consecutive successful bend bars rolls must be made. Of course, suffocation is a problem for those enveloped as well.\n\nDeGleash suffer no damage from piercing weapons, 1/2 damage from slashing weapons, and full damage from bludgeoning weapons. Fire causes double damage. Cold-based attacks slow them by 1 per 10 dice of damage.\n\nAs with all plasmoids, deGleash are immune to disease and poison of all types. Only acid damage in excess of 30 points per round can harm them.\n\nA deGleash's AC is due to its ability to shape its body away from an attacking blow. It can even open into a ring.",
     "habitatSociety": "See the comments under “Plasmoid, General Information”."
@@ -1407,7 +1407,7 @@
    }
   ],
   "description": {
-   "summary": "See “Plasmoid – General Information” for base information on this race.",
+   "summary": "DelNorics prefer a short, stocky bi- or multipedal form. Their arms and legs are usually identical.",
    "sections": {
     "combat": "DelNorics can employ 1d3 appendages for attack and defense with no penalty. Each additional appendage inflicts the -2 cumulative attack roll penalty common to all plasmoids.\n\nIf they concentrate (no actions for a round), delNorics can “inhale” a large volume of air and then force it out of a small hole (often their pseudo-mouth) for the next 1d4 rounds. This causes a loud squealing sound that requires a saving throw vs. paralyzation or it inflicts 1d4 points of damage to all who can hear it within 20 feet (even other delNoric).\n\nFurthermore, delNorics keep their supply of entire digestive acid in one internal container. They usually form a tube that exits their body in some convenient area for expelling this acid onto an opponent. This requires their full concentration. The expelled acid can be shot in a stream up to 20 feet to strike one opponent, or it can be sprayed in a mist upon all those within a cone ten feet long and five feet in diameter (at the far end). The stream causes 2d10 points of damage, while the cone causes 3d4 points of damage to each victim. The stream requires a normal attack roll for the delNoric, while the cone's victims roll saving throws vs. breath weapon for half damage. This acid spewing attack can be used only once every hour.\n\nDelNorics are slow to react; their AC is due mainly to their tough, thick hide. Without this covering their AC is 8.\n\nDelNorics suffer half damage from piercing and slashing weapons, but full damage from bludgeoning weapons. Furthermore. their thick hide allows firc-bascd attacks to cause only half their normal damage (though double damage without the hide). Every 20 points of cold damage slows them by 1 (every 10 points if no hide). Acid in any quantity inflicts no damage.",
     "habitatSociety": "DelNorics have a particular enmity toward deGleash, whom they call “The Soft Ones”. They have taken a liking to dwarves as well as to the dwarven lust for gold.",
@@ -3892,7 +3892,7 @@
      },
      "thac0": {
       "text": "0",
-      "value": 0
+      "value": null
      },
      "attacks": "0",
      "damage": "Nil",
@@ -5459,7 +5459,7 @@
       "text": "10",
       "value": 10
      },
-     "movement": "FI 3 (B)",
+     "movement": "Fl 3 (B)",
      "hitDice": {
       "text": "5-10 HD",
       "value": null
@@ -8539,9 +8539,12 @@
      "attacks": "2",
      "damage": "1d4 + 2 Poison Spines",
      "specialAttacks": "Nil",
-     "specialDefenses": "T (6” to 1' diameter)",
      "magicResistance": "1%",
-     "size": "120"
+     "size": "T (6” to 1' diameter)",
+     "xp": {
+      "text": "120",
+      "value": 120
+     }
     }
    }
   ],

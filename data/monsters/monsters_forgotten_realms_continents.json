@@ -3381,9 +3381,12 @@
      "damage": "Same as living",
      "specialAttacks": "Physical dragon attack forms not using flight; spell-like abilities of living form",
      "specialDefenses": "All dragon type and age immunities from life; immune to charm, hold, sleep, paralysis, and poison; save as priests of a level equal to their HD while living",
-     "magicResistance": "Same as living",
-     "size": "Fearless (20)",
-     "morale": "Varies"
+     "size": "Same as living",
+     "morale": "Fearless (20)",
+     "xp": {
+      "text": "Varies",
+      "value": null
+     }
     }
    },
    {
@@ -3418,9 +3421,12 @@
      "damage": "Same as living",
      "specialAttacks": "Physical dragon attack forms not using flight; spell-like abilities of living form",
      "specialDefenses": "All dragon type and age immunities from life; immune to charm, hold, sleep, paralysis, and poison; save as priests of a level equal to their HD while living",
-     "magicResistance": "Same as living",
-     "size": "Fearless (20)",
-     "morale": "Varies"
+     "size": "Same as living",
+     "morale": "Fearless (20)",
+     "xp": {
+      "text": "Varies",
+      "value": null
+     }
     }
    }
   ],
@@ -9882,7 +9888,7 @@
       "text": "7",
       "value": 7
      },
-     "movement": "12, FI 21 (C)",
+     "movement": "12, Fl 21 (C)",
      "hitDice": {
       "text": "4",
       "value": 4
@@ -12496,7 +12502,7 @@
       "text": "9",
       "value": 9
      },
-     "movement": "FI 8 or 16 (A)",
+     "movement": "Fl 8 or 16 (A)",
      "hitDice": {
       "text": "3 to 6",
       "value": null
