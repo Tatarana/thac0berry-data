@@ -19,6 +19,7 @@ Uso: python scripts/add_psionicist_kits.py [--mining CAMINHO]
 import argparse
 import json
 import os
+import re
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 FILES = ['campaign_and_dragon_kits.json', 'demihuman_and_humanoid_kits.json', 'priest_kits.json']
@@ -72,6 +73,29 @@ BONUS_NOTES = {
 }
 
 
+def summary_from_text(full_text, limit=260):
+    """Resumo a partir do texto completo (2026-10-07, pedido do usuário): os kits
+    da Dragon Magazine vieram com o aviso da wiki (":*This was originally
+    published in Dragon Magazine #...*") no lugar do resumo. Usa o primeiro
+    parágrafo de verdade (pula avisos ":" e títulos "#"), preferindo o rotulado
+    "Description" (ou "Description and Role"), sem o rótulo e sem marcação,
+    cortado em frases até ~260 caracteres."""
+    paras = [p.strip() for p in full_text.split('\n\n')]
+    paras = [p for p in paras if p and not p.startswith(':') and not p.startswith('#')]
+    paras.sort(key=lambda p: 0 if p.startswith('**Description') else 1)
+    for para in paras:
+        para = re.sub(r'^\*\*Description[^*]*:\*\*\s*', '', para)
+        para = re.sub(r'\*+', '', para).replace('\n', ' ').strip()
+        sentences = re.split(r'(?<=[.!?])\s+', para)
+        out = ''
+        for s in sentences:
+            if out and len(out) + 1 + len(s) > limit:
+                break
+            out = f'{out} {s}'.strip()
+        return out
+    return ''
+
+
 def normalize(kit):
     """Os kits minerados usam um formato de `mechanics` mais antigo; completa os
     campos que o app exige (Models/Kit.swift) com os mesmos padrões dos kits que
@@ -87,6 +111,9 @@ def normalize(kit):
     for key in ('required', 'recommended', 'forbidden'):
         weapons.setdefault(key, [])
     weapons.setdefault('notes', None)
+    desc = kit['description']
+    if desc['briefSummary'].lstrip().startswith(':*This was originally published'):
+        desc['briefSummary'] = summary_from_text(desc['fullText'])
     profs = mech.setdefault('proficiencies', {'bonus': [], 'recommended': [], 'notes': None})
     if kit['id'] in BONUS:
         profs['bonus'] = list(BONUS[kit['id']])
