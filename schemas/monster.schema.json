@@ -1,0 +1,92 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://thac0berry/schemas/monster.schema.json",
+  "title": "Monstros (catálogo do DM)",
+  "description": "data/monsters/monsters_<coleção>.json, gerado por scripts/build_monsters.py a partir do thac0berry-data-mining. Só a web usa (ferramenta do DM); o iPad não carrega (fica fora do sync_data.py por estar numa subpasta). Cada estatística numérica guarda o texto da fonte e, quando é um número simples, o valor.",
+  "type": "array",
+  "items": { "$ref": "#/$defs/Monster" },
+  "$defs": {
+    "Stat": {
+      "type": "object",
+      "required": ["text", "value"],
+      "properties": {
+        "text": { "type": "string", "description": "Texto como na fonte (\"19 to 15\", \"11,000\")." },
+        "value": { "type": ["integer", "null"], "description": "Valor numérico quando o texto é um número simples; null caso contrário." }
+      }
+    },
+    "Variant": {
+      "type": "object",
+      "required": ["name", "source", "ecology", "combat"],
+      "properties": {
+        "name": { "type": "string" },
+        "source": { "type": ["string", "null"], "description": "Livro(s) da variante, um por linha." },
+        "note": { "type": "string" },
+        "extra": {
+          "type": "object",
+          "description": "Campos próprios de um cenário (Birthright: Bloodline, Blood Abilities, Seeming).",
+          "additionalProperties": { "type": "string" }
+        },
+        "ecology": {
+          "type": "object",
+          "properties": {
+            "climateTerrain": { "type": "string" },
+            "frequency": { "type": "string" },
+            "organization": { "type": "string" },
+            "activityCycle": { "type": "string" },
+            "diet": { "type": "string" },
+            "intelligence": { "type": "string" },
+            "treasure": { "type": "string" },
+            "alignment": { "type": "string" }
+          }
+        },
+        "combat": {
+          "type": "object",
+          "properties": {
+            "numberAppearing": { "type": "string" },
+            "armorClass": { "$ref": "#/$defs/Stat" },
+            "movement": { "type": "string" },
+            "hitDice": { "$ref": "#/$defs/Stat", "description": "value = dados de vida inteiros (\"6+6\" -> 6), para ordenar." },
+            "thac0": { "$ref": "#/$defs/Stat" },
+            "attacks": { "type": "string" },
+            "damage": { "type": "string" },
+            "specialAttacks": { "type": "string" },
+            "specialDefenses": { "type": "string" },
+            "magicResistance": { "type": "string" },
+            "size": { "type": "string" },
+            "morale": { "type": "string" },
+            "xp": { "$ref": "#/$defs/Stat" }
+          }
+        }
+      }
+    },
+    "Monster": {
+      "type": "object",
+      "required": ["id", "name", "aliases", "collection", "sources", "variants", "description", "categories"],
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "aliases": { "type": "array", "items": { "type": "string" } },
+        "collection": { "type": "string", "description": "Coleção de origem (Monstrous Manual Core, Dark Sun, Planescape...)." },
+        "sources": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["book"],
+            "properties": { "book": { "type": "string" }, "page": { "type": ["string", "integer", "null"] } }
+          }
+        },
+        "variants": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/Variant" } },
+        "description": {
+          "type": "object",
+          "required": ["summary", "sections", "fullText"],
+          "properties": {
+            "summary": { "type": ["string", "null"] },
+            "sections": { "type": "object", "additionalProperties": { "type": "string" } },
+            "fullText": { "type": ["string", "null"] }
+          }
+        },
+        "categories": { "type": "array", "items": { "type": "string" } }
+      }
+    }
+  }
+}

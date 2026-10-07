@@ -23,6 +23,8 @@ O CI (`.github/workflows/validate.yml`) roda isso a cada push.
 | `rules_thac0.json` | `rules-thac0.schema.json` | `Store/RuleEngine/CoreRuleset/Thac0ByLevelProvider.swift` |
 | `rules_saving_throws.json` | `rules-saving-throws.schema.json` | `Store/RuleEngine/CoreRuleset/SavingThrowsByLevelProvider.swift` |
 | `rules_experience.json` | `rules-experience.schema.json` | `Models/ExperienceProgressionTable.swift` |
+| `monsters/monsters_index.json` | `monster-index.schema.json` | — (só web; ferramenta do DM) |
+| `monsters/monsters_*.json` | `monster.schema.json` | — (só web; gerado por `scripts/build_monsters.py`; subpasta fora do `sync_data.py` do iPad) |
 
 ## Como o schema espelha o Swift
 

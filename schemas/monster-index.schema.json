@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://thac0berry/schemas/monster-index.schema.json",
+  "title": "Índice de monstros",
+  "description": "data/monsters/monsters_index.json: uma linha leve por monstro, para a lista, a busca e os filtros; o detalhe fica em `file`.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["id", "name", "collection", "variants", "file"],
+    "properties": {
+      "id": { "type": "string" },
+      "name": { "type": "string" },
+      "collection": { "type": "string" },
+      "variants": { "type": "integer", "minimum": 1 },
+      "climateTerrain": { "type": ["string", "null"] },
+      "frequency": { "type": ["string", "null"] },
+      "hitDice": { "type": ["string", "null"] },
+      "hitDiceMin": { "type": ["integer", "null"] },
+      "hitDiceMax": { "type": ["integer", "null"] },
+      "xpMin": { "type": ["integer", "null"] },
+      "xpMax": { "type": ["integer", "null"] },
+      "summary": { "type": ["string", "null"] },
+      "file": { "type": "string", "description": "Arquivo do detalhe, em data/monsters/." }
+    }
+  }
+}

@@ -46,6 +46,10 @@ MAPPING = [
     ("rules_thac0.json", "rules-thac0.schema.json"),
     ("rules_saving_throws.json", "rules-saving-throws.schema.json"),
     ("rules_experience.json", "rules-experience.schema.json"),
+    # Catálogo de monstros (ferramenta do DM, só web), em data/monsters/: fora
+    # do sync_data.py do iPad, que só copia o primeiro nível de data/.
+    ("monsters/monsters_index.json", "monster-index.schema.json"),
+    ("monsters/monsters_*.json", "monster.schema.json"),
 ]
 
 
@@ -112,6 +116,9 @@ def main():
     strict = "--strict" in sys.argv
     failed = False
     files = sorted(f for f in os.listdir(RES) if f.endswith(".json"))
+    sub = os.path.join(RES, "monsters")
+    if os.path.isdir(sub):
+        files += sorted(f"monsters/{f}" for f in os.listdir(sub) if f.endswith(".json"))
     cache = {}
     for fn in files:
         if fn in NOT_LOADED:
