@@ -10100,8 +10100,7 @@
       "proficiencies": {
         "bonus": [
           "Bureaucracy",
-          "heraldry (space",
-          "CSH)",
+          "Heraldry, Space",
           "spacemanship",
           "Realmspace lore"
         ],
@@ -10366,8 +10365,7 @@
           "Endurance",
           "hunting or fishing",
           "survival",
-          "weaponsmithing (crude",
-          "CRH)"
+          "Weaponsmithing, Crude"
         ],
         "recommended": [
           "Appraising",
@@ -13620,11 +13618,9 @@
       "proficiencies": {
         "bonus": [
           "Blacksmithing",
-          "see below)",
           "endurance",
           "fire-building",
-          "languages (racial tongue",
-          "male shield dwarves only)"
+          "Languages, Modern"
         ],
         "recommended": [
           "Animal handling",
@@ -20536,8 +20532,7 @@
           "Blind-fighting",
           "endurance",
           "fungi recognition",
-          "survival (Underdark",
-          "CTH)"
+          "Survival, Underground"
         ],
         "recommended": [
           "Animal lore",
