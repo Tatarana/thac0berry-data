@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://thac0berry/schemas/book.schema.json",
+  "title": "Livros (lista de livros das regras, com cenário)",
+  "description": "Gerado por scripts/build_books.py. Um item por código de livro usado em rules.json (campo `book`). Por enquanto só a web lê; o iPad ainda tem a lista fixa em RulesCompendiumView.bookOrder.",
+  "type": "array",
+  "items": {
+    "$ref": "#/$defs/Book"
+  },
+  "$defs": {
+    "Book": {
+      "type": "object",
+      "required": ["id", "title", "setting", "order"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Código usado em rules.json (`book`): PHB, DMG, CPrH, DSC…"
+        },
+        "title": {
+          "type": "string",
+          "description": "Título completo, como no início do `breadcrumbs` das regras."
+        },
+        "setting": {
+          "type": "string",
+          "description": "Cenário de campanha: \"Core\" para os livros gerais; senão o mesmo nome usado em magias, itens mágicos e monstros (\"Dark Sun\", \"Ravenloft\"…)."
+        },
+        "order": {
+          "type": "integer",
+          "description": "Ordem de exibição (a do Rules Compendium do iPad)."
+        }
+      }
+    }
+  }
+}

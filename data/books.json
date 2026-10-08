@@ -1,0 +1,86 @@
+[
+  {
+    "id": "PHB",
+    "title": "Player's Handbook",
+    "setting": "Core",
+    "order": 1
+  },
+  {
+    "id": "DMG",
+    "title": "Dungeon Master's Guide",
+    "setting": "Core",
+    "order": 2
+  },
+  {
+    "id": "CPrH",
+    "title": "The Complete Priest's Handbook",
+    "setting": "Core",
+    "order": 3
+  },
+  {
+    "id": "CFH",
+    "title": "The Complete Fighter's Handbook",
+    "setting": "Core",
+    "order": 4
+  },
+  {
+    "id": "CPaH",
+    "title": "The Complete Paladin's Handbook",
+    "setting": "Core",
+    "order": 5
+  },
+  {
+    "id": "CRH",
+    "title": "The Complete Ranger's Handbook",
+    "setting": "Core",
+    "order": 6
+  },
+  {
+    "id": "CBarbH",
+    "title": "The Complete Barbarian's Handbook",
+    "setting": "Core",
+    "order": 7
+  },
+  {
+    "id": "CBH",
+    "title": "The Complete Bard's Handbook",
+    "setting": "Core",
+    "order": 8
+  },
+  {
+    "id": "CNH",
+    "title": "The Complete Ninja's Handbook",
+    "setting": "Core",
+    "order": 9
+  },
+  {
+    "id": "CTH",
+    "title": "The Complete Thief's Handbook",
+    "setting": "Core",
+    "order": 10
+  },
+  {
+    "id": "CPsiH",
+    "title": "The Complete Psionics Handbook",
+    "setting": "Core",
+    "order": 11
+  },
+  {
+    "id": "DSC",
+    "title": "Dark Sun Campaign Setting",
+    "setting": "Dark Sun",
+    "order": 12
+  },
+  {
+    "id": "DK",
+    "title": "Dragon Kings",
+    "setting": "Dark Sun",
+    "order": 13
+  },
+  {
+    "id": "WatW",
+    "title": "The Will and the Way",
+    "setting": "Dark Sun",
+    "order": 14
+  }
+]
