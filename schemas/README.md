@@ -20,6 +20,7 @@ O CI (`.github/workflows/validate.yml`) roda isso a cada push.
 | `magic_*.json` | `magic-item.schema.json` | `Models/MagicItem.swift` |
 | `psionic_powers.json` | `psionic-power.schema.json` | `Models/PsionicPower.swift` |
 | `rules.json` | `rule-entry.schema.json` | `Models/Rule.swift` |
+| `books.json` | `book.schema.json` | — (por enquanto só web; gerado por `scripts/build_books.py`; o iPad ainda usa `RulesCompendiumView.bookOrder`) |
 | `rules_thac0.json` | `rules-thac0.schema.json` | `Store/RuleEngine/CoreRuleset/Thac0ByLevelProvider.swift` |
 | `rules_saving_throws.json` | `rules-saving-throws.schema.json` | `Store/RuleEngine/CoreRuleset/SavingThrowsByLevelProvider.swift` |
 | `rules_experience.json` | `rules-experience.schema.json` | `Models/ExperienceProgressionTable.swift` |

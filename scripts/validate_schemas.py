@@ -43,6 +43,7 @@ MAPPING = [
     ("magic_*.json", "magic-item.schema.json"),
     ("psionic_powers.json", "psionic-power.schema.json"),
     ("rules.json", "rule-entry.schema.json"),
+    ("books.json", "book.schema.json"),
     ("rules_thac0.json", "rules-thac0.schema.json"),
     ("rules_saving_throws.json", "rules-saving-throws.schema.json"),
     ("rules_experience.json", "rules-experience.schema.json"),
