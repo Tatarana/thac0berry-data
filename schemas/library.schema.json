@@ -736,6 +736,42 @@
         }
       }
     },
+    "KitSpellcasting": {
+      "type": "object",
+      "required": [],
+      "properties": {
+        "arcane": {
+          "anyOf": [
+            {
+              "type": "array",
+              "items": {
+                "type": "integer",
+                "minimum": 0
+              }
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "Magia arcana: slots por círculo (índice 0 = 1º círculo); ausente/null = sem magia arcana."
+        },
+        "divine": {
+          "anyOf": [
+            {
+              "type": "array",
+              "items": {
+                "type": "integer",
+                "minimum": 0
+              }
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "Magia divina: slots por círculo (índice 0 = 1º círculo); ausente/null = sem magia divina."
+        }
+      }
+    },
     "LevelChangeRow": {
       "type": "object",
       "required": [
@@ -1785,6 +1821,17 @@
             }
           ],
           "description": "Retrato do motor de consequências: as classes anteriores no último estado revisado."
+        },
+        "kitSpellcasting": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/KitSpellcasting"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "Conjuração vinda de um kit (grimório e folhas de magia sem ser mago/sacerdote), com os slots à mão; ausente = nenhuma."
         },
         "psionics": {
           "anyOf": [
