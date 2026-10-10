@@ -369,7 +369,7 @@ def insert_ref(rule, number, block):
         end = content.find("\n\n", m.end())
         end = len(content) if end < 0 else end
         # Depois das tabelas que já estão ali (mantém a ordem dos números).
-        while content.startswith("\n\n[TABLE_REF:", end):
+        while content.startswith("\n\n[TABLE_REF:", end) or content.startswith("\n\n(*", end):
             nxt = content.find("\n\n", end + 2)
             end = len(content) if nxt < 0 else nxt
         rule["content"] = content[:end] + "\n\n" + block + content[end:]
@@ -399,7 +399,12 @@ def main():
         if any(x.get("tableNumber") == number for x in tables):
             continue
         tables.append({"tableNumber": number, "title": t["title"], "headers": t["headers"], "rows": t["rows"]})
-        block = "\n".join([f"[TABLE_REF: {t['title']}]"] + t["notes"])
+        # O [TABLE_REF] fica sozinho no parágrafo (o parser do iPad e da web só
+        # o reconhece assim); as notas vêm no parágrafo seguinte, como "(*) …"
+        # ("* " no começo da linha viraria item de lista e perderia o asterisco).
+        block = f"[TABLE_REF: {t['title']}]"
+        if t["notes"]:
+            block += "\n\n" + "\n".join(re.sub(r"^(\*+)\s*", r"(\1) ", n) for n in t["notes"])
         if rule is item_rule:
             pending_items.append(block)
         else:
