@@ -41,6 +41,8 @@ BOOKS = [
     ("DSC", "Dark Sun"),
     ("DK", "Dark Sun"),
     ("WatW", "Dark Sun"),
+    # GT4b (2026-10-10): Domains of Dread, pelas páginas da wiki (scripts/add_ravenloft_dod.py).
+    ("DoD", "Ravenloft"),
 ]
 
 

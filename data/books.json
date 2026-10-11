@@ -82,5 +82,11 @@
     "title": "The Will and the Way",
     "setting": "Dark Sun",
     "order": 14
+  },
+  {
+    "id": "DoD",
+    "title": "Domains of Dread",
+    "setting": "Ravenloft",
+    "order": 15
   }
 ]

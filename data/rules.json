@@ -42132,5 +42132,2345 @@
     "searchKeywords": [
       "introduction"
     ]
+  },
+  {
+    "id": "dod_ch00_anchorite",
+    "book": "DoD",
+    "chapterNumber": 0,
+    "chapterTitle": "Characters",
+    "breadcrumbs": "Domains of Dread > Characters > Anchorite",
+    "topic": "Anchorite",
+    "ruleType": "core_rule",
+    "summary": "This unusual class of priest exists only on the Demiplane of Dread.",
+    "content": "**Ability Requirements:** Wisdom 12, Charisma 15\n**Prime Requisite:** Wisdom\n**Races Allowed:** Human\n\nThis unusual class of priest exists only on the Demiplane of Dread. His mystical abilities stem from an unknown source, perhaps the dark powers themselves or perhaps something less. Whatever their source, however, these characters lose all magical abilities if they somehow leave Ravenloft.\n\nAnchorites serve the church of Ezra. This unusual organization is a multi-denominational church that, like the anchorites, exists only in Ravenloft. While all branches of the church see Ezra in more or less the same way (as a defender, healer, and protector of her followers), specific practices and beliefs differ greatly. The church of Ezra is detailed more fully in Chapter Five: Secret Societies.\n\n### Ability Requirements\n\nIn order for a character to be an anchorite, he must have a Wisdom score of 12 or greater. This reflects his understanding of the ways of man and the many mysteries of the Demiplane of Dread. If an anchorite has a Wisdom of 16 or better, he receives a 10% bonus to any experience points he earns.\n\nFurther, an anchorite is expected to promote the actions and interests of the church. This task often requires him to deal with people from all walks of life. In order to promote success at these actions, all anchorite characters must have a Charisma of at least 15.\n\n### Spells and Magical Items\n\nAnchorites use spells and magical items just as other priests do. The spheres of magic that a priest of Ezra has access to are determined by his alignment (see Table 92).\n\n[TABLE_REF: Anchorite Progression]\n\n(*) Usable only by clerics with 17 or greater Wisdom.\n(**) Usable only by clerics with 18 or greater Wisdom.\n\n### Alignment\n\nThe primary alignment of the Church of Ezra is lawful neutral. As one travels throughout the domains of Ravenloft, however, it becomes clear that temples deviate a great deal from each other. Any given anchorite is of the same alignment as the temple in which he studied for the priesthood.\n\nAn anchorite player character is allowed to deviate one step from lawful neutral in his alignment (although he cannot choose evil). Thus, he can be lawful neutral, true neutral, or lawful good. The most common alignments within the church are those of a lawful bent, with true neutral being encountered far less frequently.\n\n### Arms and Armor\n\nAlthough priests in general can wear virtually any type of armor, anchorites can wear only metal armor, or none at all. Lighter forms of armor do not support the accepted image of Ezra and anchorites as protectors and defenders of the people. Those who opt to travel without armor are showing their faith in Ezra's protection, while those who garb themselves in steel are setting an example for others.\n\nWhen it comes to weapons, however, somewhat less unity exists within the church. Anchorites of lawful good or lawful neutral alignment, for example, must adhere to the normal restrictions for clerics (that is, no edged weapons). Those of a true neutral alignment believe that it is acceptable for a\n\npriest of Ezra to use edged weapons, but require the use of a shield, so that only one-handed weapons are acceptable.\n\n### Duties of the Anchorite\n\nAs a follower of Ezra, the anchorite is charged with the protection of the weak, the care of the sick, and the general betterment of the human condition. The exact manner in which each of the four alignments enacts these tenets varies, but the basic teachings of the church remain the same.\n\nAnchorites of any alignment frown upon mistreatment or needless suffering of the innocent. They help the injured and show some degree of mercy to their enemies. Their healing powers are used without call for compensation or the need for obligation. Lastly, an anchorite avoids combat when possible, although they are certainly not pacifists, recognizing the need for battle from time to time.\n\n## Saving Throws\n\n[TABLE_REF: Anchorite Saving Throws]\n\n(*) Excluding polymorph wand attacks.\n(**) Excluding those that cause petrification or polymorph.\n(***) Excluding those for which another saving throw type is specified, such as death, petrification, polymorph, etc.",
+    "tables": [
+      {
+        "tableNumber": "",
+        "title": "Anchorite Progression",
+        "headers": [
+          "Level",
+          "XP Needed",
+          "Hit Dice (d8)",
+          "THAC0",
+          "Spells 1",
+          "Spells 2",
+          "Spells 3",
+          "Spells 4",
+          "Spells 5",
+          "Spells 6*",
+          "Spells 7**"
+        ],
+        "rows": [
+          [
+            "1",
+            "0",
+            "1",
+            "20",
+            "1",
+            "—",
+            "—",
+            "—",
+            "—",
+            "—",
+            "—"
+          ],
+          [
+            "2",
+            "2,000",
+            "2",
+            "20",
+            "2",
+            "—",
+            "—",
+            "—",
+            "—",
+            "—",
+            "—"
+          ],
+          [
+            "3",
+            "4,000",
+            "3",
+            "20",
+            "2",
+            "1",
+            "—",
+            "—",
+            "—",
+            "—",
+            "—"
+          ],
+          [
+            "4",
+            "7,500",
+            "4",
+            "18",
+            "3",
+            "2",
+            "—",
+            "—",
+            "—",
+            "—",
+            "—"
+          ],
+          [
+            "5",
+            "12,500",
+            "5",
+            "18",
+            "3",
+            "3",
+            "1",
+            "—",
+            "—",
+            "—",
+            "—"
+          ],
+          [
+            "6",
+            "20,000",
+            "6",
+            "18",
+            "3",
+            "3",
+            "2",
+            "—",
+            "—",
+            "—",
+            "—"
+          ],
+          [
+            "7",
+            "35,000",
+            "7",
+            "16",
+            "3",
+            "3",
+            "2",
+            "1",
+            "—",
+            "—",
+            "—"
+          ],
+          [
+            "8",
+            "60,000",
+            "8",
+            "16",
+            "3",
+            "3",
+            "3",
+            "2",
+            "—",
+            "—",
+            "—"
+          ],
+          [
+            "9",
+            "90,000",
+            "9",
+            "16",
+            "4",
+            "4",
+            "3",
+            "2",
+            "1",
+            "—",
+            "—"
+          ],
+          [
+            "10",
+            "125,000",
+            "9+2",
+            "14",
+            "4",
+            "4",
+            "3",
+            "3",
+            "2",
+            "—",
+            "—"
+          ],
+          [
+            "11",
+            "200,000",
+            "9+4",
+            "14",
+            "5",
+            "4",
+            "4",
+            "3",
+            "2",
+            "1",
+            "—"
+          ],
+          [
+            "12",
+            "300,000",
+            "9+6",
+            "14",
+            "6",
+            "5",
+            "5",
+            "3",
+            "2",
+            "2",
+            "—"
+          ],
+          [
+            "13",
+            "750,000",
+            "9+8",
+            "12",
+            "6",
+            "6",
+            "6",
+            "4",
+            "2",
+            "2",
+            "—"
+          ],
+          [
+            "14",
+            "1,500,000",
+            "9+10",
+            "12",
+            "6",
+            "6",
+            "6",
+            "5",
+            "3",
+            "2",
+            "1"
+          ],
+          [
+            "15",
+            "3,000,000",
+            "9+12",
+            "12",
+            "6",
+            "6",
+            "6",
+            "6",
+            "4",
+            "2",
+            "1"
+          ],
+          [
+            "16",
+            "3,500,000",
+            "9+14",
+            "10",
+            "7",
+            "7",
+            "7",
+            "6",
+            "4",
+            "3",
+            "1"
+          ],
+          [
+            "17",
+            "4,000,000",
+            "9+16",
+            "10",
+            "7",
+            "7",
+            "7",
+            "7",
+            "5",
+            "3",
+            "2"
+          ],
+          [
+            "18",
+            "4,500,000",
+            "9+18",
+            "10",
+            "8",
+            "8",
+            "8",
+            "8",
+            "6",
+            "4",
+            "2"
+          ],
+          [
+            "19",
+            "5,000,000",
+            "9+20",
+            "8",
+            "9",
+            "9",
+            "8",
+            "8",
+            "6",
+            "4",
+            "2"
+          ],
+          [
+            "20",
+            "5,500,000",
+            "9+22",
+            "8",
+            "9",
+            "9",
+            "9",
+            "8",
+            "7",
+            "5",
+            "2"
+          ]
+        ]
+      },
+      {
+        "tableNumber": "",
+        "title": "Anchorite Saving Throws",
+        "headers": [
+          "Experience Level",
+          "Paralyzation, Poison, or Death Magic",
+          "Rod, Staff, or Wand",
+          "Petrification or Polymorph*",
+          "Breath Weapon**",
+          "Spell***"
+        ],
+        "rows": [
+          [
+            "1-3",
+            "10",
+            "14",
+            "13",
+            "16",
+            "15"
+          ],
+          [
+            "4-6",
+            "9",
+            "13",
+            "12",
+            "15",
+            "14"
+          ],
+          [
+            "7-9",
+            "7",
+            "11",
+            "10",
+            "13",
+            "12"
+          ],
+          [
+            "10-12",
+            "6",
+            "10",
+            "9",
+            "12",
+            "11"
+          ],
+          [
+            "13-15",
+            "5",
+            "9",
+            "8",
+            "11",
+            "10"
+          ],
+          [
+            "16-18",
+            "4",
+            "8",
+            "7",
+            "10",
+            "9"
+          ],
+          [
+            "19+",
+            "2",
+            "6",
+            "5",
+            "8",
+            "7"
+          ]
+        ]
+      }
+    ],
+    "relatedRuleIds": [],
+    "relatedSpells": [],
+    "relatedMagicItems": [],
+    "searchKeywords": [
+      "anchorite",
+      "priest",
+      "ezra",
+      "church of ezra",
+      "ravenloft"
+    ]
+  },
+  {
+    "id": "dod_ch00_arcanist",
+    "book": "DoD",
+    "chapterNumber": 0,
+    "chapterTitle": "Characters",
+    "breadcrumbs": "Domains of Dread > Characters > Arcanist",
+    "topic": "Arcanist",
+    "ruleType": "core_rule",
+    "summary": "Arcanists are a special breed of wizard specializing in all matters occult and forbidden.",
+    "content": "**Ability Requirements:** Intelligence 15, Wisdom 15\n**Prime Requisite:** Intelligence\n**Races Allowed:** Half-Vistani, Human\n\nArcanists are a special breed of wizard specializing in all matters occult and forbidden. In many ways, they combine the features of a necromancer and summoner, for their powers mimic both classes. At the same time, however, they are considered bards of the macabre, for they know the secrets that man dreads to hear spoken. Arcanists are found only in Ravenloft, although those who have traveled outside of the Demiplane of Dread do not lose their powers when they leave the Mists behind.\n\n### Ability Requirements\n\nIn order to be an arcanist, a character must have a highly trained mind and be blessed with the insight to make the best use of his keen intellect. To reflect this, the character must have Intelligence and Wisdom scores of at least 15. If an arcanist has an Intelligence score of 16 or better, he receives a 10% bonus to any experience points that he earns.\n\n[TABLE_REF: Arcanist Progression]\n\n### Alignment\n\nArcanists must always be of lawful alignment, although they are as often neutral or evil as they are good. Those known as white arcanists are of good alignment and tend to turn their studies to the battling of evil and the thwarting of occult menaces. Gray, or neutral, arcanists seek to comprehend the nature of the Demiplane of Dread and understand the fragile balance between life and death that exists there. Black, or evil, arcanists desire knowledge and mastery over the occult so that they can acquire personal power and domination over the supernatural. Of course, arcanist player characters cannot take any evil alignment; only nonplayer characters can be evil.\n\n### Spells\n\nArcanists have the ability to cast spells at the same rate as other wizards (see Table 85). Their intense study of necromancy and other black arts limits the schools that they can learn spells from, however. No arcanist can ever master magic from the schools of alteration, invocation/evocation, enchantment/charm, or illusion/phantasm.\n\n### Learning Spells\n\nArcanists gain a bonus of +25% when attempting to learn a spell from either the necromancy or greater divination schools. They receive a similar penalty when striving to master spells from other schools.\n\n### Magical Items\n\nArcanists use most of the same magical items that other wizards use. Most rings, wands, rods, and many miscellaneous magical items function normally for them. They cannot, however, make use of any item that mimics a spell from the schools of alteration, invocation/evocation, enchantment/charm, or illusion/phantasm.\n\n### Saving Throw Adjustments\n\nThe power of an arcanist is so great that his spells are not easily resisted. Whenever one of these characters employs a spell from the school of necromancy or greater divination, his target suffers a -2 penalty on his saving throw. When an arcanist must defend himself from similar spells, he receives a +2 bonus. If an arcanist casts such a spell upon another arcanist, the two saving throw adjustments cancel each other.\n\nTurning/Commanding Undead\n\nCharacters of this type know far more about the ways of the dead and undead than wizards from other realms. Even the skills of the typical necromancer do not match those of Ravenloft's arcanists.\n\nBecause of this, characters of this type can command (if an evil, non-player character) or turn (if good) undead creatures just as if they were clerics. Information on turning undead is presented in the entry for priest characters (page 263). Players of lawful neutral arcanists must decide at the time of character creation whether their characters will turn or control undead. Once this decision is made, it cannot be reversed.\n\n### Forbidden Lore\n\nIn matters of the occult and supernatural, the knowledge of an arcanist is unmatched. Some have remarked wryly that bards know a little bit about everything, while arcanists know a little bit about everything spooky.\n\nWhenever an arcanist is presented with a person, object, or location that has some significance in the supernatural and macabre history of Ravenloft, he has a 5% chance per experience level to know some relevant fact about it. This ability is similar to that of the bard but applies only to those things that have a special significance in Ravenloft. Exactly what items do and do not fall into this category is up to the Dungeon Master. An arcanist need not handle objects being considered, so he is safe from any curses they might carry.\n\n### Powers Checks\n\nBy the very nature of their research, arcanists leave themselves open to the darkness of the land. They study things that no man should study and travel places best left unexplored. Throughout his life, an arcanist must fight an unending battle to avoid being drawn into the web of evil and magic that he studies. As such, whenever one of these characters advances in level, he must attempt a powers check with a chance of failure equal to 5% per level. Thus, as the character reaches higher levels, it becomes impossible to avoid some degree of corruption.\n\n### Horror Checks\n\nArcanists are well versed in all things dark and sinister. Because of this, they often shake off things that might frighten or horrify another adventurer. In game terms, a +2 bonus to all fear and horror checks reflects this.\n\n[TABLE_REF: Arcanist Saving Throws]\n\n(*) Excluding polymorph wand attacks.\n(**) Excluding those that cause petrification or polymorph.\n(***) Excluding those for which another saving throw type is specified, such as death, petrification, polymorph, etc.",
+    "tables": [
+      {
+        "tableNumber": "",
+        "title": "Arcanist Progression",
+        "headers": [
+          "Level",
+          "XP Needed",
+          "Hit Dice (d4)",
+          "THAC0",
+          "Spells 1",
+          "Spells 2",
+          "Spells 3",
+          "Spells 4",
+          "Spells 5",
+          "Spells 6",
+          "Spells 7",
+          "Spells 8",
+          "Spells 9"
+        ],
+        "rows": [
+          [
+            "1",
+            "0",
+            "1",
+            "20",
+            "1",
+            "—",
+            "—",
+            "—",
+            "—",
+            "—",
+            "—",
+            "—",
+            "—"
+          ],
+          [
+            "2",
+            "2,500",
+            "2",
+            "20",
+            "2",
+            "—",
+            "—",
+            "—",
+            "—",
+            "—",
+            "—",
+            "—",
+            "—"
+          ],
+          [
+            "3",
+            "5,000",
+            "3",
+            "20",
+            "2",
+            "1",
+            "—",
+            "—",
+            "—",
+            "—",
+            "—",
+            "—",
+            "—"
+          ],
+          [
+            "4",
+            "10,000",
+            "4",
+            "19",
+            "3",
+            "2",
+            "—",
+            "—",
+            "—",
+            "—",
+            "—",
+            "—",
+            "—"
+          ],
+          [
+            "5",
+            "20,000",
+            "5",
+            "19",
+            "4",
+            "2",
+            "1",
+            "—",
+            "—",
+            "—",
+            "—",
+            "—",
+            "—"
+          ],
+          [
+            "6",
+            "40,000",
+            "6",
+            "19",
+            "4",
+            "2",
+            "2",
+            "—",
+            "—",
+            "—",
+            "—",
+            "—",
+            "—"
+          ],
+          [
+            "7",
+            "60,000",
+            "7",
+            "18",
+            "4",
+            "3",
+            "2",
+            "1",
+            "—",
+            "—",
+            "—",
+            "—",
+            "—"
+          ],
+          [
+            "8",
+            "90,000",
+            "8",
+            "18",
+            "4",
+            "3",
+            "3",
+            "2",
+            "—",
+            "—",
+            "—",
+            "—",
+            "—"
+          ],
+          [
+            "9",
+            "135,000",
+            "9",
+            "18",
+            "4",
+            "3",
+            "3",
+            "2",
+            "1",
+            "—",
+            "—",
+            "—",
+            "—"
+          ],
+          [
+            "10",
+            "250,000",
+            "10",
+            "17",
+            "4",
+            "4",
+            "3",
+            "2",
+            "2",
+            "—",
+            "—",
+            "—",
+            "—"
+          ],
+          [
+            "11",
+            "375,000",
+            "10+1",
+            "17",
+            "4",
+            "4",
+            "4",
+            "3",
+            "3",
+            "—",
+            "—",
+            "—",
+            "—"
+          ],
+          [
+            "12",
+            "750,000",
+            "10+2",
+            "17",
+            "4",
+            "4",
+            "4",
+            "4",
+            "4",
+            "1",
+            "—",
+            "—",
+            "—"
+          ],
+          [
+            "13",
+            "1,125,000",
+            "10+3",
+            "16",
+            "5",
+            "5",
+            "5",
+            "4",
+            "4",
+            "2",
+            "—",
+            "—",
+            "—"
+          ],
+          [
+            "14",
+            "1,500,000",
+            "10+4",
+            "16",
+            "5",
+            "5",
+            "5",
+            "4",
+            "4",
+            "2",
+            "1",
+            "—",
+            "—"
+          ],
+          [
+            "15",
+            "1,875,000",
+            "10+5",
+            "16",
+            "5",
+            "5",
+            "5",
+            "5",
+            "5",
+            "2",
+            "1",
+            "—",
+            "—"
+          ],
+          [
+            "16",
+            "2,250,000",
+            "10+6",
+            "15",
+            "5",
+            "5",
+            "5",
+            "5",
+            "5",
+            "3",
+            "2",
+            "1",
+            "—"
+          ],
+          [
+            "17",
+            "2,625,000",
+            "10+7",
+            "15",
+            "5",
+            "5",
+            "5",
+            "5",
+            "5",
+            "3",
+            "3",
+            "2",
+            "—"
+          ],
+          [
+            "18",
+            "3,000,000",
+            "10+8",
+            "15",
+            "5",
+            "5",
+            "5",
+            "5",
+            "5",
+            "3",
+            "3",
+            "2",
+            "1"
+          ],
+          [
+            "19",
+            "3,375,000",
+            "10+9",
+            "14",
+            "5",
+            "5",
+            "5",
+            "5",
+            "5",
+            "3",
+            "3",
+            "3",
+            "1"
+          ],
+          [
+            "20",
+            "3,750,000",
+            "10+10",
+            "14",
+            "5",
+            "5",
+            "5",
+            "5",
+            "5",
+            "4",
+            "3",
+            "3",
+            "2"
+          ]
+        ]
+      },
+      {
+        "tableNumber": "",
+        "title": "Arcanist Saving Throws",
+        "headers": [
+          "Experience Level",
+          "Paralyzation, Poison, or Death Magic",
+          "Rod, Staff, or Wand",
+          "Petrification or Polymorph*",
+          "Breath Weapon**",
+          "Spell***"
+        ],
+        "rows": [
+          [
+            "1-5",
+            "14",
+            "11",
+            "13",
+            "15",
+            "12"
+          ],
+          [
+            "6-10",
+            "13",
+            "9",
+            "11",
+            "13",
+            "10"
+          ],
+          [
+            "11-15",
+            "11",
+            "7",
+            "9",
+            "11",
+            "8"
+          ],
+          [
+            "16-20",
+            "10",
+            "5",
+            "7",
+            "9",
+            "6"
+          ],
+          [
+            "21+",
+            "8",
+            "3",
+            "5",
+            "7",
+            "4"
+          ]
+        ]
+      }
+    ],
+    "relatedRuleIds": [],
+    "relatedSpells": [],
+    "relatedMagicItems": [],
+    "searchKeywords": [
+      "arcanist",
+      "wizard",
+      "occult",
+      "ravenloft"
+    ]
+  },
+  {
+    "id": "dod_ch00_avenger",
+    "book": "DoD",
+    "chapterNumber": 0,
+    "chapterTitle": "Characters",
+    "breadcrumbs": "Domains of Dread > Characters > Avenger",
+    "topic": "Avenger",
+    "ruleType": "core_rule",
+    "summary": "Avengers are fighters who are driven by an almost obsessive need for revenge.",
+    "content": "**Ability Requirements:** Strength 15, Dexterity 14, Constitution 15\n**Prime Requisites:** Strength, Constitution\n**Races Allowed:** Dwarf, Half-Vistani, Human\n\n[TABLE_REF: Avenger Progression]\n\nAvengers are fighters who are driven by an almost obsessive need for revenge. At some point in their past, they witnessed a great wrong or tragedy and have dedicated themselves to seeing that those responsible, or others like them, are punished for their crimes or actions.\n\n### Ability Requirements\n\nAn avenger has spent years perfecting his physical condition and training for his war against his chosen enemy. To reflect this, his physical ability scores must be well above average. An avenger must have a Strength score of at least 15, a Dexterity score of no less than 14, and a Constitution score of 15 or better. The prime requisites for avenger characters are Strength and Constitution. If an avenger has a score of 16 or higher in both of these scores, he earns a bonus of +10% to any experience points awarded to him during the course of play.\n\n### Alignment\n\nAll avenger characters must be either neutral or chaotic. Apart from this, the alignment of avenger player characters is spread evenly between good and neutral. Only non-player characters can be of an evil alignment.\n\nIn general, the alignment of the avenger is the opposite of his enemy. If the character seeks revenge upon an evil person, then his alignment is good. However, a Dungeon Master could choose to have both an avenger non-player character and the target of his hatred to be evil.\n\n### Arms and Armor\n\nAs with the fighter, an avenger can use any type of weapon or armor available to him. Because of his intense training, he can also choose to specialize in a weapon.\n\n### Weapon Specialization\n\nAvengers devote much of their time to training and exercise. Because of this, they have the ability to specialize in a melee weapon of their choice. Since their need for face-to-face vengeance is so great, avengers cannot choose to specialize in any type of ranged weapon. For further details on weapon specialization, see Appendix Five (page 282).\n\n### Spells and Magical Items\n\nAvengers, like most other warriors, cannot cast spells. They focus on their own obsession too much to devote their minds to the involved study required for spell casting. Only the martial exercises hold any fascination for them.\n\nAvengers use the same magical items as normal fighters. Thus, they can use all manner of magical arms, armors, and shields. In addition, they can use most magical rings, potions, and scrolls of protection.\n\n### Extra Hit Points\n\nAn avenger's focused need for revenge is such that whenever he confronts an enemy that reminds him of his nemesis in melee combat, he gains 5 hit points to help him through the encounter. This bonus increases to 10 hit points. when he faces the subject of his vengeance. These hit points work exactly like the ald spell in that they are the first hit points the avenger loses when he takes damage. Once the combat is over, the extra hit points (if any) go away.\n\n### Intuition\n\nIf an avenger makes a successful Wisdom check while pursuing his foe, he intuitively \"knows\" which direction he should head. This ability helps an avenger by providing him with a general direction to go; it does not guide him directly to a specific location.\n\n### Followers and Holdings\n\nAvengers do not attract followers as some types of warrior do. Like rangers, they are often nomadic in nature, moving from place to place as they stalk their enemy.\n\nWhile avengers do not pause in their endeavors long enough to establish fortifications, they sometimes take up residence somewhere if their prey is stationary. The nature of these accommodations is not a keep or a stronghold, however. More often than not, an avenger's lair resembles the safehouse or hideout established by many types of rogue characters.\n\n[TABLE_REF: Avenger Saving Throws]\n\n(*) Excluding polymorph wand attacks.\n(**) Excluding those that cause petrification or polymorph.\n(***) Excluding those for which another saving throw type is specified, such as death, petrification, polymorph, etc.",
+    "tables": [
+      {
+        "tableNumber": "",
+        "title": "Avenger Progression",
+        "headers": [
+          "Level",
+          "XP Needed",
+          "Hit Dice (d10)",
+          "THAC0",
+          "Attacks/Round"
+        ],
+        "rows": [
+          [
+            "1",
+            "0",
+            "1",
+            "20",
+            "1/round"
+          ],
+          [
+            "2",
+            "2,250",
+            "2",
+            "19",
+            "1/round"
+          ],
+          [
+            "3",
+            "4,500",
+            "3",
+            "18",
+            "1/round"
+          ],
+          [
+            "4",
+            "9,000",
+            "4",
+            "17",
+            "1/round"
+          ],
+          [
+            "5",
+            "18,000",
+            "5",
+            "16",
+            "1/round"
+          ],
+          [
+            "6",
+            "36,000",
+            "6",
+            "15",
+            "1/round"
+          ],
+          [
+            "7",
+            "75,000",
+            "7",
+            "14",
+            "3/2 rounds"
+          ],
+          [
+            "8",
+            "150,000",
+            "8",
+            "13",
+            "3/2 rounds"
+          ],
+          [
+            "9",
+            "300,000",
+            "9",
+            "12",
+            "3/2 rounds"
+          ],
+          [
+            "10",
+            "600,000",
+            "9+3",
+            "11",
+            "3/2 rounds"
+          ],
+          [
+            "11",
+            "900,000",
+            "9+6",
+            "10",
+            "3/2 rounds"
+          ],
+          [
+            "12",
+            "1,200,000",
+            "9+9",
+            "9",
+            "3/2 rounds"
+          ],
+          [
+            "13",
+            "1,500,000",
+            "9+12",
+            "8",
+            "2/round"
+          ],
+          [
+            "14",
+            "1,800,000",
+            "9+15",
+            "7",
+            "2/round"
+          ],
+          [
+            "15",
+            "2,100,000",
+            "9+18",
+            "6",
+            "2/round"
+          ],
+          [
+            "16",
+            "2,400,000",
+            "9+21",
+            "5",
+            "2/round"
+          ],
+          [
+            "17",
+            "2,700,000",
+            "9+24",
+            "4",
+            "2/round"
+          ],
+          [
+            "18",
+            "3,000,000",
+            "9+27",
+            "3",
+            "2/round"
+          ],
+          [
+            "19",
+            "3,300,000",
+            "9+30",
+            "2",
+            "2/round"
+          ],
+          [
+            "20",
+            "3,600,000",
+            "9+33",
+            "1",
+            "2/round"
+          ]
+        ]
+      },
+      {
+        "tableNumber": "",
+        "title": "Avenger Saving Throws",
+        "headers": [
+          "Experience Level",
+          "Paralyzation, Poison, or Death Magic",
+          "Rod, Staff, or Wand",
+          "Petrification or Polymorph*",
+          "Breath Weapon**",
+          "Spell***"
+        ],
+        "rows": [
+          [
+            "0",
+            "16",
+            "18",
+            "17",
+            "20",
+            "19"
+          ],
+          [
+            "1-2",
+            "14",
+            "16",
+            "15",
+            "17",
+            "17"
+          ],
+          [
+            "3-4",
+            "13",
+            "15",
+            "14",
+            "16",
+            "16"
+          ],
+          [
+            "5-6",
+            "11",
+            "13",
+            "12",
+            "13",
+            "14"
+          ],
+          [
+            "7-8",
+            "10",
+            "12",
+            "11",
+            "12",
+            "13"
+          ],
+          [
+            "9-10",
+            "8",
+            "10",
+            "9",
+            "9",
+            "11"
+          ],
+          [
+            "11-12",
+            "7",
+            "9",
+            "8",
+            "8",
+            "10"
+          ],
+          [
+            "13-14",
+            "5",
+            "7",
+            "6",
+            "5",
+            "8"
+          ],
+          [
+            "15-16",
+            "4",
+            "6",
+            "5",
+            "4",
+            "7"
+          ],
+          [
+            "17+",
+            "3",
+            "5",
+            "4",
+            "4",
+            "6"
+          ]
+        ]
+      }
+    ],
+    "relatedRuleIds": [],
+    "relatedSpells": [],
+    "relatedMagicItems": [],
+    "searchKeywords": [
+      "avenger",
+      "fighter",
+      "warrior",
+      "revenge",
+      "ravenloft"
+    ]
+  },
+  {
+    "id": "dod_ch00_gypsy",
+    "book": "DoD",
+    "chapterNumber": 0,
+    "chapterTitle": "Characters",
+    "breadcrumbs": "Domains of Dread > Characters > Gypsy",
+    "topic": "Gypsy",
+    "ruleType": "core_rule",
+    "summary": "When most folk think of gypsies in Ravenloft, they picture the mysterious Vistani.",
+    "content": "**Ability Requirements:** Constitution 13, Intelligence 13, Wisdom 13, Charisma 15\n**Prime Requisites:** Dexterity, Charisma\n**Races Allowed:** Half-elf, Half-Vistani, Human\n\nWhen most folk think of gypsies in Ravenloft, they picture the mysterious Vistani. While it is certainly true that those wanderers of the Mists are often called by the common name \"gypsy,\" they are not the only such folk who dwell on the Demiplane of Dread. Player character gypsies are not Vistani, although many of these oft-called vagabonds do have some hint of Mist walker blood in them.\n\n[TABLE_REF: Gypsy Progression]\n\n## Saving Throws\n\n[TABLE_REF: Gypsy Saving Throws]\n\n(*) Excluding polymorph wand attacks.\n(**) Excluding those that cause petrification or polymorph.\n(***) Excluding those for which another saving throw type is specified, such as death, petrification, polymorph, etc.\n\n### Fear, Horror and Madness Checks\n\n[TABLE_REF: Table 95: Gypsy Fear, Horror and Madness Checks]\n\n## Ability Requirements\n\nIn order to be a gypsy, a character must have Constitution, Intelligence, and Wisdom scores of at least 13. In addition, his Charisma score must also be at least 15. If a gypsy has Dexterity and Charisma scores of 16 or better, he receives a 10% bonus to any experience points he earns.\n\nThe former requirements reflect the fact that the gypsy has traveled far and wide. He must be strong enough to survive the rigors of traveling and should have gathered a great deal of knowledge and common sense in his journeys.\n\nThe latter requirement indicates the aura of mystery and awe that surrounds these people. Sadly, while this makes them stand out from the common folk of Ravenloft, it also brands them as outsiders—and citizens of the Demiplane of Dread seldom trust outsiders.\n\n## Alignment\n\nThe gypsies are a mysterious people who live by a rigid code of personal honor and laws. Because their values often differ from those of the communities that they visit, however, many people regard gypsies as a wild and lawless breed. In truth, however, all such characters must be either lawful or neutral. No matter how much the villagers of Ravenloft might like to think so, no chaotic gypsies exist. Also, no player character gypsies can be of an evil alignment.\n\nOf course, this doesn't mean that all gypsies are virtuous and kind. In fact, the ranks of non-Vistani gypsies are evenly divided between good, neutral, and evil. Thus, while they may adhere to their own standards of honor, their values and morality differ greatly from tribe to tribe.\n\n## Arms and Armor\n\nGypsies have a somewhat limited choice of weapons and armor compared to other rogues. No doubt this is partially responsible for their tendency to avoid direct confrontation in favor of stealth and trickery. Gypsies cannot wear any form of metal armor. Even the delicate and supple chainmail wrought by elf smiths is prohibited to them. In addition, they never make use of any form of shield. Gypsies can employ only one-handed melee weapons, although they are free to employ bows, crossbows, and other two-handed missile weapons.\n\n## Spells and Magical Items\n\nThe gypsies of Ravenloft have access to a fair selection of magical items and can cast a good many spells. They can also use any magical item normally available to members of the thief class. In addition, they have free access to all magical items that emulate divination spells, such as a crystal ball, even when those are intended for characters of another class. Higher-level gypsies do not gain the ability to use priest and wizard scrolls as thieves do. However, those that have a divination purpose, like a scroll with a detect magic spell on it, are always usable by them.\n\nAs they advance in levels, gypsy characters can use a limited number of wizard spells. They do not keep spell books like normal wizards do, although they do go through similar steps to learn their spells. In addition, they need not choose their spells ahead of time, although any spell they wish to use has a casting time of three turns (thirty minutes). Only those spells that fall into the schools of lesser and greater divination are available to the gypsy. Table 104: Gypsy Spell Progression indicates the number of spells that a gypsy can cast per day.\n\n## Table 104 Gypsy Spell Progression\n\n[TABLE_REF: Table 104: Gypsy Spell Progression]\n\n## Gypsy Clans\n\ngypsy player characters are members of gypsy tribes. For one reason or another, however, they have left their tribe behind to explore and adventure for a time. This is not an uncommon action among the young men and women of Ravenloft's gypsy tribes. During his travels, a young gypsy may well encounter tribes other than his own. Depending upon his alignment and the values of the other tribe, this may or may not present a problem. It is impossible for a gypsy to hide his alignment from another tribe without the use of magical spells.\n\nIf the adventurer encounters a tribe whose alignment exactly matches his own, he is welcomed as a friend. He is given whatever aid and comfort it is within the means of that tribe to provide. Should the tribe's alignment deviate only slightly from that of the character (lawful neutral and lawful good, for example), the adventurer is welcomed and treated as a guest. He receives no special consideration but is given food, a place to sleep, and the like. If the adventurer and the tribe do not have similar alignments, he is turned away. Depending on his response to this treatment, violence may erupt. Nothing prohibits one tribe of gypsies from making war on another.\n\n## Knife Fighting\n\nThe traditional weapon of the gypsy is the knife or dagger. In fact, no other class (with the possible exception of the fighter) is as skillful in the use of these weapons as the gypsy. For that reason, a gypsy can specialize in the use of the knife just as if he were a fighter. This specialization requires the normal allocation of proficiency slots and applies to both melee combat and the throwing of knives as well.\n\nThis specialization is a limited form of the fighter's ability, however. While the character does receive the normal +1 attack bonus and +2 damage bonus, he does not gain any extra attacks with the knife.\n\n## Gypsy Lore\n\nThis ability is similar to that of the bard and the arcanist, who know a little bit about everything. Because of the traveling life of a gypsy, whether he is on his own or in the company of his clan, these characters accumulate a wealth of knowledge about the various lands of Ravenloft.\n\nWhen a gypsy character is presented with an object, meets a person, explores a place, or is otherwise confronted with something about which he might have knowledge, the Dungeon Master should roll percentile dice. The chance that a character will know something about a given topic is 5% per level. Thus, a 12th-level gypsy has a 60% chance to know a little bit about a given domain lord or magical object.\n\nThe extent of the character's knowledge should be determined by the Dungeon Master, but should generally be brief. For example, when a gypsy character first encounters an unfamiliar plant, the Dungeon Master may decide to give the character a chance of recognizing it. If the roll succeeds, the gypsy might be told something like, \"Those are blood-roses; I'd keep my distance.\"\n\n## Sinister Perceptions\n\nBecause the gypsies are not looked upon with favor by most of Ravenloft's common folk, they suffer a marked disadvantage in earning their trust. Whenever a gypsy is called upon to make an encounter reaction check (see the DUNGEON MASTER Guide), his result is automatically shifted one place toward hostile. Thus, a gypsy never receives a result of \"friendly\" when dealing with a nongypsy. Note that this applies only when dealing with nongypsies. The rules presented earlier in this section can be used to adjudicate encounters between members of various gypsy tribes.\n\n## The Vistani\n\nNon-Vistani gypsy tribes fall into a sort of cultural netherworld. Not only are they feared and often mistrusted by their human kindred, the ranks of the Vistani find them generally distasteful as well. In the eyes of Ravenloft's so-called \"true gypsies,\" these people are at best considered cheap imitations and are often the target of ridicule and abuse. At worst, non-Vistani gypsies are frauds who can not be trusted and who wish to ferret out the secrets of the Mist walkers.\n\nIn game terms, this negative reaction is reflected in an adjustment to the character's Charisma-based attributes. When dealing with a Vistani, a gypsy character will find that his initial reaction and loyalty base adjustments are always penalties. Thus, it is as bad to have a high Charisma score as a low one when dealing with the Vistani.",
+    "tables": [
+      {
+        "tableNumber": "",
+        "title": "Gypsy Progression",
+        "headers": [
+          "Level",
+          "XP Needed",
+          "Hit Dice (d6)",
+          "THAC0",
+          "Weapon Proficiency Slots",
+          "Nonweapon Proficiency Slots"
+        ],
+        "rows": [
+          [
+            "1",
+            "0",
+            "1",
+            "20",
+            "2",
+            "3"
+          ],
+          [
+            "2",
+            "1,250",
+            "2",
+            "20",
+            "2",
+            "3"
+          ],
+          [
+            "3",
+            "2,500",
+            "3",
+            "19",
+            "2",
+            "3"
+          ],
+          [
+            "4",
+            "5,000",
+            "4",
+            "19",
+            "3",
+            "4"
+          ],
+          [
+            "5",
+            "10,000",
+            "5",
+            "18",
+            "3",
+            "4"
+          ],
+          [
+            "6",
+            "20,000",
+            "6",
+            "18",
+            "3",
+            "4"
+          ],
+          [
+            "7",
+            "40,000",
+            "7",
+            "17",
+            "3",
+            "4"
+          ],
+          [
+            "8",
+            "70,000",
+            "8",
+            "17",
+            "4",
+            "5"
+          ],
+          [
+            "9",
+            "110,000",
+            "9",
+            "16",
+            "4",
+            "5"
+          ],
+          [
+            "10",
+            "160,000",
+            "10",
+            "16",
+            "4",
+            "5"
+          ],
+          [
+            "11",
+            "220,000",
+            "10+2",
+            "15",
+            "4",
+            "5"
+          ],
+          [
+            "12",
+            "440,000",
+            "10+4",
+            "15",
+            "5",
+            "6"
+          ],
+          [
+            "13",
+            "660,000",
+            "10+6",
+            "14",
+            "5",
+            "6"
+          ],
+          [
+            "14",
+            "880,000",
+            "10+8",
+            "14",
+            "5",
+            "6"
+          ],
+          [
+            "15",
+            "1,100,000",
+            "10+10",
+            "13",
+            "5",
+            "6"
+          ],
+          [
+            "16",
+            "1,320,000",
+            "10+12",
+            "13",
+            "6",
+            "7"
+          ],
+          [
+            "17",
+            "1,540,000",
+            "10+14",
+            "12",
+            "6",
+            "7"
+          ],
+          [
+            "18",
+            "1,760,000",
+            "10+16",
+            "12",
+            "6",
+            "7"
+          ],
+          [
+            "19",
+            "1,980,000",
+            "10+18",
+            "11",
+            "6",
+            "7"
+          ],
+          [
+            "20",
+            "2,200,000",
+            "10+20",
+            "11",
+            "7",
+            "8"
+          ]
+        ]
+      },
+      {
+        "tableNumber": "",
+        "title": "Gypsy Saving Throws",
+        "headers": [
+          "Experience Level",
+          "Paralyzation, Poison, or Death Magic",
+          "Rod, Staff, or Wand",
+          "Petrification or Polymorph*",
+          "Breath Weapon**",
+          "Spell***"
+        ],
+        "rows": [
+          [
+            "1-4",
+            "13",
+            "14",
+            "12",
+            "16",
+            "15"
+          ],
+          [
+            "5-8",
+            "12",
+            "12",
+            "11",
+            "15",
+            "13"
+          ],
+          [
+            "9-12",
+            "11",
+            "10",
+            "10",
+            "14",
+            "11"
+          ],
+          [
+            "13-16",
+            "10",
+            "8",
+            "9",
+            "13",
+            "9"
+          ],
+          [
+            "17-20",
+            "9",
+            "6",
+            "8",
+            "12",
+            "7"
+          ],
+          [
+            "21+",
+            "8",
+            "4",
+            "7",
+            "11",
+            "5"
+          ]
+        ]
+      },
+      {
+        "tableNumber": "Table 95",
+        "title": "Table 95: Gypsy Fear, Horror and Madness Checks",
+        "headers": [
+          "Character Level",
+          "Fear Check",
+          "Horror Check",
+          "Madness Check"
+        ],
+        "rows": [
+          [
+            "0",
+            "16",
+            "16",
+            "19"
+          ],
+          [
+            "1-2",
+            "15",
+            "15",
+            "18"
+          ],
+          [
+            "3-4",
+            "14",
+            "14",
+            "17"
+          ],
+          [
+            "5-6",
+            "13",
+            "13",
+            "16"
+          ],
+          [
+            "7-8",
+            "12",
+            "12",
+            "15"
+          ],
+          [
+            "9-10",
+            "11",
+            "11",
+            "14"
+          ],
+          [
+            "11-12",
+            "9",
+            "10",
+            "13"
+          ],
+          [
+            "13-14",
+            "7",
+            "9",
+            "12"
+          ],
+          [
+            "15-16",
+            "5",
+            "7",
+            "11"
+          ],
+          [
+            "17-18",
+            "3",
+            "5",
+            "10"
+          ],
+          [
+            "19-20",
+            "2",
+            "3",
+            "8"
+          ]
+        ]
+      },
+      {
+        "tableNumber": "Table 104",
+        "title": "Table 104: Gypsy Spell Progression",
+        "headers": [
+          "Gypsy Level",
+          "Wizard Spells 1",
+          "Wizard Spells 2",
+          "Wizard Spells 3",
+          "Wizard Spells 4"
+        ],
+        "rows": [
+          [
+            "1-3",
+            "1",
+            "—",
+            "—",
+            "—"
+          ],
+          [
+            "4-6",
+            "2",
+            "—",
+            "—",
+            "—"
+          ],
+          [
+            "7-9",
+            "2",
+            "1",
+            "—",
+            "—"
+          ],
+          [
+            "10-12",
+            "3",
+            "2",
+            "—",
+            "—"
+          ],
+          [
+            "13-15",
+            "3",
+            "2",
+            "1",
+            "—"
+          ],
+          [
+            "16-18",
+            "3",
+            "2",
+            "2",
+            "—"
+          ],
+          [
+            "19+",
+            "3",
+            "3",
+            "2",
+            "1"
+          ]
+        ]
+      }
+    ],
+    "relatedRuleIds": [],
+    "relatedSpells": [],
+    "relatedMagicItems": [],
+    "searchKeywords": [
+      "gypsy",
+      "rogue",
+      "divination",
+      "gypsy lore",
+      "knife",
+      "ravenloft"
+    ]
+  },
+  {
+    "id": "dod_ch00_gypsy_thieving_skills",
+    "book": "DoD",
+    "chapterNumber": 0,
+    "chapterTitle": "Characters",
+    "breadcrumbs": "Domains of Dread > Characters > Gypsy Thieving Skills",
+    "topic": "Gypsy Thieving Skills",
+    "ruleType": "core_rule",
+    "summary": "Thieving skills of the gypsy: base scores and the adjustments for race, Dexterity and armor, with the lock quality and climbing modifiers.",
+    "content": "Thieving skills of the gypsy: base scores and the adjustments for race, Dexterity and armor, with the lock quality and climbing modifiers. (The gypsy's saving throws, checks and experience levels are in the Gypsy rule.)\n\n[TABLE_REF: Table 97: Thieving Skill Base Scores]\n\nDepending upon the race of the character, certain adjustments are made to these skills (see Table 98).\n\n[TABLE_REF: Table 98: Thieving Skill Racial Adjustments]\n\nIn addition to these adjustments, a character's Dexterity score can further modify his base success (see Table 99)\n\n[TABLE_REF: Table 99: Thieving Skill Dexterity Adjustments]\n\n[TABLE_REF: Table 100: Thieving Skill Armor Adjustments]\n\n[TABLE_REF: Table 101: Lock Quality Adjustments]\n\n[TABLE_REF: Table 102: Thief Climbing Modifiers]",
+    "tables": [
+      {
+        "tableNumber": "Table 97",
+        "title": "Table 97: Thieving Skill Base Scores",
+        "headers": [
+          "Skill",
+          "Base Score"
+        ],
+        "rows": [
+          [
+            "Pick Pockets",
+            "15%"
+          ],
+          [
+            "Open Locks",
+            "10%"
+          ],
+          [
+            "Remove Traps",
+            "5%"
+          ],
+          [
+            "Move Silently",
+            "10%"
+          ],
+          [
+            "Hide in Shadows",
+            "5%"
+          ],
+          [
+            "Detect Noise",
+            "15%"
+          ],
+          [
+            "Climb Walls",
+            "60%"
+          ],
+          [
+            "Read Languages",
+            "0%"
+          ]
+        ]
+      },
+      {
+        "tableNumber": "Table 98",
+        "title": "Table 98: Thieving Skill Racial Adjustments",
+        "headers": [
+          "Skill",
+          "Dwarf",
+          "Elf",
+          "Gnome",
+          "Half-Elf",
+          "Halfling"
+        ],
+        "rows": [
+          [
+            "Pick Pockets",
+            "—",
+            "+5%",
+            "—",
+            "+10%",
+            "+5%"
+          ],
+          [
+            "Open Locks",
+            "+10%",
+            "-5%",
+            "+5%",
+            "—",
+            "+5%"
+          ],
+          [
+            "Find/Remove Traps",
+            "+15%",
+            "—",
+            "+10%",
+            "—",
+            "+5%"
+          ],
+          [
+            "Move Silently",
+            "—",
+            "+5%",
+            "+5%",
+            "—",
+            "+10%"
+          ],
+          [
+            "Hide in Shadows",
+            "—",
+            "+10%",
+            "+5%",
+            "+5%",
+            "+15%"
+          ],
+          [
+            "Detect Noise",
+            "—",
+            "+5%",
+            "+10%",
+            "—",
+            "+5%"
+          ],
+          [
+            "Climb Walls",
+            "-10%",
+            "—",
+            "-15%",
+            "—",
+            "-15%"
+          ],
+          [
+            "Read Languages",
+            "-5%",
+            "—",
+            "—",
+            "—",
+            "-5%"
+          ]
+        ]
+      },
+      {
+        "tableNumber": "Table 99",
+        "title": "Table 99: Thieving Skill Dexterity Adjustments",
+        "headers": [
+          "Dexterity",
+          "Pick Pockets",
+          "Open Locks",
+          "Find/Remove Traps",
+          "Move Silently",
+          "Hide in Shadows"
+        ],
+        "rows": [
+          [
+            "9",
+            "-15%",
+            "-10%",
+            "-10%",
+            "-20%",
+            "-10%"
+          ],
+          [
+            "10",
+            "-10%",
+            "-5%",
+            "-10%",
+            "-15%",
+            "-5%"
+          ],
+          [
+            "11",
+            "-5%",
+            "—",
+            "-5%",
+            "-10%",
+            "—"
+          ],
+          [
+            "12",
+            "—",
+            "—",
+            "—",
+            "-5%",
+            "—"
+          ],
+          [
+            "13-15",
+            "—",
+            "—",
+            "—",
+            "—",
+            "—"
+          ],
+          [
+            "16",
+            "—",
+            "+5%",
+            "—",
+            "—",
+            "—"
+          ],
+          [
+            "17",
+            "+5%",
+            "+10%",
+            "—",
+            "+5%",
+            "+5%"
+          ],
+          [
+            "18",
+            "+10%",
+            "+15%",
+            "+5%",
+            "+10%",
+            "+10%"
+          ],
+          [
+            "19",
+            "+15%",
+            "+20%",
+            "+10%",
+            "+15%",
+            "+15%"
+          ]
+        ]
+      },
+      {
+        "tableNumber": "Table 100",
+        "title": "Table 100: Thieving Skill Armor Adjustments",
+        "headers": [
+          "Skill",
+          "No Armor",
+          "Elven Chain",
+          "Padded, Hide or Studded Leather"
+        ],
+        "rows": [
+          [
+            "Pick Pockets",
+            "+5%",
+            "-20%",
+            "-30%"
+          ],
+          [
+            "Open Locks",
+            "—",
+            "-5%",
+            "-10%"
+          ],
+          [
+            "Find/Remove Traps",
+            "—",
+            "-5%",
+            "-10%"
+          ],
+          [
+            "Move Silently",
+            "+10%",
+            "-10%",
+            "-20%"
+          ],
+          [
+            "Hide in Shadows",
+            "+5%",
+            "-10%",
+            "-20%"
+          ],
+          [
+            "Detect Noise",
+            "—",
+            "-5%",
+            "-10%"
+          ],
+          [
+            "Climb Walls",
+            "+10%",
+            "-20%",
+            "-30%"
+          ],
+          [
+            "Read Languages",
+            "—",
+            "—",
+            "—"
+          ]
+        ]
+      },
+      {
+        "tableNumber": "Table 101",
+        "title": "Table 101: Lock Quality Adjustments",
+        "headers": [
+          "Quality",
+          "Adjustment"
+        ],
+        "rows": [
+          [
+            "Wretched",
+            "+30%"
+          ],
+          [
+            "Poor",
+            "+15%"
+          ],
+          [
+            "Good",
+            "+0%"
+          ],
+          [
+            "Excellent",
+            "-20%"
+          ],
+          [
+            "Superior",
+            "-40%"
+          ],
+          [
+            "Masterful",
+            "-60%"
+          ]
+        ]
+      },
+      {
+        "tableNumber": "Table 102",
+        "title": "Table 102: Thief Climbing Modifiers",
+        "headers": [
+          "Situation",
+          "Adjustment"
+        ],
+        "rows": [
+          [
+            "Abundant handholds",
+            "+40%"
+          ],
+          [
+            "Using an anchored rope",
+            "+55%"
+          ],
+          [
+            "Surface slopes inward",
+            "+25%"
+          ],
+          [
+            "Moderate encumbrance",
+            "-5%"
+          ],
+          [
+            "Heavy encumbrance",
+            "-10%"
+          ],
+          [
+            "Severe encumbrance",
+            "-15%"
+          ],
+          [
+            "Maximum encumbrance",
+            "-20%"
+          ],
+          [
+            "Surface is slippery (wet or crumbling)",
+            "-25%"
+          ],
+          [
+            "Surface is slick (icy or slimy)",
+            "-40%"
+          ],
+          [
+            "Character wounded below half hit points",
+            "-10%"
+          ]
+        ]
+      }
+    ],
+    "relatedRuleIds": [],
+    "relatedSpells": [],
+    "relatedMagicItems": [],
+    "searchKeywords": [
+      "gypsy",
+      "thieving skills",
+      "thief",
+      "climbing",
+      "locks",
+      "ravenloft"
+    ]
+  },
+  {
+    "id": "dod_ch00_half_vistani",
+    "book": "DoD",
+    "chapterNumber": 0,
+    "chapterTitle": "Characters",
+    "breadcrumbs": "Domains of Dread > Characters > Half-Vistani",
+    "topic": "Half-Vistani",
+    "ruleType": "core_rule",
+    "summary": "The Vistani are, in actuality, not a demihuman race.",
+    "content": "The Vistani are, in actuality, not a demihuman race. Rather, they are completely human in all regards. Because of the distance that their culture places between them and the rest of Ravenloft's citizens, however, they are best treated as a separate race.\n\nPlayer characters cannot be pureblood Vistani. Mankind knows little about these wanderers of the Mists, making them unsuitable for use as player characters. Those players who wish to have a Vistani character (Vistana is the singular form of Vistani) must settle for a *glomorgo*, or half-Vistani.\n\nFor the purposes of these rules, a *glomorgo* has one human parent and one Vistani parent. A very rare type of *glomorgo*, known as the glamarga, spawns from the union of an elf and a Vistani. These are so rare, however, that they are also proscribed as a player character race.\n\nNo *glomorgo* communities exist in Ravenloft. Like half-elves, these folk are outcasts who are not accepted by either of their parent races. From time to time they settle in human lands, but they are almost always so badly treated that they quickly move on or drift into a life of squalor and petty crime.\n\n### Description\n\nThe *glomorgo* are easily mistaken for true Vistani. They have dark complexions, ranging from a rich olive to a dusky tan. Their hair is always dark, more often black than brown, as are their eyes. A *glomorgo*'s features are always hawklike and angular, not unlike those common to the folk of Falkovnia.\n\nIn size and shape, a half-Vistani appears almost identical to the average human. They do tend to be a bit heavier than normal folk, which reflects their larger frames, but this is an inconsequential difference.\n\nExactly how long a true Vistani will live is a matter for some debate. While there seems to be little or no reason for them to outlive their human cousins, many reach great ages. *glomorgo*, however, are not so endowed and generally live no longer than normal men.\n\nPlayers can use Table 66: Half-Vistani Physical Characteristics to determine the height, weight, and age of a *glomorgo* player character.\n\n[TABLE_REF: Table 66: Half-Vistani Physical Characteristics]\n\n[TABLE_REF: Table 67: Half-Vistani Aging Effects]\n\nA given *glomorgo* favors one of two styles of dress and appearance. Some embrace their gypsy heritage, even though their kindred do not return their feelings. Such folk wear the bright colors and patterns of the Vistani. Although they can pass for Vistani among normal men, any true Vistani will recognize them on sight.\n\nThe rest of the *glomorgo* attempt to lose themselves in the world of men. They wash away their Vistani heritage in the sea of humanity and adopt the dress and demeanor of the land in which they dwell. Again, while they may fool those around them, any Vistani will see through their guise.\n\n### Personality\n\nThe half-Vistani are cross-breeds like the half-elves, but without the onus associated with those folk. Although they tend to be swarthy and perhaps a bit exotic in looks, no one can say for certain whether someone is a half-Vistani just by looking at him. The reverse is not true of the Vistani themselves, who can tell at a glance whether someone is of pure Vistani blood or not.\n\nOf course, great diversity exists among the *glomorgo*. Those spawned by any given tribe will tend to be different from the children of another. With those variations in mind, however, the following generalizations can be made.\n\nMost half-Vistani look upon their mixed heritage as a taint that will haunt them for the rest of their life. They fear that their true nature will be revealed. When that happens, of course, they will be branded as freaks and outcasts by even their closest friends. No half-Vistani ever escapes this paranoia, although some hide it better than others.\n\nCountering this lingering fear, however, is an inherent pride in the abilities associated with being a half-Vistani. Most *glomorgo* characters are unwilling to fully deny their identities. Thus, they favor names similar to those taken by the Vistani themselves. Rumanian and Russian names, like Tara or Natacha (for women) and Bela or Youri (for men).\n\nIndeed, it is not unknown for a half-Vistani to take pride in his heritage and embrace the role of mysterious outsider. While this is an inherently dangerous path to tread, some refuse to hide the truth. People like this often present themselves as mystics and prophets who carry an air of mystery about them that, they hope, will protect them from harm. If they play their cards right, so to speak, their neighbors will be afraid to take action against them.\n\nMost *glomorgo* characters are embittered souls who have suffered much at the hands of both their parent races. They trust no one and depend only upon themselves. True loners, half-Vistani seldom make real friends. While they may have acquaintances, half-Vistani view these people as temporary associates of convenience who they will discard as soon as they outlive their usefulness. Few and far between are those whom a *glomorgo* actually calls friend. To their credit, the *glomorgo* make no attempt to conceal this facet of their personality. They never claim to be more compassionate than they are.\n\n### Ability Scores\n\nAlthough human in body, the mind of a half-Vistani is shaped by his unusual heritage. A *glomorgo* character has his Charisma score reduced by two points because of the enmity with which most other individuals view the Vistani. On the other hand, he receives a +1 bonus to both his...\nIntelligence and Wisdom scores. The latter adjustments reflect the natural advantages of the Vistani mind and the keenness of their sixth sense.\n\n### Special Abilities\n\nThe special powers of the Vistani blood that courses through the veins of a *glomorgo* enables him to do many things that other men and women cannot. By the same token, however, the fact that this blood is not pure causes half-Vistani to suffer from certain limitations unique to their kind.\n\n### Affinity for Nature\n\nA half-Vistani character can accurately identify the plants and animals of the world, just as druids do. He can also determine whether water is safe to drink. This ability requires no more than one round of examination on the part of the character and always succeeds (barring the influences of magic, curses, domain lords, and such).\n\n### Fire Building\n\nAll *glomorgo* characters make fires easily and quickly. Provided that fuel and some means of igniting a blaze is at hand, they can start a fire in 1d4 rounds. Normally restrictive conditions, like damp fuel and such, do not affect the *glomorgo* abilities.\n\n### Tralaks\n\nHalf-Vistani are familiar with *tralaks* (a series of glyphs used by the Vistani). In order to recognize a given symbol, the character must make an Intelligence check. If that check succeeds, the Dungeon Master secretly rolls 1d20. On a roll of 1 to 19, the character correctly identifies the meaning of the *tralak*. If the roll is a 20, however, the character misreads the symbol and gets its meaning wrong.\n\n### Moon Madness\n\nThe *glomorgo* are not without their own burdens. Chief among these is the *lunatio* or moon madness. It is worth noting that full-blood Vistani possess more resistance to this ailment than the *glomorgo*.\n\nOn the three nights of the month when the moon is full, a half-Vistani character will find himself restless and unable to sleep. Because of this, he cannot heal wounds without magical aid and is utterly unable to memorize new spells. The physical toll that this takes on the body imposes a -2 penalty on all saving throws made during this time; this penalty lasts until the character can rest undisturbed for eight hours.\n\nIn addition to the above physical effects, the *lunatio* induces mental trauma as well. On each of the three nights of the full moon, a half-Vistani character must make a successful madness check (described in Chapter Six) or be overcome with this unusual lunacy. A failed check causes the character to gradually take on the aspects of a beast of the night. A single failed check means that the half-Vistani slips away from his companions to run wild under the stars. A second failed check indicates that the *glomorgo* also becomes aggressive and even violent during these wild times. Should he fail all three of his madness checks, the character has the mind of a wild, violent savage until the moon changes its phase.\n\n### Tribal Abilities\n\nDepending upon the tribe to which his Vistani parent belonged, a *glomorgo* character will have certain special abilities. In most cases, a player can select which tribe his character descends from. Those who are unfamiliar with the Vistani, or those simply willing to trust fate, can roll on Table 68: Vistani Ancestry instead.\n\n[TABLE_REF: Table 68: Vistani Ancestry]\n\n**Kamii:** Characters from this bloodline tend to be quiet and reserved. Certainly, they are the least confrontational of all the tribes and go out of their way to avoid potentially hostile encounters. Most Kamii player characters (about 60%) are thieves and use the stealth and cunning that mark this class to their best advantage. The remaining 40% of the Kamii are warriors, although they enter battle only as a last resort. Kamii characters are never wizards, priests, or any other type of spellcaster.\n\nThe Kamii are excellent metalworkers, and all characters of this type begin play with the blacksmith proficiency. They can also identify metals, just as a druid does plants or animals, and can recognize the realm from which any metal item in Ravenloft originates. If it was forged beyond the Mists, on Krynn or Faerun, for example, the character has a 5% cumulative chance per level to identify its world (or plane) of origin. If an item was manufactured by a Vistana, a Kamii character has a 25% of detecting any curse upon it before it affects him.\n\n**Equaar:** Equaarians are a nature-loving folk who often become rangers, although other classes are not closed to them. All Equaar characters begin play with the animal lore and land-based riding proficiencies without expending any slots for them. They can also purchase the tracking proficiency by allocating a single slot to it, regardless of their chosen class.\n\n**Vatraska:** Known for their skill as healers and herbalists, the Vatraskan player character tends to be cold and somewhat condescending. Despite their natural gift for healing, these characters are seldom priests. No other restrictions are placed upon their choice of character classes. All members of this class automatically begin play with the herbalism proficiency and can purchase the healing proficiency at the cost of only one slot, regardless of their chosen class.\n\nVatraskan characters can identify poisons as easily as a druid might recognize a specific type of plant. In addition, they can concoct an antidote to any poison if they have access to a store of herbs or plants and have ten minutes (one turn) to work. Because these antidotes are very powerful, the recipient must make a successful saving throw vs. poison or die from them. Thus, the cure can sometimes be worse than the poison.\n\nIn addition to their skill with antidotes, Vatraskan characters can create an herbal sleeping draught. They must spend 1d6+1 days gathering the herbs and concocting the draught, which can actually take the form of either a liquid or a powder. This toxin, though odorless and tasteless, turns water slightly red. Once ingested, this chemical forces the imbibers to make a successful saving throw vs. poison or fall asleep for 1d4 hours. The sleep is normal enough, and the victim can be awakened easily after the first hour has passed. When the character uses this ability, he creates 1d4 doses of this potion, which retains its potency for only seven days.\n\n**Naiat:** Characters of this stock are a flamboyant and outgoing folk. They favor fine food and drink in the company of the opposite sex. Naiat characters tend to be of the gypsy class.\n\nAll Naiat characters automatically begin play with the singing and dancing proficiencies and can purchase the musical instrument skill just as if they were bards. If the character opts to take advantage of this latter ability and specializes in the violin, he can use it to affect the reactions of nonplayer characters and inspire his allies, just as a bard does. The great charm of Naiat characters entitles them to a +1 bonus on rolls to determine the initial reaction of any nonplayer character they meet. If the character goes out of his way to friendly (and the player does a good job role-playing the meeting), this bonus increases to +2.\n\n**Corvara:** Most Corvara characters are thieves, although a few (about one in ten) opt to become fighters or wizards. No other classes are open to them.\n\nCorvara distrust strangers and tend to look for profit in everything they do. \"What's in it for me?\" is a common question among these folk. All Corvara characters, regardless of class, begin play with the set snares proficiency, and Corvara thieves gain a +10% bonus to their pick locks skill.\n\n**Canjar:** Characters of Canjar blood are aloof and prideful. Canjar characters must always be wizards. They are talented magicians and have a covetous love of magical items and spells. When they come into possession of new spells or artifacts, they guard them jealously and share them with no one.\n\nCanjar wizards can leave one 1st- and one 2nd-level spell slot open each day. That is, a wizard with the ability to memorize four 1st-level spells would select only three of them. The remaining slots can be used as needed during the course of the day. The wizard can cast any spell that he has recorded in his spell books, just as if he had memorized it.\n\nIn actuality, the character is assumed to have memorized the spell normally. The natural sensitivity of the character allowed him to pick a spell that he felt he would need during the day.\n\n**Zarovan:** The Zarovan are a quiet and introspective folk. They have little to do with anyone and make miserable traveling companions. While they will not betray those who travel with them, they will not take any chances on a companion's trustworthiness either. They do things for their own reasons and never share their motives, plans, or desires with anyone else. Like the Canjar, all characters of this bloodline are classed as wizards. No more than one of these characters travels with any given group of adventurers.\n\nThe most fascinating aspect of the Zarovan is their assertion that they are adrift in time. It is not uncommon for these folk to answer a question before it is asked or, conversely, to have greatly delayed reaction times.\n\nThis effect is most obvious during combat (or other situations when an initiative roll is required). At such times, a player with a Zarovan character should roll 1d6 and 1d10. The ten-sided die indicates an adjustment applied to the character's initiative roll. If the roll of the six-sided die is low (a 1, 2, or 3), then the character is a bit ahead of everyone else and the roll of the ten-sided die is subtracted from the initiative roll. If the roll of the six-sided die is high (a 4, 5, or 6), the Zarovan is lagging a bit behind everyone else and the result of the ten-sided die is added to his initiative roll. If the modified initiative number is greater than ten, then the character acts last in that round.",
+    "tables": [
+      {
+        "tableNumber": "Table 66",
+        "title": "Table 66: Half-Vistani Physical Characteristics",
+        "headers": [
+          "Trait",
+          "Formula"
+        ],
+        "rows": [
+          [
+            "Height, Male",
+            "60 + 2d10 inches"
+          ],
+          [
+            "Height, Female",
+            "59 + 2d10 inches"
+          ],
+          [
+            "Weight, Male",
+            "150 + 6d10 pounds"
+          ],
+          [
+            "Weight, Female",
+            "105 + 6d10 pounds"
+          ],
+          [
+            "Starting Age",
+            "15 + 1d4 years"
+          ],
+          [
+            "Maximum Age",
+            "90 + 2d20 years"
+          ]
+        ]
+      },
+      {
+        "tableNumber": "Table 67",
+        "title": "Table 67: Half-Vistani Aging Effects",
+        "headers": [
+          "Age",
+          "Years",
+          "Effects"
+        ],
+        "rows": [
+          [
+            "Middle (1/2 Base Max.)",
+            "45",
+            "-1 Str/Con; +1 Int/Wis"
+          ],
+          [
+            "Old (2/3 Base Max.)",
+            "60",
+            "-2 Str/Dex; -1 Con; +1 Wis"
+          ],
+          [
+            "Venerable (Base Max.)",
+            "90",
+            "-1 Str/Dex/Con; +1 Int/Wis"
+          ]
+        ]
+      },
+      {
+        "tableNumber": "Table 68",
+        "title": "Table 68: Vistani Ancestry",
+        "headers": [
+          "Roll",
+          "Tribal Heritage"
+        ],
+        "rows": [
+          [
+            "01-40",
+            "Kamii"
+          ],
+          [
+            "41-60",
+            "Equaar"
+          ],
+          [
+            "61-80",
+            "Vatraska"
+          ],
+          [
+            "81-90",
+            "Naiat"
+          ],
+          [
+            "91-97",
+            "Corvara"
+          ],
+          [
+            "98-99",
+            "Canjar"
+          ],
+          [
+            "00",
+            "Zarovan"
+          ]
+        ]
+      }
+    ],
+    "relatedRuleIds": [],
+    "relatedSpells": [],
+    "relatedMagicItems": [],
+    "searchKeywords": [
+      "half-vistani",
+      "vistani",
+      "glomorgo",
+      "race",
+      "ravenloft"
+    ]
+  },
+  {
+    "id": "dod_ch00_fear_horror_and_madness_checks",
+    "book": "DoD",
+    "chapterNumber": 0,
+    "chapterTitle": "Fear, Horror and Madness",
+    "breadcrumbs": "Domains of Dread > Fear, Horror and Madness > Fear, Horror and Madness Checks",
+    "topic": "Fear, Horror and Madness Checks",
+    "ruleType": "table_reference",
+    "summary": "Fear, horror and madness check numbers by class group and level (*Domains of Dread*).",
+    "content": "Fear, horror and madness check numbers by class group and level (*Domains of Dread*).\n\nThese tables were compiled from two fan transcriptions on the AD&D 2e wiki; every value below appears the same in both (the rogue's 19–20 row is confirmed by Table 95, the gypsy's checks). Levels above 20 have no values in either transcription.\n\n[TABLE_REF: Warrior Fear, Horror and Madness Checks]\n\n[TABLE_REF: Priest Fear, Horror and Madness Checks]\n\n[TABLE_REF: Rogue Fear, Horror and Madness Checks]\n\n[TABLE_REF: Wizard Fear, Horror and Madness Checks]\n\n[TABLE_REF: Psionicist Fear, Horror and Madness Checks]",
+    "tables": [
+      {
+        "tableNumber": "",
+        "title": "Warrior Fear, Horror and Madness Checks",
+        "headers": [
+          "Character Level",
+          "Fear Check",
+          "Horror Check",
+          "Madness Check"
+        ],
+        "rows": [
+          [
+            "0",
+            "13",
+            "19",
+            "19"
+          ],
+          [
+            "1-2",
+            "12",
+            "18",
+            "18"
+          ],
+          [
+            "3-4",
+            "11",
+            "17",
+            "17"
+          ],
+          [
+            "5-6",
+            "10",
+            "16",
+            "16"
+          ],
+          [
+            "7-8",
+            "9",
+            "15",
+            "15"
+          ],
+          [
+            "9-10",
+            "7",
+            "14",
+            "14"
+          ],
+          [
+            "11-12",
+            "6",
+            "13",
+            "13"
+          ],
+          [
+            "13-14",
+            "4",
+            "12",
+            "12"
+          ],
+          [
+            "15-16",
+            "2",
+            "10",
+            "11"
+          ],
+          [
+            "17-18",
+            "2",
+            "8",
+            "10"
+          ],
+          [
+            "19-20",
+            "2",
+            "6",
+            "8"
+          ]
+        ]
+      },
+      {
+        "tableNumber": "",
+        "title": "Priest Fear, Horror and Madness Checks",
+        "headers": [
+          "Character Level",
+          "Fear Check",
+          "Horror Check",
+          "Madness Check"
+        ],
+        "rows": [
+          [
+            "0",
+            "14",
+            "16",
+            "19"
+          ],
+          [
+            "1-2",
+            "13",
+            "15",
+            "18"
+          ],
+          [
+            "3-4",
+            "12",
+            "14",
+            "17"
+          ],
+          [
+            "5-6",
+            "11",
+            "13",
+            "16"
+          ],
+          [
+            "7-8",
+            "10",
+            "12",
+            "15"
+          ],
+          [
+            "9-10",
+            "9",
+            "11",
+            "14"
+          ],
+          [
+            "11-12",
+            "7",
+            "10",
+            "13"
+          ],
+          [
+            "13-14",
+            "5",
+            "9",
+            "12"
+          ],
+          [
+            "15-16",
+            "3",
+            "7",
+            "11"
+          ],
+          [
+            "17-18",
+            "2",
+            "5",
+            "10"
+          ],
+          [
+            "19-20",
+            "2",
+            "3",
+            "8"
+          ]
+        ]
+      },
+      {
+        "tableNumber": "",
+        "title": "Rogue Fear, Horror and Madness Checks",
+        "headers": [
+          "Character Level",
+          "Fear Check",
+          "Horror Check",
+          "Madness Check"
+        ],
+        "rows": [
+          [
+            "0",
+            "16",
+            "16",
+            "19"
+          ],
+          [
+            "1-2",
+            "15",
+            "15",
+            "18"
+          ],
+          [
+            "3-4",
+            "14",
+            "14",
+            "17"
+          ],
+          [
+            "5-6",
+            "13",
+            "13",
+            "16"
+          ],
+          [
+            "7-8",
+            "12",
+            "12",
+            "15"
+          ],
+          [
+            "9-10",
+            "11",
+            "11",
+            "14"
+          ],
+          [
+            "11-12",
+            "9",
+            "10",
+            "13"
+          ],
+          [
+            "13-14",
+            "7",
+            "9",
+            "12"
+          ],
+          [
+            "15-16",
+            "5",
+            "7",
+            "11"
+          ],
+          [
+            "17-18",
+            "3",
+            "5",
+            "10"
+          ],
+          [
+            "19-20",
+            "2",
+            "3",
+            "8"
+          ]
+        ]
+      },
+      {
+        "tableNumber": "",
+        "title": "Wizard Fear, Horror and Madness Checks",
+        "headers": [
+          "Character Level",
+          "Fear Check",
+          "Horror Check",
+          "Madness Check"
+        ],
+        "rows": [
+          [
+            "0",
+            "17",
+            "15",
+            "19"
+          ],
+          [
+            "1-2",
+            "16",
+            "14",
+            "18"
+          ],
+          [
+            "3-4",
+            "15",
+            "13",
+            "17"
+          ],
+          [
+            "5-6",
+            "14",
+            "12",
+            "16"
+          ],
+          [
+            "7-8",
+            "13",
+            "11",
+            "15"
+          ],
+          [
+            "9-10",
+            "12",
+            "10",
+            "14"
+          ],
+          [
+            "11-12",
+            "10",
+            "9",
+            "13"
+          ],
+          [
+            "13-14",
+            "8",
+            "8",
+            "12"
+          ],
+          [
+            "15-16",
+            "6",
+            "6",
+            "11"
+          ],
+          [
+            "17-18",
+            "4",
+            "4",
+            "10"
+          ],
+          [
+            "19-20",
+            "2",
+            "2",
+            "8"
+          ]
+        ]
+      },
+      {
+        "tableNumber": "",
+        "title": "Psionicist Fear, Horror and Madness Checks",
+        "headers": [
+          "Character Level",
+          "Fear Check",
+          "Horror Check",
+          "Madness Check"
+        ],
+        "rows": [
+          [
+            "1-2",
+            "15",
+            "17",
+            "16"
+          ],
+          [
+            "3-4",
+            "14",
+            "16",
+            "15"
+          ],
+          [
+            "5-6",
+            "13",
+            "15",
+            "14"
+          ],
+          [
+            "7-8",
+            "12",
+            "14",
+            "13"
+          ],
+          [
+            "9-10",
+            "11",
+            "13",
+            "12"
+          ],
+          [
+            "11-12",
+            "10",
+            "12",
+            "11"
+          ],
+          [
+            "13-14",
+            "7",
+            "11",
+            "10"
+          ],
+          [
+            "15-16",
+            "5",
+            "9",
+            "9"
+          ],
+          [
+            "17-18",
+            "3",
+            "7",
+            "8"
+          ],
+          [
+            "19-20",
+            "3",
+            "5",
+            "6"
+          ]
+        ]
+      }
+    ],
+    "relatedRuleIds": [],
+    "relatedSpells": [],
+    "relatedMagicItems": [],
+    "searchKeywords": [
+      "fear check",
+      "horror check",
+      "madness check",
+      "ravenloft"
+    ]
   }
 ]
