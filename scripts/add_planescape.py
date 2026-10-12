@@ -41,7 +41,7 @@ SCHOOLS = ["Plane", "Abj", "Alt", "Con/Sum", "Div", "Enc/Cha", "Ill/Pha", "Inv/E
 
 # Uma entrada por tabela da página, na ordem: dict(title, headers?, promote?) ;
 # "text" = a "tabela" é texto (vira parágrafo); None = sai.
-T = lambda title, headers=None, promote=False: {"title": title, "headers": headers, "promote": promote}  # noqa: E731
+T = lambda title, headers=None, promote=False, flatten=False: {"title": title, "headers": headers, "promote": promote, "flatten": flatten}  # noqa: E731
 
 PAGES = {
     # --- PCS ---
@@ -76,7 +76,8 @@ PAGES = {
     "Vortices (PWH)": ("PWH", "Travel", [T("Vortices", ["Vortex To", "Where Found", "Occasionally Usurped By"])]),
     "Known Portals and Keys (PWH)": ("PWH", "Travel", [T("Known Portals and Keys", ["Location (Plane, Specific)", "Key", "Destination"])]),
     "New Proficiencies (PWH)": ("PWH", "Characters", [T("Planewalker Proficiencies")]),
-    "Languages of the Planes (PWH)": ("PWH", "Characters", [T("Other Planar Languages", [])]),
+    # Lista alfabética em duas colunas no livro: vira uma coluna só, lida coluna por coluna.
+    "Languages of the Planes (PWH)": ("PWH", "Characters", [T("Other Planar Languages", ["Language"], flatten=True)]),
     "Mages and Magic (PWH)": ("PWH", "Magic", [
         T("Table 2: School Alterations by Plane", headers=SCHOOLS),
         T("Table 3: Planar Absolutes (Absolute Prohibitions of Magic by Plane)", promote=True),
@@ -173,6 +174,9 @@ def build_table(parsed, spec):
         rows = rows[1:]
     if spec["headers"] is not None:
         headers = spec["headers"]
+    if spec.get("flatten"):
+        width = max(len(r) for r in rows)
+        rows = [[r[c]] for c in range(width) for r in rows if c < len(r) and r[c].strip()]
     # Linhas de nota dentro da tabela ("* ...", resto vazio) saem para depois dela.
     notes = [f"({m.group(1)}) {m.group(2)}" for r in rows if (m := re.match(r"^(\*+)\s*(.*)$", r[0])) and not any(c.strip() for c in r[1:])]
     rows = [r for r in rows if not (re.match(r"^\*+", r[0]) and not any(c.strip() for c in r[1:]))]

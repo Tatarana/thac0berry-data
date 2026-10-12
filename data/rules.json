@@ -47286,63 +47286,90 @@
       {
         "tableNumber": "",
         "title": "Other Planar Languages",
-        "headers": [],
+        "headers": [
+          "Language"
+        ],
         "rows": [
           [
-            "Archon",
+            "Archon"
+          ],
+          [
+            "Asuras"
+          ],
+          [
+            "Baatezu"
+          ],
+          [
+            "Baku"
+          ],
+          [
+            "Bariaur"
+          ],
+          [
+            "Bladeling"
+          ],
+          [
+            "Dao"
+          ],
+          [
+            "Djinni"
+          ],
+          [
+            "Efreeti"
+          ],
+          [
+            "Eladrin"
+          ],
+          [
+            "Formian"
+          ],
+          [
+            "Gehreleth"
+          ],
+          [
+            "Githyanki"
+          ],
+          [
+            "Githzerai"
+          ],
+          [
             "Guardinal"
           ],
           [
-            "Asuras",
             "Khaasta"
           ],
           [
-            "Baatezu",
             "Lower Planar Trade"
           ],
           [
-            "Baku",
             "Marid"
           ],
           [
-            "Bariaur",
             "Mephit"
           ],
           [
-            "Bladeling",
             "Modron*"
           ],
           [
-            "Dao",
             "Nereid"
           ],
           [
-            "Djinni",
             "Night Hag"
           ],
           [
-            "Efreeti",
             "Slaad"
           ],
           [
-            "Eladrin",
             "Sylph"
           ],
           [
-            "Formian",
             "Tanar'ri"
           ],
           [
-            "Gehreleth",
             "Tso"
           ],
           [
-            "Githyanki",
             "Yugoloth"
-          ],
-          [
-            "Githzerai",
-            ""
           ]
         ]
       }
