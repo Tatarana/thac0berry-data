@@ -17,7 +17,10 @@ Cada tabela tem uma entrada explícita em PAGES (título, cabeçalho quando o da
 wiki está quebrado ou falta). Erros de OCR e de marcação da fonte estão em
 TEXT_FIXES e DICE_FIXES. Rodar de novo não muda nada (regra com o mesmo id é pulada).
 
-Uso:  python scripts/add_planescape.py [--dry-run]
+Com --refresh, as regras que já existem são refeitas no lugar (mesma posição
+no arquivo), para levar uma correção nova do script às páginas já importadas.
+
+Uso:  python scripts/add_planescape.py [--dry-run] [--refresh]
 """
 import json
 import os
@@ -154,7 +157,8 @@ TEXT_FIXES = [
 # Dados com letra no lugar de algarismo ("1d1O", "2dl0") ou com espaço ("2d 10").
 DICE_FIXES = [
     (re.compile(r"\b(\d+)d1O\b"), r"\1d10"),
-    (re.compile(r"\b(\d+)d[lI]0\b"), r"\1d10"),
+    # "2dl0", "1dl2": a letra l (ou I) no lugar do 1.
+    (re.compile(r"\b(\d+)d[lI](\d)\b"), r"\1d1\2"),
     (re.compile(r"\b(\d+)d (\d+)\b"), r"\1d\2"),
 ]
 
@@ -255,6 +259,7 @@ def build_rule(page, text):
 
 def main():
     dry = "--dry-run" in sys.argv
+    refresh = "--refresh" in sys.argv
     with open(RULES, encoding="utf-8") as f:
         rules = json.load(f)
     ids = {r["id"] for r in rules}
@@ -262,10 +267,14 @@ def main():
     added = 0
     for page in PAGES:
         rule = build_rule(page, pages[page])
-        mark = "=" if rule["id"] in ids else "+"
-        print(f"{mark} {rule['id']}: {len(rule['tables'])} tabelas")
         if rule["id"] in ids:
+            index = next(i for i, r in enumerate(rules) if r["id"] == rule["id"])
+            if refresh and rules[index] != rule:
+                rules[index] = rule
+                added += 1
+                print(f"~ {rule['id']}: refeita")
             continue
+        print(f"+ {rule['id']}: {len(rule['tables'])} tabelas")
         rules.append(rule)
         added += 1
     if dry or added == 0:
