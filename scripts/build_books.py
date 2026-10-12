@@ -43,6 +43,10 @@ BOOKS = [
     ("WatW", "Dark Sun"),
     # GT4b (2026-10-10): Domains of Dread, pelas páginas da wiki (scripts/add_ravenloft_dod.py).
     ("DoD", "Ravenloft"),
+    # GT4b (2026-10-12): Planescape, pelas páginas da wiki (scripts/add_planescape.py).
+    ("PCS", "Planescape"),
+    ("PWH", "Planescape"),
+    ("TIP", "Planescape"),
 ]
 
 

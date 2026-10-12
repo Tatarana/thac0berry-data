@@ -88,5 +88,23 @@
     "title": "Domains of Dread",
     "setting": "Ravenloft",
     "order": 15
+  },
+  {
+    "id": "PCS",
+    "title": "Planescape Campaign Setting",
+    "setting": "Planescape",
+    "order": 16
+  },
+  {
+    "id": "PWH",
+    "title": "The Planewalker's Handbook",
+    "setting": "Planescape",
+    "order": 17
+  },
+  {
+    "id": "TIP",
+    "title": "The Inner Planes",
+    "setting": "Planescape",
+    "order": 18
   }
 ]
