@@ -14,6 +14,11 @@ markdown (CFH, CBH, WATW) tinham como resumo as linhas da tabela ("| Item |
 Cost | …"), que a lista mostrava numa linha só, com barras e traços. Ganharam
 uma frase que descreve a tabela.
 
+Na terceira leva (2026-10-13), 6 regras que são só a imagem de uma ficha em
+branco (CBarbH, CPaH, CBH) tinham, no resumo e no texto, o código de imagem
+da wiki ("File:Paladin Kit Sheet.png|thumb|…"), sem a imagem. Aqui o `content`
+também muda: os dois viram uma frase dizendo o que a ficha é.
+
 Cada troca é explícita: regra, resumo antigo (conferido) e resumo novo.
 Rodar de novo não muda nada (o resumo antigo já não existe).
 
@@ -92,6 +97,32 @@ FIXES = [
      "(rogue). Slots, ability and modifier of each."),
 ]
 
+# Terceira leva: regras que são só a imagem de uma ficha em branco do livro.
+# Resumo e texto eram o código de imagem da wiki ("File:….png|thumb|…"), sem a
+# imagem. Os dois viram uma frase dizendo o que a ficha é.
+# (id da regra, começo do texto antigo, frase nova).
+SHEETS = [
+    ("cbarbh_ch08_barbarian_character_record_sheets", "File:Barbarian Fighter Record Sheet.png",
+     "Blank record sheets for barbarian characters (fighter and shaman, with a "
+     "second page). The sheets are images in the book and are not reproduced "
+     "here."),
+    ("cbarbh_ch08_barbarian_kit_sheet", "File:Barbarian Humanoid Character Kit Design Sheet.png",
+     "Blank sheet for designing a barbarian or humanoid character kit. The sheet "
+     "is an image in the book and is not reproduced here."),
+    ("cpah_ch10_paladin_character_record_sheets", "File:Paladin Character Record Sheet 1.png",
+     "Blank record sheets for paladin characters (three pages). The sheets are "
+     "images in the book and are not reproduced here."),
+    ("cpah_ch10_paladin_kit_sheet", "File:Paladin Kit Sheet.png",
+     "Blank sheet for recording a paladin kit. The sheet is an image in the "
+     "book and is not reproduced here."),
+    ("cbh_ch10_bard_character_record_sheet", "File:Bard Character Record Sheet 1 (CBH).png",
+     "Blank record sheets for bard characters (three pages). The sheets are "
+     "images in the book and are not reproduced here."),
+    ("cbh_ch10_bard_kit_record_sheet", "File:Bard Kit Record Sheet (CBH).png",
+     "Blank sheet for recording a bard kit. The sheet is an image in the book "
+     "and is not reproduced here."),
+]
+
 # (id da regra, marca do começo): resumo cortado antes do fechamento do
 # negrito/itálico, então a marca de abertura ficava sem par e aparecia crua.
 UNPAIRED = [
@@ -115,6 +146,18 @@ def main():
         if not rule["summary"].startswith(old_start):
             raise SystemExit(f"{rule_id}: resumo inesperado: {rule['summary'][:60]!r}")
         rule["summary"] = new
+        total += 1
+        print(f"{rule_id}: {new}")
+    for rule_id, old_start, new in SHEETS:
+        rule = by_id.get(rule_id)
+        if rule is None:
+            raise SystemExit(f"regra não encontrada: {rule_id}")
+        if rule["summary"] == new and rule["content"] == new:
+            continue
+        if not rule["content"].startswith(old_start):
+            raise SystemExit(f"{rule_id}: texto inesperado: {rule['content'][:60]!r}")
+        rule["summary"] = new
+        rule["content"] = new
         total += 1
         print(f"{rule_id}: {new}")
     for rule_id, mark in UNPAIRED:
