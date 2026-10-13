@@ -7272,7 +7272,7 @@
         "tableNumber": "",
         "title": "Example: 2-20 Encounter Table for the Desert of Shaar",
         "headers": [
-          "Dice Roll",
+          "Dice Roll (1d8+1d12)",
           "Frequency"
         ],
         "rows": [
@@ -7456,7 +7456,7 @@
         "tableNumber": "Table 54",
         "title": "Table 54: 2-20 Encounter Table",
         "headers": [
-          "Dice Roll",
+          "Dice Roll (1d8+1d12)",
           "Frequency"
         ],
         "rows": [
