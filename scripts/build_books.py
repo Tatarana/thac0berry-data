@@ -53,6 +53,8 @@ BOOKS = [
     ("PP", "Forgotten Realms"),
     # GT4b (2026-10-12): Dragonlance, pelas páginas da wiki (scripts/add_dragonlance.py).
     ("TotL", "Dragonlance"),
+    # GT4b (2026-10-12): Council of Wyrms, pelas páginas da wiki (scripts/add_council_of_wyrms.py).
+    ("CWS", "Council of Wyrms"),
 ]
 
 
