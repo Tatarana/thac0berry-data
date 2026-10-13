@@ -26,10 +26,11 @@ import json
 import os
 import re
 import sys
+import unicodedata
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from add_dmg_missing_tables import parse_tables  # noqa: E402
-from add_ravenloft_dod import clean, load_pages, table_blocks, to_markdown  # noqa: E402
+from add_ravenloft_dod import clean, load_pages, number_chapters, table_blocks, to_markdown  # noqa: E402
 
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
 RULES = os.path.join(ROOT, "data", "rules.json")
@@ -194,12 +195,19 @@ def build_table(parsed, spec):
 
 
 def slug(text):
+    # Sem acento ("Serôs" → "seros"), para o id não quebrar no meio da palavra.
+    text = unicodedata.normalize("NFKD", text).encode("ascii", "ignore").decode()
     return re.sub(r"[^a-z0-9]+", "_", text.lower()).strip("_")
 
 
-def build_rule(page, text):
-    book, chapter, specs = PAGES[page]
-    for p, wrong, right in TEXT_FIXES:
+def build_rule(page, text, pages=None, books=None, fixes=None, keyword="planescape"):
+    """Uma regra por página. Os outros cenários (add_forgotten_realms.py…) passam
+    as próprias páginas, livros, correções e a palavra-chave de busca."""
+    pages = PAGES if pages is None else pages
+    books = BOOKS if books is None else books
+    fixes = TEXT_FIXES if fixes is None else fixes
+    book, chapter, specs = pages[page]
+    for p, wrong, right in fixes:
         if p == page:
             if wrong not in text:
                 raise SystemExit(f"{page}: trecho não encontrado: {wrong!r}")
@@ -236,7 +244,7 @@ def build_rule(page, text):
     content = fix_dice(to_markdown("\n".join(lines)))
     # Itálico aberto na wiki sem fechar ("''(A cutter…"): sobra o par de aspas.
     content = content.replace("''", "")
-    topic = re.sub(r"\s*\((PCS|PWH|TIP)\)$", "", page)
+    topic = re.sub(r"\s*\((" + "|".join(map(re.escape, books)) + r")\)$", "", page)
     first = next((p for p in content.split("\n\n") if p and not p.startswith(("**", "[TABLE_REF", "#", "("))), topic)
     summary = re.split(r"(?<=[.!?])\s", first.strip(), maxsplit=1)[0]
     return {
@@ -244,7 +252,7 @@ def build_rule(page, text):
         "book": book,
         "chapterNumber": 0,
         "chapterTitle": chapter,
-        "breadcrumbs": f"{BOOKS[book]} > {chapter} > {topic}",
+        "breadcrumbs": f"{books[book]} > {chapter} > {topic}",
         "topic": topic,
         "ruleType": "core_rule",
         "summary": summary,
@@ -253,7 +261,7 @@ def build_rule(page, text):
         "relatedRuleIds": [],
         "relatedSpells": [],
         "relatedMagicItems": [],
-        "searchKeywords": sorted({w for w in re.findall(r"[a-z]+", topic.lower()) if len(w) > 3} | {"planescape"}),
+        "searchKeywords": sorted({w for w in re.findall(r"[a-z]+", topic.lower()) if len(w) > 3} | {keyword}),
     }
 
 
@@ -277,6 +285,7 @@ def main():
         print(f"+ {rule['id']}: {len(rule['tables'])} tabelas")
         rules.append(rule)
         added += 1
+    added += number_chapters(rules, BOOKS)
     if dry or added == 0:
         print("(nada gravado)" if dry else "(nada a mudar)")
         return

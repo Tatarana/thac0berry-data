@@ -400,6 +400,26 @@ def build_checks_rule(pages):
     }
 
 
+def number_chapters(rules, books):
+    """Numera os capítulos dos livros importados da wiki (que não têm número):
+    1, 2, 3… na ordem em que cada `chapterTitle` aparece no rules.json. Sem
+    isso, todas as regras do livro tinham o capítulo 0 e a web as agrupava num
+    capítulo só, com o nome do primeiro. Devolve quantas regras mudaram."""
+    order = {}
+    changed = 0
+    for rule in rules:
+        if rule["book"] not in books:
+            continue
+        titles = order.setdefault(rule["book"], [])
+        if rule["chapterTitle"] not in titles:
+            titles.append(rule["chapterTitle"])
+        number = titles.index(rule["chapterTitle"]) + 1
+        if rule["chapterNumber"] != number:
+            rule["chapterNumber"] = number
+            changed += 1
+    return changed
+
+
 def main():
     dry = "--dry-run" in sys.argv
     with open(RULES, encoding="utf-8") as f:
@@ -415,6 +435,7 @@ def main():
             continue
         rules.append(rule)
         added += 1
+    added += number_chapters(rules, ["DoD"])
     if dry or added == 0:
         print("(nada gravado)" if dry else "(nada a mudar)")
         return

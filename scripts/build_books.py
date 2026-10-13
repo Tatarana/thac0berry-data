@@ -47,6 +47,10 @@ BOOKS = [
     ("PCS", "Planescape"),
     ("PWH", "Planescape"),
     ("TIP", "Planescape"),
+    # GT4b (2026-10-12): Forgotten Realms, pelas páginas da wiki (scripts/add_forgotten_realms.py).
+    ("SofS", "Forgotten Realms"),
+    ("FA", "Forgotten Realms"),
+    ("PP", "Forgotten Realms"),
 ]
 
 

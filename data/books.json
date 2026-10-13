@@ -106,5 +106,23 @@
     "title": "The Inner Planes",
     "setting": "Planescape",
     "order": 18
+  },
+  {
+    "id": "SofS",
+    "title": "Sea of Fallen Stars",
+    "setting": "Forgotten Realms",
+    "order": 19
+  },
+  {
+    "id": "FA",
+    "title": "Faiths & Avatars",
+    "setting": "Forgotten Realms",
+    "order": 20
+  },
+  {
+    "id": "PP",
+    "title": "Powers & Pantheons",
+    "setting": "Forgotten Realms",
+    "order": 21
   }
 ]
