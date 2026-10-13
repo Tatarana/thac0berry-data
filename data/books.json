@@ -130,5 +130,11 @@
     "title": "Tales of the Lance",
     "setting": "Dragonlance",
     "order": 22
+  },
+  {
+    "id": "CWS",
+    "title": "Council of Wyrms Setting",
+    "setting": "Council of Wyrms",
+    "order": 23
   }
 ]
