@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Troca os resumos de regra que eram nota de rodapé de tabela (data/rules.json).
+"""Troca os resumos de regra que eram nota de rodapé ou tabela (data/rules.json).
 
 Na extração, o `summary` de algumas regras de tabela pegou a primeira linha de
 texto, que era a nota de rodapé da tabela (": ** This award can be…",
@@ -8,6 +8,11 @@ markdown, e o ": " é sobra do formato da wiki. A lista de regras (iPad e web)
 mostrava isso como resumo. As notas continuam no `content`, junto da tabela;
 só o `summary` muda (2026-10-13). Também tira a marca de abertura sem par de
 dois resumos cortados antes do fechamento do negrito/itálico.
+
+Na segunda leva (2026-10-13), 7 regras que começam direto com uma tabela
+markdown (CFH, CBH, WATW) tinham como resumo as linhas da tabela ("| Item |
+Cost | …"), que a lista mostrava numa linha só, com barras e traços. Ganharam
+uma frase que descreve a tabela.
 
 Cada troca é explícita: regra, resumo antigo (conferido) e resumo novo.
 Rodar de novo não muda nada (o resumo antigo já não existe).
@@ -61,6 +66,30 @@ FIXES = [
      "Planar races: ability requirements, ability adjustments, average height "
      "and weight, age, aging effects, level limits and thief skill "
      "adjustments."),
+    # Segunda leva: resumos que eram as linhas de uma tabela markdown.
+    ("cfh_ch00_armor_fitting", "| Race Trying To Wear Armor",
+     "Chance that armor built for one race (dwarf, elf, gnome, half-elf, "
+     "halfling or human) fits a character of another race."),
+    ("cfh_ch00_combat_modifiers_for_darkness_and_blindness",
+     "**Combat Modifiers for Darkness and Blindness**",
+     "Melee and missile attack penalties for fog, rain, snow, twilight and "
+     "darkness, and the bonus for characters with infravision."),
+    ("cfh_ch00_martial_arts_results", "**Martial Arts Results Table**",
+     "Results of a martial arts attack by attack roll: the maneuver (punch, "
+     "kick, bash…), its damage and the chance of a knockout."),
+    ("cfh_ch00_one_handed_or_two_handed_weapons", "| Item | Cost",
+     "Harpoon, javelin, spear, long spear and trident used one-handed or "
+     "two-handed: cost, weight, size, type, speed factor and damage."),
+    ("cfh_ch00_piecemeal_armor", "|  | Bonus to AC Per Type of Piece:",
+     "Armor Class bonus of each piece of armor (breast plate, arms, legs) "
+     "compared to the full suit, for each armor type."),
+    ("cbh_ch07_fundamentals_of_music", "Accent: To stress or emphasize",
+     "Glossary of musical terms for bards, from accent, beat and dynamics to "
+     "tempo, tone and voice range."),
+    ("watw_ch04_new_nonweapon_proficiencies", "**New Nonweapon Proficiencies**",
+     "New nonweapon proficiencies: Psychic Defense (general); Crystal Focus, "
+     "Power Manipulation and Psionic Lore (psionicist); Information Gathering "
+     "(rogue). Slots, ability and modifier of each."),
 ]
 
 # (id da regra, marca do começo): resumo cortado antes do fechamento do
