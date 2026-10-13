@@ -245,7 +245,10 @@ def build_rule(page, text, pages=None, books=None, fixes=None, keyword="planesca
     # Itálico aberto na wiki sem fechar ("''(A cutter…"): sobra o par de aspas.
     content = content.replace("''", "")
     topic = re.sub(r"\s*\((" + "|".join(map(re.escape, books)) + r")\)$", "", page)
-    first = next((p for p in content.split("\n\n") if p and not p.startswith(("**", "[TABLE_REF", "#", "("))), topic)
+    # O resumo é o primeiro parágrafo de texto: pula títulos, tabelas, notas e
+    # o apelido em itálico que abre algumas páginas ("*“Wanderers”*", TotL).
+    epithet = lambda p: p.startswith("*") and p.rstrip().endswith("*") and "\n" not in p.strip()  # noqa: E731
+    first = next((p for p in content.split("\n\n") if p and not p.startswith(("**", "[TABLE_REF", "#", "(")) and not epithet(p)), topic)
     summary = re.split(r"(?<=[.!?])\s", first.strip(), maxsplit=1)[0]
     return {
         "id": f"{book.lower()}_ch00_{slug(topic)}",
@@ -277,6 +280,8 @@ def main():
         rule = build_rule(page, pages[page])
         if rule["id"] in ids:
             index = next(i for i, r in enumerate(rules) if r["id"] == rule["id"])
+            # O número do capítulo vem de number_chapters, não daqui.
+            rule["chapterNumber"] = rules[index]["chapterNumber"]
             if refresh and rules[index] != rule:
                 rules[index] = rule
                 added += 1

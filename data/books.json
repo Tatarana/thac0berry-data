@@ -124,5 +124,11 @@
     "title": "Powers & Pantheons",
     "setting": "Forgotten Realms",
     "order": 21
+  },
+  {
+    "id": "TotL",
+    "title": "Tales of the Lance",
+    "setting": "Dragonlance",
+    "order": 22
   }
 ]
