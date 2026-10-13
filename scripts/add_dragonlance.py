@@ -6,13 +6,12 @@ Fonte: as páginas do livro no dump da wiki AD&D 2e
 
 Decisões do usuário (2026-10-12): cenário "Dragonlance"
 (scripts/build_books.py); entram só as páginas com tabelas (uma regra por
-página, com o texto inteiro), como no Planescape e no Forgotten Realms. Os
-deuses de Krynn entram aqui como regras (capítulo "Deities"); levá-los a
-data/deities.json fica no backlog.
+página, com o texto inteiro), como no Planescape e no Forgotten Realms.
 
-- A ficha do avatar de cada deus vem em três formatos na wiki ("! Str || Dex"
-  com os valores na linha de baixo, "| Str 17 || Dex 25" e "| Str 15 | Dex 20");
-  todas viram a mesma tabela de duas colunas (Stat, Value).
+- Os deuses de Krynn entraram aqui como regras (capítulo "Deities") e, em
+  2026-10-13 (decisão do usuário), foram para data/deities.json
+  (scripts/add_krynn_deities.py); as regras deles saem (REMOVED). Fica
+  "Descriptions of the True Gods", com a lista dos deuses.
 - As tabelas dos "Normals" (XP e salvamentos) aparecem iguais em três páginas:
   ficam só em "Normal Group Classes"; no Commoner e no Tinker saem.
 - A lista de guildas do Tinker é uma lista em três colunas, não uma tabela:
@@ -42,7 +41,8 @@ DEITIES = [
     "Gilean", "Sirrion", "Reorx", "Chislev", "Zivilyn", "Shinare", "Lunitari",
     "Takhisis", "Sargonnas", "Morgion", "Chemosh", "Zeboim", "Hiddukel", "Nuitari",
 ]
-STAT = ["Stat", "Value"]
+# Regras dos deuses que saíram para data/deities.json (2026-10-13).
+REMOVED = [f"totl_ch00_{re.sub(r'[^a-z0-9]+', '_', name.lower()).strip('_')}" for name in DEITIES]
 NORMALS = [T("Game Information for Normals"), T("Normal Saving Throws")]
 
 PAGES = {
@@ -81,7 +81,6 @@ PAGES = {
     "Tinker (TotL)": ("TotL", "Classes", [None, None]),
     # --- Deuses ---
     "Descriptions of the True Gods (TotL)": ("TotL", "Deities", [T("The True Gods of Krynn")]),
-    **{f"{name} (TotL)": ("TotL", "Deities", [T(f"{name}: Avatar", STAT)]) for name in DEITIES},
     # --- Mundo ---
     "Ansalonian Calendar (TotL)": ("TotL", "World", [T("Ansalonian Calendar: Days"), T("Ansalonian Calendar: Months")]),
     "Exchange Rates Upon Krynn (TotL)": ("TotL", "World", [T("Exchange Rates Upon Krynn", ["Coin", "Copper", "Gold", "Silver", "Iron/Bronze", "Steel", "Platinum"])]),
@@ -113,38 +112,6 @@ def table_span(lines, start=0):
     raise SystemExit("tabela sem fechamento")
 
 
-def avatar_table(text):
-    """A ficha do avatar (três formatos na wiki) vira uma tabela Stat | Value."""
-    lines = text.split("\n")
-    begin, end = table_span(lines)
-    pairs = []
-    names = None
-    for line in lines[begin + 1:end]:
-        s = line.strip()
-        if not s or s.startswith(("|-", "|+")):
-            continue
-        body = s[1:].strip().rstrip("|").strip()
-        cells = [c.strip() for c in re.split(r"\s*(?:\|\||!!)\s*", body)] if ("||" in body or "!!" in body) else [c.strip() for c in body.split(" | ")]
-        if s.startswith("!"):
-            names = cells
-            continue
-        if names:
-            pairs += list(zip(names, cells))
-            names = None
-            continue
-        for cell in cells:
-            m = re.match(r"(#AT|THAC0|[A-Za-z]+)\s+(.*)$", cell)
-            if not m:
-                raise SystemExit(f"célula da ficha do avatar fora do formato: {cell!r}")
-            pairs.append((m.group(1), m.group(2)))
-    if len(pairs) != 15:
-        raise SystemExit(f"ficha do avatar com {len(pairs)} valores (esperado 15): {pairs}")
-    labels = {"STR": "Str", "DEX": "Dex", "CON": "Con", "INT": "Int", "WIS": "Wis", "CHA": "Cha"}
-    rows = [f"| {labels.get(k.upper(), k)} || {v}" for k, v in pairs]
-    table = ['{| class="article-table"', "! Stat || Value"] + [x for r in rows for x in ("|-", r)] + ["|}"]
-    return "\n".join(lines[:begin] + table + lines[end + 1:])
-
-
 def tinker_guilds(text):
     """A lista de guildas em três colunas (uma "tabela" sem bordas) vira lista."""
     lines = text.split("\n")
@@ -164,8 +131,7 @@ def talis_suits(text):
     return text
 
 
-PAGE_FIXES = {f"{name} (TotL)": avatar_table for name in DEITIES}
-PAGE_FIXES["Tinker (TotL)"] = tinker_guilds
+PAGE_FIXES = {"Tinker (TotL)": tinker_guilds}
 PAGE_FIXES["Talis Deck: Random Event Notes (TotL)"] = talis_suits
 
 
@@ -179,9 +145,13 @@ def main():
     refresh = "--refresh" in sys.argv
     with open(RULES, encoding="utf-8") as f:
         rules = json.load(f)
+    before = len(rules)
+    rules = [r for r in rules if r["id"] not in REMOVED]
+    added = before - len(rules)
+    if added:
+        print(f"- {added} regras de deuses (foram para data/deities.json)")
     ids = {r["id"] for r in rules}
     pages = load_pages(list(PAGES))
-    added = 0
     for page in PAGES:
         rule = build_rule(page, preprocess(page, pages[page]), PAGES, BOOKS, TEXT_FIXES, "dragonlance")
         # Linhas vazias na fonte (cabeçalho em dois níveis) saem.
