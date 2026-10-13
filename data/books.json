@@ -84,69 +84,75 @@
     "order": 14
   },
   {
+    "id": "TKA",
+    "title": "Thri-Kreen of Athas",
+    "setting": "Dark Sun",
+    "order": 15
+  },
+  {
     "id": "DoD",
     "title": "Domains of Dread",
     "setting": "Ravenloft",
-    "order": 15
+    "order": 16
   },
   {
     "id": "PCS",
     "title": "Planescape Campaign Setting",
     "setting": "Planescape",
-    "order": 16
+    "order": 17
   },
   {
     "id": "PWH",
     "title": "The Planewalker's Handbook",
     "setting": "Planescape",
-    "order": 17
+    "order": 18
   },
   {
     "id": "TIP",
     "title": "The Inner Planes",
     "setting": "Planescape",
-    "order": 18
+    "order": 19
   },
   {
     "id": "SofS",
     "title": "Sea of Fallen Stars",
     "setting": "Forgotten Realms",
-    "order": 19
+    "order": 20
   },
   {
     "id": "FA",
     "title": "Faiths & Avatars",
     "setting": "Forgotten Realms",
-    "order": 20
+    "order": 21
   },
   {
     "id": "PP",
     "title": "Powers & Pantheons",
     "setting": "Forgotten Realms",
-    "order": 21
+    "order": 22
   },
   {
     "id": "TotL",
     "title": "Tales of the Lance",
     "setting": "Dragonlance",
-    "order": 22
+    "order": 23
   },
   {
     "id": "CWS",
     "title": "Council of Wyrms Setting",
     "setting": "Council of Wyrms",
-    "order": 23
+    "order": 24
   },
   {
     "id": "AA",
     "title": "Arabian Adventures",
     "setting": "Al-Qadim",
-    "order": 24
+    "order": 25
   },
   {
     "id": "CShaH",
     "title": "The Complete Sha'ir's Handbook",
     "setting": "Al-Qadim",
-    "order": 25
+    "order": 26
   }
 ]

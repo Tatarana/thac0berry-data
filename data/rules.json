@@ -82735,5 +82735,1177 @@
       "clockwork",
       "devices"
     ]
+  },
+  {
+    "id": "tka_ch00_thri_kreen_pcs_character_classes",
+    "book": "TKA",
+    "chapterNumber": 1,
+    "chapterTitle": "Characters",
+    "breadcrumbs": "Thri-Kreen of Athas > Characters > Thri-Kreen PCs Character Classes",
+    "topic": "Thri-Kreen PCs Character Classes",
+    "ruleType": "core_rule",
+    "summary": "*While most thri-kreen are simple hunters, this primitive lifestyle does not suit everyone.",
+    "content": "*While most thri-kreen are simple hunters, this primitive lifestyle does not suit everyone. As in the north, some kreen seek more challenges; those who specialize in certain professions travel beyond their normal tribal ranges. Though some of our northern professions—si'tsa and haazik—are unknown in the south, the southern thri-kreen have a fair range of occupations available to them.*\n: —from the journals of Klik-Chaka'dar.\n\nThri-kreen can, of course, be used as PCs in a Dark Sun campaign. Their adaptations and abilities make them well-equipped for survival on Athas—provided the player wants to role-play their alien ways. This chapter discusses character classes and kits among the thri-kreen.\n\nOnly thri-kreen with adventuring professions (those with character classes) are covered in this chapter. Thri-kreen raised as hunters (those who use the thri-kreen \"monster\" statistics, as described in Chapter Two under \"Stages of Life\") do not use the kits detailed here.\n\n## Ability Score Adjustments\n\nAs covered in the Dark Sun Rules Book, thri-kreen receive adjustments to their initial ability scores. A thri-kreen's ability scores are not adjusted for aging until the thri-kreen reaches venerable age (25), at which time the character suffers penalties of -1 to Strength and -1 to Dexterity.\n\n[TABLE_REF: Thri-Kreen Ability Adjustments (base roll: 5d4)]\n\n*Jeral Modifiers:* Constitution -1, Intelligence 0. All other modifiers remain unchanged.\n\n[TABLE_REF: Thri-Kreen Physical Characteristics]",
+    "tables": [
+      {
+        "tableNumber": "",
+        "title": "Thri-Kreen Ability Adjustments (base roll: 5d4)",
+        "headers": [
+          "Ability",
+          "Adj.",
+          "Adjusted Range"
+        ],
+        "rows": [
+          [
+            "Strength",
+            "0",
+            "8/20"
+          ],
+          [
+            "Dexterity",
+            "+ 2",
+            "17/22"
+          ],
+          [
+            "Constitution",
+            "0 *",
+            "5/20"
+          ],
+          [
+            "Intelligence",
+            "- 1",
+            "4/19"
+          ],
+          [
+            "Wisdom",
+            "+ 1",
+            "6/21"
+          ],
+          [
+            "Charisma",
+            "- 2",
+            "3/15"
+          ]
+        ]
+      },
+      {
+        "tableNumber": "",
+        "title": "Thri-Kreen Physical Characteristics",
+        "headers": [
+          "Characteristic",
+          "Base",
+          "Variable"
+        ],
+        "rows": [
+          [
+            "Height (in inches)",
+            "82",
+            "1d4"
+          ],
+          [
+            "Weight (in pounds)",
+            "450",
+            "1d20"
+          ],
+          [
+            "Age (years, start/max)| 6",
+            "25+d10",
+            ""
+          ]
+        ]
+      }
+    ],
+    "relatedRuleIds": [],
+    "relatedSpells": [],
+    "relatedMagicItems": [],
+    "searchKeywords": [
+      "character",
+      "classes",
+      "kreen",
+      "thri",
+      "thri-kreen"
+    ]
+  },
+  {
+    "id": "tka_ch00_character_classes",
+    "book": "TKA",
+    "chapterNumber": 1,
+    "chapterTitle": "Characters",
+    "breadcrumbs": "Thri-Kreen of Athas > Characters > Character Classes",
+    "topic": "Character Classes",
+    "ruleType": "core_rule",
+    "summary": "Warriors of various types are common among thri-kreen.",
+    "content": "Warriors of various types are common among thri-kreen. The chakak (psionicist) is important to their society. Priests, however, are uncommon, and are usually those who have left their pack. Rarer still are thri-kreen who pursue multiple classes, usually pairing a warrior class with something else. Since the thri-kreen have formidable natural combat skills, the combination of priest and chakak is perhaps the most versatile multi-class.\n\nThri-kreen do not become wizards because their brains cannot properly channel and manipulate magical energies of a non-clerical nature.\n\nThri-kreen do not become thieves; nor do they become bards. Skulking about and playing with locks, traps, poisons, and other nefarious devices just does not suit them. Those thri-kreen who have a talent for stealth and concealment become rangers.\n\nThri-kreen never become templars. Tokchak keeps them loyal to their group, whether a clutch of thri-kreen or a party of companions. The deceit, corruption, disdain for underlings, and disrespect for superiors displayed by templars are all completely alien to the thri-kreen mind-set. Besides, few thri-kreen would ever willingly follow a sorcerer king.\n\n[TABLE_REF: Table 7.1: Thri-Kreen Level Limits]\n\n## Warriors\n\nFighters are most numerous and most commonly encountered thri-kreen warriors. They are skilled and dangerous combatants, and can be of any alignment. Fighters of most races are known for their abilities and skills in mass combat; this is not really true of thri-kreen fighters, few of whom actually lead military forces. Thri-kreen are not that interested in war, nor do they usually need to be.\n\nThri-kreen fighters have a wide range of kits available to them; the most common is the Tik (hunter) kit. The Tik-Tik (guardian) kit is less common, and some fighters might take the Kik (raider) kit instead. These kits are detailed in this book.\n\nOf the warrior classes available to the thri-kreen, the ranger, in many ways, epitomizes the thri-kreen race. Their love of nature, their abilities to hunt and track, and their wanderlust fit naturally into the nomadic thri-kreen lifestyle; however, their good alignment marks them as atypical. Most packs of thri-kreen have at least one ranger. A ranger's species enemy is usually an enemy predator that presents some threat to the pack. Curiously enough, elves are rarely a species enemy; the good-aligned ranger seems to instinctively avoid this choice, as many members of that species are also good-aligned. Belgoi, other evil creatures, and Kik raiders are far more common as species enemies.\n\nThri-kreen rangers are usually of the Kalak (scout) or Tik (hunter) kit; though a few eventually become Kiltektet (student missionary).\n\nIf *The Complete Gladiator's Handbook* is available, the thri-kreen might have a gladiator kit. In fact, a thri-kreen who goes to a human city often volunteers to be a gladiator. Since the thri-kreen probably enters the city without money, he or she must find a trainer willing to provide support during training. The natural combat abilities of thri-kreen make them valuable as gladiators, so trainers are often willing to support them during training in return for some percentage of future earnings. This is an equitable deal. The benefits to the thri-kreen gladiator include the freedom to hunt and fight challenging prey (even if it is in the arena—availability of prey is important, since many thri-kreen who go to cities are motivated by a shortage of prey). A thri-kreen who craves fame—and there are a few—can sate such cravings as a gladiator. Some eventually receive the adulation of thousands.\n\nThe most common thri-kreen gladiators are the Professional Gladiator and the Reaver, while Montare are very rare. Thri-kreen gladiators are never Blind Fighters. While a thri-kreen Jazst is unknown, one might be possible if the DM makes a few adjustments to the kit for a thri-kreen character.\n\n## Chakak\n\nAnother character class of the thri-kreen is the chakak, or psionicist. The thri-kreen race has had chakak for thousands of years, and they are an important and respected part of the thri-kreen pack.\n\nTelepathy is the most common primary discipline among pack psionicists (Tekchakak), for its usefulness in communication and group coordination. Other chakak, especially Tik (hunter) and Kalak (scout) chakak often have Clairsentience as a primary discipline, because that discipline is most useful for the hunt. Thri-kreen who do not have so great an aptitude for the hunt often have Psychokinesis or Telepathy as the primary discipline. Such thri-kreen often leave the pack in order to wander unless they serve a special function, such as Tik-Tik (guardian).\n\nWhatever the primary discipline, the thri-kreen's second discipline is almost always Psychometabolism (though a few thri-kreen develop Psychometabolism as a primary discipline). In general, the sciences and devotions of Psychometabolism greatly enhance a chakak's fighting ability.\n\nChakak tactics include using adrenalin control and accelerate to increase attack abilities; reduction to hide for surprise; and others. One popular combination uses reduction to a small size, then levitation. When prey walks underneath, the thri-kreen stops using both powers. The prey is usually surprised when a 450-pound thri-kreen drops on top of it, seemingly from nowhere.\n\nWhile humans have their \"psiologists,\" who study in academies, thri-kreen learn the Way in their own fashion. Most learn control from a tekchakak or kiltektet; some learn from other mentors, such as an elder chakak of the pack or a visitor from another pack. Those thri-kreen with wild talents are gathered by the klik (teacher), who provides a variety of props on which the thri-kreen can test their powers through practice.\nChakak-in-training are treated more formally, so they can properly open their minds to progression in power. They are gathered under a tekchakak or other mentor, and encouraged to experiment with their powers until they show a tendency toward a certain discipline.\n\nRacial memory helps this process as well. A thri-kreen can advance as high as 3rd level as chakak without instruction, by concentrating and allowing hidden racial memories to come to the surface and guide the student to the Way.\n\nThri-kreen usually begin manifesting psionic powers before they reach age 5, so begin training early. Mentors test the young kreen periodically, and there are usually enough chakak in a group that a thri-kreen has one or more training partners with whom to spar and exchange ideas.\n\nIf *The Will and the Way* sourcebook is available, a thri-kreen chakak might take the Beastmaster kit. An uncommon thri-kreen might be a Mercenary (the rules for payment should be altered to a medium more satisfactory to a thri-kreen). A very rare thri-kreen might take the Auditor kit if allowed by the DM; such Auditors can come only from cities such as Raam (or perhaps Gulg or Urik) where thri-kreen are common. Thri-kreen are never of the Noble, Psiologist, or Sensei kits. They have their own version of the Tribal Psionicist—the Tekchakak—presented in this chapter. Some thri-kreen chakak, both single-class and multi-class, might become Kiltektet.\n\n## Elemental Priests\n\nNote: Much of this section refers to information from the *Earth, Air, Fire, and Water* sourcebook that will be reproduced in the 2nd edition of the *Dark Sun* basic rules. If the material is not available, then thri-kreen player characters can come from more traditional packs, in which the role of the Shaman is taken by the Tekchakak.\n\nThe thri-kreen respect for nature and the elements makes them naturals to become priests or druids. Still, thri-kreen priests are uncommon and druids are rare; these callings take them furthest from the hunt, and sometimes from the clutch as well. The draw of tikchak and tokchak are powerful enough to make any priesthood an arduous task, suited only to thri-kreen with the strongest wills. Priests and druids are more common among the Jeral than the To'ksa, though most packs will have at least one priest of some type.\n\nThe priest professions have the following frequency among thri-kreen: earth priest, paraelemental priest of the sun, and air priest are most common; water priests, paraelemental priests of rain, and druids are rare; fire priests and paraelemental priests of magma are very rare; paraelemental priests of silt are unknown.\n\nAn overview of elemental and paraelemental priest options includes:\n\n(*) Earth: The element of earth is by far the most common element revered by thri-kreen priests. Besides the natural reverence the thri-kreen give the earth (which they refer to as thok, the \"egg of all life\"), earthpriests have the most useful granted powers for hunting and for helping clutch mates. The earth supports the thri-kreen lifestyle, and represents the clutch to them; in return, thri-kreen revere the earth.\n(*) Air: Other thri-kreen become priests of air. The thri-kreen skill with missile weapons, and their love of freedom and wandering, make thri-kreen quite adept at this discipline, once they embrace it.\n\nHowever, air priests are less common than earth priests because their initiation requires a trip to the mountains. Thri-kreen are not built for mountain travel; they cannot climb, and leaping from precipice to precipice is dangerous for such a large creature.\n\nBoth the \"missile stream\" and \"missile deflection\" powers work normally on chatkcha and kyorkcha. Optionally, the DM may also allow these powers to adjust the ability of a thrower to catch the weapons.\n\n(*) Fire: Thri-kreen very rarely become priests of fire. Some sources have claimed this is because thri-kreen have an \"innate fear of flame,\" this simply is not so. The reason thri-kreen do not often become priests of fire is not because they are afraid of fire, but because their culture does not use fire.\n\nThey do not cook their food; they do not forge metal; and they certainly do not need fire to keep warm. Thri-kreen have little experience with fire because they have little need for it. The rare thri-kreen who does come to revere flame (usually as a result of some impressive incident) has no special trouble making a pact with fire elementals.\n\n(*) Water: Water priests are rare among thri-kreen, because of...\nthri-kreen lack of need for water, and their mild phobia to large bodies of water. The minor granted power quench thirst yields a thri-kreen's full day's water requirement.\n\nParaelemental Priests: Thri-kreen who become paraelemental priests almost always follow the Sun; a few follow Rain, and fewer still Magma. Thri-kreen priests of Silt are unknown; thri-kreen don't live in or near silt, and prefer not to visit it.\n\n## Druids\n\nWhile less common than earth or air priests, druids are more common among thri-kreen than priests of any other element or paraelement. Thri-kreen almost universally respect and protect nature, so they will always have prey and grounds for hunting and raising clutches. Thri-kreen almost always despise defilers, and this is reason enough for some to become druids. Being a druid usually takes the thri-kreen away from the clutch and forces him or her to remain in one place.\n\nThri-kreen druids might revere any element or paraelement, but never silt, and seldom magma or rain. A thri-kreen druid's guarded lands are usually an expanse of desert, or the skies over such an area; the affinity for earth and air continue even for the druid. Thri-kreen druids seldom adopt other types of guarded lands, especially if that requires settling down in an area without other thri-kreen. An exceptional case is the thri-kreen druid Durwadala, protector of the Lost Oasis in the southern Tyr Region. Durwadala has intentionally become a recluse, and never reveals herself to any intelligent creatures, considering the animals and plants of the Lost Oasis to be her clutch. This attitude, and the idea of the \"plant-and-animal-clutch,\" are common among thri-kreen druids.\n\n## Multi-Class Thri-Kreen\n\nThri-kreen can become one of several multi-class combinations (see the list at the end of this section).\n\nFighter/psionicist and ranger/psionicist combinations are the most common: the ranger/psionicist is perhaps the most common multi-class combination among thri-kreen player characters. Priest multi-classes are uncommon, and druid multi-classes are very rare.\n\nAn uncommon combination is the cleric/psionicist. The cleric/psionicist combination gives a thri-kreen a well-rounded set of abilities, since the thri-kreen already has formidable natural combat skills.\n\n[TABLE_REF: Thri-Kreen Multiclass Combinations]",
+    "tables": [
+      {
+        "tableNumber": "Table 7.1",
+        "title": "Table 7.1: Thri-Kreen Level Limits",
+        "headers": [
+          "Character Class",
+          "Level Limit"
+        ],
+        "rows": [
+          [
+            "Fighter",
+            "16"
+          ],
+          [
+            "Gladiator",
+            "15"
+          ],
+          [
+            "Ranger",
+            "12"
+          ],
+          [
+            "Psionicist",
+            "U"
+          ],
+          [
+            "Priest of Air",
+            "14"
+          ],
+          [
+            "Priest of Earth",
+            "12"
+          ],
+          [
+            "Priest of Water",
+            "12"
+          ],
+          [
+            "Priest of Fire",
+            "10"
+          ],
+          [
+            "Druid",
+            "16"
+          ]
+        ]
+      },
+      {
+        "tableNumber": "",
+        "title": "Thri-Kreen Multiclass Combinations",
+        "headers": [
+          "Combination"
+        ],
+        "rows": [
+          [
+            "Fighter/Psionicist"
+          ],
+          [
+            "Fighter/Cleric"
+          ],
+          [
+            "Fighter/Druid"
+          ],
+          [
+            "Ranger/Psionicist"
+          ],
+          [
+            "Ranger/Cleric"
+          ],
+          [
+            "Cleric/Psionicist"
+          ],
+          [
+            "Druid/Psionicist"
+          ],
+          [
+            "Fighter/Cleric/Psionicist"
+          ],
+          [
+            "Fighter/Druid/Psionicist"
+          ],
+          [
+            "Ranger/Cleric/Psionicist"
+          ]
+        ]
+      }
+    ],
+    "relatedRuleIds": [],
+    "relatedSpells": [],
+    "relatedMagicItems": [],
+    "searchKeywords": [
+      "character",
+      "classes",
+      "thri-kreen"
+    ]
+  },
+  {
+    "id": "tka_ch00_stages_of_life",
+    "book": "TKA",
+    "chapterNumber": 1,
+    "chapterTitle": "Characters",
+    "breadcrumbs": "Thri-Kreen of Athas > Characters > Stages of Life",
+    "topic": "Stages of Life",
+    "ruleType": "core_rule",
+    "summary": "Thri-kreen live short lives; they are mature adults at the age of five, and are considered of venerable age when they reach 25 years.",
+    "content": "Thri-kreen live short lives; they are mature adults at the age of five, and are considered of venerable age when they reach 25 years. Two (or more) complete generations of thri-kreen can be hatched and die during the lifetime of a member of one of the major intelligent non-kreen races of Athas.\n\nDue to their short lifespans, thri-kreen grow and change very rapidly when young. Within six years of his or her hatching, a thri-kreen grows from one foot to approximately 11 feet in length.\n\nA developing thri-kreen can be raised in one of two ways: to become simple hunter, or to follow a special vocation, such as warrior, priest, or chukak (psionicist). Those raised to a vocation develop more slowly at first, but while the simple hunter's abilities plateau after a few years, one who follows the other path can continue to increase in power for a lifetime. Basically, a thri-kreen can be raised as a hunter, and follow the published \"monster\" statistics for thri-kreen, or can be raised as a PC or NPC.\n\nA \"monster\" thri-kreen develops evenly, as shown in the \"Hit Dice\" column on Table 2.1; such a thri-kreen reaches maximum ability after five years, upon reaching 6+3 Hit Dice.\n\nA thri-kreen character, on the other hand, develops more slowly, but can continue to gain power after becoming a mature adult. The development of thri-kreen characters can be found in the \"Level\" column of Table 2.1. When a thri-kreen is at the larva or child stage, the character's level is 0; the character has 1d6 hit points at this time. A thri-kreen PC starts an adventuring career when he or she has reached six years of age, after passing through all molts and achieving full growth.\n\nA multi-class thri-kreen character has reached 2nd level in the class that requires the least experience for advancement upon reaching the adult stage. A multi-class thri-kreen has reached 2nd level in all classes upon reaching the mature adult stage, and begins play at 2nd/2nd or 2nd/2nd/2nd level.\n\nA thri-kreen uses either the \"Level\" column or the \"Hit Dice\" column to determine hit points. Once the choice is made, the lifepath of the thri-kreen has been determined forever.\n\nNote that a thri-kreen player character gains special abilities according to level, not according to age or age category, like \"monster\" thri-kreen. A thri-kreen character gains the ability to leap at 3rd level, venom and a free proficiency with chatkcha at 5th level, and the dodge ability at 7th level. A multi-class thri-kreen character acquires these abilities when reaching the required level in at least one of his or her character classes. See Chapter Three or details on the various special abilities.\n\n[TABLE_REF: Table 2.1: Thri-Kreen Stages of Growth]\n\n(*) Tokchak (racial memory), tikchak (hunting), antennae, speed, constant activity, water use; pheronomes.\n(**) Venom and chatkcha\n(***) A few weeks or days before death, racial abilities can degrade dramatically rely primarily on their natural weapons. A young thri-kreen can also move at the same rate as an adult.\n\n## Larva\n\nUpon hatching, a thri-kreen larva is curled to fit within an egg, and has a soft shell (AC 10). The chitin hardens somewhat in the first few hours of the thri-kreen's life, to AC 9 after 12 hours; by the end of the thri-kreen's first day, the larva is just as difficult to injure as an adult, with AC 8, and full Dexterity bonuses.\n\nThe term \"larva\" is somewhat misleading, because it conjures images of the larvae of other insects, usually worm-like creatures quite different from the adult forms. A thri-kreen larva looks much like an adult, but in many ways resembles more primitive mantids as well.\n\nA thri-kreen larva has four legs, two attached to the prothorax and two attached to the lower thorax. The larva can run as soon as hatching is finished, and scampers quickly about on these legs while trying to survive the critical first hours of life. The larva has only two arms; these terminate in grasping claws much like those of primitive mantids, rather than in the manipulative fingers of the adult thri-kreen. The claws are relatively weak, and are smooth, rather than spiked like those of a primitive mantis.\n\nAs shown on Table 2.1, young thri-kreen cause little damage with claws and bite. A larva or child thri-kreen has grasping claws, as shown in the stages of life diagram on the poster, these cause damage by squeezing an opponent (or part of the opponent). An opponent that survives being grabbed can escape by making a successful Strength check, provided the victim has leverage and some way to pry the thri-kreen's claws apart. A larva makes only three attack per round, two claws and one bite.\n\nOne great aid to the thri-kreen's rapid development, probably a survival trait evolved because of the thri-kreen lifestyle and short lifespan, is the thri-kreen's \"racial memory.\" When hatched, a thri-kreen already knows many things, which the larva \"remembers\" from the experience of ancestors. While some of this knowledge is mental, some is also physical: a hatchling thri-kreen \"remembers\" the thri-kreen language, but also has finely developed hunting instincts, including quick and correct actions.\n\nFrom the time of hatching, a thri-kreen already has many of the race's special abilities (as fully detailed in Chapter Three). These include the hunting ability, use of antennae, lack of need for sleep, spell immunities, and greatly reduced need for water. The abilities to leap, produce venom, wield the chatkcha, and dodge are all acquired later.\n\nThough well-adapted for hunting, once a young thri-kreen has been brought into a pack, the adults take care of hunting. The young are taught how to prepare and preserve hunted food.\n\nThe larva grows rapidly during the first year, molting twice and more than doubling in length during that time. The second molt occurs at the end of the first year and marks the thri-kreen's transition into the child stage.\n\n## Child\n\nStructurally, a thri-kreen child is almost identical to a larva, but is larger. While probably wiser and stronger, the thri-kreen child has no special abilities other than those possessed by larvae, with one exception: the thri-kreen's middle pair of limbs are becoming more useful.\n\nAs mentioned, a larva's middle limbs are legs. This is the same with the child, but the child thri-kreen begins experimenting with lifting those limbs and using them to move things. The claws at the end of these limbs are rough versions of the hands of the adult, but are clumsy; they are barely able to grasp objects, and cannot wield them with any finesse. The middle limbs can be used for combat in a rudimentary fashion: in the same time it would take a thri-kreen larva to attack with two claws (or an adult to attack with four claws), a child can attack with three claws, the two upper claws and one of the lower claws, in a sort of kick.\n\nDuring the year as a child, the thri-kreen learns to walk and run on two legs, and to manipulate things roughly with the middle pair of arms. When the thri-kreen molts at the end of the year, entering the \"young\" age category, the limbs alter significantly, and fully functional, clawed hands emerge from the grasping claws and rough hands of the child.\n\n## Young\n\nThe young thri-kreen is a smaller version of the adult, almost identical in shape if not size. The young thri-kreen is still proportionately slender in comparison to adults. During this year of life, the thri-kreen learns to use its claws to attack and to manipulate tools and weapons. If adult thri-kreen are nearby, they often provide the young with chatkcha or small gythka, so the young can get used to handling them (for more information on these weapons, see Chapter Three). Though the young might use the small gythka and practice with the chatkcha, they are not yet agile enough to properly handle the latter. Young thri-kreen\n\nA thri-kreen raised solely as a hunter learns how to leap at this age, as metabolic changes bring that part of the racial memory to prominence. The young thri-kreen develops the ability within 10 days after the transition from \"child\" to \"young.\" The ability to leap is same as for full adults, as much as 20 feet straight up or 50 feet straight forward. As the thri-kreen continues to grow, his or her greater leg strength is balanced by greater size and body weight.\n\nA thri-kreen who becomes a specialized individual (warrior, priest, or chakak) begins practicing his or her profession at this stage of life.\n\n## Young Adult\n\nThe young adult is little different from the young thri-kreen, except in size. The transition to young adulthood brings no extra abilities. A young adult continues to learn the use of tools and weapons, however, and usually begins to access skills. If the thri-kreen has older mentors, they teach the young adult the requirements of the pack. Thri-kreen following player character specialties continue to develop the necessary skills.\n\nAt the end of the year as a young adult, the thri-kreen \"fills out,\" becoming broader of body in the manner of the mature thri-kreen. The claws also grow during this molt. This mark the thri-kreen's transition into the \"adult\" stage.\n\n## Adult\n\nMost of the thri-kreen's abilities have developed by this age. The thri-kreen is sexually mature and is considered an adult in all social ways. Mating often takes place during this stage of the thri-kreen's life, before the thri-kreen enters the \"wandering age,\" as described later.\n\nWithin a few days after becoming an adult, a thri-kreen raised as a hunter develops the ability to produce venom when he or she bites. As discussed in the next section, the thri-kreen also gains the ability to produce crystal for chatkcha; this is due to racial memory prompted by the production of the enzymes that make up the thri-kreen's venom. Within 60 days after the molt which ushers in the transition to adulthood, the thri-kreen has usually produced a chatkcha and learned how to wield it; this is proven to other pack members in a special ceremony (described in Chapter Four, \"The Chatkcha Ceremony\"). This marks the thri-kreen's full acceptance into a pack.\n\nThe thri-kreen who has taken the other path (that is, a PC or special NPC) does not begin producing venom at this age. While the thri-kreen is recognized as an adult, recognition as a member of a pack does not come until the chatkcha ceremony. It is possible for the individual to become proficient with the chatkcha early and go through the ceremony, though such a thri-kreen has to use a non-crystal chatkcha, or one produced by another thri-kreen. Such thri-kreen cannot use venom early; venom production is a result of physical development and cannot be rushed.\n\nHowever, most thri-kreen do not learn to wield the chatkcha early, because they know the skill will eventually come to them in time. Most thri-kreen warriors, priests, and chakak wait until they begin producing venom to learn to the use of the chatkcha and to go through the ceremony. Other thri-kreen realize the special individual who does learn the chatkcha early is simply following a different path that usually entails wandering and seeking; there is no social stigma to pursuing such a path and joining the pack later.\n\n## Mature Adult\n\nThe mature adult thri-kreen is bigger than the adult, a year older, and hopefully wiser. In terms of abilities, the mature adult is almost identical to the adult. In this period a thri-kreen hones the use of his or her abilities to a fine edge. Typically, thri-kreen reproduce during this year of their life.\n\nIn the thri-kreen raised as a hunter, another part of the racial memory is triggered by metabolic changes, and the hunter develops the ability to dodge. As with other such abilities, the dodging skill develops within 10 days after the molt that heralds the transition into the mature adult stage. Also, as with other special abilities, thri-kreen special individuals must wait for this ability to manifest itself.\n\nDuring this sixth year of the thri-kreen's life, the thri-kreen's last two molts occur. These bring few changes, except in size.\n\n## Wandering Age\n\nBetween the ages of six and 25, the thri-kreen goes through few physical changes, except those due to injury or disease. While other species suffer loss of ability periodically throughout their lives, thri-kreen decline only later. The thri-kreen is finished growing and molting, so travel is safe; most thri-kreen who plan on producing young have done so, and feel no compulsion to spend time breeding, laying eggs, or watching over young. It is during these years that most thri-kreen wander, either as part of nomadic hunting or raiding pack, or on their own.\n\nIt is at the age of six—or sometime thereafter—that character thri-kreen begin to seek adventure, often mixing with members of other races, sometimes traveling to the permanent settlements of humans or dwarves. Racial memories of special abilities finally begin to be triggered in thri-kreen who will become warriors, priests, or chakak. It is at this time that special individuals develop the ability to leap, unless they are pursuing more than one specialized occupation, which means they must wait still longer for the ability to be triggered.\n\nThri-kreen of wandering age are, in many ways, the epitome of the species. They are concerned only with the hunt, or with the pursuit of their professions, and have few ties or responsibilities other than those associated with the clutch.\nThe End of Life\n\nBarring accident or other tragedy, the typical thri-kreen lives at least 25 years; some live for longer, though only rarely have there been reports of thri-kreen living longer than 35 years. It is when a thri-kreen reaches the age of 25 (venerable age) that he or she declines somewhat in ability, slowing down somewhat and becoming slightly weaker and less agile; the thri-kreen's base movement rate drops to 15, and he or she receives penalties of -1 to Strength and -1 to Dexterity. In addition, the thri-kreen's chitin begins to lighten in hue, first at the joints and gradually spreading to the more rigid sections.\n\nA thri-kreen who is 25 years or older is considered a venerable elder by the pack. Most thri-kreen of this age stop wandering over large territories, and confine themselves to smaller regions. Often, venerable thri-kreen live near egg-laying grounds, so they can help teach larvae and young the thri-kreen way.\n\nSince most egg-laying grounds are also near (or within) burial grounds, a venerable thri-kreen seldom has far to go when ready to die. Until that time, the thri-kreen elder remains vital and active, but when the time to die naturally approaches, the thri-kreen can sense it, and goes on a last hunt. Thri-kreen prefer to die as they lived, hunting, wanting nothing more than to expire in battle, or after having killed prey. Thri-kreen packs who find expired elders usually take the corpse to the nearest burial ground, where it feeds other predators or young thri-kreen. If there is a priest among the thri-kreen, or if the dead elder was a priest, then the appropriate elemental rites are conducted: shallow burial for earth, cremation for fire, exposure for air, and (if possible) sinking or at least dowsing for water. Eventually, the thri-kreen exoskeleton bleaches white and becomes brittle; some time later, it returns to the elements that gave rise to it.\n\n## Molting\n\nMolting is the rather painful process of shedding old chitin and growing its replacement. The thri-kreen molts twice each year for the first six years of life, a total of 12 times before reaching full growth. Between molting, a thri-kreen grows little, perhaps as much as an inch or two total as chitin plates are stretched to their limits before the next molt.\n\nA thri-kreen instinctively knows when molting time approaches, and enters a frenzy of eating to take in enough nutrients to fuel the change. During molting, a thri-kreen must take in about twice as much liquid as usual, at least one-quarter gallon each day for good growth and strong chitin.\n\nA molt takes about eight days to complete. During molting, the thri-kreen sheds portions of shell and grows quickly. Only part of the chitin is lost at a time; for example, a thri-kreen might shed one or two of the rings of chitin about the abdomen: The abdomen grows in the exposed areas and blood oozes over it, eventually hardening into new chitin. Later, other parts of the chitin are lost and replaced in the same way. Thri-kreen, especially larvae and children, often eat the pieces of chitin they shed, restoring some nutrients to their bodies.\n\nWhile molting, the thri-kreen grows half the amount required to reach the size of the next age category. For example, a larva is one foot long at hatching, and reaches three feet when entering the \"child\" age category. The larva grows one foot during the first molt, six months after hatching; six months later, the larva molts again, growing another foot, and entering the next age category in the process. Note that the proportionate growth in a young thri-kreen is great; during the first three or four molts of a thri-kreen's life, observers can actually see growth if they watch closely.\n\nDuring molting, a thri-kreen is relatively helpless, and makes efforts to stay out of harm's way. The thri-kreen does not travel or hunt. Armor Class becomes 9; Strength, Constitution, and Dexterity scores are halved. Base speed is reduced by two-thirds—exceeding that rate during molting causes 1 hit point of damage per round of faster movement. These penalties begin on the first day of the eight-day molting process, and end on the last day.\n\nAll members of a clutch molt at approximately the same time, with a variation of only 1 d6 days between the time when molting starts. This means there is a certain amount of time during which the entire clutch is incapacitated. A fortunate clutch is aided by other thri-kreen who stand guard; these are generally thri-kreen of the same pack, and are sometimes members of a clutch that hatched a few days before or after the molting clutch.\n\nMolting is followed by another frenzy of hunting and eating as the thri-kreen takes in the nutrients necessary to fill out the new chitin with muscle and other flesh.",
+    "tables": [
+      {
+        "tableNumber": "Table 2.1",
+        "title": "Table 2.1: Thri-Kreen Stages of Growth",
+        "headers": [
+          "Stage",
+          "Age (years)",
+          "Size",
+          "Move",
+          "Claw/Bite",
+          "Level",
+          "HD",
+          "THAC0",
+          "XP",
+          "Abilities"
+        ],
+        "rows": [
+          [
+            "Larva",
+            "0-1",
+            "T",
+            "9",
+            "1/1",
+            "0",
+            "1 + 3",
+            "19",
+            "65",
+            ""
+          ],
+          [
+            "Child",
+            "1-2",
+            "S",
+            "9",
+            "1/1",
+            "0",
+            "2 + 3",
+            "17",
+            "120",
+            ""
+          ],
+          [
+            "Young",
+            "2-3",
+            "M",
+            "18",
+            "1d3/1d3",
+            "1",
+            "3 + 3",
+            "17",
+            "175",
+            "leap"
+          ],
+          [
+            "Young Adult",
+            "3-4",
+            "M",
+            "18",
+            "1d3/1d3",
+            "1",
+            "4 + 3",
+            "15",
+            "270",
+            ""
+          ],
+          [
+            "Adult",
+            "4-5",
+            "L",
+            "18",
+            "1d4/1d4+1",
+            "2",
+            "5 + 3",
+            "15",
+            "975**",
+            ""
+          ],
+          [
+            "Mature Adult",
+            "5-6",
+            "L",
+            "18",
+            "1d4/1d4+1",
+            "2",
+            "6 + 3",
+            "13",
+            "1,400",
+            "dodge"
+          ],
+          [
+            "Wandering Age",
+            "6-25",
+            "L(11'long)",
+            "18",
+            "1d4/1d4+1",
+            "3+",
+            "6 + 3",
+            "13",
+            "1,400***",
+            ""
+          ],
+          [
+            "Venerable",
+            "25+",
+            "L(11'long)",
+            "15",
+            "1d4/1d4+1",
+            "3+",
+            "6",
+            "13",
+            "1,400",
+            ""
+          ]
+        ]
+      }
+    ],
+    "relatedRuleIds": [],
+    "relatedSpells": [],
+    "relatedMagicItems": [],
+    "searchKeywords": [
+      "life",
+      "stages",
+      "thri-kreen"
+    ]
+  },
+  {
+    "id": "tka_ch00_chatkcha_and_kyorkcha",
+    "book": "TKA",
+    "chapterNumber": 2,
+    "chapterTitle": "Combat",
+    "breadcrumbs": "Thri-Kreen of Athas > Combat > Chatkcha (and Kyorkcha)",
+    "topic": "Chatkcha (and Kyorkcha)",
+    "ruleType": "core_rule",
+    "summary": "The single most important weapon to the thri-kreen is the **chatkcha**, or throwing wedge.",
+    "content": "The single most important weapon to the thri-kreen is the **chatkcha**, or throwing wedge. It is the only weapon whose use is learned by the thri-kreen through racial memory. Skill with the chatkcha is a mark of adulthood among thri-kreen; the weapon itself symbolizes adulthood. The chatkcha's precise form depends on the substance used to make it. Note that \"chatkcha\" is pronounced chaht-kcha, with the \"k\" and \"ch\" sounds run together, rather than chah-tk-cha or another variant.\n\nThe tohr-kreen have their own version of this weapon, the kyorkcha. A few have appeared in the Tyr Region. \"Kyorkcha\" is pronounced kyor-kcha rather kyor-kcha than, ky-or-kcha, or some other variant.\n\n## Chatkcha Construction\n\nChatkcha can be made from hardwood, stone, bone, metal, or dasl. Dasl is the preferred medium. A dasl chatkcha has a central hole; at equal spaces around the hole, three leaf-shaped blades protrude. Metal and wooden chatkcha are roughly the same shape as dasl ones. Bone and stone chatkcha must be built differently, or fly apart too easily when used; they have a central hole as well, but the three blades are wider and almost rectangular in shape.\n\nThri-kreen pride themselves on the quality of their chatkcha, and put many hours into them, so they are not just functional, but are beautiful as well. More artistic thri-kreen etch scenes of hunting and battle onto the flat parts of the weapon. The more ornate dasl chatkcha become heirlooms of the maker and, when that thri-kreen dies, of the clutch and pack. Some packs have chatkcha that have been handed down for generations, and through their etchings, tell some of the history of the pack. Thri-kreen are sometimes so attached to dasl chatkcha that if the weapons are lost or stolen, they will go on a quest to retrieve the chatkcha. Heirloom chatkcha are protected with the thri-kreen's life. Chatkcha of materials other than dasl are never heirlooms.\n\n## The Kyorkcha\n\nAn invention of the tohr-kreen of the north, the lcyorkcha is a more dangerous variant of the chatkcha. It consists of a curved blade, much like a boomerang, with several protrusions along the edge, as well as spikes that jut out near each end. The kyorkcha, like the chatkcha, has a hole in the middle.\n\nThe kyorkcha can be made of dasl, or of stone, bone, hardwood, or metal. A kyorkcha's average damage is greater than that of the chatkcha, with a range of 1d8+2 points of damage versus the chatkcha's 1d6+2 (against creatures of man-size or smaller\n\nMost kyorkcha are edged on both front and back, though some are made with a blunt back edge; these are used to knock out foes or prey. Only a blunt kyorkcha can be used in this way. (A proficient user suffers a -1 attack roll penalty. On a successful hit, the chance for a knockout is 3% per point of damage caused. Only 25% of the damage of a knockout attack is real; the rest is temporary. A thri-kreen cannot be instantly knocked out, but might fall unconscious if he or she takes enough damage.)\n\nThe kyorkcha is held like the chatkcha, with a digit on either side of the kyorkcha's leading prong, and the third digit at the center of the weapon's trailing edge. The details of throwing are similar to those of the chatkcha.\n\n## Chatkcha Proficiency\n\nThe chatkcha was created by thri-kreen and is used primarily by them. Upon reaching adulthood (or 5th level if a player character), a thri-kreen gains a free proficiency with the chatkcha.\n\nA typical thri-kreen can throw up to two chatkcha in a round. This takes up the thri-kreen's allowed actions for that round. The thri-kreen can throw chatkcha with any of his or her hands, and can hold other objects in unused hands.\n\nThe thri-kreen hand, especially the three-thumbed hand of the Jeral, is ideal for gripping the chatkcha. A Jeral grips the weapon with one thumb between each blade, while a To'ksa curls the middle finger under and against the chatkcha, and uses the other three digits to grip the weapon in the Jeral manner (see diagram).\n\nTo throw the chatkcha, the thri-kreen holds it to the side, with palm facing up. The throw is a full arm movement with a wrist flip at the end; a thri-kreen who does not have room for a full arm movement (just a forehand or backhand wrist flip) can throw the chatkcha only 10 feet. Thri-kreen usually throw two chatkcha at the same time; some throw both from the same side of the body, while others use either the upper or lower pair of arms. Throwing styles tend to be the same within a pack; this, like harness and decoration, distinguishes one pack from another.\n\nA thri-kreen who takes proficiency in the chatkcha early (before 5th level must spend one proficiency slot, and receives no replacement slot at 5th level. Taking chatkcha proficiency early gives no other benefits to the thri-kreen; for example, he or she must still wait until 5th level to be able to produce venom and dasl.\n\nThe chatkcha and the kyorkcha are considered related weapons in regards to non-proficiency penalties. Thus, a character proficient in one suffers only half the normal non-proficiency penalty (rounded up) when using the other. While a thri-kreen receives a free proficiency with the chatkcha, the character must devote a proficiency slot to kyorkcha in order to use it without penalty.\nChatkcha Use\n\nBecause chatkcha (and kyorkcha) are hurled weapons, damage bonuses for high Strength apply. Because they are so perfectly balanced or flight, they suffer the same penalties as arrows or bolts due to wind, despite their greater weight. A proper throw has several traits.\n\n(*) The weapon spins when thrown. If thrown parallel to the ground, it will return to the thrower, provided it missed the target and was not otherwise stopped.\n(*) The chatkcha returns along approximately the same trajectory it traveled on the way to the target. This happens at the end of the round, so a single chatkcha cannot be thrown more than once per round.\n(*) If thrown upward or downward, the chatkcha does not return (actually, an upward throw returns by falling, and can be caught if the thri-kreen is in the right place and makes a successful Dexterity check).\n(*) Catching a returning chatkcha (or kyorkcha) is second nature to a proficient thri-kreen. A proper catch is made by inserting a finger into the central hole, then wrapping the others around the weapon; the catching finger is then withdrawn smoothly so the weapon is again ready to be thrown.\n(*) If the thri-kreen is distracted (such as by moving, or by being attacked), the catch requires a successful Dexterity check.\n(*) A thri-kreen can wield a chatkcha (but not a kyorkcha) as a melee weapon, with the same restrictions as for other melee weapons. The grip on the weapon is the same, and damage is as indicated on the weapons table.\n\n## Non-Kreen Throwers\n\nHumans and similar races can cannot achieve the same skill with a chatkcha as thri-kreen. Humanoid throws have the following traits:\n\n(*) Humanoids have a base throw rate of only one chatkcha (or kyorkcha) per round. The range and damage for these attacks are unchanged.\n(*) Making the weapon return requires a second proficiency slot (\"advanced chatkcha\" (or \"advanced kyorkcha\"). This need not be done when the initial slot is spent for weapon proficiency, and is independent of specialization, which costs a third slot.\n\nNote that a non-kreen gladiator can take a free specialization in chatkcha or kyorkcha but must still spend a slot to get the weapon to return.\n\n(*) While a thri-kreen hand is covered with chitin, a humanoid's hand must be protected by a heavy leather gauntlet at least. If catching with an unprotected hand, a humanoid must make a successful Dexterity check, or take 1d2 points of damage from the chatkcha (1d3 from a kyorkcha).\n(*) If not expecting a chatkcha's return, a humanoid might be struck by the weapon. In this case, the DM makes an attack roll using the thrower's THAC0 and Armor Class. A hit causes normal damage.\n(*) A humanoid can also wield a chatkcha in melee.\n\nAt the DM's option, the humanoid can eventually learn to safely catch the chatkcha or kyorkcha without wearing gloves or making a successful Dexterity check. Over time, the humanoid might learn how to catch the weapon by the central hole, as the thri-kreen does. It is recommended that a humanoid's difficulty in catching the weapon last at least for one full level of experience.\n\n## Special Maneuvers\n\nA thri-kreen (not a humanoid) might throw a chatkcha to return along a different trajectory. Such stunts include throws that:\n\n(*) Return to the thri-kreen during normal movement;\n(*) Return to the thri-kreen in mid-air during a leap;\n(*) Return to another thri-kreen;\n(*) Intentionally miss in order to impress or intimidate others.\n\nA special maneuver is possible with only one chatkcha per round. If the chatkcha is to return to another thri-kreen, both the thrower and the recipient must make a successful Dexterity check for a transfer. The thri-kreen can also throw one chatkcha, leap or move half his or her movement rate, and then be in position to catch a return flight; this requires a successful Dexterity check when the chatkcha is thrown, to get it to go to the right place, and a successful Dexterity check to catch it when it returns. (These maneuvers also can be performed with a kyorkcha.)\n\n*Maneuvers and Specialization:* A thri-kreen specializing in chatkcha or kyorkcha can perform the listed special maneuvers without a Dexterity check. In addition, the thri-kreen can throw a single chatkcha backwards, in lieu of all other attacks. (The thri-kreen is flexible enough to look backwards, and must do so; the thri-kreen's arms and fingers are flexible enough to throw in the awkward position.)\n\nA backwards throw requires a thri-kreen specialized in chatkcha. Range is decreased (short/medium/long ranges are 10/20/30 yard) and no attack or damage bonuses due to specialization apply.\n\nA humanoid who specializes with chatkcha (or kyorkcha) gains the ability to use special maneuvers. However, the specialized humanoid must still make Dexterity checks for success. A humanoid cannot make a backwards throw.\n\n## Specialization\n\nSpecialization in chatkcha increases the rate of fire allowed, as given on Table 3.1. The rates are different for kreen and non-kreen. As with other races, specialization with the chatkcha is limited to single-class fighters (and gladiators).\n\n[TABLE_REF: Table 3.1: Specialist Attacks per Round with Chatkcha (or Kyorkcha)]",
+    "tables": [
+      {
+        "tableNumber": "Table 3.1",
+        "title": "Table 3.1: Specialist Attacks per Round with Chatkcha (or Kyorkcha)",
+        "headers": [
+          "Level",
+          "Thri-Kreen",
+          "Non-Kreen"
+        ],
+        "rows": [
+          [
+            "1-6",
+            "3/1",
+            "3/2"
+          ],
+          [
+            "7-12",
+            "4/1",
+            "2/1"
+          ],
+          [
+            "13+",
+            "5/1",
+            "5/2"
+          ]
+        ]
+      }
+    ],
+    "relatedRuleIds": [],
+    "relatedSpells": [],
+    "relatedMagicItems": [],
+    "searchKeywords": [
+      "chatkcha",
+      "kyorkcha",
+      "thri-kreen"
+    ]
+  },
+  {
+    "id": "tka_ch00_combat_skills",
+    "book": "TKA",
+    "chapterNumber": 2,
+    "chapterTitle": "Combat",
+    "breadcrumbs": "Thri-Kreen of Athas > Combat > Combat Skills",
+    "topic": "Combat Skills",
+    "ruleType": "core_rule",
+    "summary": "Whether armed or unarmed, a thri-kreen is a formidable combatant.",
+    "content": "Whether armed or unarmed, a thri-kreen is a formidable combatant. While their abilities have made them favorites as gladiators in the human-dominated Tyr Region, those same abilities have also made them feared opponents throughout the wilds of Athas.\n\n## Natural Weapons\n\nThe natural inclination of an unarmed thri-kreen is to attack with claws and bite. As the natural attack of the thri-kreen, they are comfortable, and from a certain point of view, the thri-kreen appears almost graceful when attacking. Little can stand against an unarmed thri-kreen, but hard materials can be rough on claws and mandibles. Optionally, the DM may allow natural attack to be improved.\n\nA thri-kreen suffers no penalties to attack rolls when using natural weapons. A thri-kreen can never make more than four claw and one bite attack in a round, even if a high level warrior, unless extraordinary means are employed (such as a haste spell or the psionic Metabolic devotion accelerate from The Will and the Way) or if optional specialization is allowed for natural weapons. The thri-kreen's claws are considered slashing (S) weapons, while the mandibles are slashing/piercing (S/P). These natural weapons are subject to breakage.\n\n**Important Note:** Strength bonuses do not apply to natural attack.\n\n*Breakage:* If claw and bite attack are employed against a hard material—steel (or plate armor), stone, the hard shell of a cha'thrang, or similar—the thri-kreen might break a claw or mandible. An attack that inflicts maximum damage against such a surface has a 1-in-20 chance to break the claw or mandible. If this happens, the thri-kreen takes 1d2 hit points of damage, and damage from the claw or bite is reduced by 1 hit point (to a minimum of 1) until it heals in 2d4 days.\n\n## Non-Lethal Attack\n\nAny thri-kreen can use its natural weapons for non-lethal weapon attack, according to the standard rules of the PHB and DMG (-4 attack penalty damage is 50% normal, and half of the damage is temporary).\n\n## Unarmed Combat\n\nWhile the thri-kreen is a dangerous opponent with natural weapons, \"standard\" unarmed combat—that employed by humanoids—is difficult for the thri-kreen to use. Similarly, it is difficult for others to use such attack upon a thri-kreen.\n\n### Punching and Wrestling\n\nUnlike a humanoid, a thri-kreen (even a gladiator) does not automatically know how to punch and wrestle. The typical impulse for a thri-kreen is to use natural weapons. If special unarmed skills are desired, and the character has access to some sort of training, a thri-kreen can spend a weapon proficiency slot to learn punching or wrestling (which cost one slot each).\n\nFew save an occasional gladiator are inclined to do so. A thri-kreen gladiator who learns how to punch or wrestle receives the gladiator bonus for such attack. A thri-kreen who learns how to punch must wear a protective gauntlet on hand(s) used for punching.\n\n*Punching Against a Thri-Kreen:* A thri-kreen can use its natural weapons in defense, as outlined in the PHB and DMG (striking first, with a +4 bonus to each attack and damage roll). Thri-kreen take punching damage normally. Note that a thri-kreen's size and monstrous nature prevent an instant knockout, though the accumulation of temporary damage would render one unconscious at 0 hit points.\n\n*Wrestling a Thri-Kreen:* Likewise, the thri-kreen can use its natural weapons against a wrestling attack, even after the first round. In general, wrestling attacks are not effective against a thri-kreen because of its size, strength, and physical construction (for example, a throw is nearly impossible because of the thri-kreen's weight and balance). Optionally, the DM may allow a special wrestling style that takes advantage of the specific weaknesses of thri-kreen joints and limbs. A thri-kreen's chitin is the equivalent of scale mail against a wrestling attack.\n\n### Natural Attack Specialization (Optional)\n\nSpecialization in natural attack (claw or bite) is available only to gladiators or single-class fighters, and only if the DM approves (and the DM should consider the impact of this carefully before allowing it).\n\n**Bite Specialization:** This is just like any other melee weapon specialization. The thri-kreen receives the number of attacks listed by level with the bite, +1 attack bonus, and a +2 bonus to damage. The extra attack apply only to the bite, so a 7th-level thri-kreen fighter with bite specialization can make two bite attack per round, in addition to the normally allowed attacks with claws and weapons.\n\n**Claw Specialization:** The thri-kreen receives the +1 bonus to attack rolls and +2 bonus to damage rolls. In addition, the thri-kreen receives one additional claw attack per round. When the thri-kreen warrior reaches 10th level, this improves to two extra claw attacks per round.\n\n**Gladiators:** Note that only a thri-kreen gladiator can specialize in both bite and claw. This combination allows a maximum of eight or nine attack per round (six claws and two or three bites) at 13th level and higher.\n\n[TABLE_REF: Table 3.3: Specialist Attacks per Round with Bite or Claw]\n\n### Overbearing Attacks\n\nAn overbearing attack can be used by or against a thri-kreen with no special adjustments. Use the procedures outlined in the PHB and DMG.\n\n### Thri-Kreen and Martial Arts\n\nWhile a thri-kreen cannot use humanoid martial arts at all, the DM might allow special techniques to thri-kreen gladiators as detailed in *The Complete Gladiator*. These would be specially taught and much harder to come by than humanoid martial arts techniques.\n\n## Basic Armed Attack\n\nThe most common thri-kreen melee weapon is the gythka, but the thri-kreen can learn to use any weapon designed for humanoids. Wrist razors are the most popular humanoid weapons among thri-kreen gladiators, because wrist razors are so similar to normal claws. Thri-kreen with high Strength ability scores add attack and damage bonuses to weapon attack.\n\n### Weapon Size\n\nSince most of the thri-kreen's bulk is in its lower body and abdomen, a thri-kreen is considered man-sized when determining which weapons it can wield.\n\n(*) A thri-kreen can wield a small or medium weapon in one hand.\n(*) To wield a large weapon, a thri-kreen must use two hands. A large weapon like a gythka is typically wielded cross-body, with one left hand and one right hand; generally one hand is high, while the other is low, giving the thri-kreen maximum weapon mobility.\n(*) A thri-kreen wielding a large weapon with two hands on the same side suffers a -2 penalty to attack rolls; the weapon's mobility is limited by the thri-kreen's joints.\n(*) A thri-kreen cannot successfully wield more than one weapon of large size at one time.\n\n### Number of Armed Attacks\n\nA thri-kreen can attack once with one weapon without penalty. The thri-kreen can also attack with a bite at the same time.\n(*) A thri-kreen warrior of sufficient level can make multiple attack with one weapon. Extra attack due to level apply only to weapon attack, never to the bite or another natural attack.\n(*) No matter how many weapon attack the warrior makes, an attack with the bite is allowed, as well.\n\n### Handedness\n\nA thri-kreen can use any hand equally well, so long as only one weapon is being used. Handedness has no effect on natural attack (claws) or single weapon attack.\n(*) A thri-kreen has a slight inclination toward either the right or left side. This comes into play only if the thri-kreen wields more than one weapon (see \"Attacking with Two Weapons\" and \"Ambidexterity\").\n(*) The thri-kreen's upper arms and hands are dominant over the lower arms and hands. This matters little to the thri-kreen who wields a single weapon, except as a preference: a thri-kreen who wields a weapon one-handed usually uses an upper hand.\n\n## Expanded Armed Attack\n\nMany factors can affect the number of armed attacks a thri-kreen can make, such as specialization, number of weapons used, and special combat styles from The Complete Fighter's Handbook.\n\n### Weapon Specialization\n\nSpecialization with a weapon works in the standard way for a thri-kreen (bonus attacks, +1 to attacks, +2 to damage). The number of attack possible in a single round are based on the thri-kreen's level, as noted in the PHB under weapon specialization. Only gladiators and single-class fighters can specialize.\n\n### Attacking with Two Weapons\n\nA thri-kreen attacking with two weapons suffers the attack roll penalties outlined in the PHB: -2 with the main weapon and -4 with the secondary weapon. As with humanoid races, using a second weapon allows the thri-kreen to make one extra attack per round. The thri-kreen's secondary weapon must be smaller than the primary weapon, with two exceptions: daggers and wrist razors can both be used as pairs.\n(*) The two weapons used by a thri-kreen must be medium size or smaller.\n(*) A claw attack can be used instead of a second weapon, and can be considered either a primary attack or a secondary attack (the player decides which attack is primary and which is secondary).\n(*) A thri-kreen who wields two weapons must use both in the upper hands or both in the lower hands; they cannot be used in both hands of one side.\n(*) If a thri-kreen uses a weapon and a claw, the claw must correspond to that used to hold the weapon (upper claw with a weapon held in an upper claw). Most thri-kreen who fight with two weapons use them in the upper hands, but this is a matter of preference only.\n(*) Bite attacks can be used normally by a thri-kreen who attack with two weapons.\n(*) A thri-kreen ranger can attack with two weapons without penalty (class ability).\n\n### Ambidexterity\n\nAs detailed in *The Complete fighter's Handbook*, this proficiency allows a character to fight equally well with any hand. Thri-kreen are naturally ambidextrous in regards to natural weapon attack, and can use a weapon equally well in any hand. However, the coordination of multiple weapons is another matter, and a thri-kreen does have an inclination toward either the right or left side that becomes apparent when the thri-kreen tries to wield two weapons at the same time. If the thri-kreen spends a single proficiency slot on ambidexterity, penalties for using the \"secondary\" hand are reduced from -4 to -2. If paired with two-weapon style specialization (see following text), ambidexterity removes all attack roll penalties for using two weapons at the same time.\n\n### Two-weapon style specialization\n\nThis one-slot weapon proficiency, detailed in *The Complete Fighter's Handbook*, lessens penalties for fighting with two weapons, from -2 (primary) and -4 (secondary) to 0 and -2. If the character is also ambidextrous, there are no penalties to attack rolls. This style's specialization also allows the user to wield two weapons of the same size. These weapons must be small or medium in size, and are usually wielded in the upper pair of claws. Optionally, a second slot devoted to this specialization might allow the use of more than two weapons (see the following optional rule).\n\n### Other Style Specializations\n\nThree other styles are listed in *The Complete Fighter's Handbook*: Single Weapon, Weapon and Shield, and Two Hander styles. A thri-kreen select any of them according to the rules in that book.\n\n### Using More Than Two Weapons (Optional)\n\nIf the DM allows, a thri-kreen can devote a second slot to two-weapon style specialization. This allows the thri-kreen to use four weapons at the same time, but is effective only if the thri-kreen has also devoted a proficiency slot to ambidexterity (otherwise, the thri-kreen cannot coordinate all the attacks effectively). Note that a thri-kreen attacking in this manner gets three extra attacks per round. The DM should think carefully about game balance before allowing a thri-kreen this level of ability and specialization.\n\n*This is the only way a thri-kreen can attack with more than two weapons in a round.*\n(*) The weapons wielded with the lower arms must be small, but the weapons wielded with the upper arms can be small or medium.\n(*) A thri-kreen wielding four weapons cannot use more than two types of weapons; each pair of arms (upper and lower) can wield only one type of weapon at a time. For example, a thri-kreen could use the upper arms to swing two impalers and the lower arms for wrist razors, or could use wrist razors on all four arms. The thri-kreen attacking with four arms could not wield a pair of wrist razors plus a quabone and an impaler, or even three wrist razors and an impaler.\n(*) Claw attacks can be substituted for weapon attack by a thri-kreen with ambidexterity and two slots devoted to two-weapon style specialization. Claw attacks must be substituted in pairs. Thus, a thri-kreen might attack with two impalers and two claws, or one impaler and one claw, but not one impaler and three claws.\n\n## Shields and Armor\n\nA slight disadvantage for thri-kreen is that they never wear armor; nobody makes armor to fit them, and they would find it unnatural and uncomfortable as well. Thri-kreen do not miss armor use, their natural Dexterity and chitin provide good enough protection.\n\nThough thri-kreen do not wear armor, they can use shields. A thri-kreen can carry one or two small shields, usually employing the lower, weaker pair of arms. As detailed in the *Player's Handbook*, each small shield protects the thri-kreen from up to two frontal attacks.\n\n## Mass Combat\n\nThri-kreen attacking unintelligent prey surround the prey and attack with a pack strategy. Some thri-kreen move in from one side, and when the prey turns to face them, others move in from the other side. They use hit and run tactics to weaken a powerful opponent before moving in for the kill all at once.\n\nDespite what seems to humanoids to be a chaotic nature, thri-kreen attacks are organized and efficient. A favored tactic against intelligent prey is to form two rough lines. The first line throws chatkcha; once these have struck or begun their return, the second line leaps over the first to attack in melee, using gythka or natural attack.\n\nThri-kreen coordinate their psionic abilities as well. Those with distance powers (often Psychokinetic) are part of the missile line; after throwing their chatkcha, they stay back and use psionics to wreak havoc among the enemy. Those with melee talents (often Psychometabolic) are part of the leaping line; they activate their powers, then leap in. Thri-kreen without psionic talents, or those with the Clairsentient talents join the line for which they are best suited.\n\nPack tactics are sometimes used against intelligent opponents (typically by To'ksa), but thri-kreen more often seek to demoralize and disorganize intelligent opponents. They leap about and keep chatkcha in the air, using swift attacks and retreats, as well as psionics, to add to the confusion. Since many of the more civilized thri-kreen do not eat intelligent prey, a common thri-kreen goal when facing intelligent opponents is to get them to run away and leave any food they were carrying. Raiding packs are an exception to this: they attack, slay, and often feast.",
+    "tables": [
+      {
+        "tableNumber": "Table 3.3",
+        "title": "Table 3.3: Specialist Attacks per Round with Bite or Claw",
+        "headers": [
+          "Level",
+          "Bite",
+          "Claw"
+        ],
+        "rows": [
+          [
+            "1-6",
+            "3/2",
+            "5/1"
+          ],
+          [
+            "7-9",
+            "2/1",
+            "5/1"
+          ],
+          [
+            "10-12",
+            "2/1",
+            "6/1"
+          ],
+          [
+            "13+",
+            "5/2",
+            "6/1"
+          ]
+        ]
+      }
+    ],
+    "relatedRuleIds": [],
+    "relatedSpells": [],
+    "relatedMagicItems": [],
+    "searchKeywords": [
+      "combat",
+      "skills",
+      "thri-kreen"
+    ]
+  },
+  {
+    "id": "tka_ch00_other_thri_kreen_weapons",
+    "book": "TKA",
+    "chapterNumber": 2,
+    "chapterTitle": "Combat",
+    "breadcrumbs": "Thri-Kreen of Athas > Combat > Other Thri-Kreen Weapons",
+    "topic": "Other Thri-Kreen Weapons",
+    "ruleType": "core_rule",
+    "summary": "Thri-kreen make and use a variety of weapons.",
+    "content": "Thri-kreen make and use a variety of weapons. Chief among them are the gythka and the chatkcha, which are the weapons most used (by far) by thri-kreen. Thri-kreen sometimes use non-kreen weapons as well, if they have traveled outside the pack; for example, a thri-kreen gladiator might return to a pack with knowledge of several human weapons. For the most part, however, thri-kreen prefer their racial weapons, especially the gythka and chatkcha. Other racial weapons include the ko• (breaker), the lajav (cracker), and the zerka (meatseeker). While not as common as the gythka and chatkcha, these weapons are found in many pack.\n\nThri-kreen use bone, stone, and wood to make weapons, just as members of other races; they use dasl for chatkcha and occasionally for other weapons. Thri-kreen rarely learn the skills necessary to work metal, for several reasons: first, metal is very rare, and knowledge of metalworking is restricted in some places; second, their culture does not often use fire; third, the materials needed to work metal are not easily transported, so would inhibit a thri-kreen's mobility; and finally, thri-kreen have little use for metal. No thri-kreen pack in the Tyr Region has ever had a thri-kreen blacksmith.\n\n[TABLE_REF: Table 3.2: Weapons List]\n\n¹ Costs are given for comparison; thri-kreen do not use money. Prices are for standard materials, and metal versions of the weapons cost 100 times as much.\n² Non-kreen can throw only one per round (ROF 1).\n\n## Gythka\n\nThe gythka is a polearm with a three-bladed head at each end. It can be used as a thrusting or throwing weapon, and can be wielded as a quarterstaff or set against a charge as well. Thri-kreen sometimes make a child's version of the gythka to help train young thri-kreen in the weapon's use.\n\nThere are a few variations on the gythka (see diagram). Gythka are usually made with heads of stone or bone; some are made with dasl. A common configuration attaches a chatkcha to one end of the shaft, with a standard gythka head at the other end. The chatkcha is usually set with one blade pointing parallel to the staff; on occasion, it is set with a blade perpendicular to the shaft. This configuration, when swung properly, can better pierce the chitin of an insect or another thri-kreen.\n\nPiercing Attack: This special attack is a called shot; while it need not be aimed specifically, the gythka must be swung properly. The wielder suffers a +1 initiative penalty and a -4 attack roll penalty. A successful attack opens a hole in the opponent's chitin; each such hit inflicts normal damage, plus a +1 Armor Class penalty (to a maximum base of Armor Class 10 before magical, psionic, and Dexterity adjustments). Healing time is 1d4 week, unless accelerated by magic or psionics.\n\n## Ko•\n\nThe ko• (breaker) is basically a rock, pointed at one end and rounded on the other. The ko• is a hand-held melee weapon designed to break the chitin of an enemy. The thri-kreen holds a ko• with the rounded end in the palm and the pointed end out. Ko• are wielded in opposite pairs, with standard restrictions and penalties for characters using more than one weapon. Both ko• in a pair are swung at the same time, aiming to catch a portion of the thri-kreen's body between them, and an attack roll must be made for each one. If only one hits, damage is as listed; if both hit, the damage is as listed, and the victim of the strike suffers a piercing attack automatically, as a hole is punched in the chitin.\n\n**Piercing Attack:** A thri-kreen or other creature with an exoskeleton suffers a penalty of +1 AC when hit with a pair of ko•. This can make the victim's base AC as poor as 10. Normal healing takes 1d4 week.\n\n## Lajav\n\nThe lajav (cracker) is a vicious weapon, designed for use against creatures with chitin. It consists of two short, thick rods (usually made of bone or hardwood) connected by a stiff hinge of sorts (something like nunchuks). Only one lajav is wielded at a time, using both arms on one side.\n\nThe lajav is wielded in the upper primary hand for a normal attack roll. If the attack hits, the listed damage is caused. The thri-kreen then makes another attack roll, for the lower arm on the same side, to catch the other end of the lajav. If this roll is successful, the listed damage is caused again as the limb is crushed between the two rods of the lajav. The victim must then make a saving throw vs. paralyzation, or the limb is broken, and cannot be used. Normal healing time is 2d4 weeks.\n\nBecause the lajav has a poor speed factor, a thri-kreen wielding one often carries shields in the off-side hands to fend off the attack of quicker opponents.\n\n## Zerka\n\nThe zerka (meat-seeker) is a short, viciously barbed javelin. While usually wielded as a melee weapon, it can be equipped with a line and thrown, like a short harpoon. Once the zerka hits, the victim needs a successful open doors to pull out the weapon. Failure inflicts a point of damage. Success inflicts a second (normal) damage roll as the weapon is pulled out.\n\nIf the zerka is equipped with a line, the creature hit cannot run far without further injuring itself. The wielder can use the line to pull down or dismount a struck opponent of equal or smaller size. In this case, both attacker and victim make Strength check. If the attacker succeeds and the victim fails, the victim falls (a fall from a mount causes 1d3 points of damage; a fall from a standing position renders the victim prone). If both succeed, the zerka pulls free, inflicting normal damage. In all other cases, nothing happens.\n\nA zerka can be carefully extracted without causing more damage after combat is over.\n\n## Humanoid Weapons\n\nBesides their unique weapons, thri-kreen favor certain human and humanoid weapons. These include forearm axes, knives, nets, puchiks, and wrist razors. These cause normal damage and effects. Knives are described in the *Player's Handbook*, nets in *The Complete Fighter's Handbook*, and wrist razors in the *Dark Sun Rules Book*. Puchiks and forearm axes are described in *The Complete Gladiator's Handbook*. Weapons from other sources (such as bolas and variations of the spiked buckler) might be used as well, if the DM chooses to add them to the campaign. Gladiator thri-kreen are the most likely to use these other weapons.",
+    "tables": [
+      {
+        "tableNumber": "Table 3.2",
+        "title": "Table 3.2: Weapons List",
+        "headers": [
+          "Item",
+          "Cost¹",
+          "Weight",
+          "Size",
+          "Type",
+          "Speed Factor",
+          "Damage S-M",
+          "Damage L",
+          "ROF",
+          "Range S",
+          "Range M",
+          "Range L"
+        ],
+        "rows": [
+          [
+            "Bite",
+            "–",
+            "–",
+            "–",
+            "S/P",
+            "2",
+            "1d4+1",
+            "1d4+1",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Chatkcha, Hand-Held",
+            "1 cp",
+            "–",
+            "S",
+            "S/P",
+            "4",
+            "1d6",
+            "1d4",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Chatkcha, Thrown",
+            "1 cp",
+            "–",
+            "S",
+            "S",
+            "4",
+            "1d6+2",
+            "1d4+1",
+            "2²",
+            "3",
+            "6",
+            "9"
+          ],
+          [
+            "Claw",
+            "–",
+            "–",
+            "–",
+            "S",
+            "1",
+            "1d4",
+            "1d4",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Gythka, Hand-held",
+            "6 cp",
+            "12",
+            "L",
+            "P/B",
+            "9",
+            "2d4",
+            "1d10",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Thrown",
+            "6 cp",
+            "12",
+            "L",
+            "P/B",
+            "8",
+            "1d6+2",
+            "1d8+2",
+            "1",
+            "1",
+            "2",
+            "3"
+          ],
+          [
+            "Child's",
+            "3 cp",
+            "6",
+            "M",
+            "P/B",
+            "7",
+            "1d6",
+            "1d8",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Ko•",
+            "1 cp",
+            "3",
+            "S",
+            "P/B",
+            "3",
+            "1d4",
+            "1d3",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Kyorkcha",
+            "1 sp",
+            "1",
+            "S",
+            "S/B",
+            "6",
+            "1d8+2",
+            "1d6+2",
+            "2²",
+            "3",
+            "6",
+            "9"
+          ],
+          [
+            "Lajav",
+            "3 cp",
+            "4",
+            "L",
+            "B",
+            "8",
+            "1d6",
+            "1d6",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Zerka",
+            "4 cp",
+            "3",
+            "L",
+            "P",
+            "7",
+            "2d4",
+            "1d10",
+            "1",
+            "1",
+            "2",
+            "3"
+          ]
+        ]
+      }
+    ],
+    "relatedRuleIds": [],
+    "relatedSpells": [],
+    "relatedMagicItems": [],
+    "searchKeywords": [
+      "kreen",
+      "other",
+      "thri",
+      "thri-kreen",
+      "weapons"
+    ]
+  },
+  {
+    "id": "tka_ch00_language_and_communication",
+    "book": "TKA",
+    "chapterNumber": 3,
+    "chapterTitle": "Language",
+    "breadcrumbs": "Thri-Kreen of Athas > Language > Language and Communication",
+    "topic": "Language and Communication",
+    "ruleType": "core_rule",
+    "summary": "Thri-kreen have their own language, which is unrelated to non-kreen languages (though the halfling language does have a few words similar to thri-kreen words, or vice versa).",
+    "content": "Thri-kreen have their own language, which is unrelated to non-kreen languages (though the halfling language does have a few words similar to thri-kreen words, or vice versa). The thri-kreen language has its own patterns and rules.\n\n## Grammar\n\nWhile sentence structure is basically the same as for non-kreen languages (subject and verb), there are minor differences. Thri-kreen use all the same parts of speech as non-kreen, except for articles (\"a,\" \"an,\" and \"the\"). They tend to leave such words out when speaking to non-kreen, and sometimes misuse them. For example, a thri-kreen might say \"look at a running elf,\" instead of \"look at the running elf.\"\n\nThri-kreen have a gender-neutral pronoun (ker), as well as male and female pronouns. They do not have different pronouns (such as \"he\" and \"him\") for nominative and subjective cases. Thri-kreen have no \"shorthand\" for possession, as in non-kreen languages, so instead of saying \"that is Req's chatkcha,\" they are more inclined to say \"that chatkcha belongs to Req.\" As with other differences, these cause numerous translation and learning problems for the thri-kreen.\n\nThri-kreen have no plurals, so they often refer to numbers when possible (as in \"I saw crodlu many, mile two, east.\"). \"Thri-kreen\" is both singular and plural, as are \"chatkcha,\" \"gythka,\" and every other noun in the thri-kreen language. Thri-kreen do use some group nouns, such as g', which means family and implies a plural.\n\nThri-kreen often have trouble adapting to using the plural forms of non-kreen languages, and tend to misuse them both ways (\"rocks\" when the thri-kreen means one rock, or \"templar\" when the thri-kreen means to warn the companions of many templars). Fortunately for communication, thri-kreen still refer to the numbers of the things about which he or she talks.\n\n## Word Structure\n\nThri-kreen words are often composite words, made by putting two other words together. For example, \"g'\" means \"blood,\" and is often used to mean \"of the same blood\" or \"family;\" \"tok\" means \"egg;\" and \"mm a'ak\" means \"close companion,\" or \"one who fights at one's side.\" Thus, \"g'tokmma'aak\" means \"clutch-mate,\" or more literally, \"same-egg-family close-companion.\" Thri-kreen sometimes try to carry this practice over to non-kreen languages, combining words to make new ones, when shorter words already exist (as in \"longrock\" for \"wall\").\n\nThri-kreen often use the same word for a verb form and for the person who performs the action described by the verb. For example, \"ka\" means both \"to seek\" and \"seeker.\"\n\n## Slang\n\nThri-kreen do have slang and idioms in their language. Some are related to their biology, such as saying someone was \"hatched from a putrid egg\" or referring to someone naive as a \"larva.\" Other incidences of slang are related to thri-kreen beliefs, such as \"clutch-breaker\" being a vile insult (too vile to be used, really) or threatening to send somebody \"to the Circle\" being a threat to end their life. If directly translated, these idioms seldom make sense to non-kreen, and thri-kreen often have trouble making sense of non-kreen idioms, such as \"you're pulling my leg.\"\n\n## Language and Racial Memory\n\nThe thri-kreen language, because it is learned mostly through racial memory is a mostly static language that changes little from year to year or century to century. Occasionally, new words\nare introduced. It might take generations before these become a widespread part of the racial memory, so in the meantime these must be taught by adult thri-kreen to the children.\n\n## Language of the North\n\nTohr-kreen of the north speak their own language, which is closely related to the thri-kreen language of the Tyr Region. For example, \"kek\" is the thri-kreen word for \"raiding pack,\" while \"kulak\" is the tohr-kreen word for any type of pack. The words are similar enough to show a common root, but different enough to create communication problems.\n\nBecause of all these differences, and since thri-kreen is a simpler language than most other non-kreen languages, thri-kreen prefer that members of other races learn to speak the kreen language, rather than the thri-kreen learning what is to them a needlessly complicated language. However, there are other problems for humans trying to learn thri-kreen, including non-verbal forms of communication used by thti-kreen, and the differences in structure of the thri-kreen vocalizing equipment.\n\n## Sounds\n\nThri-kreen voices all sound similar to non-kreen: rasping and dry. Generally, only thri-kreen can tell the difference between thri-kreen voices, because they are used to listening for the subtleties of the thri-kreen voice. Thri-kreen do not laugh naturally, but can learn to imitate the sound if they spend time among the non-kreen; a thri-kreen \"laugh\" is a brittle, staccato sound, something like a series of glass hitting glass. A thri-kreen gasp (as in pain) contains a series of quick clicks, in addition to an intake of breath.\n\nThe structure of the thri-kreen mouth prevents them from make all the sounds that humans and other non-kreen can. Thri-kreen can, however, make other sounds difficult or impossible for humans to reproduce, and use a few sounds or other vocalizations uncommon among the non-kreen races.\n\nThri-kreen do not have lips, so cannot duplicate sounds that require lips, like *p*, *b*, *f*, *v*, and *m*. They can duplicate such sounds somewhat, like using a pop (*•*) in place of *p* or *b*, or humming (*mm*) to make an *m* sound, or using the *th* or *s* sounds to approximate *f* and *v*. Less accomplished thri-kreen simply substitute simple sounds like *k* or *d* for the impossible sounds.\n\nThri-kreen words do not contain sounds that require lips; those sounds are considered useless, and thri-kreen sometimes consider non-kreen who use them extensively to be rather rude (both the pop and the grind have this implication in thri-kreen, note these sounds in the word for \"clutchbreaker\", \\( g'tokchko• \\)). For example, a human named Povim would be considered unfriendly, because his name cannot be pronounced by thri-kreen; a close approximation would be \\( •othi mm \\).\n\nAs indicated, thri-kreen can also make several sounds impossible or unusual for humans. These include the click, the pop, the grind, the hum, and the glottal stop.\n\n*Click:* The click (represented by \"qh\") is made by clicking the mandibles together; non-kreen can attempt to duplicate the sound by clapping, snapping fingers, closing the mouth quickly so the teeth hit together, hitting two stones together, or even by using the psionic power of create sound. More lazy non-kreen use the \\( ch \\) to approximate. Thri-kreen appreciate the efforts, but the difference is obvious, except for psionic duplication. The click is not terribly common in the thri-kreen language.\n\n*Pop:* The pop (represented by \"•\") is made by the thri-kreen by popping the tongue against either side of the jaw. Again, the sound is impossible for humans to accurately reproduce, though the tongue click or pop (made by drawing the tongue up against the edge of the hard palate, where the \\( t \\) sound is made, then releasing the tongue to click against the bottom of the mouth) comes close. A non-kreen might also try to duplicate the sound by flicking a finger against the throat. Again, the difference is obvious, but the thri-kreen appreciate the effort. The pop is relatively common in the thri-kreen language.\n\n*Grind:* The grind (represented by \"xh\") is an audible blast of air from the lungs, accompanied by a gnashing (but not clicking of the jaws and mandible parts. A non-kreen can growl to achieve a relatively close duplication. The grind is rare in the thri-kreen language, and is used primarily for insults and derogatory terms.\n\n*Hum:* The hum (represented by \"mm\") is a buzzing sort of hum, which can be best approximated by a human's open-mouthed hum, with a light \"Z\" sound made at the same time. Most humans compromise by using the m sound. The hum is rare in the thri-kreen language.\n\n*Glottal Stop:* The glottal stop is one of the more common sounds of the thri-kreen language (represented by an apostrophe). This sound is simply a brief stop in sound, and is easily duplicated by humans, if they care to try (many do not). For example, the name Ka'cha is not pronounced \"KahCHAH;\" instead, it is pronounced \"Kah-(stop)-CHAH.\" The glottal stop is more apparent in words where two consonants are together, when they would not be normally in a human word. A human trying to pronounce \"kcha\" comes close to making a glottal stop, a sort of nonvocal pause, between the k and ch sounds, because the sounds do not flow into one another. Non-kreen might ignore glottal stops or replace them with slower and less elegant sounds, like \"uh\" or \"ah.\"\n\n## Non-Verbal Communication\n\nAnother factor that makes it difficult for thri-kreen to communicate with non-kreen is the non-verbal component of thri-kreen speech. Thri-kreen sometimes use pheromones to convey emotions; since their voices do not carry emotional range well, this is rather important. Unfortunately, non-kreen cannot detect the thri-kreen pheromones (unless they use a psionic power such as heightened senses; even then, it takes practice to correctly interpret the sometimes subtle variances in the pheromone discharges).\n\n*Sign Language:* Thri-kreen also use movements of antennae, mandibles, and sometimes hands, to indicate certain words or phrases. For example, in To'ksa, crossed antennae indicate a negative, while antennae spread apart indicates a positive, and waving antennae indicates confusion, similar to a shrug in a human. In Jeral, whose antennae are quite small, such signals are even more subtle, usually indicated just by the direction in which the antennae point (this is about as subtle as a human or elf raising an eyebrow, or bringing them together). A thri-kreen \"smiles\" to indicate happiness or humor by bending the antennae forward and closing the mandibles.\n\n*Volume:* Thri-kreen also use volume to indicate certain types of emotion. Soft volumes generally indicate more passionate emotions, such as admiration, awe, friendship, love, or tokchak. High volumes indicate excitement, from anger to happiness. Pheromones accompany the volume changes to indicate exactly which emotion is meant. A soft-spoken thri-kreen phrase might be inaudible against a gentle breeze, and the thri-kreen will be reluctant to change the meaning of the words by \"speaking up.\" At the opposite extreme, an excited thri-kreen might \"shout\" every word. Those who deal frequently with thri-kreen come to accept these nuances of speech, which are largely unalterable for the thri-kreen.\n\n## Names\n\nThri-kreen are given names when very young; these are usually simple names, related to something the young thri-kreen sees, or something the larva is observed doing. When the thri-kreen reaches adulthood, at the end of the chatkcha ceremony, he or she takes a new name that reflects goals or some other aspect of the life path to be pursued. There is no difference between male and female names; any name that can be used for a female thri-kreen can also be used for a male, and vice versa. Listed are several thri-kreen names and their translations.\n\n[TABLE_REF: Thri-Kreen Names]\n\n## Writing\n\nThri-kreen in the Tyr Region generally do not write in their own language, though a few earn to use human lettering. Non-kreen letters are insufficient to express the sounds of the thri-kreen language.\n\nIn the North, however, tohr-kreen and thri-kreen use a form of lettering. The tohr-kreen writing is syllabic; in other words, each symbol stands for a certain syllable. Though it has more than 100 basic symbols, this writing system, used for the composite language of the thri-kreen, can compress a lot of information into a comparatively small space.\n\nTo most non-kreen, written kreen looks like a series of random slash marks. A thri-kreen who sees written kreen is instinctively able to read it, due to racial memory, if a successful Intelligence check is made. The writing can be learned formally by studying with a mentor, or by practicing with accessing racial memory. In either case, the thri-kreen must spend a proficiency slot to learn how to write the kreen syllabary (see \"Proficiencies\" in Chapter Three).",
+    "tables": [
+      {
+        "tableNumber": "",
+        "title": "Thri-Kreen Names",
+        "headers": [
+          "Name",
+          "Meaning"
+        ],
+        "rows": [
+          [
+            "Cha'ka",
+            "knowledge seeker; synonym for ka'cha"
+          ],
+          [
+            "Chuka-tet",
+            "seeker of detailed information, who also enlightens"
+          ],
+          [
+            "Drasna",
+            "she-who-sleeps-at-night; a thri-kreen name for a human woman"
+          ],
+          [
+            "Hakka",
+            "lost seeker, seeker who never finds, wanderer"
+          ],
+          [
+            "Ka'cha",
+            "seeker of knowledge"
+          ],
+          [
+            "Ka'tho",
+            "seeker of experience; thrillseeker"
+          ],
+          [
+            "Klik-chaka'd",
+            "teacher of mindpower and reverence; one who teaches psionics and the way of priests"
+          ],
+          [
+            "Lakta-cho",
+            "finder and returner of lost knowledge"
+          ]
+        ]
+      }
+    ],
+    "relatedRuleIds": [],
+    "relatedSpells": [],
+    "relatedMagicItems": [],
+    "searchKeywords": [
+      "communication",
+      "language",
+      "thri-kreen"
+    ]
+  },
+  {
+    "id": "tka_ch00_glossary",
+    "book": "TKA",
+    "chapterNumber": 3,
+    "chapterTitle": "Language",
+    "breadcrumbs": "Thri-Kreen of Athas > Language > Glossary",
+    "topic": "Glossary",
+    "ruleType": "core_rule",
+    "summary": "Following are several thri-kreen words, listed alphabetically, and their approximate translations in the Common human language.",
+    "content": "Following are several thri-kreen words, listed alphabetically, and their approximate translations in the Common human language. Note that many words are composed of other words, and note how many words are related to different types of hunting and searching. Particularly important words appear in *italic* lettering.\n\n[TABLE_REF: Thri-Kreen Glossary]",
+    "tables": [
+      {
+        "tableNumber": "",
+        "title": "Thri-Kreen Glossary",
+        "headers": [
+          "Thri-kreen word",
+          "Translation"
+        ],
+        "rows": [
+          [
+            "ak",
+            "combat"
+          ],
+          [
+            "ch",
+            "yellow"
+          ],
+          [
+            "cha",
+            "knowledge"
+          ],
+          [
+            "chak",
+            "holds knowledge, or holder of knowledge; the mind"
+          ],
+          [
+            "chaka",
+            "mind power, the Way; psionics"
+          ],
+          [
+            "chakak",
+            "mind-warrior (psionicist)"
+          ],
+          [
+            "chak'sa",
+            "mind's home; head"
+          ],
+          [
+            "chat",
+            "hold knowledge; to remember, one who remembers"
+          ],
+          [
+            "chatkcha",
+            "rememberer-who-ends-knowledge; the thri-kreen missile weapon that ends knowledge (kills), and \"remembers\" how to return to the thrower; killer-that-remembers"
+          ],
+          [
+            "chil",
+            "knowledge of biochemical science"
+          ],
+          [
+            "cho",
+            "lost or unusual knowledge"
+          ],
+          [
+            "chtik",
+            "yellow earth; also a region known to non-kreen as the Yellow Hills"
+          ],
+          [
+            "Chtik-tek",
+            "the hunting pack that ranges the Yellow Hills area"
+          ],
+          [
+            "chu",
+            "detailed information"
+          ],
+          [
+            "chuchaka",
+            "someone with detailed knowledge of the Way; a skilled psionicist"
+          ],
+          [
+            "da",
+            "reverence: the way of priests"
+          ],
+          [
+            "dasl",
+            "crystal; specifically thri-kreen crystal, made by combining venom, herbs, and sand; implies reverence (compare to *da*)"
+          ],
+          [
+            "dej",
+            "circle"
+          ],
+          [
+            "dra",
+            "mammal-person of unspecified gender; usual shorthand for mammal people; has also come to mean sleeper or to sleep"
+          ],
+          [
+            "dra-trin",
+            "sleepers-like-people; old name for mammal people; seldom used because *trin* implies insectoid/mantis nature"
+          ],
+          [
+            "draj",
+            "male sleeper-person; male human, dwarf, elf, mul, halfling, or half-giant"
+          ],
+          [
+            "dras",
+            "female sleeper-person; female human, dwarf, elf, mul, halfling, or half-giant"
+          ],
+          [
+            "dre",
+            "death; to die; compare to \"dra\""
+          ],
+          [
+            "dul",
+            "move; mover"
+          ],
+          [
+            "g",
+            "blood; family; of the same blood"
+          ],
+          [
+            "g'tok",
+            "egg-family; clutch"
+          ],
+          [
+            "g'tok-dra",
+            "a clutch with sleepers; any group of humanoids"
+          ],
+          [
+            "g'tok-hoz",
+            "clutchleader"
+          ],
+          [
+            "g'tokmma'ak",
+            "clutchmate"
+          ],
+          [
+            "gak",
+            "blood of combat; food which fortifies one for combat, or a slang term for someone with the \"heart of a warrior\""
+          ],
+          [
+            "gyth",
+            "blood or ichor, compare to g'"
+          ],
+          [
+            "gythka",
+            "bloodseeker; the polearm of the thri-kreen"
+          ],
+          [
+            "gyth'sa",
+            "the organ that produces blood; home of blood"
+          ],
+          [
+            "gyththik",
+            "the blood hunt, a vendetta"
+          ],
+          [
+            "haaz",
+            "(tohr-kreen) leader, compare to the thri-kreen term \"hoz\""
+          ],
+          [
+            "haazik",
+            "(tohr-kreen) leader-priest or \"leader-of-change;\" in northern tohr-kreen society, priests devoted to the tohr-kreen \"Haazi\" (emperor, more or less), something like a human Templar of the Tablelands"
+          ],
+          [
+            "hak",
+            "lost; to lose"
+          ],
+          [
+            "hoz",
+            "leader"
+          ],
+          [
+            "i k",
+            "priest"
+          ],
+          [
+            "iksed",
+            "priest of water"
+          ],
+          [
+            "ikriik",
+            "priest of fire"
+          ],
+          [
+            "ikthok",
+            "priest of earth"
+          ],
+          [
+            "ik-kos",
+            "priest of air"
+          ],
+          [
+            "J'ez",
+            "a subspecies of kreen, unknown in the Tyr Region, with black chitin, organized and militant"
+          ],
+          [
+            "J'hol",
+            "a subspecies of kreen, unknown in the Tyr Region, with red chitin, fiery and merciless"
+          ],
+          [
+            "jalath'gak",
+            "huge flying insect, used as a draft beast after the wings have been clipped"
+          ],
+          [
+            "jav",
+            "to crack; one who cracks"
+          ],
+          [
+            "feral",
+            "a subspecies of kreen, found in the Tyr Region, with yellow chitin and less developed antennae, the most cultured of the kreen"
+          ],
+          [
+            "jidz",
+            "chitin (also shell)"
+          ],
+          [
+            "k",
+            "to end; one who ends"
+          ],
+          [
+            "ka",
+            "to seek; seeker"
+          ],
+          [
+            "kak",
+            "warrior, seeks combat (seek+tcombat)"
+          ],
+          [
+            "kalak",
+            "seeker/finder one skilled in reconnaissance (tohr-kreen) pack, with connotations of \"nation,\" compare to the thri-kreen term \"kek\""
+          ],
+          [
+            "kano",
+            "seeks day, akin to seek heat; cold; the name for the thri-kreen's cold \"hell\""
+          ],
+          [
+            "kcha",
+            "to end knowledge; to kill; killer"
+          ],
+          [
+            "kek",
+            "a raiding pack; compare to tek and to kak"
+          ],
+          [
+            "kik",
+            "to raid; raider, akin to \"thief\""
+          ],
+          [
+            "kil",
+            "learning (compare to kik, \"teacher\")"
+          ],
+          [
+            "kiltektet",
+            "learning-pack-who-enlightens; the pack that learns and then takes the knowledge to others; a member of that pack"
+          ],
+          [
+            "klik",
+            "teacher"
+          ],
+          [
+            "ko",
+            "breaker, to break, as in \"to put a hole in,\" also a thri-kreen weapon designed to put holes in chitin"
+          ],
+          [
+            "kos",
+            "air"
+          ],
+          [
+            "kos-r-iik",
+            "sky-fire; the sun"
+          ],
+          [
+            "koskcha",
+            "air-killer, general term for a flying predator"
+          ],
+          [
+            "kreen",
+            "people; person (sapient insect-person with mantis qualities)"
+          ],
+          [
+            "kyor",
+            "vengeance, avenger"
+          ],
+          [
+            "kyorkcha",
+            "avenging killer, a tohr-kreen weapon"
+          ],
+          [
+            "la",
+            "finder, to find"
+          ],
+          [
+            "laj",
+            "to catch"
+          ],
+          [
+            "lajav",
+            "catcher-cracker, a thri-kreen weapon constructed like a crab leg cracker"
+          ],
+          [
+            "lak",
+            "to find for combat; reconnaissance as if a military scout; or: to find and fight"
+          ],
+          [
+            "lakta-cho",
+            "finder of lost knowledge; implies knowledge is of a combat skill or technique"
+          ],
+          [
+            "mma'ak",
+            "close friend; prospective clutchmate; sometimes shorthand for clutchmate; compare to \"ak;\" this implies someone who fights at one's side"
+          ],
+          [
+            "na",
+            "night; each night"
+          ],
+          [
+            "no",
+            "day"
+          ],
+          [
+            "qhari",
+            "bringer to bring"
+          ],
+          [
+            "qhan-cho",
+            "bringer of lost or unknown knowledge; compare to lakta-cho"
+          ],
+          [
+            "riik",
+            "fire"
+          ],
+          [
+            "sa",
+            "home (not necessarily a single place, this may be a wide area)"
+          ],
+          [
+            "si",
+            "grows; one who grows or causes growth; compare to \"zi\""
+          ],
+          [
+            "si'tsa",
+            "(tohr kreen) grows-home; a builder"
+          ],
+          [
+            "sed",
+            "water"
+          ],
+          [
+            "T'keech",
+            "a subspecies of kreen, unknown in the Tyr Region, with green chitin, simple (in the sense of pure) and unsophisticated"
+          ],
+          [
+            "ta",
+            "retriever, to retrieve; one who returns something"
+          ],
+          [
+            "tek",
+            "a pack of thri-kreen; specifically a hunting pack; compare to tik"
+          ],
+          [
+            "tek-hoz",
+            "packleader"
+          ],
+          [
+            "tekchakak",
+            "psionicist for a pack"
+          ],
+          [
+            "tekmma'ak",
+            "packmate"
+          ],
+          [
+            "tet",
+            "to enlighten; one who enlightens; similar to \"missionary\""
+          ],
+          [
+            "tho",
+            "life; experience"
+          ],
+          [
+            "thok",
+            "egg of all life; earth (compare to tok, \"egg,\" and tho, \"life\")"
+          ],
+          [
+            "thri",
+            "nomad; nomadic; implies hunter"
+          ],
+          [
+            "thiri-kreen",
+            "nomad people"
+          ],
+          [
+            "thri-trin",
+            "savage nomadic almost-people (see trin)"
+          ],
+          [
+            "tik",
+            "hunter, to hunt; compare to \"ik,\" \"priest\""
+          ],
+          [
+            "tik-dul",
+            "hunt-move; a dance-like ritual emulating the movements common in the hunt"
+          ],
+          [
+            "tik-tik",
+            "hunts hunters; a guardian"
+          ],
+          [
+            "tikchak",
+            "hunt-mind; the hunter mentality"
+          ],
+          [
+            "tikik",
+            "hunter-priest, connotations of protection; slang for druid"
+          ],
+          [
+            "To'ksa",
+            "a subspecies of kreen, the most numerous type in the Tyr Region, with yellow chitin and long antennae, of barbaric culture settled; similar to \"civilized\""
+          ],
+          [
+            "tohr",
+            "settled people"
+          ],
+          [
+            "tohr-kreen",
+            "egg"
+          ],
+          [
+            "tok",
+            "egg-mind; the clutch mentality"
+          ],
+          [
+            "Tokdi",
+            "a subspecies of kreen, unknown in the Tyr Region, with purple chitin, reclusive near-person (insectoid); usually mantis in nature; slang for the brutish thri-trin, who have two arms and four legs."
+          ],
+          [
+            "trin",
+            "meat"
+          ],
+          [
+            "zer",
+            "meat-seeker, a thri-kreen weapon much like a harpoon"
+          ],
+          [
+            "zi",
+            "to change; to molt; one who effects change or goes through change; one who molts"
+          ],
+          [
+            "zik",
+            "to change radically; one who effects or goes through such change; compare to \"ik,\" \"priest;\" \"zik\" also has pseudo-religious connotations"
+          ],
+          [
+            "zik-chil",
+            "\"priest-of-change;\" pale tohr-kreen, cold and manipulative, creators of zik-trin, revered and feared by the tohr-kreen"
+          ],
+          [
+            "zik-thok",
+            "changes-earth; the herb that catalyzes thri-kreen venom to allow production of dasl"
+          ],
+          [
+            "zik-trin",
+            "an altered near-person (the tohr-kreen monster)"
+          ],
+          [
+            "zik-trin'ts",
+            "an altered near-person who acts as a scout/retriever of information"
+          ],
+          [
+            "zik-trin'ak",
+            "an altered near-person who is a combat specialist"
+          ]
+        ]
+      }
+    ],
+    "relatedRuleIds": [],
+    "relatedSpells": [],
+    "relatedMagicItems": [],
+    "searchKeywords": [
+      "glossary",
+      "thri-kreen"
+    ]
   }
 ]

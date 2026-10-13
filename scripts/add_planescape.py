@@ -189,7 +189,8 @@ def build_table(parsed, spec):
     if headers and len(headers) < width:
         headers = headers + [""] * (width - len(headers))
     rows = [[fix_dice(c) for c in r] + [""] * (width - len(r)) for r in rows]
-    number = re.match(r"Table (\d+)", spec["title"])
+    # "Table 7.1" (TKA) fica com o ponto; "Table 13A" continua "Table 13".
+    number = re.match(r"Table (\d+(?:\.\d+)?)", spec["title"])
     table = {"tableNumber": f"Table {number.group(1)}" if number else "", "title": spec["title"], "headers": headers, "rows": rows}
     return table, notes
 
