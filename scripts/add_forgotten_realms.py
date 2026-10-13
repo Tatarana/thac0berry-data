@@ -182,6 +182,8 @@ def main():
             table["rows"] = [r for r in table["rows"] if any(c.strip() for c in r)]
         if rule["id"] in ids:
             index = next(i for i, r in enumerate(rules) if r["id"] == rule["id"])
+            # O número do capítulo vem de number_chapters, não daqui.
+            rule["chapterNumber"] = rules[index]["chapterNumber"]
             if refresh and rules[index] != rule:
                 rules[index] = rule
                 added += 1

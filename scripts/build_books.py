@@ -51,6 +51,8 @@ BOOKS = [
     ("SofS", "Forgotten Realms"),
     ("FA", "Forgotten Realms"),
     ("PP", "Forgotten Realms"),
+    # GT4b (2026-10-12): Dragonlance, pelas páginas da wiki (scripts/add_dragonlance.py).
+    ("TotL", "Dragonlance"),
 ]
 
 
