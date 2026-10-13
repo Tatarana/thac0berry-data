@@ -136,5 +136,17 @@
     "title": "Council of Wyrms Setting",
     "setting": "Council of Wyrms",
     "order": 23
+  },
+  {
+    "id": "AA",
+    "title": "Arabian Adventures",
+    "setting": "Al-Qadim",
+    "order": 24
+  },
+  {
+    "id": "CShaH",
+    "title": "The Complete Sha'ir's Handbook",
+    "setting": "Al-Qadim",
+    "order": 25
   }
 ]

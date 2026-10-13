@@ -55,6 +55,9 @@ BOOKS = [
     ("TotL", "Dragonlance"),
     # GT4b (2026-10-12): Council of Wyrms, pelas páginas da wiki (scripts/add_council_of_wyrms.py).
     ("CWS", "Council of Wyrms"),
+    # GT4b (2026-10-12): Al-Qadim, pelas páginas da wiki (scripts/add_al_qadim.py).
+    ("AA", "Al-Qadim"),
+    ("CShaH", "Al-Qadim"),
 ]
 
 
