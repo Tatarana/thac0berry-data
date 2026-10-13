@@ -19,6 +19,10 @@ branco (CBarbH, CPaH, CBH) tinham, no resumo e no texto, o código de imagem
 da wiki ("File:Paladin Kit Sheet.png|thumb|…"), sem a imagem. Aqui o `content`
 também muda: os dois viram uma frase dizendo o que a ficha é.
 
+Na quarta leva (2026-10-13), 3 regras do CFH com texto de verdade tinham
+linhas soltas do código de imagem no `content`; cada uma vira "(Image in the
+book: <legenda>.)". O `summary` dessas não muda.
+
 Cada troca é explícita: regra, resumo antigo (conferido) e resumo novo.
 Rodar de novo não muda nada (o resumo antigo já não existe).
 
@@ -26,6 +30,7 @@ Uso:  python scripts/fix_rule_summaries.py [--dry-run]
 """
 import json
 import os
+import re
 import sys
 
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
@@ -123,6 +128,16 @@ SHEETS = [
      "and is not reproduced here."),
 ]
 
+# Quarta leva: regras com texto de verdade, mas com linhas soltas do código de
+# imagem da wiki no `content`. Cada linha vira "(Image in the book: <legenda>.)",
+# com a legenda que vem depois do último `|`.
+IMAGE_LINES = [
+    "cfh_ch01_character_sheet",
+    "cfh_ch02_creating_new_kits",
+    "cfh_ch04_the_combat_sheet",
+]
+IMAGE_LINE = re.compile(r"^File:[^\n|]+(?:\|[^\n|]*)*\|([^\n|]+?)\s*$", re.M)
+
 # (id da regra, marca do começo): resumo cortado antes do fechamento do
 # negrito/itálico, então a marca de abertura ficava sem par e aparecia crua.
 UNPAIRED = [
@@ -160,6 +175,16 @@ def main():
         rule["content"] = new
         total += 1
         print(f"{rule_id}: {new}")
+    for rule_id in IMAGE_LINES:
+        rule = by_id.get(rule_id)
+        if rule is None:
+            raise SystemExit(f"regra não encontrada: {rule_id}")
+        rule["content"], n = IMAGE_LINE.subn(r"(Image in the book: \1.)", rule["content"])
+        if "File:" in rule["content"]:
+            raise SystemExit(f"{rule_id}: código de imagem fora do formato esperado")
+        total += n
+        if n:
+            print(f"{rule_id}: {n} linha(s) de imagem")
     for rule_id, mark in UNPAIRED:
         rule = by_id.get(rule_id)
         if rule is None:
