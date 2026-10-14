@@ -7828,122 +7828,142 @@
         "tableNumber": "Table 59",
         "title": "Table 59: Encounter Reactions",
         "headers": [
-          "Friendly",
-          "Indifferent",
-          "Threatening",
-          "Hostile"
+          "Modified Die Roll (2d10)",
+          "Friendly PCs",
+          "Indifferent PCs",
+          "Threatening PCs",
+          "Hostile PCs"
         ],
         "rows": [
           [
             "2 or less",
             "Friendly",
             "Friendly",
-            "Friendly"
+            "Friendly",
+            "Flight"
           ],
           [
             "3",
             "Friendly",
             "Friendly",
-            "Friendly"
+            "Friendly",
+            "Flight"
           ],
           [
             "4",
             "Friendly",
             "Friendly",
-            "Cautious"
+            "Cautious",
+            "Flight"
           ],
           [
             "5",
             "Friendly",
             "Friendly",
-            "Cautious"
+            "Cautious",
+            "Flight"
           ],
           [
             "6",
             "Friendly",
             "Friendly",
+            "Cautious",
             "Cautious"
           ],
           [
             "7",
             "Friendly",
             "Indifferent",
+            "Cautious",
             "Cautious"
           ],
           [
             "8",
             "Indifferent",
             "Indifferent",
+            "Cautious",
             "Cautious"
           ],
           [
             "9",
             "Indifferent",
             "Indifferent",
-            "Cautious"
+            "Cautious",
+            "Threatening"
           ],
           [
             "10",
             "Indifferent",
             "Indifferent",
+            "Threatening",
             "Threatening"
           ],
           [
             "11",
             "Indifferent",
             "Indifferent",
+            "Threatening",
             "Threatening"
           ],
           [
             "12",
             "Cautious",
             "Cautious",
+            "Threatening",
             "Threatening"
           ],
           [
             "13",
             "Cautious",
             "Cautious",
-            "Threatening"
+            "Threatening",
+            "Hostile"
           ],
           [
             "14",
             "Cautious",
             "Cautious",
-            "Threatening"
+            "Threatening",
+            "Hostile"
           ],
           [
             "15",
             "Cautious",
             "Threatening",
-            "Threatening"
+            "Threatening",
+            "Hostile"
           ],
           [
             "16",
             "Threatening",
             "Threatening",
+            "Hostile",
             "Hostile"
           ],
           [
             "17",
             "Threatening",
             "Threatening",
+            "Hostile",
             "Hostile"
           ],
           [
             "18",
             "Threatening",
             "Threatening",
+            "Hostile",
             "Hostile"
           ],
           [
             "19",
             "Hostile",
             "Hostile",
+            "Hostile",
             "Hostile"
           ],
           [
             "20",
+            "Hostile",
             "Hostile",
             "Hostile",
             "Hostile"
