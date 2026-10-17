@@ -1264,6 +1264,17 @@
             }
           ]
         },
+        "vistaniTribe": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "Tribo de Vistani (Domains of Dread, Table 68; só faz sentido com a raça \"Half-Vistani\") — feito primeiro na web."
+        },
         "skin": {
           "anyOf": [
             {
