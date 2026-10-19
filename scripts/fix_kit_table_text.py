@@ -61,7 +61,9 @@ OLD_MIND_MONK_TABLE = (
     "- 16* | 9 | 3 | 3 | 3"
 )
 
-NEW_MIND_MONK_TABLE = (
+# Primeira correção (2026-10-18), no formato de lista; trocada pela tabela em
+# markdown abaixo a pedido do usuário (2026-10-19).
+LIST_MIND_MONK_TABLE = (
     "**Mind Monk's Level / Casting Level / Priest Spell Levels 1 / Priest Spell Levels 2 / Priest Spell Levels 3**\n"
     "- Mind Monk's Level: 8, Casting Level: 1, Priest Spell Levels 1: 1, Priest Spell Levels 2: —, Priest Spell Levels 3: —\n"
     "- Mind Monk's Level: 9, Casting Level: 2, Priest Spell Levels 1: 2, Priest Spell Levels 2: —, Priest Spell Levels 3: —\n"
@@ -72,6 +74,23 @@ NEW_MIND_MONK_TABLE = (
     "- Mind Monk's Level: 14, Casting Level: 7, Priest Spell Levels 1: 3, Priest Spell Levels 2: 2, Priest Spell Levels 3: 2\n"
     "- Mind Monk's Level: 15, Casting Level: 8, Priest Spell Levels 1: 3, Priest Spell Levels 2: 3, Priest Spell Levels 3: 2\n"
     "- Mind Monk's Level: 16*, Casting Level: 9, Priest Spell Levels 1: 3, Priest Spell Levels 2: 3, Priest Spell Levels 3: 3"
+)
+
+# Tabela em markdown ("| … |" + linha "---"), como as tabelas dos suplementos
+# em rules.json; a ficha do kit na web a mostra como tabela de verdade.
+NEW_MIND_MONK_TABLE = (
+    "**Mind Monk's Spell Advancement**\n\n"
+    "| Mind Monk's Level | Casting Level | Priest Spell Level 1 | Priest Spell Level 2 | Priest Spell Level 3 |\n"
+    "| --- | --- | --- | --- | --- |\n"
+    "| 8 | 1 | 1 | — | — |\n"
+    "| 9 | 2 | 2 | — | — |\n"
+    "| 10 | 3 | 2 | 1 | — |\n"
+    "| 11 | 4 | 2 | 2 | — |\n"
+    "| 12 | 5 | 2 | 2 | 1 |\n"
+    "| 13 | 6 | 3 | 2 | 1 |\n"
+    "| 14 | 7 | 3 | 2 | 2 |\n"
+    "| 15 | 8 | 3 | 3 | 2 |\n"
+    "| 16* | 9 | 3 | 3 | 3 |"
 )
 
 OLD_FERALAN_TABLE = (
@@ -264,9 +283,9 @@ NEW_MILITANT_PSIONICIST_TABLE = (
     "- Level: 4, Dis.: 1, Sci.: 1, Dev.: 2"
 )
 
-# kit id -> (trecho quebrado, trecho certo)
+# kit id -> (trecho quebrado, ou tupla de versões antigas; trecho certo)
 FIXES = {
-    "mind_monk": (OLD_MIND_MONK_TABLE, NEW_MIND_MONK_TABLE),
+    "mind_monk": ((OLD_MIND_MONK_TABLE, LIST_MIND_MONK_TABLE), NEW_MIND_MONK_TABLE),
     "militant_psionicist": (OLD_MILITANT_PSIONICIST_TABLE, NEW_MILITANT_PSIONICIST_TABLE),
     "feralan": (OLD_FERALAN_TABLE, NEW_FERALAN_TABLE),
     "ghosthunter": (OLD_GHOSTHUNTER_TABLE, NEW_GHOSTHUNTER_TABLE),
@@ -291,9 +310,10 @@ def main():
         if new in text:
             print(f"{kit_id}: já corrigido")
             continue
-        if old not in text:
+        found = next((o for o in (old if isinstance(old, tuple) else (old,)) if o in text), None)
+        if found is None:
             raise SystemExit(f"{kit_id}: trecho quebrado não encontrado (a ficha mudou?)")
-        kit["description"]["fullText"] = text.replace(old, new, 1)
+        kit["description"]["fullText"] = text.replace(found, new, 1)
         changed += 1
         print(f"{kit_id}: tabela corrigida")
     if dry or changed == 0:
