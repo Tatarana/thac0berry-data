@@ -104,7 +104,7 @@ OLD_FERALAN_TABLE = (
     "- 16+ | 5 | 3 | 2"
 )
 
-NEW_FERALAN_TABLE = (
+LIST_FERALAN_TABLE = (
     "**Feralan Level / Casting Level / Priest Spell Level* 1 / Priest Spell Level* 2**\n"
     "- Feralan Level: 1-7, Casting Level: —, Priest Spell Level* 1: —, Priest Spell Level* 2: —\n"
     "- Feralan Level: 8-9, Casting Level: 1, Priest Spell Level* 1: 1, Priest Spell Level* 2: —\n"
@@ -131,7 +131,7 @@ OLD_GHOSTHUNTER_TABLE = (
     "- 14+ | D* | D* | D* | D* | D* | D | D | T | T | 4 | 7 | 10 | 13"
 )
 
-NEW_GHOSTHUNTER_TABLE = (
+LIST_GHOSTHUNTER_TABLE = (
     "**Ghosthunter / Category of Undead 1 / Category of Undead 2 / Category of Undead 3 / Category of Undead 4 / Category of Undead 5 / Category of Undead 6 / Category of Undead 7 / Category of Undead 8 / Category of Undead 9 / Category of Undead 10 / Category of Undead 11 / Category of Undead 12 / Category of Undead 13**\n"
     "- Ghosthunter: 1, Category of Undead 1: 10, Category of Undead 2: 13, Category of Undead 3: 16, Category of Undead 4: 19, Category of Undead 5: 20, Category of Undead 6: —, Category of Undead 7: —, Category of Undead 8: —, Category of Undead 9: —, Category of Undead 10: —, Category of Undead 11: —, Category of Undead 12: —, Category of Undead 13: —\n"
     "- Ghosthunter: 2, Category of Undead 1: 7, Category of Undead 2: 10, Category of Undead 3: 13, Category of Undead 4: 16, Category of Undead 5: 19, Category of Undead 6: 20, Category of Undead 7: —, Category of Undead 8: —, Category of Undead 9: —, Category of Undead 10: —, Category of Undead 11: —, Category of Undead 12: —, Category of Undead 13: —\n"
@@ -160,7 +160,7 @@ OLD_JUSTIFIER_TABLE = (
     "- 16+ | 7 | 3 | 2 | 2"
 )
 
-NEW_JUSTIFIER_TABLE = (
+LIST_JUSTIFIER_TABLE = (
     "**Justifier Level / Casting Level / Priest Spell Level 1 / Priest Spell Level 2 / Priest Spell Level 3**\n"
     "- Justifier Level: 1-9, Casting Level: —, Priest Spell Level 1: —, Priest Spell Level 2: —, Priest Spell Level 3: —\n"
     "- Justifier Level: 10, Casting Level: 1, Priest Spell Level 1: 1, Priest Spell Level 2: —, Priest Spell Level 3: —\n"
@@ -182,7 +182,7 @@ OLD_MOUNTAIN_MAN_TABLE = (
     "- 16+ | 4 | 2 | 2 | —"
 )
 
-NEW_MOUNTAIN_MAN_TABLE = (
+LIST_MOUNTAIN_MAN_TABLE = (
     "**Mountain Man Level / Casting Level / Priest Spell Level 1 / Priest Spell Level 2 / Priest Spell Level 3**\n"
     "- Mountain Man Level: 1-9, Casting Level: —, Priest Spell Level 1: —, Priest Spell Level 2: —, Priest Spell Level 3: —\n"
     "- Mountain Man Level: 10-11, Casting Level: 1, Priest Spell Level 1: 1, Priest Spell Level 2: —, Priest Spell Level 3: —\n"
@@ -208,7 +208,7 @@ OLD_SEEKER_TABLE = (
     "- 16+ | 11 | 4 | 4 | 3 | 2"
 )
 
-NEW_SEEKER_TABLE = (
+LIST_SEEKER_TABLE = (
     "**Seeker Level / Casting Level / Priest Spell Levels 1 / Priest Spell Levels 2 / Priest Spell Levels 3 / Priest Spell Levels 4**\n"
     "- Seeker Level: 1-5, Casting Level: —, Priest Spell Levels 1: —, Priest Spell Levels 2: —, Priest Spell Levels 3: —, Priest Spell Levels 4: —\n"
     "- Seeker Level: 6, Casting Level: 1, Priest Spell Levels 1: 1, Priest Spell Levels 2: —, Priest Spell Levels 3: —, Priest Spell Levels 4: —\n"
@@ -244,7 +244,7 @@ OLD_VOTARY_TABLE = (
     "- 20 | 9 | 4 | 4 | 4 | 4"
 )
 
-NEW_VOTARY_TABLE = (
+LIST_VOTARY_TABLE = (
     "**Votary Level / Casting Level / Priest Spell Levels 1 / Priest Spell Levels 2 / Priest Spell Levels 3 / Priest Spell Levels 4**\n"
     "- Votary Level: 6, Casting Level: 1, Priest Spell Levels 1: 1, Priest Spell Levels 2: —, Priest Spell Levels 3: —, Priest Spell Levels 4: —\n"
     "- Votary Level: 7, Casting Level: 2, Priest Spell Levels 1: 2, Priest Spell Levels 2: —, Priest Spell Levels 3: —, Priest Spell Levels 4: —\n"
@@ -275,7 +275,7 @@ OLD_MILITANT_PSIONICIST_TABLE = (
 # cabeçalho (sintaxe wiki válida, mas rara) — render_table_as_text só
 # reconhece "!" como cabeçalho, então nem detecta um; toda linha, cabeçalho
 # incluso, cai no dump de emergência.
-NEW_MILITANT_PSIONICIST_TABLE = (
+LIST_MILITANT_PSIONICIST_TABLE = (
     "**Level / Dis. / Sci. / Dev.**\n"
     "- Level: 1, Dis.: 1, Sci.: —, Dev.: 1\n"
     "- Level: 2, Dis.: 1, Sci.: —, Dev.: 1\n"
@@ -284,15 +284,127 @@ NEW_MILITANT_PSIONICIST_TABLE = (
 )
 
 # kit id -> (trecho quebrado, ou tupla de versões antigas; trecho certo)
+# Tabelas em markdown (2026-10-24), como a do Mind Monk; as LIST_* acima são o
+# formato anterior, ainda aceito como texto de origem.
+NEW_MILITANT_PSIONICIST_TABLE = (
+    "| Level | Dis. | Sci. | Dev. |\n"
+    "| --- | --- | --- | --- |\n"
+    "| 1 | 1 | — | 1 |\n"
+    "| 2 | 1 | — | 1 |\n"
+    "| 3 | 1 | — | 1 |\n"
+    "| 4 | 1 | 1 | 2 |"
+)
+
+NEW_FERALAN_TABLE = (
+    "**Table 45: Feralan Spell Progression**\n"
+    "\n"
+    "| Feralan Level | Casting Level | Priest Spell Level* 1 | Priest Spell Level* 2 |\n"
+    "| --- | --- | --- | --- |\n"
+    "| 1-7 | — | — | — |\n"
+    "| 8-9 | 1 | 1 | — |\n"
+    "| 10-11 | 2 | 2 | — |\n"
+    "| 12-13 | 3 | 2 | 1 |\n"
+    "| 14-15 | 4 | 2 | 2 |\n"
+    "| 16+ | 5 | 3 | 2 |"
+)
+
+NEW_GHOSTHUNTER_TABLE = (
+    "**Table 18: Turning Undead (Ghosthunter)**\n"
+    "\n"
+    "| Ghosthunter | Category of Undead 1 | Category of Undead 2 | Category of Undead 3 | Category of Undead 4 | Category of Undead 5 | Category of Undead 6 | Category of Undead 7 | Category of Undead 8 | Category of Undead 9 | Category of Undead 10 | Category of Undead 11 | Category of Undead 12 | Category of Undead 13 |\n"
+    "| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n"
+    "| 1 | 10 | 13 | 16 | 19 | 20 | — | — | — | — | — | — | — | — |\n"
+    "| 2 | 7 | 10 | 13 | 16 | 19 | 20 | — | — | — | — | — | — | — |\n"
+    "| 3 | 4 | 7 | 10 | 13 | 16 | 19 | 20 | — | — | — | — | — | — |\n"
+    "| 4 | T | 4 | 7 | 10 | 13 | 16 | 19 | 20 | — | — | — | — | — |\n"
+    "| 5 | T | T | 4 | 7 | 10 | 13 | 16 | 19 | 20 | — | — | — | — |\n"
+    "| 6 | D | T | T | 4 | 7 | 10 | 13 | 16 | 19 | 20 | — | — | — |\n"
+    "| 7 | D | D | T | T | 4 | 7 | 10 | 13 | 16 | 19 | 20 | — | — |\n"
+    "| 8 | D* | D | D | T | T | 4 | 7 | 13 | 10 | 16 | 19 | 20 | — |\n"
+    "| 9 | D* | D* | D | D | T | T | 4 | 7 | 10 | 13 | 16 | 19 | 20 |\n"
+    "| 10-11 | D* | D* | D* | D | D | T | T | 4 | 7 | 10 | 13 | 16 | 19 |\n"
+    "| 12-13 | D* | D* | D* | D* | D | D | T | T | 4 | 7 | 10 | 13 | 16 |\n"
+    "| 14+ | D* | D* | D* | D* | D* | D | D | T | T | 4 | 7 | 10 | 13 |"
+)
+
+NEW_JUSTIFIER_TABLE = (
+    "**Table 46: Justifier Spell Progression**\n"
+    "\n"
+    "| Justifier Level | Casting Level | Priest Spell Level 1 | Priest Spell Level 2 | Priest Spell Level 3 |\n"
+    "| --- | --- | --- | --- | --- |\n"
+    "| 1-9 | — | — | — | — |\n"
+    "| 10 | 1 | 1 | — | — |\n"
+    "| 11 | 2 | 2 | — | — |\n"
+    "| 12 | 3 | 2 | 1 | — |\n"
+    "| 13 | 4 | 2 | 2 | — |\n"
+    "| 14 | 5 | 2 | 2 | 1 |\n"
+    "| 15 | 6 | 2 | 2 | 2 |\n"
+    "| 16+ | 7 | 3 | 2 | 2 |"
+)
+
+NEW_MOUNTAIN_MAN_TABLE = (
+    "**Table 48: Mountain Man Spell Progression**\n"
+    "\n"
+    "| Mountain Man Level | Casting Level | Priest Spell Level 1 | Priest Spell Level 2 | Priest Spell Level 3 |\n"
+    "| --- | --- | --- | --- | --- |\n"
+    "| 1-9 | — | — | — | — |\n"
+    "| 10-11 | 1 | 1 | — | — |\n"
+    "| 12-13 | 2 | 2 | — | — |\n"
+    "| 14-15 | 3 | 2 | 1 | — |\n"
+    "| 16+ | 4 | 2 | 2 | — |"
+)
+
+NEW_SEEKER_TABLE = (
+    "**Table 51: Seeker Spell Progression**\n"
+    "\n"
+    "| Seeker Level | Casting Level | Priest Spell Levels 1 | Priest Spell Levels 2 | Priest Spell Levels 3 | Priest Spell Levels 4 |\n"
+    "| --- | --- | --- | --- | --- | --- |\n"
+    "| 1-5 | — | — | — | — | — |\n"
+    "| 6 | 1 | 1 | — | — | — |\n"
+    "| 7 | 2 | 2 | — | — | — |\n"
+    "| 8 | 3 | 2 | 1 | — | — |\n"
+    "| 9 | 4 | 2 | 2 | — | — |\n"
+    "| 10 | 5 | 2 | 2 | 1 | — |\n"
+    "| 11 | 6 | 3 | 2 | 1 | — |\n"
+    "| 12 | 7 | 3 | 2 | 2 | — |\n"
+    "| 13 | 8 | 3 | 3 | 2 | 1 |\n"
+    "| 14 | 9 | 3 | 3 | 3 | 1 |\n"
+    "| 15 | 10 | 4 | 4 | 3 | 1 |\n"
+    "| 16+ | 11 | 4 | 4 | 3 | 2 |"
+)
+
+NEW_VOTARY_TABLE = (
+    "**Table 22: Votary Spell Progression**\n"
+    "\n"
+    "| Votary Level | Casting Level | Priest Spell Levels 1 | Priest Spell Levels 2 | Priest Spell Levels 3 | Priest Spell Levels 4 |\n"
+    "| --- | --- | --- | --- | --- | --- |\n"
+    "| 6 | 1 | 1 | — | — | — |\n"
+    "| 7 | 2 | 2 | — | — | — |\n"
+    "| 8 | 3 | 2 | 1 | — | — |\n"
+    "| 9 | 4 | 3 | 2 | — | — |\n"
+    "| 10 | 5 | 3 | 2 | 1 | — |\n"
+    "| 11 | 6 | 4 | 2 | 1 | — |\n"
+    "| 12 | 7 | 4 | 2 | 2 | — |\n"
+    "| 13 | 8 | 4 | 2 | 2 | 1 |\n"
+    "| 14 | 9 | 4 | 3 | 2 | 1 |\n"
+    "| 15 | 9 | 4 | 4 | 2 | 1 |\n"
+    "| 16 | 9 | 4 | 4 | 3 | 1 |\n"
+    "| 17 | 9 | 4 | 4 | 3 | 2 |\n"
+    "| 18 | 9 | 4 | 4 | 3 | 3 |\n"
+    "| 19 | 9 | 4 | 4 | 4 | 3 |\n"
+    "| 20 | 9 | 4 | 4 | 4 | 4 |"
+)
+
+
 FIXES = {
     "mind_monk": ((OLD_MIND_MONK_TABLE, LIST_MIND_MONK_TABLE), NEW_MIND_MONK_TABLE),
-    "militant_psionicist": (OLD_MILITANT_PSIONICIST_TABLE, NEW_MILITANT_PSIONICIST_TABLE),
-    "feralan": (OLD_FERALAN_TABLE, NEW_FERALAN_TABLE),
-    "ghosthunter": (OLD_GHOSTHUNTER_TABLE, NEW_GHOSTHUNTER_TABLE),
-    "justifier": (OLD_JUSTIFIER_TABLE, NEW_JUSTIFIER_TABLE),
-    "mountain_man": (OLD_MOUNTAIN_MAN_TABLE, NEW_MOUNTAIN_MAN_TABLE),
-    "seeker": (OLD_SEEKER_TABLE, NEW_SEEKER_TABLE),
-    "votary": (OLD_VOTARY_TABLE, NEW_VOTARY_TABLE),
+    "militant_psionicist": ((OLD_MILITANT_PSIONICIST_TABLE, LIST_MILITANT_PSIONICIST_TABLE), NEW_MILITANT_PSIONICIST_TABLE),
+    "feralan": ((OLD_FERALAN_TABLE, LIST_FERALAN_TABLE), NEW_FERALAN_TABLE),
+    "ghosthunter": ((OLD_GHOSTHUNTER_TABLE, LIST_GHOSTHUNTER_TABLE), NEW_GHOSTHUNTER_TABLE),
+    "justifier": ((OLD_JUSTIFIER_TABLE, LIST_JUSTIFIER_TABLE), NEW_JUSTIFIER_TABLE),
+    "mountain_man": ((OLD_MOUNTAIN_MAN_TABLE, LIST_MOUNTAIN_MAN_TABLE), NEW_MOUNTAIN_MAN_TABLE),
+    "seeker": ((OLD_SEEKER_TABLE, LIST_SEEKER_TABLE), NEW_SEEKER_TABLE),
+    "votary": ((OLD_VOTARY_TABLE, LIST_VOTARY_TABLE), NEW_VOTARY_TABLE),
 }
 
 
