@@ -507,6 +507,129 @@
         }
       }
     },
+    "CustomItemSnapshot": {
+      "type": "object",
+      "required": [
+        "id",
+        "version",
+        "data"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Id em custom_magic_item."
+        },
+        "version": {
+          "type": "integer",
+          "description": "Versão do item quando a cópia foi feita."
+        },
+        "data": {
+          "$ref": "#/$defs/CustomMagicItemData"
+        }
+      }
+    },
+    "CustomMagicItemData": {
+      "type": "object",
+      "required": [
+        "name"
+      ],
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "category": {
+          "type": "string",
+          "description": "Categoria do compêndio (Weapon, Armor/Shield, Ring, Potion/Oil, Scroll/Book, Rod/Staff/Wand, Miscellaneous)."
+        },
+        "summary": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "xpValue": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "goldValue": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "charges": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "attackBonus": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "damageBonus": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "acBonus": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "saveBonus": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "basedOn": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "Id do item do livro de que foi copiado, se houver."
+        }
+      }
+    },
     "EffectComponent": {
       "type": "object",
       "required": [
@@ -2107,6 +2230,17 @@
             }
           ],
           "description": "Liga esta linha a um item de `MagicItemDatabase` (mesmo padrão de `Page2EquipmentEntry.matchedItemID`/`MundaneItemDatabase`) — só usado pela lista \"Magic Items\" (não por \"Treasure / Other Possessions\", que continua puramente texto livre). `nil` = linha digitada à mão pelo jogador (item caseiro/criado por ele) ou ficha salva antes desta versão existir; nesse caso cai pro fallback de nome exato, igual ao equipamento mundano."
+        },
+        "customItem": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/CustomItemSnapshot"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "Item mágico criado (mestre ou jogador): id e versão em custom_magic_item e a cópia dos dados; ausente/null = item do livro ou digitado."
         }
       }
     },
