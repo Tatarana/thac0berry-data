@@ -1264,17 +1264,6 @@
             }
           ]
         },
-        "vistaniTribe": {
-          "anyOf": [
-            {
-              "type": "string"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "description": "Tribo de Vistani (Domains of Dread, Table 68; só faz sentido com a raça \"Half-Vistani\") — feito primeiro na web."
-        },
         "skin": {
           "anyOf": [
             {
@@ -1856,6 +1845,17 @@
             }
           ],
           "description": "Bloco psiônico do Psionicist (feito primeiro na web, 2026-10-06; o iPad ainda não tem)."
+        },
+        "vistaniTribe": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "Tribo de Vistani (Domains of Dread, Table 68; só faz sentido com a raça \"Half-Vistani\") — feito primeiro na web."
         }
       }
     },
@@ -1889,6 +1889,38 @@
             "string",
             "null"
           ]
+        },
+        "grantedBy": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/ProficiencyGrant"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "Origem de uma proficiência bônus (kit, raça ou tribo); ausente/null = comprada pelo jogador."
+        }
+      }
+    },
+    "ProficiencyGrant": {
+      "type": "object",
+      "required": [
+        "kind",
+        "name"
+      ],
+      "properties": {
+        "kind": {
+          "type": "string",
+          "enum": [
+            "kit",
+            "race",
+            "tribe"
+          ]
+        },
+        "name": {
+          "type": "string",
+          "description": "Nome do kit, da raça ou da tribo que deu a proficiência."
         }
       }
     },
