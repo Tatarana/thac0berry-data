@@ -9,7 +9,11 @@ cargas por uso, limite por dia e o efeito do item quando difere da magia.
 Ficam de fora os efeitos de arma (golpe com carga) e os itens sem função
 ativável (Rod of Flailing, Staff of Striking, Magical Quarterstaff...).
 
-Lote 1: os 43 Rods/Staves/Wands do DMG.
+Lote 1: os 43 Rods/Staves/Wands do DMG. Lote 2: os 31 anéis do DMG. Lote 3:
+os 179 itens diversos do DMG (43 com funções; passivos e amaldiçoados ficam
+sem). Item com
+`power.spell` cujo efeito é passivo (Free Action, Spell Turning) recebe
+`uses: []`, para a folha não o puxar como se lançasse a magia.
 
 Idempotente; `--dry-run` só mostra o que mudaria. Confere cada magia contra a
 base de magias (nome exato, na classe indicada) e para se alguma não existir.
@@ -21,7 +25,6 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-FILE = ROOT / "data" / "magic_rods_staves_wands.json"
 
 P, W = "Priest", "Wizard"
 
@@ -169,6 +172,135 @@ USES = {
     ],
     "wand_of_size_alteration": [use("Enlarge/reduce", "Enlarge", W, 1)],
     "wand_of_wonder": [use("Random effect", None, None, 1)],
+    # --- Lote 2: anéis do DMG ---
+    "of_x_ray_vision": [use("X-ray vision (20 ft)", None, None, 0, effect="more often than once per 6 turns drains Con")],
+    "ring_of_chameleon_power": [use("Chameleon (blend in)", None, None, 0)],
+    "ring_of_djinni_summoning": [use("Summon djinni", None, None, 0)],
+    "ring_of_elemental_command": [
+        use("Air: gust of wind", "Gust of Wind", W, 0, effect="once per round"),
+        use("Air: fly", "Fly", W, 0),
+        use("Air: wall of force", "Wall of Force", W, 0, 1),
+        use("Air: control winds", "Control Winds", P, 0, effect="once per week"),
+        use("Air: invisibility", "Invisibility", W, 0),
+        use("Earth: stone tell", "Stone Tell", P, 0, 1),
+        use("Earth: passwall", "Passwall", W, 0, 2),
+        use("Earth: wall of stone", "Wall of Stone", W, 0, 1),
+        use("Earth: stone to flesh", "Stone to Flesh", W, 0, effect="twice per week"),
+        use("Earth: move earth", "Move Earth", W, 0, effect="once per week"),
+        use("Earth: feather fall", "Feather Fall", W, 0),
+        use("Fire: burning hands", "Burning Hands", W, 0, effect="once per turn"),
+        use("Fire: pyrotechnics", "Pyrotechnics", W, 0, 2),
+        use("Fire: wall of fire", "Wall of Fire", W, 0, 1),
+        use("Fire: flame strike", "Flame Strike", P, 0, effect="twice per week"),
+        use("Water: purify water", None, None, 0),
+        use("Water: create water", "Create Water", P, 0, 1),
+        use("Water: water breathing (5-ft radius)", "Water Breathing", W, 0),
+        use("Water: wall of ice", "Wall of Ice", W, 0, 1),
+        use("Water: airy water", "Airy Water", W, 0),
+        use("Water: lower water", "Lower Water", W, 0, effect="twice per week"),
+        use("Water: part water", "Part Water", W, 0, effect="twice per week"),
+        use("Water: water walking", "Water Walk", P, 0),
+    ],
+    "ring_of_free_action": [],
+    "ring_of_human_influence": [
+        use("Suggestion", "Suggestion", W, 0, 1),
+        use("Charm person", "Charm Person", W, 0, 1, "up to 21 levels/HD"),
+    ],
+    "ring_of_invisibility": [use("Invisibility", "Invisibility", W, 0)],
+    "ring_of_jumping": [use("Jump", "Jump", W, 0, 4)],
+    "ring_of_mammal_control": [use("Mammal control (30 HD)", None, None, 0)],
+    "ring_of_multiple_wishes": [use("Wish", "Wish", W, 1, effect="2d4 wishes")],
+    "ring_of_shocking_grasp": [use("Shocking grasp", "Shocking Grasp", W, 0, effect="1d8+6; inert 1 turn after 3")],
+    "ring_of_shooting_stars": [
+        use("Dancing lights (night)", "Dancing Lights", W, 0, effect="once an hour"),
+        use("Light (night)", "Light", W, 0, 2),
+        use("Ball lightning (night)", None, None, 0, 1, "1d4 balls"),
+        use("Shooting stars (night)", None, None, 0, effect="3 per week; 12 + 24 burst"),
+        use("Faerie fire (indoors/underground)", "Faerie Fire", P, 0, 2),
+        use("Spark shower (indoors/underground)", None, None, 0, 1, "2d8 (4d4 with metal)"),
+    ],
+    "ring_of_spell_storing": [use("Stored spell", None, None, 1, effect="1d4+1 spells; write each one")],
+    "ring_of_spell_turning": [],
+    "ring_of_telekinesis": [use("Telekinesis", "Telekinesis", W, 0, 3, "25–400 lb by ring")],
+    "ring_of_the_ram": [
+        use("Ram force (30 ft)", None, None, 1, effect="1d6 per charge, max 3"),
+        use("Open door", None, None, 1, effect="18/00 Str; 19 with 2 charges, 20 with 3"),
+    ],
+    "ring_of_three_wishes": [use("Wish", "Wish", W, 1, effect="3 wishes (25%: limited wish)")],
+    # --- Lote 3: itens diversos do DMG ---
+    "alchemy_jug": [use("Pour a liquid", None, None, 0, 7, "one kind of liquid per day")],
+    "amulet_of_the_planes": [use("Plane travel", None, None, 0, effect="random until learned")],
+    "amulet_versus_undead": [use("Turn undead", None, None, 0, effect="as a 5th–9th-level cleric")],
+    "bag_of_tricks": [use("Draw an animal", None, None, 0, effect="10 per week; one at a time")],
+    "boots_of_levitation": [use("Levitate", "Levitate", W, 0)],
+    "bowl_of_commanding_water_elementals": [use("Summon water elemental (12 HD)", None, None, 0)],
+    "brazier_of_commanding_fire_elementals": [use("Summon fire elemental (12 HD)", None, None, 0)],
+    "censer_of_controlling_air_elementals": [use("Summon air elemental (12 HD)", None, None, 0)],
+    "stone_of_controlling_earth_elemental": [use("Summon earth elemental (8–12 HD)", None, None, 0, 1)],
+    "candle_of_invocation": [
+        use("Burn (+2 priest levels)", None, None, 0, effect="4 hours"),
+        use("Gate", "Gate", P, 0, effect="consumes the candle"),
+    ],
+    "chime_of_opening": [use("Open", "Knock", W, 1, effect="1d8×10 charges")],
+    "cloak_of_arachnida": [
+        use("Spider climb", "Spider Climb", W, 0),
+        use("Web (double size)", "Web", W, 0, 1),
+    ],
+    "crystal_ball_i": [use("Scry", None, None, 0, 3, "1–3 per day by chance of locating")],
+    "cube_of_force": [use("Force screen", None, None, None, effect="1–6 charges per turn by face; 36 per day")],
+    "cube_of_frost_resistance": [use("Frost field (10-ft cube)", None, None, 0)],
+    "cubic_gate": [
+        use("Open a nexus", None, None, 0),
+        use("Travel (press twice)", None, None, 0, effect="all within 5 ft"),
+    ],
+    "drums_of_deafening": [use("Deafen (70 ft)", None, None, 0, effect="stun 2d4 rounds within 10 ft")],
+    "eyes_of_charming": [use("Charm person (gaze)", "Charm Person", W, 0, effect="one per round")],
+    "gem_of_brightness": [
+        use("Pale light", None, None, 0),
+        use("Dazzling ray", None, None, 1, effect="blind 1d4 rounds; 50 charges"),
+        use("Blinding flash", None, None, 5, effect="blind 1d4 rounds, −1 to −4 to hit"),
+    ],
+    "gem_of_seeing": [use("See the hidden", None, None, 0, effect="5% hallucination per use")],
+    "harp_of_charming_ii": [
+        use("Suggestion", "Suggestion", W, 0, effect="one per turn of playing"),
+        use("Command (bard)", "Command", P, 0, effect="once per turn"),
+    ],
+    "horn_of_blasting": [use("Blast", None, None, 0, 1, "1d10, stun, deafen; more often risks explosion")],
+    "horn_of_fog": [use("Fog", "Fog Cloud", W, 0, effect="10-cu-ft cloud per round")],
+    "horn_of_goodness_evil": [use("Protection from evil (10-ft radius)", "Protection From Evil", W, 0, 1, "10 rounds")],
+    "horn_of_valhalla": [use("Summon berserkers", None, None, 0, effect="once every 7 days")],
+    "medallion_of_esp": [use("ESP", "ESP", W, 0, effect="fails on a 6 (1d6)")],
+    "medallion_of_thought_projection": [use("ESP", "ESP", W, 0, effect="projects your thoughts unless 6 (1d6)")],
+    "mirror_of_mental_prowess": [
+        use("Read thoughts", None, None, 0),
+        use("Scry (with clairaudience)", None, None, 0),
+        use("Portal", None, None, 0),
+        use("Answer a question", None, None, 0, effect="once per week"),
+    ],
+    "necklace_of_missiles": [use("Fireball missile", "Fireball", W, 1, effect="2–11 dice each (1d20 table)")],
+    "necklace_of_prayer_beads": [
+        use("Bead of atonement", "Atonement", P, 0, 1, "if the necklace has this bead"),
+        use("Bead of blessing", "Bless", P, 0, 1, "if the necklace has this bead"),
+        use("Bead of curing", None, None, 0, 1, "cure blindness, disease or serious wounds"),
+        use("Bead of karma", None, None, 0, 1, "cast as 4 levels higher"),
+        use("Bead of summons", None, None, 0, 1, "calls the deity"),
+        use("Bead of wind walking", "Wind Walk", P, 0, 1, "if the necklace has this bead"),
+    ],
+    "pearl_of_power": [use("Recall a spell", None, None, 0, 1, "spell level by pearl type")],
+    "robe_of_scintillating_colors": [use("Scintillate", None, None, 0, effect="hypnotize 1d4+1 rounds; up to −5 to be hit")],
+    "robe_of_stars": [
+        use("Star missile", None, None, 0, effect="+5, 2d4; 6 stars, 1 returns per day"),
+        use("Astral travel", None, None, 0),
+    ],
+    "talisman_of_pure_good": [use("Flaming crack", None, None, 1, effect="7 charges")],
+    "talisman_of_ultimate_evil": [use("Flaming crack", None, None, 1, effect="6 charges")],
+    "trident_of_fish_command": [use("Fish command (60 ft)", None, None, 1, effect="1d4+16 charges")],
+    "trident_of_warning": [use("Warning scan (240 ft)", None, None, 1, effect="2 rounds per charge")],
+    "wind_fan": [use("Gust of wind", "Gust of Wind", W, 0, 1, "more often: 20% cumulative chance to tear")],
+    "winged_boots": [use("Fly", "Fly", W, 0, effect="2 hours per day")],
+    "wings_of_flying": [use("Fly", None, None, 0, 1, "2–8 turns by speed")],
+    "scarab_of_enraging_enemies": [use("Enrage (40 ft)", None, None, 1, effect="1d6+18 charges")],
+    "keoghtom_s_ointment": [use("Application", None, None, 1, effect="neutralize poison/disease or heal 1d4+8; 5 per jar")],
 }
 
 
@@ -208,29 +340,29 @@ def main():
         print("Magias que não existem na base:\n  " + "\n  ".join(missing))
         sys.exit(1)
 
-    items = json.load(open(FILE, encoding="utf-8"))
-    by_id = {it["id"]: it for it in items}
-    changed = 0
+    files = {Path(f): json.load(open(f, encoding="utf-8")) for f in sorted(glob.glob(str(ROOT / "data" / "magic_*.json")))}
+    by_id = {it["id"]: (path, it) for path, items in files.items() for it in items}
+    changed = set()
     for item_id, uses in USES.items():
-        it = by_id.get(item_id)
-        if it is None:
+        if item_id not in by_id:
             print(f"{item_id}: não encontrado")
             sys.exit(1)
+        path, it = by_id[item_id]
         power = it.get("power") or {"name": None, "chargeBased": True, "maxCharges": None, "spell": None}
         if power.get("uses") == uses:
             print(f"{item_id}: já tem as funções")
             continue
         power["uses"] = uses
         it["power"] = power
-        changed += 1
+        changed.add(path)
         print(f"{item_id}: {len(uses)} funções")
     if dry:
         print("(dry-run: nada gravado)")
         return
-    if changed:
+    for path in changed:
         # Mesmo formato compacto do arquivo (como fix_magic_item_values.py).
-        with open(FILE, "w", encoding="utf-8", newline="\n") as f:
-            f.write(json.dumps(items, ensure_ascii=False, separators=(",", ":")))
+        with open(path, "w", encoding="utf-8", newline="\n") as f:
+            f.write(json.dumps(files[path], ensure_ascii=False, separators=(",", ":")))
 
 
 if __name__ == "__main__":
