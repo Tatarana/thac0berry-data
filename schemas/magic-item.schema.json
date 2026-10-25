@@ -309,6 +309,16 @@
               "type": "null"
             }
           ]
+        },
+        "uses": {
+          "description": "Funções que o item ativa (magias ou poderes), lidas do texto do livro. A spell sheet da web cria uma linha por função ao puxar o item.",
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "$ref": "#/$defs/PowerUse"
+          }
         }
       }
     },
@@ -328,6 +338,50 @@
         },
         "class": {
           "type": "string"
+        }
+      }
+    },
+    "PowerUse": {
+      "type": "object",
+      "required": [
+        "name"
+      ],
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Nome da função como o item a chama."
+        },
+        "spell": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/SpellRef"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "Magia equivalente; null quando a função não é uma magia."
+        },
+        "chargeCost": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "description": "Cargas por uso (0 = não gasta carga; null = varia, ver effect)."
+        },
+        "perDay": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "description": "Limite de usos por dia, quando o livro dá um."
+        },
+        "effect": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Dano, cura ou observação do item quando difere da magia."
         }
       }
     }
