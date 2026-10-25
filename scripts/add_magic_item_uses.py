@@ -9,7 +9,9 @@ cargas por uso, limite por dia e o efeito do item quando difere da magia.
 Ficam de fora os efeitos de arma (golpe com carga) e os itens sem função
 ativável (Rod of Flailing, Staff of Striking, Magical Quarterstaff...).
 
-Lote 1: os 43 Rods/Staves/Wands do DMG.
+Lote 1: os 43 Rods/Staves/Wands do DMG. Lote 2: os 31 anéis do DMG. Item com
+`power.spell` cujo efeito é passivo (Free Action, Spell Turning) recebe
+`uses: []`, para a folha não o puxar como se lançasse a magia.
 
 Idempotente; `--dry-run` só mostra o que mudaria. Confere cada magia contra a
 base de magias (nome exato, na classe indicada) e para se alguma não existir.
@@ -21,7 +23,6 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-FILE = ROOT / "data" / "magic_rods_staves_wands.json"
 
 P, W = "Priest", "Wizard"
 
@@ -169,6 +170,61 @@ USES = {
     ],
     "wand_of_size_alteration": [use("Enlarge/reduce", "Enlarge", W, 1)],
     "wand_of_wonder": [use("Random effect", None, None, 1)],
+    # --- Lote 2: anéis do DMG ---
+    "of_x_ray_vision": [use("X-ray vision (20 ft)", None, None, 0, effect="more often than once per 6 turns drains Con")],
+    "ring_of_chameleon_power": [use("Chameleon (blend in)", None, None, 0)],
+    "ring_of_djinni_summoning": [use("Summon djinni", None, None, 0)],
+    "ring_of_elemental_command": [
+        use("Air: gust of wind", "Gust of Wind", W, 0, effect="once per round"),
+        use("Air: fly", "Fly", W, 0),
+        use("Air: wall of force", "Wall of Force", W, 0, 1),
+        use("Air: control winds", "Control Winds", P, 0, effect="once per week"),
+        use("Air: invisibility", "Invisibility", W, 0),
+        use("Earth: stone tell", "Stone Tell", P, 0, 1),
+        use("Earth: passwall", "Passwall", W, 0, 2),
+        use("Earth: wall of stone", "Wall of Stone", W, 0, 1),
+        use("Earth: stone to flesh", "Stone to Flesh", W, 0, effect="twice per week"),
+        use("Earth: move earth", "Move Earth", W, 0, effect="once per week"),
+        use("Earth: feather fall", "Feather Fall", W, 0),
+        use("Fire: burning hands", "Burning Hands", W, 0, effect="once per turn"),
+        use("Fire: pyrotechnics", "Pyrotechnics", W, 0, 2),
+        use("Fire: wall of fire", "Wall of Fire", W, 0, 1),
+        use("Fire: flame strike", "Flame Strike", P, 0, effect="twice per week"),
+        use("Water: purify water", None, None, 0),
+        use("Water: create water", "Create Water", P, 0, 1),
+        use("Water: water breathing (5-ft radius)", "Water Breathing", W, 0),
+        use("Water: wall of ice", "Wall of Ice", W, 0, 1),
+        use("Water: airy water", "Airy Water", W, 0),
+        use("Water: lower water", "Lower Water", W, 0, effect="twice per week"),
+        use("Water: part water", "Part Water", W, 0, effect="twice per week"),
+        use("Water: water walking", "Water Walk", P, 0),
+    ],
+    "ring_of_free_action": [],
+    "ring_of_human_influence": [
+        use("Suggestion", "Suggestion", W, 0, 1),
+        use("Charm person", "Charm Person", W, 0, 1, "up to 21 levels/HD"),
+    ],
+    "ring_of_invisibility": [use("Invisibility", "Invisibility", W, 0)],
+    "ring_of_jumping": [use("Jump", "Jump", W, 0, 4)],
+    "ring_of_mammal_control": [use("Mammal control (30 HD)", None, None, 0)],
+    "ring_of_multiple_wishes": [use("Wish", "Wish", W, 1, effect="2d4 wishes")],
+    "ring_of_shocking_grasp": [use("Shocking grasp", "Shocking Grasp", W, 0, effect="1d8+6; inert 1 turn after 3")],
+    "ring_of_shooting_stars": [
+        use("Dancing lights (night)", "Dancing Lights", W, 0, effect="once an hour"),
+        use("Light (night)", "Light", W, 0, 2),
+        use("Ball lightning (night)", None, None, 0, 1, "1d4 balls"),
+        use("Shooting stars (night)", None, None, 0, effect="3 per week; 12 + 24 burst"),
+        use("Faerie fire (indoors/underground)", "Faerie Fire", P, 0, 2),
+        use("Spark shower (indoors/underground)", None, None, 0, 1, "2d8 (4d4 with metal)"),
+    ],
+    "ring_of_spell_storing": [use("Stored spell", None, None, 1, effect="1d4+1 spells; write each one")],
+    "ring_of_spell_turning": [],
+    "ring_of_telekinesis": [use("Telekinesis", "Telekinesis", W, 0, 3, "25–400 lb by ring")],
+    "ring_of_the_ram": [
+        use("Ram force (30 ft)", None, None, 1, effect="1d6 per charge, max 3"),
+        use("Open door", None, None, 1, effect="18/00 Str; 19 with 2 charges, 20 with 3"),
+    ],
+    "ring_of_three_wishes": [use("Wish", "Wish", W, 1, effect="3 wishes (25%: limited wish)")],
 }
 
 
@@ -208,29 +264,29 @@ def main():
         print("Magias que não existem na base:\n  " + "\n  ".join(missing))
         sys.exit(1)
 
-    items = json.load(open(FILE, encoding="utf-8"))
-    by_id = {it["id"]: it for it in items}
-    changed = 0
+    files = {Path(f): json.load(open(f, encoding="utf-8")) for f in sorted(glob.glob(str(ROOT / "data" / "magic_*.json")))}
+    by_id = {it["id"]: (path, it) for path, items in files.items() for it in items}
+    changed = set()
     for item_id, uses in USES.items():
-        it = by_id.get(item_id)
-        if it is None:
+        if item_id not in by_id:
             print(f"{item_id}: não encontrado")
             sys.exit(1)
+        path, it = by_id[item_id]
         power = it.get("power") or {"name": None, "chargeBased": True, "maxCharges": None, "spell": None}
         if power.get("uses") == uses:
             print(f"{item_id}: já tem as funções")
             continue
         power["uses"] = uses
         it["power"] = power
-        changed += 1
+        changed.add(path)
         print(f"{item_id}: {len(uses)} funções")
     if dry:
         print("(dry-run: nada gravado)")
         return
-    if changed:
+    for path in changed:
         # Mesmo formato compacto do arquivo (como fix_magic_item_values.py).
-        with open(FILE, "w", encoding="utf-8", newline="\n") as f:
-            f.write(json.dumps(items, ensure_ascii=False, separators=(",", ":")))
+        with open(path, "w", encoding="utf-8", newline="\n") as f:
+            f.write(json.dumps(files[path], ensure_ascii=False, separators=(",", ":")))
 
 
 if __name__ == "__main__":
