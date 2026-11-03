@@ -68,6 +68,31 @@
             "string",
             "null"
           ]
+        },
+        "cost": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Preço do PHB (Table 44), texto do livro: \"15 gp\"; \"—\" quando o livro não cobra nada."
+        },
+        "weight": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Peso do PHB (Table 44): \"4 lbs.\"."
+        },
+        "ammunition": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Ammunition"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "Armas de disparo: a munição vendida à parte (PHB Table 44)."
         }
       }
     },
@@ -88,6 +113,32 @@
           ]
         },
         "long": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "Ammunition": {
+      "type": "object",
+      "required": [
+        "name",
+        "cost",
+        "quantity"
+      ],
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "cost": {
+          "type": "string"
+        },
+        "quantity": {
+          "type": "integer",
+          "description": "Quantas vêm pelo preço (12 flechas por 3 sp)."
+        },
+        "weight": {
           "type": [
             "string",
             "null"
