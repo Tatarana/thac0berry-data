@@ -104,6 +104,13 @@
           "items": {
             "type": "string"
           }
+        },
+        "combination": {
+          "description": "Classes que o kit exige juntas (kit multiclasse, ex. [\"Fighter\",\"Mage\"]). Opcional, web primeiro: o iPad ignora e filtra só por allowedClasses.",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
         }
       }
     },
