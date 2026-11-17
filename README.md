@@ -81,3 +81,18 @@ Campos novos (opcionais, ausentes quando vazios):
   `doubts` na curadoria); por isso os apps tratam como aviso.
 - `weapons.specialization`: `{weapons, mustSpecialize, othersForbidden}` (Spellarcher: arco
   longo, obrigatório, nenhuma outra). `weapons: []` + `othersForbidden` = não especializa.
+
+### Armas dos kits e slots de perícia (2026-11-17)
+
+- `scripts/add_kit_weapons.py` acrescenta a `weapons.json` as 48 armas fora do PHB citadas
+  pelos kits (`scripts/kit_weapons.json`: CFH, CNH, CBarbH, CRH, Dark Sun, Thri-Kreen,
+  Combat & Tactics, Arms and Equipment Guide, Dragon). `source` = sigla do livro;
+  `campaignSetting` (novo, opcional) = mundo da arma. Sem número no livro: null, nunca inventado.
+  Sem fonte nenhuma: Framea, Garrote, Razor, Rumal, Stone hammer, Throwing hammer, Small pick.
+- `mechanics.nonweaponSlots` (novo, opcional, `{initial, bonus, perLevels, notes}`): só os 32
+  kits que fogem do padrão da classe (`scripts/kit_nonweapon_slots.json`, aplicado por
+  `curate_kit_proficiencies.py`). `initial` troca o número inicial da classe, `bonus` soma,
+  `perLevels` = um slot novo a cada N níveis.
+- Perícias citadas com outro nome viraram as do compêndio (Spellcasting = Spellcraft,
+  Acrobatics = Tumbling, Small boat use = Boating...). Sem regra em fonte nenhuma, ficam só no
+  texto: Thieves' Cant, Climbing, Baking, Path Lore, Planes Lore, Spellweaving, Teaching.

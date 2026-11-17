@@ -1,0 +1,194 @@
+{
+ "arcanist_elf": {
+  "initial": null,
+  "bonus": 4,
+  "perLevels": null,
+  "notes": "Extra slots must be filled from the kit's listed proficiencies"
+ },
+ "brute": {
+  "initial": 1,
+  "bonus": null,
+  "perLevels": null,
+  "notes": null
+ },
+ "free_wanderer": {
+  "initial": null,
+  "bonus": 2,
+  "perLevels": null,
+  "notes": null
+ },
+ "giant_killer": {
+  "initial": 1,
+  "bonus": null,
+  "perLevels": null,
+  "notes": "Must be chosen from a restricted list"
+ },
+ "gladiator_fugitive_hillsfar": {
+  "initial": 2,
+  "bonus": null,
+  "perLevels": 3,
+  "notes": "Starts with only two slots regardless of Intelligence and can gain no more at 1st level"
+ },
+ "iyachtu_xvim_orb": {
+  "initial": 3,
+  "bonus": null,
+  "perLevels": 4,
+  "notes": null
+ },
+ "justifier": {
+  "initial": 1,
+  "bonus": null,
+  "perLevels": null,
+  "notes": "In addition to the bonus Survival proficiency; later slots at the normal rate"
+ },
+ "medician": {
+  "initial": 1,
+  "bonus": null,
+  "perLevels": null,
+  "notes": "Only one slot at 1st level, another at 3rd and a final one at 6th; may acquire no more than three proficiencies beyond her bonuses"
+ },
+ "merchant_sea_elf": {
+  "initial": 4,
+  "bonus": null,
+  "perLevels": 3,
+  "notes": null
+ },
+ "merchant_underdark": {
+  "initial": 4,
+  "bonus": null,
+  "perLevels": 4,
+  "notes": null
+ },
+ "mielikki_woodscout": {
+  "initial": 4,
+  "bonus": null,
+  "perLevels": 3,
+  "notes": null
+ },
+ "natural_philosopher": {
+  "initial": null,
+  "bonus": null,
+  "perLevels": null,
+  "notes": "Weapon proficiency slots may be traded for nonweapon proficiencies"
+ },
+ "pacifist_druid": {
+  "initial": null,
+  "bonus": null,
+  "perLevels": null,
+  "notes": "Weapon proficiency slots may be traded for nonweapon proficiencies"
+ },
+ "poro": {
+  "initial": 6,
+  "bonus": null,
+  "perLevels": 2,
+  "notes": null
+ },
+ "procurer": {
+  "initial": null,
+  "bonus": 1,
+  "perLevels": null,
+  "notes": null
+ },
+ "savage_hunter": {
+  "initial": null,
+  "bonus": 2,
+  "perLevels": null,
+  "notes": "Extra slots must be filled from the recommended proficiencies"
+ },
+ "scholar_faer_n": {
+  "initial": 6,
+  "bonus": null,
+  "perLevels": 3,
+  "notes": null
+ },
+ "scholar_monk": {
+  "initial": null,
+  "bonus": null,
+  "perLevels": null,
+  "notes": "Weapon proficiency slots may be traded for nonweapon proficiencies"
+ },
+ "scholar_priest": {
+  "initial": null,
+  "bonus": null,
+  "perLevels": null,
+  "notes": "Weapon proficiency slots may be traded for nonweapon proficiencies"
+ },
+ "sheenchaser": {
+  "initial": null,
+  "bonus": -1,
+  "perLevels": null,
+  "notes": "If a Wizard takes the kit mid-career he forgoes the next nonweapon proficiency from level progression"
+ },
+ "slave_fugitive": {
+  "initial": 4,
+  "bonus": null,
+  "perLevels": 3,
+  "notes": null
+ },
+ "stridesman": {
+  "initial": null,
+  "bonus": 1,
+  "perLevels": null,
+  "notes": "The extra proficiency must be spent on local history or an additional language"
+ },
+ "talon": {
+  "initial": null,
+  "bonus": -1,
+  "perLevels": null,
+  "notes": null
+ },
+ "totemic_druid": {
+  "initial": null,
+  "bonus": -1,
+  "perLevels": null,
+  "notes": "Starts with three slots rather than four"
+ },
+ "vagabond": {
+  "initial": 4,
+  "bonus": null,
+  "perLevels": null,
+  "notes": null
+ },
+ "warriors_of_the_island_kingdoms": {
+  "initial": 3,
+  "bonus": null,
+  "perLevels": 5,
+  "notes": null
+ },
+ "warriors_of_the_shining_south": {
+  "initial": 4,
+  "bonus": null,
+  "perLevels": 3,
+  "notes": null
+ },
+ "wizards_of_the_dragon_coast": {
+  "initial": 5,
+  "bonus": null,
+  "perLevels": 4,
+  "notes": null
+ },
+ "wizards_of_the_moonsea_region": {
+  "initial": 4,
+  "bonus": null,
+  "perLevels": 4,
+  "notes": null
+ },
+ "wizards_of_the_savage_north": {
+  "initial": 3,
+  "bonus": null,
+  "perLevels": 3,
+  "notes": null
+ },
+ "wizards_of_the_vast": {
+  "initial": 4,
+  "bonus": null,
+  "perLevels": 4,
+  "notes": null
+ },
+ "wizards_of_waterdeep": {
+  "initial": null,
+  "bonus": 2,
+  "perLevels": 2,
+  "notes": "Six slots at creation (two extra) plus Intelligence bonus; one slot every two levels instead of three"
+ }
+}

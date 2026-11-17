@@ -10,6 +10,7 @@ A curadoria (lida kit a kit do texto do livro, nomes do compêndio) fica em
 `scripts/kit_proficiency_curation.json`. Este script substitui, em cada kit:
   proficiencies: bonus, bonusChoices, required, requiredChoices, recommended, forbidden
   weapons:       required, requiredChoices, recommended, forbidden, allowed, specialization
+  nonweaponSlots (de scripts/kit_nonweapon_slots.json)
 Os campos `notes` (texto do livro) ficam como estão. Campos novos são opcionais no schema.
 
 Uso:  python scripts/curate_kit_proficiencies.py [--dry-run]
@@ -22,6 +23,9 @@ ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
 KITS = os.path.join(ROOT, "data", "kits.json")
 PROFICIENCIES = os.path.join(ROOT, "data", "proficiencies.json")
 CURATION = os.path.join(ROOT, "scripts", "kit_proficiency_curation.json")
+# Slots de perícia não-arma que o kit muda (initial troca o da classe, bonus soma,
+# perLevels = um slot novo a cada N níveis). Só os kits que fogem do padrão da classe.
+NONWEAPON_SLOTS = os.path.join(ROOT, "scripts", "kit_nonweapon_slots.json")
 
 # Grafias diferentes da mesma arma fora do PHB (mantém uma só).
 WEAPON_ALIASES = {
@@ -30,6 +34,10 @@ WEAPON_ALIASES = {
     "Main gauche": "Main-gauche",
     "Belaying Pin": "Belaying pin",
     "Bolas": "Bola",
+    # 2026-11-17: armas novas em weapons.json (scripts/add_kit_weapons.py)
+    "Blackjack": "Sap",
+    "Warclub": "Spiked club",
+    "Xyston": "Light horse lance",
 }
 
 PROF_FIELDS = ["bonus", "bonusChoices", "required", "requiredChoices", "recommended", "forbidden"]
@@ -54,6 +62,7 @@ def main():
     kits = json.load(open(KITS, encoding="utf-8"))
     names = {p["name"] for p in json.load(open(PROFICIENCIES, encoding="utf-8"))}
     curation = {c["id"]: c for c in json.load(open(CURATION, encoding="utf-8"))}
+    slots = json.load(open(NONWEAPON_SLOTS, encoding="utf-8"))
 
     missing = [k["id"] for k in kits if k["id"] not in curation]
     extra = sorted(set(curation) - {k["id"] for k in kits})
@@ -72,7 +81,10 @@ def main():
             bad = [x for x in flat if x not in names]
             if bad:
                 sys.exit(f"{kit['id']}.{f}: fora do compêndio: {bad}")
-            if f in ("bonus", "recommended"):
+            if f == "recommended":
+                bonus = set(c["proficiencies"].get("bonus", []))
+                prof[f] = dedupe([x for x in value if x not in bonus])
+            elif f == "bonus":
                 prof[f] = dedupe(value)
             elif value:
                 prof[f] = value if f.endswith("Choices") else dedupe(value)
@@ -98,7 +110,13 @@ def main():
         else:
             weap.pop("specialization", None)
 
-        if json.dumps([prof, weap], sort_keys=True) != before:
+        before_slots = json.dumps(kit["mechanics"].get("nonweaponSlots"), sort_keys=True)
+        if kit["id"] in slots:
+            kit["mechanics"]["nonweaponSlots"] = slots[kit["id"]]
+        else:
+            kit["mechanics"].pop("nonweaponSlots", None)
+
+        if json.dumps([prof, weap], sort_keys=True) != before or json.dumps(kit["mechanics"].get("nonweaponSlots"), sort_keys=True) != before_slots:
             changed += 1
 
     print(f"{changed} de {len(kits)} kits mudaram")
