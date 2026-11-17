@@ -66,93 +66,117 @@
     "order": 11
   },
   {
+    "id": "CWH",
+    "title": "The Complete Wizard's Handbook",
+    "setting": "Core",
+    "order": 12
+  },
+  {
+    "id": "CBN",
+    "title": "The Complete Book of Necromancers",
+    "setting": "Core",
+    "order": 13
+  },
+  {
+    "id": "TOM",
+    "title": "Tome of Magic",
+    "setting": "Core",
+    "order": 14
+  },
+  {
+    "id": "CBE",
+    "title": "The Complete Book of Elves",
+    "setting": "Core",
+    "order": 15
+  },
+  {
     "id": "DSC",
     "title": "Dark Sun Campaign Setting",
     "setting": "Dark Sun",
-    "order": 12
+    "order": 16
   },
   {
     "id": "DK",
     "title": "Dragon Kings",
     "setting": "Dark Sun",
-    "order": 13
+    "order": 17
   },
   {
     "id": "WatW",
     "title": "The Will and the Way",
     "setting": "Dark Sun",
-    "order": 14
+    "order": 18
   },
   {
     "id": "TKA",
     "title": "Thri-Kreen of Athas",
     "setting": "Dark Sun",
-    "order": 15
+    "order": 19
   },
   {
     "id": "DoD",
     "title": "Domains of Dread",
     "setting": "Ravenloft",
-    "order": 16
+    "order": 20
   },
   {
     "id": "PCS",
     "title": "Planescape Campaign Setting",
     "setting": "Planescape",
-    "order": 17
+    "order": 21
   },
   {
     "id": "PWH",
     "title": "The Planewalker's Handbook",
     "setting": "Planescape",
-    "order": 18
+    "order": 22
   },
   {
     "id": "TIP",
     "title": "The Inner Planes",
     "setting": "Planescape",
-    "order": 19
+    "order": 23
   },
   {
     "id": "SofS",
     "title": "Sea of Fallen Stars",
     "setting": "Forgotten Realms",
-    "order": 20
+    "order": 24
   },
   {
     "id": "FA",
     "title": "Faiths & Avatars",
     "setting": "Forgotten Realms",
-    "order": 21
+    "order": 25
   },
   {
     "id": "PP",
     "title": "Powers & Pantheons",
     "setting": "Forgotten Realms",
-    "order": 22
+    "order": 26
   },
   {
     "id": "TotL",
     "title": "Tales of the Lance",
     "setting": "Dragonlance",
-    "order": 23
+    "order": 27
   },
   {
     "id": "CWS",
     "title": "Council of Wyrms Setting",
     "setting": "Council of Wyrms",
-    "order": 24
+    "order": 28
   },
   {
     "id": "AA",
     "title": "Arabian Adventures",
     "setting": "Al-Qadim",
-    "order": 25
+    "order": 29
   },
   {
     "id": "CShaH",
     "title": "The Complete Sha'ir's Handbook",
     "setting": "Al-Qadim",
-    "order": 26
+    "order": 30
   }
 ]

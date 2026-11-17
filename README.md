@@ -20,6 +20,9 @@ data/                  41 arquivos JSON (UTF-8)
 schemas/               JSON Schema de cada arquivo + README com o mapeamento
 scripts/
   validate_schemas.py  valida data/ contra schemas/
+  add_mined_rulebooks.py      regras de CBE, CWH, CBN e TOM (vêm de ../thac0berry-data-mining)
+  add_elf_and_misc_kits.py    30 kits curados à mão (CBE e livros menores)
+  add_dragon_magazine_kits.py 119 kits da Dragon Magazine
 ```
 
 ## Validar
@@ -40,3 +43,41 @@ O CI roda a mesma validação a cada push.
   iPad. Detalhes em [`schemas/README.md`](schemas/README.md).
 - Os dados vêm de fontes de AD&D 2e convertidas por scripts. Confira os valores contra
   os livros antes de usar em mesa.
+
+## Kits importados da mineração (2026-11-16)
+
+Os três scripts `add_*` são idempotentes (trocam os registros que criaram, mesmos ids) e
+leem `../thac0berry-data-mining/data`.
+
+- **Grupo `Demihuman`** (subclass = raça: Elf, Half-Elf, Dwarf, Avariel), com `mechanics.requirements.races`.
+- **`classEligibility.combination`** (opcional): kit de multiclasse, ex. Spellarcher = `[Fighter, Mage]`.
+  O app mostra o kit a quem tem qualquer uma das classes e só avisa se a ficha não é essa multiclasse.
+- **CBE, CWH, CBN, TOM**: 202 regras em `rules.json` e 4 livros em `books.json`.
+- **Kits da Dragon Magazine** (`sourceBook` = "Dragon Magazine #N"): a classe vem do título da
+  seção da própria página ("Fighter/Mage kit") ou de uma tabela manual no script, nunca do
+  `classGroup` minerado, que estava errado em muitos kits (Sohei, Fiend Slayer, Earthstoker...).
+  `mechanics` sai quase vazio: requisitos de atributo, proficiências bônus e slots ficam só no
+  texto (`features`). `startingCash` só com fórmula de dados e moeda gp/cp/sp explícita.
+  Fora (19, lista em `EXCLUDED` e `MANUAL`): 6 do Masque of the Red Death (classes próprias),
+  kits de dragão e 9 com classe ambígua (Zande Witch Woman, Tribal Scout, Mystery Man, Sarkany,
+  Alakvalt, Boszorkany, Courier, Kshatriya, Manikin).
+- Nomes de kit precisam ser únicos (a ficha guarda o kit pelo nome). Já existe um duplicado:
+  "Forester" (ids `forester` e `forester_the_complete`).
+
+## Proficiências e armas dos kits (2026-11-17)
+
+`scripts/curate_kit_proficiencies.py` aplica `scripts/kit_proficiency_curation.json`: os 506
+kits lidos um a um do texto do livro, com nomes do compêndio (`proficiencies.json`; armas do
+PHB por `weapons.json`, as de fora em maiúscula: Ninja-to, Katana, Cutlass...). O arquivo de
+curadoria guarda também `doubts` e `unmatched` (nomes sem entrada no compêndio), que o script
+não grava. Para corrigir um kit: edite a curadoria e rode o script de novo.
+
+Campos novos (opcionais, ausentes quando vazios):
+- `proficiencies.bonusChoices`: de cada lista o jogador ganha uma, de graça ("Hunting or Fishing").
+- `proficiencies.required` / `requiredChoices`: o kit obriga a tomar (gasta slots).
+- `proficiencies.forbidden`: o kit proíbe (os apps só avisam, não bloqueiam).
+- `weapons.requiredChoices`: arma obrigatória com escolha ("sickle or scythe").
+- `weapons.allowed`: as únicas armas do kit. Alguns kits limitam só as armas iniciais (ver
+  `doubts` na curadoria); por isso os apps tratam como aviso.
+- `weapons.specialization`: `{weapons, mustSpecialize, othersForbidden}` (Spellarcher: arco
+  longo, obrigatório, nenhuma outra). `weapons: []` + `othersForbidden` = não especializa.

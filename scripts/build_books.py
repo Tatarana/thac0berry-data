@@ -38,6 +38,11 @@ BOOKS = [
     ("CNH", "Core"),
     ("CTH", "Core"),
     ("CPsiH", "Core"),
+    # 2026-11-16: livros "Complete" e Tome of Magic minerados (scripts/add_mined_rulebooks.py).
+    ("CWH", "Core"),
+    ("CBN", "Core"),
+    ("TOM", "Core"),
+    ("CBE", "Core"),
     ("DSC", "Dark Sun"),
     ("DK", "Dark Sun"),
     ("WatW", "Dark Sun"),
