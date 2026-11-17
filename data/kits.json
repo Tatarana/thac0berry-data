@@ -2134,7 +2134,13 @@
         "mode": "modified",
         "notes": "command undead"
       },
-      "startingCash": "3d6x10 gp"
+      "startingCash": "3d6x10 gp",
+      "nonweaponSlots": {
+        "initial": 3,
+        "bonus": null,
+        "perLevels": 4,
+        "notes": null
+      }
     },
     "deity": "Iyachtu Xvim",
     "pantheon": "Faerûnian",
@@ -3334,7 +3340,13 @@
         "mode": "forbidden",
         "notes": "Druids cannot turn undead as a core class rule."
       },
-      "startingCash": "3d6x10 gp"
+      "startingCash": "3d6x10 gp",
+      "nonweaponSlots": {
+        "initial": null,
+        "bonus": null,
+        "perLevels": null,
+        "notes": "Weapon proficiency slots may be traded for nonweapon proficiencies"
+      }
     },
     "deity": null,
     "pantheon": null,
@@ -3901,7 +3913,13 @@
         "mode": "forbidden",
         "notes": "Druids cannot turn undead as a core class rule."
       },
-      "startingCash": "3d6x10 gp"
+      "startingCash": "3d6x10 gp",
+      "nonweaponSlots": {
+        "initial": null,
+        "bonus": null,
+        "perLevels": null,
+        "notes": "Weapon proficiency slots may be traded for nonweapon proficiencies"
+      }
     },
     "deity": null,
     "pantheon": null,
@@ -4745,7 +4763,13 @@
         "mode": "allowed",
         "notes": "Standard turning according to priest class level."
       },
-      "startingCash": "3d6x10 gp"
+      "startingCash": "3d6x10 gp",
+      "nonweaponSlots": {
+        "initial": null,
+        "bonus": null,
+        "perLevels": null,
+        "notes": "Weapon proficiency slots may be traded for nonweapon proficiencies"
+      }
     },
     "deity": null,
     "pantheon": null,
@@ -6254,7 +6278,13 @@
         "mode": "forbidden",
         "notes": "Druids cannot turn undead as a core class rule."
       },
-      "startingCash": "3d6x5 gp"
+      "startingCash": "3d6x5 gp",
+      "nonweaponSlots": {
+        "initial": null,
+        "bonus": -1,
+        "perLevels": null,
+        "notes": "Starts with three slots rather than four"
+      }
     },
     "deity": null,
     "pantheon": null,
@@ -7483,7 +7513,13 @@
         "mode": "not_applicable",
         "notes": "Wizard kits don't turn undead — that's a priest class feature."
       },
-      "startingCash": "1d4"
+      "startingCash": "1d4",
+      "nonweaponSlots": {
+        "initial": null,
+        "bonus": 4,
+        "perLevels": null,
+        "notes": "Extra slots must be filled from the kit's listed proficiencies"
+      }
     },
     "deity": null,
     "pantheon": null,
@@ -8065,7 +8101,6 @@
         "recommended": [
           "Dancing",
           "Languages, Modern",
-          "Riding, Land-Based",
           "Singing",
           "Ancient History",
           "Languages, Ancient",
@@ -8616,6 +8651,12 @@
         "initial": 1,
         "additional": null,
         "nonproficiencyPenalty": "-5"
+      },
+      "nonweaponSlots": {
+        "initial": 6,
+        "bonus": null,
+        "perLevels": 3,
+        "notes": null
       }
     },
     "deity": null,
@@ -9080,7 +9121,8 @@
       },
       "proficiencies": {
         "bonus": [
-          "Herbalism"
+          "Herbalism",
+          "Spellcraft"
         ],
         "recommended": [
           "Artistic Ability",
@@ -9475,6 +9517,12 @@
         "initial": 1,
         "additional": 5,
         "nonproficiencyPenalty": "-4"
+      },
+      "nonweaponSlots": {
+        "initial": 5,
+        "bonus": null,
+        "perLevels": 4,
+        "notes": null
       }
     },
     "deity": null,
@@ -9763,6 +9811,12 @@
         "initial": 2,
         "additional": 4,
         "nonproficiencyPenalty": "-3"
+      },
+      "nonweaponSlots": {
+        "initial": 4,
+        "bonus": null,
+        "perLevels": 4,
+        "notes": null
       }
     },
     "deity": null,
@@ -9905,6 +9959,12 @@
         "initial": 1,
         "additional": 5,
         "nonproficiencyPenalty": "-4"
+      },
+      "nonweaponSlots": {
+        "initial": 3,
+        "bonus": null,
+        "perLevels": 3,
+        "notes": null
       }
     },
     "deity": null,
@@ -10047,6 +10107,12 @@
         "initial": 2,
         "additional": 5,
         "nonproficiencyPenalty": "-4"
+      },
+      "nonweaponSlots": {
+        "initial": 4,
+        "bonus": null,
+        "perLevels": 4,
+        "notes": null
       }
     },
     "deity": null,
@@ -10264,6 +10330,12 @@
         "initial": 1,
         "additional": 6,
         "nonproficiencyPenalty": "-5"
+      },
+      "nonweaponSlots": {
+        "initial": null,
+        "bonus": 2,
+        "perLevels": 2,
+        "notes": "Six slots at creation (two extra) plus Intelligence bonus; one slot every two levels instead of three"
       }
     },
     "deity": null,
@@ -11924,7 +11996,13 @@
         "mode": "not_applicable",
         "notes": "Warrior and Rogue kits don't turn undead — that's a priest class feature."
       },
-      "startingCash": null
+      "startingCash": null,
+      "nonweaponSlots": {
+        "initial": 1,
+        "bonus": null,
+        "perLevels": null,
+        "notes": null
+      }
     },
     "deity": null,
     "pantheon": null,
@@ -12277,7 +12355,7 @@
         "specialization": {
           "weapons": [
             "Dagger or dirk",
-            "Blackjack"
+            "Sap"
           ],
           "mustSpecialize": true,
           "othersForbidden": true
@@ -13006,7 +13084,8 @@
           "Set Snares",
           "Survival",
           "Tracking",
-          "Weaving"
+          "Weaving",
+          "Glassworking"
         ],
         "notes": null
       },
@@ -13910,7 +13989,13 @@
         "mode": "not_applicable",
         "notes": "Warrior and Rogue kits don't turn undead — that's a priest class feature."
       },
-      "startingCash": null
+      "startingCash": null,
+      "nonweaponSlots": {
+        "initial": 1,
+        "bonus": null,
+        "perLevels": null,
+        "notes": "Must be chosen from a restricted list"
+      }
     },
     "deity": null,
     "pantheon": null,
@@ -14242,6 +14327,12 @@
         "initial": 5,
         "additional": 3,
         "nonproficiencyPenalty": "-1"
+      },
+      "nonweaponSlots": {
+        "initial": 2,
+        "bonus": null,
+        "perLevels": 3,
+        "notes": "Starts with only two slots regardless of Intelligence and can gain no more at 1st level"
       }
     },
     "deity": null,
@@ -14726,7 +14817,6 @@
           "Artistic Ability",
           "Cooking",
           "Direction Sense",
-          "Endurance",
           "Etiquette",
           "Fishing",
           "Gaming",
@@ -14988,7 +15078,13 @@
         "mode": "not_applicable",
         "notes": "Warrior and Rogue kits don't turn undead — that's a priest class feature."
       },
-      "startingCash": null
+      "startingCash": null,
+      "nonweaponSlots": {
+        "initial": 1,
+        "bonus": null,
+        "perLevels": null,
+        "notes": "In addition to the bonus Survival proficiency; later slots at the normal rate"
+      }
     },
     "deity": null,
     "pantheon": null,
@@ -15465,7 +15561,13 @@
         "mode": "not_applicable",
         "notes": "Warrior and Rogue kits don't turn undead — that's a priest class feature."
       },
-      "startingCash": null
+      "startingCash": null,
+      "nonweaponSlots": {
+        "initial": 1,
+        "bonus": null,
+        "perLevels": null,
+        "notes": "Only one slot at 1st level, another at 3rd and a final one at 6th; may acquire no more than three proficiencies beyond her bonuses"
+      }
     },
     "deity": null,
     "pantheon": null,
@@ -15649,6 +15751,12 @@
         "initial": 3,
         "additional": 3,
         "nonproficiencyPenalty": "-2"
+      },
+      "nonweaponSlots": {
+        "initial": 4,
+        "bonus": null,
+        "perLevels": 3,
+        "notes": null
       }
     },
     "deity": null,
@@ -15730,6 +15838,12 @@
         "initial": 2,
         "additional": 4,
         "nonproficiencyPenalty": "-3"
+      },
+      "nonweaponSlots": {
+        "initial": 4,
+        "bonus": null,
+        "perLevels": 3,
+        "notes": null
       }
     },
     "deity": null,
@@ -17103,7 +17217,6 @@
         ],
         "recommended": [
           "Direction Sense",
-          "Planar Survival",
           "Portal Feel",
           "Survival"
         ],
@@ -17659,7 +17772,8 @@
       "proficiencies": {
         "bonus": [],
         "recommended": [
-          "Swimming"
+          "Swimming",
+          "Tumbling"
         ],
         "notes": null,
         "required": [
@@ -18189,6 +18303,12 @@
         "initial": 1,
         "additional": 3,
         "nonproficiencyPenalty": "See below"
+      },
+      "nonweaponSlots": {
+        "initial": 4,
+        "bonus": null,
+        "perLevels": 3,
+        "notes": null
       }
     },
     "deity": null,
@@ -19875,6 +19995,12 @@
         "initial": 4,
         "additional": 3,
         "nonproficiencyPenalty": "-2"
+      },
+      "nonweaponSlots": {
+        "initial": 3,
+        "bonus": null,
+        "perLevels": 5,
+        "notes": null
       }
     },
     "deity": null,
@@ -20247,6 +20373,12 @@
         "initial": 3,
         "additional": 3,
         "nonproficiencyPenalty": "-3"
+      },
+      "nonweaponSlots": {
+        "initial": 4,
+        "bonus": null,
+        "perLevels": 3,
+        "notes": null
       }
     },
     "deity": null,
@@ -24121,7 +24253,6 @@
           "Engineering",
           "Languages, Ancient",
           "Languages, Modern",
-          "Local History",
           "Mining",
           "Mountaineering",
           "Rope Use",
@@ -24576,6 +24707,12 @@
         "initial": 1,
         "additional": 4,
         "nonproficiencyPenalty": "-3"
+      },
+      "nonweaponSlots": {
+        "initial": 4,
+        "bonus": null,
+        "perLevels": 4,
+        "notes": null
       }
     },
     "deity": null,
@@ -27261,7 +27398,13 @@
         "mode": "not_applicable",
         "notes": "Warrior and Rogue kits don't turn undead — that's a priest class feature."
       },
-      "startingCash": "2d6"
+      "startingCash": "2d6",
+      "nonweaponSlots": {
+        "initial": 4,
+        "bonus": null,
+        "perLevels": null,
+        "notes": null
+      }
     },
     "deity": null,
     "pantheon": null,
@@ -28014,7 +28157,8 @@
     "mechanics": {
       "proficiencies": {
         "bonus": [
-          "Psioncraft"
+          "Psioncraft",
+          "Languages, Modern"
         ],
         "recommended": [
           "Danger Sense",
@@ -28026,7 +28170,6 @@
           "Hypnosis",
           "Meditative Focus",
           "Rejuvenation",
-          "Languages, Modern",
           "Navigation",
           "Weather Sense"
         ],
@@ -32433,7 +32576,13 @@
         "mode": "not_applicable",
         "notes": "Not a priest kit; no turning of its own."
       },
-      "startingCash": "2d4x10 cp"
+      "startingCash": "2d4x10 cp",
+      "nonweaponSlots": {
+        "initial": null,
+        "bonus": 2,
+        "perLevels": null,
+        "notes": "Extra slots must be filled from the recommended proficiencies"
+      }
     },
     "setting": "Dark Sun",
     "deity": null,
@@ -32521,7 +32670,13 @@
         "mode": "not_applicable",
         "notes": "Not a priest kit; no turning of its own."
       },
-      "startingCash": "1d6x10 cp"
+      "startingCash": "1d6x10 cp",
+      "nonweaponSlots": {
+        "initial": null,
+        "bonus": 2,
+        "perLevels": null,
+        "notes": null
+      }
     },
     "setting": "Dark Sun",
     "deity": null,
@@ -32612,7 +32767,13 @@
         "mode": "not_applicable",
         "notes": "Not a priest kit; no turning of its own."
       },
-      "startingCash": "2d6x30 cp"
+      "startingCash": "2d6x30 cp",
+      "nonweaponSlots": {
+        "initial": null,
+        "bonus": 1,
+        "perLevels": null,
+        "notes": null
+      }
     },
     "setting": "Dark Sun",
     "deity": null,
@@ -32949,7 +33110,7 @@
       "weapons": {
         "required": [
           "Short sword",
-          "Xyston"
+          "Light horse lance"
         ],
         "recommended": [],
         "forbidden": [],
@@ -32957,7 +33118,7 @@
         "specialization": {
           "weapons": [
             "Short sword",
-            "Xyston"
+            "Light horse lance"
           ],
           "mustSpecialize": false,
           "othersForbidden": false
@@ -34621,7 +34782,8 @@
         "bonus": [],
         "recommended": [
           "Animal Handling",
-          "Animal Training"
+          "Animal Training",
+          "Musical Instrument"
         ],
         "notes": null,
         "required": [
@@ -35943,14 +36105,14 @@
       },
       "proficiencies": {
         "bonus": [
-          "Animal Training"
+          "Animal Training",
+          "Languages, Modern"
         ],
         "recommended": [
           "Dragon Lore",
           "Riding, Airborne",
           "Animal Handling",
-          "Languages, Ancient",
-          "Languages, Modern"
+          "Languages, Ancient"
         ],
         "notes": null
       },
@@ -37938,7 +38100,8 @@
           "Navigation",
           "Seamanship",
           "Fishing",
-          "Carpentry"
+          "Carpentry",
+          "Boating"
         ],
         "notes": null
       },
@@ -38558,7 +38721,8 @@
         "recommended": [
           "Languages, Ancient",
           "Reading/Writing",
-          "Spellcraft"
+          "Spellcraft",
+          "Ancient History"
         ],
         "notes": null,
         "required": [
@@ -39296,7 +39460,13 @@
         "mode": "allowed",
         "notes": "Standard turning according to priest class level (druids cannot turn undead)."
       },
-      "startingCash": null
+      "startingCash": null,
+      "nonweaponSlots": {
+        "initial": 6,
+        "bonus": null,
+        "perLevels": 2,
+        "notes": null
+      }
     },
     "setting": null,
     "deity": null,
@@ -40278,7 +40448,13 @@
         "mode": "allowed",
         "notes": "Standard turning according to priest class level (druids cannot turn undead)."
       },
-      "startingCash": null
+      "startingCash": null,
+      "nonweaponSlots": {
+        "initial": null,
+        "bonus": null,
+        "perLevels": null,
+        "notes": "Weapon proficiency slots may be traded for nonweapon proficiencies"
+      }
     },
     "setting": null,
     "deity": null,
@@ -40873,7 +41049,13 @@
         "mode": "not_applicable",
         "notes": "Not a priest kit; no turning of its own."
       },
-      "startingCash": "(1d4+1)x10 gp"
+      "startingCash": "(1d4+1)x10 gp",
+      "nonweaponSlots": {
+        "initial": null,
+        "bonus": -1,
+        "perLevels": null,
+        "notes": "If a Wizard takes the kit mid-career he forgoes the next nonweapon proficiency from level progression"
+      }
     },
     "setting": null,
     "deity": null,
@@ -42406,7 +42588,13 @@
         "mode": "allowed",
         "notes": "Standard turning according to priest class level (druids cannot turn undead)."
       },
-      "startingCash": "3d6x10 gp"
+      "startingCash": "3d6x10 gp",
+      "nonweaponSlots": {
+        "initial": null,
+        "bonus": 1,
+        "perLevels": null,
+        "notes": "The extra proficiency must be spent on local history or an additional language"
+      }
     },
     "setting": null,
     "deity": null,
@@ -42865,7 +43053,13 @@
         "mode": "not_applicable",
         "notes": "Not a priest kit; no turning of its own."
       },
-      "startingCash": null
+      "startingCash": null,
+      "nonweaponSlots": {
+        "initial": null,
+        "bonus": -1,
+        "perLevels": null,
+        "notes": null
+      }
     },
     "setting": null,
     "deity": null,
@@ -43951,7 +44145,7 @@
           "Atlatl",
           "Battle axe",
           "Bola",
-          "Warclub",
+          "Spiked club",
           "Hand or throwing axe",
           "Javelin",
           "Knife",

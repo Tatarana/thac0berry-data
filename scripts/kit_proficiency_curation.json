@@ -3427,7 +3427,8 @@
   "id": "witch",
   "proficiencies": {
    "bonus": [
-    "Herbalism"
+    "Herbalism",
+    "Spellcraft"
    ],
    "bonusChoices": [],
    "required": [],
@@ -3455,9 +3456,7 @@
    "specialization": null,
    "allowed": []
   },
-  "unmatched": [
-   "Spellcasting"
-  ],
+  "unmatched": null,
   "doubts": "Bonus 'Spellcasting' is not in the compendium (probably meant Spellcraft). Witch may not take any weapon proficiency at all."
  },
  {
@@ -5057,7 +5056,8 @@
     "Set Snares",
     "Survival",
     "Tracking",
-    "Weaving"
+    "Weaving",
+    "Glassworking"
    ],
    "forbidden": [],
    "requiredChoices": []
@@ -5070,9 +5070,7 @@
    "specialization": null,
    "allowed": []
   },
-  "unmatched": [
-   "Weaponsmithing (glass)"
-  ],
+  "unmatched": null,
   "doubts": "Initial weapons 'Any (see below)' not detailed."
  },
  {
@@ -7281,7 +7279,8 @@
     ]
    ],
    "recommended": [
-    "Swimming"
+    "Swimming",
+    "Tumbling"
    ],
    "forbidden": []
   },
@@ -7296,9 +7295,7 @@
    "forbidden": [],
    "specialization": null
   },
-  "unmatched": [
-   "Acrobatics"
-  ],
+  "unmatched": null,
   "doubts": null
  },
  {
@@ -11575,7 +11572,8 @@
   "id": "dragon_psionicist",
   "proficiencies": {
    "bonus": [
-    "Psioncraft"
+    "Psioncraft",
+    "Languages, Modern"
    ],
    "bonusChoices": [],
    "required": [
@@ -11608,10 +11606,7 @@
    "specialization": null,
    "allowed": []
   },
-  "unmatched": [
-   "Languages (High Draconic)",
-   "Racial language"
-  ],
+  "unmatched": null,
   "doubts": "Claw Attack is a bonus combat proficiency (put in weapons.required); Kindredbond required by 4th level; recommended list split hatching vs after 1st level."
  },
  {
@@ -14106,7 +14101,8 @@
    ],
    "recommended": [
     "Animal Handling",
-    "Animal Training"
+    "Animal Training",
+    "Musical Instrument"
    ],
    "forbidden": [],
    "requiredChoices": []
@@ -14129,9 +14125,7 @@
    "specialization": null,
    "allowed": []
   },
-  "unmatched": [
-   "War trumpet"
-  ],
+  "unmatched": null,
   "doubts": "Book says 'Required: lance, spear' (interpreted as both). May use no missile weapons except one spear. Riding mapped to Riding, Land-Based."
  },
  {
@@ -14673,7 +14667,8 @@
   "id": "dragon_lord",
   "proficiencies": {
    "bonus": [
-    "Animal Training"
+    "Animal Training",
+    "Languages, Modern"
    ],
    "bonusChoices": [],
    "required": [],
@@ -14695,9 +14690,7 @@
    "specialization": null,
    "allowed": []
   },
-  "unmatched": [
-   "Dragon tongue"
-  ],
+  "unmatched": null,
   "doubts": "Bonus 'Dragon tongue' is a language (Modern language, no compendium entry); Animal Training applies to dragons."
  },
  {
@@ -15471,7 +15464,8 @@
     "Navigation",
     "Seamanship",
     "Fishing",
-    "Carpentry"
+    "Carpentry",
+    "Boating"
    ],
    "forbidden": [],
    "requiredChoices": []
@@ -15502,9 +15496,7 @@
    "specialization": null,
    "allowed": []
   },
-  "unmatched": [
-   "Small boat use"
-  ],
+  "unmatched": null,
   "doubts": "Four variants. Required NWP by variant: Weather Sense (abu-legbas), Direction Sense (keyan), Fire-building (heddy), Swimming (damon). Required weapon by variant: short bow (abu), stone hammer (keyan), torch (heddy), trident (damon). Recommended lists are the union of all variants; 'small boat use' unmatched."
  },
  {
@@ -15731,7 +15723,8 @@
    "recommended": [
     "Languages, Ancient",
     "Reading/Writing",
-    "Spellcraft"
+    "Spellcraft",
+    "Ancient History"
    ],
    "forbidden": [],
    "requiredChoices": []
@@ -15748,9 +15741,7 @@
    "specialization": null,
    "allowed": []
   },
-  "unmatched": [
-   "Ancient Lore"
-  ],
+  "unmatched": null,
   "doubts": "Required Sage Knowledge is specifically Inner Planes. 'Ancient lore' may correspond to Ancient History."
  },
  {

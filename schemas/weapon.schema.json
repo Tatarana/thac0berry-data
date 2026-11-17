@@ -93,6 +93,13 @@
             }
           ],
           "description": "Armas de disparo: a munição vendida à parte (PHB Table 44)."
+        },
+        "campaignSetting": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Mundo da arma (ex.: \"Dark Sun\"); null ou ausente = qualquer campanha."
         }
       }
     },

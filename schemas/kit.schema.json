@@ -227,6 +227,16 @@
               "type": "null"
             }
           ]
+        },
+        "nonweaponSlots": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/KitNonweaponSlots"
+            },
+            {
+              "type": "null"
+            }
+          ]
         }
       }
     },
@@ -498,6 +508,37 @@
         },
         "othersForbidden": {
           "type": "boolean"
+        }
+      },
+      "additionalProperties": false
+    },
+    "KitNonweaponSlots": {
+      "type": "object",
+      "description": "Slots de perícia não-arma que o kit muda. initial troca o número inicial da classe; bonus soma a ele; perLevels = um slot novo a cada N níveis.",
+      "properties": {
+        "initial": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "bonus": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "perLevels": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "notes": {
+          "type": [
+            "string",
+            "null"
+          ]
         }
       },
       "additionalProperties": false
