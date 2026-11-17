@@ -86,7 +86,7 @@ Campos novos (opcionais, ausentes quando vazios):
 
 - `scripts/add_kit_weapons.py` acrescenta a `weapons.json` as 48 armas fora do PHB citadas
   pelos kits (`scripts/kit_weapons.json`: CFH, CNH, CBarbH, CRH, Dark Sun, Thri-Kreen,
-  Combat & Tactics, Arms and Equipment Guide, Dragon). `source` = sigla do livro;
+  Combat & Tactics, Arms and Equipment Guide, Dragon). `source` = sigla do livro (PO:C&T = Combat & Tactics, AEG = Arms and Equipment Guide);
   `campaignSetting` (novo, opcional) = mundo da arma. Sem número no livro: null, nunca inventado.
   Sem fonte nenhuma: Framea, Garrote, Razor, Rumal, Stone hammer, Throwing hammer, Small pick.
 - `mechanics.nonweaponSlots` (novo, opcional, `{initial, bonus, perLevels, notes}`): só os 32

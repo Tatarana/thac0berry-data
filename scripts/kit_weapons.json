@@ -570,7 +570,7 @@
   "cost": "1 gp",
   "weight": "1/10 lbs.",
   "campaignSetting": null,
-  "source": "Arms and Equipment Guide"
+  "source": "AEG"
  },
  {
   "id": "mancatcher",
@@ -585,7 +585,7 @@
   "cost": "30 gp",
   "weight": "8 lbs.",
   "campaignSetting": null,
-  "source": "Arms and Equipment Guide"
+  "source": "AEG"
  },
  {
   "id": "belt_pistol",
@@ -604,7 +604,7 @@
   "cost": null,
   "weight": "3 lbs.",
   "campaignSetting": null,
-  "source": "Player's Option: Combat & Tactics"
+  "source": "PO:C&T"
  },
  {
   "id": "horse_pistol",
@@ -623,7 +623,7 @@
   "cost": null,
   "weight": "4 lbs.",
   "campaignSetting": null,
-  "source": "Player's Option: Combat & Tactics"
+  "source": "PO:C&T"
  },
  {
   "id": "jambiya",
@@ -638,7 +638,7 @@
   "cost": null,
   "weight": "1 lbs.",
   "campaignSetting": null,
-  "source": "Player's Option: Combat & Tactics"
+  "source": "PO:C&T"
  },
  {
   "id": "tiger_s_claws",
@@ -653,7 +653,7 @@
   "cost": null,
   "weight": "1 lbs.",
   "campaignSetting": null,
-  "source": "Player's Option: Combat & Tactics"
+  "source": "PO:C&T"
  },
  {
   "id": "wing_sword",
@@ -668,7 +668,7 @@
   "cost": "12 gp",
   "weight": "4 lbs.",
   "campaignSetting": null,
-  "source": "Dragon Magazine (On Wings of Eagles)"
+  "source": "Dragon"
  },
  {
   "id": "eagle_claws",
@@ -683,7 +683,7 @@
   "cost": "7 gp",
   "weight": "1 lbs.",
   "campaignSetting": null,
-  "source": "Dragon Magazine (On Wings of Eagles)"
+  "source": "Dragon"
  },
  {
   "id": "falx",
@@ -698,7 +698,7 @@
   "cost": null,
   "weight": null,
   "campaignSetting": null,
-  "source": "Dragon Magazine (Thegn kit)"
+  "source": "Dragon"
  },
  {
   "id": "chatkcha_thrown",
