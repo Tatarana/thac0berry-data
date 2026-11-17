@@ -63,3 +63,21 @@ leem `../thac0berry-data-mining/data`.
   Alakvalt, Boszorkany, Courier, Kshatriya, Manikin).
 - Nomes de kit precisam ser únicos (a ficha guarda o kit pelo nome). Já existe um duplicado:
   "Forester" (ids `forester` e `forester_the_complete`).
+
+## Proficiências e armas dos kits (2026-11-17)
+
+`scripts/curate_kit_proficiencies.py` aplica `scripts/kit_proficiency_curation.json`: os 506
+kits lidos um a um do texto do livro, com nomes do compêndio (`proficiencies.json`; armas do
+PHB por `weapons.json`, as de fora em maiúscula: Ninja-to, Katana, Cutlass...). O arquivo de
+curadoria guarda também `doubts` e `unmatched` (nomes sem entrada no compêndio), que o script
+não grava. Para corrigir um kit: edite a curadoria e rode o script de novo.
+
+Campos novos (opcionais, ausentes quando vazios):
+- `proficiencies.bonusChoices`: de cada lista o jogador ganha uma, de graça ("Hunting or Fishing").
+- `proficiencies.required` / `requiredChoices`: o kit obriga a tomar (gasta slots).
+- `proficiencies.forbidden`: o kit proíbe (os apps só avisam, não bloqueiam).
+- `weapons.requiredChoices`: arma obrigatória com escolha ("sickle or scythe").
+- `weapons.allowed`: as únicas armas do kit. Alguns kits limitam só as armas iniciais (ver
+  `doubts` na curadoria); por isso os apps tratam como aviso.
+- `weapons.specialization`: `{weapons, mustSpecialize, othersForbidden}` (Spellarcher: arco
+  longo, obrigatório, nenhuma outra). `weapons: []` + `othersForbidden` = não especializa.

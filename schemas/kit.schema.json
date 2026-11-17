@@ -288,6 +288,33 @@
             "string",
             "null"
           ]
+        },
+        "requiredChoices": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "description": "Armas obrigatórias com escolha: de cada lista, uma."
+        },
+        "allowed": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Quando não vazio: as únicas armas que o kit pode usar."
+        },
+        "specialization": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/KitSpecialization"
+            },
+            {
+              "type": "null"
+            }
+          ]
         }
       }
     },
@@ -315,6 +342,40 @@
             "string",
             "null"
           ]
+        },
+        "bonusChoices": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "description": "Bônus com escolha: de cada lista o jogador ganha uma, de graça."
+        },
+        "required": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Proficiências que o kit obriga a tomar (gastam slots)."
+        },
+        "requiredChoices": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "description": "Obrigatórias com escolha: de cada lista, uma (gasta slots)."
+        },
+        "forbidden": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Proficiências que o kit proíbe."
         }
       }
     },
@@ -416,6 +477,30 @@
           ]
         }
       }
+    },
+    "KitSpecialization": {
+      "type": "object",
+      "required": [
+        "weapons",
+        "mustSpecialize",
+        "othersForbidden"
+      ],
+      "description": "Regra de especialização do kit. weapons vazio + othersForbidden = não especializa.",
+      "properties": {
+        "weapons": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "mustSpecialize": {
+          "type": "boolean"
+        },
+        "othersForbidden": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": false
     }
   }
 }
