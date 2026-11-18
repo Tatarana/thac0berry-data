@@ -1,0 +1,10583 @@
+[
+ {
+  "file": "data/rules.json",
+  "ruleId": "dmg_ch02_racial_level_restrictions",
+  "tableIndex": 1,
+  "tableTitle": "Table 8: Prime Requisite Bonuses",
+  "pattern": "sign_lost",
+  "confidence": "confident",
+  "note": "",
+  "before": {
+   "headers": [
+    "Ability Score",
+    "Additional Levels"
+   ],
+   "rows": [
+    [
+     "14, 15",
+     "1"
+    ],
+    [
+     "16, 17",
+     "2"
+    ],
+    [
+     "18",
+     "3"
+    ],
+    [
+     "19",
+     "4"
+    ]
+   ]
+  },
+  "after": {
+   "headers": [
+    "Ability Score",
+    "Additional Levels"
+   ],
+   "rows": [
+    [
+     "14, 15",
+     "+1"
+    ],
+    [
+     "16, 17",
+     "+2"
+    ],
+    [
+     "18",
+     "+3"
+    ],
+    [
+     "19",
+     "+4"
+    ]
+   ]
+  },
+  "source": "wiki page 'Racial Level Restrictions (DMG)', caption 'Table 8: Prime Requisite Bonuses'"
+ },
+ {
+  "file": "data/rules.json",
+  "ruleId": "dmg_ch09_initiative",
+  "tableIndex": 0,
+  "tableTitle": "Table 40: Standard Modifiers to Initiative",
+  "pattern": "sign_lost",
+  "confidence": "confident",
+  "note": "",
+  "before": {
+   "headers": [
+    "Situation",
+    "Modifier"
+   ],
+   "rows": [
+    [
+     "Hasted",
+     "-2"
+    ],
+    [
+     "Slowed",
+     "2"
+    ],
+    [
+     "On higher ground",
+     "-1"
+    ],
+    [
+     "Set to receive a charge",
+     "-2"
+    ],
+    [
+     "Wading or slippery footing",
+     "2"
+    ],
+    [
+     "Wading in deep water",
+     "4"
+    ],
+    [
+     "Foreign environment*",
+     "6"
+    ],
+    [
+     "Hindered (tangled, climbing)",
+     "3"
+    ],
+    [
+     "Waiting (Player's Handbook)",
+     "1"
+    ]
+   ]
+  },
+  "after": {
+   "headers": [
+    "Situation",
+    "Modifier"
+   ],
+   "rows": [
+    [
+     "Hasted",
+     "-2"
+    ],
+    [
+     "Slowed",
+     "+2"
+    ],
+    [
+     "On higher ground",
+     "-1"
+    ],
+    [
+     "Set to receive a charge",
+     "-2"
+    ],
+    [
+     "Wading or slippery footing",
+     "+2"
+    ],
+    [
+     "Wading in deep water",
+     "+4"
+    ],
+    [
+     "Foreign environment*",
+     "+6"
+    ],
+    [
+     "Hindered (tangled, climbing)",
+     "+3"
+    ],
+    [
+     "Waiting (Player's Handbook)",
+     "+1"
+    ]
+   ]
+  },
+  "source": "wiki page 'Initiative (DMG)', caption 'Table 40: Standard Modifiers to Initiative'"
+ },
+ {
+  "file": "data/rules.json",
+  "ruleId": "dmg_ch09_morale",
+  "tableIndex": 1,
+  "tableTitle": "Table 50: Situational Modifiers",
+  "pattern": "sign_lost",
+  "confidence": "confident",
+  "note": "",
+  "before": {
+   "headers": [
+    "Situation",
+    "Modifier"
+   ],
+   "rows": [
+    [
+     "Abandoned by friends",
+     "-6"
+    ],
+    [
+     "Creature lost 25% of its hp*",
+     "-2"
+    ],
+    [
+     "Creature lost 50% of its hp*",
+     "-4"
+    ],
+    [
+     "Creature is chaotic",
+     "-1"
+    ],
+    [
+     "Creature is fighting hated enemy",
+     "4"
+    ],
+    [
+     "Creature is lawful",
+     "1"
+    ],
+    [
+     "Creature was surprised",
+     "-2"
+    ],
+    [
+     "Creatures are fighting wizards or magic-using foes",
+     "-2"
+    ],
+    [
+     "Creatures with 1/2 HD or less",
+     "-2"
+    ],
+    [
+     "Creatures with greater than 1/2 HD, but less than 1 HD",
+     "-1"
+    ],
+    [
+     "Creatures with 4 to 8+ HD",
+     "1"
+    ],
+    [
+     "Creatures with 9 to 14+ HD",
+     "2"
+    ],
+    [
+     "Creatures with 15 or more HD",
+     "3"
+    ],
+    [
+     "Defending home",
+     "3"
+    ],
+    [
+     "Defensive terrain advantage",
+     "1"
+    ],
+    [
+     "Each additional check required in round**",
+     "-1"
+    ],
+    [
+     "Leader is of different alignment",
+     "-1"
+    ],
+    [
+     "Most powerful ally killed",
+     "-4"
+    ],
+    [
+     "NPC has been favored",
+     "2"
+    ],
+    [
+     "NPC has been poorly treated",
+     "-4"
+    ],
+    [
+     "No enemy slain",
+     "-2"
+    ],
+    [
+     "Outnumbered by 3 or more to 1",
+     "-4"
+    ],
+    [
+     "Outnumber opponent 3 or more to 1",
+     "2"
+    ],
+    [
+     "Unable to affect opponent***",
+     "-8"
+    ],
+    [
+     "Wizard or magic-using creature on same side",
+     "2"
+    ]
+   ]
+  },
+  "after": {
+   "headers": [
+    "Situation",
+    "Modifier"
+   ],
+   "rows": [
+    [
+     "Abandoned by friends",
+     "-6"
+    ],
+    [
+     "Creature lost 25% of its hp*",
+     "-2"
+    ],
+    [
+     "Creature lost 50% of its hp*",
+     "-4"
+    ],
+    [
+     "Creature is chaotic",
+     "-1"
+    ],
+    [
+     "Creature is fighting hated enemy",
+     "+4"
+    ],
+    [
+     "Creature is lawful",
+     "+1"
+    ],
+    [
+     "Creature was surprised",
+     "-2"
+    ],
+    [
+     "Creatures are fighting wizards or magic-using foes",
+     "-2"
+    ],
+    [
+     "Creatures with 1/2 HD or less",
+     "-2"
+    ],
+    [
+     "Creatures with greater than 1/2 HD, but less than 1 HD",
+     "-1"
+    ],
+    [
+     "Creatures with 4 to 8+ HD",
+     "+1"
+    ],
+    [
+     "Creatures with 9 to 14+ HD",
+     "+2"
+    ],
+    [
+     "Creatures with 15 or more HD",
+     "+3"
+    ],
+    [
+     "Defending home",
+     "+3"
+    ],
+    [
+     "Defensive terrain advantage",
+     "+1"
+    ],
+    [
+     "Each additional check required in round**",
+     "-1"
+    ],
+    [
+     "Leader is of different alignment",
+     "-1"
+    ],
+    [
+     "Most powerful ally killed",
+     "-4"
+    ],
+    [
+     "NPC has been favored",
+     "+2"
+    ],
+    [
+     "NPC has been poorly treated",
+     "-4"
+    ],
+    [
+     "No enemy slain",
+     "-2"
+    ],
+    [
+     "Outnumbered by 3 or more to 1",
+     "-4"
+    ],
+    [
+     "Outnumber opponent 3 or more to 1",
+     "+2"
+    ],
+    [
+     "Unable to affect opponent***",
+     "-8"
+    ],
+    [
+     "Wizard or magic-using creature on same side",
+     "+2"
+    ]
+   ]
+  },
+  "source": "wiki page 'Morale (DMG)', caption 'Table 50: Situational Modifiers'"
+ },
+ {
+  "file": "data/rules.json",
+  "ruleId": "dmg_ch09_the_attack_roll",
+  "tableIndex": 0,
+  "tableTitle": "Table 35: Combat Modifiers",
+  "pattern": "sign_lost",
+  "confidence": "confident",
+  "note": "",
+  "before": {
+   "headers": [
+    "Situation",
+    "Attack Roll Modifier"
+   ],
+   "rows": [
+    [
+     "Attacker on higher ground",
+     "1"
+    ],
+    [
+     "Defender invisible",
+     "-4"
+    ],
+    [
+     "Defender off-balance",
+     "2"
+    ],
+    [
+     "Defender sleeping or held",
+     "Automatic*"
+    ],
+    [
+     "Defender stunned or prone",
+     "4"
+    ],
+    [
+     "Defender surprised",
+     "1"
+    ],
+    [
+     "Missile fire, long range",
+     "-5"
+    ],
+    [
+     "Missile fire, medium range",
+     "-2"
+    ],
+    [
+     "Rear attack",
+     "2"
+    ]
+   ]
+  },
+  "after": {
+   "headers": [
+    "Situation",
+    "Attack Roll Modifier"
+   ],
+   "rows": [
+    [
+     "Attacker on higher ground",
+     "+1"
+    ],
+    [
+     "Defender invisible",
+     "-4"
+    ],
+    [
+     "Defender off-balance",
+     "+2"
+    ],
+    [
+     "Defender sleeping or held",
+     "Automatic*"
+    ],
+    [
+     "Defender stunned or prone",
+     "+4"
+    ],
+    [
+     "Defender surprised",
+     "+1"
+    ],
+    [
+     "Missile fire, long range",
+     "-5"
+    ],
+    [
+     "Missile fire, medium range",
+     "-2"
+    ],
+    [
+     "Rear attack",
+     "+2"
+    ]
+   ]
+  },
+  "source": "wiki page 'Combat (PHB)', caption 'Table 51: Combat Modifiers'"
+ },
+ {
+  "file": "data/rules.json",
+  "ruleId": "dmg_ch12_personality",
+  "tableIndex": 0,
+  "tableTitle": "Table 71: Permanent Morale Modifiers",
+  "pattern": "sign_lost",
+  "confidence": "confident",
+  "note": "",
+  "before": {
+   "headers": [
+    "Factor",
+    "Modifier"
+   ],
+   "rows": [
+    [
+     "NPC is lawful*",
+     "1"
+    ],
+    [
+     "NPC is good",
+     "1"
+    ],
+    [
+     "NPC is evil",
+     "-1"
+    ],
+    [
+     "NPC is chaotic*",
+     "-1"
+    ],
+    [
+     "NPC is different race than PC",
+     "-1"
+    ],
+    [
+     "NPC has been with PC for one year or more",
+     "2"
+    ]
+   ]
+  },
+  "after": {
+   "headers": [
+    "Factor",
+    "Modifier"
+   ],
+   "rows": [
+    [
+     "NPC is lawful*",
+     "+1"
+    ],
+    [
+     "NPC is good",
+     "+1"
+    ],
+    [
+     "NPC is evil",
+     "-1"
+    ],
+    [
+     "NPC is chaotic*",
+     "-1"
+    ],
+    [
+     "NPC is different race than PC",
+     "-1"
+    ],
+    [
+     "NPC has been with PC for one year or more",
+     "+2"
+    ]
+   ]
+  },
+  "source": "wiki page 'Personality (DMG)', caption 'Table 71: Permanent Morale Modifiers'"
+ },
+ {
+  "file": "data/rules.json",
+  "ruleId": "dmg_ch14_getting_lost",
+  "tableIndex": 1,
+  "tableTitle": "Table 82: Lost Modifiers",
+  "pattern": "sign_lost",
+  "confidence": "confident",
+  "note": "",
+  "before": {
+   "headers": [
+    "Condition",
+    "Modifier"
+   ],
+   "rows": [
+    [
+     "Featureless (no distinguishable landmarks)*",
+     "50"
+    ],
+    [
+     "Darkness",
+     "70"
+    ],
+    [
+     "Overcast",
+     "30"
+    ],
+    [
+     "Navigator with group",
+     "-30"
+    ],
+    [
+     "Landmark sighted",
+     "-15"
+    ],
+    [
+     "Local guide",
+     "Variable**"
+    ],
+    [
+     "Poor trail",
+     "-10"
+    ],
+    [
+     "Raining",
+     "10"
+    ],
+    [
+     "Directions",
+     "Variable**"
+    ],
+    [
+     "Fog or mist",
+     "30"
+    ]
+   ]
+  },
+  "after": {
+   "headers": [
+    "Condition",
+    "Modifier"
+   ],
+   "rows": [
+    [
+     "Featureless (no distinguishable landmarks)*",
+     "+50"
+    ],
+    [
+     "Darkness",
+     "+70"
+    ],
+    [
+     "Overcast",
+     "+30"
+    ],
+    [
+     "Navigator with group",
+     "-30"
+    ],
+    [
+     "Landmark sighted",
+     "-15"
+    ],
+    [
+     "Local guide",
+     "Variable**"
+    ],
+    [
+     "Poor trail",
+     "-10"
+    ],
+    [
+     "Raining",
+     "+10"
+    ],
+    [
+     "Directions",
+     "Variable**"
+    ],
+    [
+     "Fog or mist",
+     "+30"
+    ]
+   ]
+  },
+  "source": "wiki page 'Getting Lost (DMG)', caption 'Table 82: Lost Modifiers'"
+ },
+ {
+  "file": "data/rules.json",
+  "ruleId": "phb_ch01_charisma",
+  "tableIndex": 0,
+  "tableTitle": "Table 6: Charisma",
+  "pattern": "sign_lost",
+  "confidence": "confident",
+  "note": "",
+  "before": {
+   "headers": [
+    "Ability Score",
+    "Maximum Henchmen",
+    "Loyalty Base",
+    "Reaction Adjustment"
+   ],
+   "rows": [
+    [
+     "1",
+     "0",
+     "-8",
+     "-7"
+    ],
+    [
+     "2",
+     "1",
+     "-7",
+     "-6"
+    ],
+    [
+     "3",
+     "1",
+     "-6",
+     "-5"
+    ],
+    [
+     "4",
+     "1",
+     "-5",
+     "-4"
+    ],
+    [
+     "5",
+     "2",
+     "-4",
+     "-3"
+    ],
+    [
+     "6",
+     "2",
+     "-3",
+     "-2"
+    ],
+    [
+     "7",
+     "3",
+     "-2",
+     "-1"
+    ],
+    [
+     "8",
+     "3",
+     "-1",
+     "0"
+    ],
+    [
+     "9",
+     "4",
+     "0",
+     "0"
+    ],
+    [
+     "10",
+     "4",
+     "0",
+     "0"
+    ],
+    [
+     "11",
+     "4",
+     "0",
+     "0"
+    ],
+    [
+     "12",
+     "5",
+     "0",
+     "0"
+    ],
+    [
+     "13",
+     "5",
+     "0",
+     "1"
+    ],
+    [
+     "14",
+     "6",
+     "1",
+     "2"
+    ],
+    [
+     "15",
+     "7",
+     "3",
+     "3"
+    ],
+    [
+     "16",
+     "8",
+     "4",
+     "5"
+    ],
+    [
+     "17",
+     "10",
+     "6",
+     "6"
+    ],
+    [
+     "18",
+     "15",
+     "8",
+     "7"
+    ],
+    [
+     "19",
+     "20",
+     "10",
+     "8"
+    ],
+    [
+     "20",
+     "25",
+     "12",
+     "9"
+    ],
+    [
+     "21",
+     "30",
+     "14",
+     "10"
+    ],
+    [
+     "22",
+     "35",
+     "16",
+     "11"
+    ],
+    [
+     "23",
+     "40",
+     "18",
+     "12"
+    ],
+    [
+     "24",
+     "45",
+     "20",
+     "13"
+    ],
+    [
+     "25",
+     "50",
+     "20",
+     "14"
+    ]
+   ]
+  },
+  "after": {
+   "headers": [
+    "Ability Score",
+    "Maximum Henchmen",
+    "Loyalty Base",
+    "Reaction Adjustment"
+   ],
+   "rows": [
+    [
+     "1",
+     "0",
+     "-8",
+     "-7"
+    ],
+    [
+     "2",
+     "1",
+     "-7",
+     "-6"
+    ],
+    [
+     "3",
+     "1",
+     "-6",
+     "-5"
+    ],
+    [
+     "4",
+     "1",
+     "-5",
+     "-4"
+    ],
+    [
+     "5",
+     "2",
+     "-4",
+     "-3"
+    ],
+    [
+     "6",
+     "2",
+     "-3",
+     "-2"
+    ],
+    [
+     "7",
+     "3",
+     "-2",
+     "-1"
+    ],
+    [
+     "8",
+     "3",
+     "-1",
+     "0"
+    ],
+    [
+     "9",
+     "4",
+     "0",
+     "0"
+    ],
+    [
+     "10",
+     "4",
+     "0",
+     "0"
+    ],
+    [
+     "11",
+     "4",
+     "0",
+     "0"
+    ],
+    [
+     "12",
+     "5",
+     "0",
+     "0"
+    ],
+    [
+     "13",
+     "5",
+     "0",
+     "+1"
+    ],
+    [
+     "14",
+     "6",
+     "+1",
+     "+2"
+    ],
+    [
+     "15",
+     "7",
+     "+3",
+     "+3"
+    ],
+    [
+     "16",
+     "8",
+     "+4",
+     "+5"
+    ],
+    [
+     "17",
+     "10",
+     "+6",
+     "+6"
+    ],
+    [
+     "18",
+     "15",
+     "+8",
+     "+7"
+    ],
+    [
+     "19",
+     "20",
+     "+10",
+     "+8"
+    ],
+    [
+     "20",
+     "25",
+     "+12",
+     "+9"
+    ],
+    [
+     "21",
+     "30",
+     "+14",
+     "+10"
+    ],
+    [
+     "22",
+     "35",
+     "+16",
+     "+11"
+    ],
+    [
+     "23",
+     "40",
+     "+18",
+     "+12"
+    ],
+    [
+     "24",
+     "45",
+     "+20",
+     "+13"
+    ],
+    [
+     "25",
+     "50",
+     "+20",
+     "+14"
+    ]
+   ]
+  },
+  "source": "wiki page 'Charisma (PHB)', caption 'Table 6: Charisma'"
+ },
+ {
+  "file": "data/rules.json",
+  "ruleId": "phb_ch01_constitution",
+  "tableIndex": 0,
+  "tableTitle": "Table 3: Constitution",
+  "pattern": "sign_lost",
+  "confidence": "confident",
+  "note": "",
+  "before": {
+   "headers": [
+    "Ability Score",
+    "HP Adjustment",
+    "System Shock",
+    "Resurrection Survival",
+    "Poison Save",
+    "Regeneration"
+   ],
+   "rows": [
+    [
+     "1",
+     "-3",
+     "25%",
+     "30%",
+     "-2",
+     "nil"
+    ],
+    [
+     "2",
+     "-2",
+     "30%",
+     "35%",
+     "-1",
+     "nil"
+    ],
+    [
+     "3",
+     "-2",
+     "35%",
+     "40%",
+     "0",
+     "nil"
+    ],
+    [
+     "4",
+     "-1",
+     "40%",
+     "45%",
+     "0",
+     "nil"
+    ],
+    [
+     "5",
+     "-1",
+     "45%",
+     "50%",
+     "0",
+     "nil"
+    ],
+    [
+     "6",
+     "-1",
+     "50%",
+     "55%",
+     "0",
+     "nil"
+    ],
+    [
+     "7",
+     "0",
+     "55%",
+     "60%",
+     "0",
+     "nil"
+    ],
+    [
+     "8",
+     "0",
+     "60%",
+     "65%",
+     "0",
+     "nil"
+    ],
+    [
+     "9",
+     "0",
+     "65%",
+     "70%",
+     "0",
+     "nil"
+    ],
+    [
+     "10",
+     "0",
+     "70%",
+     "75%",
+     "0",
+     "nil"
+    ],
+    [
+     "11",
+     "0",
+     "75%",
+     "80%",
+     "0",
+     "nil"
+    ],
+    [
+     "12",
+     "0",
+     "80%",
+     "85%",
+     "0",
+     "nil"
+    ],
+    [
+     "13",
+     "0",
+     "85%",
+     "90%",
+     "0",
+     "nil"
+    ],
+    [
+     "14",
+     "0",
+     "88%",
+     "92%",
+     "0",
+     "nil"
+    ],
+    [
+     "15",
+     "1",
+     "90%",
+     "94%",
+     "0",
+     "nil"
+    ],
+    [
+     "16",
+     "2",
+     "95%",
+     "96%",
+     "0",
+     "nil"
+    ],
+    [
+     "17",
+     "+2(+3)",
+     "97%",
+     "98%",
+     "0",
+     "nil"
+    ],
+    [
+     "18",
+     "+2(+4)",
+     "99%",
+     "100%",
+     "0",
+     "nil"
+    ],
+    [
+     "19",
+     "+2(+5)",
+     "99%",
+     "100%",
+     "1",
+     "nil"
+    ],
+    [
+     "20",
+     "+2(+5)",
+     "99%",
+     "100%",
+     "1",
+     "1/6 turns"
+    ],
+    [
+     "21",
+     "+2(+6)",
+     "99%",
+     "100%",
+     "2",
+     "1/5 turns"
+    ],
+    [
+     "22",
+     "+2(+6)",
+     "99%",
+     "100%",
+     "2",
+     "1/4 turns"
+    ],
+    [
+     "23",
+     "+2(+6)",
+     "99%",
+     "100%",
+     "3",
+     "1/3 turns"
+    ],
+    [
+     "24",
+     "+2(+7)",
+     "99%",
+     "100%",
+     "3",
+     "1/2 turns"
+    ],
+    [
+     "25",
+     "+2(+7)",
+     "100%",
+     "100%",
+     "4",
+     "1/1 turn"
+    ]
+   ]
+  },
+  "after": {
+   "headers": [
+    "Ability Score",
+    "HP Adjustment",
+    "System Shock",
+    "Resurrection Survival",
+    "Poison Save",
+    "Regeneration"
+   ],
+   "rows": [
+    [
+     "1",
+     "-3",
+     "25%",
+     "30%",
+     "-2",
+     "nil"
+    ],
+    [
+     "2",
+     "-2",
+     "30%",
+     "35%",
+     "-1",
+     "nil"
+    ],
+    [
+     "3",
+     "-2",
+     "35%",
+     "40%",
+     "0",
+     "nil"
+    ],
+    [
+     "4",
+     "-1",
+     "40%",
+     "45%",
+     "0",
+     "nil"
+    ],
+    [
+     "5",
+     "-1",
+     "45%",
+     "50%",
+     "0",
+     "nil"
+    ],
+    [
+     "6",
+     "-1",
+     "50%",
+     "55%",
+     "0",
+     "nil"
+    ],
+    [
+     "7",
+     "0",
+     "55%",
+     "60%",
+     "0",
+     "nil"
+    ],
+    [
+     "8",
+     "0",
+     "60%",
+     "65%",
+     "0",
+     "nil"
+    ],
+    [
+     "9",
+     "0",
+     "65%",
+     "70%",
+     "0",
+     "nil"
+    ],
+    [
+     "10",
+     "0",
+     "70%",
+     "75%",
+     "0",
+     "nil"
+    ],
+    [
+     "11",
+     "0",
+     "75%",
+     "80%",
+     "0",
+     "nil"
+    ],
+    [
+     "12",
+     "0",
+     "80%",
+     "85%",
+     "0",
+     "nil"
+    ],
+    [
+     "13",
+     "0",
+     "85%",
+     "90%",
+     "0",
+     "nil"
+    ],
+    [
+     "14",
+     "0",
+     "88%",
+     "92%",
+     "0",
+     "nil"
+    ],
+    [
+     "15",
+     "+1",
+     "90%",
+     "94%",
+     "0",
+     "nil"
+    ],
+    [
+     "16",
+     "+2",
+     "95%",
+     "96%",
+     "0",
+     "nil"
+    ],
+    [
+     "17",
+     "+2(+3)",
+     "97%",
+     "98%",
+     "0",
+     "nil"
+    ],
+    [
+     "18",
+     "+2(+4)",
+     "99%",
+     "100%",
+     "0",
+     "nil"
+    ],
+    [
+     "19",
+     "+2(+5)",
+     "99%",
+     "100%",
+     "+1",
+     "nil"
+    ],
+    [
+     "20",
+     "+2(+5)",
+     "99%",
+     "100%",
+     "+1",
+     "1/6 turns"
+    ],
+    [
+     "21",
+     "+2(+6)",
+     "99%",
+     "100%",
+     "+2",
+     "1/5 turns"
+    ],
+    [
+     "22",
+     "+2(+6)",
+     "99%",
+     "100%",
+     "+2",
+     "1/4 turns"
+    ],
+    [
+     "23",
+     "+2(+6)",
+     "99%",
+     "100%",
+     "+3",
+     "1/3 turns"
+    ],
+    [
+     "24",
+     "+2(+7)",
+     "99%",
+     "100%",
+     "+3",
+     "1/2 turns"
+    ],
+    [
+     "25",
+     "+2(+7)",
+     "100%",
+     "100%",
+     "+4",
+     "1/1 turn"
+    ]
+   ]
+  },
+  "source": "wiki page 'Constitution (PHB)', caption 'Table 3: Constitution'"
+ },
+ {
+  "file": "data/rules.json",
+  "ruleId": "phb_ch01_dexterity",
+  "tableIndex": 0,
+  "tableTitle": "Table 2: Dexterity",
+  "pattern": "sign_lost",
+  "confidence": "confident",
+  "note": "",
+  "before": {
+   "headers": [
+    "Ability Score",
+    "Reaction Adjustment",
+    "Missile Atk Adj",
+    "Defensive Adjustment"
+   ],
+   "rows": [
+    [
+     "1",
+     "-6",
+     "-6",
+     "5"
+    ],
+    [
+     "2",
+     "-4",
+     "-4",
+     "5"
+    ],
+    [
+     "3",
+     "-3",
+     "-3",
+     "4"
+    ],
+    [
+     "4",
+     "-2",
+     "-2",
+     "3"
+    ],
+    [
+     "5",
+     "-1",
+     "-1",
+     "2"
+    ],
+    [
+     "6",
+     "0",
+     "0",
+     "1"
+    ],
+    [
+     "7",
+     "0",
+     "0",
+     "0"
+    ],
+    [
+     "8",
+     "0",
+     "0",
+     "0"
+    ],
+    [
+     "9",
+     "0",
+     "0",
+     "0"
+    ],
+    [
+     "10-14",
+     "0",
+     "0",
+     "0"
+    ],
+    [
+     "15",
+     "0",
+     "0",
+     "-1"
+    ],
+    [
+     "16",
+     "1",
+     "1",
+     "-2"
+    ],
+    [
+     "17",
+     "2",
+     "2",
+     "-3"
+    ],
+    [
+     "18",
+     "2",
+     "2",
+     "-4"
+    ],
+    [
+     "19",
+     "3",
+     "3",
+     "-4"
+    ],
+    [
+     "20",
+     "3",
+     "3",
+     "-4"
+    ],
+    [
+     "21",
+     "4",
+     "4",
+     "-5"
+    ],
+    [
+     "22",
+     "4",
+     "4",
+     "-5"
+    ],
+    [
+     "23",
+     "4",
+     "4",
+     "-5"
+    ],
+    [
+     "24",
+     "5",
+     "5",
+     "-6"
+    ],
+    [
+     "25",
+     "5",
+     "5",
+     "-6"
+    ]
+   ]
+  },
+  "after": {
+   "headers": [
+    "Ability Score",
+    "Reaction Adjustment",
+    "Missile Atk Adj",
+    "Defensive Adjustment"
+   ],
+   "rows": [
+    [
+     "1",
+     "-6",
+     "-6",
+     "+5"
+    ],
+    [
+     "2",
+     "-4",
+     "-4",
+     "+5"
+    ],
+    [
+     "3",
+     "-3",
+     "-3",
+     "+4"
+    ],
+    [
+     "4",
+     "-2",
+     "-2",
+     "+3"
+    ],
+    [
+     "5",
+     "-1",
+     "-1",
+     "+2"
+    ],
+    [
+     "6",
+     "0",
+     "0",
+     "+1"
+    ],
+    [
+     "7",
+     "0",
+     "0",
+     "0"
+    ],
+    [
+     "8",
+     "0",
+     "0",
+     "0"
+    ],
+    [
+     "9",
+     "0",
+     "0",
+     "0"
+    ],
+    [
+     "10-14",
+     "0",
+     "0",
+     "0"
+    ],
+    [
+     "15",
+     "0",
+     "0",
+     "-1"
+    ],
+    [
+     "16",
+     "+1",
+     "+1",
+     "-2"
+    ],
+    [
+     "17",
+     "+2",
+     "+2",
+     "-3"
+    ],
+    [
+     "18",
+     "+2",
+     "+2",
+     "-4"
+    ],
+    [
+     "19",
+     "+3",
+     "+3",
+     "-4"
+    ],
+    [
+     "20",
+     "+3",
+     "+3",
+     "-4"
+    ],
+    [
+     "21",
+     "+4",
+     "+4",
+     "-5"
+    ],
+    [
+     "22",
+     "+4",
+     "+4",
+     "-5"
+    ],
+    [
+     "23",
+     "+4",
+     "+4",
+     "-5"
+    ],
+    [
+     "24",
+     "+5",
+     "+5",
+     "-6"
+    ],
+    [
+     "25",
+     "+5",
+     "+5",
+     "-6"
+    ]
+   ]
+  },
+  "source": "wiki page 'Dexterity (PHB)', caption 'Table 2: Dexterity'"
+ },
+ {
+  "file": "data/rules.json",
+  "ruleId": "phb_ch01_strength",
+  "tableIndex": 0,
+  "tableTitle": "Table 1: Strength",
+  "pattern": "sign_lost",
+  "confidence": "confident",
+  "note": "",
+  "before": {
+   "headers": [
+    "Ability Score",
+    "Hit Probability",
+    "Dmg. Adjust",
+    "Weight Allowance",
+    "Max. Press",
+    "Open Doors",
+    "Bend Bars/ Lift Gates",
+    "Notes"
+   ],
+   "rows": [
+    [
+     "1",
+     "-5",
+     "-4",
+     "1",
+     "3",
+     "1",
+     "0%",
+     ""
+    ],
+    [
+     "2",
+     "-3",
+     "-2",
+     "1",
+     "5",
+     "1",
+     "0%",
+     ""
+    ],
+    [
+     "3",
+     "-3",
+     "-1",
+     "5",
+     "10",
+     "2",
+     "0%",
+     ""
+    ],
+    [
+     "4-5",
+     "-2",
+     "-1",
+     "10",
+     "25",
+     "3",
+     "0%",
+     ""
+    ],
+    [
+     "6-7",
+     "-1",
+     "None",
+     "20",
+     "55",
+     "4",
+     "0%",
+     ""
+    ],
+    [
+     "8-9",
+     "Normal",
+     "None",
+     "35",
+     "90",
+     "5",
+     "1%",
+     ""
+    ],
+    [
+     "10-11",
+     "Normal",
+     "None",
+     "40",
+     "115",
+     "6",
+     "2%",
+     ""
+    ],
+    [
+     "12-13",
+     "Normal",
+     "None",
+     "45",
+     "140",
+     "7",
+     "4%",
+     ""
+    ],
+    [
+     "14-15",
+     "Normal",
+     "None",
+     "55",
+     "170",
+     "8",
+     "7%",
+     ""
+    ],
+    [
+     "16",
+     "Normal",
+     "1",
+     "70",
+     "195",
+     "9",
+     "10%",
+     ""
+    ],
+    [
+     "17",
+     "1",
+     "1",
+     "85",
+     "220",
+     "10",
+     "13%",
+     ""
+    ],
+    [
+     "18",
+     "1",
+     "2",
+     "110",
+     "255",
+     "11",
+     "16%",
+     ""
+    ],
+    [
+     "18/01-50",
+     "1",
+     "3",
+     "135",
+     "280",
+     "12",
+     "20%",
+     ""
+    ],
+    [
+     "18/51-75",
+     "2",
+     "3",
+     "160",
+     "305",
+     "13",
+     "25%",
+     ""
+    ],
+    [
+     "18/76-90",
+     "2",
+     "4",
+     "185",
+     "330",
+     "14",
+     "30%",
+     ""
+    ],
+    [
+     "18/91-99",
+     "2",
+     "5",
+     "235",
+     "380",
+     "15(3)",
+     "35%",
+     ""
+    ],
+    [
+     "18/00",
+     "3",
+     "6",
+     "335",
+     "480",
+     "16(6)",
+     "40%",
+     ""
+    ],
+    [
+     "19",
+     "3",
+     "7",
+     "485",
+     "640",
+     "16(8)",
+     "50%",
+     "Hill Giant"
+    ],
+    [
+     "20",
+     "3",
+     "8",
+     "535",
+     "700",
+     "17(10)",
+     "60%",
+     "Stone Giant"
+    ],
+    [
+     "21",
+     "4",
+     "9",
+     "635",
+     "810",
+     "17(12)",
+     "70%",
+     "Frost Giant"
+    ],
+    [
+     "22",
+     "4",
+     "10",
+     "785",
+     "970",
+     "18(14)",
+     "80%",
+     "Fire Giant"
+    ],
+    [
+     "23",
+     "5",
+     "11",
+     "935",
+     "1,130",
+     "18(16)",
+     "90%",
+     "Cloud Giant"
+    ],
+    [
+     "24",
+     "6",
+     "12",
+     "1,235",
+     "1,440",
+     "19(17)",
+     "95%",
+     "Storm Giant"
+    ],
+    [
+     "25",
+     "7",
+     "14",
+     "1,535",
+     "1,750",
+     "19(18)",
+     "99%",
+     "Titan"
+    ]
+   ]
+  },
+  "after": {
+   "headers": [
+    "Ability Score",
+    "Hit Probability",
+    "Dmg. Adjust",
+    "Weight Allowance",
+    "Max. Press",
+    "Open Doors",
+    "Bend Bars/ Lift Gates",
+    "Notes"
+   ],
+   "rows": [
+    [
+     "1",
+     "-5",
+     "-4",
+     "1",
+     "3",
+     "1",
+     "0%",
+     ""
+    ],
+    [
+     "2",
+     "-3",
+     "-2",
+     "1",
+     "5",
+     "1",
+     "0%",
+     ""
+    ],
+    [
+     "3",
+     "-3",
+     "-1",
+     "5",
+     "10",
+     "2",
+     "0%",
+     ""
+    ],
+    [
+     "4-5",
+     "-2",
+     "-1",
+     "10",
+     "25",
+     "3",
+     "0%",
+     ""
+    ],
+    [
+     "6-7",
+     "-1",
+     "None",
+     "20",
+     "55",
+     "4",
+     "0%",
+     ""
+    ],
+    [
+     "8-9",
+     "Normal",
+     "None",
+     "35",
+     "90",
+     "5",
+     "1%",
+     ""
+    ],
+    [
+     "10-11",
+     "Normal",
+     "None",
+     "40",
+     "115",
+     "6",
+     "2%",
+     ""
+    ],
+    [
+     "12-13",
+     "Normal",
+     "None",
+     "45",
+     "140",
+     "7",
+     "4%",
+     ""
+    ],
+    [
+     "14-15",
+     "Normal",
+     "None",
+     "55",
+     "170",
+     "8",
+     "7%",
+     ""
+    ],
+    [
+     "16",
+     "Normal",
+     "+1",
+     "70",
+     "195",
+     "9",
+     "10%",
+     ""
+    ],
+    [
+     "17",
+     "+1",
+     "+1",
+     "85",
+     "220",
+     "10",
+     "13%",
+     ""
+    ],
+    [
+     "18",
+     "+1",
+     "+2",
+     "110",
+     "255",
+     "11",
+     "16%",
+     ""
+    ],
+    [
+     "18/01-50",
+     "+1",
+     "+3",
+     "135",
+     "280",
+     "12",
+     "20%",
+     ""
+    ],
+    [
+     "18/51-75",
+     "+2",
+     "+3",
+     "160",
+     "305",
+     "13",
+     "25%",
+     ""
+    ],
+    [
+     "18/76-90",
+     "+2",
+     "+4",
+     "185",
+     "330",
+     "14",
+     "30%",
+     ""
+    ],
+    [
+     "18/91-99",
+     "+2",
+     "+5",
+     "235",
+     "380",
+     "15(3)",
+     "35%",
+     ""
+    ],
+    [
+     "18/00",
+     "+3",
+     "+6",
+     "335",
+     "480",
+     "16(6)",
+     "40%",
+     ""
+    ],
+    [
+     "19",
+     "+3",
+     "+7",
+     "485",
+     "640",
+     "16(8)",
+     "50%",
+     "Hill Giant"
+    ],
+    [
+     "20",
+     "+3",
+     "+8",
+     "535",
+     "700",
+     "17(10)",
+     "60%",
+     "Stone Giant"
+    ],
+    [
+     "21",
+     "+4",
+     "+9",
+     "635",
+     "810",
+     "17(12)",
+     "70%",
+     "Frost Giant"
+    ],
+    [
+     "22",
+     "+4",
+     "+10",
+     "785",
+     "970",
+     "18(14)",
+     "80%",
+     "Fire Giant"
+    ],
+    [
+     "23",
+     "+5",
+     "+11",
+     "935",
+     "1,130",
+     "18(16)",
+     "90%",
+     "Cloud Giant"
+    ],
+    [
+     "24",
+     "+6",
+     "+12",
+     "1,235",
+     "1,440",
+     "19(17)",
+     "95%",
+     "Storm Giant"
+    ],
+    [
+     "25",
+     "+7",
+     "+14",
+     "1,535",
+     "1,750",
+     "19(18)",
+     "99%",
+     "Titan"
+    ]
+   ]
+  },
+  "source": "wiki page 'Strength (PHB)', caption 'Table 1: Strength'"
+ },
+ {
+  "file": "data/rules.json",
+  "ruleId": "phb_ch01_wisdom",
+  "tableIndex": 0,
+  "tableTitle": "Table 5: Wisdom",
+  "pattern": "sign_lost",
+  "confidence": "confident",
+  "note": "",
+  "before": {
+   "headers": [
+    "Ability Score",
+    "Magic Defense Adj",
+    "Bonus Spells (Priest)",
+    "Chance Spell Failure",
+    "Spell Immunity"
+   ],
+   "rows": [
+    [
+     "1",
+     "-6",
+     "—",
+     "80%",
+     "—"
+    ],
+    [
+     "2",
+     "-4",
+     "—",
+     "60%",
+     "—"
+    ],
+    [
+     "3",
+     "-3",
+     "—",
+     "50%",
+     "—"
+    ],
+    [
+     "4",
+     "-2",
+     "—",
+     "45%",
+     "—"
+    ],
+    [
+     "5",
+     "-1",
+     "—",
+     "40%",
+     "—"
+    ],
+    [
+     "6",
+     "-1",
+     "—",
+     "35%",
+     "—"
+    ],
+    [
+     "7",
+     "-1",
+     "—",
+     "30%",
+     "—"
+    ],
+    [
+     "8",
+     "0",
+     "—",
+     "25%",
+     "—"
+    ],
+    [
+     "9",
+     "0",
+     "0",
+     "20%",
+     "—"
+    ],
+    [
+     "10",
+     "0",
+     "0",
+     "15%",
+     "—"
+    ],
+    [
+     "11",
+     "0",
+     "0",
+     "10%",
+     "—"
+    ],
+    [
+     "12",
+     "0",
+     "0",
+     "5%",
+     "—"
+    ],
+    [
+     "13",
+     "0",
+     "1st",
+     "0%",
+     "—"
+    ],
+    [
+     "14",
+     "0",
+     "1st",
+     "0%",
+     "—"
+    ],
+    [
+     "15",
+     "1",
+     "2nd",
+     "0%",
+     "—"
+    ],
+    [
+     "16",
+     "2",
+     "2nd",
+     "0%",
+     "—"
+    ],
+    [
+     "17",
+     "3",
+     "3rd",
+     "0%",
+     "—"
+    ],
+    [
+     "18",
+     "4",
+     "4th",
+     "0%",
+     "—"
+    ],
+    [
+     "19",
+     "4",
+     "1st, 3rd",
+     "0%",
+     "Cause Fear, Charm Person, Command, Friends, Hypnotism"
+    ],
+    [
+     "20",
+     "4",
+     "2nd, 4th",
+     "0%",
+     "Forget, Hold Person, Ray of Enfeeblement, Scare"
+    ],
+    [
+     "21",
+     "4",
+     "3rd, 5th",
+     "0%",
+     "Fear"
+    ],
+    [
+     "22",
+     "4",
+     "4th, 5th",
+     "0%",
+     "Charm Monster, Confusion, Emotion, Fumble, Suggestion"
+    ],
+    [
+     "23",
+     "4",
+     "1st, 6th",
+     "0%",
+     "Chaos, Feeblemind, Hold Monster, Magic Jar, Quest"
+    ],
+    [
+     "24",
+     "4",
+     "5th, 6th",
+     "0%",
+     "Geas, Mass Suggestion, Rod of Rulership"
+    ],
+    [
+     "25",
+     "4",
+     "6th, 7th",
+     "0%",
+     "Antipathy/Sympathy, Death Spell, Mass Charm"
+    ]
+   ]
+  },
+  "after": {
+   "headers": [
+    "Ability Score",
+    "Magic Defense Adj",
+    "Bonus Spells (Priest)",
+    "Chance Spell Failure",
+    "Spell Immunity"
+   ],
+   "rows": [
+    [
+     "1",
+     "-6",
+     "—",
+     "80%",
+     "—"
+    ],
+    [
+     "2",
+     "-4",
+     "—",
+     "60%",
+     "—"
+    ],
+    [
+     "3",
+     "-3",
+     "—",
+     "50%",
+     "—"
+    ],
+    [
+     "4",
+     "-2",
+     "—",
+     "45%",
+     "—"
+    ],
+    [
+     "5",
+     "-1",
+     "—",
+     "40%",
+     "—"
+    ],
+    [
+     "6",
+     "-1",
+     "—",
+     "35%",
+     "—"
+    ],
+    [
+     "7",
+     "-1",
+     "—",
+     "30%",
+     "—"
+    ],
+    [
+     "8",
+     "0",
+     "—",
+     "25%",
+     "—"
+    ],
+    [
+     "9",
+     "0",
+     "0",
+     "20%",
+     "—"
+    ],
+    [
+     "10",
+     "0",
+     "0",
+     "15%",
+     "—"
+    ],
+    [
+     "11",
+     "0",
+     "0",
+     "10%",
+     "—"
+    ],
+    [
+     "12",
+     "0",
+     "0",
+     "5%",
+     "—"
+    ],
+    [
+     "13",
+     "0",
+     "1st",
+     "0%",
+     "—"
+    ],
+    [
+     "14",
+     "0",
+     "1st",
+     "0%",
+     "—"
+    ],
+    [
+     "15",
+     "+1",
+     "2nd",
+     "0%",
+     "—"
+    ],
+    [
+     "16",
+     "+2",
+     "2nd",
+     "0%",
+     "—"
+    ],
+    [
+     "17",
+     "+3",
+     "3rd",
+     "0%",
+     "—"
+    ],
+    [
+     "18",
+     "+4",
+     "4th",
+     "0%",
+     "—"
+    ],
+    [
+     "19",
+     "+4",
+     "1st, 3rd",
+     "0%",
+     "Cause Fear, Charm Person, Command, Friends, Hypnotism"
+    ],
+    [
+     "20",
+     "+4",
+     "2nd, 4th",
+     "0%",
+     "Forget, Hold Person, Ray of Enfeeblement, Scare"
+    ],
+    [
+     "21",
+     "+4",
+     "3rd, 5th",
+     "0%",
+     "Fear"
+    ],
+    [
+     "22",
+     "+4",
+     "4th, 5th",
+     "0%",
+     "Charm Monster, Confusion, Emotion, Fumble, Suggestion"
+    ],
+    [
+     "23",
+     "+4",
+     "1st, 6th",
+     "0%",
+     "Chaos, Feeblemind, Hold Monster, Magic Jar, Quest"
+    ],
+    [
+     "24",
+     "+4",
+     "5th, 6th",
+     "0%",
+     "Geas, Mass Suggestion, Rod of Rulership"
+    ],
+    [
+     "25",
+     "+4",
+     "6th, 7th",
+     "0%",
+     "Antipathy/Sympathy, Death Spell, Mass Charm"
+    ]
+   ]
+  },
+  "source": "wiki page 'Wisdom (PHB)', caption 'Table 5: Wisdom'"
+ },
+ {
+  "file": "data/rules.json",
+  "ruleId": "phb_ch02_character_race_tables",
+  "tableIndex": 2,
+  "tableTitle": "Table",
+  "pattern": "sign_lost",
+  "confidence": "confident",
+  "note": "",
+  "before": {
+   "headers": [
+    "Constitution Score",
+    "Saving Throw Bonus"
+   ],
+   "rows": [
+    [
+     "4-6",
+     "1"
+    ],
+    [
+     "7-10",
+     "2"
+    ],
+    [
+     "11-13",
+     "3"
+    ],
+    [
+     "14-17",
+     "4"
+    ],
+    [
+     "18-19",
+     "5"
+    ]
+   ]
+  },
+  "after": {
+   "headers": [
+    "Constitution Score",
+    "Saving Throw Bonus"
+   ],
+   "rows": [
+    [
+     "4-6",
+     "+1"
+    ],
+    [
+     "7-10",
+     "+2"
+    ],
+    [
+     "11-13",
+     "+3"
+    ],
+    [
+     "14-17",
+     "+4"
+    ],
+    [
+     "18-19",
+     "+5"
+    ]
+   ]
+  },
+  "source": "wiki page 'Character Race Tables (PHB)'"
+ },
+ {
+  "file": "data/rules.json",
+  "ruleId": "phb_ch05_nonweapon_proficiencies_tables",
+  "tableIndex": 1,
+  "tableTitle": "General",
+  "pattern": "sign_lost",
+  "confidence": "confident",
+  "note": "",
+  "before": {
+   "headers": [
+    "Proficiency",
+    "# of Slots Required",
+    "Relevant Ability",
+    "Check Modifier"
+   ],
+   "rows": [
+    [
+     "Agriculture",
+     "1",
+     "Intelligence",
+     "0"
+    ],
+    [
+     "Animal Handling",
+     "1",
+     "Wisdom",
+     "-1"
+    ],
+    [
+     "Animal Training",
+     "1",
+     "Wisdom",
+     "0"
+    ],
+    [
+     "Artistic Ability",
+     "1",
+     "Wisdom",
+     "0"
+    ],
+    [
+     "Blacksmithing",
+     "1",
+     "Strength",
+     "0"
+    ],
+    [
+     "Brewing",
+     "1",
+     "Intelligence",
+     "0"
+    ],
+    [
+     "Carpentry",
+     "1",
+     "Strength",
+     "0"
+    ],
+    [
+     "Cobbling",
+     "1",
+     "Dexterity",
+     "0"
+    ],
+    [
+     "Cooking",
+     "1",
+     "Intelligence",
+     "0"
+    ],
+    [
+     "Dancing",
+     "1",
+     "Dexterity",
+     "0"
+    ],
+    [
+     "Direction Sense",
+     "1",
+     "Wisdom",
+     "1"
+    ],
+    [
+     "Etiquette",
+     "1",
+     "Charisma",
+     "0"
+    ],
+    [
+     "Fire-building",
+     "1",
+     "Wisdom",
+     "-1"
+    ],
+    [
+     "Fishing",
+     "1",
+     "Wisdom",
+     "-1"
+    ],
+    [
+     "Heraldry",
+     "1",
+     "Intelligence",
+     "0"
+    ],
+    [
+     "Languages, Modern",
+     "1",
+     "Intelligence",
+     "0"
+    ],
+    [
+     "Leatherworking",
+     "1",
+     "Intelligence",
+     "0"
+    ],
+    [
+     "Mining",
+     "2",
+     "Wisdom",
+     "-3"
+    ],
+    [
+     "Pottery",
+     "1",
+     "Dexterity",
+     "-2"
+    ],
+    [
+     "Riding, Airborne",
+     "2",
+     "Wisdom",
+     "-2"
+    ],
+    [
+     "Riding, Land-Based",
+     "1",
+     "Wisdom",
+     "3"
+    ],
+    [
+     "Rope Use",
+     "1",
+     "Dexterity",
+     "0"
+    ],
+    [
+     "Seamanship",
+     "1",
+     "Dexterity",
+     "1"
+    ],
+    [
+     "Seamstress/Tailor",
+     "1",
+     "Dexterity",
+     "-1"
+    ],
+    [
+     "Singing",
+     "1",
+     "Charisma",
+     "0"
+    ],
+    [
+     "Stonemasonry",
+     "1",
+     "Strength",
+     "-2"
+    ],
+    [
+     "Swimming",
+     "1",
+     "Strength",
+     "0"
+    ],
+    [
+     "Weather Sense",
+     "1",
+     "Wisdom",
+     "-1"
+    ],
+    [
+     "Weaving",
+     "1",
+     "Intelligence",
+     "-1"
+    ]
+   ]
+  },
+  "after": {
+   "headers": [
+    "Proficiency",
+    "# of Slots Required",
+    "Relevant Ability",
+    "Check Modifier"
+   ],
+   "rows": [
+    [
+     "Agriculture",
+     "1",
+     "Intelligence",
+     "0"
+    ],
+    [
+     "Animal Handling",
+     "1",
+     "Wisdom",
+     "-1"
+    ],
+    [
+     "Animal Training",
+     "1",
+     "Wisdom",
+     "0"
+    ],
+    [
+     "Artistic Ability",
+     "1",
+     "Wisdom",
+     "0"
+    ],
+    [
+     "Blacksmithing",
+     "1",
+     "Strength",
+     "0"
+    ],
+    [
+     "Brewing",
+     "1",
+     "Intelligence",
+     "0"
+    ],
+    [
+     "Carpentry",
+     "1",
+     "Strength",
+     "0"
+    ],
+    [
+     "Cobbling",
+     "1",
+     "Dexterity",
+     "0"
+    ],
+    [
+     "Cooking",
+     "1",
+     "Intelligence",
+     "0"
+    ],
+    [
+     "Dancing",
+     "1",
+     "Dexterity",
+     "0"
+    ],
+    [
+     "Direction Sense",
+     "1",
+     "Wisdom",
+     "1"
+    ],
+    [
+     "Etiquette",
+     "1",
+     "Charisma",
+     "0"
+    ],
+    [
+     "Fire-building",
+     "1",
+     "Wisdom",
+     "-1"
+    ],
+    [
+     "Fishing",
+     "1",
+     "Wisdom",
+     "-1"
+    ],
+    [
+     "Heraldry",
+     "1",
+     "Intelligence",
+     "0"
+    ],
+    [
+     "Languages, Modern",
+     "1",
+     "Intelligence",
+     "0"
+    ],
+    [
+     "Leatherworking",
+     "1",
+     "Intelligence",
+     "0"
+    ],
+    [
+     "Mining",
+     "2",
+     "Wisdom",
+     "-3"
+    ],
+    [
+     "Pottery",
+     "1",
+     "Dexterity",
+     "-2"
+    ],
+    [
+     "Riding, Airborne",
+     "2",
+     "Wisdom",
+     "-2"
+    ],
+    [
+     "Riding, Land-Based",
+     "1",
+     "Wisdom",
+     "+3"
+    ],
+    [
+     "Rope Use",
+     "1",
+     "Dexterity",
+     "0"
+    ],
+    [
+     "Seamanship",
+     "1",
+     "Dexterity",
+     "+1"
+    ],
+    [
+     "Seamstress/Tailor",
+     "1",
+     "Dexterity",
+     "-1"
+    ],
+    [
+     "Singing",
+     "1",
+     "Charisma",
+     "0"
+    ],
+    [
+     "Stonemasonry",
+     "1",
+     "Strength",
+     "-2"
+    ],
+    [
+     "Swimming",
+     "1",
+     "Strength",
+     "0"
+    ],
+    [
+     "Weather Sense",
+     "1",
+     "Wisdom",
+     "-1"
+    ],
+    [
+     "Weaving",
+     "1",
+     "Intelligence",
+     "-1"
+    ]
+   ]
+  },
+  "source": "wiki page 'Nonweapon Proficiencies Tables (PHB)', caption 'General'"
+ },
+ {
+  "file": "data/rules.json",
+  "ruleId": "phb_ch05_nonweapon_proficiencies_tables",
+  "tableIndex": 2,
+  "tableTitle": "Priest",
+  "pattern": "sign_lost",
+  "confidence": "confident",
+  "note": "",
+  "before": {
+   "headers": [
+    "Proficiency",
+    "# of Slots Required",
+    "Relevant Ability",
+    "Check Modifier"
+   ],
+   "rows": [
+    [
+     "Ancient History",
+     "1",
+     "Intelligence",
+     "-1"
+    ],
+    [
+     "Astrology",
+     "2",
+     "Intelligence",
+     "0"
+    ],
+    [
+     "Engineering",
+     "2",
+     "Intelligence",
+     "-3"
+    ],
+    [
+     "Healing",
+     "2",
+     "Wisdom",
+     "-2"
+    ],
+    [
+     "Herbalism",
+     "2",
+     "Intelligence",
+     "-2"
+    ],
+    [
+     "Languages, Ancient",
+     "1",
+     "Intelligence",
+     "0"
+    ],
+    [
+     "Local History",
+     "1",
+     "Charisma",
+     "0"
+    ],
+    [
+     "Musical Instrument",
+     "1",
+     "Dexterity",
+     "-1"
+    ],
+    [
+     "Navigation",
+     "1",
+     "Intelligence",
+     "-2"
+    ],
+    [
+     "Reading/Writing",
+     "1",
+     "Intelligence",
+     "1"
+    ],
+    [
+     "Religion",
+     "1",
+     "Wisdom",
+     "0"
+    ],
+    [
+     "Spellcraft",
+     "1",
+     "Intelligence",
+     "-2"
+    ]
+   ]
+  },
+  "after": {
+   "headers": [
+    "Proficiency",
+    "# of Slots Required",
+    "Relevant Ability",
+    "Check Modifier"
+   ],
+   "rows": [
+    [
+     "Ancient History",
+     "1",
+     "Intelligence",
+     "-1"
+    ],
+    [
+     "Astrology",
+     "2",
+     "Intelligence",
+     "0"
+    ],
+    [
+     "Engineering",
+     "2",
+     "Intelligence",
+     "-3"
+    ],
+    [
+     "Healing",
+     "2",
+     "Wisdom",
+     "-2"
+    ],
+    [
+     "Herbalism",
+     "2",
+     "Intelligence",
+     "-2"
+    ],
+    [
+     "Languages, Ancient",
+     "1",
+     "Intelligence",
+     "0"
+    ],
+    [
+     "Local History",
+     "1",
+     "Charisma",
+     "0"
+    ],
+    [
+     "Musical Instrument",
+     "1",
+     "Dexterity",
+     "-1"
+    ],
+    [
+     "Navigation",
+     "1",
+     "Intelligence",
+     "-2"
+    ],
+    [
+     "Reading/Writing",
+     "1",
+     "Intelligence",
+     "+1"
+    ],
+    [
+     "Religion",
+     "1",
+     "Wisdom",
+     "0"
+    ],
+    [
+     "Spellcraft",
+     "1",
+     "Intelligence",
+     "-2"
+    ]
+   ]
+  },
+  "source": "wiki page 'Nonweapon Proficiencies Tables (PHB)', caption 'Priest'"
+ },
+ {
+  "file": "data/rules.json",
+  "ruleId": "phb_ch05_nonweapon_proficiencies_tables",
+  "tableIndex": 4,
+  "tableTitle": "Warrior",
+  "pattern": "sign_lost",
+  "confidence": "confident",
+  "note": "",
+  "before": {
+   "headers": [
+    "Proficiency",
+    "# of Slots Required",
+    "Relevant Ability",
+    "Check Modifier"
+   ],
+   "rows": [
+    [
+     "Animal Lore",
+     "1",
+     "Intelligence",
+     "0"
+    ],
+    [
+     "Armorer",
+     "2",
+     "Intelligence",
+     "-2"
+    ],
+    [
+     "Blind-fighting",
+     "2",
+     "NA",
+     "NA"
+    ],
+    [
+     "Bowyer/Fletcher",
+     "1",
+     "Dexterity",
+     "-1"
+    ],
+    [
+     "Charioteering",
+     "1",
+     "Dexterity",
+     "2"
+    ],
+    [
+     "Endurance",
+     "2",
+     "Constitution",
+     "0"
+    ],
+    [
+     "Gaming",
+     "1",
+     "Charisma",
+     "0"
+    ],
+    [
+     "Hunting",
+     "1",
+     "Wisdom",
+     "-1"
+    ],
+    [
+     "Mountaineering",
+     "1",
+     "NA",
+     "NA"
+    ],
+    [
+     "Navigation",
+     "1",
+     "Intelligence",
+     "-2"
+    ],
+    [
+     "Running",
+     "1",
+     "Constitution",
+     "-6"
+    ],
+    [
+     "Set Snares",
+     "1",
+     "Dexterity",
+     "-1"
+    ],
+    [
+     "Survival",
+     "2",
+     "Intelligence",
+     "0"
+    ],
+    [
+     "Tracking",
+     "2",
+     "Wisdom",
+     "0"
+    ],
+    [
+     "Weaponsmithing",
+     "3",
+     "Intelligence",
+     "-3"
+    ]
+   ]
+  },
+  "after": {
+   "headers": [
+    "Proficiency",
+    "# of Slots Required",
+    "Relevant Ability",
+    "Check Modifier"
+   ],
+   "rows": [
+    [
+     "Animal Lore",
+     "1",
+     "Intelligence",
+     "0"
+    ],
+    [
+     "Armorer",
+     "2",
+     "Intelligence",
+     "-2"
+    ],
+    [
+     "Blind-fighting",
+     "2",
+     "NA",
+     "NA"
+    ],
+    [
+     "Bowyer/Fletcher",
+     "1",
+     "Dexterity",
+     "-1"
+    ],
+    [
+     "Charioteering",
+     "1",
+     "Dexterity",
+     "+2"
+    ],
+    [
+     "Endurance",
+     "2",
+     "Constitution",
+     "0"
+    ],
+    [
+     "Gaming",
+     "1",
+     "Charisma",
+     "0"
+    ],
+    [
+     "Hunting",
+     "1",
+     "Wisdom",
+     "-1"
+    ],
+    [
+     "Mountaineering",
+     "1",
+     "NA",
+     "NA"
+    ],
+    [
+     "Navigation",
+     "1",
+     "Intelligence",
+     "-2"
+    ],
+    [
+     "Running",
+     "1",
+     "Constitution",
+     "-6"
+    ],
+    [
+     "Set Snares",
+     "1",
+     "Dexterity",
+     "-1"
+    ],
+    [
+     "Survival",
+     "2",
+     "Intelligence",
+     "0"
+    ],
+    [
+     "Tracking",
+     "2",
+     "Wisdom",
+     "0"
+    ],
+    [
+     "Weaponsmithing",
+     "3",
+     "Intelligence",
+     "-3"
+    ]
+   ]
+  },
+  "source": "wiki page 'Nonweapon Proficiencies Tables (PHB)', caption 'Warrior'"
+ },
+ {
+  "file": "data/rules.json",
+  "ruleId": "phb_ch05_nonweapon_proficiencies_tables",
+  "tableIndex": 5,
+  "tableTitle": "Wizard",
+  "pattern": "sign_lost",
+  "confidence": "confident",
+  "note": "",
+  "before": {
+   "headers": [
+    "Proficiency",
+    "# of Slots Required",
+    "Relevant Ability",
+    "Check Modifier"
+   ],
+   "rows": [
+    [
+     "Ancient History",
+     "1",
+     "Intelligence",
+     "-1"
+    ],
+    [
+     "Astrology",
+     "2",
+     "Intelligence",
+     "0"
+    ],
+    [
+     "Engineering",
+     "2",
+     "Intelligence",
+     "-3"
+    ],
+    [
+     "Gem Cutting",
+     "2",
+     "Dexterity",
+     "-2"
+    ],
+    [
+     "Herbalism",
+     "2",
+     "Intelligence",
+     "-2"
+    ],
+    [
+     "Languages, Ancient",
+     "1",
+     "Intelligence",
+     "0"
+    ],
+    [
+     "Navigation",
+     "1",
+     "Intelligence",
+     "-2"
+    ],
+    [
+     "Reading/Writing",
+     "1",
+     "Intelligence",
+     "1"
+    ],
+    [
+     "Religion",
+     "1",
+     "Wisdom",
+     "0"
+    ],
+    [
+     "Spellcraft",
+     "1",
+     "Intelligence",
+     "-2"
+    ]
+   ]
+  },
+  "after": {
+   "headers": [
+    "Proficiency",
+    "# of Slots Required",
+    "Relevant Ability",
+    "Check Modifier"
+   ],
+   "rows": [
+    [
+     "Ancient History",
+     "1",
+     "Intelligence",
+     "-1"
+    ],
+    [
+     "Astrology",
+     "2",
+     "Intelligence",
+     "0"
+    ],
+    [
+     "Engineering",
+     "2",
+     "Intelligence",
+     "-3"
+    ],
+    [
+     "Gem Cutting",
+     "2",
+     "Dexterity",
+     "-2"
+    ],
+    [
+     "Herbalism",
+     "2",
+     "Intelligence",
+     "-2"
+    ],
+    [
+     "Languages, Ancient",
+     "1",
+     "Intelligence",
+     "0"
+    ],
+    [
+     "Navigation",
+     "1",
+     "Intelligence",
+     "-2"
+    ],
+    [
+     "Reading/Writing",
+     "1",
+     "Intelligence",
+     "+1"
+    ],
+    [
+     "Religion",
+     "1",
+     "Wisdom",
+     "0"
+    ],
+    [
+     "Spellcraft",
+     "1",
+     "Intelligence",
+     "-2"
+    ]
+   ]
+  },
+  "source": "wiki page 'Nonweapon Proficiencies Tables (PHB)', caption 'Wizard'"
+ },
+ {
+  "file": "data/rules.json",
+  "ruleId": "phb_ch09_combat",
+  "tableIndex": 0,
+  "tableTitle": "Table 51: Combat Modifiers",
+  "pattern": "sign_lost",
+  "confidence": "confident",
+  "note": "",
+  "before": {
+   "headers": [
+    "Situation",
+    "Attack Roll Modifier"
+   ],
+   "rows": [
+    [
+     "Attacker on higher ground",
+     "1"
+    ],
+    [
+     "Defender invisible",
+     "-4"
+    ],
+    [
+     "Defender off-balance",
+     "2"
+    ],
+    [
+     "Defender sleeping or held",
+     "Automatic*"
+    ],
+    [
+     "Defender stunned or prone",
+     "4"
+    ],
+    [
+     "Defender surprised",
+     "1"
+    ],
+    [
+     "Missile fire, long range",
+     "-5"
+    ],
+    [
+     "Missile fire, medium range",
+     "-2"
+    ],
+    [
+     "Rear attack",
+     "2"
+    ]
+   ]
+  },
+  "after": {
+   "headers": [
+    "Situation",
+    "Attack Roll Modifier"
+   ],
+   "rows": [
+    [
+     "Attacker on higher ground",
+     "+1"
+    ],
+    [
+     "Defender invisible",
+     "-4"
+    ],
+    [
+     "Defender off-balance",
+     "+2"
+    ],
+    [
+     "Defender sleeping or held",
+     "Automatic*"
+    ],
+    [
+     "Defender stunned or prone",
+     "+4"
+    ],
+    [
+     "Defender surprised",
+     "+1"
+    ],
+    [
+     "Missile fire, long range",
+     "-5"
+    ],
+    [
+     "Missile fire, medium range",
+     "-2"
+    ],
+    [
+     "Rear attack",
+     "+2"
+    ]
+   ]
+  },
+  "source": "wiki page 'Combat (PHB)', caption 'Table 51: Combat Modifiers'"
+ },
+ {
+  "file": "data/rules.json",
+  "ruleId": "phb_ch09_initiative",
+  "tableIndex": 0,
+  "tableTitle": "Table 55: Standard Modifiers to Initiative",
+  "pattern": "sign_lost",
+  "confidence": "confident",
+  "note": "",
+  "before": {
+   "headers": [
+    "Specific Situation",
+    "Modifier"
+   ],
+   "rows": [
+    [
+     "Hasted",
+     "-2"
+    ],
+    [
+     "Slowed",
+     "2"
+    ],
+    [
+     "On higher ground",
+     "-1"
+    ],
+    [
+     "Set to receive a charge",
+     "-2"
+    ],
+    [
+     "Wading or slippery footing",
+     "2"
+    ],
+    [
+     "Wading in deep water",
+     "4"
+    ],
+    [
+     "Foreign environment*",
+     "6"
+    ],
+    [
+     "Hindered (tangled, climbing, held)",
+     "3"
+    ],
+    [
+     "Waiting (see Chapter 11)",
+     "1"
+    ]
+   ]
+  },
+  "after": {
+   "headers": [
+    "Specific Situation",
+    "Modifier"
+   ],
+   "rows": [
+    [
+     "Hasted",
+     "-2"
+    ],
+    [
+     "Slowed",
+     "+2"
+    ],
+    [
+     "On higher ground",
+     "-1"
+    ],
+    [
+     "Set to receive a charge",
+     "-2"
+    ],
+    [
+     "Wading or slippery footing",
+     "+2"
+    ],
+    [
+     "Wading in deep water",
+     "+4"
+    ],
+    [
+     "Foreign environment*",
+     "+6"
+    ],
+    [
+     "Hindered (tangled, climbing, held)",
+     "+3"
+    ],
+    [
+     "Waiting (see Chapter 11)",
+     "+1"
+    ]
+   ]
+  },
+  "source": "wiki page 'Initiative (PHB)', caption 'Table 55: Standard Modifiers to Initiative'"
+ },
+ {
+  "file": "data/rules.json",
+  "ruleId": "phb_ch09_initiative",
+  "tableIndex": 1,
+  "tableTitle": "Table 56: Optional Modifiers to Initiative",
+  "pattern": "sign_lost",
+  "confidence": "confident",
+  "note": "",
+  "before": {
+   "headers": [
+    "Specific Situation",
+    "Modifier"
+   ],
+   "rows": [
+    [
+     "Attacking with weapon",
+     "Weapon speed"
+    ],
+    [
+     "Breath weapon",
+     "1"
+    ],
+    [
+     "Casting a spell",
+     "Casting time"
+    ],
+    [
+     "Creature size (Monsters attacking with natural weapons only)*",
+     ""
+    ],
+    [
+     "Tiny",
+     "0"
+    ],
+    [
+     "Small",
+     "3"
+    ],
+    [
+     "Medium",
+     "3"
+    ],
+    [
+     "Large",
+     "6"
+    ],
+    [
+     "Huge",
+     "9"
+    ],
+    [
+     "Gargantuan",
+     "12"
+    ],
+    [
+     "Innate spell ability",
+     "3"
+    ],
+    [
+     "Magical Items**",
+     ""
+    ],
+    [
+     "Miscellaneous Magic",
+     "3"
+    ],
+    [
+     "Potion",
+     "4"
+    ],
+    [
+     "Ring",
+     "3"
+    ],
+    [
+     "Rods",
+     "1"
+    ],
+    [
+     "Scroll",
+     "Casting time of spell"
+    ],
+    [
+     "Stave",
+     "2"
+    ],
+    [
+     "Wand",
+     "3"
+    ]
+   ]
+  },
+  "after": {
+   "headers": [
+    "Specific Situation",
+    "Modifier"
+   ],
+   "rows": [
+    [
+     "Attacking with weapon",
+     "Weapon speed"
+    ],
+    [
+     "Breath weapon",
+     "+1"
+    ],
+    [
+     "Casting a spell",
+     "Casting time"
+    ],
+    [
+     "Creature size (Monsters attacking with natural weapons only)*",
+     ""
+    ],
+    [
+     "Tiny",
+     "0"
+    ],
+    [
+     "Small",
+     "+3"
+    ],
+    [
+     "Medium",
+     "+3"
+    ],
+    [
+     "Large",
+     "+6"
+    ],
+    [
+     "Huge",
+     "+9"
+    ],
+    [
+     "Gargantuan",
+     "+12"
+    ],
+    [
+     "Innate spell ability",
+     "+3"
+    ],
+    [
+     "Magical Items**",
+     ""
+    ],
+    [
+     "Miscellaneous Magic",
+     "+3"
+    ],
+    [
+     "Potion",
+     "+4"
+    ],
+    [
+     "Ring",
+     "+3"
+    ],
+    [
+     "Rods",
+     "+1"
+    ],
+    [
+     "Scroll",
+     "Casting time of spell"
+    ],
+    [
+     "Stave",
+     "+2"
+    ],
+    [
+     "Wand",
+     "+3"
+    ]
+   ]
+  },
+  "source": "wiki page 'Initiative (PHB)', caption 'Table 56: Optional Modifiers to Initiative'"
+ },
+ {
+  "file": "data/rules.json",
+  "ruleId": "phb_ch09_the_attack_roll",
+  "tableIndex": 0,
+  "tableTitle": "Table 51 Combat Modifiers",
+  "pattern": "sign_lost",
+  "confidence": "confident",
+  "note": "",
+  "before": {
+   "headers": [
+    "Situation",
+    "Attack Roll Modifier"
+   ],
+   "rows": [
+    [
+     "Attacker on higher ground",
+     "1"
+    ],
+    [
+     "Defender invisible",
+     "-4"
+    ],
+    [
+     "Defender off-balance",
+     "2"
+    ],
+    [
+     "Defender sleeping or held",
+     "Automatic*"
+    ],
+    [
+     "Defender stunned or prone",
+     "4"
+    ],
+    [
+     "Defender surprised",
+     "1"
+    ],
+    [
+     "Missile fire, long range",
+     "-5"
+    ],
+    [
+     "Missile fire, medium range",
+     "-2"
+    ],
+    [
+     "Rear attack",
+     "2"
+    ]
+   ]
+  },
+  "after": {
+   "headers": [
+    "Situation",
+    "Attack Roll Modifier"
+   ],
+   "rows": [
+    [
+     "Attacker on higher ground",
+     "+1"
+    ],
+    [
+     "Defender invisible",
+     "-4"
+    ],
+    [
+     "Defender off-balance",
+     "+2"
+    ],
+    [
+     "Defender sleeping or held",
+     "Automatic*"
+    ],
+    [
+     "Defender stunned or prone",
+     "+4"
+    ],
+    [
+     "Defender surprised",
+     "+1"
+    ],
+    [
+     "Missile fire, long range",
+     "-5"
+    ],
+    [
+     "Missile fire, medium range",
+     "-2"
+    ],
+    [
+     "Rear attack",
+     "+2"
+    ]
+   ]
+  },
+  "source": "wiki page 'Combat (PHB)', caption 'Table 51: Combat Modifiers'"
+ },
+ {
+  "file": "data/rules.json",
+  "ruleId": "dmg_ch06_equipment_by_time_period",
+  "tableIndex": 0,
+  "tableTitle": "Table 23: Equipment by Time Period",
+  "pattern": "template_cells_lost",
+  "confidence": "confident",
+  "note": "",
+  "before": {
+   "headers": [
+    "Item",
+    "Ancient",
+    "Dark Ages",
+    "Middle Ages",
+    "Renaissance"
+   ],
+   "rows": [
+    [
+     "Arquebus",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Awl Pike",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Bastard Sword",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Block and Tackle",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Bolt Case",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Brigandine",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Bronze Plate Mail",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Carriage, any",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Chain Mail",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Composite Long Bow",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Crossbow, any",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Field Plate",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Flail, any",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Full Plate",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Full Plate Barding",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Glaive",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Glass",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Glass Bottle",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Great Helm",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Greek Fire",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Heavy Horse Lance",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Heavy War Horse",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Horse Yoke",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Hose",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Jousting Lance",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Kopesh Sword",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Lantern, any",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Lock, any",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Long Bow",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Magnifying Glass",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Mancatcher",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Morning Star",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Paper",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Papyrus",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Plate Mail",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Pole arms, not pike",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Pony Cart",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Ring Mail",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Sailing ship",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Scimitar",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Silk Clothes",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Silk Rope",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Spyglass",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Two-Handed Sword",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Voulge",
+     "",
+     "",
+     "",
+     ""
+    ]
+   ]
+  },
+  "after": {
+   "headers": [
+    "Item",
+    "Ancient",
+    "Dark Ages",
+    "Middle Ages",
+    "Renaissance"
+   ],
+   "rows": [
+    [
+     "Arquebus",
+     "No",
+     "No",
+     "No",
+     "Yes"
+    ],
+    [
+     "Awl Pike",
+     "No",
+     "No",
+     "Yes",
+     "Yes"
+    ],
+    [
+     "Bastard Sword",
+     "No",
+     "Yes",
+     "Yes",
+     "Yes"
+    ],
+    [
+     "Block and Tackle",
+     "No",
+     "No",
+     "Yes",
+     "Yes"
+    ],
+    [
+     "Bolt Case",
+     "No",
+     "No",
+     "Yes",
+     "Yes"
+    ],
+    [
+     "Brigandine",
+     "No",
+     "No",
+     "Yes",
+     "Yes"
+    ],
+    [
+     "Bronze Plate Mail",
+     "Yes",
+     "No",
+     "No",
+     "No"
+    ],
+    [
+     "Carriage, any",
+     "No",
+     "No",
+     "No",
+     "Yes"
+    ],
+    [
+     "Chain Mail",
+     "No",
+     "Yes",
+     "Yes",
+     "Yes"
+    ],
+    [
+     "Composite Long Bow",
+     "No",
+     "No",
+     "Yes",
+     "Yes"
+    ],
+    [
+     "Crossbow, any",
+     "No",
+     "No",
+     "Yes",
+     "Yes"
+    ],
+    [
+     "Field Plate",
+     "No",
+     "No",
+     "Yes",
+     "Yes"
+    ],
+    [
+     "Flail, any",
+     "No",
+     "Yes",
+     "Yes",
+     "Yes"
+    ],
+    [
+     "Full Plate",
+     "No",
+     "No",
+     "No",
+     "Yes"
+    ],
+    [
+     "Full Plate Barding",
+     "No",
+     "No",
+     "No",
+     "Yes"
+    ],
+    [
+     "Glaive",
+     "No",
+     "No",
+     "No",
+     "Yes"
+    ],
+    [
+     "Glass",
+     "No",
+     "Yes",
+     "Yes",
+     "Yes"
+    ],
+    [
+     "Glass Bottle",
+     "No",
+     "No",
+     "Yes",
+     "Yes"
+    ],
+    [
+     "Great Helm",
+     "No",
+     "No",
+     "Yes",
+     "Yes"
+    ],
+    [
+     "Greek Fire",
+     "No",
+     "Yes",
+     "Yes",
+     "Yes"
+    ],
+    [
+     "Heavy Horse Lance",
+     "No",
+     "Yes",
+     "Yes",
+     "Yes"
+    ],
+    [
+     "Heavy War Horse",
+     "No",
+     "Yes",
+     "Yes",
+     "Yes"
+    ],
+    [
+     "Horse Yoke",
+     "No",
+     "No",
+     "Yes",
+     "Yes"
+    ],
+    [
+     "Hose",
+     "No",
+     "No",
+     "Yes",
+     "Yes"
+    ],
+    [
+     "Jousting Lance",
+     "No",
+     "No",
+     "Yes",
+     "Yes"
+    ],
+    [
+     "Kopesh Sword",
+     "Yes",
+     "No",
+     "No",
+     "No"
+    ],
+    [
+     "Lantern, any",
+     "No",
+     "No",
+     "Yes",
+     "Yes"
+    ],
+    [
+     "Lock, any",
+     "No",
+     "Yes (poor)",
+     "Yes (average)",
+     "Yes (good)"
+    ],
+    [
+     "Long Bow",
+     "No",
+     "Yes",
+     "Yes",
+     "Yes"
+    ],
+    [
+     "Magnifying Glass",
+     "No",
+     "No",
+     "No",
+     "Yes"
+    ],
+    [
+     "Mancatcher",
+     "No",
+     "No",
+     "Yes",
+     "Yes"
+    ],
+    [
+     "Morning Star",
+     "No",
+     "Yes",
+     "Yes",
+     "Yes"
+    ],
+    [
+     "Paper",
+     "No",
+     "Yes",
+     "Yes",
+     "Yes"
+    ],
+    [
+     "Papyrus",
+     "Yes",
+     "No",
+     "No",
+     "No"
+    ],
+    [
+     "Plate Mail",
+     "No",
+     "No",
+     "Yes",
+     "Yes"
+    ],
+    [
+     "Pole arms, not pike",
+     "No",
+     "Yes",
+     "Yes",
+     "Yes"
+    ],
+    [
+     "Pony Cart",
+     "No",
+     "No",
+     "Yes",
+     "Yes"
+    ],
+    [
+     "Ring Mail",
+     "No",
+     "Yes",
+     "Yes",
+     "No"
+    ],
+    [
+     "Sailing ship",
+     "No",
+     "No",
+     "Yes",
+     "Yes"
+    ],
+    [
+     "Scimitar",
+     "No",
+     "Yes",
+     "Yes",
+     "Yes"
+    ],
+    [
+     "Silk Clothes",
+     "No",
+     "Yes (very rare)",
+     "Yes (rare)",
+     "Yes (rare)"
+    ],
+    [
+     "Silk Rope",
+     "No",
+     "Yes (very rare)",
+     "Yes (rare)",
+     "Yes (rare)"
+    ],
+    [
+     "Spyglass",
+     "No",
+     "No",
+     "No",
+     "Yes"
+    ],
+    [
+     "Two-Handed Sword",
+     "No",
+     "Yes",
+     "Yes",
+     "Yes"
+    ],
+    [
+     "Voulge",
+     "No",
+     "Yes",
+     "Yes",
+     "Yes"
+    ]
+   ]
+  },
+  "source": "wiki page Equipment by Time Period (DMG): cells are {{Yes}}, {{No}}, {{Yes|Poor|Average|Good}} templates; the extractor dropped them, leaving every availability cell empty"
+ },
+ {
+  "file": "data/rules.json",
+  "ruleId": "dmg_ch09_missile_weapons_in_combat",
+  "tableIndex": 1,
+  "tableTitle": "Table 45: Grenade-Like Missile Effects",
+  "pattern": "html_entity_nbsp",
+  "confidence": "confident",
+  "note": "",
+  "before": {
+   "headers": [
+    "Type of Missile",
+    "Area of Effect",
+    "Damage from Direct Hit",
+    "Splash Damage"
+   ],
+   "rows": [
+    [
+     "Acid",
+     "1' diameter",
+     "2-8&nbsp;hp",
+     "1&nbsp;hp"
+    ],
+    [
+     "Holy water",
+     "1' diameter",
+     "2-7&nbsp;hp",
+     "2&nbsp;hp"
+    ],
+    [
+     "Oil (lit)",
+     "3' diameter",
+     "2-12/1-6&nbsp;hp",
+     "1-3&nbsp;hp"
+    ],
+    [
+     "Poison",
+     "1' diameter",
+     "special",
+     "special"
+    ]
+   ]
+  },
+  "after": {
+   "headers": [
+    "Type of Missile",
+    "Area of Effect",
+    "Damage from Direct Hit",
+    "Splash Damage"
+   ],
+   "rows": [
+    [
+     "Acid",
+     "1' diameter",
+     "2-8 hp",
+     "1 hp"
+    ],
+    [
+     "Holy water",
+     "1' diameter",
+     "2-7 hp",
+     "2 hp"
+    ],
+    [
+     "Oil (lit)",
+     "3' diameter",
+     "2-12/1-6 hp",
+     "1-3 hp"
+    ],
+    [
+     "Poison",
+     "1' diameter",
+     "special",
+     "special"
+    ]
+   ]
+  },
+  "source": "literal \"&nbsp;\" in cell text (React renders text nodes, so the user sees the entity)"
+ },
+ {
+  "file": "data/rules.json",
+  "ruleId": "dmg_ch14_movement_on_water",
+  "tableIndex": 0,
+  "tableTitle": "Table 76: Boat Movement",
+  "pattern": "html_entity_nbsp",
+  "confidence": "confident",
+  "note": "",
+  "before": {
+   "headers": [
+    "Vessel",
+    "Feet/Round",
+    "MPH",
+    "Cargo",
+    "Length"
+   ],
+   "rows": [
+    [
+     "Kayak",
+     "200",
+     "2",
+     "250&nbsp;lbs.",
+     "8–10&nbsp;ft."
+    ],
+    [
+     "Canoe, small",
+     "200",
+     "2",
+     "550&nbsp;lbs.",
+     "10–15&nbsp;ft."
+    ],
+    [
+     "Canoe, war",
+     "180",
+     "2",
+     "800&nbsp;lbs.",
+     "25–35&nbsp;ft."
+    ],
+    [
+     "Coracle",
+     "60",
+     "1*",
+     "600&nbsp;lbs.",
+     "8–10&nbsp;ft."
+    ],
+    [
+     "Keelboat or raft",
+     "60",
+     "1*",
+     "2,000&nbsp;lbs.",
+     "15–20&nbsp;ft."
+    ],
+    [
+     "Barge",
+     "60",
+     "1*",
+     "4,000&nbsp;lbs.",
+     "25–40&nbsp;ft."
+    ],
+    [
+     "Rowboat",
+     "160",
+     "1.5*",
+     "600&nbsp;lbs.",
+     "8–12&nbsp;ft."
+    ]
+   ]
+  },
+  "after": {
+   "headers": [
+    "Vessel",
+    "Feet/Round",
+    "MPH",
+    "Cargo",
+    "Length"
+   ],
+   "rows": [
+    [
+     "Kayak",
+     "200",
+     "2",
+     "250 lbs.",
+     "8–10 ft."
+    ],
+    [
+     "Canoe, small",
+     "200",
+     "2",
+     "550 lbs.",
+     "10–15 ft."
+    ],
+    [
+     "Canoe, war",
+     "180",
+     "2",
+     "800 lbs.",
+     "25–35 ft."
+    ],
+    [
+     "Coracle",
+     "60",
+     "1*",
+     "600 lbs.",
+     "8–10 ft."
+    ],
+    [
+     "Keelboat or raft",
+     "60",
+     "1*",
+     "2,000 lbs.",
+     "15–20 ft."
+    ],
+    [
+     "Barge",
+     "60",
+     "1*",
+     "4,000 lbs.",
+     "25–40 ft."
+    ],
+    [
+     "Rowboat",
+     "160",
+     "1.5*",
+     "600 lbs.",
+     "8–12 ft."
+    ]
+   ]
+  },
+  "source": "literal \"&nbsp;\" in cell text (React renders text nodes, so the user sees the entity)"
+ },
+ {
+  "file": "data/rules.json",
+  "ruleId": "phb_ch06_miscellaneous_equipment",
+  "tableIndex": 0,
+  "tableTitle": "Miscellaneous Equipment",
+  "pattern": "html_entity_nbsp",
+  "confidence": "confident",
+  "note": "",
+  "before": {
+   "headers": [
+    "Item",
+    "Cost",
+    "Weight"
+   ],
+   "rows": [
+    [
+     "Backpack",
+     "2 gp",
+     "2&nbsp;lbs."
+    ],
+    [
+     "Barrel, small",
+     "2 gp",
+     "30&nbsp;lbs."
+    ],
+    [
+     "Basket",
+     "—",
+     "—"
+    ],
+    [
+     "Large",
+     "3 sp",
+     "1&nbsp;lbs."
+    ],
+    [
+     "Small",
+     "5 cp",
+     "*"
+    ],
+    [
+     "Bell",
+     "1 gp",
+     "—"
+    ],
+    [
+     "Belt pouch",
+     "—",
+     "—"
+    ],
+    [
+     "Large",
+     "1 gp",
+     "1&nbsp;lbs."
+    ],
+    [
+     "Small",
+     "7 sp",
+     "1/2 lbs."
+    ],
+    [
+     "Block and tackle",
+     "5 gp",
+     "5&nbsp;lbs."
+    ],
+    [
+     "Bolt case",
+     "1 gp",
+     "1&nbsp;lbs."
+    ],
+    [
+     "Bucket",
+     "5 sp",
+     "3&nbsp;lbs."
+    ],
+    [
+     "Chain (per ft.)",
+     "—",
+     "—"
+    ],
+    [
+     "Heavy",
+     "4 gp",
+     "3&nbsp;lbs."
+    ],
+    [
+     "Light",
+     "3 gp",
+     "1&nbsp;lbs."
+    ],
+    [
+     "Chest",
+     "—",
+     "—"
+    ],
+    [
+     "Large",
+     "2 gp",
+     "25&nbsp;lbs."
+    ],
+    [
+     "Small",
+     "1 gp",
+     "10&nbsp;lbs."
+    ],
+    [
+     "Cloth (per 10 sq. yds.)",
+     "—",
+     "—"
+    ],
+    [
+     "Common",
+     "7 gp",
+     "10&nbsp;lbs."
+    ],
+    [
+     "Fine",
+     "50 gp",
+     "10&nbsp;lbs."
+    ],
+    [
+     "Rich",
+     "100 gp",
+     "10&nbsp;lbs."
+    ],
+    [
+     "Candle",
+     "1 cp",
+     "*"
+    ],
+    [
+     "Canvas (per sq. yard)",
+     "4 sp",
+     "1&nbsp;lbs."
+    ],
+    [
+     "Chalk",
+     "1 cp",
+     "*"
+    ],
+    [
+     "Crampons",
+     "4 gp",
+     "2&nbsp;lbs."
+    ],
+    [
+     "Fishhook",
+     "1 sp",
+     "**"
+    ],
+    [
+     "Fishing net, 10&nbsp;ft. sq.",
+     "4 gp",
+     "5&nbsp;lbs."
+    ],
+    [
+     "Flint and steel",
+     "5 sp",
+     "*"
+    ],
+    [
+     "Glass bottle",
+     "10 gp",
+     "*"
+    ],
+    [
+     "Grappling hook",
+     "8 sp",
+     "4&nbsp;lbs."
+    ],
+    [
+     "Holy item (symbol, water, etc.)",
+     "25 gp",
+     "*"
+    ],
+    [
+     "Hourglass",
+     "25 gp",
+     "1&nbsp;lbs."
+    ],
+    [
+     "Iron pot",
+     "5 sp",
+     "2&nbsp;lbs."
+    ],
+    [
+     "Ladder, 10&nbsp;ft.",
+     "5 cp",
+     "20&nbsp;lbs."
+    ],
+    [
+     "Lantern",
+     "—",
+     "—"
+    ],
+    [
+     "Beacon",
+     "150 gp",
+     "50&nbsp;lbs."
+    ],
+    [
+     "Bullseye",
+     "12 gp",
+     "3&nbsp;lbs."
+    ],
+    [
+     "Hooded",
+     "7 gp",
+     "2&nbsp;lbs."
+    ],
+    [
+     "Lock",
+     "—",
+     "—"
+    ],
+    [
+     "Good",
+     "100 gp",
+     "1&nbsp;lbs."
+    ],
+    [
+     "Poor",
+     "20 gp",
+     "1&nbsp;lbs."
+    ],
+    [
+     "Magnifying glass",
+     "100 gp",
+     "*"
+    ],
+    [
+     "Map or scroll case",
+     "8 sp",
+     "1/2 lbs."
+    ],
+    [
+     "Merchant's scale",
+     "2 gp",
+     "1&nbsp;lbs."
+    ],
+    [
+     "Mirror, small metal",
+     "10 gp",
+     "*"
+    ],
+    [
+     "Musical instrument",
+     "5-100 gp",
+     "1/2-3&nbsp;lbs."
+    ],
+    [
+     "Oil (per flask)",
+     "—",
+     "—"
+    ],
+    [
+     "Greek fire",
+     "10 gp",
+     "2&nbsp;lbs."
+    ],
+    [
+     "Lamp",
+     "6 cp",
+     "1&nbsp;lbs."
+    ],
+    [
+     "Paper (per sheet)",
+     "2 gp",
+     "**"
+    ],
+    [
+     "Papyrus (per sheet)",
+     "8 sp",
+     "**"
+    ],
+    [
+     "Parchment (per sheet)",
+     "1 gp",
+     "**"
+    ],
+    [
+     "Perfume (per vial)",
+     "5 gp",
+     "*"
+    ],
+    [
+     "Piton",
+     "3 cp",
+     "1/2 lbs."
+    ],
+    [
+     "Quiver",
+     "8 sp",
+     "1&nbsp;lbs."
+    ],
+    [
+     "Rope (per 50&nbsp;ft.)",
+     "—",
+     "—"
+    ],
+    [
+     "Hemp",
+     "1 gp",
+     "20&nbsp;lbs."
+    ],
+    [
+     "Silk",
+     "10 gp",
+     "8&nbsp;lbs."
+    ],
+    [
+     "Sack",
+     "—",
+     "—"
+    ],
+    [
+     "Large",
+     "2 sp",
+     "1/2 lbs."
+    ],
+    [
+     "Small",
+     "5 cp",
+     "*"
+    ],
+    [
+     "Sealing/candle wax (per lb.)",
+     "1 gp",
+     "1&nbsp;lbs."
+    ],
+    [
+     "Sewing needle",
+     "5 sp*",
+     "*"
+    ],
+    [
+     "Signal whistle",
+     "8 sp",
+     "*"
+    ],
+    [
+     "Signet ring or personal seal",
+     "5 gp",
+     "*"
+    ],
+    [
+     "Soap (per lb.)",
+     "5 sp",
+     "1&nbsp;lbs."
+    ],
+    [
+     "Spyglass",
+     "1,000 gp",
+     "1&nbsp;lbs."
+    ],
+    [
+     "Tent",
+     "—",
+     "—"
+    ],
+    [
+     "Large",
+     "25 gp",
+     "20&nbsp;lbs."
+    ],
+    [
+     "Pavilion",
+     "100 gp",
+     "50&nbsp;lbs."
+    ],
+    [
+     "Small",
+     "5 gp",
+     "10&nbsp;lbs."
+    ],
+    [
+     "Thieves' picks",
+     "30 gp",
+     "1&nbsp;lbs."
+    ],
+    [
+     "Torch",
+     "1 cp",
+     "1&nbsp;lbs."
+    ],
+    [
+     "Water clock",
+     "1,000 gp",
+     "200&nbsp;lbs."
+    ],
+    [
+     "Whetstone",
+     "2 cp",
+     "1&nbsp;lbs."
+    ],
+    [
+     "Wineskin",
+     "8 sp",
+     "1&nbsp;lbs."
+    ],
+    [
+     "Winter blanket",
+     "5 sp",
+     "3&nbsp;lbs."
+    ],
+    [
+     "Writing ink (per vial)",
+     "8 gp",
+     "*"
+    ]
+   ]
+  },
+  "after": {
+   "headers": [
+    "Item",
+    "Cost",
+    "Weight"
+   ],
+   "rows": [
+    [
+     "Backpack",
+     "2 gp",
+     "2 lbs."
+    ],
+    [
+     "Barrel, small",
+     "2 gp",
+     "30 lbs."
+    ],
+    [
+     "Basket",
+     "—",
+     "—"
+    ],
+    [
+     "Large",
+     "3 sp",
+     "1 lbs."
+    ],
+    [
+     "Small",
+     "5 cp",
+     "*"
+    ],
+    [
+     "Bell",
+     "1 gp",
+     "—"
+    ],
+    [
+     "Belt pouch",
+     "—",
+     "—"
+    ],
+    [
+     "Large",
+     "1 gp",
+     "1 lbs."
+    ],
+    [
+     "Small",
+     "7 sp",
+     "1/2 lbs."
+    ],
+    [
+     "Block and tackle",
+     "5 gp",
+     "5 lbs."
+    ],
+    [
+     "Bolt case",
+     "1 gp",
+     "1 lbs."
+    ],
+    [
+     "Bucket",
+     "5 sp",
+     "3 lbs."
+    ],
+    [
+     "Chain (per ft.)",
+     "—",
+     "—"
+    ],
+    [
+     "Heavy",
+     "4 gp",
+     "3 lbs."
+    ],
+    [
+     "Light",
+     "3 gp",
+     "1 lbs."
+    ],
+    [
+     "Chest",
+     "—",
+     "—"
+    ],
+    [
+     "Large",
+     "2 gp",
+     "25 lbs."
+    ],
+    [
+     "Small",
+     "1 gp",
+     "10 lbs."
+    ],
+    [
+     "Cloth (per 10 sq. yds.)",
+     "—",
+     "—"
+    ],
+    [
+     "Common",
+     "7 gp",
+     "10 lbs."
+    ],
+    [
+     "Fine",
+     "50 gp",
+     "10 lbs."
+    ],
+    [
+     "Rich",
+     "100 gp",
+     "10 lbs."
+    ],
+    [
+     "Candle",
+     "1 cp",
+     "*"
+    ],
+    [
+     "Canvas (per sq. yard)",
+     "4 sp",
+     "1 lbs."
+    ],
+    [
+     "Chalk",
+     "1 cp",
+     "*"
+    ],
+    [
+     "Crampons",
+     "4 gp",
+     "2 lbs."
+    ],
+    [
+     "Fishhook",
+     "1 sp",
+     "**"
+    ],
+    [
+     "Fishing net, 10 ft. sq.",
+     "4 gp",
+     "5 lbs."
+    ],
+    [
+     "Flint and steel",
+     "5 sp",
+     "*"
+    ],
+    [
+     "Glass bottle",
+     "10 gp",
+     "*"
+    ],
+    [
+     "Grappling hook",
+     "8 sp",
+     "4 lbs."
+    ],
+    [
+     "Holy item (symbol, water, etc.)",
+     "25 gp",
+     "*"
+    ],
+    [
+     "Hourglass",
+     "25 gp",
+     "1 lbs."
+    ],
+    [
+     "Iron pot",
+     "5 sp",
+     "2 lbs."
+    ],
+    [
+     "Ladder, 10 ft.",
+     "5 cp",
+     "20 lbs."
+    ],
+    [
+     "Lantern",
+     "—",
+     "—"
+    ],
+    [
+     "Beacon",
+     "150 gp",
+     "50 lbs."
+    ],
+    [
+     "Bullseye",
+     "12 gp",
+     "3 lbs."
+    ],
+    [
+     "Hooded",
+     "7 gp",
+     "2 lbs."
+    ],
+    [
+     "Lock",
+     "—",
+     "—"
+    ],
+    [
+     "Good",
+     "100 gp",
+     "1 lbs."
+    ],
+    [
+     "Poor",
+     "20 gp",
+     "1 lbs."
+    ],
+    [
+     "Magnifying glass",
+     "100 gp",
+     "*"
+    ],
+    [
+     "Map or scroll case",
+     "8 sp",
+     "1/2 lbs."
+    ],
+    [
+     "Merchant's scale",
+     "2 gp",
+     "1 lbs."
+    ],
+    [
+     "Mirror, small metal",
+     "10 gp",
+     "*"
+    ],
+    [
+     "Musical instrument",
+     "5-100 gp",
+     "1/2-3 lbs."
+    ],
+    [
+     "Oil (per flask)",
+     "—",
+     "—"
+    ],
+    [
+     "Greek fire",
+     "10 gp",
+     "2 lbs."
+    ],
+    [
+     "Lamp",
+     "6 cp",
+     "1 lbs."
+    ],
+    [
+     "Paper (per sheet)",
+     "2 gp",
+     "**"
+    ],
+    [
+     "Papyrus (per sheet)",
+     "8 sp",
+     "**"
+    ],
+    [
+     "Parchment (per sheet)",
+     "1 gp",
+     "**"
+    ],
+    [
+     "Perfume (per vial)",
+     "5 gp",
+     "*"
+    ],
+    [
+     "Piton",
+     "3 cp",
+     "1/2 lbs."
+    ],
+    [
+     "Quiver",
+     "8 sp",
+     "1 lbs."
+    ],
+    [
+     "Rope (per 50 ft.)",
+     "—",
+     "—"
+    ],
+    [
+     "Hemp",
+     "1 gp",
+     "20 lbs."
+    ],
+    [
+     "Silk",
+     "10 gp",
+     "8 lbs."
+    ],
+    [
+     "Sack",
+     "—",
+     "—"
+    ],
+    [
+     "Large",
+     "2 sp",
+     "1/2 lbs."
+    ],
+    [
+     "Small",
+     "5 cp",
+     "*"
+    ],
+    [
+     "Sealing/candle wax (per lb.)",
+     "1 gp",
+     "1 lbs."
+    ],
+    [
+     "Sewing needle",
+     "5 sp*",
+     "*"
+    ],
+    [
+     "Signal whistle",
+     "8 sp",
+     "*"
+    ],
+    [
+     "Signet ring or personal seal",
+     "5 gp",
+     "*"
+    ],
+    [
+     "Soap (per lb.)",
+     "5 sp",
+     "1 lbs."
+    ],
+    [
+     "Spyglass",
+     "1,000 gp",
+     "1 lbs."
+    ],
+    [
+     "Tent",
+     "—",
+     "—"
+    ],
+    [
+     "Large",
+     "25 gp",
+     "20 lbs."
+    ],
+    [
+     "Pavilion",
+     "100 gp",
+     "50 lbs."
+    ],
+    [
+     "Small",
+     "5 gp",
+     "10 lbs."
+    ],
+    [
+     "Thieves' picks",
+     "30 gp",
+     "1 lbs."
+    ],
+    [
+     "Torch",
+     "1 cp",
+     "1 lbs."
+    ],
+    [
+     "Water clock",
+     "1,000 gp",
+     "200 lbs."
+    ],
+    [
+     "Whetstone",
+     "2 cp",
+     "1 lbs."
+    ],
+    [
+     "Wineskin",
+     "8 sp",
+     "1 lbs."
+    ],
+    [
+     "Winter blanket",
+     "5 sp",
+     "3 lbs."
+    ],
+    [
+     "Writing ink (per vial)",
+     "8 gp",
+     "*"
+    ]
+   ]
+  },
+  "source": "literal \"&nbsp;\" in cell text (React renders text nodes, so the user sees the entity)"
+ },
+ {
+  "file": "data/rules.json",
+  "ruleId": "phb_ch13_vision_and_light",
+  "tableIndex": 1,
+  "tableTitle": "Table 63: Light Sources",
+  "pattern": "html_entity_nbsp",
+  "confidence": "confident",
+  "note": "",
+  "before": {
+   "headers": [
+    "Source",
+    "Radius",
+    "Burning time"
+   ],
+   "rows": [
+    [
+     "Beacon lantern",
+     "240&nbsp;ft.*",
+     "30 hrs./pint"
+    ],
+    [
+     "Bonfire",
+     "50&nbsp;ft.",
+     "1/2 hr./armload"
+    ],
+    [
+     "Bullseye lantern",
+     "60&nbsp;ft.*",
+     "2 hrs./pint"
+    ],
+    [
+     "Campfire",
+     "35&nbsp;ft.",
+     "1 hr./armload"
+    ],
+    [
+     "Candle",
+     "5&nbsp;ft.",
+     "10 min./inch"
+    ],
+    [
+     "Continual light",
+     "60&nbsp;ft.",
+     "Indefinite"
+    ],
+    [
+     "Hooded lantern",
+     "30&nbsp;ft.",
+     "2 hrs./pint"
+    ],
+    [
+     "Light",
+     "20&nbsp;ft.",
+     "Variable"
+    ],
+    [
+     "Torch",
+     "15&nbsp;ft.",
+     "30 min."
+    ],
+    [
+     "Weapon**",
+     "5&nbsp;ft.",
+     "As desired"
+    ]
+   ]
+  },
+  "after": {
+   "headers": [
+    "Source",
+    "Radius",
+    "Burning time"
+   ],
+   "rows": [
+    [
+     "Beacon lantern",
+     "240 ft.*",
+     "30 hrs./pint"
+    ],
+    [
+     "Bonfire",
+     "50 ft.",
+     "1/2 hr./armload"
+    ],
+    [
+     "Bullseye lantern",
+     "60 ft.*",
+     "2 hrs./pint"
+    ],
+    [
+     "Campfire",
+     "35 ft.",
+     "1 hr./armload"
+    ],
+    [
+     "Candle",
+     "5 ft.",
+     "10 min./inch"
+    ],
+    [
+     "Continual light",
+     "60 ft.",
+     "Indefinite"
+    ],
+    [
+     "Hooded lantern",
+     "30 ft.",
+     "2 hrs./pint"
+    ],
+    [
+     "Light",
+     "20 ft.",
+     "Variable"
+    ],
+    [
+     "Torch",
+     "15 ft.",
+     "30 min."
+    ],
+    [
+     "Weapon**",
+     "5 ft.",
+     "As desired"
+    ]
+   ]
+  },
+  "source": "literal \"&nbsp;\" in cell text (React renders text nodes, so the user sees the entity)"
+ },
+ {
+  "file": "data/rules.json",
+  "ruleId": "phb_ch14_climbing",
+  "tableIndex": 1,
+  "tableTitle": "Table 66: Climbing Modifiers",
+  "pattern": "subheader_rows_became_values_modifier_lost",
+  "confidence": "confident",
+  "note": "",
+  "before": {
+   "headers": [
+    "Situation",
+    "Modifier"
+   ],
+   "rows": [
+    [
+     "Abundant handholds (brush, trees, ledges)",
+     "40%"
+    ],
+    [
+     "Rope and wall **",
+     "55%"
+    ],
+    [
+     "Sloped inward",
+     "25%"
+    ],
+    [
+     "Armor:",
+     "Banded, splint"
+    ],
+    [
+     "Armor:",
+     "Plate armors (all types)"
+    ],
+    [
+     "Armor:",
+     "Scale, chain"
+    ],
+    [
+     "Armor:",
+     "Studded leather, padded"
+    ],
+    [
+     "Character race: *",
+     "Dwarf"
+    ],
+    [
+     "Character race: *",
+     "Gnome"
+    ],
+    [
+     "Character race: *",
+     "Halfling"
+    ],
+    [
+     "Character race: *",
+     "Encumbrance"
+    ],
+    [
+     "Surface condition:",
+     "Slightly slippery (wet or crumbling)"
+    ],
+    [
+     "Surface condition:",
+     "Slippery (icy, slimy)"
+    ],
+    [
+     "Surface condition:",
+     "Climber wounded below 1/2 hp"
+    ]
+   ]
+  },
+  "after": {
+   "headers": [
+    "Situation",
+    "Modifier"
+   ],
+   "rows": [
+    [
+     "Abundant handholds (brush, trees, ledges)",
+     "40%"
+    ],
+    [
+     "Rope and wall **",
+     "55%"
+    ],
+    [
+     "Sloped inward",
+     "25%"
+    ],
+    [
+     "Armor:",
+     ""
+    ],
+    [
+     "Banded, splint",
+     "-25%"
+    ],
+    [
+     "Plate armors (all types)",
+     "-50%"
+    ],
+    [
+     "Scale, chain",
+     "-15%"
+    ],
+    [
+     "Studded leather, padded",
+     "-5%"
+    ],
+    [
+     "Character race: *",
+     ""
+    ],
+    [
+     "Dwarf",
+     "-10%"
+    ],
+    [
+     "Gnome",
+     "-15%"
+    ],
+    [
+     "Halfling",
+     "-15%"
+    ],
+    [
+     "Encumbrance",
+     "-5%"
+    ],
+    [
+     "Surface condition:",
+     ""
+    ],
+    [
+     "Slightly slippery (wet or crumbling)",
+     "-25%"
+    ],
+    [
+     "Slippery (icy, slimy)",
+     "-40%"
+    ],
+    [
+     "Climber wounded below 1/2 hp",
+     "-10%"
+    ]
+   ]
+  },
+  "source": "wiki page 'Climbing (PHB)', Table 66: 'Armor:', 'Character race: *' and 'Surface condition:' are section rows (colspan 2); the extractor turned them into a first-column label on every row and pushed the real row label into the Modifier column, so all 11 armor/race/surface modifiers (-25%, -50%, -15%, -5%, -10%, -15%, -15%, -5%, -25%, -40%, -10%) are gone"
+ },
+ {
+  "file": "data/rules.json",
+  "ruleId": "phb_ch14_climbing_tables",
+  "tableIndex": 1,
+  "tableTitle": "Table 66: Climbing Modifiers",
+  "pattern": "subheader_rows_became_values_modifier_lost",
+  "confidence": "confident",
+  "note": "",
+  "before": {
+   "headers": [
+    "Situation",
+    "Modifier"
+   ],
+   "rows": [
+    [
+     "Abundant handholds (brush, trees, ledges)",
+     "40%"
+    ],
+    [
+     "Rope and wall **",
+     "55%"
+    ],
+    [
+     "Sloped inward",
+     "25%"
+    ],
+    [
+     "Armor:",
+     "Banded, splint"
+    ],
+    [
+     "Armor:",
+     "Plate armors (all types)"
+    ],
+    [
+     "Armor:",
+     "Scale, chain"
+    ],
+    [
+     "Armor:",
+     "Studded leather, padded"
+    ],
+    [
+     "Character race: *",
+     "Dwarf"
+    ],
+    [
+     "Character race: *",
+     "Gnome"
+    ],
+    [
+     "Character race: *",
+     "Halfling"
+    ],
+    [
+     "Character race: *",
+     "Encumbrance"
+    ],
+    [
+     "Surface condition:",
+     "Slightly slippery (wet or crumbling)"
+    ],
+    [
+     "Surface condition:",
+     "Slippery (icy, slimy)"
+    ],
+    [
+     "Surface condition:",
+     "Climber wounded below 1/2 hp"
+    ]
+   ]
+  },
+  "after": {
+   "headers": [
+    "Situation",
+    "Modifier"
+   ],
+   "rows": [
+    [
+     "Abundant handholds (brush, trees, ledges)",
+     "40%"
+    ],
+    [
+     "Rope and wall **",
+     "55%"
+    ],
+    [
+     "Sloped inward",
+     "25%"
+    ],
+    [
+     "Armor:",
+     ""
+    ],
+    [
+     "Banded, splint",
+     "-25%"
+    ],
+    [
+     "Plate armors (all types)",
+     "-50%"
+    ],
+    [
+     "Scale, chain",
+     "-15%"
+    ],
+    [
+     "Studded leather, padded",
+     "-5%"
+    ],
+    [
+     "Character race: *",
+     ""
+    ],
+    [
+     "Dwarf",
+     "-10%"
+    ],
+    [
+     "Gnome",
+     "-15%"
+    ],
+    [
+     "Halfling",
+     "-15%"
+    ],
+    [
+     "Encumbrance",
+     "-5%"
+    ],
+    [
+     "Surface condition:",
+     ""
+    ],
+    [
+     "Slightly slippery (wet or crumbling)",
+     "-25%"
+    ],
+    [
+     "Slippery (icy, slimy)",
+     "-40%"
+    ],
+    [
+     "Climber wounded below 1/2 hp",
+     "-10%"
+    ]
+   ]
+  },
+  "source": "wiki page 'Climbing (PHB)', Table 66: 'Armor:', 'Character race: *' and 'Surface condition:' are section rows (colspan 2); the extractor turned them into a first-column label on every row and pushed the real row label into the Modifier column, so all 11 armor/race/surface modifiers (-25%, -50%, -15%, -5%, -10%, -15%, -15%, -5%, -25%, -40%, -10%) are gone"
+ },
+ {
+  "file": "data/rules.json",
+  "ruleId": "dmg_ch09_initiative",
+  "tableIndex": 1,
+  "tableTitle": "Table 41: Optional Modifiers to Initiative",
+  "pattern": "subheader_rows_dropped+sign_lost",
+  "confidence": "confident",
+  "note": "",
+  "before": {
+   "headers": [
+    "Situation",
+    "Modifier"
+   ],
+   "rows": [
+    [
+     "Attacking with weapon",
+     "Weapon speed"
+    ],
+    [
+     "Breath weapon",
+     "1"
+    ],
+    [
+     "Casting a spell",
+     "Casting time"
+    ],
+    [
+     "Tiny",
+     "0"
+    ],
+    [
+     "Small",
+     "3"
+    ],
+    [
+     "Medium",
+     "3"
+    ],
+    [
+     "Large",
+     "6"
+    ],
+    [
+     "Huge",
+     "9"
+    ],
+    [
+     "Gargantuan",
+     "12"
+    ],
+    [
+     "Innate spell ability",
+     "3"
+    ],
+    [
+     "Miscellaneous magic",
+     "3"
+    ],
+    [
+     "Potion",
+     "4"
+    ],
+    [
+     "Ring",
+     "3"
+    ],
+    [
+     "Rods",
+     "1"
+    ],
+    [
+     "Scroll",
+     "Casting time of spell"
+    ],
+    [
+     "Stave",
+     "2"
+    ],
+    [
+     "Wand",
+     "3"
+    ]
+   ]
+  },
+  "after": {
+   "headers": [
+    "Situation",
+    "Modifier"
+   ],
+   "rows": [
+    [
+     "Attacking with weapon",
+     "Weapon speed"
+    ],
+    [
+     "Breath weapon",
+     "+1"
+    ],
+    [
+     "Casting a spell",
+     "Casting time"
+    ],
+    [
+     "Creature size (monsters with natural weapons only)*",
+     ""
+    ],
+    [
+     "Tiny",
+     "0"
+    ],
+    [
+     "Small",
+     "+3"
+    ],
+    [
+     "Medium",
+     "+3"
+    ],
+    [
+     "Large",
+     "+6"
+    ],
+    [
+     "Huge",
+     "+9"
+    ],
+    [
+     "Gargantuan",
+     "+12"
+    ],
+    [
+     "Innate spell ability",
+     "+3"
+    ],
+    [
+     "Magical items**",
+     ""
+    ],
+    [
+     "Miscellaneous magic",
+     "+3"
+    ],
+    [
+     "Potion",
+     "+4"
+    ],
+    [
+     "Ring",
+     "+3"
+    ],
+    [
+     "Rods",
+     "+1"
+    ],
+    [
+     "Scroll",
+     "Casting time of spell"
+    ],
+    [
+     "Stave",
+     "+2"
+    ],
+    [
+     "Wand",
+     "+3"
+    ]
+   ]
+  },
+  "source": "wiki page 'Initiative (DMG)', Table 41: section rows 'Creature size (monsters with natural weapons only)*' and 'Magical items**' were dropped and '+N' became 'N'"
+ },
+ {
+  "file": "data/rules.json",
+  "ruleId": "dmg_ch11_creating_encounter_tables",
+  "tableIndex": 0,
+  "tableTitle": "Example: Encounters for the Desert of Shaar",
+  "pattern": "subheader_rows_dropped",
+  "confidence": "confident",
+  "note": "",
+  "before": {
+   "headers": [
+    "Common",
+    "Uncommon"
+   ],
+   "rows": [
+    [
+     "Camel",
+     "Basilisk"
+    ],
+    [
+     "Giant centipede",
+     "Brass dragon"
+    ],
+    [
+     "Herd animal",
+     "Caravan"
+    ],
+    [
+     "Ogre",
+     "Hobgoblin"
+    ],
+    [
+     "Orc",
+     "Nomads"
+    ],
+    [
+     "Huge spider",
+     "Giant scorpion"
+    ],
+    [
+     "Chimera",
+     "Djinni"
+    ],
+    [
+     "Pilgrims",
+     "Efreeti"
+    ],
+    [
+     "Harpy",
+     "Lamia"
+    ],
+    [
+     "Dervishes",
+     ""
+    ],
+    [
+     "Salamander",
+     ""
+    ]
+   ]
+  },
+  "after": {
+   "headers": [
+    "Common",
+    "Uncommon"
+   ],
+   "rows": [
+    [
+     "Camel",
+     "Basilisk"
+    ],
+    [
+     "Giant centipede",
+     "Brass dragon"
+    ],
+    [
+     "Herd animal",
+     "Caravan"
+    ],
+    [
+     "Ogre",
+     "Hobgoblin"
+    ],
+    [
+     "Orc",
+     "Nomads"
+    ],
+    [
+     "Huge spider",
+     "Giant scorpion"
+    ],
+    [
+     "Rare",
+     "Very rare"
+    ],
+    [
+     "Chimera",
+     "Djinni"
+    ],
+    [
+     "Pilgrims",
+     "Efreeti"
+    ],
+    [
+     "Harpy",
+     "Lamia"
+    ],
+    [
+     "Dervishes",
+     ""
+    ],
+    [
+     "Salamander",
+     ""
+    ]
+   ]
+  },
+  "source": "wiki page 'Creating Encounter Tables (DMG)': after 'Huge spider / Giant scorpion' the wiki has a blank row and a second header row 'Rare | Very rare'; without it Chimera, Djinni, Pilgrims... read as Common/Uncommon"
+ },
+ {
+  "file": "data/rules.json",
+  "ruleId": "phb_ch09_combat_tables",
+  "tableIndex": 0,
+  "tableTitle": "Table 45: Missile Weapon Ranges",
+  "pattern": "cell_text_truncated",
+  "confidence": "confident",
+  "note": "",
+  "before": {
+   "headers": [
+    "Weapon",
+    "ROF",
+    "S",
+    "M",
+    "L"
+   ],
+   "rows": [
+    [
+     "Arquebus",
+     "1/3",
+     "50",
+     "150",
+     "210"
+    ],
+    [
+     "Blowgun",
+     "2/1",
+     "10",
+     "20",
+     "30"
+    ],
+    [
+     "Comp.",
+     "2/1",
+     "60",
+     "120",
+     "210"
+    ],
+    [
+     "Comp.",
+     "2/1",
+     "40",
+     "80",
+     "170"
+    ],
+    [
+     "Comp.",
+     "2/1",
+     "50",
+     "100",
+     "180"
+    ],
+    [
+     "Longbow,",
+     "2/1",
+     "70",
+     "140",
+     "210"
+    ],
+    [
+     "Longbow,sheaf",
+     "2/1",
+     "50",
+     "100",
+     "170"
+    ],
+    [
+     "Short",
+     "2/1",
+     "50",
+     "100",
+     "150"
+    ],
+    [
+     "Club",
+     "1",
+     "10",
+     "20",
+     "30"
+    ],
+    [
+     "Hand",
+     "1",
+     "20",
+     "40",
+     "60"
+    ],
+    [
+     "Heavy",
+     "1/2",
+     "80",
+     "160",
+     "240"
+    ],
+    [
+     "Light",
+     "1",
+     "60",
+     "120",
+     "180"
+    ],
+    [
+     "Dagger",
+     "2/1",
+     "10",
+     "20",
+     "30"
+    ],
+    [
+     "Dart",
+     "3/1",
+     "10",
+     "20",
+     "40"
+    ],
+    [
+     "Hammer",
+     "1",
+     "10",
+     "20",
+     "30"
+    ],
+    [
+     "Hand",
+     "1",
+     "10",
+     "20",
+     "30"
+    ],
+    [
+     "Harpoon",
+     "1",
+     "10",
+     "20",
+     "30"
+    ],
+    [
+     "Javelin",
+     "1",
+     "20",
+     "40",
+     "60"
+    ],
+    [
+     "Knife",
+     "2/1",
+     "10",
+     "20",
+     "30"
+    ],
+    [
+     "Sling",
+     "1",
+     "50",
+     "100",
+     "200"
+    ],
+    [
+     "Sling",
+     "1",
+     "40",
+     "80",
+     "160"
+    ],
+    [
+     "Spear",
+     "1",
+     "10",
+     "20",
+     "30"
+    ],
+    [
+     "Staff",
+     "2/1",
+     "—",
+     "30-60",
+     "90"
+    ],
+    [
+     "Staff",
+     "2/1",
+     "—",
+     "30-60",
+     "90"
+    ]
+   ]
+  },
+  "after": {
+   "headers": [
+    "Weapon",
+    "ROF",
+    "S",
+    "M",
+    "L"
+   ],
+   "rows": [
+    [
+     "Arquebus",
+     "1/3",
+     "50",
+     "150",
+     "210"
+    ],
+    [
+     "Blowgun",
+     "2/1",
+     "10",
+     "20",
+     "30"
+    ],
+    [
+     "Comp. long bow, flight arrow",
+     "2/1",
+     "60",
+     "120",
+     "210"
+    ],
+    [
+     "Comp. long bow, sheaf arrow",
+     "2/1",
+     "40",
+     "80",
+     "170"
+    ],
+    [
+     "Comp. short bow",
+     "2/1",
+     "50",
+     "100",
+     "180"
+    ],
+    [
+     "Longbow, flight arrow",
+     "2/1",
+     "70",
+     "140",
+     "210"
+    ],
+    [
+     "Longbow,sheaf arrow",
+     "2/1",
+     "50",
+     "100",
+     "170"
+    ],
+    [
+     "Short bow",
+     "2/1",
+     "50",
+     "100",
+     "150"
+    ],
+    [
+     "Club",
+     "1",
+     "10",
+     "20",
+     "30"
+    ],
+    [
+     "Hand crossbow",
+     "1",
+     "20",
+     "40",
+     "60"
+    ],
+    [
+     "Heavy crossbow",
+     "1/2",
+     "80",
+     "160",
+     "240"
+    ],
+    [
+     "Light crossbow",
+     "1",
+     "60",
+     "120",
+     "180"
+    ],
+    [
+     "Dagger",
+     "2/1",
+     "10",
+     "20",
+     "30"
+    ],
+    [
+     "Dart",
+     "3/1",
+     "10",
+     "20",
+     "40"
+    ],
+    [
+     "Hammer",
+     "1",
+     "10",
+     "20",
+     "30"
+    ],
+    [
+     "Hand axe",
+     "1",
+     "10",
+     "20",
+     "30"
+    ],
+    [
+     "Harpoon",
+     "1",
+     "10",
+     "20",
+     "30"
+    ],
+    [
+     "Javelin",
+     "1",
+     "20",
+     "40",
+     "60"
+    ],
+    [
+     "Knife",
+     "2/1",
+     "10",
+     "20",
+     "30"
+    ],
+    [
+     "Sling bullet",
+     "1",
+     "50",
+     "100",
+     "200"
+    ],
+    [
+     "Sling stone",
+     "1",
+     "40",
+     "80",
+     "160"
+    ],
+    [
+     "Spear",
+     "1",
+     "10",
+     "20",
+     "30"
+    ],
+    [
+     "Staff sling bullet",
+     "2/1",
+     "—",
+     "30-60",
+     "90"
+    ],
+    [
+     "Staff sling stone",
+     "2/1",
+     "—",
+     "30-60",
+     "90"
+    ]
+   ]
+  },
+  "source": "wiki page 'Combat Tables (PHB)', Table 45: weapon names cut at the first space ('Comp.' x3, 'Hand' x2, 'Staff' x2, 'Sling' x2, 'Longbow,', 'Short', 'Heavy', 'Light'); group header 'Range (yards)' over S/M/L also dropped"
+ },
+ {
+  "file": "data/rules.json",
+  "ruleId": "dmg_ch10_placement_of_treasure",
+  "tableIndex": 0,
+  "tableTitle": "Table 84: Treasure Types",
+  "pattern": "cell_text_truncated",
+  "confidence": "confident",
+  "note": "",
+  "before": {
+   "headers": [
+    "Treasure Type",
+    "Copper",
+    "Silver",
+    "Gold",
+    "Platinum or Electrum*",
+    "Gems",
+    "Art Objects",
+    "Magical Item"
+   ],
+   "rows": [
+    [
+     "A",
+     "1,000- 3,000",
+     "200- 2,000",
+     "1,000- 6,000",
+     "300- 1,800",
+     "10-40",
+     "2-12",
+     "Any 3"
+    ],
+    [
+     "",
+     "25%",
+     "30%",
+     "40%",
+     "35%",
+     "60%",
+     "50%",
+     "30%"
+    ],
+    [
+     "B",
+     "1,000- 6,000",
+     "1,000- 3,000",
+     "200- 2,000",
+     "100- 1,000",
+     "1-8",
+     "1-4",
+     "Armor Weapon"
+    ],
+    [
+     "",
+     "50%",
+     "25%",
+     "25%",
+     "25%",
+     "30%",
+     "20%",
+     "10%"
+    ],
+    [
+     "C",
+     "1,000- 10,000",
+     "1,000- 6,000",
+     "—",
+     "100-600",
+     "1-6",
+     "1-3",
+     "Any 2"
+    ],
+    [
+     "",
+     "20%",
+     "30%",
+     "—",
+     "10%",
+     "25%",
+     "20%",
+     "10%"
+    ],
+    [
+     "D",
+     "1,000- 6,000",
+     "1,000- 10,000",
+     "1,000- 3,000",
+     "100- 600",
+     "1-10",
+     "1-6",
+     "Any 2 + 1 potion"
+    ],
+    [
+     "",
+     "10%",
+     "15%",
+     "50%",
+     "15%",
+     "30%",
+     "25%",
+     "15%"
+    ],
+    [
+     "E",
+     "1,000-6,000",
+     "1,000- 10,000",
+     "1,000- 4,000",
+     "300- 1,800",
+     "1-12",
+     "1-6",
+     "Any 3"
+    ],
+    [
+     "",
+     "5%",
+     "25%",
+     "25%",
+     "25%",
+     "15%",
+     "10%",
+     "25%"
+    ],
+    [
+     "F",
+     "—",
+     "3,000- 18,000",
+     "1,000- 6,000",
+     "1,000- 4,000",
+     "2-20",
+     "1-8",
+     "Any 5 except weapons"
+    ],
+    [
+     "",
+     "—",
+     "10%",
+     "40%",
+     "15%",
+     "20%",
+     "10%",
+     "30%"
+    ],
+    [
+     "G",
+     "—",
+     "—",
+     "2,000- 20,000",
+     "1,000- 10,000",
+     "3-18",
+     "1-6",
+     "Any 5"
+    ],
+    [
+     "",
+     "—",
+     "—",
+     "50%",
+     "50%",
+     "30%",
+     "25%",
+     "35%"
+    ],
+    [
+     "H",
+     "3,000- 18,000",
+     "2,000- 20,000",
+     "2,000-20,000",
+     "1,000- 8,000",
+     "3-30",
+     "2-20",
+     "Any 6"
+    ],
+    [
+     "",
+     "25%",
+     "40%",
+     "55%",
+     "40%",
+     "50%",
+     "50%",
+     "15%"
+    ],
+    [
+     "I",
+     "—",
+     "—",
+     "—",
+     "100-600",
+     "2-12",
+     "2-8",
+     "Any 1"
+    ],
+    [
+     "",
+     "—",
+     "—",
+     "—",
+     "30%",
+     "55%",
+     "50%",
+     "15%"
+    ]
+   ]
+  },
+  "after": {
+   "headers": [
+    "Treasure Type",
+    "Copper",
+    "Silver",
+    "Gold",
+    "Platinum or Electrum*",
+    "Gems",
+    "Art Objects",
+    "Magical Item"
+   ],
+   "rows": [
+    [
+     "A",
+     "1,000- 3,000",
+     "200- 2,000",
+     "1,000- 6,000",
+     "300- 1,800",
+     "10-40",
+     "2-12",
+     "Any 3"
+    ],
+    [
+     "",
+     "25%",
+     "30%",
+     "40%",
+     "35%",
+     "60%",
+     "50%",
+     "30%"
+    ],
+    [
+     "B",
+     "1,000- 6,000",
+     "1,000- 3,000",
+     "200- 2,000",
+     "100- 1,000",
+     "1-8",
+     "1-4",
+     "Armor Weapon"
+    ],
+    [
+     "",
+     "50%",
+     "25%",
+     "25%",
+     "25%",
+     "30%",
+     "20%",
+     "10%"
+    ],
+    [
+     "C",
+     "1,000- 10,000",
+     "1,000- 6,000",
+     "—",
+     "100-600",
+     "1-6",
+     "1-3",
+     "Any 2"
+    ],
+    [
+     "",
+     "20%",
+     "30%",
+     "—",
+     "10%",
+     "25%",
+     "20%",
+     "10%"
+    ],
+    [
+     "D",
+     "1,000- 6,000",
+     "1,000- 10,000",
+     "1,000- 3,000",
+     "100- 600",
+     "1-10",
+     "1-6",
+     "Any 2 + 1 potion"
+    ],
+    [
+     "",
+     "10%",
+     "15%",
+     "50%",
+     "15%",
+     "30%",
+     "25%",
+     "15%"
+    ],
+    [
+     "E",
+     "1,000-6,000",
+     "1,000- 10,000",
+     "1,000- 4,000",
+     "300- 1,800",
+     "1-12",
+     "1-6",
+     "Any 3 + 1 scroll"
+    ],
+    [
+     "",
+     "5%",
+     "25%",
+     "25%",
+     "25%",
+     "15%",
+     "10%",
+     "25%"
+    ],
+    [
+     "F",
+     "—",
+     "3,000- 18,000",
+     "1,000- 6,000",
+     "1,000- 4,000",
+     "2-20",
+     "1-8",
+     "Any 5 except weapons"
+    ],
+    [
+     "",
+     "—",
+     "10%",
+     "40%",
+     "15%",
+     "20%",
+     "10%",
+     "30%"
+    ],
+    [
+     "G",
+     "—",
+     "—",
+     "2,000- 20,000",
+     "1,000- 10,000",
+     "3-18",
+     "1-6",
+     "Any 5"
+    ],
+    [
+     "",
+     "—",
+     "—",
+     "50%",
+     "50%",
+     "30%",
+     "25%",
+     "35%"
+    ],
+    [
+     "H",
+     "3,000- 18,000",
+     "2,000- 20,000",
+     "2,000-20,000",
+     "1,000- 8,000",
+     "3-30",
+     "2-20",
+     "Any 6"
+    ],
+    [
+     "",
+     "25%",
+     "40%",
+     "55%",
+     "40%",
+     "50%",
+     "50%",
+     "15%"
+    ],
+    [
+     "I",
+     "—",
+     "—",
+     "—",
+     "100-600",
+     "2-12",
+     "2-8",
+     "Any 1"
+    ],
+    [
+     "",
+     "—",
+     "—",
+     "—",
+     "30%",
+     "55%",
+     "50%",
+     "15%"
+    ]
+   ]
+  },
+  "source": "wiki page 'Placement of Treasure (DMG)', Table 84, type E magical items = 'Any 3 + 1 scroll' (types D and F keep their extras; E lost '+ 1 scroll')"
+ },
+ {
+  "file": "data/rules.json",
+  "ruleId": "dmg_ch10_treasure_tables",
+  "tableIndex": 0,
+  "tableTitle": "Table 84: Treasure Types",
+  "pattern": "cell_text_truncated",
+  "confidence": "confident",
+  "note": "",
+  "before": {
+   "headers": [
+    "Treasure Type",
+    "Copper",
+    "Silver",
+    "Gold",
+    "Platinum or Electrum*",
+    "Gems",
+    "Art Objects",
+    "Magical Item"
+   ],
+   "rows": [
+    [
+     "A",
+     "1,000- 3,000",
+     "200- 2,000",
+     "1,000- 6,000",
+     "300- 1,800",
+     "10-40",
+     "2-12",
+     "Any 3"
+    ],
+    [
+     "",
+     "25%",
+     "30%",
+     "40%",
+     "35%",
+     "60%",
+     "50%",
+     "30%"
+    ],
+    [
+     "B",
+     "1,000- 6,000",
+     "1,000- 3,000",
+     "200- 2,000",
+     "100- 1,000",
+     "1-8",
+     "1-4",
+     "Armor Weapon"
+    ],
+    [
+     "",
+     "50%",
+     "25%",
+     "25%",
+     "25%",
+     "30%",
+     "20%",
+     "10%"
+    ],
+    [
+     "C",
+     "1,000- 10,000",
+     "1,000- 6,000",
+     "—",
+     "100-600",
+     "1-6",
+     "1-3",
+     "Any 2"
+    ],
+    [
+     "",
+     "20%",
+     "30%",
+     "—",
+     "10%",
+     "25%",
+     "20%",
+     "10%"
+    ],
+    [
+     "D",
+     "1,000- 6,000",
+     "1,000- 10,000",
+     "1,000- 3,000",
+     "100- 600",
+     "1-10",
+     "1-6",
+     "Any 2 + 1 potion"
+    ],
+    [
+     "",
+     "10%",
+     "15%",
+     "50%",
+     "15%",
+     "30%",
+     "25%",
+     "15%"
+    ],
+    [
+     "E",
+     "1,000-6,000",
+     "1,000- 10,000",
+     "1,000- 4,000",
+     "300- 1,800",
+     "1-12",
+     "1-6",
+     "Any 3"
+    ],
+    [
+     "",
+     "5%",
+     "25%",
+     "25%",
+     "25%",
+     "15%",
+     "10%",
+     "25%"
+    ],
+    [
+     "F",
+     "—",
+     "3,000- 18,000",
+     "1,000- 6,000",
+     "1,000- 4,000",
+     "2-20",
+     "1-8",
+     "Any 5 except weapons"
+    ],
+    [
+     "",
+     "—",
+     "10%",
+     "40%",
+     "15%",
+     "20%",
+     "10%",
+     "30%"
+    ],
+    [
+     "G",
+     "—",
+     "—",
+     "2,000- 20,000",
+     "1,000- 10,000",
+     "3-18",
+     "1-6",
+     "Any 5"
+    ],
+    [
+     "",
+     "—",
+     "—",
+     "50%",
+     "50%",
+     "30%",
+     "25%",
+     "35%"
+    ],
+    [
+     "H",
+     "3,000- 18,000",
+     "2,000- 20,000",
+     "2,000-20,000",
+     "1,000- 8,000",
+     "3-30",
+     "2-20",
+     "Any 6"
+    ],
+    [
+     "",
+     "25%",
+     "40%",
+     "55%",
+     "40%",
+     "50%",
+     "50%",
+     "15%"
+    ],
+    [
+     "I",
+     "—",
+     "—",
+     "—",
+     "100-600",
+     "2-12",
+     "2-8",
+     "Any 1"
+    ],
+    [
+     "",
+     "—",
+     "—",
+     "—",
+     "30%",
+     "55%",
+     "50%",
+     "15%"
+    ]
+   ]
+  },
+  "after": {
+   "headers": [
+    "Treasure Type",
+    "Copper",
+    "Silver",
+    "Gold",
+    "Platinum or Electrum*",
+    "Gems",
+    "Art Objects",
+    "Magical Item"
+   ],
+   "rows": [
+    [
+     "A",
+     "1,000- 3,000",
+     "200- 2,000",
+     "1,000- 6,000",
+     "300- 1,800",
+     "10-40",
+     "2-12",
+     "Any 3"
+    ],
+    [
+     "",
+     "25%",
+     "30%",
+     "40%",
+     "35%",
+     "60%",
+     "50%",
+     "30%"
+    ],
+    [
+     "B",
+     "1,000- 6,000",
+     "1,000- 3,000",
+     "200- 2,000",
+     "100- 1,000",
+     "1-8",
+     "1-4",
+     "Armor Weapon"
+    ],
+    [
+     "",
+     "50%",
+     "25%",
+     "25%",
+     "25%",
+     "30%",
+     "20%",
+     "10%"
+    ],
+    [
+     "C",
+     "1,000- 10,000",
+     "1,000- 6,000",
+     "—",
+     "100-600",
+     "1-6",
+     "1-3",
+     "Any 2"
+    ],
+    [
+     "",
+     "20%",
+     "30%",
+     "—",
+     "10%",
+     "25%",
+     "20%",
+     "10%"
+    ],
+    [
+     "D",
+     "1,000- 6,000",
+     "1,000- 10,000",
+     "1,000- 3,000",
+     "100- 600",
+     "1-10",
+     "1-6",
+     "Any 2 + 1 potion"
+    ],
+    [
+     "",
+     "10%",
+     "15%",
+     "50%",
+     "15%",
+     "30%",
+     "25%",
+     "15%"
+    ],
+    [
+     "E",
+     "1,000-6,000",
+     "1,000- 10,000",
+     "1,000- 4,000",
+     "300- 1,800",
+     "1-12",
+     "1-6",
+     "Any 3 + 1 scroll"
+    ],
+    [
+     "",
+     "5%",
+     "25%",
+     "25%",
+     "25%",
+     "15%",
+     "10%",
+     "25%"
+    ],
+    [
+     "F",
+     "—",
+     "3,000- 18,000",
+     "1,000- 6,000",
+     "1,000- 4,000",
+     "2-20",
+     "1-8",
+     "Any 5 except weapons"
+    ],
+    [
+     "",
+     "—",
+     "10%",
+     "40%",
+     "15%",
+     "20%",
+     "10%",
+     "30%"
+    ],
+    [
+     "G",
+     "—",
+     "—",
+     "2,000- 20,000",
+     "1,000- 10,000",
+     "3-18",
+     "1-6",
+     "Any 5"
+    ],
+    [
+     "",
+     "—",
+     "—",
+     "50%",
+     "50%",
+     "30%",
+     "25%",
+     "35%"
+    ],
+    [
+     "H",
+     "3,000- 18,000",
+     "2,000- 20,000",
+     "2,000-20,000",
+     "1,000- 8,000",
+     "3-30",
+     "2-20",
+     "Any 6"
+    ],
+    [
+     "",
+     "25%",
+     "40%",
+     "55%",
+     "40%",
+     "50%",
+     "50%",
+     "15%"
+    ],
+    [
+     "I",
+     "—",
+     "—",
+     "—",
+     "100-600",
+     "2-12",
+     "2-8",
+     "Any 1"
+    ],
+    [
+     "",
+     "—",
+     "—",
+     "—",
+     "30%",
+     "55%",
+     "50%",
+     "15%"
+    ]
+   ]
+  },
+  "source": "wiki page 'Placement of Treasure (DMG)', Table 84, type E magical items = 'Any 3 + 1 scroll' (types D and F keep their extras; E lost '+ 1 scroll')"
+ },
+ {
+  "file": "data/rules.json",
+  "ruleId": "phb_ch10_treasure_types",
+  "tableIndex": 0,
+  "tableTitle": "DMG Table 84 : Treasure Types - Lair Treasures",
+  "pattern": "rowspan_flattened_wrongly",
+  "confidence": "confident",
+  "note": "",
+  "before": {
+   "headers": [
+    "Treasure Type",
+    "Copper",
+    "Silver",
+    "Gold",
+    "Platinum or Electrum*",
+    "Gems",
+    "Art Objects",
+    "Magical Item"
+   ],
+   "rows": [
+    [
+     "A",
+     "1,000-",
+     "200-",
+     "1,000-",
+     "300-",
+     "10-40",
+     "2-12",
+     "Any 3"
+    ],
+    [
+     "3,000",
+     "2,000",
+     "6,000",
+     "1,800",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "",
+     "25%",
+     "30%",
+     "40%",
+     "35%",
+     "60%",
+     "50%",
+     "30%"
+    ],
+    [
+     "B",
+     "1,000-",
+     "1,000-",
+     "200-",
+     "100-",
+     "1-8",
+     "1-4",
+     "Armor Weapon"
+    ],
+    [
+     "6,000",
+     "3,000",
+     "2,000",
+     "1,000",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "",
+     "50%",
+     "25%",
+     "25%",
+     "25%",
+     "30%",
+     "20%",
+     "10%"
+    ],
+    [
+     "C",
+     "1,000-",
+     "1,000-",
+     "—",
+     "100-600",
+     "1-6",
+     "1-3",
+     "Any 2"
+    ],
+    [
+     "10,000",
+     "6,000",
+     "",
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "",
+     "20%",
+     "30%",
+     "—",
+     "10%",
+     "25%",
+     "20%",
+     "10%"
+    ],
+    [
+     "D",
+     "1,000-",
+     "1,000-",
+     "1,000-",
+     "100-",
+     "1-10",
+     "1-6",
+     "Any 2"
+    ],
+    [
+     "6,000",
+     "10,000",
+     "3,000",
+     "600",
+     "+ 1 potion",
+     "",
+     "",
+     ""
+    ],
+    [
+     "",
+     "10%",
+     "15%",
+     "50%",
+     "15%",
+     "30%",
+     "25%",
+     "15%"
+    ],
+    [
+     "E",
+     "1,000-",
+     "1,000-",
+     "1,000-",
+     "300-",
+     "1-12",
+     "1-6",
+     "Any 3"
+    ],
+    [
+     "6,000",
+     "10,000",
+     "4,000",
+     "1,800",
+     "+ 1 scroll",
+     "",
+     "",
+     ""
+    ],
+    [
+     "",
+     "5%",
+     "25%",
+     "25%",
+     "25%",
+     "15%",
+     "10%",
+     "25%"
+    ],
+    [
+     "F",
+     "—",
+     "3,000-",
+     "1,000-",
+     "1,000-",
+     "2-20",
+     "1-8",
+     "Any 5"
+    ],
+    [
+     "18,000",
+     "6,000",
+     "4,000",
+     "except weapons",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "",
+     "—",
+     "10%",
+     "40%",
+     "15%",
+     "20%",
+     "10%",
+     "30%"
+    ],
+    [
+     "G",
+     "—",
+     "—",
+     "2,000-",
+     "1,000-",
+     "3-18",
+     "1-6",
+     "Any 5"
+    ],
+    [
+     "20,000",
+     "10,000",
+     "",
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "",
+     "—",
+     "—",
+     "50%",
+     "50%",
+     "30%",
+     "25%",
+     "35%"
+    ],
+    [
+     "H",
+     "3,000-",
+     "2,000-",
+     "2,000-20,000",
+     "1,000-",
+     "3-30",
+     "02-20",
+     "Any 6"
+    ],
+    [
+     "18,000",
+     "20,000",
+     "8,000",
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "",
+     "25%",
+     "40%",
+     "55%",
+     "40%",
+     "50%",
+     "50%",
+     "15%"
+    ],
+    [
+     "I",
+     "—",
+     "—",
+     "—",
+     "100-600",
+     "2-12",
+     "2-8",
+     "Any 1"
+    ],
+    [
+     "",
+     "—",
+     "—",
+     "—",
+     "30%",
+     "55%",
+     "50%",
+     "15%"
+    ]
+   ]
+  },
+  "after": {
+   "headers": [
+    "Treasure Type",
+    "Copper",
+    "Silver",
+    "Gold",
+    "Platinum or Electrum*",
+    "Gems",
+    "Art Objects",
+    "Magical Item"
+   ],
+   "rows": [
+    [
+     "A",
+     "1,000- 3,000",
+     "200- 2,000",
+     "1,000- 6,000",
+     "300- 1,800",
+     "10-40",
+     "2-12",
+     "Any 3"
+    ],
+    [
+     "",
+     "25%",
+     "30%",
+     "40%",
+     "35%",
+     "60%",
+     "50%",
+     "30%"
+    ],
+    [
+     "B",
+     "1,000- 6,000",
+     "1,000- 3,000",
+     "200- 2,000",
+     "100- 1,000",
+     "1-8",
+     "1-4",
+     "Armor Weapon"
+    ],
+    [
+     "",
+     "50%",
+     "25%",
+     "25%",
+     "25%",
+     "30%",
+     "20%",
+     "10%"
+    ],
+    [
+     "C",
+     "1,000- 10,000",
+     "1,000- 6,000",
+     "—",
+     "100-600",
+     "1-6",
+     "1-3",
+     "Any 2"
+    ],
+    [
+     "",
+     "20%",
+     "30%",
+     "—",
+     "10%",
+     "25%",
+     "20%",
+     "10%"
+    ],
+    [
+     "D",
+     "1,000- 6,000",
+     "1,000- 10,000",
+     "1,000- 3,000",
+     "100- 600",
+     "1-10",
+     "1-6",
+     "Any 2 + 1 potion"
+    ],
+    [
+     "",
+     "10%",
+     "15%",
+     "50%",
+     "15%",
+     "30%",
+     "25%",
+     "15%"
+    ],
+    [
+     "E",
+     "1,000-6,000",
+     "1,000- 10,000",
+     "1,000- 4,000",
+     "300- 1,800",
+     "1-12",
+     "1-6",
+     "Any 3 + 1 scroll"
+    ],
+    [
+     "",
+     "5%",
+     "25%",
+     "25%",
+     "25%",
+     "15%",
+     "10%",
+     "25%"
+    ],
+    [
+     "F",
+     "—",
+     "3,000- 18,000",
+     "1,000- 6,000",
+     "1,000- 4,000",
+     "2-20",
+     "1-8",
+     "Any 5 except weapons"
+    ],
+    [
+     "",
+     "—",
+     "10%",
+     "40%",
+     "15%",
+     "20%",
+     "10%",
+     "30%"
+    ],
+    [
+     "G",
+     "—",
+     "—",
+     "2,000- 20,000",
+     "1,000- 10,000",
+     "3-18",
+     "1-6",
+     "Any 5"
+    ],
+    [
+     "",
+     "—",
+     "—",
+     "50%",
+     "50%",
+     "30%",
+     "25%",
+     "35%"
+    ],
+    [
+     "H",
+     "3,000- 18,000",
+     "2,000- 20,000",
+     "2,000-20,000",
+     "1,000- 8,000",
+     "3-30",
+     "2-20",
+     "Any 6"
+    ],
+    [
+     "",
+     "25%",
+     "40%",
+     "55%",
+     "40%",
+     "50%",
+     "50%",
+     "15%"
+    ],
+    [
+     "I",
+     "—",
+     "—",
+     "—",
+     "100-600",
+     "2-12",
+     "2-8",
+     "Any 1"
+    ],
+    [
+     "",
+     "—",
+     "—",
+     "—",
+     "30%",
+     "55%",
+     "50%",
+     "15%"
+    ]
+   ]
+  },
+  "source": "wiki page 'Treasure Types (PHB)' (DMG Table 84): the two-line ranges (rowspan) were not merged, so 3,000/2,000/6,000/1,800 sit one column to the left (under 'Treasure Type'); Excel-style artifacts '02-20' (2-20); the 'Any 3' + '+ 1 scroll' split. Rows replaced by the already-correct copy in dmg_ch10_treasure_tables (same Table 84)"
+ },
+ {
+  "file": "data/rules.json",
+  "ruleId": "phb_ch10_treasure_types",
+  "tableIndex": 1,
+  "tableTitle": "DMG Table 84 : Treasure Types - Individual And Small Lair Treasures",
+  "pattern": "rowspan_flattened_wrongly",
+  "confidence": "confident",
+  "note": "",
+  "before": {
+   "headers": [
+    "Treasure Type",
+    "Copper",
+    "Silver",
+    "Gold",
+    "Platinum or Electrum*",
+    "Gems",
+    "Art Objects",
+    "Magical Item"
+   ],
+   "rows": [
+    [
+     "J",
+     "3-24",
+     "—",
+     "—",
+     "—",
+     "—",
+     "—",
+     "—"
+    ],
+    [
+     "K",
+     "—",
+     "3-18",
+     "—",
+     "—",
+     "—",
+     "—",
+     "—"
+    ],
+    [
+     "L",
+     "—",
+     "—",
+     "—",
+     "2-12",
+     "—",
+     "—",
+     "—"
+    ],
+    [
+     "M",
+     "—",
+     "—",
+     "2-8",
+     "—",
+     "—",
+     "—",
+     "—"
+    ],
+    [
+     "N",
+     "—",
+     "—",
+     "—",
+     "1-6",
+     "—",
+     "—",
+     "—"
+    ],
+    [
+     "O",
+     "10-40",
+     "10-30",
+     "—",
+     "—",
+     "—",
+     "—",
+     "—"
+    ],
+    [
+     "P",
+     "—",
+     "10-60",
+     "—",
+     "1-20",
+     "—",
+     "—",
+     "—"
+    ],
+    [
+     "Q",
+     "—",
+     "—",
+     "—",
+     "—",
+     "1-4",
+     "—",
+     "—"
+    ],
+    [
+     "R",
+     "—",
+     "—",
+     "2-20",
+     "10-60",
+     "2-8",
+     "1-3",
+     "—"
+    ],
+    [
+     "S",
+     "—",
+     "—",
+     "—",
+     "—",
+     "—",
+     "—",
+     "1-8"
+    ],
+    [
+     "potions",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "T",
+     "—",
+     "—",
+     "—",
+     "—",
+     "—",
+     "—",
+     "1-4 scrolls"
+    ],
+    [
+     "U",
+     "—",
+     "—",
+     "—",
+     "—",
+     "2-16",
+     "1-6",
+     "Any 1"
+    ],
+    [
+     "",
+     "—",
+     "—",
+     "—",
+     "—",
+     "90%",
+     "80%",
+     "70%"
+    ],
+    [
+     "V",
+     "—",
+     "—",
+     "—",
+     "—",
+     "—",
+     "—",
+     "Any 2"
+    ],
+    [
+     "W",
+     "—",
+     "—",
+     "5-30",
+     "1-8",
+     "Feb-16",
+     "1-8",
+     "Any 2"
+    ],
+    [
+     "",
+     "—",
+     "—",
+     "—",
+     "—",
+     "60%",
+     "50%",
+     "60%"
+    ],
+    [
+     "X",
+     "—",
+     "—",
+     "—",
+     "—",
+     "—",
+     "—",
+     "Any 2 potions"
+    ],
+    [
+     "Y",
+     "—",
+     "—",
+     "200-1,200",
+     "—",
+     "—",
+     "—",
+     "—"
+    ],
+    [
+     "Z",
+     "100-300",
+     "100-400",
+     "100-600",
+     "100-400",
+     "1-06",
+     "2-12",
+     "Any 3"
+    ],
+    [
+     "",
+     "—",
+     "—",
+     "—",
+     "—",
+     "55%",
+     "50%",
+     "50%"
+    ]
+   ]
+  },
+  "after": {
+   "headers": [
+    "Treasure Type",
+    "Copper",
+    "Silver",
+    "Gold",
+    "Platinum or Electrum*",
+    "Gems",
+    "Art Objects",
+    "Magical Item"
+   ],
+   "rows": [
+    [
+     "J",
+     "3-24",
+     "—",
+     "—",
+     "—",
+     "—",
+     "—",
+     "—"
+    ],
+    [
+     "K",
+     "—",
+     "3-18",
+     "—",
+     "—",
+     "—",
+     "—",
+     "—"
+    ],
+    [
+     "L",
+     "—",
+     "—",
+     "—",
+     "2-12",
+     "—",
+     "—",
+     "—"
+    ],
+    [
+     "M",
+     "—",
+     "—",
+     "2-8",
+     "—",
+     "—",
+     "—",
+     "—"
+    ],
+    [
+     "N",
+     "—",
+     "—",
+     "—",
+     "1-6",
+     "—",
+     "—",
+     "—"
+    ],
+    [
+     "O",
+     "10-40",
+     "10-30",
+     "—",
+     "—",
+     "—",
+     "—",
+     "—"
+    ],
+    [
+     "P",
+     "—",
+     "10-60",
+     "—",
+     "1-20",
+     "—",
+     "—",
+     "—"
+    ],
+    [
+     "Q",
+     "—",
+     "—",
+     "—",
+     "—",
+     "1-4",
+     "—",
+     "—"
+    ],
+    [
+     "R",
+     "—",
+     "—",
+     "2-20",
+     "10-60",
+     "2-8",
+     "1-3",
+     "—"
+    ],
+    [
+     "S",
+     "—",
+     "—",
+     "—",
+     "—",
+     "—",
+     "—",
+     "1-8 potions"
+    ],
+    [
+     "T",
+     "—",
+     "—",
+     "—",
+     "—",
+     "—",
+     "—",
+     "1-4 scrolls"
+    ],
+    [
+     "U",
+     "—",
+     "—",
+     "—",
+     "—",
+     "2-16",
+     "1-6",
+     "Any 1"
+    ],
+    [
+     "",
+     "—",
+     "—",
+     "—",
+     "—",
+     "90%",
+     "80%",
+     "70%"
+    ],
+    [
+     "V",
+     "—",
+     "—",
+     "—",
+     "—",
+     "—",
+     "—",
+     "Any 2"
+    ],
+    [
+     "W",
+     "—",
+     "—",
+     "5-30",
+     "1-8",
+     "2-16",
+     "1-8",
+     "Any 2"
+    ],
+    [
+     "",
+     "—",
+     "—",
+     "—",
+     "—",
+     "60%",
+     "50%",
+     "60%"
+    ],
+    [
+     "X",
+     "—",
+     "—",
+     "—",
+     "—",
+     "—",
+     "—",
+     "Any 2 potions"
+    ],
+    [
+     "Y",
+     "—",
+     "—",
+     "200-1,200",
+     "—",
+     "—",
+     "—",
+     "—"
+    ],
+    [
+     "Z",
+     "100-300",
+     "100-400",
+     "100-600",
+     "100-400",
+     "1-6",
+     "2-12",
+     "Any 3"
+    ],
+    [
+     "",
+     "—",
+     "—",
+     "—",
+     "—",
+     "55%",
+     "50%",
+     "50%"
+    ]
+   ]
+  },
+  "source": "same page: 'Feb-16' (2-16), '1-06' (1-6) are Excel date artifacts and 'S' + 'potions' is one rowspan row. Rows replaced by the already-correct copy in dmg_ch10_treasure_tables (same Table 84)"
+ },
+ {
+  "file": "data/rules.json",
+  "ruleId": "phb_ch14_climbing",
+  "tableIndex": 2,
+  "tableTitle": "Table 67: Rates of Climbing",
+  "pattern": "excel_date_artifact",
+  "confidence": "confident",
+  "note": "",
+  "before": {
+   "headers": [
+    "Type of Surface",
+    "Dry",
+    "Slightly Slippery",
+    "Slippery"
+   ],
+   "rows": [
+    [
+     "Very smooth *",
+     "¼",
+     "—**",
+     "—**"
+    ],
+    [
+     "Smooth, cracked *",
+     "1/2",
+     "1-Mar",
+     "¼"
+    ],
+    [
+     "Rough *",
+     "1",
+     "1-Mar",
+     "¼"
+    ],
+    [
+     "Rough w/ledges",
+     "1",
+     "1/2",
+     "1-Mar"
+    ],
+    [
+     "Ice wall",
+     "—",
+     "—",
+     "¼"
+    ],
+    [
+     "Tree",
+     "4",
+     "3",
+     "2"
+    ],
+    [
+     "Sloping wall",
+     "3",
+     "2",
+     "1"
+    ],
+    [
+     "Rope and wall",
+     "2",
+     "1",
+     "1/2"
+    ]
+   ]
+  },
+  "after": {
+   "headers": [
+    "Type of Surface",
+    "Dry",
+    "Slightly Slippery",
+    "Slippery"
+   ],
+   "rows": [
+    [
+     "Very smooth *",
+     "¼",
+     "—**",
+     "—**"
+    ],
+    [
+     "Smooth, cracked *",
+     "1/2",
+     "1/3",
+     "¼"
+    ],
+    [
+     "Rough *",
+     "1",
+     "1/3",
+     "¼"
+    ],
+    [
+     "Rough w/ledges",
+     "1",
+     "1/2",
+     "1/3"
+    ],
+    [
+     "Ice wall",
+     "—",
+     "—",
+     "¼"
+    ],
+    [
+     "Tree",
+     "4",
+     "3",
+     "2"
+    ],
+    [
+     "Sloping wall",
+     "3",
+     "2",
+     "1"
+    ],
+    [
+     "Rope and wall",
+     "2",
+     "1",
+     "1/2"
+    ]
+   ]
+  },
+  "source": "wiki carries the same '1-Mar'; PHB Table 67 rate is 1/3 (cells sit between 1/2 and 1/4)"
+ },
+ {
+  "file": "data/rules.json",
+  "ruleId": "phb_ch14_climbing_tables",
+  "tableIndex": 2,
+  "tableTitle": "Table 67: Rates of Climbing",
+  "pattern": "excel_date_artifact",
+  "confidence": "confident",
+  "note": "",
+  "before": {
+   "headers": [
+    "Type of Surface",
+    "Dry",
+    "Slightly Slippery",
+    "Slippery"
+   ],
+   "rows": [
+    [
+     "Very smooth *",
+     "¼",
+     "—**",
+     "—**"
+    ],
+    [
+     "Smooth, cracked *",
+     "1/2",
+     "1-Mar",
+     "¼"
+    ],
+    [
+     "Rough *",
+     "1",
+     "1-Mar",
+     "¼"
+    ],
+    [
+     "Rough w/ledges",
+     "1",
+     "1/2",
+     "1-Mar"
+    ],
+    [
+     "Ice wall",
+     "—",
+     "—",
+     "¼"
+    ],
+    [
+     "Tree",
+     "4",
+     "3",
+     "2"
+    ],
+    [
+     "Sloping wall",
+     "3",
+     "2",
+     "1"
+    ],
+    [
+     "Rope and wall",
+     "2",
+     "1",
+     "1/2"
+    ]
+   ]
+  },
+  "after": {
+   "headers": [
+    "Type of Surface",
+    "Dry",
+    "Slightly Slippery",
+    "Slippery"
+   ],
+   "rows": [
+    [
+     "Very smooth *",
+     "¼",
+     "—**",
+     "—**"
+    ],
+    [
+     "Smooth, cracked *",
+     "1/2",
+     "1/3",
+     "¼"
+    ],
+    [
+     "Rough *",
+     "1",
+     "1/3",
+     "¼"
+    ],
+    [
+     "Rough w/ledges",
+     "1",
+     "1/2",
+     "1/3"
+    ],
+    [
+     "Ice wall",
+     "—",
+     "—",
+     "¼"
+    ],
+    [
+     "Tree",
+     "4",
+     "3",
+     "2"
+    ],
+    [
+     "Sloping wall",
+     "3",
+     "2",
+     "1"
+    ],
+    [
+     "Rope and wall",
+     "2",
+     "1",
+     "1/2"
+    ]
+   ]
+  },
+  "source": "wiki carries the same '1-Mar'; PHB Table 67 rate is 1/3 (cells sit between 1/2 and 1/4)"
+ },
+ {
+  "file": "data/rules.json",
+  "ruleId": "phb_ch06_money_and_equipment",
+  "tableIndex": 0,
+  "tableTitle": "Table 42: Standard Exchange Rates",
+  "pattern": "stray_pipe",
+  "confidence": "confident",
+  "note": "",
+  "before": {
+   "headers": [
+    "Coin",
+    "CP",
+    "SP",
+    "EP",
+    "GP",
+    "PP"
+   ],
+   "rows": [
+    [
+     "Copper Piece (CP) =",
+     "1",
+     "1/10",
+     "1/50",
+     "1/100",
+     "1/500"
+    ],
+    [
+     "Silver Piece (SP) =",
+     "10",
+     "1",
+     "1/5",
+     "1/10",
+     "1/50"
+    ],
+    [
+     "Electrum Piece (EP) =",
+     "50",
+     "5",
+     "1",
+     "1/2",
+     "1/10"
+    ],
+    [
+     "Gold Piece (GP) =",
+     "100",
+     "10",
+     "2",
+     "1",
+     "1/5"
+    ],
+    [
+     "Platinum Piece (PP) =",
+     "500",
+     "5|0",
+     "10",
+     "5",
+     "1"
+    ]
+   ]
+  },
+  "after": {
+   "headers": [
+    "Coin",
+    "CP",
+    "SP",
+    "EP",
+    "GP",
+    "PP"
+   ],
+   "rows": [
+    [
+     "Copper Piece (CP) =",
+     "1",
+     "1/10",
+     "1/50",
+     "1/100",
+     "1/500"
+    ],
+    [
+     "Silver Piece (SP) =",
+     "10",
+     "1",
+     "1/5",
+     "1/10",
+     "1/50"
+    ],
+    [
+     "Electrum Piece (EP) =",
+     "50",
+     "5",
+     "1",
+     "1/2",
+     "1/10"
+    ],
+    [
+     "Gold Piece (GP) =",
+     "100",
+     "10",
+     "2",
+     "1",
+     "1/5"
+    ],
+    [
+     "Platinum Piece (PP) =",
+     "500",
+     "50",
+     "10",
+     "5",
+     "1"
+    ]
+   ]
+  },
+  "source": "wiki carries '5|0'; 1 PP = 50 SP (neighbours: 500 CP, 10 EP, 5 GP)"
+ },
+ {
+  "file": "data/rules.json",
+  "ruleId": "phb_ch03_rogue_tables",
+  "tableIndex": 5,
+  "tableTitle": "Table 30: Backstab Damage Multipliers",
+  "pattern": "stray_pipe",
+  "confidence": "confident",
+  "note": "",
+  "before": {
+   "headers": [
+    "Thief's Level",
+    "Damage Multiplier"
+   ],
+   "rows": [
+    [
+     "1-4",
+     "x2"
+    ],
+    [
+     "5-8",
+     "x3"
+    ],
+    [
+     "9-12",
+     "x4"
+    ],
+    [
+     "13+",
+     "x5 |"
+    ]
+   ]
+  },
+  "after": {
+   "headers": [
+    "Thief's Level",
+    "Damage Multiplier"
+   ],
+   "rows": [
+    [
+     "1-4",
+     "x2"
+    ],
+    [
+     "5-8",
+     "x3"
+    ],
+    [
+     "9-12",
+     "x4"
+    ],
+    [
+     "13+",
+     "x5"
+    ]
+   ]
+  },
+  "source": "wiki carries 'x5 |' (PHB Table 30: thief level 13+ = x5)"
+ },
+ {
+  "file": "data/rules.json",
+  "ruleId": "cws_ch00_experience_and_advancement",
+  "tableIndex": 2,
+  "tableTitle": "Table 10: Dragon Experience Levels (Bronze, Amethyst, Blue)",
+  "pattern": "misplaced_thousands_separator",
+  "confidence": "confident",
+  "note": "",
+  "before": {
+   "headers": [
+    "Level",
+    "XP",
+    "Hit Dice"
+   ],
+   "rows": [
+    [
+     "H",
+     "0",
+     "8"
+    ],
+    [
+     "1",
+     "125,000",
+     "8"
+    ],
+    [
+     "2",
+     "500,000",
+     "10"
+    ],
+    [
+     "3",
+     "1,000,000",
+     "12"
+    ],
+    [
+     "4",
+     "1,500,000",
+     "14"
+    ],
+    [
+     "5",
+     "1,750,000",
+     "15"
+    ],
+    [
+     "6",
+     "2,000,000",
+     "16"
+    ],
+    [
+     "7",
+     "2,250,000",
+     "17"
+    ],
+    [
+     "8",
+     "2,500,000",
+     "18"
+    ],
+    [
+     "9",
+     "2,750,000",
+     "19"
+    ],
+    [
+     "10",
+     "3,000,000",
+     "20"
+    ],
+    [
+     "11",
+     "3,250,000",
+     "21"
+    ],
+    [
+     "12",
+     "3.500,000",
+     "22"
+    ]
+   ]
+  },
+  "after": {
+   "headers": [
+    "Level",
+    "XP",
+    "Hit Dice"
+   ],
+   "rows": [
+    [
+     "H",
+     "0",
+     "8"
+    ],
+    [
+     "1",
+     "125,000",
+     "8"
+    ],
+    [
+     "2",
+     "500,000",
+     "10"
+    ],
+    [
+     "3",
+     "1,000,000",
+     "12"
+    ],
+    [
+     "4",
+     "1,500,000",
+     "14"
+    ],
+    [
+     "5",
+     "1,750,000",
+     "15"
+    ],
+    [
+     "6",
+     "2,000,000",
+     "16"
+    ],
+    [
+     "7",
+     "2,250,000",
+     "17"
+    ],
+    [
+     "8",
+     "2,500,000",
+     "18"
+    ],
+    [
+     "9",
+     "2,750,000",
+     "19"
+    ],
+    [
+     "10",
+     "3,000,000",
+     "20"
+    ],
+    [
+     "11",
+     "3,250,000",
+     "21"
+    ],
+    [
+     "12",
+     "3,500,000",
+     "22"
+    ]
+   ]
+  },
+  "source": "wiki page 'Experience and Advancement (CWS)' has the same typo; neighbouring cells use commas"
+ },
+ {
+  "file": "data/rules.json",
+  "ruleId": "cws_ch00_experience_and_advancement",
+  "tableIndex": 3,
+  "tableTitle": "Table 10: Dragon Experience Levels (Copper, Sapphire, Green)",
+  "pattern": "misplaced_thousands_separator",
+  "confidence": "confident",
+  "note": "",
+  "before": {
+   "headers": [
+    "Level",
+    "XP",
+    "Hit Dice"
+   ],
+   "rows": [
+    [
+     "H",
+     "0",
+     "7"
+    ],
+    [
+     "1",
+     "64,000",
+     "7"
+    ],
+    [
+     "2",
+     "250,000",
+     "9"
+    ],
+    [
+     "3",
+     "750,000",
+     "11"
+    ],
+    [
+     "4",
+     "1.250.000",
+     "13"
+    ],
+    [
+     "5",
+     "1,500,000",
+     "14"
+    ],
+    [
+     "6",
+     "1,750,000",
+     "15"
+    ],
+    [
+     "7",
+     "2,000,000",
+     "16"
+    ],
+    [
+     "8",
+     "2,250,000",
+     "17"
+    ],
+    [
+     "9",
+     "2,500,000",
+     "18"
+    ],
+    [
+     "10",
+     "2,750,000",
+     "19"
+    ],
+    [
+     "11",
+     "3,000,000",
+     "20"
+    ],
+    [
+     "12",
+     "3,250,000",
+     "21"
+    ]
+   ]
+  },
+  "after": {
+   "headers": [
+    "Level",
+    "XP",
+    "Hit Dice"
+   ],
+   "rows": [
+    [
+     "H",
+     "0",
+     "7"
+    ],
+    [
+     "1",
+     "64,000",
+     "7"
+    ],
+    [
+     "2",
+     "250,000",
+     "9"
+    ],
+    [
+     "3",
+     "750,000",
+     "11"
+    ],
+    [
+     "4",
+     "1,250,000",
+     "13"
+    ],
+    [
+     "5",
+     "1,500,000",
+     "14"
+    ],
+    [
+     "6",
+     "1,750,000",
+     "15"
+    ],
+    [
+     "7",
+     "2,000,000",
+     "16"
+    ],
+    [
+     "8",
+     "2,250,000",
+     "17"
+    ],
+    [
+     "9",
+     "2,500,000",
+     "18"
+    ],
+    [
+     "10",
+     "2,750,000",
+     "19"
+    ],
+    [
+     "11",
+     "3,000,000",
+     "20"
+    ],
+    [
+     "12",
+     "3,250,000",
+     "21"
+    ]
+   ]
+  },
+  "source": "wiki page 'Experience and Advancement (CWS)' has the same typo; neighbouring cells use commas"
+ },
+ {
+  "file": "data/rules.json",
+  "ruleId": "cws_ch00_experience_and_advancement",
+  "tableIndex": 4,
+  "tableTitle": "Table 10: Dragon Experience Levels (Brass, Emerald, Black)",
+  "pattern": "misplaced_thousands_separator+misplaced_thousands_separator+misplaced_thousands_separator",
+  "confidence": "confident",
+  "note": "",
+  "before": {
+   "headers": [
+    "Level",
+    "XP",
+    "Hit Dice"
+   ],
+   "rows": [
+    [
+     "H",
+     "0",
+     "6"
+    ],
+    [
+     "1",
+     "32.000",
+     "6"
+    ],
+    [
+     "2",
+     "125,000",
+     "8"
+    ],
+    [
+     "3",
+     "500.000",
+     "10"
+    ],
+    [
+     "4",
+     "1,000,000",
+     "12"
+    ],
+    [
+     "5",
+     "1.250.000",
+     "13"
+    ],
+    [
+     "6",
+     "1,500,000",
+     "14"
+    ],
+    [
+     "7",
+     "1,750,000",
+     "15"
+    ],
+    [
+     "8",
+     "2,000,000",
+     "16"
+    ],
+    [
+     "9",
+     "2,250,000",
+     "17"
+    ],
+    [
+     "10",
+     "2,500,000",
+     "18"
+    ],
+    [
+     "11",
+     "2,750,000",
+     "19"
+    ],
+    [
+     "12",
+     "3,000,000",
+     "20"
+    ]
+   ]
+  },
+  "after": {
+   "headers": [
+    "Level",
+    "XP",
+    "Hit Dice"
+   ],
+   "rows": [
+    [
+     "H",
+     "0",
+     "6"
+    ],
+    [
+     "1",
+     "32,000",
+     "6"
+    ],
+    [
+     "2",
+     "125,000",
+     "8"
+    ],
+    [
+     "3",
+     "500,000",
+     "10"
+    ],
+    [
+     "4",
+     "1,000,000",
+     "12"
+    ],
+    [
+     "5",
+     "1,250,000",
+     "13"
+    ],
+    [
+     "6",
+     "1,500,000",
+     "14"
+    ],
+    [
+     "7",
+     "1,750,000",
+     "15"
+    ],
+    [
+     "8",
+     "2,000,000",
+     "16"
+    ],
+    [
+     "9",
+     "2,250,000",
+     "17"
+    ],
+    [
+     "10",
+     "2,500,000",
+     "18"
+    ],
+    [
+     "11",
+     "2,750,000",
+     "19"
+    ],
+    [
+     "12",
+     "3,000,000",
+     "20"
+    ]
+   ]
+  },
+  "source": "wiki page 'Experience and Advancement (CWS)' has the same typo; neighbouring cells use commas"
+ },
+ {
+  "file": "data/rules.json",
+  "ruleId": "cws_ch00_player_character_races",
+  "tableIndex": 3,
+  "tableTitle": "Table 4: Dragon Information by Age (General)",
+  "pattern": "misplaced_thousands_separator",
+  "confidence": "confident",
+  "note": "",
+  "before": {
+   "headers": [
+    "Age Level",
+    "Category",
+    "Age (in years)",
+    "Hit Die Modifier",
+    "Combat Modifier",
+    "Fear Radius",
+    "Fear Save Modifier"
+   ],
+   "rows": [
+    [
+     "1",
+     "Hatchling",
+     "0-5",
+     "-4",
+     "+1",
+     "Nil",
+     "Nil"
+    ],
+    [
+     "2",
+     "Very young",
+     "6-15",
+     "-4",
+     "+2",
+     "Nil",
+     "Nil"
+    ],
+    [
+     "3",
+     "Young",
+     "16-25",
+     "-2",
+     "+3",
+     "Nil",
+     "Nil"
+    ],
+    [
+     "4",
+     "Juvenile",
+     "2650",
+     "Nil",
+     "+4",
+     "Nil",
+     "Nil"
+    ],
+    [
+     "5",
+     "Young adult",
+     "51-100",
+     "+1",
+     "+5",
+     "15 yards",
+     "+2 (+6)"
+    ],
+    [
+     "6",
+     "Adult",
+     "10 1-200",
+     "+2",
+     "+6",
+     "20 yards",
+     "+3 (+7)"
+    ],
+    [
+     "7",
+     "Mature adult",
+     "201-400",
+     "+3",
+     "+7",
+     "25 yards",
+     "+1 (+5)"
+    ],
+    [
+     "8",
+     "Old",
+     "401-600",
+     "+4",
+     "+8",
+     "30 yards",
+     "0 (+4)"
+    ],
+    [
+     "9",
+     "Very old",
+     "601-800",
+     "+5",
+     "+9",
+     "35 yards",
+     "-1 (+3)"
+    ],
+    [
+     "10",
+     "Venerable",
+     "801-1,000",
+     "+6",
+     "+10",
+     "40 yards",
+     "-2 (+2)"
+    ],
+    [
+     "11",
+     "Wyrm",
+     "1.001-1,200",
+     "+7",
+     "+11",
+     "45 yards",
+     "-3 (+1)"
+    ],
+    [
+     "12",
+     "Great Wyrm",
+     "1,200+",
+     "+8",
+     "+12",
+     "50 yards",
+     "-4 (0)"
+    ]
+   ]
+  },
+  "after": {
+   "headers": [
+    "Age Level",
+    "Category",
+    "Age (in years)",
+    "Hit Die Modifier",
+    "Combat Modifier",
+    "Fear Radius",
+    "Fear Save Modifier"
+   ],
+   "rows": [
+    [
+     "1",
+     "Hatchling",
+     "0-5",
+     "-4",
+     "+1",
+     "Nil",
+     "Nil"
+    ],
+    [
+     "2",
+     "Very young",
+     "6-15",
+     "-4",
+     "+2",
+     "Nil",
+     "Nil"
+    ],
+    [
+     "3",
+     "Young",
+     "16-25",
+     "-2",
+     "+3",
+     "Nil",
+     "Nil"
+    ],
+    [
+     "4",
+     "Juvenile",
+     "2650",
+     "Nil",
+     "+4",
+     "Nil",
+     "Nil"
+    ],
+    [
+     "5",
+     "Young adult",
+     "51-100",
+     "+1",
+     "+5",
+     "15 yards",
+     "+2 (+6)"
+    ],
+    [
+     "6",
+     "Adult",
+     "10 1-200",
+     "+2",
+     "+6",
+     "20 yards",
+     "+3 (+7)"
+    ],
+    [
+     "7",
+     "Mature adult",
+     "201-400",
+     "+3",
+     "+7",
+     "25 yards",
+     "+1 (+5)"
+    ],
+    [
+     "8",
+     "Old",
+     "401-600",
+     "+4",
+     "+8",
+     "30 yards",
+     "0 (+4)"
+    ],
+    [
+     "9",
+     "Very old",
+     "601-800",
+     "+5",
+     "+9",
+     "35 yards",
+     "-1 (+3)"
+    ],
+    [
+     "10",
+     "Venerable",
+     "801-1,000",
+     "+6",
+     "+10",
+     "40 yards",
+     "-2 (+2)"
+    ],
+    [
+     "11",
+     "Wyrm",
+     "1,001-1,200",
+     "+7",
+     "+11",
+     "45 yards",
+     "-3 (+1)"
+    ],
+    [
+     "12",
+     "Great Wyrm",
+     "1,200+",
+     "+8",
+     "+12",
+     "50 yards",
+     "-4 (0)"
+    ]
+   ]
+  },
+  "source": "wiki typo; neighbours are 801-1,000 and 1,200+"
+ },
+ {
+  "file": "data/rules.json",
+  "ruleId": "aa_ch00_kit_descriptions",
+  "tableIndex": 0,
+  "tableTitle": "Table 2: Nonweapon Proficiency Group Crossovers",
+  "pattern": "shifted_cells",
+  "confidence": "confident",
+  "note": "",
+  "before": {
+   "headers": [
+    "Character Class",
+    "Proficiency Groups"
+   ],
+   "rows": [
+    [
+     "Fighter",
+     "Warrior, General"
+    ],
+    [
+     "Paladin",
+     "Warrior, Priest, General"
+    ],
+    [
+     "Ranger",
+     "Warrior, Wizard, General"
+    ],
+    [
+     "Cleric",
+     "Priest, General"
+    ],
+    [
+     "Druid",
+     "Priest, Warrior, General"
+    ],
+    [
+     "Mage",
+     "Wizard, General"
+    ],
+    [
+     "Illusionist",
+     "Wizard, General"
+    ],
+    [
+     "Thief",
+     "Bard"
+    ],
+    [
+     "Rogue, General",
+     "Rogue, Warrior, Wizard, General"
+    ]
+   ]
+  },
+  "after": {
+   "headers": [
+    "Character Class",
+    "Proficiency Groups"
+   ],
+   "rows": [
+    [
+     "Fighter",
+     "Warrior, General"
+    ],
+    [
+     "Paladin",
+     "Warrior, Priest, General"
+    ],
+    [
+     "Ranger",
+     "Warrior, Wizard, General"
+    ],
+    [
+     "Cleric",
+     "Priest, General"
+    ],
+    [
+     "Druid",
+     "Priest, Warrior, General"
+    ],
+    [
+     "Mage",
+     "Wizard, General"
+    ],
+    [
+     "Illusionist",
+     "Wizard, General"
+    ],
+    [
+     "Thief",
+     "Rogue, General"
+    ],
+    [
+     "Bard",
+     "Rogue, Warrior, Wizard, General"
+    ]
+   ]
+  },
+  "source": "the AA wiki page repeats the error; the same table in PHB Table 38 and CBOH Table 3 reads Thief = Rogue, General and Bard = Rogue, Warrior, Wizard, General"
+ },
+ {
+  "file": "data/rules.json",
+  "ruleId": "sofs_ch00_the_dukars",
+  "tableIndex": 0,
+  "tableTitle": "Table 12: Dukar Experience-Point Table",
+  "pattern": "colspan_flattened_wrongly",
+  "confidence": "confident",
+  "note": "",
+  "before": {
+   "headers": [
+    "Lvl",
+    "XP",
+    "Spells Lorekeeper Title",
+    "Spells",
+    "Peacekeeper Title",
+    "Paths"
+   ],
+   "rows": [
+    [
+     "1",
+     "0",
+     "First Disciple",
+     "+2 1st-level",
+     "Recruit",
+     "Add New Step"
+    ],
+    [
+     "2",
+     "2,500",
+     "Second Disciple",
+     "",
+     "Squire",
+     ""
+    ],
+    [
+     "3",
+     "5,000",
+     "Third Disciple",
+     "+2 2nd-level",
+     "Yeoman",
+     "New Step"
+    ],
+    [
+     "4",
+     "10,000",
+     "Fourth Disciple",
+     "",
+     "Soldier",
+     ""
+    ],
+    [
+     "5",
+     "20,000",
+     "Master Disciple",
+     "+2 3rd-level",
+     "Scout",
+     "New Step/New Path"
+    ],
+    [
+     "6",
+     "40,000",
+     "First Adept",
+     "",
+     "Master Scout",
+     ""
+    ],
+    [
+     "7",
+     "60,000",
+     "Second Adept",
+     "+2 4th-level",
+     "Warder",
+     "New Step"
+    ],
+    [
+     "8",
+     "90,000",
+     "Third Adept",
+     "",
+     "Master Warder",
+     ""
+    ],
+    [
+     "9",
+     "135,000",
+     "Fourth Adept",
+     "+2 5th-level",
+     "Veteran",
+     "New Step/New Path"
+    ],
+    [
+     "10",
+     "250,000",
+     "Master Adept",
+     "",
+     "Hero",
+     ""
+    ],
+    [
+     "11",
+     "375,000",
+     "First Sage",
+     "",
+     "Champion",
+     ""
+    ],
+    [
+     "12",
+     "750,000",
+     "Second Sage",
+     "+2 6th-level",
+     "Icon",
+     "New Step"
+    ],
+    [
+     "13",
+     "1,125,000",
+     "Third Sage",
+     "",
+     "Guardian",
+     ""
+    ],
+    [
+     "14",
+     "1,500,000",
+     "Fourth Sage",
+     "+2 7th-level",
+     "Guardian Vigilant",
+     "New Step"
+    ],
+    [
+     "15",
+     "1,875,000",
+     "Master Sage",
+     "",
+     "Knight",
+     ""
+    ],
+    [
+     "16",
+     "2,250,000",
+     "First Savant",
+     "+2 8th-level",
+     "Knight Vigilant",
+     "New Step/New Path"
+    ],
+    [
+     "17",
+     "2,625,000",
+     "Second Savant",
+     "",
+     "Justicar",
+     ""
+    ],
+    [
+     "18",
+     "3,000,000",
+     "Third Savant",
+     "+2 9th-level",
+     "Grand Justicar",
+     "New Step"
+    ],
+    [
+     "19",
+     "3,375,000",
+     "Fourth Savant",
+     "",
+     "Myrmidon",
+     ""
+    ],
+    [
+     "20",
+     "3,750,000",
+     "Master Savant",
+     "Grand Myrmidon",
+     "New Step",
+     ""
+    ],
+    [
+     "21",
+     "4,250,000",
+     "Grand Savant",
+     "Minimum Int. 15",
+     "",
+     ""
+    ],
+    [
+     "22",
+     "4,750,000",
+     "Grand Savant of the First Order",
+     "",
+     "",
+     ""
+    ],
+    [
+     "23",
+     "5,250,000",
+     "Grand Savant of the Second Order",
+     "Minimum Int. 16",
+     "",
+     ""
+    ],
+    [
+     "24",
+     "5,750,000",
+     "Grand Savant of the Third Order",
+     "",
+     "",
+     ""
+    ],
+    [
+     "25",
+     "6,250,000",
+     "Grand Savant of the Fourth Order",
+     "Minimum Int. 17",
+     "",
+     ""
+    ],
+    [
+     "26",
+     "6,750,000",
+     "Grand Savant of the Peacekeepers",
+     "",
+     "",
+     ""
+    ],
+    [
+     "27",
+     "7,250,000",
+     "Grand Savant of the Lorekeepers",
+     "Minimum Int. 18",
+     "",
+     ""
+    ],
+    [
+     "28",
+     "7,750,000",
+     "Grand Savant of the Council",
+     "",
+     "",
+     ""
+    ],
+    [
+     "29",
+     "8,250,000",
+     "Grand Savant of the Dukars",
+     "Minimum Int. 19",
+     "",
+     ""
+    ],
+    [
+     "30",
+     "8,750,000",
+     "Grand Master",
+     "Minimum Int. 20",
+     "",
+     ""
+    ]
+   ]
+  },
+  "after": {
+   "headers": [
+    "Lvl",
+    "XP",
+    "Spells Lorekeeper Title",
+    "Spells",
+    "Peacekeeper Title",
+    "Paths"
+   ],
+   "rows": [
+    [
+     "1",
+     "0",
+     "First Disciple",
+     "+2 1st-level",
+     "Recruit",
+     "Add New Step"
+    ],
+    [
+     "2",
+     "2,500",
+     "Second Disciple",
+     "",
+     "Squire",
+     ""
+    ],
+    [
+     "3",
+     "5,000",
+     "Third Disciple",
+     "+2 2nd-level",
+     "Yeoman",
+     "New Step"
+    ],
+    [
+     "4",
+     "10,000",
+     "Fourth Disciple",
+     "",
+     "Soldier",
+     ""
+    ],
+    [
+     "5",
+     "20,000",
+     "Master Disciple",
+     "+2 3rd-level",
+     "Scout",
+     "New Step/New Path"
+    ],
+    [
+     "6",
+     "40,000",
+     "First Adept",
+     "",
+     "Master Scout",
+     ""
+    ],
+    [
+     "7",
+     "60,000",
+     "Second Adept",
+     "+2 4th-level",
+     "Warder",
+     "New Step"
+    ],
+    [
+     "8",
+     "90,000",
+     "Third Adept",
+     "",
+     "Master Warder",
+     ""
+    ],
+    [
+     "9",
+     "135,000",
+     "Fourth Adept",
+     "+2 5th-level",
+     "Veteran",
+     "New Step/New Path"
+    ],
+    [
+     "10",
+     "250,000",
+     "Master Adept",
+     "",
+     "Hero",
+     ""
+    ],
+    [
+     "11",
+     "375,000",
+     "First Sage",
+     "",
+     "Champion",
+     ""
+    ],
+    [
+     "12",
+     "750,000",
+     "Second Sage",
+     "+2 6th-level",
+     "Icon",
+     "New Step"
+    ],
+    [
+     "13",
+     "1,125,000",
+     "Third Sage",
+     "",
+     "Guardian",
+     ""
+    ],
+    [
+     "14",
+     "1,500,000",
+     "Fourth Sage",
+     "+2 7th-level",
+     "Guardian Vigilant",
+     "New Step"
+    ],
+    [
+     "15",
+     "1,875,000",
+     "Master Sage",
+     "",
+     "Knight",
+     ""
+    ],
+    [
+     "16",
+     "2,250,000",
+     "First Savant",
+     "+2 8th-level",
+     "Knight Vigilant",
+     "New Step/New Path"
+    ],
+    [
+     "17",
+     "2,625,000",
+     "Second Savant",
+     "",
+     "Justicar",
+     ""
+    ],
+    [
+     "18",
+     "3,000,000",
+     "Third Savant",
+     "+2 9th-level",
+     "Grand Justicar",
+     "New Step"
+    ],
+    [
+     "19",
+     "3,375,000",
+     "Fourth Savant",
+     "",
+     "Myrmidon",
+     ""
+    ],
+    [
+     "20",
+     "3,750,000",
+     "Master Savant",
+     "",
+     "Grand Myrmidon",
+     "New Step"
+    ],
+    [
+     "21",
+     "4,250,000",
+     "Grand Savant",
+     "Minimum Int. 15",
+     "",
+     ""
+    ],
+    [
+     "22",
+     "4,750,000",
+     "Grand Savant of the First Order",
+     "",
+     "",
+     ""
+    ],
+    [
+     "23",
+     "5,250,000",
+     "Grand Savant of the Second Order",
+     "Minimum Int. 16",
+     "",
+     ""
+    ],
+    [
+     "24",
+     "5,750,000",
+     "Grand Savant of the Third Order",
+     "",
+     "",
+     ""
+    ],
+    [
+     "25",
+     "6,250,000",
+     "Grand Savant of the Fourth Order",
+     "Minimum Int. 17",
+     "",
+     ""
+    ],
+    [
+     "26",
+     "6,750,000",
+     "Grand Savant of the Peacekeepers",
+     "",
+     "",
+     ""
+    ],
+    [
+     "27",
+     "7,250,000",
+     "Grand Savant of the Lorekeepers",
+     "Minimum Int. 18",
+     "",
+     ""
+    ],
+    [
+     "28",
+     "7,750,000",
+     "Grand Savant of the Council",
+     "",
+     "",
+     ""
+    ],
+    [
+     "29",
+     "8,250,000",
+     "Grand Savant of the Dukars",
+     "Minimum Int. 19",
+     "",
+     ""
+    ],
+    [
+     "30",
+     "8,750,000",
+     "Grand Master",
+     "Minimum Int. 20",
+     "",
+     ""
+    ]
+   ]
+  },
+  "source": "wiki page 'The Dukars (SofS)', Table 12, level 20: 'Master Savant' is colspan 2 (Title + Spells), 'Grand Myrmidon' is the Peacekeeper Title and 'New Step' the Paths cell; the stored row has them one column to the left"
+ },
+ {
+  "file": "data/rules.json",
+  "ruleId": "tka_ch00_thri_kreen_pcs_character_classes",
+  "tableIndex": 1,
+  "tableTitle": "Thri-Kreen Physical Characteristics",
+  "pattern": "stray_pipe",
+  "confidence": "confident",
+  "note": "",
+  "before": {
+   "headers": [
+    "Characteristic",
+    "Base",
+    "Variable"
+   ],
+   "rows": [
+    [
+     "Height (in inches)",
+     "82",
+     "1d4"
+    ],
+    [
+     "Weight (in pounds)",
+     "450",
+     "1d20"
+    ],
+    [
+     "Age (years, start/max)| 6",
+     "25+d10",
+     ""
+    ]
+   ]
+  },
+  "after": {
+   "headers": [
+    "Characteristic",
+    "Base",
+    "Variable"
+   ],
+   "rows": [
+    [
+     "Height (in inches)",
+     "82",
+     "1d4"
+    ],
+    [
+     "Weight (in pounds)",
+     "450",
+     "1d20"
+    ],
+    [
+     "Age (years, start/max)",
+     "6",
+     "25+d10"
+    ]
+   ]
+  },
+  "source": "wiki page 'Thri-Kreen PCs Character Classes (TKA)': raw cell 'Age (years, start/max)| 6' (a '|' typed inside the cell) then '25+d10'"
+ },
+ {
+  "file": "data/rules.json",
+  "ruleId": "cfh_ch01_proficiencies",
+  "field": "content",
+  "kind": "markdown_table_header",
+  "tableTitle": null,
+  "pattern": "markdown_header_width_mismatch",
+  "confidence": "confident",
+  "note": "header has 8 cells, data rows have 5",
+  "before": {
+   "headerLine": "|  | Effects On Performance | Effects On Performance |  | Mod. to Prof Check to Craft Weapon Quality | Mod. to Prof Check to Craft Attack | Mod. to Prof Check to Craft Damage | Mod. to Prof Check to Craft Breaks |",
+   "separatorLine": "| --- | --- | --- | --- | --- | --- | --- | --- |",
+   "headerWidth": 8,
+   "dataRowWidth": 5
+  },
+  "after": {
+   "headerLine": "| Weapon Quality | Effects On Performance: Attack | Effects On Performance: Damage | Breaks | Mod. to Prof Check to Craft |",
+   "separatorLine": "| --- | --- | --- | --- | --- |"
+  },
+  "source": "wiki page 'Proficiencies (CFH)'"
+ },
+ {
+  "file": "data/rules.json",
+  "ruleId": "crh_ch01_character_creation",
+  "field": "content",
+  "kind": "markdown_table_header",
+  "tableTitle": "Table 4: Level Improvements",
+  "pattern": "markdown_header_width_mismatch",
+  "confidence": "confident",
+  "note": "",
+  "before": {
+   "headerLine": "| Level | Prof. | Prof. | Saving Throws | Saving Throws | Saving Throws | Saving Throws | Saving Throws W | Saving Throws N/W | Saving Throws PPDM | Saving Throws RSW | Saving Throws PP | Saving Throws BW | Saving Throws S |",
+   "separatorLine": "| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |",
+   "headerWidth": 14,
+   "dataRowWidth": 8
+  },
+  "after": {
+   "headerLine": "| Level | Prof.: W | Prof.: N/W | Saving Throws: PPDM | Saving Throws: RSW | Saving Throws: PP | Saving Throws: BW | Saving Throws: S |",
+   "separatorLine": "| --- | --- | --- | --- | --- | --- | --- | --- |"
+  },
+  "source": "same layout as CBH Table 5 'Level Improvements' (wiki 'Core Abilities (CBH)'): header cells 'Saving Throws W/N/W/PPDM/...' are the second header row concatenated under the first (14 cells for 8 data columns)"
+ },
+ {
+  "file": "data/rules.json",
+  "ruleId": "cbh_ch01_core_abilities",
+  "field": "content",
+  "kind": "markdown_table_header",
+  "tableTitle": "Table 5: Level Improvements",
+  "pattern": "markdown_header_width_mismatch",
+  "confidence": "confident",
+  "note": "",
+  "before": {
+   "headerLine": "| Level | Prof. | Prof. | Saving Throws | Saving Throws | Saving Throws | Saving Throws | Saving Throws W | Saving Throws N/W | Saving Throws PPDM | Saving Throws RSW | Saving Throws PP | Saving Throws BW | Saving Throws S |",
+   "separatorLine": "| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |",
+   "headerWidth": 14,
+   "dataRowWidth": 8
+  },
+  "after": {
+   "headerLine": "| Level | Prof.: W | Prof.: N/W | Saving Throws: PPDM | Saving Throws: RSW | Saving Throws: PP | Saving Throws: BW | Saving Throws: S |",
+   "separatorLine": "| --- | --- | --- | --- | --- | --- | --- | --- |"
+  },
+  "source": "wiki page 'Core Abilities (CBH)', 'Table 5: Level Improvements'"
+ },
+ {
+  "file": "data/rules.json",
+  "ruleId": "cth_ch04_designing_a_thieves_guild",
+  "field": "content",
+  "kind": "markdown_table_header",
+  "tableTitle": "Table 17: EXPERIENCE LEVELS OF THIEVES",
+  "pattern": "markdown_header_width_mismatch",
+  "confidence": "confident",
+  "note": "header has 11 cells, data rows have 7",
+  "before": {
+   "headerLine": "| No. of Thieves | Seniors | Seniors | Seniors | Seniors | Seniors | Middle Echelon A | Middle Echelon B | Middle Echelon C | Middle Echelon D | Middle Echelon E |",
+   "separatorLine": "| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |",
+   "headerWidth": 11,
+   "dataRowWidth": 7
+  },
+  "after": {
+   "headerLine": "| No. of Thieves | Seniors: A | Seniors: B | Seniors: C | Seniors: D | Seniors: E | Middle Echelon |",
+   "separatorLine": "| --- | --- | --- | --- | --- | --- | --- |"
+  },
+  "source": "wiki page 'Designing a Thieves' Guild (CTH)', 'Table 17: EXPERIENCE LEVELS OF THIEVES'"
+ },
+ {
+  "file": "data/rules.json",
+  "ruleId": "cbn_ch01_the_standard_necromancer",
+  "field": "content",
+  "kind": "markdown_table_header",
+  "tableTitle": "Table 2: Extended Necromancer Advancement Spells, and Level Improvements",
+  "pattern": "markdown_header_width_mismatch",
+  "confidence": "confident",
+  "note": "header has 35 cells, data rows have 20",
+  "before": {
+   "headerLine": "| Level | Experience | Hit Dice (d4) | THAC0 | Spell Levels | Spell Levels | Spell Levels | Spell Levels | Spell Levels | Spell Levels | Spell Levels | Spell Levels | Spell Levels | Proficiencies | Proficiencies | Saving Throws | Saving Throws | Saving Throws | Saving Throws | Saving Throws 1 | Saving Throws 2 | Saving Throws 3 | Saving Throws 4 | Saving Throws 5 | Saving Throws 6 | Saving Throws 7 | Saving Throws 8 | Saving Throws 9 | Saving Throws NW | Saving Throws WP | Saving Throws PPDM | Saving Throws RSW | Saving Throws PP | Saving Throws BW | Saving Throws S |",
+   "separatorLine": "| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |",
+   "headerWidth": 35,
+   "dataRowWidth": 20
+  },
+  "after": {
+   "headerLine": "| Level | Experience | Hit Dice (d4) | THAC0 | Spell Levels: 1 | Spell Levels: 2 | Spell Levels: 3 | Spell Levels: 4 | Spell Levels: 5 | Spell Levels: 6 | Spell Levels: 7 | Spell Levels: 8 | Spell Levels: 9 | Proficiencies: NW | Proficiencies: WP | Saving Throws: PPDM | Saving Throws: RSW | Saving Throws: PP | Saving Throws: BW | Saving Throws: S |",
+   "separatorLine": "| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |"
+  },
+  "source": "wiki page 'The Standard Necromancer (CBN)', 'Table 2: Extended Necromancer Advancement Spells, and Level Improvements'"
+ },
+ {
+  "file": "data/rules.json",
+  "ruleId": "cbn_ch05_necromantic_priesthoods",
+  "field": "content",
+  "kind": "markdown_table_header",
+  "tableTitle": "Table 12: Extended Death Priest Advancement, Spells, and Level Improvements",
+  "pattern": "markdown_header_width_mismatch",
+  "confidence": "confident",
+  "note": "header has 31 cells, data rows have 18",
+  "before": {
+   "headerLine": "| Level | Experience | Hit Dice (d4) | THAC0 | Spell Levels | Spell Levels | Spell Levels | Spell Levels | Spell Levels | Spell Levels | Spell Levels | Proficiencies | Proficiencies | Saving Throws | Saving Throws | Saving Throws | Saving Throws | Saving Throws 1 | Saving Throws 2 | Saving Throws 3 | Saving Throws 4 | Saving Throws 5 | Saving Throws 6 | Saving Throws 7 | Saving Throws NW | Saving Throws WP | Saving Throws PPDM | Saving Throws RSW | Saving Throws PP | Saving Throws BW | Saving Throws S |",
+   "separatorLine": "| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |",
+   "headerWidth": 31,
+   "dataRowWidth": 18
+  },
+  "after": {
+   "headerLine": "| Level | Experience | Hit Dice (d4) | THAC0 | Spell Levels: 1 | Spell Levels: 2 | Spell Levels: 3 | Spell Levels: 4 | Spell Levels: 5 | Spell Levels: 6 | Spell Levels: 7 | Proficiencies: NW | Proficiencies: WP | Saving Throws: PPDM | Saving Throws: RSW | Saving Throws: PP | Saving Throws: BW | Saving Throws: S |",
+   "separatorLine": "| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |"
+  },
+  "source": "wiki page 'Necromantic Priesthoods (CBN)', 'Table 12: Extended Death Priest Advancement, Spells, and Level Improvements'"
+ },
+ {
+  "file": "data/rules.json",
+  "ruleId": "phb_ch00_step_by_step_player_character_generation",
+  "tableIndex": 1,
+  "kind": "table_title",
+  "pattern": "duplicate_generic_title",
+  "confidence": "confident",
+  "before": {
+   "title": "Table",
+   "tableNumber": ""
+  },
+  "after": {
+   "title": "Racial Class and Level Limits"
+  },
+  "note": "also change the 1-th '[TABLE_REF: Table]' line in content to '[TABLE_REF: Racial Class and Level Limits]'. Web resolveTable() picks the FIRST table whose title equals the ref, so today every '[TABLE_REF: Table]' shows the first untitled table",
+  "source": "header Race | Fighter | Paladin | Ranger ...; wiki caption is empty"
+ },
+ {
+  "file": "data/rules.json",
+  "ruleId": "phb_ch00_step_by_step_player_character_generation",
+  "tableIndex": 2,
+  "kind": "table_title",
+  "pattern": "duplicate_generic_title",
+  "confidence": "confident",
+  "before": {
+   "title": "Table",
+   "tableNumber": ""
+  },
+  "after": {
+   "title": "Class Alignment Restrictions"
+  },
+  "note": "also change the 2-th '[TABLE_REF: Table]' line in content to '[TABLE_REF: Class Alignment Restrictions]'. Web resolveTable() picks the FIRST table whose title equals the ref, so today every '[TABLE_REF: Table]' shows the first untitled table",
+  "source": "header Class | Alignment Restrictions"
+ },
+ {
+  "file": "data/rules.json",
+  "ruleId": "phb_ch00_step_by_step_player_character_generation",
+  "tableIndex": 3,
+  "kind": "table_title",
+  "pattern": "duplicate_generic_title",
+  "confidence": "confident",
+  "before": {
+   "title": "Table",
+   "tableNumber": ""
+  },
+  "after": {
+   "title": "Class Hit Dice"
+  },
+  "note": "also change the 3-th '[TABLE_REF: Table]' line in content to '[TABLE_REF: Class Hit Dice]'. Web resolveTable() picks the FIRST table whose title equals the ref, so today every '[TABLE_REF: Table]' shows the first untitled table",
+  "source": "header Class | Hit Die"
+ },
+ {
+  "file": "data/rules.json",
+  "ruleId": "phb_ch02_character_race_tables",
+  "tableIndex": 1,
+  "kind": "table_title",
+  "pattern": "duplicate_generic_title",
+  "confidence": "confident",
+  "before": {
+   "title": "Table",
+   "tableNumber": ""
+  },
+  "after": {
+   "title": "Racial Ability Adjustments"
+  },
+  "note": "also change the 1-th '[TABLE_REF: Table]' line in content to '[TABLE_REF: Racial Ability Adjustments]'. Web resolveTable() picks the FIRST table whose title equals the ref, so today every '[TABLE_REF: Table]' shows the first untitled table",
+  "source": "header Race | Adjustments"
+ },
+ {
+  "file": "data/rules.json",
+  "ruleId": "phb_ch02_character_race_tables",
+  "tableIndex": 2,
+  "kind": "table_title",
+  "pattern": "duplicate_generic_title",
+  "confidence": "confident",
+  "before": {
+   "title": "Table",
+   "tableNumber": ""
+  },
+  "after": {
+   "title": "Constitution Saving Throw Bonus"
+  },
+  "note": "also change the 2-th '[TABLE_REF: Table]' line in content to '[TABLE_REF: Constitution Saving Throw Bonus]'. Web resolveTable() picks the FIRST table whose title equals the ref, so today every '[TABLE_REF: Table]' shows the first untitled table",
+  "source": "header Constitution Score | Saving Throw Bonus"
+ }
+]
