@@ -2974,7 +2974,7 @@
     "areaOfEffect": "1 to 4 persons in a 20-ft. cube",
     "savingThrow": "Neg.",
     "damage": null,
-    "summary": "==Errata==\n{| class=\"article-table\"\n! Sage Advice in Dragon 223:\n|-\n| Q.",
+    "summary": "Sage Advice in Dragon 223: Q. How many people are affected by a hold person spell? The earlier part of the spell description says that 1d4 people are…",
     "damageDice": null,
     "spheres": [
       "Charm"
