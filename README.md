@@ -16,10 +16,11 @@ dados (JSON Schema).
 ## Estrutura
 
 ```
-data/                  41 arquivos JSON (UTF-8)
+data/                  42 arquivos JSON (UTF-8)
 schemas/               JSON Schema de cada arquivo + README com o mapeamento
 scripts/
   validate_schemas.py  valida data/ contra schemas/
+  build_races.py       gera data/races.json e docs/racas-divergencias-2026-11.md (mineração + race_curation.json)
   add_mined_rulebooks.py      regras de CBE, CWH, CBN e TOM (vêm de ../thac0berry-data-mining)
   add_elf_and_misc_kits.py    30 kits curados à mão (CBE e livros menores)
   add_dragon_magazine_kits.py 119 kits da Dragon Magazine
@@ -96,3 +97,34 @@ Campos novos (opcionais, ausentes quando vazios):
 - Perícias citadas com outro nome viraram as do compêndio (Spellcasting = Spellcraft,
   Acrobatics = Tumbling, Small boat use = Boating...). Sem regra em fonte nenhuma, ficam só no
   texto: Thieves' Cant, Climbing, Baking, Path Lore, Planes Lore, Spellweaving, Teaching.
+
+## Raças em dados (2026-11-20)
+
+`data/races.json` (schema `race.schema.json`, só a web lê por enquanto): 159 raças, 83 jogáveis.
+Gerado por `scripts/build_races.py` a partir de `../thac0berry-data-mining/data/player_races`
+(157 registros) e da curadoria `scripts/race_curation.json`. Para mudar uma raça, edite a
+curadoria e rode o script de novo (não edite o JSON à mão).
+
+- **As 17 raças que o app web tinha em código** (6 do PHB, 10 planares, Half-Vistani) vêm da
+  curadoria com os valores do app (PHB Tabela 7, Planewalker's Handbook, Domains of Dread): são a
+  verdade. A mineração só empresta textos. Onde ela discorda, nada é trocado e a diferença vai
+  para [`docs/racas-divergencias-2026-11.md`](docs/racas-divergencias-2026-11.md), que o script
+  regenera junto com o JSON.
+- `name` é o texto que a ficha grava no campo Raça (não muda para as 17); `id` é estável
+  (`human`, `bariaur_male`, `genasi_fire`, `modron`…; as demais usam o id minerado).
+- `playable: false` + `hiddenReason`: 30 humanoides do Complete Book of Humanoids, raças de
+  cenários que não estão no Forge (Dragonlance, Kara-Tur, Savage Coast, Celts, Vikings), 2
+  duplicatas e as "para decisão" (Dragon Magazine sem cenário claro). O cenário real fica em
+  `campaignSetting`. Council of Wyrms (22 dragões) e Spelljammer (9) são jogáveis no dado, mas o
+  cenário está em construção na web, então o filtro as esconde.
+- Subraças têm `baseRace` (id de uma das 6 raças do PHB). Regras só vêm da raça-base quando o
+  texto da subraça traz "Standard <Raça> Abilities" (`inheritsFromBase` lista o que foi
+  copiado). Limites de nível, requisitos, ajustes e combinações são sempre os da própria raça.
+- `classLevelLimits` e `classCombinations` guardam todas as classes da mineração (nomes
+  normalizados: Wizard = Mage); o app só usa as 12 classes que tem.
+- Duplicatas da mineração: Hill Dwarf (cópia escondida), Aquatic Elf (CBE `aquatic_elf`; Sea of
+  Fallen Stars `aquatic_elf_sea_of_fallen_stars`), Kender (CBGH e Monstrous Compendium),
+  Athasian Halfling (Dark Sun vale; a do CBGH fica escondida).
+- O `sync_data.py` do iPad copia `races.json` junto com os outros arquivos do primeiro nível de
+  `data/` (o app não o lê; o CI de lá acusa a divergência até rodar o sync).
+

@@ -1,0 +1,152 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://thac0berry/schemas/race.schema.json",
+  "title": "Raças jogáveis (e as escondidas)",
+  "description": "Gerado por scripts/build_races.py a partir da mineração (../thac0berry-data-mining/data/player_races) e da curadoria scripts/race_curation.json. Por enquanto só a web lê (o iPad ainda tem as raças em código). Só `id` e `name` são obrigatórios; tudo o mais é opcional. `playable: false` = nunca aparece no Forge nem na ficha (dado guardado para um futuro módulo do mestre).",
+  "type": "array",
+  "items": {
+    "$ref": "#/$defs/Race"
+  },
+  "$defs": {
+    "AbilityKey": {
+      "enum": ["STR", "DEX", "CON", "INT", "WIS", "CHA"]
+    },
+    "AbilityRange": {
+      "type": "object",
+      "required": ["min", "max"],
+      "properties": {
+        "min": { "type": "integer" },
+        "max": { "type": "integer" }
+      }
+    },
+    "AbilityRequirements": {
+      "description": "Faixa de cada atributo. Ausente/null = a raça não tem faixa (humano).",
+      "type": ["object", "null"],
+      "properties": {
+        "STR": { "$ref": "#/$defs/AbilityRange" },
+        "DEX": { "$ref": "#/$defs/AbilityRange" },
+        "CON": { "$ref": "#/$defs/AbilityRange" },
+        "INT": { "$ref": "#/$defs/AbilityRange" },
+        "WIS": { "$ref": "#/$defs/AbilityRange" },
+        "CHA": { "$ref": "#/$defs/AbilityRange" }
+      }
+    },
+    "AbilityAdjustment": {
+      "type": "object",
+      "required": ["ability", "modifier"],
+      "properties": {
+        "ability": { "$ref": "#/$defs/AbilityKey" },
+        "modifier": { "type": "integer" }
+      }
+    },
+    "LevelLimit": {
+      "type": "object",
+      "required": ["class", "levelLimit"],
+      "properties": {
+        "class": {
+          "type": "string",
+          "description": "Nome da classe normalizado (Mage, não Wizard). Classe que o app não tem (Gladiator, Defiler…) fica aqui, e o app a ignora."
+        },
+        "levelLimit": {
+          "description": "Nível máximo, ou \"unlimited\".",
+          "oneOf": [{ "type": "integer" }, { "const": "unlimited" }]
+        }
+      }
+    },
+    "Source": {
+      "type": "object",
+      "properties": {
+        "label": { "type": "string", "description": "Como os avisos do app citam a fonte (\"PHB Table 7\", \"The Planewalker's Handbook\")." },
+        "book": { "type": ["string", "null"] },
+        "page": { "type": ["string", "null"] },
+        "category": { "type": ["string", "null"] },
+        "minedId": { "type": ["string", "null"], "description": "Id do registro na mineração (null: raça que só existe no app)." }
+      }
+    },
+    "CombatModifier": {
+      "type": "object",
+      "required": ["label", "value"],
+      "properties": {
+        "label": { "type": "string" },
+        "value": { "type": "string" }
+      }
+    },
+    "BardCombo": {
+      "type": "object",
+      "required": ["classes", "kits"],
+      "properties": {
+        "classes": { "type": "array", "items": { "type": "string" } },
+        "kits": { "type": "array", "items": { "type": "string" }, "description": "\"True\" = True Bard (ou sem kit)." }
+      }
+    },
+    "Race": {
+      "type": "object",
+      "required": ["id", "name"],
+      "properties": {
+        "id": { "type": "string", "description": "Estável: não renomear nem reaproveitar (a ficha guarda o `name`, mas o dado e os kits podem apontar para o id)." },
+        "name": { "type": "string", "description": "O texto que a ficha grava no campo Raça (\"Elf\", \"Genasi (fire)\", \"Bariaur (male)\"). Único; não muda para as raças que já existiam." },
+        "label": { "type": "string", "description": "Nome sem a marca de sexo (\"Bariaur\")." },
+        "gender": { "enum": ["male", "female"], "description": "Raça de um sexo só (Bariaur)." },
+        "aliases": { "type": "array", "items": { "type": "string" }, "description": "Outros textos que o matchRace aceita (nomes da mineração, \"Rogue Modron\")." },
+        "playable": { "type": "boolean", "description": "Ausente = true. false = escondida (ver hiddenReason)." },
+        "hiddenReason": {
+          "enum": ["humanoid-not-playable", "setting-not-in-forge", "undecided", "duplicate"],
+          "description": "Por que não é jogável. setting-not-in-forge: o cenário real está em campaignSetting, mas não está na lista de cenários do Forge."
+        },
+        "duplicateOf": { "type": "string", "description": "Id da raça canônica (hiddenReason duplicate)." },
+        "campaignSetting": { "type": ["string", "null"], "description": "Cenário da raça; null = livros gerais (Core)." },
+        "group": { "type": "string", "description": "Grupo da lista do Forge: Player's Handbook, Subraces ou o cenário." },
+        "baseRace": { "type": "string", "description": "Id de uma das 6 raças do PHB (human, elf, dwarf, gnome, half_elf, halfling). Vale para kits, imagem e \"é humano?\"; as regras só se herdam quando `inheritsFromBase` as lista." },
+        "inheritsFromBase": { "type": "array", "items": { "type": "string" }, "description": "Campos copiados da raça-base pelo script (o app não resolve herança)." },
+        "source": { "$ref": "#/$defs/Source" },
+        "note": { "type": "string", "description": "Observação da curadoria." },
+
+        "size": { "type": ["string", "null"] },
+        "speed": { "type": ["string", "null"], "description": "Texto da fonte (\"6, Fl 36 (C)\")." },
+        "hitPoints": { "type": ["string", "null"] },
+        "armorClass": { "type": ["string", "null"] },
+        "languages": { "type": ["string", "null"] },
+        "vision": { "type": ["string", "null"] },
+        "height": { "type": ["string", "null"] },
+        "weight": { "type": ["string", "null"] },
+        "attackBonus": { "type": ["string", "null"] },
+        "resistance": { "type": ["string", "null"] },
+        "alignment": { "type": ["string", "null"] },
+        "briefSummary": { "type": ["string", "null"] },
+        "content": { "type": ["string", "null"], "description": "Texto do livro em markdown." },
+
+        "abilityScoreRequirements": { "$ref": "#/$defs/AbilityRequirements" },
+        "abilityScoreAdjustments": { "type": ["array", "null"], "items": { "$ref": "#/$defs/AbilityAdjustment" } },
+        "abilityScoreRequirementsText": { "type": ["string", "null"] },
+        "abilityScoreAdjustmentsText": { "type": ["string", "null"] },
+        "noLevelLimit": { "type": "boolean", "description": "Sem limite de nível em nenhuma classe (humano, Half-Vistani)." },
+        "classLevelLimits": { "type": ["array", "null"], "items": { "$ref": "#/$defs/LevelLimit" } },
+        "classLevelLimitsText": { "type": ["string", "null"] },
+        "classCombinations": { "type": ["array", "null"], "items": { "type": "array", "items": { "type": "string" } } },
+        "classCombinationsText": { "type": ["string", "null"] },
+
+        "baseMovement": { "type": "integer", "description": "Movimento base em polegadas (12 = 12\")." },
+        "racialAbilities": { "type": ["string", "null"], "description": "Texto que a ficha ganha no campo de habilidades raciais." },
+        "spellResistance": { "type": ["string", "null"] },
+        "combatModifiers": {
+          "type": "object",
+          "properties": {
+            "toHit": { "type": "array", "items": { "$ref": "#/$defs/CombatModifier" } },
+            "ac": { "type": "array", "items": { "$ref": "#/$defs/CombatModifier" } }
+          }
+        },
+        "constitutionSaveBonus": { "type": "string", "description": "Contra o que vale o bônus de CON da Tabela 9 (ausente = a raça não tem)." },
+        "singleClassBonus": { "type": "integer", "description": "Níveis a mais para quem tem uma classe só (aasimar, tiefling)." },
+        "demiBardKits": {
+          "type": "object",
+          "additionalProperties": { "type": "integer" },
+          "description": "CBH Tabela 13: kit de bardo → nível máximo."
+        },
+        "bardCombos": { "type": "array", "items": { "$ref": "#/$defs/BardCombo" } },
+        "bonusProficiencies": { "type": "array", "items": { "type": "string" }, "description": "Perícias grátis (0 slots)." },
+        "kitForms": { "type": "array", "items": { "type": "string" }, "description": "Palavras (minúsculas) com que os requisitos de raça dos kits citam esta raça." },
+        "ruleId": { "type": "string", "description": "Regra do compêndio com as tabelas da raça (padrão: phb_ch02_character_race_tables)." }
+      }
+    }
+  }
+}

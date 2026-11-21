@@ -1,0 +1,2330 @@
+{
+ "_about": "Curadoria das raças (2026-11-20), lida por scripts/build_races.py. 'legacy': as 17 raças que o app web tinha em código (PHB Tabela 7, Planewalker's Handbook, Domains of Dread): os valores daqui são a verdade e NÃO são trocados pela mineração (as diferenças vao para docs/raças-divergencias-2026-11.md). 'races': classificação das demais raças mineradas (cenário, jogável, subraça, nome da ficha); o que não está aqui faz o script parar.",
+ "legacy": [
+  {
+   "id": "human",
+   "name": "Human",
+   "minedId": "human_standard",
+   "aliases": [
+    "Human (Standard)"
+   ],
+   "campaignSetting": null,
+   "sourceLabel": "PHB Table 7",
+   "kitForms": [
+    "human",
+    "humans"
+   ],
+   "abilityScoreRequirements": null,
+   "abilityScoreAdjustments": [],
+   "noLevelLimit": true,
+   "classLevelLimits": [],
+   "classCombinations": [],
+   "baseMovement": 12
+  },
+  {
+   "id": "dwarf",
+   "name": "Dwarf",
+   "minedId": "dwarf",
+   "campaignSetting": null,
+   "sourceLabel": "PHB Table 7",
+   "kitForms": [
+    "dwarf",
+    "dwarves"
+   ],
+   "abilityScoreRequirements": {
+    "STR": {
+     "min": 8,
+     "max": 18
+    },
+    "DEX": {
+     "min": 3,
+     "max": 17
+    },
+    "CON": {
+     "min": 11,
+     "max": 18
+    },
+    "INT": {
+     "min": 3,
+     "max": 18
+    },
+    "WIS": {
+     "min": 3,
+     "max": 18
+    },
+    "CHA": {
+     "min": 3,
+     "max": 17
+    }
+   },
+   "abilityScoreAdjustments": [
+    {
+     "ability": "CON",
+     "modifier": 1
+    },
+    {
+     "ability": "CHA",
+     "modifier": -1
+    }
+   ],
+   "classLevelLimits": [
+    {
+     "class": "Cleric",
+     "levelLimit": 10
+    },
+    {
+     "class": "Fighter",
+     "levelLimit": 15
+    },
+    {
+     "class": "Thief",
+     "levelLimit": 12
+    },
+    {
+     "class": "Ninja",
+     "levelLimit": "unlimited"
+    },
+    {
+     "class": "Psionicist",
+     "levelLimit": 8
+    }
+   ],
+   "classCombinations": [
+    [
+     "Fighter",
+     "Thief"
+    ],
+    [
+     "Fighter",
+     "Cleric"
+    ],
+    [
+     "Fighter",
+     "Psionicist"
+    ],
+    [
+     "Thief",
+     "Psionicist"
+    ]
+   ],
+   "bardCombos": [
+    {
+     "classes": [
+      "Fighter",
+      "Bard"
+     ],
+     "kits": [
+      "Chanter",
+      "Skald"
+     ]
+    }
+   ],
+   "demiBardKits": {
+    "Chanter": 15,
+    "Herald": 6,
+    "Skald": 12
+   },
+   "baseMovement": 6,
+   "racialAbilities": "Infravision 60 ft. Saving throw bonus vs. wands/staves/rods/spells and vs. poison (+1 per 3½ points of Constitution — see Saving Throws). 20% chance a non-class magic item malfunctions when used. +1 to hit orcs, half-orcs, goblins, hobgoblins; ogres/trolls/giants/titans suffer −4 to hit dwarves. Can detect grade/slope, new construction, shifting walls, stonework traps, and approximate depth underground.",
+   "combatModifiers": {
+    "toHit": [
+     {
+      "label": "Melee vs. orcs, half-orcs, goblins, hobgoblins",
+      "value": "+1"
+     }
+    ],
+    "ac": [
+     {
+      "label": "Ogres, trolls, ogre magi, giants, titans attacking you (their roll)",
+      "value": "−4"
+     }
+    ]
+   },
+   "constitutionSaveBonus": "Saving throws vs. rods, staves, wands and spells, and vs. poison.",
+   "bonusProficiencies": [
+    "Endurance"
+   ]
+  },
+  {
+   "id": "elf",
+   "name": "Elf",
+   "minedId": "elf",
+   "campaignSetting": null,
+   "sourceLabel": "PHB Table 7",
+   "kitForms": [
+    "elf",
+    "elves"
+   ],
+   "abilityScoreRequirements": {
+    "STR": {
+     "min": 3,
+     "max": 18
+    },
+    "DEX": {
+     "min": 6,
+     "max": 18
+    },
+    "CON": {
+     "min": 7,
+     "max": 18
+    },
+    "INT": {
+     "min": 8,
+     "max": 18
+    },
+    "WIS": {
+     "min": 3,
+     "max": 18
+    },
+    "CHA": {
+     "min": 8,
+     "max": 18
+    }
+   },
+   "abilityScoreAdjustments": [
+    {
+     "ability": "DEX",
+     "modifier": 1
+    },
+    {
+     "ability": "CON",
+     "modifier": -1
+    }
+   ],
+   "classLevelLimits": [
+    {
+     "class": "Cleric",
+     "levelLimit": 12
+    },
+    {
+     "class": "Fighter",
+     "levelLimit": 12
+    },
+    {
+     "class": "Mage",
+     "levelLimit": 15
+    },
+    {
+     "class": "Ranger",
+     "levelLimit": 15
+    },
+    {
+     "class": "Thief",
+     "levelLimit": 12
+    },
+    {
+     "class": "Psionicist",
+     "levelLimit": 7
+    }
+   ],
+   "classCombinations": [
+    [
+     "Fighter",
+     "Mage"
+    ],
+    [
+     "Fighter",
+     "Thief"
+    ],
+    [
+     "Mage",
+     "Thief"
+    ],
+    [
+     "Fighter",
+     "Mage",
+     "Thief"
+    ]
+   ],
+   "bardCombos": [
+    {
+     "classes": [
+      "Mage",
+      "Bard"
+     ],
+     "kits": [
+      "Minstrel"
+     ]
+    },
+    {
+     "classes": [
+      "Thief",
+      "Bard"
+     ],
+     "kits": [
+      "Gypsy"
+     ]
+    }
+   ],
+   "demiBardKits": {
+    "Gypsy": 9,
+    "Herald": 6,
+    "Loremaster": 12,
+    "Meistersinger": 15,
+    "Minstrel": 15
+   },
+   "baseMovement": 12,
+   "spellResistance": "90% vs. sleep & charm",
+   "racialAbilities": "Infravision 60 ft. 90% resistance to sleep and charm-related spells. +1 to hit with bow (except crossbow) or short/long sword. Good chance to notice secret/concealed doors. Surprise bonus if unarmored in metal, alone or with elves/halflings, or 90+ ft from the party: −4 to opponents' surprise roll (−2 if opening a door).",
+   "combatModifiers": {
+    "toHit": [
+     {
+      "label": "Bows (not crossbows), short and long swords",
+      "value": "+1"
+     }
+    ],
+    "ac": []
+   }
+  },
+  {
+   "id": "gnome",
+   "name": "Gnome",
+   "minedId": "gnome",
+   "campaignSetting": null,
+   "sourceLabel": "PHB Table 7",
+   "kitForms": [
+    "gnome",
+    "gnomes"
+   ],
+   "abilityScoreRequirements": {
+    "STR": {
+     "min": 6,
+     "max": 18
+    },
+    "DEX": {
+     "min": 3,
+     "max": 18
+    },
+    "CON": {
+     "min": 8,
+     "max": 18
+    },
+    "INT": {
+     "min": 6,
+     "max": 18
+    },
+    "WIS": {
+     "min": 3,
+     "max": 18
+    },
+    "CHA": {
+     "min": 3,
+     "max": 18
+    }
+   },
+   "abilityScoreAdjustments": [
+    {
+     "ability": "INT",
+     "modifier": 1
+    },
+    {
+     "ability": "WIS",
+     "modifier": -1
+    }
+   ],
+   "classLevelLimits": [
+    {
+     "class": "Cleric",
+     "levelLimit": 9
+    },
+    {
+     "class": "Fighter",
+     "levelLimit": 11
+    },
+    {
+     "class": "Thief",
+     "levelLimit": 13
+    },
+    {
+     "class": "Psionicist",
+     "levelLimit": 9
+    }
+   ],
+   "classCombinations": [
+    [
+     "Fighter",
+     "Cleric"
+    ],
+    [
+     "Fighter",
+     "Illusionist"
+    ],
+    [
+     "Fighter",
+     "Thief"
+    ],
+    [
+     "Cleric",
+     "Illusionist"
+    ],
+    [
+     "Cleric",
+     "Thief"
+    ],
+    [
+     "Illusionist",
+     "Thief"
+    ]
+   ],
+   "bardCombos": [
+    {
+     "classes": [
+      "Illusionist",
+      "Bard"
+     ],
+     "kits": [
+      "Professor"
+     ]
+    },
+    {
+     "classes": [
+      "Thief",
+      "Bard"
+     ],
+     "kits": [
+      "Professor",
+      "Jongleur"
+     ]
+    }
+   ],
+   "demiBardKits": {
+    "Charlatan": 6,
+    "Herald": 6,
+    "Professor": 15,
+    "Jester": 15,
+    "Jongleur": 9,
+    "Riddlemaster": 8
+   },
+   "baseMovement": 6,
+   "racialAbilities": "Infravision 60 ft. Saving throw bonus vs. wands/staves/rods/spells (+1 per 3½ points of Constitution — see Saving Throws). 20% chance a non-class, non-illusionist magic item malfunctions when used. +1 to hit kobolds/goblins; gnolls/bugbears/ogres/trolls/giants/titans suffer −4 to hit gnomes. Can detect grade/slope, unsafe walls/ceilings/floors, and approximate depth/direction underground.",
+   "combatModifiers": {
+    "toHit": [
+     {
+      "label": "Melee vs. kobolds, goblins",
+      "value": "+1"
+     }
+    ],
+    "ac": [
+     {
+      "label": "Gnolls, bugbears, ogres, trolls, ogre magi, giants, titans attacking you (their roll)",
+      "value": "−4"
+     }
+    ]
+   },
+   "constitutionSaveBonus": "Saving throws vs. rods, staves, wands and spells."
+  },
+  {
+   "id": "half_elf",
+   "name": "Half-Elf",
+   "minedId": "half_elf_phb",
+   "aliases": [
+    "Half-Elf (PHB)"
+   ],
+   "campaignSetting": null,
+   "sourceLabel": "PHB Table 7",
+   "kitForms": [
+    "halfelf"
+   ],
+   "abilityScoreRequirements": {
+    "STR": {
+     "min": 3,
+     "max": 18
+    },
+    "DEX": {
+     "min": 6,
+     "max": 18
+    },
+    "CON": {
+     "min": 6,
+     "max": 18
+    },
+    "INT": {
+     "min": 4,
+     "max": 18
+    },
+    "WIS": {
+     "min": 3,
+     "max": 18
+    },
+    "CHA": {
+     "min": 3,
+     "max": 18
+    }
+   },
+   "abilityScoreAdjustments": [],
+   "classLevelLimits": [
+    {
+     "class": "Bard",
+     "levelLimit": "unlimited"
+    },
+    {
+     "class": "Cleric",
+     "levelLimit": 14
+    },
+    {
+     "class": "Druid",
+     "levelLimit": 9
+    },
+    {
+     "class": "Fighter",
+     "levelLimit": 14
+    },
+    {
+     "class": "Mage",
+     "levelLimit": 12
+    },
+    {
+     "class": "Ranger",
+     "levelLimit": 16
+    },
+    {
+     "class": "Thief",
+     "levelLimit": 12
+    },
+    {
+     "class": "Psionicist",
+     "levelLimit": 7
+    },
+    {
+     "class": "Gypsy",
+     "levelLimit": "unlimited"
+    }
+   ],
+   "classCombinations": [
+    [
+     "Fighter",
+     "Cleric"
+    ],
+    [
+     "Fighter",
+     "Thief"
+    ],
+    [
+     "Fighter",
+     "Mage"
+    ],
+    [
+     "Cleric",
+     "Ranger"
+    ],
+    [
+     "Cleric",
+     "Mage"
+    ],
+    [
+     "Thief",
+     "Mage"
+    ],
+    [
+     "Fighter",
+     "Mage",
+     "Cleric"
+    ],
+    [
+     "Fighter",
+     "Druid"
+    ],
+    [
+     "Druid",
+     "Ranger"
+    ],
+    [
+     "Druid",
+     "Mage"
+    ],
+    [
+     "Fighter",
+     "Mage",
+     "Druid"
+    ]
+   ],
+   "bardCombos": [
+    {
+     "classes": [
+      "Fighter",
+      "Bard"
+     ],
+     "kits": [
+      "True",
+      "Blade",
+      "Gallant",
+      "Skald"
+     ]
+    },
+    {
+     "classes": [
+      "Ranger",
+      "Bard"
+     ],
+     "kits": [
+      "True",
+      "Meistersinger"
+     ]
+    },
+    {
+     "classes": [
+      "Mage",
+      "Bard"
+     ],
+     "kits": [
+      "Loremaster",
+      "Riddlemaster"
+     ]
+    },
+    {
+     "classes": [
+      "Cleric",
+      "Bard"
+     ],
+     "kits": [
+      "True"
+     ]
+    },
+    {
+     "classes": [
+      "Druid",
+      "Bard"
+     ],
+     "kits": [
+      "Meistersinger"
+     ]
+    },
+    {
+     "classes": [
+      "Thief",
+      "Bard"
+     ],
+     "kits": [
+      "True",
+      "Gypsy",
+      "Jongleur",
+      "Thespian"
+     ]
+    }
+   ],
+   "baseMovement": 12,
+   "spellResistance": "30% vs. sleep & charm",
+   "racialAbilities": "Infravision 60 ft. 30% resistance to sleep and charm-related spells. Good chance to notice secret/concealed doors, same as elves."
+  },
+  {
+   "id": "halfling",
+   "name": "Halfling",
+   "minedId": "halfling",
+   "campaignSetting": null,
+   "sourceLabel": "PHB Table 7",
+   "kitForms": [
+    "halfling",
+    "halflings"
+   ],
+   "abilityScoreRequirements": {
+    "STR": {
+     "min": 7,
+     "max": 18
+    },
+    "DEX": {
+     "min": 7,
+     "max": 18
+    },
+    "CON": {
+     "min": 10,
+     "max": 18
+    },
+    "INT": {
+     "min": 6,
+     "max": 18
+    },
+    "WIS": {
+     "min": 3,
+     "max": 17
+    },
+    "CHA": {
+     "min": 3,
+     "max": 18
+    }
+   },
+   "abilityScoreAdjustments": [
+    {
+     "ability": "DEX",
+     "modifier": 1
+    },
+    {
+     "ability": "STR",
+     "modifier": -1
+    }
+   ],
+   "classLevelLimits": [
+    {
+     "class": "Cleric",
+     "levelLimit": 8
+    },
+    {
+     "class": "Fighter",
+     "levelLimit": 9
+    },
+    {
+     "class": "Thief",
+     "levelLimit": 15
+    },
+    {
+     "class": "Ninja",
+     "levelLimit": "unlimited"
+    },
+    {
+     "class": "Psionicist",
+     "levelLimit": 10
+    }
+   ],
+   "classCombinations": [
+    [
+     "Fighter",
+     "Thief"
+    ],
+    [
+     "Fighter",
+     "Psionicist"
+    ],
+    [
+     "Thief",
+     "Psionicist"
+    ]
+   ],
+   "bardCombos": [
+    {
+     "classes": [
+      "Thief",
+      "Bard"
+     ],
+     "kits": [
+      "Jongleur"
+     ]
+    }
+   ],
+   "demiBardKits": {
+    "Herald": 6,
+    "Jester": 8,
+    "Jongleur": 12,
+    "Riddlemaster": 9,
+    "Whistler": 15
+   },
+   "baseMovement": 6,
+   "racialAbilities": "High resistance to magic and poison: saving throw bonus vs. wands/staves/rods/spells and vs. poison (+1 per point of Constitution — see Saving Throws). +1 to attack rolls with thrown weapons and slings. Surprise bonus if unarmored in metal, alone or with halflings/elves, or 90+ ft from the party: −4 to opponents' surprise roll (−2 if opening a door). Chance of infravision (60 ft or 30 ft) depending on lineage.",
+   "combatModifiers": {
+    "toHit": [
+     {
+      "label": "Thrown weapons and slings",
+      "value": "+1"
+     }
+    ],
+    "ac": []
+   },
+   "constitutionSaveBonus": "Saving throws vs. rods, staves, wands and spells, and vs. poison."
+  },
+  {
+   "id": "aasimar",
+   "name": "Aasimar",
+   "minedId": "aasimar",
+   "campaignSetting": "Planescape",
+   "sourceLabel": "The Planewalker's Handbook",
+   "ruleId": "pwh_ch00_racial_tables",
+   "kitForms": [
+    "aasimar"
+   ],
+   "abilityScoreRequirements": {
+    "STR": {
+     "min": 8,
+     "max": 18
+    },
+    "DEX": {
+     "min": 5,
+     "max": 18
+    },
+    "CON": {
+     "min": 5,
+     "max": 18
+    },
+    "INT": {
+     "min": 11,
+     "max": 18
+    },
+    "WIS": {
+     "min": 11,
+     "max": 18
+    },
+    "CHA": {
+     "min": 13,
+     "max": 18
+    }
+   },
+   "abilityScoreAdjustments": [
+    {
+     "ability": "STR",
+     "modifier": 1
+    },
+    {
+     "ability": "CON",
+     "modifier": -2
+    },
+    {
+     "ability": "WIS",
+     "modifier": 1
+    }
+   ],
+   "classLevelLimits": [
+    {
+     "class": "Fighter",
+     "levelLimit": 14
+    },
+    {
+     "class": "Ranger",
+     "levelLimit": 14
+    },
+    {
+     "class": "Paladin",
+     "levelLimit": 14
+    },
+    {
+     "class": "Mage",
+     "levelLimit": 14
+    },
+    {
+     "class": "Cleric",
+     "levelLimit": 12
+    },
+    {
+     "class": "Druid",
+     "levelLimit": 15
+    },
+    {
+     "class": "Thief",
+     "levelLimit": 15
+    },
+    {
+     "class": "Bard",
+     "levelLimit": 9
+    }
+   ],
+   "classCombinations": [
+    [
+     "Fighter",
+     "Cleric"
+    ],
+    [
+     "Fighter",
+     "Mage"
+    ],
+    [
+     "Fighter",
+     "Bard"
+    ],
+    [
+     "Ranger",
+     "Mage"
+    ],
+    [
+     "Ranger",
+     "Cleric"
+    ],
+    [
+     "Mage",
+     "Cleric"
+    ],
+    [
+     "Mage",
+     "Thief"
+    ],
+    [
+     "Mage",
+     "Bard"
+    ],
+    [
+     "Cleric",
+     "Bard"
+    ]
+   ],
+   "baseMovement": 12,
+   "spellResistance": "10% (non-wizards)",
+   "racialAbilities": "Infravision 60 ft. +1 to surprise checks. Half damage from heat and cold attacks. +2 to saving throws vs. charm, fear, emotion and domination effects. Non-wizards have 10% magic resistance. Any non-evil alignment.",
+   "singleClassBonus": 2
+  },
+  {
+   "id": "bariaur_male",
+   "name": "Bariaur (male)",
+   "minedId": "bariaur",
+   "label": "Bariaur",
+   "gender": "male",
+   "campaignSetting": "Planescape",
+   "sourceLabel": "The Planewalker's Handbook",
+   "ruleId": "pwh_ch00_racial_tables",
+   "kitForms": [
+    "bariaur"
+   ],
+   "abilityScoreRequirements": {
+    "STR": {
+     "min": 10,
+     "max": 18
+    },
+    "DEX": {
+     "min": 3,
+     "max": 18
+    },
+    "CON": {
+     "min": 11,
+     "max": 18
+    },
+    "INT": {
+     "min": 3,
+     "max": 18
+    },
+    "WIS": {
+     "min": 3,
+     "max": 17
+    },
+    "CHA": {
+     "min": 3,
+     "max": 18
+    }
+   },
+   "abilityScoreAdjustments": [
+    {
+     "ability": "STR",
+     "modifier": 1
+    },
+    {
+     "ability": "DEX",
+     "modifier": -1
+    },
+    {
+     "ability": "CON",
+     "modifier": 1
+    },
+    {
+     "ability": "WIS",
+     "modifier": -1
+    }
+   ],
+   "classLevelLimits": [
+    {
+     "class": "Fighter",
+     "levelLimit": 13
+    },
+    {
+     "class": "Ranger",
+     "levelLimit": 13
+    },
+    {
+     "class": "Paladin",
+     "levelLimit": 13
+    },
+    {
+     "class": "Cleric",
+     "levelLimit": 13
+    },
+    {
+     "class": "Druid",
+     "levelLimit": 13
+    }
+   ],
+   "classCombinations": [],
+   "baseMovement": 15,
+   "racialAbilities": "Infravision 60 ft., movement 15. Head butt with the horns for 1d8 (+ Strength bonus), tripled when charging at least 30 ft in a straight line (on a hit, save vs. breath weapon or take the same damage)."
+  },
+  {
+   "id": "bariaur_female",
+   "name": "Bariaur (female)",
+   "minedId": "bariaur",
+   "label": "Bariaur",
+   "gender": "female",
+   "campaignSetting": "Planescape",
+   "sourceLabel": "The Planewalker's Handbook",
+   "ruleId": "pwh_ch00_racial_tables",
+   "kitForms": [
+    "bariaur"
+   ],
+   "abilityScoreRequirements": {
+    "STR": {
+     "min": 3,
+     "max": 18
+    },
+    "DEX": {
+     "min": 3,
+     "max": 17
+    },
+    "CON": {
+     "min": 5,
+     "max": 18
+    },
+    "INT": {
+     "min": 9,
+     "max": 18
+    },
+    "WIS": {
+     "min": 11,
+     "max": 18
+    },
+    "CHA": {
+     "min": 3,
+     "max": 18
+    }
+   },
+   "abilityScoreAdjustments": [
+    {
+     "ability": "STR",
+     "modifier": -1
+    },
+    {
+     "ability": "DEX",
+     "modifier": -1
+    },
+    {
+     "ability": "INT",
+     "modifier": 1
+    },
+    {
+     "ability": "WIS",
+     "modifier": 1
+    }
+   ],
+   "classLevelLimits": [
+    {
+     "class": "Fighter",
+     "levelLimit": 13
+    },
+    {
+     "class": "Mage",
+     "levelLimit": 13
+    },
+    {
+     "class": "Cleric",
+     "levelLimit": 13
+    },
+    {
+     "class": "Druid",
+     "levelLimit": 13
+    }
+   ],
+   "classCombinations": [],
+   "baseMovement": 15,
+   "racialAbilities": "Infravision 60 ft., movement 15. +2 to surprise rolls and +3 to saving throws vs. spell. No horns. Can be fighters, priests or wizards."
+  },
+  {
+   "id": "genasi_air",
+   "name": "Genasi (air)",
+   "minedId": "air_genasi_aka_wind_dukes",
+   "label": "Genasi (air)",
+   "aliases": [
+    "Air Genasi",
+    "Air Genasi (aka Wind Dukes)"
+   ],
+   "campaignSetting": "Planescape",
+   "sourceLabel": "The Planewalker's Handbook",
+   "ruleId": "pwh_ch00_racial_tables",
+   "kitForms": [
+    "genasi"
+   ],
+   "abilityScoreRequirements": {
+    "STR": {
+     "min": 3,
+     "max": 18
+    },
+    "DEX": {
+     "min": 9,
+     "max": 18
+    },
+    "CON": {
+     "min": 3,
+     "max": 18
+    },
+    "INT": {
+     "min": 5,
+     "max": 18
+    },
+    "WIS": {
+     "min": 3,
+     "max": 18
+    },
+    "CHA": {
+     "min": 3,
+     "max": 18
+    }
+   },
+   "abilityScoreAdjustments": [
+    {
+     "ability": "DEX",
+     "modifier": 1
+    },
+    {
+     "ability": "INT",
+     "modifier": 1
+    },
+    {
+     "ability": "WIS",
+     "modifier": -1
+    },
+    {
+     "ability": "CHA",
+     "modifier": -1
+    }
+   ],
+   "classLevelLimits": [
+    {
+     "class": "Fighter",
+     "levelLimit": 10
+    },
+    {
+     "class": "Mage",
+     "levelLimit": 15
+    },
+    {
+     "class": "Cleric",
+     "levelLimit": 15
+    }
+   ],
+   "classCombinations": [
+    [
+     "Fighter",
+     "Cleric"
+    ],
+    [
+     "Fighter",
+     "Mage"
+    ]
+   ],
+   "baseMovement": 12,
+   "racialAbilities": "No need to breathe. Levitate once per day as a 5th-level wizard. +1 to saving throws vs. air-based magic per 5 levels. Air elementalists only, if specialist wizards; can't be druids. −2 reaction from other planar races."
+  },
+  {
+   "id": "genasi_earth",
+   "name": "Genasi (earth)",
+   "minedId": "earth_genasi_aka_stone_princes_or_stone_champions",
+   "label": "Genasi (earth)",
+   "aliases": [
+    "Earth Genasi",
+    "Earth Genasi (aka Stone Princes OR Stone Champions)"
+   ],
+   "campaignSetting": "Planescape",
+   "sourceLabel": "The Planewalker's Handbook",
+   "ruleId": "pwh_ch00_racial_tables",
+   "kitForms": [
+    "genasi"
+   ],
+   "abilityScoreRequirements": {
+    "STR": {
+     "min": 9,
+     "max": 18
+    },
+    "DEX": {
+     "min": 3,
+     "max": 18
+    },
+    "CON": {
+     "min": 9,
+     "max": 18
+    },
+    "INT": {
+     "min": 3,
+     "max": 18
+    },
+    "WIS": {
+     "min": 3,
+     "max": 18
+    },
+    "CHA": {
+     "min": 3,
+     "max": 18
+    }
+   },
+   "abilityScoreAdjustments": [
+    {
+     "ability": "STR",
+     "modifier": 1
+    },
+    {
+     "ability": "CON",
+     "modifier": 1
+    },
+    {
+     "ability": "WIS",
+     "modifier": -1
+    },
+    {
+     "ability": "CHA",
+     "modifier": -1
+    }
+   ],
+   "classLevelLimits": [
+    {
+     "class": "Fighter",
+     "levelLimit": 15
+    },
+    {
+     "class": "Paladin",
+     "levelLimit": 15
+    },
+    {
+     "class": "Mage",
+     "levelLimit": 15
+    },
+    {
+     "class": "Cleric",
+     "levelLimit": 13
+    }
+   ],
+   "classCombinations": [],
+   "baseMovement": 12,
+   "racialAbilities": "Natural AC 8. Innate knowledge of stone (as the appraising proficiency). Pass without trace once per day as a 5th-level priest. +1 to saving throws vs. earth-based magic per 5 levels. Can't be multiclassed or druids; earth elementalists only. Any non-chaotic alignment. −2 reaction from other planar races."
+  },
+  {
+   "id": "genasi_fire",
+   "name": "Genasi (fire)",
+   "minedId": "fire_genasi_aka_flame_lords",
+   "label": "Genasi (fire)",
+   "aliases": [
+    "Fire Genasi",
+    "Fire Genasi (aka Flame Lords)"
+   ],
+   "campaignSetting": "Planescape",
+   "sourceLabel": "The Planewalker's Handbook",
+   "ruleId": "pwh_ch00_racial_tables",
+   "kitForms": [
+    "genasi"
+   ],
+   "abilityScoreRequirements": {
+    "STR": {
+     "min": 3,
+     "max": 18
+    },
+    "DEX": {
+     "min": 5,
+     "max": 18
+    },
+    "CON": {
+     "min": 3,
+     "max": 18
+    },
+    "INT": {
+     "min": 5,
+     "max": 18
+    },
+    "WIS": {
+     "min": 3,
+     "max": 18
+    },
+    "CHA": {
+     "min": 3,
+     "max": 18
+    }
+   },
+   "abilityScoreAdjustments": [
+    {
+     "ability": "INT",
+     "modifier": 1
+    },
+    {
+     "ability": "CHA",
+     "modifier": -1
+    }
+   ],
+   "classLevelLimits": [
+    {
+     "class": "Fighter",
+     "levelLimit": 14
+    },
+    {
+     "class": "Mage",
+     "levelLimit": 16
+    }
+   ],
+   "classCombinations": [
+    [
+     "Fighter",
+     "Mage"
+    ]
+   ],
+   "baseMovement": 12,
+   "racialAbilities": "Infravision 60 ft. No damage from normal fire (magical fire still burns). Affect normal fires once per day as a 5th-level wizard. +1 to saving throws vs. fire-based magic per 5 levels. −2 reaction from other planar races."
+  },
+  {
+   "id": "genasi_water",
+   "name": "Genasi (water)",
+   "minedId": "water_genasi_aka_sea_kings",
+   "label": "Genasi (water)",
+   "aliases": [
+    "Water Genasi",
+    "Water Genasi (aka Sea Kings)"
+   ],
+   "campaignSetting": "Planescape",
+   "sourceLabel": "The Planewalker's Handbook",
+   "ruleId": "pwh_ch00_racial_tables",
+   "kitForms": [
+    "genasi"
+   ],
+   "abilityScoreRequirements": {
+    "STR": {
+     "min": 5,
+     "max": 18
+    },
+    "DEX": {
+     "min": 5,
+     "max": 18
+    },
+    "CON": {
+     "min": 5,
+     "max": 18
+    },
+    "INT": {
+     "min": 5,
+     "max": 18
+    },
+    "WIS": {
+     "min": 3,
+     "max": 18
+    },
+    "CHA": {
+     "min": 3,
+     "max": 18
+    }
+   },
+   "abilityScoreAdjustments": [
+    {
+     "ability": "CON",
+     "modifier": 1
+    },
+    {
+     "ability": "CHA",
+     "modifier": -1
+    }
+   ],
+   "classLevelLimits": [
+    {
+     "class": "Fighter",
+     "levelLimit": 12
+    },
+    {
+     "class": "Mage",
+     "levelLimit": 15
+    },
+    {
+     "class": "Cleric",
+     "levelLimit": 14
+    },
+    {
+     "class": "Thief",
+     "levelLimit": 15
+    },
+    {
+     "class": "Bard",
+     "levelLimit": 12
+    }
+   ],
+   "classCombinations": [
+    [
+     "Fighter",
+     "Cleric"
+    ],
+    [
+     "Fighter",
+     "Thief"
+    ]
+   ],
+   "baseMovement": 12,
+   "racialAbilities": "Amphibious (breathes water as easily as air), swims at 15. Create water once per day as a 5th-level caster. +1 to saving throws vs. water-based magic per 5 levels. Water elementalists only; can't be druids. Any neutral alignment. −2 reaction from other planar races."
+  },
+  {
+   "id": "githzerai",
+   "name": "Githzerai",
+   "minedId": "githzerai",
+   "campaignSetting": "Planescape",
+   "sourceLabel": "The Planewalker's Handbook",
+   "ruleId": "pwh_ch00_racial_tables",
+   "kitForms": [
+    "githzerai"
+   ],
+   "abilityScoreRequirements": {
+    "STR": {
+     "min": 3,
+     "max": 18
+    },
+    "DEX": {
+     "min": 7,
+     "max": 18
+    },
+    "CON": {
+     "min": 3,
+     "max": 18
+    },
+    "INT": {
+     "min": 9,
+     "max": 18
+    },
+    "WIS": {
+     "min": 3,
+     "max": 18
+    },
+    "CHA": {
+     "min": 3,
+     "max": 18
+    }
+   },
+   "abilityScoreAdjustments": [
+    {
+     "ability": "STR",
+     "modifier": -1
+    },
+    {
+     "ability": "DEX",
+     "modifier": 1
+    },
+    {
+     "ability": "INT",
+     "modifier": 1
+    },
+    {
+     "ability": "WIS",
+     "modifier": -1
+    }
+   ],
+   "classLevelLimits": [
+    {
+     "class": "Fighter",
+     "levelLimit": 9
+    },
+    {
+     "class": "Mage",
+     "levelLimit": 12
+    },
+    {
+     "class": "Thief",
+     "levelLimit": 15
+    }
+   ],
+   "classCombinations": [
+    [
+     "Fighter",
+     "Mage"
+    ]
+   ],
+   "baseMovement": 12,
+   "spellResistance": "5% per level, max. 95% (warriors & thieves)",
+   "racialAbilities": "Infravision 60 ft. Warriors and thieves have magic resistance of 5% per level (max. 95%), which also affects the magical items they use (an item that fails is useless to them forever); wizards give it up to cast spells. Any non-lawful alignment."
+  },
+  {
+   "id": "modron",
+   "name": "Modron",
+   "minedId": "rogue_modron",
+   "aliases": [
+    "Rogue Modron"
+   ],
+   "campaignSetting": "Planescape",
+   "sourceLabel": "The Planewalker's Handbook",
+   "ruleId": "pwh_ch00_racial_tables",
+   "kitForms": [
+    "modron",
+    "modrons"
+   ],
+   "abilityScoreRequirements": {
+    "STR": {
+     "min": 9,
+     "max": 18
+    },
+    "DEX": {
+     "min": 3,
+     "max": 18
+    },
+    "CON": {
+     "min": 7,
+     "max": 18
+    },
+    "INT": {
+     "min": 3,
+     "max": 18
+    },
+    "WIS": {
+     "min": 3,
+     "max": 18
+    },
+    "CHA": {
+     "min": 3,
+     "max": 17
+    }
+   },
+   "abilityScoreAdjustments": [
+    {
+     "ability": "DEX",
+     "modifier": -1
+    },
+    {
+     "ability": "CON",
+     "modifier": 1
+    },
+    {
+     "ability": "INT",
+     "modifier": 1
+    },
+    {
+     "ability": "CHA",
+     "modifier": -1
+    }
+   ],
+   "classLevelLimits": [
+    {
+     "class": "Fighter",
+     "levelLimit": 15
+    },
+    {
+     "class": "Mage",
+     "levelLimit": 12
+    }
+   ],
+   "classCombinations": [],
+   "baseMovement": 15,
+   "spellResistance": "30% vs. illusions & mind-affecting",
+   "racialAbilities": "Natural AC 8, movement 15. 30% resistance to illusions, energy drain, charm, sleep, fear, domination and similar mind-affecting spells. +1 to saving throws vs. fire, cold and acid. When surprised, stays surprised twice as long. Can't be multiclassed."
+  },
+  {
+   "id": "tiefling",
+   "name": "Tiefling",
+   "minedId": "tiefling",
+   "campaignSetting": "Planescape",
+   "sourceLabel": "The Planewalker's Handbook",
+   "ruleId": "pwh_ch00_racial_tables",
+   "kitForms": [
+    "tiefling",
+    "tieflings"
+   ],
+   "abilityScoreRequirements": {
+    "STR": {
+     "min": 3,
+     "max": 18
+    },
+    "DEX": {
+     "min": 7,
+     "max": 18
+    },
+    "CON": {
+     "min": 3,
+     "max": 18
+    },
+    "INT": {
+     "min": 9,
+     "max": 18
+    },
+    "WIS": {
+     "min": 3,
+     "max": 18
+    },
+    "CHA": {
+     "min": 9,
+     "max": 18
+    }
+   },
+   "abilityScoreAdjustments": [
+    {
+     "ability": "STR",
+     "modifier": -1
+    },
+    {
+     "ability": "INT",
+     "modifier": 1
+    },
+    {
+     "ability": "WIS",
+     "modifier": -1
+    },
+    {
+     "ability": "CHA",
+     "modifier": 1
+    }
+   ],
+   "classLevelLimits": [
+    {
+     "class": "Fighter",
+     "levelLimit": 12
+    },
+    {
+     "class": "Mage",
+     "levelLimit": 14
+    },
+    {
+     "class": "Cleric",
+     "levelLimit": 10
+    },
+    {
+     "class": "Thief",
+     "levelLimit": 15
+    }
+   ],
+   "classCombinations": [
+    [
+     "Fighter",
+     "Mage"
+    ],
+    [
+     "Fighter",
+     "Cleric"
+    ],
+    [
+     "Fighter",
+     "Thief"
+    ],
+    [
+     "Mage",
+     "Thief"
+    ],
+    [
+     "Cleric",
+     "Thief"
+    ]
+   ],
+   "baseMovement": 12,
+   "racialAbilities": "Infravision 60 ft. Darkness 15-ft. radius once per day. Half damage from cold; +2 to saving throws vs. fire, electricity and poison (or roll five times on the Tiefling Abilities table instead). Any alignment except lawful good.",
+   "singleClassBonus": 2
+  },
+  {
+   "id": "half_vistani",
+   "name": "Half-Vistani",
+   "minedId": null,
+   "campaignSetting": "Ravenloft",
+   "sourceLabel": "Domains of Dread",
+   "ruleId": "dod_ch00_half_vistani",
+   "kitForms": [
+    "vistani"
+   ],
+   "abilityScoreRequirements": null,
+   "abilityScoreAdjustments": [
+    {
+     "ability": "INT",
+     "modifier": 1
+    },
+    {
+     "ability": "WIS",
+     "modifier": 1
+    },
+    {
+     "ability": "CHA",
+     "modifier": -2
+    }
+   ],
+   "noLevelLimit": true,
+   "classLevelLimits": [],
+   "classCombinations": [],
+   "baseMovement": 12,
+   "racialAbilities": "Can identify plants, animals and safe water, as a druid does. Can start a fire in 1d4 rounds given fuel. Can read tralaks (Vistani glyphs) with an Intelligence check. On the 3 nights of the full moon (lunatio): cannot heal or memorize spells, −2 to all saving throws, and a madness check each night."
+  }
+ ],
+ "races": {
+  "athasian_aarakocra": {
+   "campaignSetting": "Dark Sun",
+   "playable": true
+  },
+  "athasian_dwarf": {
+   "campaignSetting": "Dark Sun",
+   "playable": true,
+   "baseRace": "dwarf"
+  },
+  "athasian_elf": {
+   "campaignSetting": "Dark Sun",
+   "playable": true,
+   "baseRace": "elf"
+  },
+  "athasian_half_elf": {
+   "campaignSetting": "Dark Sun",
+   "playable": true,
+   "baseRace": "half_elf"
+  },
+  "athasian_halfling": {
+   "campaignSetting": "Dark Sun",
+   "playable": true,
+   "baseRace": "halfling"
+  },
+  "athasian_human": {
+   "campaignSetting": "Dark Sun",
+   "playable": true,
+   "baseRace": "human",
+   "noLevelLimit": true
+  },
+  "half_giant": {
+   "campaignSetting": "Dark Sun",
+   "playable": true
+  },
+  "mul_half_dwarf_human": {
+   "campaignSetting": "Dark Sun",
+   "playable": true,
+   "name": "Mul"
+  },
+  "pterran": {
+   "campaignSetting": "Dark Sun",
+   "playable": true
+  },
+  "thri_kreen": {
+   "campaignSetting": "Dark Sun",
+   "playable": true
+  },
+  "drow": {
+   "campaignSetting": null,
+   "playable": true,
+   "baseRace": "elf",
+   "noInherit": [
+    "spellResistance"
+   ],
+   "note": "Drow tem resistência a magia própria (50% + 2% por nível, só no texto); a de sono/charme do elfo padrão não é gravada."
+  },
+  "grey_elf": {
+   "campaignSetting": null,
+   "playable": true,
+   "baseRace": "elf"
+  },
+  "high_elf": {
+   "campaignSetting": null,
+   "playable": true,
+   "baseRace": "elf"
+  },
+  "sylvan_elf": {
+   "campaignSetting": null,
+   "playable": true,
+   "baseRace": "elf"
+  },
+  "aquatic_elf": {
+   "campaignSetting": null,
+   "playable": true,
+   "baseRace": "elf"
+  },
+  "duergar": {
+   "campaignSetting": null,
+   "playable": true,
+   "baseRace": "dwarf"
+  },
+  "deep_dwarf": {
+   "campaignSetting": null,
+   "playable": true,
+   "baseRace": "dwarf"
+  },
+  "hill_dwarf": {
+   "campaignSetting": null,
+   "playable": true,
+   "baseRace": "dwarf"
+  },
+  "mountain_dwarf": {
+   "campaignSetting": null,
+   "playable": true,
+   "baseRace": "dwarf"
+  },
+  "sundered_dwarf": {
+   "campaignSetting": null,
+   "playable": true,
+   "baseRace": "dwarf"
+  },
+  "deep_gnome_svirfneblin": {
+   "campaignSetting": null,
+   "playable": true,
+   "baseRace": "gnome",
+   "name": "Svirfneblin"
+  },
+  "forest_gnome": {
+   "campaignSetting": null,
+   "playable": true,
+   "baseRace": "gnome"
+  },
+  "rock_gnome": {
+   "campaignSetting": null,
+   "playable": true,
+   "baseRace": "gnome"
+  },
+  "hairfoot_halfling": {
+   "campaignSetting": null,
+   "playable": true,
+   "baseRace": "halfling"
+  },
+  "stout_halfling": {
+   "campaignSetting": null,
+   "playable": true,
+   "baseRace": "halfling"
+  },
+  "tallfellow_halfling": {
+   "campaignSetting": null,
+   "playable": true,
+   "baseRace": "halfling"
+  },
+  "furchin_polar_halflings": {
+   "campaignSetting": null,
+   "playable": true,
+   "baseRace": "halfling",
+   "name": "Furchin"
+  },
+  "hill_dwarf_mountain_dwarves": {
+   "campaignSetting": null,
+   "playable": false,
+   "hiddenReason": "duplicate",
+   "duplicateOf": "hill_dwarf",
+   "baseRace": "dwarf",
+   "name": "Hill Dwarf (duplicate entry)",
+   "note": "Mesmo conteúdo de Hill Dwarf; a página minerada se chama 'Mountain Dwarves', mas Mountain Dwarf já existe em mountain_dwarf."
+  },
+  "athasian_halfling_the_complete_book_of_gnomes_halflings": {
+   "campaignSetting": "Dark Sun",
+   "playable": false,
+   "hiddenReason": "duplicate",
+   "duplicateOf": "athasian_halfling",
+   "baseRace": "halfling",
+   "name": "Athasian Halfling (CBGH)",
+   "note": "Versão do Complete Book of Gnomes & Halflings; vale a do Dark Sun Campaign Setting (athasian_halfling)."
+  },
+  "aquatic_elf_sea_of_fallen_stars": {
+   "campaignSetting": "Forgotten Realms",
+   "playable": true,
+   "baseRace": "elf",
+   "name": "Aquatic Elf (Sea of Fallen Stars)",
+   "note": "Outro Aquatic Elf, de Sea of Fallen Stars (Forgotten Realms); o do Complete Book of Elves é aquatic_elf."
+  },
+  "aquatic_half_elf": {
+   "campaignSetting": "Forgotten Realms",
+   "playable": true,
+   "baseRace": "half_elf"
+  },
+  "triton": {
+   "campaignSetting": "Forgotten Realms",
+   "playable": true
+  },
+  "shalarin": {
+   "campaignSetting": "Forgotten Realms",
+   "playable": true,
+   "noLevelLimit": true
+  },
+  "noble_malenti": {
+   "campaignSetting": "Forgotten Realms",
+   "playable": true
+  },
+  "half_greyhawk_dragon": {
+   "campaignSetting": "Greyhawk",
+   "playable": true
+  },
+  "nathri": {
+   "campaignSetting": "Planescape",
+   "playable": true,
+   "abilityScoreRequirements": null,
+   "classLevelLimits": [
+    {
+     "class": "Fighter",
+     "levelLimit": 10
+    },
+    {
+     "class": "Thief",
+     "levelLimit": 10
+    },
+    {
+     "class": "Ranger",
+     "levelLimit": 10
+    }
+   ],
+   "note": "Sem tabela estruturada na mineração; limites lidos do texto '10 Fighter, 10 Thief, 10 Ranger (rare)'."
+  },
+  "nethling": {
+   "campaignSetting": "Planescape",
+   "playable": true
+  },
+  "githyanki_outcast": {
+   "campaignSetting": "Planescape",
+   "playable": false,
+   "hiddenReason": "undecided",
+   "note": "Só tem limites para Warlock, Githwarriors e gish (classes que o app não tem): todas as classes do app dariam aviso."
+  },
+  "amethyst_dragon": {
+   "campaignSetting": "Council of Wyrms",
+   "playable": true
+  },
+  "black_dragon": {
+   "campaignSetting": "Council of Wyrms",
+   "playable": true
+  },
+  "blue_dragon": {
+   "campaignSetting": "Council of Wyrms",
+   "playable": true
+  },
+  "brass_dragon": {
+   "campaignSetting": "Council of Wyrms",
+   "playable": true
+  },
+  "bronze_dragon": {
+   "campaignSetting": "Council of Wyrms",
+   "playable": true
+  },
+  "cloud_dragon": {
+   "campaignSetting": "Council of Wyrms",
+   "playable": true
+  },
+  "copper_dragon": {
+   "campaignSetting": "Council of Wyrms",
+   "playable": true
+  },
+  "crystal_dragon": {
+   "campaignSetting": "Council of Wyrms",
+   "playable": true
+  },
+  "deep_dragon": {
+   "campaignSetting": "Council of Wyrms",
+   "playable": true
+  },
+  "emerald_dragon": {
+   "campaignSetting": "Council of Wyrms",
+   "playable": true
+  },
+  "gold_dragon": {
+   "campaignSetting": "Council of Wyrms",
+   "playable": true
+  },
+  "green_dragon": {
+   "campaignSetting": "Council of Wyrms",
+   "playable": true
+  },
+  "mercury_dragon": {
+   "campaignSetting": "Council of Wyrms",
+   "playable": true
+  },
+  "mist_dragon": {
+   "campaignSetting": "Council of Wyrms",
+   "playable": true
+  },
+  "red_dragon": {
+   "campaignSetting": "Council of Wyrms",
+   "playable": true
+  },
+  "sapphire_dragon": {
+   "campaignSetting": "Council of Wyrms",
+   "playable": true
+  },
+  "shadow_dragon": {
+   "campaignSetting": "Council of Wyrms",
+   "playable": true
+  },
+  "silver_dragon": {
+   "campaignSetting": "Council of Wyrms",
+   "playable": true
+  },
+  "steel_dragon": {
+   "campaignSetting": "Council of Wyrms",
+   "playable": true
+  },
+  "topaz_dragon": {
+   "campaignSetting": "Council of Wyrms",
+   "playable": true
+  },
+  "white_dragon": {
+   "campaignSetting": "Council of Wyrms",
+   "playable": true
+  },
+  "yellow_dragon": {
+   "campaignSetting": "Council of Wyrms",
+   "playable": true
+  },
+  "dracon": {
+   "campaignSetting": "Spelljammer",
+   "playable": true
+  },
+  "giff": {
+   "campaignSetting": "Spelljammer",
+   "playable": true
+  },
+  "gromman": {
+   "campaignSetting": "Spelljammer",
+   "playable": true
+  },
+  "hadozee": {
+   "campaignSetting": "Spelljammer",
+   "playable": true
+  },
+  "hurwaet": {
+   "campaignSetting": "Spelljammer",
+   "playable": true
+  },
+  "lizard_man_spelljammer": {
+   "campaignSetting": "Spelljammer",
+   "playable": true
+  },
+  "rastipede": {
+   "campaignSetting": "Spelljammer",
+   "playable": true
+  },
+  "scro": {
+   "campaignSetting": "Spelljammer",
+   "playable": true
+  },
+  "xixchil": {
+   "campaignSetting": "Spelljammer",
+   "playable": true
+  },
+  "kender": {
+   "campaignSetting": "Dragonlance",
+   "playable": false,
+   "hiddenReason": "setting-not-in-forge",
+   "baseRace": "halfling"
+  },
+  "kender_mc": {
+   "campaignSetting": "Dragonlance",
+   "playable": false,
+   "hiddenReason": "setting-not-in-forge",
+   "baseRace": "halfling",
+   "name": "Kender (Monstrous Compendium)"
+  },
+  "gully_dwarf": {
+   "campaignSetting": "Dragonlance",
+   "playable": false,
+   "hiddenReason": "setting-not-in-forge",
+   "baseRace": "dwarf"
+  },
+  "tinker_gnome_minoi": {
+   "campaignSetting": "Dragonlance",
+   "playable": false,
+   "hiddenReason": "setting-not-in-forge",
+   "baseRace": "gnome",
+   "name": "Tinker Gnome"
+  },
+  "half_elf_krynn": {
+   "campaignSetting": "Dragonlance",
+   "playable": false,
+   "hiddenReason": "setting-not-in-forge",
+   "baseRace": "half_elf"
+  },
+  "krynn_minotaur": {
+   "campaignSetting": "Dragonlance",
+   "playable": false,
+   "hiddenReason": "setting-not-in-forge"
+  },
+  "bakali_dragonlance_lizard_man": {
+   "campaignSetting": "Dragonlance",
+   "playable": false,
+   "hiddenReason": "setting-not-in-forge",
+   "name": "Bakali"
+  },
+  "silver_half_dragon_krynn": {
+   "campaignSetting": "Dragonlance",
+   "playable": false,
+   "hiddenReason": "setting-not-in-forge"
+  },
+  "half_chiang_lung": {
+   "campaignSetting": "Kara-Tur",
+   "playable": false,
+   "hiddenReason": "setting-not-in-forge"
+  },
+  "half_shen_lung": {
+   "campaignSetting": "Kara-Tur",
+   "playable": false,
+   "hiddenReason": "setting-not-in-forge"
+  },
+  "hengeyokai": {
+   "campaignSetting": "Kara-Tur",
+   "playable": false,
+   "hiddenReason": "setting-not-in-forge"
+  },
+  "aranea": {
+   "campaignSetting": "Savage Coast",
+   "playable": false,
+   "hiddenReason": "setting-not-in-forge"
+  },
+  "lupin": {
+   "campaignSetting": "Savage Coast",
+   "playable": false,
+   "hiddenReason": "setting-not-in-forge"
+  },
+  "rakasta": {
+   "campaignSetting": "Savage Coast",
+   "playable": false,
+   "hiddenReason": "setting-not-in-forge"
+  },
+  "tortle": {
+   "campaignSetting": "Savage Coast",
+   "playable": false,
+   "hiddenReason": "setting-not-in-forge"
+  },
+  "fomorian": {
+   "campaignSetting": "Celts",
+   "playable": false,
+   "hiddenReason": "setting-not-in-forge"
+  },
+  "the_sidhe": {
+   "campaignSetting": "Celts",
+   "playable": false,
+   "hiddenReason": "setting-not-in-forge"
+  },
+  "trollborn": {
+   "campaignSetting": "Vikings",
+   "playable": false,
+   "hiddenReason": "setting-not-in-forge"
+  },
+  "avariel": {
+   "campaignSetting": null,
+   "playable": false,
+   "hiddenReason": "undecided",
+   "baseRace": "elf"
+  },
+  "snow_elf": {
+   "campaignSetting": null,
+   "playable": false,
+   "hiddenReason": "undecided",
+   "baseRace": "elf"
+  },
+  "bronze_half_dragon": {
+   "campaignSetting": null,
+   "playable": false,
+   "hiddenReason": "undecided"
+  },
+  "gold_half_dragon": {
+   "campaignSetting": null,
+   "playable": false,
+   "hiddenReason": "undecided"
+  },
+  "iron_half_dragon": {
+   "campaignSetting": null,
+   "playable": false,
+   "hiddenReason": "undecided"
+  },
+  "silver_half_dragon": {
+   "campaignSetting": null,
+   "playable": false,
+   "hiddenReason": "undecided"
+  },
+  "steel_half_dragon": {
+   "campaignSetting": null,
+   "playable": false,
+   "hiddenReason": "undecided"
+  },
+  "drow_dragon": {
+   "campaignSetting": null,
+   "playable": false,
+   "hiddenReason": "undecided"
+  },
+  "crabman": {
+   "campaignSetting": null,
+   "playable": false,
+   "hiddenReason": "undecided"
+  },
+  "gibberling": {
+   "campaignSetting": null,
+   "playable": false,
+   "hiddenReason": "undecided"
+  },
+  "grimlock": {
+   "campaignSetting": null,
+   "playable": false,
+   "hiddenReason": "undecided"
+  },
+  "koalinth": {
+   "campaignSetting": null,
+   "playable": false,
+   "hiddenReason": "undecided"
+  },
+  "liminal": {
+   "campaignSetting": null,
+   "playable": false,
+   "hiddenReason": "undecided"
+  },
+  "locathah": {
+   "campaignSetting": null,
+   "playable": false,
+   "hiddenReason": "undecided"
+  },
+  "malenti": {
+   "campaignSetting": null,
+   "playable": false,
+   "hiddenReason": "undecided"
+  },
+  "merfolk": {
+   "campaignSetting": null,
+   "playable": false,
+   "hiddenReason": "undecided"
+  },
+  "mold_man_vegepygmy": {
+   "campaignSetting": null,
+   "playable": false,
+   "hiddenReason": "undecided"
+  },
+  "pahari": {
+   "campaignSetting": null,
+   "playable": false,
+   "hiddenReason": "undecided"
+  },
+  "quaggoth": {
+   "campaignSetting": null,
+   "playable": false,
+   "hiddenReason": "undecided"
+  },
+  "selkie": {
+   "campaignSetting": null,
+   "playable": false,
+   "hiddenReason": "undecided"
+  },
+  "su_folk": {
+   "campaignSetting": null,
+   "playable": false,
+   "hiddenReason": "undecided"
+  },
+  "troglodyte": {
+   "campaignSetting": null,
+   "playable": false,
+   "hiddenReason": "undecided"
+  },
+  "vodyanoi": {
+   "campaignSetting": null,
+   "playable": false,
+   "hiddenReason": "undecided"
+  },
+  "yeti": {
+   "campaignSetting": null,
+   "playable": false,
+   "hiddenReason": "undecided"
+  },
+  "dryad": {
+   "campaignSetting": null,
+   "playable": false,
+   "hiddenReason": "undecided"
+  },
+  "aarakocra": {
+   "campaignSetting": null,
+   "playable": false,
+   "hiddenReason": "humanoid-not-playable"
+  },
+  "alaghi": {
+   "campaignSetting": null,
+   "playable": false,
+   "hiddenReason": "humanoid-not-playable"
+  },
+  "beastman": {
+   "campaignSetting": null,
+   "playable": false,
+   "hiddenReason": "humanoid-not-playable"
+  },
+  "bladeback_saurial": {
+   "campaignSetting": null,
+   "playable": false,
+   "hiddenReason": "humanoid-not-playable"
+  },
+  "bugbear": {
+   "campaignSetting": null,
+   "playable": false,
+   "hiddenReason": "humanoid-not-playable"
+  },
+  "bullywug": {
+   "campaignSetting": null,
+   "playable": false,
+   "hiddenReason": "humanoid-not-playable"
+  },
+  "centaur": {
+   "campaignSetting": null,
+   "playable": false,
+   "hiddenReason": "humanoid-not-playable"
+  },
+  "finback_saurial": {
+   "campaignSetting": null,
+   "playable": false,
+   "hiddenReason": "humanoid-not-playable"
+  },
+  "firbolg": {
+   "campaignSetting": null,
+   "playable": false,
+   "hiddenReason": "humanoid-not-playable"
+  },
+  "flind": {
+   "campaignSetting": null,
+   "playable": false,
+   "hiddenReason": "humanoid-not-playable"
+  },
+  "flyer_saurial": {
+   "campaignSetting": null,
+   "playable": false,
+   "hiddenReason": "humanoid-not-playable"
+  },
+  "fremlin": {
+   "campaignSetting": null,
+   "playable": false,
+   "hiddenReason": "humanoid-not-playable"
+  },
+  "gnoll": {
+   "campaignSetting": null,
+   "playable": false,
+   "hiddenReason": "humanoid-not-playable"
+  },
+  "goblin": {
+   "campaignSetting": null,
+   "playable": false,
+   "hiddenReason": "humanoid-not-playable"
+  },
+  "half_ogre": {
+   "campaignSetting": null,
+   "playable": false,
+   "hiddenReason": "humanoid-not-playable"
+  },
+  "half_orc": {
+   "campaignSetting": null,
+   "playable": false,
+   "hiddenReason": "humanoid-not-playable"
+  },
+  "hobgoblin": {
+   "campaignSetting": null,
+   "playable": false,
+   "hiddenReason": "humanoid-not-playable"
+  },
+  "hornhead_saurial": {
+   "campaignSetting": null,
+   "playable": false,
+   "hiddenReason": "humanoid-not-playable"
+  },
+  "kobold": {
+   "campaignSetting": null,
+   "playable": false,
+   "hiddenReason": "humanoid-not-playable"
+  },
+  "lizard_man_standard": {
+   "campaignSetting": null,
+   "playable": false,
+   "hiddenReason": "humanoid-not-playable"
+  },
+  "mongrelman": {
+   "campaignSetting": null,
+   "playable": false,
+   "hiddenReason": "humanoid-not-playable"
+  },
+  "ogre": {
+   "campaignSetting": null,
+   "playable": false,
+   "hiddenReason": "humanoid-not-playable"
+  },
+  "ogre_mage": {
+   "campaignSetting": null,
+   "playable": false,
+   "hiddenReason": "humanoid-not-playable"
+  },
+  "orc": {
+   "campaignSetting": null,
+   "playable": false,
+   "hiddenReason": "humanoid-not-playable"
+  },
+  "pixie": {
+   "campaignSetting": null,
+   "playable": false,
+   "hiddenReason": "humanoid-not-playable"
+  },
+  "satyr": {
+   "campaignSetting": null,
+   "playable": false,
+   "hiddenReason": "humanoid-not-playable"
+  },
+  "standard_minotaur": {
+   "campaignSetting": null,
+   "playable": false,
+   "hiddenReason": "humanoid-not-playable"
+  },
+  "swanmay": {
+   "campaignSetting": null,
+   "playable": false,
+   "hiddenReason": "humanoid-not-playable"
+  },
+  "voadkyn": {
+   "campaignSetting": null,
+   "playable": false,
+   "hiddenReason": "humanoid-not-playable"
+  },
+  "wemic": {
+   "campaignSetting": null,
+   "playable": false,
+   "hiddenReason": "humanoid-not-playable"
+  }
+ }
+}
