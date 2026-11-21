@@ -190,5 +190,11 @@
   "bonus": 2,
   "perLevels": 2,
   "notes": "Six slots at creation (two extra) plus Intelligence bonus; one slot every two levels instead of three"
+ },
+ "clansdwarf": {
+  "initial": null,
+  "bonus": 2,
+  "perLevels": null,
+  "notes": "Two craft proficiency slots, both on the same craft"
  }
 }
