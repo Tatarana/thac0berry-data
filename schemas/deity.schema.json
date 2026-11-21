@@ -121,6 +121,18 @@
           "string",
           "null"
         ]
+      },
+      "pantheon": {
+        "type": "string",
+        "description": "Panteão de origem (Faerûnian, Dragonlance, Greek, Norse, Elven, Orcish...). Só a web usa; o Swift ignora."
+      },
+      "forgeSelectable": {
+        "type": "boolean",
+        "description": "Se o Forge pode oferecer o deus. Ausente = true. false = só compêndio (panteões históricos e deuses de humanoides/monstros)."
+      },
+      "race": {
+        "type": "string",
+        "description": "Raça-base (dwarf, elf, gnome, halfling, half_elf; ids de races.json) dos deuses de semi-humanos, para destacá-los. Ausente = deus sem raça."
       }
     }
   }

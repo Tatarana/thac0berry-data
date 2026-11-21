@@ -14,7 +14,7 @@ O CI (`.github/workflows/validate.yml`) roda isso a cada push.
 | `weapons.json` | `weapon.schema.json` | `Models/Weapon.swift` |
 | `armor.json` | `armor.schema.json` | `Models/ArmorPiece.swift` |
 | `mundane_items.json` | `mundane-item.schema.json` | `Models/MundaneItem.swift` |
-| `deities.json` | `deity.schema.json` | `Models/Deity.swift` |
+| `deities.json` | `deity.schema.json` | `Models/Deity.swift` (campos `pantheon`, `forgeSelectable` e `race` só a web lê; o Swift ignora; gerado em parte por `scripts/build_deities.py` + `scripts/deity_curation.json`) |
 | `proficiencies.json` | `proficiency.schema.json` | `Models/Proficiency.swift` |
 | `kits.json` | `kit.schema.json` | `Models/Kit.swift` |
 | `magic_*.json` | `magic-item.schema.json` | `Models/MagicItem.swift` |
