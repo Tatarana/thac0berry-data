@@ -21,7 +21,7 @@ schemas/               JSON Schema de cada arquivo + README com o mapeamento
 scripts/
   validate_schemas.py  valida data/ contra schemas/
   build_races.py       gera data/races.json e docs/racas-divergencias-2026-11.md (mineração + race_curation.json)
-  build_deities.py     acrescenta ao data/deities.json as divindades de LL, MoMy e Dragon (386 no total) e gera docs/divindades-2026-11.md (mineração + deity_curation.json)
+  build_deities.py     acrescenta ao data/deities.json as divindades de LL, MoMy e Dragon (386 divindades) e os 48 heróis mortais de LL e MoMy (`kind: "hero"`; 434 registros no total) e gera docs/divindades-2026-11.md (mineração + deity_curation.json)
   add_mined_rulebooks.py      regras de CBE, CWH, CBN e TOM (vêm de ../thac0berry-data-mining)
   add_elf_and_misc_kits.py    30 kits curados à mão (CBE e livros menores)
   add_dragon_magazine_kits.py 119 kits da Dragon Magazine

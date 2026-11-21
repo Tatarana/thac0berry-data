@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Expande data/deities.json (101 -> ~380) e gera docs/divindades-2026-11.md.
+"""Expande data/deities.json (101 -> 386 divindades + heróis mortais) e gera docs/divindades-2026-11.md.
 
 Por quê (2026-11-20): o compêndio só tinha Faiths & Avatars, Powers & Pantheons e os deuses
 de Krynn. Agora entram as divindades do Legends & Lore (LL), do Monster Mythology (MoMy) e
@@ -16,6 +16,11 @@ Regras:
 - Id novo = slug do nome; se já existe (outro deus com o mesmo nome em outro panteão, ex. Tyr
   nórdico x Tyr dos Reinos), vira `<id>_<panteão>`; os ids existentes nunca mudam.
 - Página minerada sem entrada na curadoria (fonte de panteão nova) faz o script parar.
+- Heróis mortais (2026-11): as páginas do LL e do MoMy com `kind: "hero"` na mineração entram DEPOIS de
+  todas as divindades (os ids e a ordem das 386 não mudam) com `kind: "hero"` (campo opcional; ausente =
+  divindade), `rank` "Hero", `forgeSelectable: false` sempre (decisão do usuário: só compêndio, nunca o
+  Forge), `pantheon` pela mesma curadoria (listedPantheon/capítulo), sem `race` e sem exceções por deus.
+  Sem portfolio (`""`); as classes vão em `avatarClassLevels` e a ficha em `avatarDescription`.
 - Texto: títulos de seção viram linha simples (o app mostra o texto em parágrafos, não
   renderiza markdown de título); tabelas ficam em markdown (o app as desenha).
 
@@ -55,6 +60,10 @@ def plain_headings(text):
     return re.sub(r"^#{2,4}[ \t]+(.*)$", r"\1", text, flags=re.MULTILINE)
 
 
+def is_hero(rec):
+    return rec.get("kind") == "hero"
+
+
 def pick_pantheon(rec, curation):
     table = curation["pantheons"][rec["bookCode"]]
     key = rec["listedPantheon"] if rec["listedPantheon"] in table else rec["chapter"]
@@ -62,7 +71,10 @@ def pick_pantheon(rec, curation):
         raise SystemExit(f"{rec['wikiPageTitle']}: fonte de panteão sem curadoria ({rec['listedPantheon']!r} / {rec['chapter']!r})")
     meta = dict(table[key])
     meta["source"] = key
-    over = curation["overrides"].get(rec["id"])
+    over = None if is_hero(rec) else curation["overrides"].get(rec["id"])
+    if is_hero(rec):
+        meta.pop("race", None)
+        meta["forgeSelectable"] = False
     if over:
         meta.update({k: v for k, v in over.items() if k != "why"})
         if "race" not in over:
@@ -94,12 +106,15 @@ def build_record(rec, meta, new_id):
         "avatarDescription": (rec["avatar"] or {}).get("description"),
         "briefSummary": brief,
         "fullText": plain_headings(rec["description"]["fullText"]),
-        "categories": ["Dragon Magazine Gods"] if rec["bookCode"] == "Dragon" else [f"{meta['pantheon']} Gods"],
+        "categories": ["Dragon Magazine Gods"] if rec["bookCode"] == "Dragon" else
+                      [f"{meta['pantheon']} Heroes" if is_hero(rec) else f"{meta['pantheon']} Gods"],
         "pantheon": meta["pantheon"],
         "forgeSelectable": meta["forgeSelectable"],
     }
     if "race" in meta:
         out["race"] = meta["race"]
+    if is_hero(rec):
+        out["kind"] = "hero"
     return out
 
 
@@ -131,16 +146,22 @@ def main():
         by_name[d["name"].lower()].append(d)
     new, collisions, titles = [], [], set()
     stats = {"mined": {}, "meta": {}}
+    batches = []  # (código, [(rec, meta)]); heróis só depois de todas as divindades
+    heroes = []
     for code, fname in NEW_SOURCES:
         recs = load(os.path.join(mining, fname))
         stats["mined"][code] = len(recs)
-        built = []
+        built, built_heroes = [], []
         for rec in recs:
             if rec["wikiPageTitle"] in titles:
                 raise SystemExit(f"página repetida: {rec['wikiPageTitle']}")
             titles.add(rec["wikiPageTitle"])
-            built.append((rec, pick_pantheon(rec, curation)))
-        built.sort(key=lambda rm: (rm[1]["pantheon"], rm[0]["name"].lower()))
+            (built_heroes if is_hero(rec) else built).append((rec, pick_pantheon(rec, curation)))
+        for lst in (built, built_heroes):
+            lst.sort(key=lambda rm: (rm[1]["pantheon"], rm[0]["name"].lower()))
+        batches.append((code, built))
+        heroes.append((code, built_heroes))
+    for code, built in batches + heroes:
         for rec, meta in built:
             new_id = rec["id"]
             if new_id in used:
@@ -205,10 +226,12 @@ def md_table(headers, rows):
 
 
 def write_doc(existing, new, collisions, by_name, diverg, curation, mining, stats):
-    allr = existing + new
+    allr = [d for d in existing + new if not is_hero(d)]  # as tabelas de divindades não contam os heróis
+    heroes = [d for d in new if is_hero(d)]
+    new = [d for d in new if not is_hero(d)]
     L = []
     a = L.append
-    a("# Divindades: expansão de 101 para %d (2026-11)\n" % len(allr))
+    a("# Divindades: expansão de 101 para %d (2026-11), mais %d heróis mortais\n" % (len(allr), len(heroes)))
     a("Gerado por `scripts/build_deities.py` (não editar à mão). Fonte: `../thac0berry-data-mining/extract_deities.py` "
       "sobre o dump da wiki AD&D 2e + curadoria em `scripts/deity_curation.json`.\n")
     a("## Totais\n")
@@ -237,7 +260,26 @@ def write_doc(existing, new, collisions, by_name, diverg, curation, mining, stat
     a("- `pantheon` (string): panteão de origem (capítulo do LL; panteão da lista da wiki no MoMy; 'African' na Dragon; "
       "'Faerûnian' para FA/PP; 'Dragonlance' para TotL).\n"
       "- `forgeSelectable` (boolean, ausente = true): se o Forge pode oferecer o deus. Gravado em todos os registros.\n"
-      "- `race` (string): raça-base (`dwarf`, `elf`, `gnome`, `halfling`) dos deuses de semi-humanos.\n")
+      "- `race` (string): raça-base (`dwarf`, `elf`, `gnome`, `halfling`) dos deuses de semi-humanos.\n"
+      "- `kind` (string): `\"hero\"` nos heróis mortais (seção abaixo); ausente = divindade. Só os %d heróis têm o campo.\n" % len(heroes))
+
+    a("## Heróis mortais (`kind: \"hero\"`)\n")
+    a("Decisão do usuário (2026-11-21): os heróis do Legends & Lore (LL) e do Monster Mythology (MoMy) entram no "
+      "**compêndio**, nunca no Forge: `forgeSelectable: false`, `rank` \"Hero\" (o posto próprio da página, como "
+      "'Dwarf Hero', fica só no minerado, `rankRaw`, para o compêndio agrupá-los num posto só), `pantheon` pela mesma "
+      "curadoria das divindades (lista da wiki / capítulo), sem `race`. Sem `portfolio` (\"\", campo obrigatório). "
+      "As classes vão em `avatarClassLevels` e a ficha do herói (Str/Dex..., Special Att/Def, magias) em `avatarDescription`, "
+      "no mesmo formato do avatar dos deuses; o `alignment` sai da linha `AL` da ficha ('any' nos cavaleiros genéricos; "
+      "Naciens e Pa Hsien não têm ficha: `alignment` null). Os ids vêm depois dos das divindades, então os ids das 386 "
+      "não mudam; nome repetido ganharia o sufixo do panteão (ver a tabela de nomes repetidos).\n")
+    hp = collections.defaultdict(list)
+    for d in heroes:
+        hp[(d["book"], d["pantheon"])].append(d)
+    a(md_table(["Livro", "Panteão", "Heróis", "Nomes (id)"],
+               [(b, p, len(v), ", ".join(f"{x['name']} (`{x['id']}`)" for x in v)) for (b, p), v in sorted(hp.items())]) + "\n")
+    a("Total: **%d** (" % len(heroes) + ", ".join(f"{b} {n}" for b, n in collections.Counter(d['book'] for d in heroes).items()) + ").\n")
+    a("Zinzerena e Diancastra (MoMy) constam como 'Hero' na lista da wiki, mas o livro as trata como divindades "
+      "(com avatar): ficam entre as divindades, como antes. Heracles (LL) é 'Demigod' na lista e também continua divindade.\n")
 
     a("## Regras de decisão (usuário, 2026-11-20)\n")
     a("- Legends & Lore (panteões históricos/literários): `forgeSelectable: false`.\n"
@@ -269,8 +311,7 @@ def write_doc(existing, new, collisions, by_name, diverg, curation, mining, stat
         a(f"- **{book}**, {reason} ({len(names)}): " + ", ".join(sorted(names)) + ".")
     a("\nOutras exclusões conscientes: Iuz, Vecna, Dendar, Kezef, Ityak-Ortheel, Asmodeus, Graz'zt, Pazrael, Eltab, "
       "Rainha do Caos, Blizzard (páginas de monstro/NPC com infobox Creature, outro formato); Asclepius (AoH, livro "
-      "Age of Heroes, fora do escopo). Heróis mortais (44 do LL, 4 do MoMy) ficaram de fora: o MoMy e o LL os separam dos "
-      "deuses (tipo 'Hero' na lista). Pendência para decisão do usuário.\n")
+      "Age of Heroes, fora do escopo). Os heróis mortais não são mais descartados: ver a seção acima.\n")
 
     a("## Divergências com os registros existentes\n")
     a("### Mineração x deities.json (FA e PP re-minerados)\n")
@@ -310,8 +351,7 @@ def write_doc(existing, new, collisions, by_name, diverg, curation, mining, stat
       "- O avatar vai em texto ('Str 22, Dex 18, ...') como nos deuses de Krynn.\n")
 
     a("## Questões em aberto (decisão do usuário)\n")
-    a("1. Os 4+44 heróis mortais (Arthur, Fafhrd, Gnarldan Steelshield, Kaldair Swiftfoot, Lafarallinn...) entram como "
-      "'divindade'? Hoje não.\n"
+    a("1. Heróis mortais: decidido, entram no compêndio com `kind: \"hero\"` (seção acima).\n"
       "2. Duergar (Laduguer, Diinkarazan) e drow como `forgeSelectable: true` (race dwarf/elf): confirmado pela regra "
       "'semi-humanos', mas são Underdark malignos.\n"
       "3. Deep Sashelas como deus élfico (override acima).\n"

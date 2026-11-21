@@ -1,4 +1,4 @@
-# Divindades: expansão de 101 para 386 (2026-11)
+# Divindades: expansão de 101 para 386 (2026-11), mais 48 heróis mortais
 
 Gerado por `scripts/build_deities.py` (não editar à mão). Fonte: `../thac0berry-data-mining/extract_deities.py` sobre o dump da wiki AD&D 2e + curadoria em `scripts/deity_curation.json`.
 
@@ -76,6 +76,31 @@ Deuses com `race` (destaque por raça no app): dwarf 10, elf 13, gnome 9, halfli
 - `pantheon` (string): panteão de origem (capítulo do LL; panteão da lista da wiki no MoMy; 'African' na Dragon; 'Faerûnian' para FA/PP; 'Dragonlance' para TotL).
 - `forgeSelectable` (boolean, ausente = true): se o Forge pode oferecer o deus. Gravado em todos os registros.
 - `race` (string): raça-base (`dwarf`, `elf`, `gnome`, `halfling`) dos deuses de semi-humanos.
+- `kind` (string): `"hero"` nos heróis mortais (seção abaixo); ausente = divindade. Só os 48 heróis têm o campo.
+
+## Heróis mortais (`kind: "hero"`)
+
+Decisão do usuário (2026-11-21): os heróis do Legends & Lore (LL) e do Monster Mythology (MoMy) entram no **compêndio**, nunca no Forge: `forgeSelectable: false`, `rank` "Hero" (o posto próprio da página, como 'Dwarf Hero', fica só no minerado, `rankRaw`, para o compêndio agrupá-los num posto só), `pantheon` pela mesma curadoria das divindades (lista da wiki / capítulo), sem `race`. Sem `portfolio` ("", campo obrigatório). As classes vão em `avatarClassLevels` e a ficha do herói (Str/Dex..., Special Att/Def, magias) em `avatarDescription`, no mesmo formato do avatar dos deuses; o `alignment` sai da linha `AL` da ficha ('any' nos cavaleiros genéricos; Naciens e Pa Hsien não têm ficha: `alignment` null). Os ids vêm depois dos das divindades, então os ids das 386 não mudam; nome repetido ganharia o sufixo do panteão (ver a tabela de nomes repetidos).
+
+| Livro | Panteão | Heróis | Nomes (id) |
+|---|---|---|---|
+| Legends & Lore | American Indian | 4 | Hiawatha (`hiawatha`), Qagwaaz (`qagwaaz`), Stoneribs (`stoneribs`), Yanauluha (`yanauluha`) |
+| Legends & Lore | Arthurian | 21 | Arthur (`arthur`), Average Knight of Quality (`average_knight_of_quality`), Average Knight of Renown (`average_knight_of_renown`), Bedevere (`bedevere`), Galahad (`galahad`), Gareth (`gareth`), Garlon (`garlon`), Gawaine (`gawaine`), Guinevere (`guinevere`), Kay (`kay`), Lady of the Lake (`lady_of_the_lake`), Lamorak (`lamorak`), Launcelot (`launcelot`), Merlin (`merlin`), Mordred (`mordred`), Morgan le Fay (`morgan_le_fay`), Naciens (`naciens`), Palomides (`palomides`), Percivale (`percivale`), The Green Knight (`the_green_knight`), Tristram (`tristram`) |
+| Legends & Lore | Aztec | 3 | Axayacatl (`axayacatl`), Nezahualcoytl (`nezahualcoytl`), Nezahuldilli (`nezahuldilli`) |
+| Legends & Lore | Celtic | 1 | Cu Chulainn (`cu_chulainn`) |
+| Legends & Lore | Chinese | 1 | Pa Hsien (`pa_hsien`) |
+| Legends & Lore | Greek | 2 | Odysseus (`odysseus`), Theseus (`theseus`) |
+| Legends & Lore | Japanese | 2 | Empress Jingo (`empress_jingo`), Raiko (`raiko`) |
+| Legends & Lore | Nehwon | 6 | Fafhrd (`fafhrd`), Gray Mouser (`gray_mouser`), Movarl (`movarl`), Ningauble of the Seven Eyes (`ningauble_of_the_seven_eyes`), Plugh (`plugh`), Sheelba of the Eyeless Face (`sheelba_of_the_eyeless_face`) |
+| Legends & Lore | Norse | 4 | Beowulf (`beowulf`), Fjalar (`fjalar`), Sigurd (`sigurd`), Skirnir (`skirnir`) |
+| Monster Mythology | Dwarven | 1 | Gnarldan Steelshield (`gnarldan_steelshield`) |
+| Monster Mythology | Elven | 1 | Lafarallinn (`lafarallinn`) |
+| Monster Mythology | Halfling | 1 | Kaldair Swiftfoot (`kaldair_swiftfoot`) |
+| Monster Mythology | Orcish | 1 | Gerdreg (`gerdreg`) |
+
+Total: **48** (Legends & Lore 44, Monster Mythology 4).
+
+Zinzerena e Diancastra (MoMy) constam como 'Hero' na lista da wiki, mas o livro as trata como divindades (com avatar): ficam entre as divindades, como antes. Heracles (LL) é 'Demigod' na lista e também continua divindade.
 
 ## Regras de decisão (usuário, 2026-11-20)
 
@@ -110,11 +135,9 @@ A lista da wiki ('List of Gods & Avatars') ainda cita deuses da Dragon #191, #26
 
 ## Descartados (não são divindades)
 
-- **Legends & Lore**, heroi mortal (tipo 'Hero' na lista da wiki), nao e divindade (44): Arthur, Average Knight of Quality, Average Knight of Renown, Axayacatl, Bedevere, Beowulf, Cu Chulainn, Empress Jingo, Fafhrd, Fjalar, Galahad, Gareth, Garlon, Gawaine, Gray Mouser, Guinevere, Hiawatha, Kay, Lady of the Lake, Lamorak, Launcelot, Merlin, Mordred, Morgan le Fay, Movarl, Naciens, Nezahualcoytl, Nezahuldilli, Ningauble of the Seven Eyes, Odysseus, Pa Hsien, Palomides, Percivale, Plugh, Qagwaaz, Raiko, Sheelba of the Eyeless Face, Sigurd, Skirnir, Stoneribs, The Green Knight, Theseus, Tristram, Yanauluha.
 - **Legends & Lore**, pagina de capitulo, introducao ou creditos do livro (13): Ch 1, Ch 10, Ch 11, Ch 2, Ch 3, Ch 4, Ch 5, Ch 6, Ch 7, Ch 8, Ch 9, Credits, Introduction.
 - **Legends & Lore**, pagina de regra ou texto de apoio, sem titulo de posto nem 'Statistics: AL' (8): Ascetic Characters, Aztec Monsters, Dharma, Karma, and Reincarnation, Generals of the Animal Spirits, Lankhmar Encounter Tables, The Master of the Hunt, The Pious Knights, The Wild Hunt.
 - **Legends & Lore**, texto geral do capitulo (historia, cultura, panteao), sem ficha de divindade (11): American Indian Mythology, Arthurian Mythology, Aztec Mythology, Celtic Mythology, Chinese Mythology, Egyptian Mythology, Greek Mythology, Indian Mythology, Japanese Mythology, Nehwon Mythology, Norse Mythology.
-- **Monster Mythology**, heroi mortal (4): Gerdreg, Gnarldan Steelshield, Kaldair Swiftfoot, Lafarallinn.
 - **Monster Mythology**, pagina de capitulo, introducao ou creditos do livro (13): Abbreviations, Ch 0, Ch 1, Ch 2, Ch 3, Ch 4, Ch 5, Ch 6, Ch 7, Ch 8, Ch 9, Credits, Introduction.
 - **Monster Mythology**, pagina de regra ou texto de apoio, sem titulo de posto nem 'Statistics: AL' (11): Appendix 1: Avatars in Game Play, Appendix 2: Deities and Game Worlds, Avatars, Deities Included in This Book, Deities and the Campaign, Divine Abilities, Explanatory Notes, Integrating Human and Nonhuman Pantheons, Nonhuman Deities as Archetypal Powers, Priests and Priesthoods, Running Divine Beings.
 - **Monster Mythology**, texto geral do capitulo (historia, cultura, panteao), sem ficha de divindade (8): Goblinoid Deities, Gods of the Dark Folk, Gods of the Demihumans, Gods of the Giants, Gods of the Scaly Folk, Gods of the Seas and Skies, Gods of the Underdark, The Sylvan Gods.
@@ -124,7 +147,7 @@ A lista da wiki ('List of Gods & Avatars') ainda cita deuses da Dragon #191, #26
 - **Powers & Pantheons**, pagina de apoio do livro (creditos, sobre o produto) (2): About This Product, Credits.
 - **Powers & Pantheons**, pagina de monstro (formato Creature/Combat), fora deste schema (como Iuz e Vecna) (3): Dendar, Ityak-Ortheel, Kezef.
 
-Outras exclusões conscientes: Iuz, Vecna, Dendar, Kezef, Ityak-Ortheel, Asmodeus, Graz'zt, Pazrael, Eltab, Rainha do Caos, Blizzard (páginas de monstro/NPC com infobox Creature, outro formato); Asclepius (AoH, livro Age of Heroes, fora do escopo). Heróis mortais (44 do LL, 4 do MoMy) ficaram de fora: o MoMy e o LL os separam dos deuses (tipo 'Hero' na lista). Pendência para decisão do usuário.
+Outras exclusões conscientes: Iuz, Vecna, Dendar, Kezef, Ityak-Ortheel, Asmodeus, Graz'zt, Pazrael, Eltab, Rainha do Caos, Blizzard (páginas de monstro/NPC com infobox Creature, outro formato); Asclepius (AoH, livro Age of Heroes, fora do escopo). Os heróis mortais não são mais descartados: ver a seção acima.
 
 ## Divergências com os registros existentes
 
@@ -183,7 +206,7 @@ Nomes iguais não foram fundidos (são fichas diferentes: o Set dos Reinos é o 
 
 ## Questões em aberto (decisão do usuário)
 
-1. Os 4+44 heróis mortais (Arthur, Fafhrd, Gnarldan Steelshield, Kaldair Swiftfoot, Lafarallinn...) entram como 'divindade'? Hoje não.
+1. Heróis mortais: decidido, entram no compêndio com `kind: "hero"` (seção acima).
 2. Duergar (Laduguer, Diinkarazan) e drow como `forgeSelectable: true` (race dwarf/elf): confirmado pela regra 'semi-humanos', mas são Underdark malignos.
 3. Deep Sashelas como deus élfico (override acima).
 4. Nomes repetidos (Set, Isis, Osiris, Tyr...): mostrar o panteão ao lado do nome na lista?
