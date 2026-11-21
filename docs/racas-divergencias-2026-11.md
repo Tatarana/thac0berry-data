@@ -108,8 +108,8 @@ Total: 24 divergências em 16 raças.
 
 | Id | Nome | Origem | Observação |
 |---|---|---|---|
-| `avariel` | Avariel | Dragon Magazine #233: On Wings of Eagles (Article) |  |
-| `snow_elf` | Snow Elf | In the Frost and the Snow (Article) - Dragon #155 |  |
+| `avariel` | Avariel | Dragon Magazine #233: On Wings of Eagles (Article) | Elfo alado, voa 18 (C). Artigo genérico, mas o avariel é mais ligado a Forgotten Realms: se liberar, entra como FR e o kit Courier volta junto. Decisão de 2026-11-20: fica escondido por enquanto. |
+| `snow_elf` | Snow Elf | In the Frost and the Snow (Article) - Dragon #155 | Elfo do gelo. Artigo da época da 1ª edição: limites de nível sobem com o atributo principal (base Druid U, Thief U, Wizard 10, Fighter 4, Ranger 4). Genérico: se liberar, entra como Core. Decisão de 2026-11-20: fica escondido por enquanto. |
 | `bronze_half_dragon` | Bronze Half-Dragon | Dragon #206 |  |
 | `crabman` | Crabman | Dragon Magazine #250: Crabman (Article Race) |  |
 | `drow_dragon` | Drow-Dragon | Dragon #206 |  |
@@ -146,8 +146,8 @@ Total: 24 divergências em 16 raças.
 
 Sem cenário do Forge claro no texto ou na fonte (artigos da Dragon Magazine e afins). Se alguma deve virar jogável, é só mudar `playable`/`campaignSetting` em `scripts/race_curation.json`:
 
-- Avariel (`avariel`): Dragon Magazine #233: On Wings of Eagles (Article)
-- Snow Elf (`snow_elf`): In the Frost and the Snow (Article) - Dragon #155
+- Avariel (`avariel`): Dragon Magazine #233: On Wings of Eagles (Article). Elfo alado, voa 18 (C). Artigo genérico, mas o avariel é mais ligado a Forgotten Realms: se liberar, entra como FR e o kit Courier volta junto. Decisão de 2026-11-20: fica escondido por enquanto.
+- Snow Elf (`snow_elf`): In the Frost and the Snow (Article) - Dragon #155. Elfo do gelo. Artigo da época da 1ª edição: limites de nível sobem com o atributo principal (base Druid U, Thief U, Wizard 10, Fighter 4, Ranger 4). Genérico: se liberar, entra como Core. Decisão de 2026-11-20: fica escondido por enquanto.
 - Bronze Half-Dragon (`bronze_half_dragon`): Dragon #206
 - Crabman (`crabman`): Dragon Magazine #250: Crabman (Article Race)
 - Drow-Dragon (`drow_dragon`): Dragon #206
