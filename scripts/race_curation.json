@@ -2053,13 +2053,15 @@
    "campaignSetting": null,
    "playable": false,
    "hiddenReason": "undecided",
-   "baseRace": "elf"
+   "baseRace": "elf",
+   "note": "Elfo alado, voa 18 (C). Artigo genérico, mas o avariel é mais ligado a Forgotten Realms: se liberar, entra como FR e o kit Courier volta junto. Decisão de 2026-11-20: fica escondido por enquanto."
   },
   "snow_elf": {
    "campaignSetting": null,
    "playable": false,
    "hiddenReason": "undecided",
-   "baseRace": "elf"
+   "baseRace": "elf",
+   "note": "Elfo do gelo. Artigo da época da 1ª edição: limites de nível sobem com o atributo principal (base Druid U, Thief U, Wizard 10, Fighter 4, Ranger 4). Genérico: se liberar, entra como Core. Decisão de 2026-11-20: fica escondido por enquanto."
   },
   "bronze_half_dragon": {
    "campaignSetting": null,
