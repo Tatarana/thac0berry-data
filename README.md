@@ -128,3 +128,23 @@ curadoria e rode o script de novo (não edite o JSON à mão).
 - O `sync_data.py` do iPad copia `races.json` junto com os outros arquivos do primeiro nível de
   `data/` (o app não o lê; o CI de lá acusa a divergência até rodar o sync).
 
+
+## Kits que faltavam (2026-11-20)
+
+`scripts/add_missing_kits_2026_11.py` aplica `scripts/missing_kits_2026_11.json` (a classificação kit a kit: grupo,
+classe, raça, cenário, jogável ou escondido, requisitos, dinheiro e a curadoria de proficiências e armas) e traz de
+`../thac0berry-data-mining` os kits que o app não tinha: `kits.json` foi de 506 para **740** (+234; 40 descartados:
+cartas "Create Your Own", listas, duplicatas). Depois: `python scripts/curate_kit_proficiencies.py`. Para mudar um
+kit (grupo, classe, escondido…), edite o JSON da classificação e rode de novo. Relatório completo (números por livro,
+decisões, descartados, lista para decisão do usuário, perícias sem regra): `docs/kits-faltantes-2026-11.md`.
+
+- 100 jogáveis no Forge (Skills & Powers 30, Complete Book of Dwarves 24, of Gnomes & Halflings 27, Sages & Specialists,
+  Necromancers, Wizards & Rogues of the Realms, Planewalker's Handbook, Thri-Kreen of Athas...), 58 de cenário em
+  construção (Al-Qadim, Spelljammer, Council of Wyrms; a web os esconde pelo cenário) e 76 escondidos.
+- Campos novos em `kit.schema.json` (opcionais, web primeiro; o iPad os ignora): **`playable`** (`false` = o app guarda
+  o kit mas não o oferece), **`hiddenReason`** (`humanoid-not-playable`, `setting-not-in-forge`, `class-not-in-app`,
+  `race-not-playable`, `undecided`) e **`note`**, como em `races.json`.
+- Subclasses novas de compêndio: `Gnome`, `Halfling` (Demihuman), `Gladiator` (Warrior), `Tradesman` (Rogue), `Mystic`
+  (Priest). `sourceBook` corrigido para o livro de verdade quando o rótulo minerado mentia.
+- O repo do iPad precisa de `python Scripts/sync_data.py` (lá). Os kits novos de classe que o app não tem ou
+  `allowedClasses` vazio nunca aparecem no iPad por classe; os campos novos são ignorados lá.

@@ -17940,5 +17940,6407 @@
   },
   "unmatched": [],
   "doubts": "May specialize in one weapon."
+ },
+ {
+  "id": "acrobat",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Disguise",
+    "Juggling",
+    "Jumping",
+    "Musical Instrument",
+    "Tightrope Walking",
+    "Tumbling"
+   ],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Knife",
+    "Dagger or dirk",
+    "Short sword",
+    "Club",
+    "Hand or throwing axe",
+    "Quarterstaff",
+    "Dart",
+    "Javelin",
+    "Spear"
+   ],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "amazon",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Riding, Land-Based",
+    "Rope Use",
+    "Engineering",
+    "Navigation",
+    "Endurance",
+    "Animal Training",
+    "Animal Handling",
+    "Armorer",
+    "Bowyer/Fletcher",
+    "Hunting",
+    "Running",
+    "Set Snares",
+    "Survival",
+    "Tracking"
+   ],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [
+    "Battle axe",
+    "Short bow",
+    "Long bow",
+    "Composite short bow",
+    "Composite long bow",
+    "Club",
+    "Dagger or dirk",
+    "Hand or throwing axe",
+    "Javelin",
+    "Knife",
+    "Light horse lance",
+    "Medium horse lance",
+    "Heavy horse lance",
+    "Jousting lance",
+    "Spear",
+    "Quarterstaff",
+    "Bastard sword",
+    "Broad sword",
+    "Long sword",
+    "Short sword",
+    "Two-handed sword"
+   ],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": "Men may have only one initial weapon proficiency, from the list; \"bow (any)\" = the four bows, \"sword (any)\" = the five PHB swords, lance = the four lances."
+ },
+ {
+  "id": "animal_master",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Animal Lore",
+    "Survival",
+    "Agriculture",
+    "Animal Training",
+    "Animal Handling",
+    "Fire-building",
+    "Fishing",
+    "Herbalism",
+    "Hunting",
+    "Mountaineering",
+    "Riding, Land-Based",
+    "Riding, Airborne",
+    "Riding, Sea-based",
+    "Swimming",
+    "Set Snares",
+    "Tracking"
+   ],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "assassin",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Etiquette",
+    "Riding, Land-Based",
+    "Riding, Airborne",
+    "Riding, Sea-based",
+    "Healing",
+    "Disguise",
+    "Forgery",
+    "Languages, Modern",
+    "Tracking",
+    "Reading Lips",
+    "Herbalism"
+   ],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "barbarian",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Endurance",
+    "Animal Handling",
+    "Animal Training",
+    "Bowyer/Fletcher",
+    "Fire-building",
+    "Fishing",
+    "Riding, Land-Based",
+    "Hunting",
+    "Mountaineering",
+    "Running",
+    "Survival",
+    "Tracking"
+   ],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Battle axe",
+    "Hand or throwing axe",
+    "Bastard sword",
+    "Broad sword",
+    "Long sword",
+    "Short sword",
+    "Two-handed sword",
+    "Club",
+    "Dagger or dirk",
+    "Knife",
+    "Warhammer",
+    "Footman's mace",
+    "Horseman's mace",
+    "Sling",
+    "Spear",
+    "Javelin",
+    "Long bow",
+    "Quarterstaff"
+   ],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": "Page also calls crossbows, polearms, flails and lances \"likely inappropriate\" until immersed in a new culture; left out of forbidden (a suggestion, not a ban)."
+ },
+ {
+  "id": "beggar",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [
+    [
+     "Disguise",
+     "Forgery",
+     "Gaming",
+     "Ventriloquism",
+     "Seamstress/Tailor"
+    ]
+   ],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Disguise",
+    "Forgery",
+    "Gaming",
+    "Ventriloquism",
+    "Seamstress/Tailor"
+   ],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Dagger or dirk",
+    "Knife",
+    "Sap",
+    "Sling"
+   ],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": "Beggars get one free proficiency if taken from the recommended list (bonusChoices)."
+ },
+ {
+  "id": "cavalier",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Etiquette",
+    "Riding, Land-Based",
+    "Riding, Airborne",
+    "Riding, Sea-based",
+    "Heraldry",
+    "Ancient History",
+    "Local History",
+    "Languages, Modern",
+    "Animal Handling",
+    "Dancing",
+    "Reading/Writing",
+    "Artistic Ability",
+    "Gaming",
+    "Languages, Ancient"
+   ],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Bastard sword",
+    "Broad sword",
+    "Long sword",
+    "Short sword",
+    "Two-handed sword",
+    "Light horse lance",
+    "Medium horse lance",
+    "Heavy horse lance",
+    "Jousting lance"
+   ],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "diplomat",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Dancing",
+    "Etiquette",
+    "Heraldry",
+    "Ancient History",
+    "Local History",
+    "Languages, Modern",
+    "Reading Lips",
+    "Riding, Land-Based",
+    "Riding, Airborne",
+    "Riding, Sea-based",
+    "Languages, Ancient"
+   ],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "explorer",
+  "proficiencies": {
+   "bonus": [
+    "Survival"
+   ],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Direction Sense",
+    "Fire-building",
+    "Fishing",
+    "Weather Sense",
+    "Seamanship",
+    "Local History",
+    "Ancient History",
+    "Reading/Writing"
+   ],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": "Survival free; the player picks two terrain types."
+ },
+ {
+  "id": "gladiator",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Blind-fighting",
+    "Endurance",
+    "Gaming",
+    "Jumping",
+    "Tumbling",
+    "Armorer",
+    "Weaponsmithing",
+    "Healing",
+    "Rope Use"
+   ],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Dagger or dirk",
+    "Bastard sword",
+    "Broad sword",
+    "Long sword",
+    "Short sword",
+    "Two-handed sword",
+    "Scimitar",
+    "Spear",
+    "Trident",
+    "Awl pike",
+    "Bardiche",
+    "Bec de corbin",
+    "Bill",
+    "Bill-guisarme",
+    "Fauchard",
+    "Fauchard-fork",
+    "Glaive",
+    "Glaive-guisarme",
+    "Guisarme",
+    "Guisarme-voulge",
+    "Halberd",
+    "Hook fauchard",
+    "Lucern hammer",
+    "Military fork",
+    "Partisan",
+    "Ranseur",
+    "Spetum",
+    "Voulge",
+    "Warhammer",
+    "Footman's mace",
+    "Horseman's mace",
+    "Scourge",
+    "Net",
+    "Whip"
+   ],
+   "forbidden": [
+    "Short bow",
+    "Long bow",
+    "Composite short bow",
+    "Composite long bow",
+    "Light crossbow",
+    "Heavy crossbow",
+    "Hand crossbow",
+    "Sling",
+    "Staff sling"
+   ],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": "Only melee and hurled weapons: bows, crossbows and slings forbidden (the page says \"no bows, slings, etc.\")."
+ },
+ {
+  "id": "jester",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Singing",
+    "Etiquette",
+    "Languages, Modern",
+    "Reading/Writing",
+    "Ventriloquism",
+    "Juggling",
+    "Disguise",
+    "Jumping"
+   ],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "mariner",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Weather Sense",
+    "Navigation",
+    "Fishing",
+    "Seamanship",
+    "Swimming",
+    "Rope Use"
+   ],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Spear",
+    "Awl pike",
+    "Bardiche",
+    "Bec de corbin",
+    "Bill",
+    "Bill-guisarme",
+    "Fauchard",
+    "Fauchard-fork",
+    "Glaive",
+    "Glaive-guisarme",
+    "Guisarme",
+    "Guisarme-voulge",
+    "Halberd",
+    "Hook fauchard",
+    "Lucern hammer",
+    "Military fork",
+    "Partisan",
+    "Ranseur",
+    "Spetum",
+    "Voulge",
+    "Net"
+   ],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "merchant",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Appraising",
+    "Carpentry",
+    "Cobbling",
+    "Etiquette",
+    "Reading/Writing",
+    "Languages, Modern",
+    "Local History",
+    "Forgery",
+    "Seamstress/Tailor",
+    "Weaving"
+   ],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "mystic",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Astrology",
+    "Astronomy",
+    "Religion",
+    "Etiquette",
+    "Languages, Modern",
+    "Ancient History",
+    "Local History",
+    "Reading/Writing",
+    "Heraldry",
+    "Riding, Land-Based",
+    "Riding, Airborne",
+    "Riding, Sea-based",
+    "Herbalism",
+    "Healing",
+    "Gem Cutting",
+    "Musical Instrument",
+    "Navigation",
+    "Languages, Ancient"
+   ],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "noble",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Etiquette",
+    "Heraldry",
+    "Riding, Land-Based",
+    "Riding, Airborne",
+    "Riding, Sea-based",
+    "Dancing",
+    "Languages, Modern",
+    "Ancient History",
+    "Local History",
+    "Reading/Writing",
+    "Religion",
+    "Musical Instrument",
+    "Animal Handling",
+    "Hunting",
+    "Gaming",
+    "Languages, Ancient"
+   ],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [
+   "gambling"
+  ],
+  "doubts": null
+ },
+ {
+  "id": "outlaw",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Rope Use",
+    "Set Snares",
+    "Survival",
+    "Tracking",
+    "Fire-building",
+    "Riding, Land-Based",
+    "Riding, Airborne",
+    "Riding, Sea-based",
+    "Animal Lore",
+    "Bowyer/Fletcher",
+    "Hunting",
+    "Running",
+    "Local History",
+    "Disguise",
+    "Tumbling"
+   ],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "peasant_hero",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Agriculture",
+    "Fishing",
+    "Animal Handling",
+    "Animal Lore",
+    "Blacksmithing",
+    "Carpentry",
+    "Cooking",
+    "Cobbling",
+    "Fire-building",
+    "Pottery",
+    "Stonemasonry",
+    "Weaving"
+   ],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Dagger or dirk",
+    "Short sword",
+    "Quarterstaff",
+    "Spear",
+    "Short bow",
+    "Club",
+    "Hand or throwing axe",
+    "Knife",
+    "Sickle",
+    "Sling",
+    "Staff sling"
+   ],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "pirate",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Navigation",
+    "Fishing",
+    "Seamanship",
+    "Rope Use",
+    "Tightrope Walking",
+    "Direction Sense",
+    "Swimming",
+    "Weather Sense"
+   ],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Rapier",
+    "Cutlass"
+   ],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [
+   "gambling"
+  ],
+  "doubts": null
+ },
+ {
+  "id": "pugilist",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Blind-fighting",
+    "Endurance",
+    "Running"
+   ],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Punching",
+    "Wrestling",
+    "Martial Arts"
+   ],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": "Unarmed forms are not PHB weapons; recommended only."
+ },
+ {
+  "id": "rider",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Animal Lore",
+    "Animal Training",
+    "Animal Handling",
+    "Riding, Land-Based",
+    "Riding, Airborne",
+    "Riding, Sea-based",
+    "Rope Use",
+    "Charioteering",
+    "Heraldry",
+    "Bowyer/Fletcher"
+   ],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Light horse lance",
+    "Medium horse lance",
+    "Heavy horse lance",
+    "Jousting lance",
+    "Short bow",
+    "Long bow",
+    "Composite short bow",
+    "Composite long bow",
+    "Horseman's flail",
+    "Horseman's mace",
+    "Horseman's pick",
+    "Spear",
+    "Bastard sword",
+    "Long sword",
+    "Scimitar",
+    "Morning star"
+   ],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "savage",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Animal Lore",
+    "Hunting",
+    "Running",
+    "Set Snares",
+    "Survival",
+    "Tracking",
+    "Fishing",
+    "Swimming"
+   ],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [
+    "Quarterstaff",
+    "Spear",
+    "Short bow",
+    "Long bow",
+    "Club"
+   ],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": "At creation the weapon must be a wooden one (quarterstaff, spear, bow, club); later any. allowed limits only the starting weapons."
+ },
+ {
+  "id": "scholar",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Reading/Writing",
+    "Ancient History",
+    "Local History",
+    "Languages, Modern",
+    "Heraldry",
+    "Astrology",
+    "Astronomy",
+    "Herbalism",
+    "Engineering",
+    "Gem Cutting",
+    "Religion",
+    "Spellcraft",
+    "Brewing",
+    "Etiquette",
+    "Musical Instrument",
+    "Languages, Ancient"
+   ],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "scout",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Tracking",
+    "Survival",
+    "Fire-building",
+    "Hunting",
+    "Mountaineering",
+    "Rope Use",
+    "Set Snares",
+    "Swimming",
+    "Carpentry",
+    "Direction Sense",
+    "Weather Sense"
+   ],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": "+1 to all proficiency checks in the wilderness (text)."
+ },
+ {
+  "id": "sharpshooter",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Bowyer/Fletcher",
+    "Hunting",
+    "Heraldry",
+    "Riding, Land-Based",
+    "Riding, Airborne",
+    "Riding, Sea-based",
+    "Weaponsmithing"
+   ],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": "More than half of the initial weapon proficiencies (or six character points) must go to missile weapons; not representable."
+ },
+ {
+  "id": "smuggler",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Appraising",
+    "Forgery",
+    "Gem Cutting",
+    "Ancient History",
+    "Artistic Ability",
+    "Etiquette",
+    "Pottery",
+    "Languages, Ancient",
+    "Reading/Writing"
+   ],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "soldier",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [
+    [
+     "Ancient History",
+     "Local History",
+     "Fire-building",
+     "Direction Sense",
+     "Animal Handling",
+     "Cooking",
+     "Heraldry",
+     "Riding, Land-Based",
+     "Seamanship",
+     "Swimming",
+     "Disguise",
+     "Armorer",
+     "Blind-fighting",
+     "Bowyer/Fletcher",
+     "Charioteering",
+     "Endurance",
+     "Navigation",
+     "Survival",
+     "Weaponsmithing",
+     "Reading/Writing"
+    ]
+   ],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Ancient History",
+    "Local History",
+    "Fire-building",
+    "Direction Sense",
+    "Animal Handling",
+    "Cooking",
+    "Heraldry",
+    "Riding, Land-Based",
+    "Seamanship",
+    "Swimming",
+    "Disguise",
+    "Armorer",
+    "Blind-fighting",
+    "Bowyer/Fletcher",
+    "Charioteering",
+    "Endurance",
+    "Navigation",
+    "Survival",
+    "Weaponsmithing",
+    "Reading/Writing"
+   ],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": "One free proficiency from the recommended list (bonusChoices)."
+ },
+ {
+  "id": "spy",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Disguise",
+    "Forgery",
+    "Dancing",
+    "Etiquette",
+    "Heraldry",
+    "Riding, Land-Based",
+    "Riding, Airborne",
+    "Riding, Sea-based",
+    "Local History",
+    "Languages, Modern",
+    "Herbalism",
+    "Reading/Writing",
+    "Appraising",
+    "Gaming",
+    "Musical Instrument",
+    "Reading Lips",
+    "Spellcraft"
+   ],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Club",
+    "Dagger or dirk",
+    "Knife",
+    "Dart"
+   ],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "swashbuckler",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Tumbling",
+    "Etiquette",
+    "Dancing",
+    "Riding, Land-Based",
+    "Riding, Airborne",
+    "Riding, Sea-based",
+    "Blind-fighting",
+    "Musical Instrument",
+    "Appraising",
+    "Gaming",
+    "Tightrope Walking",
+    "Jumping"
+   ],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Rapier",
+    "Saber"
+   ],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "thug",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Blind-fighting",
+    "Endurance",
+    "Gaming",
+    "Jumping",
+    "Rope Use",
+    "Running"
+   ],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Dagger or dirk",
+    "Hand or throwing axe",
+    "Knife",
+    "Blowgun",
+    "Sling"
+   ],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "weapon_master",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Blind-fighting",
+    "Juggling",
+    "Weaponsmithing",
+    "Bowyer/Fletcher",
+    "Endurance"
+   ],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": "Must begin with expertise or specialization in one melee weapon; not representable."
+ },
+ {
+  "id": "animal_master_dwarf",
+  "proficiencies": {
+   "bonus": [
+    "Animal Lore",
+    "Animal Training",
+    "Endurance"
+   ],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Animal Handling",
+    "Appraising",
+    "Direction Sense",
+    "Dwarf Runes",
+    "Etiquette",
+    "Herbalism",
+    "Hunting",
+    "Languages, Modern",
+    "Rope Use",
+    "Sign Language",
+    "Signalling",
+    "Survival"
+   ],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": "Underground (Proficiency) has no matching entry. The bonus Animal Training is +1 for one chosen kind of animal (text)."
+ },
+ {
+  "id": "axe_for_hire",
+  "proficiencies": {
+   "bonus": [
+    "Endurance",
+    "Local Dwarf History",
+    "Local History"
+   ],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Alertness",
+    "Armorer",
+    "Bowyer/Fletcher",
+    "Direction Sense",
+    "Fire-building",
+    "Dwarf Runes",
+    "Survival",
+    "Underground Navigation",
+    "Weaponsmithing"
+   ],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": "Fighters get one free specialization in a hand or missile weapon typical of dwarves (text)."
+ },
+ {
+  "id": "battlerager",
+  "proficiencies": {
+   "bonus": [
+    "Endurance",
+    "Intimidation",
+    "Singing"
+   ],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Appraising",
+    "Armorer",
+    "Blind-fighting",
+    "Dancing",
+    "Direction Sense",
+    "Sound Analysis",
+    "Underground Navigation",
+    "Survival, Underground"
+   ],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [
+    "Battle axe",
+    "Warhammer"
+   ],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [
+    "Short bow",
+    "Long bow",
+    "Composite short bow",
+    "Composite long bow",
+    "Light crossbow",
+    "Heavy crossbow",
+    "Hand crossbow",
+    "Sling",
+    "Staff sling",
+    "Blowgun",
+    "Dart",
+    "Javelin"
+   ],
+   "allowed": [],
+   "specialization": {
+    "weapons": [
+     "Battle axe",
+     "Warhammer"
+    ],
+    "mustSpecialize": true,
+    "othersForbidden": false
+   }
+  },
+  "unmatched": [],
+  "doubts": "Forbidden to learn or use ranged weapons except the thrown warhammer: forbidden lists the launchers and the PHB missile weapons dart and javelin (the page says only \"ranged weapon\")."
+ },
+ {
+  "id": "champion",
+  "proficiencies": {
+   "bonus": [
+    "Endurance",
+    "Intimidation",
+    "Religion"
+   ],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Alertness",
+    "Ancient History",
+    "Blind-fighting",
+    "Dwarf Runes",
+    "Hunting",
+    "Local Dwarf History",
+    "Musical Instrument",
+    "Singing"
+   ],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": "May specialize in ONE weapon chosen when the kit is taken, never another (exception for multi-class); not a fixed weapon, so specialization is left out."
+ },
+ {
+  "id": "clansdwarf",
+  "proficiencies": {
+   "bonus": [
+    "Dwarf Runes",
+    "Endurance"
+   ],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Appraising",
+    "Artistic Ability"
+   ],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": "Two extra slots for ONE craft of the player choice (nonweaponSlots.bonus); axe, hammer, mace, pick and polearm categories are not expanded into allowed (not enumerable without inventing)."
+ },
+ {
+  "id": "crafts_priest",
+  "proficiencies": {
+   "bonus": [
+    "Artistic Ability",
+    "Endurance",
+    "Religion"
+   ],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Appraising",
+    "Dwarf Runes",
+    "Etiquette",
+    "Local Dwarf History",
+    "Underground Navigation"
+   ],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": "Also gets any one Craft proficiency (no \"Craft\" entry in the compendium); weapon categories not expanded."
+ },
+ {
+  "id": "diplomat_dwarf",
+  "proficiencies": {
+   "bonus": [
+    "Languages, Modern"
+   ],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Alertness",
+    "Blind-fighting",
+    "Disguise",
+    "Gaming",
+    "Local History",
+    "Reading Lips",
+    "Sign Language",
+    "Tightrope Walking",
+    "Ventriloquism"
+   ],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": "Starts with any FOUR modern languages (one Languages, Modern entry)."
+ },
+ {
+  "id": "entertainer",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [
+    [
+     "Dancing",
+     "Juggling",
+     "Local Dwarf History",
+     "Musical Instrument",
+     "Rope Use",
+     "Singing",
+     "Slow Respiration",
+     "Tightrope Walking",
+     "Tumbling",
+     "Ventriloquism"
+    ],
+    [
+     "Dancing",
+     "Juggling",
+     "Local Dwarf History",
+     "Musical Instrument",
+     "Rope Use",
+     "Singing",
+     "Slow Respiration",
+     "Tightrope Walking",
+     "Tumbling",
+     "Ventriloquism"
+    ]
+   ],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Alertness"
+   ],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": "Choose TWO of the ten skills as bonus (two identical lists)."
+ },
+ {
+  "id": "ghetto_fighter",
+  "proficiencies": {
+   "bonus": [
+    "Alertness",
+    "Disguise",
+    "Endurance"
+   ],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Blind-fighting",
+    "Forgery",
+    "Gaming",
+    "Local History",
+    "Reading Lips",
+    "Sign Language",
+    "Tumbling",
+    "Ventriloquism"
+   ],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": "Weapons depend on the campaign background (a repressive city may allow only concealed weapons)."
+ },
+ {
+  "id": "hearth_guard",
+  "proficiencies": {
+   "bonus": [
+    "Endurance",
+    "Fire-building",
+    "Local Dwarf History"
+   ],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Alertness",
+    "Blind-fighting",
+    "Direction Sense",
+    "Dwarf Runes",
+    "Bowyer/Fletcher",
+    "Intimidation",
+    "Rope Use",
+    "Sign Language",
+    "Signalling",
+    "Slow Respiration",
+    "Weaponsmithing"
+   ],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [
+    "Battle axe",
+    "Spear",
+    "Light crossbow"
+   ],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": {
+    "weapons": [
+     "Battle axe",
+     "Spear",
+     "Light crossbow"
+    ],
+    "mustSpecialize": false,
+    "othersForbidden": true
+   }
+  },
+  "unmatched": [],
+  "doubts": "Axe is one or two handed; may specialize only in these three weapons."
+ },
+ {
+  "id": "highborn",
+  "proficiencies": {
+   "bonus": [
+    "Endurance",
+    "Etiquette",
+    "Heraldry",
+    "Local Dwarf History"
+   ],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Appraising",
+    "Artistic Ability",
+    "Blind-fighting",
+    "Hunting",
+    "Languages, Modern",
+    "Mountaineering",
+    "Survival"
+   ],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [
+    "Light crossbow"
+   ],
+   "requiredChoices": [
+    [
+     "Bastard sword",
+     "Broad sword",
+     "Long sword",
+     "Short sword",
+     "Two-handed sword"
+    ],
+    [
+     "Warhammer"
+    ]
+   ],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": "Must take sword, hammer and light crossbow: \"sword\" read as any PHB sword, hammer as warhammer; starting cash 400 gp plus 5d4x10 gp is not a single formula (startingCash null)."
+ },
+ {
+  "id": "locksmith",
+  "proficiencies": {
+   "bonus": [
+    "Carpentry",
+    "Locksmithing"
+   ],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Alertness",
+    "Engineering",
+    "Stonemasonry"
+   ],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": "Usually carries axes and hammers (no list)."
+ },
+ {
+  "id": "outcast",
+  "proficiencies": {
+   "bonus": [
+    "Appraising",
+    "Endurance",
+    "Survival"
+   ],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Animal Handling",
+    "Blind-fighting",
+    "Direction Sense",
+    "Dwarf Runes",
+    "Intimidation",
+    "Languages, Modern",
+    "Riding, Land-Based"
+   ],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": "Also one Craft proficiency of the player choice (no \"Craft\" entry)."
+ },
+ {
+  "id": "pariah",
+  "proficiencies": {
+   "bonus": [
+    "Disguise",
+    "Endurance",
+    "Religion"
+   ],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": "Recommended: any."
+ },
+ {
+  "id": "patrician",
+  "proficiencies": {
+   "bonus": [
+    "Endurance",
+    "Etiquette",
+    "Local Dwarf History",
+    "Religion"
+   ],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Appraising",
+    "Artistic Ability",
+    "Blind-fighting",
+    "Herbalism",
+    "Hunting",
+    "Languages, Modern",
+    "Mountaineering",
+    "Reading/Writing",
+    "Survival"
+   ],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": "Starting cash is 350 gp plus 3d6x10 gp (not a single formula)."
+ },
+ {
+  "id": "pest_controller",
+  "proficiencies": {
+   "bonus": [
+    "Animal Lore",
+    "Pest Control"
+   ],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Alertness",
+    "Blacksmithing",
+    "Blind-fighting",
+    "Carpentry",
+    "Direction Sense",
+    "Set Snares",
+    "Sign Language",
+    "Signalling",
+    "Stonemasonry",
+    "Tracking",
+    "Survival, Underground",
+    "Weaponsmithing"
+   ],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Dagger or dirk",
+    "Dart"
+   ],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "rapid_response_rider",
+  "proficiencies": {
+   "bonus": [
+    "Animal Training",
+    "Endurance",
+    "Riding, Land-Based"
+   ],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Animal Handling",
+    "Armorer",
+    "Blind-fighting",
+    "Intimidation",
+    "Leatherworking",
+    "Sign Language",
+    "Signalling",
+    "Tracking",
+    "Underground Navigation"
+   ],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [
+    [
+     "Light horse lance",
+     "Medium horse lance",
+     "Heavy horse lance"
+    ]
+   ],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": "Underground Direction Sense has no matching entry. Lance \"any, according to mount size\": the three horse lances; ideally specialized."
+ },
+ {
+  "id": "ritual_priest",
+  "proficiencies": {
+   "bonus": [
+    "Dwarf Runes",
+    "Endurance",
+    "Local Dwarf History",
+    "Religion"
+   ],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Ancient History",
+    "Astrology",
+    "Healing",
+    "Herbalism",
+    "Local History",
+    "Reading/Writing"
+   ],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Battle axe",
+    "Light crossbow",
+    "Heavy crossbow",
+    "Hand or throwing axe",
+    "Morning star",
+    "Warhammer"
+   ],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": "Any weapon available to priests plus battle axe, crossbow, hand/throwing axe, morning star (\"military\") and warhammer."
+ },
+ {
+  "id": "sharpshooter_dwarf",
+  "proficiencies": {
+   "bonus": [
+    "Artistic Ability",
+    "Bowyer/Fletcher",
+    "Endurance"
+   ],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Alertness",
+    "Appraising",
+    "Direction Sense",
+    "Rope Use",
+    "Sign Language",
+    "Signalling"
+   ],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [
+    [
+     "Light crossbow",
+     "Heavy crossbow"
+    ]
+   ],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": {
+    "weapons": [
+     "Light crossbow",
+     "Heavy crossbow"
+    ],
+    "mustSpecialize": true,
+    "othersForbidden": false
+   }
+  },
+  "unmatched": [],
+  "doubts": "No hand-weapon specialization at the start; the arquebus is allowed where gunpowder exists."
+ },
+ {
+  "id": "temple_guard",
+  "proficiencies": {
+   "bonus": [
+    "Alertness",
+    "Religion"
+   ],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Blind-fighting",
+    "Dwarf Runes",
+    "Etiquette",
+    "Intimidation",
+    "Languages, Modern",
+    "Sign Language",
+    "Signalling"
+   ],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": "Must be proficient in a weapon representative of the religion (e.g. battle axe for the war god)."
+ },
+ {
+  "id": "trader",
+  "proficiencies": {
+   "bonus": [
+    "Appraising",
+    "Endurance",
+    "Navigation"
+   ],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Alertness",
+    "Animal Handling",
+    "Direction Sense",
+    "Hunting",
+    "Local Dwarf History",
+    "Local History",
+    "Riding, Land-Based",
+    "Survival",
+    "Underground Navigation"
+   ],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [
+    "Light crossbow"
+   ],
+   "requiredChoices": [
+    [
+     "Dagger or dirk",
+     "Knife",
+     "Hand or throwing axe"
+    ]
+   ],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "vermin_slayer",
+  "proficiencies": {
+   "bonus": [
+    "Alertness",
+    "Endurance",
+    "Tracking",
+    "Underground Navigation"
+   ],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Direction Sense",
+    "Sign Language",
+    "Survival, Underground",
+    "Pest Control",
+    "Blind-fighting",
+    "Intimidation",
+    "Set Snares",
+    "Swimming"
+   ],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [
+    "Light crossbow"
+   ],
+   "requiredChoices": [
+    [
+     "Hand or throwing axe",
+     "Warhammer",
+     "Dagger or dirk"
+    ]
+   ],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "vindicator",
+  "proficiencies": {
+   "bonus": [
+    "Endurance",
+    "Intimidation",
+    "Religion",
+    "Singing"
+   ],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Appraising",
+    "Armorer",
+    "Blind-fighting",
+    "Dancing",
+    "Direction Sense",
+    "Healing",
+    "Herbalism",
+    "Sound Analysis",
+    "Underground Navigation",
+    "Survival, Underground"
+   ],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [
+    "Battle axe",
+    "Warhammer"
+   ],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [
+    "Short bow",
+    "Long bow",
+    "Composite short bow",
+    "Composite long bow",
+    "Light crossbow",
+    "Heavy crossbow",
+    "Hand crossbow",
+    "Sling",
+    "Staff sling",
+    "Blowgun",
+    "Dart",
+    "Javelin"
+   ],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": "Same ranged-weapon rule as the Battlerager; may not specialize in any weapon."
+ },
+ {
+  "id": "wayfinder",
+  "proficiencies": {
+   "bonus": [
+    "Endurance",
+    "Swimming",
+    "Underground Navigation",
+    "Survival, Underground"
+   ],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Alertness",
+    "Blind-fighting",
+    "Direction Sense",
+    "Fungi Recognition",
+    "Herbalism",
+    "Local Dwarf History",
+    "Locksmithing",
+    "Mining",
+    "Languages, Modern",
+    "Rope Use",
+    "Set Snares",
+    "Sign Language",
+    "Signalling",
+    "Slow Respiration",
+    "Tracking"
+   ],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": "Languages cost half the slots (text). Any weapon allowed to warriors and thieves."
+ },
+ {
+  "id": "archer_halfling",
+  "proficiencies": {
+   "bonus": [
+    "Bowyer/Fletcher"
+   ],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Hunting",
+    "Fire-building",
+    "Tracking",
+    "Weather Sense"
+   ],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": "Three initial weapon slots must go to missile weapons; may specialize in one missile weapon for two slots (not three)."
+ },
+ {
+  "id": "bandit_halfling",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [
+    [
+     "Direction Sense",
+     "Fishing",
+     "Rope Use",
+     "Disguise"
+    ]
+   ],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Swimming",
+    "Weather Sense",
+    "Forgery",
+    "Set Snares",
+    "Tightrope Walking"
+   ],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [
+    [
+     "Short bow",
+     "Hand crossbow"
+    ]
+   ],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": "Also at least one melee weapon."
+ },
+ {
+  "id": "bilker",
+  "proficiencies": {
+   "bonus": [
+    "Gaming"
+   ],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Disguise",
+    "Local History",
+    "Appraising",
+    "Ventriloquism"
+   ],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Knife",
+    "Hand crossbow"
+   ],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "breachgnome",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Armorer",
+    "Weaponsmithing",
+    "Endurance",
+    "Blacksmithing"
+   ],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [
+    "Short sword"
+   ],
+   "requiredChoices": [
+    [
+     "Warhammer",
+     "Battle axe",
+     "Hand or throwing axe"
+    ]
+   ],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": "\"hammer or axe\": warhammer or an axe (battle axe, hand or throwing axe)."
+ },
+ {
+  "id": "buffoon",
+  "proficiencies": {
+   "bonus": [
+    "Etiquette"
+   ],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Ancient History",
+    "Local History",
+    "Disguise",
+    "Juggling",
+    "Reading Lips",
+    "Tumbling",
+    "Ventriloquism"
+   ],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Dagger or dirk"
+   ],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": "Kit is for gnome illusionists (Mage) with thief skills; \"History\" read as ancient or local."
+ },
+ {
+  "id": "cartographer",
+  "proficiencies": {
+   "bonus": [
+    "Direction Sense"
+   ],
+   "bonusChoices": [],
+   "required": [
+    "Navigation"
+   ],
+   "requiredChoices": [],
+   "recommended": [
+    "Languages, Modern",
+    "Weather Sense",
+    "Survival"
+   ],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Short bow",
+    "Short sword",
+    "Staff sling"
+   ],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": "Gains the Cartography proficiency at 2nd level (unique); class not stated on the page: open to the race's classes."
+ },
+ {
+  "id": "forestwalker",
+  "proficiencies": {
+   "bonus": [
+    "Survival",
+    "Tracking"
+   ],
+   "bonusChoices": [
+    [
+     "Fire-building",
+     "Fishing",
+     "Hunting"
+    ]
+   ],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Animal Lore",
+    "Set Snares",
+    "Bowyer/Fletcher",
+    "Artistic Ability"
+   ],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Club",
+    "Quarterstaff"
+   ],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": "One initial slot on a missile weapon and one on a wooden weapon; class not stated on the page."
+ },
+ {
+  "id": "goblinsticker",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Rope Use",
+    "Direction Sense",
+    "Blind-fighting",
+    "Armorer",
+    "Weaponsmithing"
+   ],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": "Needs a missile weapon and two melee weapons; Strength OR Constitution 15 (text); class not stated on the page."
+ },
+ {
+  "id": "healer",
+  "proficiencies": {
+   "bonus": [
+    "Healing"
+   ],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Agriculture",
+    "Herbalism",
+    "Reading/Writing"
+   ],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": "One weapon slot at 1st level, any weapon allowed to a cleric."
+ },
+ {
+  "id": "homesteader",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [
+    [
+     "Agriculture",
+     "Animal Handling"
+    ],
+    [
+     "Hunting",
+     "Fishing"
+    ]
+   ],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Carpentry",
+    "Rope Use",
+    "Weather Sense",
+    "Survival",
+    "Weaving",
+    "Cheesemaking",
+    "Leatherworking"
+   ],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [
+    [
+     "Short bow",
+     "Sling"
+    ],
+    [
+     "Knife",
+     "Short sword"
+    ]
+   ],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": "Needs Intelligence OR Wisdom 12 as well as Strength 12; class not stated on the page."
+ },
+ {
+  "id": "imagemaker",
+  "proficiencies": {
+   "bonus": [
+    "Ventriloquism"
+   ],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Artistic Ability",
+    "Ancient History",
+    "Astrology",
+    "Singing"
+   ],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "leaftender",
+  "proficiencies": {
+   "bonus": [
+    "Herbalism",
+    "Survival"
+   ],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Weather Sense",
+    "Direction Sense",
+    "Animal Lore",
+    "Swimming",
+    "Fire-building"
+   ],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [
+    "Sling",
+    "Sickle",
+    "Spear",
+    "Scythe",
+    "Dagger or dirk",
+    "Quarterstaff",
+    "Club",
+    "Dart"
+   ],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "mercenary",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Carpentry",
+    "Riding, Land-Based",
+    "Armorer",
+    "Blind-fighting",
+    "Bowyer/Fletcher",
+    "Tracking",
+    "Weaponsmithing"
+   ],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": "Two ability scores of 13 among Strength, Dexterity, Constitution (text); one melee and one missile weapon."
+ },
+ {
+  "id": "mouseburglar",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [
+    [
+     "Disguise",
+     "Rope Use"
+    ]
+   ],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Languages, Modern",
+    "Forgery",
+    "Reading Lips",
+    "Tightrope Walking"
+   ],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Sling",
+    "Short bow",
+    "Long bow",
+    "Dagger or dirk",
+    "Short sword"
+   ],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": "Prefers silent weapons: sling or bow over crossbow, dagger or short sword over hammer and axe."
+ },
+ {
+  "id": "oracle_halfling",
+  "proficiencies": {
+   "bonus": [
+    "Astrology"
+   ],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Heraldry",
+    "Ancient History",
+    "Religion",
+    "Spellcraft"
+   ],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "rocktender",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": "Never uses metal weapons (stone-headed hammers and clubs, sling with stone bullets, flint spears and arrows)."
+ },
+ {
+  "id": "sheriff",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Tracking",
+    "Languages, Modern"
+   ],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [
+    "Short sword",
+    "Club",
+    "Knife"
+   ],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "smuggler_halfling",
+  "proficiencies": {
+   "bonus": [
+    "Local History"
+   ],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Riding, Land-Based",
+    "Appraising",
+    "Disguise",
+    "Forgery"
+   ],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": "Local History only for areas on the regular routes."
+ },
+ {
+  "id": "squire_halfling",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [
+    [
+     "Animal Handling",
+     "Riding, Land-Based"
+    ]
+   ],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Heraldry",
+    "Languages, Modern",
+    "Armorer",
+    "Bowyer/Fletcher",
+    "Weaponsmithing"
+   ],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": "One melee and one missile weapon; matching the partner's weapon gives benefits."
+ },
+ {
+  "id": "stalker_gnome",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [
+    [
+     "Tracking",
+     "Set Snares"
+    ]
+   ],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Fire-building",
+    "Fishing",
+    "Hunting",
+    "Survival",
+    "Disguise"
+   ],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": "Proficient in one missile and one melee weapon."
+ },
+ {
+  "id": "trader_halfling",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [
+    [
+     "Appraising",
+     "Local History"
+    ]
+   ],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Direction Sense",
+    "Animal Handling",
+    "Weather Sense"
+   ],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": "The page speaks of a \"combination of character classes\" without naming it: allowed Fighter and Thief, no combination recorded."
+ },
+ {
+  "id": "traveller",
+  "proficiencies": {
+   "bonus": [
+    "Musical Instrument"
+   ],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Dancing",
+    "Disguise",
+    "Etiquette",
+    "Juggling",
+    "Tumbling",
+    "Ventriloquism"
+   ],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": "Called the halfling equivalent of the bard; class not stated on the page."
+ },
+ {
+  "id": "treetender",
+  "proficiencies": {
+   "bonus": [
+    "Set Snares"
+   ],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Fire-building",
+    "Weather Sense",
+    "Direction Sense",
+    "Healing"
+   ],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Quarterstaff",
+    "Club",
+    "Spear",
+    "Short bow",
+    "Long bow"
+   ],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": "Prefers wooden weapons; unlike most priests may use bows."
+ },
+ {
+  "id": "tumbler",
+  "proficiencies": {
+   "bonus": [
+    "Tumbling"
+   ],
+   "bonusChoices": [],
+   "required": [
+    "Jumping",
+    "Juggling",
+    "Tightrope Walking"
+   ],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": "Any weapon available to gnomish thieves."
+ },
+ {
+  "id": "tunnelrat_halfling",
+  "proficiencies": {
+   "bonus": [
+    "Blind-fighting"
+   ],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Rope Use",
+    "Swimming",
+    "Mountaineering"
+   ],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [
+    [
+     "Short sword",
+     "Hand or throwing axe",
+     "Warhammer"
+    ],
+    [
+     "Light crossbow",
+     "Short bow",
+     "Blowgun",
+     "Dart"
+    ]
+   ],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": "Needs a melee weapon specialization by 3rd level (text); also one extra language (goblin, orc, kobold or Duergar)."
+ },
+ {
+  "id": "urchin",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Forgery",
+    "Blind-fighting",
+    "Tumbling",
+    "Ventriloquism"
+   ],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Dagger or dirk",
+    "Dart",
+    "Sling",
+    "Quarterstaff"
+   ],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": "Disguise (as a human child) at 1st level; full Disguise proficiency at 2nd level."
+ },
+ {
+  "id": "vanisher",
+  "proficiencies": {
+   "bonus": [
+    "Reading/Writing"
+   ],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Spellcraft",
+    "Heraldry",
+    "Blind-fighting",
+    "Direction Sense",
+    "Weather Sense",
+    "Navigation"
+   ],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "rogues_of_anauroch",
+  "proficiencies": {
+   "bonus": [
+    "Riding, Land-Based"
+   ],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Survival"
+   ],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "rogues_of_the_empires_of_the_sands",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "rogues_of_the_moonsea",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Blind-fighting"
+   ],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": "The page says Moonsea rogues should always be non-player characters (generally evil); hidden until the user decides."
+ },
+ {
+  "id": "rogues_of_the_old_empires",
+  "proficiencies": {
+   "bonus": [
+    "Ancient History"
+   ],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "rogues_of_the_savage_north",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "rogues_of_the_vilhon_reach",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "rogues_of_waterdeep",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "wizards_of_halruaa",
+  "proficiencies": {
+   "bonus": [
+    "Spellcraft",
+    "Ancient History"
+   ],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "the_ancient_historian",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [
+    "Ancient History",
+    "Languages, Ancient",
+    "Reading/Writing",
+    "Heraldry"
+   ],
+   "requiredChoices": [],
+   "recommended": [
+    "Languages, Modern",
+    "Spellcraft"
+   ],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [
+    "Dagger or dirk",
+    "Dart",
+    "Sling",
+    "Quarterstaff"
+   ],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": "Intelligence 14 is in addition to the standard historian requirements (not in this book's excerpt)."
+ },
+ {
+  "id": "the_annalist",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [
+    "Ancient History",
+    "Local History",
+    "Reading/Writing"
+   ],
+   "requiredChoices": [],
+   "recommended": [
+    "Singing",
+    "Musical Instrument"
+   ],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [
+    "Dagger or dirk",
+    "Dart",
+    "Quarterstaff",
+    "Sling"
+   ],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": "In addition to the standard historian requirements."
+ },
+ {
+  "id": "the_chronicler",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [
+    "Local History",
+    "Etiquette",
+    "Singing"
+   ],
+   "requiredChoices": [],
+   "recommended": [
+    "Reading/Writing",
+    "Musical Instrument"
+   ],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [
+    "Dagger or dirk",
+    "Dart",
+    "Quarterstaff",
+    "Short sword",
+    "Sling"
+   ],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": "In addition to the standard historian requirements."
+ },
+ {
+  "id": "the_collector",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [
+    "Ancient History",
+    "Appraising"
+   ],
+   "requiredChoices": [],
+   "recommended": [
+    "Reading/Writing",
+    "Etiquette",
+    "Local History",
+    "Disguise",
+    "Forgery",
+    "Tracking",
+    "Languages, Modern",
+    "Languages, Ancient"
+   ],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [
+    "Club",
+    "Dagger or dirk",
+    "Dart",
+    "Footman's mace",
+    "Horseman's mace",
+    "Sling",
+    "Short sword"
+   ],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": "In addition to the standard historian requirements; \"mace\" read as the two PHB maces."
+ },
+ {
+  "id": "archetypal_necromancer",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Anatomy",
+    "Languages, Ancient",
+    "Ancient History",
+    "Necrology",
+    "Netherworld Knowledge",
+    "Reading/Writing",
+    "Venom Handling"
+   ],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [
+    "Dagger or dirk",
+    "Dart",
+    "Quarterstaff",
+    "Knife",
+    "Sling"
+   ],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": "Forbidden: all Priest proficiencies (group not enumerable). May learn ONE special weapon (battle axe, bow, crossbow, javelin, spear, sword, warhammer) for two slots at the DM's discretion; not in allowed. Must be a necromancer specialist."
+ },
+ {
+  "id": "undead_master",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [
+    "Necrology",
+    "Netherworld Knowledge"
+   ],
+   "requiredChoices": [],
+   "recommended": [
+    "Etiquette",
+    "Heraldry",
+    "Ancient History",
+    "Astrology",
+    "Languages, Ancient",
+    "Reading/Writing",
+    "Religion",
+    "Spellcraft",
+    "Spirit Lore"
+   ],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [
+    "Dagger or dirk",
+    "Dart",
+    "Quarterstaff",
+    "Sling",
+    "Knife"
+   ],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": "Forbidden: all Priest, Rogue and Warrior proficiencies (groups not enumerable). Chooses only ONE of the regular wizard weapons. Must be a necromancer specialist."
+ },
+ {
+  "id": "floating_sorcerer",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [
+    "Riding, Airborne"
+   ],
+   "requiredChoices": [],
+   "recommended": [
+    "Rope Use",
+    "Tumbling",
+    "Weather Sense"
+   ],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [
+    "Dagger or dirk",
+    "Dart"
+   ],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": "For wizards (any race) raised on the plane of Air; thrown dagger and dart only."
+ },
+ {
+  "id": "planewalker_rogue",
+  "proficiencies": {
+   "bonus": [
+    "Direction Sense"
+   ],
+   "bonusChoices": [],
+   "required": [
+    "Planar Sense"
+   ],
+   "requiredChoices": [],
+   "recommended": [
+    "Appraising",
+    "Disguise",
+    "Planar Survival",
+    "Weather Sense"
+   ],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": "The page says \"thieves, pirates, scouts or bards\": allowed Thief and Bard."
+ },
+ {
+  "id": "the_etherfarer",
+  "proficiencies": {
+   "bonus": [
+    "Curtain Cognizance"
+   ],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Ethereal Sight",
+    "Illusion Pierce",
+    "Nutriment",
+    "Vapor Weave"
+   ],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [
+   "Fortify"
+  ],
+  "doubts": "Any class (the page); the shelf is arbitrary. The bonus Fortify has no entry in the compendium. Must perform a quest to join the Etherfaring Society."
+ },
+ {
+  "id": "kshatriya",
+  "proficiencies": {
+   "bonus": [
+    "Etiquette"
+   ],
+   "bonusChoices": [],
+   "required": [
+    "Bureaucracy"
+   ],
+   "requiredChoices": [],
+   "recommended": [
+    "Animal Handling",
+    "Endurance",
+    "Heraldry",
+    "Languages, Modern",
+    "Languages, Ancient",
+    "Law",
+    "Oratory",
+    "Reading/Writing",
+    "Religion",
+    "Riding, Land-Based",
+    "Spellcraft"
+   ],
+   "forbidden": [
+    "Diagnostics",
+    "Healing",
+    "Herbalism"
+   ]
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": "Forbidden also \"[All] crafts\" (no group entry). Section title \"Indian paladin\"; earlier excluded as ambiguous, now read as Paladin."
+ },
+ {
+  "id": "tekchakak",
+  "proficiencies": {
+   "bonus": [
+    "Psionic Detection",
+    "Hunting"
+   ],
+   "bonusChoices": [],
+   "required": [
+    "Water Find"
+   ],
+   "requiredChoices": [],
+   "recommended": [
+    "Animal Lore",
+    "Artistic Ability",
+    "Chitinworking",
+    "Healing",
+    "Psioncraft",
+    "Survival"
+   ],
+   "forbidden": [
+    "Spellcraft",
+    "Swimming"
+   ]
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [
+    "Gythka"
+   ],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": "Only a chakak (psionicist) can take it; limited to thri-kreen pack weapons, the gythka preferred."
+ },
+ {
+  "id": "kiltektet",
+  "proficiencies": {
+   "bonus": [
+    "Hunting",
+    "Reading/Writing"
+   ],
+   "bonusChoices": [],
+   "required": [
+    "Artistic Ability"
+   ],
+   "requiredChoices": [],
+   "recommended": [
+    "Chitinworking",
+    "Direction Sense",
+    "Endurance",
+    "Etiquette",
+    "Heraldry",
+    "Herbalism",
+    "Local History",
+    "Ancient History",
+    "Languages, Modern",
+    "Languages, Ancient"
+   ],
+   "forbidden": [
+    "Spellcraft",
+    "Swimming"
+   ]
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [
+   "Kyorkcha"
+  ],
+  "doubts": "Any class available to thri-kreen (most are psionicist/priests). The bonus weapon (kyorkcha) is not in the compendium. The page is mis-sourced in the mining as Complete Humanoid's Handbook."
+ },
+ {
+  "id": "ajami",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "askar",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "barber",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "corsair_al_qadim",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "desert_rider",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "elemental_mage",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "ethoist",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "faris",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "hakima",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "holy_slayer",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "kahin",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "mamluk",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "matrud",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "mercenary_barbarian",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "merchant_rogue",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "moralist",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "mystic_al_qadim",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "outland_priest",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "outland_warrior",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "pragmatist",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "rawun",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "sa_luk",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "sha_ir",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "sorcerer",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "astrologer_sha_ir",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "clockwork_mage",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "digitalogist",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "ghul_lord",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "jackal",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "mageweaver",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "mystic_of_nog",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "spellslayer",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "aperusa",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "arcanist_spacefarer",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "astrologer",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "astronomer",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "corsair_spacefarer",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "courier_spacefarer",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "crusader",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "diplomat_spacefarer",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "evangelist",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "frontiersman",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "geomancer",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "harlequin",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "imposter",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "marine",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "medicus",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "merchant_spacefarer",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "missionary",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "privateer",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "salvager_spacefarer",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "war_mage",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "dragon_mage",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "dragon_priest",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "dragon_rider",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "dragon_slayer",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "slayer_mage",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "exile",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "dragon_pc",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "dragon_sage",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "ward",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "bandit_red_steel",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "beast_rider_red_steel",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "defender",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "fighting_monk_red_steel",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "gaucho",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "herald_red_steel",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "honorbound",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "inheritor",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "local_hero",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "militant_wizard_red_steel",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "myrmidon_red_steel",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "mystic_red_steel",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "noble_red_steel",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "scout_red_steel",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "skald_red_steel",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "swashbuckler_red_steel",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "trader_red_steel",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "war_priest_red_steel",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "webmaster",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "wokan",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "hedge_wizard",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "humanoid_bard",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "humanoid_scholar",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "mine_rowdy",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "oracle",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "outlaw_mage",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "pit_fighter",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "saurial_paladin",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "scavenger",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "sellsword",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "shadow",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "shaman",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "tramp",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "tribal_defender",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "tunnel_rat",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "wandering_mystic",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "war_priest",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "wilderness_protector",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "witch_doctor",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "arena_champion",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "beast_trainer",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "gladiatorial_slave",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "jazst",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "montare",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "professional_gladiator",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "reaver",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "charioteer",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "charlatan_grcs",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "military_tribune",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "mithraic_priest",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "philosopher_mage",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "priest_of_the_mysteries",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "priest_of_the_state_religion",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "roman_legionary",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "roman_politician",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "roman_witch",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "street_fighter",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "the_christian_cleric",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "athlete",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "lawyer",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "scientist",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "thespian_dragon",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "enthusiast",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "exorcist",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "courier",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "alakvalt",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "sarkany",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "boszorkany",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "mystery_man",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "tribal_scout",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "zande_witch_woman",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
+ },
+ {
+  "id": "manikin",
+  "proficiencies": {
+   "bonus": [],
+   "bonusChoices": [],
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": []
+  },
+  "weapons": {
+   "required": [],
+   "requiredChoices": [],
+   "recommended": [],
+   "forbidden": [],
+   "allowed": [],
+   "specialization": null
+  },
+  "unmatched": [],
+  "doubts": null
  }
 ]

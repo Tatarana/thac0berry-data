@@ -82,6 +82,27 @@
             "string",
             "null"
           ]
+        },
+        "playable": {
+          "type": "boolean",
+          "description": "Ausente = true. false = o app guarda o kit mas não o oferece no Forge nem na ficha (ver hiddenReason). Opcional, web primeiro: o iPad ignora."
+        },
+        "hiddenReason": {
+          "enum": [
+            "humanoid-not-playable",
+            "setting-not-in-forge",
+            "class-not-in-app",
+            "race-not-playable",
+            "undecided"
+          ],
+          "description": "Por que o kit não é jogável. humanoid-not-playable: raças humanoides não jogáveis; setting-not-in-forge: o cenário (campo setting) não está na lista do Forge; class-not-in-app: a classe do kit não existe no app; race-not-playable: a raça do kit não é jogável; undecided: classe ambígua ou decisão pendente (ver note). Kits de cenários em construção (Al-Qadim, Council of Wyrms, Spelljammer) NÃO usam playable:false: a web os esconde pelo cenário."
+        },
+        "note": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Observação de curadoria (por que está escondido, o que a página não diz)."
         }
       }
     },
