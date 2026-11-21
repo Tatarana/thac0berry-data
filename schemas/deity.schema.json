@@ -133,6 +133,11 @@
       "race": {
         "type": "string",
         "description": "Raça-base (dwarf, elf, gnome, halfling, half_elf; ids de races.json) dos deuses de semi-humanos, para destacá-los. Ausente = deus sem raça."
+      },
+      "kind": {
+        "type": "string",
+        "enum": ["hero"],
+        "description": "\"hero\" = herói mortal do Legends & Lore ou do Monster Mythology (rank \"Hero\", forgeSelectable false, só compêndio; as classes vão em avatarClassLevels e a ficha em avatarDescription). Ausente = divindade. Só a web usa; o Swift ignora."
       }
     }
   }
