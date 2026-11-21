@@ -1,0 +1,78 @@
+{
+  "_about": "Curadoria das divindades (2026-11-20), lida por scripts/build_deities.py. 'existing': panteão e forgeSelectable dos 101 deuses que já estavam no app (FA, PP, TotL); só ACRESCENTA campos, os valores existentes não mudam. 'pantheons': para cada fonte minerada (capítulo do Legends & Lore, panteão da lista da wiki no Monster Mythology, template do artigo da Dragon) o nome do panteão no app, se o Forge pode oferecer o deus (forgeSelectable) e, para deuses de semi-humanos, a raça-base (ids de data/races.json: dwarf, elf, gnome, halfling, half_elf). Fonte sem entrada aqui faz o script parar. 'overrides': exceções por id minerado. Decisões do usuário (2026-11-20): Legends & Lore (panteões históricos/literários) = só compêndio; Monster Mythology de humanoides/monstros = só compêndio; Monster Mythology dos semi-humanos (anões, elfos incluindo drow, gnomos, halflings) = Forge em qualquer cenário; Dragon: classificar um a um.",
+  "existing": {
+    "FA": { "pantheon": "Faerûnian", "forgeSelectable": true },
+    "PP": { "pantheon": "Faerûnian", "forgeSelectable": true },
+    "TotL": { "pantheon": "Dragonlance", "forgeSelectable": true }
+  },
+  "pantheons": {
+    "LL": {
+      "American Indian Mythology": { "pantheon": "American Indian", "forgeSelectable": false },
+      "Arthurian Mythology": { "pantheon": "Arthurian", "forgeSelectable": false },
+      "Aztec Mythology": { "pantheon": "Aztec", "forgeSelectable": false },
+      "Celtic Mythology": { "pantheon": "Celtic", "forgeSelectable": false },
+      "Chinese Mythology": { "pantheon": "Chinese", "forgeSelectable": false },
+      "Egyptian Mythology": { "pantheon": "Egyptian", "forgeSelectable": false },
+      "Greek Mythology": { "pantheon": "Greek", "forgeSelectable": false },
+      "Indian Mythology": { "pantheon": "Indian", "forgeSelectable": false },
+      "Japanese Mythology": { "pantheon": "Japanese", "forgeSelectable": false },
+      "Nehwon Mythology": { "pantheon": "Nehwon", "forgeSelectable": false },
+      "Norse Mythology": { "pantheon": "Norse", "forgeSelectable": false }
+    },
+    "MoMy": {
+      "Dwarven Pantheon": { "pantheon": "Dwarven", "forgeSelectable": true, "race": "dwarf" },
+      "Elven Pantheon": { "pantheon": "Elven", "forgeSelectable": true, "race": "elf" },
+      "Gnomish Pantheon": { "pantheon": "Gnomish", "forgeSelectable": true, "race": "gnome" },
+      "Halfling Pantheon": { "pantheon": "Halfling", "forgeSelectable": true, "race": "halfling" },
+      "Drow Pantheon": { "pantheon": "Drow", "forgeSelectable": true, "race": "elf" },
+      "Underdark Dwarves Pantheon": { "pantheon": "Duergar", "forgeSelectable": true, "race": "dwarf" },
+      "Svirfnebli Pantheon": { "pantheon": "Svirfneblin", "forgeSelectable": true, "race": "gnome" },
+      "Orcish Pantheon": { "pantheon": "Orcish", "forgeSelectable": false },
+      "Goblin Pantheon": { "pantheon": "Goblinoid", "forgeSelectable": false },
+      "Bugbear Pantheon": { "pantheon": "Goblinoid", "forgeSelectable": false },
+      "Other Goblinoid Gods": { "pantheon": "Goblinoid", "forgeSelectable": false },
+      "Kobold Pantheon": { "pantheon": "Kobold", "forgeSelectable": false },
+      "Giant Pantheon": { "pantheon": "Giant", "forgeSelectable": false },
+      "Giant Interloper Gods": { "pantheon": "Giant", "forgeSelectable": false },
+      "Dragon Gods": { "pantheon": "Draconic", "forgeSelectable": false },
+      "Scalyfolk Gods": { "pantheon": "Scaly Folk", "forgeSelectable": false },
+      "Gods of the Seas": { "pantheon": "Sea", "forgeSelectable": false },
+      "Gods of the Skies": { "pantheon": "Sky", "forgeSelectable": false },
+      "Beholder Pantheon": { "pantheon": "Beholder", "forgeSelectable": false },
+      "Iliithid Pantheon": { "pantheon": "Illithid", "forgeSelectable": false },
+      "Myconids Pantheon": { "pantheon": "Myconid", "forgeSelectable": false },
+      "The Lost Gods": { "pantheon": "Lost Gods", "forgeSelectable": false },
+      "Dark Folk Pantheon": { "pantheon": "Dark Folk", "forgeSelectable": false },
+      "Sylvan Pantheon": { "pantheon": "Sylvan", "forgeSelectable": false }
+    },
+    "Dragon": {
+      "The Deities of Africa": { "pantheon": "African", "forgeSelectable": false }
+    }
+  },
+  "overrides": {
+    "deep_sashelas": {
+      "pantheon": "Elven",
+      "forgeSelectable": true,
+      "race": "elf",
+      "why": "A lista da wiki o põe em 'Gods of the Seas' (o livro o imprime no capítulo Seas and Skies), mas o próprio texto diz que ele é o principal deus dos elfos marinhos (raça-base elf) e o panteão élfico clássico o inclui. Tratado como deus de semi-humanos."
+    },
+    "diirinka": {
+      "pantheon": "Derro",
+      "forgeSelectable": false,
+      "why": "Está na lista 'Underdark Dwarves', mas é deus dos derro (WAL 'ce (derro)'); derro não é uma raça-base do app (só duergar é anão). Os outros dois da lista (Laduguer, Diinkarazan) são duergar."
+    }
+  },
+  "dragonMagazine": {
+    "_about": "Os 10 deuses 'Article God' vêm de um único artigo, 'The Deities of Africa' (Dragon #215). Nenhum é do Forgotten Realms, de Dragonlance nem de panteão de semi-humanos: todos ficam só no compêndio.",
+    "ananse": "Aranha-mensageira dos Ashanti; panteão africano.",
+    "animal_spirits": "Espíritos-animais da mitologia dos Bushmen (grupo, não um deus único); panteão africano.",
+    "asase_ya": "Deusa-terra dos Ashanti; panteão africano.",
+    "bumba": "Deus-criador dos Bakuba; panteão africano.",
+    "cagn": "Mantis (Kaggen), deus bushman; panteão africano.",
+    "gauna": "Deus-do-mal dos Khoikhoi/Bushmen; panteão africano.",
+    "khonvum": "Caçador do céu dos Bushmen; panteão africano.",
+    "leza": "Deus-supremo dos Bantu centrais; panteão africano.",
+    "nyame": "Deus-do-céu dos Ashanti; panteão africano.",
+    "so": "Deus-trovão dos Ewe/Fon; panteão africano."
+  }
+}
